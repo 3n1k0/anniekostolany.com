@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import Menu from './Components/Menu.jsx';
+import Gallery from './Components/Gallery.jsx';
 
 class App extends React.Component {
 	render() {
-		return (<h1>Hello Eniko!</h1>);
+		return (
+			<div>
+				<Menu></Menu>
+				<h1>Hello Eniko!</h1>
+				<Gallery></Gallery>
+			</div>
+		);
 	}
 }
 
