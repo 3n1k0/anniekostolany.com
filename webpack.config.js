@@ -15,7 +15,7 @@ module.exports = {
 		rules : [
 			{
 				test    : /\.jsx$/,
-				exclude : /(node_modules|out)/,
+				exclude : /(node_modules)/,
 				loader  : 'babel-loader',
 				options : {
 					"presets" : ["es2015", "react"]
@@ -23,7 +23,7 @@ module.exports = {
 			},
 			{
 				test    : /\.html$/,
-				exclude : /(node_modules|out)/,
+				exclude : /(node_modules)/,
 				loader  : 'html-loader'
 			}
 		]
