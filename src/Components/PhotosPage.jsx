@@ -1,5 +1,6 @@
 import React from 'react';
 import Photo from './Photo.jsx';
+import style from '../photos.scss';
 
 export default class PhotosPage extends React.Component {
 	render() {

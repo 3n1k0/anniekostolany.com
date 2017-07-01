@@ -5,6 +5,7 @@ import HomePage from './Components/HomePage.jsx';
 import AboutPage from './Components/AboutPage.jsx';
 import PhotosPage from './Components/PhotosPage.jsx';
 import Navigation from './Components/Navigation.jsx';
+import style from './index.scss';
 
 ReactDOM.render(
 	<Router>

@@ -1,5 +1,6 @@
 const path = require('path'),
-	HtmlWebpackPlugin = require('html-webpack-plugin');
+	HtmlWebpackPlugin = require('html-webpack-plugin'),
+	ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry : {
@@ -7,7 +8,7 @@ module.exports = {
 	},
 	output : {
 		path          : path.join(__dirname, './out/'),
-		filename      : 'bundle.js',
+		filename      : '[name].js',
 		chunkFilename : '[id].bundle.js'
 	},
 	devtool : 'eval',
@@ -25,12 +26,20 @@ module.exports = {
 				test    : /\.html$/,
 				exclude : /(node_modules)/,
 				loader  : 'html-loader'
+			},
+			{
+				test   : /\.scss$/,
+				loader : ExtractTextPlugin.extract('css-loader!sass-loader')
 			}
 		]
 	},
 	plugins : [
 		new HtmlWebpackPlugin({
 			template : 'src/index.html'
+		}),
+		new ExtractTextPlugin({
+			filename  : 'index.css',
+			allChunks : true
 		})
 	]
 };
