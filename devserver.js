@@ -3,9 +3,6 @@ const WebpackDevServer = require('webpack-dev-server'),
 	webpack = require('webpack'),
 	path = require('path'),
 	compiler = webpack(config),
-	server = new WebpackDevServer(compiler, {
-		contentBase: path.resolve(path.resolve(__dirname), 'out'),
-		publicPath: '/'
-	});
+	server = new WebpackDevServer(compiler, config.devServer);
 
 server.listen(3000);

@@ -1,17 +1,24 @@
 const path = require('path'),
 	HtmlWebpackPlugin = require('html-webpack-plugin'),
-	ExtractTextPlugin = require('extract-text-webpack-plugin');
+	ExtractTextPlugin = require('extract-text-webpack-plugin'),
+	webpack = require('webpack');
 
 module.exports = {
 	entry : {
-		mobile : './src/index.jsx'
+		app : [
+			'react-hot-loader/patch',
+			'webpack-dev-server/client?http://localhost:3000',
+			'webpack/hot/only-dev-server',
+			'./src/index.jsx'
+		]
 	},
 	output : {
 		path          : path.join(__dirname, './out/'),
 		filename      : '[name].js',
-		chunkFilename : '[id].bundle.js'
+		chunkFilename : '[id].bundle.js',
+		publicPath    : '/'
 	},
-	devtool : 'eval',
+	devtool: 'source-map',
 	module  : {
 		rules : [
 			{
@@ -40,6 +47,17 @@ module.exports = {
 		new ExtractTextPlugin({
 			filename  : 'index.css',
 			allChunks : true
-		})
-	]
+		}),
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.NamedModulesPlugin(),
+		new webpack.NoEmitOnErrorsPlugin()
+	],
+	devServer: {
+		host               : 'localhost',
+		port               : 3000,
+		historyApiFallback : true,
+		hot                : true,
+		contentBase        : path.resolve(path.resolve(__dirname), 'out'),
+		publicPath         : '/'
+	}
 };
