@@ -12,6 +12,11 @@ module.exports = {
 			'./src/index.jsx'
 		]
 	},
+	resolve : {
+		enforceExtension   : false,
+		extensions         : ['.js', '.jsx'],
+		mainFiles          : ['index']
+	},
 	output : {
 		path          : path.join(__dirname, './out/'),
 		filename      : '[name].js',
@@ -36,7 +41,7 @@ module.exports = {
 			},
 			{
 				test   : /\.scss$/,
-				loader : ExtractTextPlugin.extract('css-loader!sass-loader')
+				loader : ExtractTextPlugin.extract('css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass-loader')
 			}
 		]
 	},
