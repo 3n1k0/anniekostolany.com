@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { navigation } from './style.scss';
 
-export default Navigation = () => (
+export default () => (
 	<div className={navigation}>
 		<ul>
 			<li><Link to="/">Home</Link></li>
