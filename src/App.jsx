@@ -5,6 +5,7 @@ import AboutPage from './components/pages/AboutPage';
 import CoupleAlbumPage from './components/pages/CoupleAlbumPage';
 import FashionAlbumPage from './components/pages/FashionAlbumPage';
 import PersonalAlbumPage from './components/pages/PersonalAlbumPage';
+import BabiesAlbumPage from './components/pages/BabiesAlbumPage';
 import Navigation from './components/Navigation';
 import Logo from './components/Logo';
 
@@ -17,6 +18,7 @@ export default () => (
 			<Route path="/about.html" component={AboutPage} />
 			<Route path="/fashion.html" component={FashionAlbumPage} />
 			<Route path="/couple.html" component={CoupleAlbumPage} />
+			<Route path="/babies.html" component={BabiesAlbumPage} />
 			<Route path="/personal.html" component={PersonalAlbumPage} />
 		</div>
 	</Router>

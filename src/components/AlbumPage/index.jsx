@@ -2,7 +2,7 @@ import React from 'react';
 import {photosPage} from './style.scss';
 
 export var Photo = (props) => (
-	<img src={"/photos/" + props.file + ".jpg"} />
+	<img src={"http://images.andor.cool/eniko/" + props.file} />
 );
 
 export var AlbumPage = (props) => (

@@ -3,8 +3,14 @@ import { AlbumPage, Photo } from '../AlbumPage';
 
 export default () => (
 	<AlbumPage>
-		<Photo file="34517310863_ea0155695e_k"/>
-		<Photo file="35458333832_6494e862d1_k"/>
-		<Photo file="35587959575_c08709f959_k"/>
+		<Photo file="fashion_1.jpg"/>
+		<Photo file="fashion_2.jpg"/>
+		<Photo file="fashion_3.jpg"/>
+		<Photo file="fashion_4.jpg"/>
+		<Photo file="fashion_5.jpg"/>
+		<Photo file="fashion_6.jpg"/>
+		<Photo file="fashion_7.jpg"/>
+		<Photo file="fashion_8.jpg"/>
+		<Photo file="fashion_9.jpg"/>
 	</AlbumPage>
 );

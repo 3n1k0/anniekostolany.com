@@ -47,6 +47,23 @@ module.exports = {
 	},
 	plugins : [
 		new HtmlWebpackPlugin({
+			filename : 'index.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'couple.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'babies.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'fashion.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'personal.html',
 			template : 'src/index.html'
 		}),
 		new ExtractTextPlugin({
