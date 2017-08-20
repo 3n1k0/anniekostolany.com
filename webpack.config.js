@@ -66,6 +66,14 @@ module.exports = {
 			filename : 'personal.html',
 			template : 'src/index.html'
 		}),
+		new HtmlWebpackPlugin({
+			filename : 'contact.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'thanks.html',
+			template : 'src/index.html'
+		}),
 		new ExtractTextPlugin({
 			filename  : 'index.css',
 			allChunks : true
