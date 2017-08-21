@@ -1,0 +1,26 @@
+.socialIcon {
+	background-size: 18px 18px;
+	display: block;
+	height: 18px;
+	width: 18px;
+}
+
+.instagram {
+	display: inline-block;
+	padding: 10px;
+
+
+	i {
+		@extend .socialIcon;
+		background-image: url('http://images.andor.cool/eniko/glyphs/instagram.png');
+	}
+}
+.facebook {
+	display: inline-block;
+	padding: 10px;
+
+	i {
+		@extend .socialIcon;
+		background-image: url('http://images.andor.cool/eniko/glyphs/facebook.png');
+	}
+}

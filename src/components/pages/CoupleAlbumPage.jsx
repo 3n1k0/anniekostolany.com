@@ -8,5 +8,11 @@ export default () => (
 		<Photo file="couple_3.jpg"/>
 		<Photo file="couple_4.jpg"/>
 		<Photo file="couple_5.jpg"/>
+		<Photo file="couple_6.jpg"/>
+		<Photo file="couple_7.jpg"/>
+		<Photo file="couple_8.jpg"/>
+		<Photo file="couple_9.jpg"/>
+		<Photo file="couple_10.jpg"/>
+		<Photo file="couple_11.jpg"/>
 	</AlbumPage>
 );

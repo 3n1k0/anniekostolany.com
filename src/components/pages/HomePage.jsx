@@ -3,11 +3,14 @@ import { AlbumPage, Photo } from './AlbumPage';
 
 export default () => (
 	<AlbumPage>
-		<Photo file="fashion_1.jpg"/>
-		<Photo file="personal_2.jpg"/>
-		<Photo file="fashion_8.jpg"/>
-		<Photo file="fashion_2.jpg"/>
-		<Photo file="personal_4.jpg"/>
-		<Photo file="fashion_3.jpg"/>
+		<Photo file="home_1.jpg"/>
+		<Photo file="home_2.jpg"/>
+		<Photo file="home_3.jpg"/>
+		<Photo file="home_4.jpg"/>
+		<Photo file="home_5.jpg"/>
+		<Photo file="home_6.jpg"/>
+		<Photo file="home_7.jpg"/>
+		<Photo file="home_8.jpg"/>
+		<Photo file="home_9.jpg"/>
 	</AlbumPage>
 );

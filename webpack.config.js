@@ -51,15 +51,15 @@ module.exports = {
 			template : 'src/index.html'
 		}),
 		new HtmlWebpackPlugin({
-			filename : 'couple.html',
+			filename : 'couples.html',
 			template : 'src/index.html'
 		}),
 		new HtmlWebpackPlugin({
-			filename : 'babies.html',
+			filename : 'children.html',
 			template : 'src/index.html'
 		}),
 		new HtmlWebpackPlugin({
-			filename : 'fashion.html',
+			filename : 'portrait.html',
 			template : 'src/index.html'
 		}),
 		new HtmlWebpackPlugin({
