@@ -1,4 +1,12 @@
+.hamburgerButton {
+	display: block;
+	left: 20px;
+	position: fixed;
+	top: 20px;
+}
+
 .navigation {
+	background: rgba(#ffffff, 0.8);
 	bottom: 0;
 	left: 0;
 	position: fixed;
@@ -7,7 +15,7 @@
 	width: 200px;
 
 	h1 {
-		color: #333333;
+		color: #000000;
 		display: block;
 		font-family: Cardo, serif;
 		font-size: 36px;
@@ -34,7 +42,7 @@
 		padding: 0;
 
 		a {
-			color: #000;
+			color: #000000;
 			display: block;
 			padding: 5px 0;
 			text-decoration: none;
@@ -44,4 +52,12 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+.opened {
+	display: block;
+}
+
+.closed {
+	display: none;
 }

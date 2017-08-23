@@ -2,4 +2,12 @@
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 	width: 70%;
+
+	@media (max-width: 500px) {
+		width: 90%;
+	}
+}
+
+:global(body.blur) .basePage {
+	filter: blur(10px);
 }

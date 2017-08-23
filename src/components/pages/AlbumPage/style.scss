@@ -3,5 +3,9 @@
 		display: block;
 		padding: 0 0 80px 0;
 		width: 100%;
+
+		@media (max-width: 500px) {
+			padding-bottom: 20px;
+		}
 	}
 }

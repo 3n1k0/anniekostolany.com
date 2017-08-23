@@ -10,6 +10,7 @@ import ContactPage from './components/pages/ContactPage';
 import ThanksPage from './components/pages/ThanksPage';
 import Navigation from './components/Navigation';
 import createBrowserHistory from 'history/createBrowserHistory';
+import './style.scss';
 
 const history = createBrowserHistory();
 
