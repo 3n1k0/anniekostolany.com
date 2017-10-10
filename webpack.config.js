@@ -51,7 +51,39 @@ module.exports = {
 			template : 'src/index.html'
 		}),
 		new HtmlWebpackPlugin({
-			filename : 'couples.html',
+			filename : 'my-story.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'rates.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'couple-shoots.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'confidence-is-key.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'fashion-confession.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'rebellion.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'lost-bride.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'dreamy-beach.html',
+			template : 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename : 'events-and-lifestyle.html',
 			template : 'src/index.html'
 		}),
 		new HtmlWebpackPlugin({
@@ -59,19 +91,7 @@ module.exports = {
 			template : 'src/index.html'
 		}),
 		new HtmlWebpackPlugin({
-			filename : 'portrait.html',
-			template : 'src/index.html'
-		}),
-		new HtmlWebpackPlugin({
-			filename : 'personal.html',
-			template : 'src/index.html'
-		}),
-		new HtmlWebpackPlugin({
 			filename : 'contact.html',
-			template : 'src/index.html'
-		}),
-		new HtmlWebpackPlugin({
-			filename : 'thanks.html',
 			template : 'src/index.html'
 		}),
 		new ExtractTextPlugin({

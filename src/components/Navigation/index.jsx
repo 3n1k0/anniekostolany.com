@@ -50,16 +50,33 @@ export default class Navigation extends React.Component {
 				<div className={navigationClassName}>
 					<h1>Annie Kostolany</h1>
 					<ul>
-						<li><Link to="/">Home</Link></li>
-						<li><Link to="/couples">People in love</Link></li>
-						<li><Link to="/portraits">Portraits</Link></li>
-						<li><Link to="/children">Children</Link></li>
-						<li><Link to="/personal">Personal</Link></li>
+						<li>Info
+							<ul>
+								<li><Link to="/my-story">My story</Link></li>
+								<li><Link to="/rates">Rates</Link></li>
+							</ul>
+						</li>
+						<li><Link to="/couple-shoots">Couple shoots</Link></li>
+						<li>Portraiture
+							<ul>
+								<li><Link to="/tropical-vibes">Tropical vibes / Zsofia Cank</Link></li>
+								<li><Link to="/confidence-is-key">Confidence is key / Matias Melina</Link></li>
+								<li><Link to="/fashion-confession">Fashion Confession / Anna Margout</Link></li>
+								<li><Link to="/rebellion">Rebellion / Nivine Massaud</Link></li>
+								<li><Link to="/lost-bride">The Lost Bride / Jill Valerie</Link></li>
+								<li><Link to="/dreamy-beach">Dreamy beach photoshoot / Stéphanie Lopez</Link></li>
+							</ul>
+						</li>
+						<li>Families
+							<ul>
+								<li><Link to="/events-and-lifestyle">Events & Lifestyle</Link></li>
+								<li><Link to="/children">Children</Link></li>
+							</ul>
+						</li>
 						<li><Link to="/contact">Contact</Link></li>
 						<li><Facebook/><Instagram/></li>
 					</ul>
 				</div>
-				<a className={classNames.hamburgerButton} onClick={this.handleClick}>Button</a>
 			</div>
 		);
 	}
