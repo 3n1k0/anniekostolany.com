@@ -1,7 +1,6 @@
 import React from 'react';
 import { Router, Route, Link } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
-import AboutPage from './components/pages/AboutPage';
 import ContactPage from './components/pages/ContactPage';
 import ThanksPage from './components/pages/ThanksPage';
 import Navigation from './components/Navigation';
@@ -33,7 +32,6 @@ export default () => (
 		<div>
 			<Route exact path="/" component={HomePage} />
 			<Route exact path="/contact" component={ContactPage} />
-			<Route exact path="/about" component={AboutPage} />
 			<Route exact path="/thanks" component={ThanksPage} />
 			<Route exact path="/my-story" component={MyStoryPage} />
 			<Route exact path="/rates" component={RatesPage} />
