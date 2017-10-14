@@ -10,19 +10,29 @@ class MenuItem extends React.Component {
 			active : false
 		};
 
-		this.props.history.listen((location, action) => {
-			if (location.pathname === this.props.to) {
-				this.setState(prevState => {
-					return {active : true};
-				});
-			}
+		this.onHistory = this.onHistory.bind(this);
+		this.props.history.listen(this.onHistory);
+	}
 
-			if (this.state.active && location.pathname !== this.props.to) {
-				this.setState(prevState => {
-					return {active : false};
-				});
-			}
-		});
+	componentDidMount() {
+		this.onHistory(this.props.location);
+	}
+
+	onHistory(location) {
+		if (location.pathname === this.props.to) {
+			this.setState(prevState => {
+				return {active : true};
+			});
+		}
+
+		if (
+			this.state.active &&
+			location.pathname !== this.props.to
+		) {
+			this.setState(prevState => {
+				return {active : false};
+			});
+		}
 	}
 
 	render() {
