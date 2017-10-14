@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import classNames from './style.scss';
 import { Facebook, Instagram } from '../SocialIcons';
 import Blur from '../Blur';
+import { Menu, MenuBlock, MenuItem } from './Menu';
 
 const MOBILE_BREAKPOINT = 500;
 
@@ -49,33 +49,29 @@ export default class Navigation extends React.Component {
 				<Blur isBlur={this.state.isMenuOpen && this.state.isMobile} />
 				<div className={navigationClassName}>
 					<h1>Annie Kostolany</h1>
-					<ul>
-						<li>Info
-							<ul>
-								<li><Link to="/my-story">My story</Link></li>
-								<li><Link to="/rates">Rates</Link></li>
-							</ul>
-						</li>
-						<li><Link to="/couple-shoots">Couple shoots</Link></li>
-						<li>Portraiture
-							<ul>
-								<li><Link to="/tropical-vibes">Tropical vibes / Zsofia Cank</Link></li>
-								<li><Link to="/confidence-is-key">Confidence is key / Matias Melina</Link></li>
-								<li><Link to="/fashion-confession">Fashion Confession / Anna Margout</Link></li>
-								<li><Link to="/rebellion">Rebellion / Nivine Massaud</Link></li>
-								<li><Link to="/lost-bride">The Lost Bride / Jill Valerie</Link></li>
-								<li><Link to="/dreamy-beach">Dreamy beach photoshoot / Stéphanie Lopez</Link></li>
-							</ul>
-						</li>
-						<li>Families
-							<ul>
-								<li><Link to="/events-and-lifestyle">Events & Lifestyle</Link></li>
-								<li><Link to="/children">Children</Link></li>
-							</ul>
-						</li>
-						<li><Link to="/contact">Contact</Link></li>
+					<Menu>
+						<MenuBlock title="Info">
+							<MenuItem to="/my-story">My Sttory</MenuItem>
+							<MenuItem to="/rates">Rates</MenuItem>
+						</MenuBlock>
+						<MenuBlock title="Couple shoots">
+							<MenuItem to="/couple-shoots">Germany</MenuItem>
+						</MenuBlock>
+						<MenuBlock title="Portraiture">
+							<MenuItem to="/tropical-vibes">Tropical vibes</MenuItem>
+							<MenuItem to="/confidence-is-key">Confidence is key</MenuItem>
+							<MenuItem to="/fashion-confession">Fashion Confession</MenuItem>
+							<MenuItem to="/rebellion">Rebellion</MenuItem>
+							<MenuItem to="/lost-bride">The Lost Bride</MenuItem>
+							<MenuItem to="/dreamy-beach">Dreamy beach photoshoot</MenuItem>
+						</MenuBlock>
+						<MenuBlock title="Families">
+							<MenuItem to="/events-and-lifestyle">Events & Lifestyle</MenuItem>
+							<MenuItem to="/children">Children</MenuItem>
+						</MenuBlock>
+						<MenuItem to="/contact">Contact</MenuItem>
 						<li><Facebook/><Instagram/></li>
-					</ul>
+					</Menu>
 				</div>
 			</div>
 		);

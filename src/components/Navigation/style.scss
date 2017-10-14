@@ -26,39 +26,6 @@
 		width: 100%;
 		z-index: -1
 	}
-
-	ul {
-		list-style-type: none;
-		bottom: 0;
-		display: block;
-		font-family: Arial, sans-serif;
-		font-size: 16px;
-		margin: 0;
-		padding: 5px 0;
-		width: 100%;
-	}
-
-	>ul >li {
-		padding: 10px 0 0 0;
-	}
-
-	li {
-		color: #999999;
-		margin: 0;
-		padding: 0;
-
-		a {
-			background: #ffffff;
-			color: #000000;
-			display: block;
-			padding: 5px 0;
-			text-decoration: none;
-		}
-
-		a:hover, a:active {
-			text-decoration: underline;
-		}
-	}
 }
 
 .opened {

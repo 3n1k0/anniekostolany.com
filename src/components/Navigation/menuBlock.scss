@@ -1,0 +1,39 @@
+.menuBlock {
+	padding: 5px 0;
+
+	ul {
+		list-style-type: none;
+		display: block;
+		margin: 0;
+		padding: 0 0 0 5px;
+		width: 100%;
+		transition-property: max-height;
+		transition-duration: 1s;
+		overflow: hidden;
+	}
+
+	a {
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+		color: #000000;
+		display: block;
+		padding: 5px 0;
+		text-decoration: none;
+	}
+
+	a:hover, a:active {
+		text-decoration: underline;
+	}
+}
+
+.opened {
+	ul {
+		max-height: 500px;
+	}
+}
+
+.closed {
+	ul {
+		max-height: 0px;
+	}
+}

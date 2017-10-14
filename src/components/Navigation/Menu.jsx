@@ -1,0 +1,40 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { menuBlock, opened, closed } from './menuBlock.scss';
+import { menuItem } from './menuItem.scss';
+
+export class MenuBlock extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			opened : false
+		};
+		this.toggle = this.toggle.bind(this);
+	}
+
+	toggle(event) {
+		event.preventDefault();
+		this.setState(prevState => ({
+			opened : !prevState.opened
+		}));
+	}
+
+	render() {
+		return (
+			<div className={menuBlock + ' ' + (this.state.opened ? opened : closed)}>
+				<a href="#" onClick={this.toggle}>{this.props.title}</a>
+				<ul>
+					{this.props.children}
+				</ul>
+			</div>
+		);
+	}
+};
+
+export const Menu = (props) => (
+	<div>{props.children}</div>
+);
+
+export const MenuItem = (props) => (
+	<li className={menuItem}><Link to={props.to}>{props.children}</Link></li>
+);
