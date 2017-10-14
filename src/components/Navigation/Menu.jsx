@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { menuBlock, opened, closed } from './menuBlock.scss';
 import { menuItem } from './menuItem.scss';
+import MenuItem from './MenuItem';
 
 export class MenuBlock extends React.Component {
 	constructor() {
@@ -35,6 +36,4 @@ export const Menu = (props) => (
 	<div>{props.children}</div>
 );
 
-export const MenuItem = (props) => (
-	<li className={menuItem}><Link to={props.to}>{props.children}</Link></li>
-);
+export {MenuItem};
