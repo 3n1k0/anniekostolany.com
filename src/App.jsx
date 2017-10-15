@@ -3,7 +3,7 @@ import { Router, Route, Link } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
 import ContactPage from './components/pages/ContactPage';
 import ThanksPage from './components/pages/ThanksPage';
-import Navigation from './components/Navigation';
+import Sidebar from './components/Sidebar';
 import createBrowserHistory from 'history/createBrowserHistory';
 import MyStoryPage from './components/pages/MyStoryPage';
 import RatesPage from './components/pages/RatesPage';
@@ -46,7 +46,7 @@ export default () => (
 			<Route exact path="/couple-shoots" component={CoupleShootsAlbumPage} />
 			<Route exact path="/children" component={ChildrenAlbumPage} />
 
-			<Navigation/>
+			<Sidebar/>
 		</div>
 	</Router>
 );

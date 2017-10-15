@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from './style.scss';
-import { Facebook, Instagram } from '../SocialIcons';
+import { Facebook, Instagram } from './SocialIcons';
 import MenuBlock from './MenuBlock';
 import MenuItem from './MenuItem';
-import Scroller from './Scroller';
+import SidebarScroller from './SidebarScroller';
 
 const MOBILE_BREAKPOINT = 500;
 
@@ -47,7 +47,7 @@ export default class Navigation extends React.Component {
 
 		return (
 			<div className={navigationClassName}>
-				<Scroller>
+				<SidebarScroller>
 					<h1>Annie Kostolany</h1>
 					<MenuBlock title="Info">
 						<MenuItem to="/my-story">My Sttory</MenuItem>
@@ -70,7 +70,7 @@ export default class Navigation extends React.Component {
 					</MenuBlock>
 					<MenuItem to="/contact">Contact</MenuItem>
 					<Facebook/><Instagram/>
-				</Scroller>
+				</SidebarScroller>
 			</div>
 		);
 	}

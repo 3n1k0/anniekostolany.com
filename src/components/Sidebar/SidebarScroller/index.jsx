@@ -1,5 +1,5 @@
 import React from 'react';
-import { scroller, alignBottom, scroll, alignTop } from './scroller.scss';
+import { scroller, alignBottom, scroll, alignTop } from './style.scss';
 
 export default class Scroller extends React.Component {
 
@@ -14,10 +14,12 @@ export default class Scroller extends React.Component {
 
 	componentDidMount() {
 		window.addEventListener('scroll', this.onScroll, {passive : true});
+		window.addEventListener('resize', this.onScroll);
 	}
 
 	componentWillUnmount() {
 		window.removeEventListener('scroll', this.onScroll);
+		window.removeEventListener('resize', this.onScroll);
 	}
 
 	onScroll() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { menuItem, active } from './menuItem.scss';
+import { menuItem, active } from './style.scss';
 
 class MenuItem extends React.Component {
 	constructor(props) {

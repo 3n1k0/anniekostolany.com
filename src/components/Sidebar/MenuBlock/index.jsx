@@ -1,8 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { menuBlock, opened, closed } from './menuBlock.scss';
-import { menuItem } from './menuItem.scss';
-import MenuItem from './MenuItem';
+import { menuBlock, opened, closed } from './style.scss';
+import MenuItem from '../MenuItem';
 
 class MenuBlock extends React.Component {
 	constructor(props) {
