@@ -50,11 +50,14 @@ export default class Navigation extends React.Component {
 				<SidebarScroller>
 					<h1>Annie Kostolany</h1>
 					<MenuBlock title="Info">
-						<MenuItem to="/my-story">My Sttory</MenuItem>
-						<MenuItem to="/rates">Rates</MenuItem>
+						<MenuItem to="/about-me">About me</MenuItem>
+						<MenuItem to="/blog">Blog</MenuItem>
+						<MenuItem to="/pricing">Pricing</MenuItem>
 					</MenuBlock>
 					<MenuBlock title="Couple shoots">
-						<MenuItem to="/couple-shoots">Germany</MenuItem>
+						<MenuItem to="/couple-miami">Miami</MenuItem>
+						<MenuItem to="/couple-hungary">Hungary</MenuItem>
+						<MenuItem to="/couple-germany">Germany</MenuItem>
 					</MenuBlock>
 					<MenuBlock title="Portraiture">
 						<MenuItem to="/tropical-vibes">Tropical vibes</MenuItem>
@@ -65,8 +68,9 @@ export default class Navigation extends React.Component {
 						<MenuItem to="/dreamy-beach">Dreamy beach photoshoot</MenuItem>
 					</MenuBlock>
 					<MenuBlock title="Families">
-						<MenuItem to="/events-and-lifestyle">Events & Lifestyle</MenuItem>
 						<MenuItem to="/children">Children</MenuItem>
+						<MenuItem to="/lifestyle">Lifestyle</MenuItem>
+						<MenuItem to="/events">Events</MenuItem>
 					</MenuBlock>
 					<MenuItem to="/contact">Contact</MenuItem>
 					<Facebook/><Instagram/>
