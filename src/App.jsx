@@ -1,22 +1,23 @@
 import React from 'react';
-import { Router, Route, Link } from 'react-router-dom';
-import HomePage from './components/pages/HomePage';
+import { Router, Route } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
+import Sidebar from './components/Sidebar';
+
 import ContactPage from './components/pages/ContactPage';
 import ThanksPage from './components/pages/ThanksPage';
-import Sidebar from './components/Sidebar';
-import createBrowserHistory from 'history/createBrowserHistory';
+import HomePage from './components/pages/HomePage';
 import MyStoryPage from './components/pages/MyStoryPage';
 import RatesPage from './components/pages/RatesPage';
 import EventsLifestylePage from './components/pages/EventsLifestylePage';
 
-import DreamyBeachAlbumPage from './components/pages/albums/DreamyBeach';
-import LostBrideAlbumPage from './components/pages/albums/LostBride';
-import RebellionAlbumPage from './components/pages/albums/Rebellion';
-import FashionConfessionAlbumPage from './components/pages/albums/FashionConfession';
-import ConfidenceIsKeyAlbumPage from './components/pages/albums/ConfidenceIsKey';
-import TropicalVibesAlbumPage from './components/pages/albums/TropicalVibes';
-import CoupleShootsAlbumPage from './components/pages/albums/CoupleShoots';
-import ChildrenAlbumPage from './components/pages/albums/Children';
+import DreamyBeachAlbumPage from './components/pages/DreamyBeach';
+import LostBrideAlbumPage from './components/pages/LostBride';
+import RebellionAlbumPage from './components/pages/Rebellion';
+import FashionConfessionAlbumPage from './components/pages/FashionConfession';
+import ConfidenceIsKeyAlbumPage from './components/pages/ConfidenceIsKey';
+import TropicalVibesAlbumPage from './components/pages/TropicalVibes';
+import CoupleShootsAlbumPage from './components/pages/CoupleShoots';
+import ChildrenAlbumPage from './components/pages/Children';
 
 import './style.scss';
 
