@@ -7,6 +7,7 @@ import MobileSidebar from './MobileSidebar';
 import Header from './Header';
 import MenuButton from './MenuButton';
 import { withRouter } from 'react-router-dom';
+import SocialIcons from './SocialIcons';
 
 class ApplicationShell extends React.Component {
 	constructor(props) {
@@ -51,6 +52,7 @@ class ApplicationShell extends React.Component {
 					</Header>
 					<MobileSidebar isOpen={this.state.isMenuOpen}>
 						<Menu />
+						<SocialIcons />
 					</MobileSidebar>
 				</SmallScreen>
 				<LargeScreen>
@@ -59,6 +61,7 @@ class ApplicationShell extends React.Component {
 						<DesktopSidebar>
 							<h1>Annie Kostolany</h1>
 							<Menu />
+							<SocialIcons />
 						</DesktopSidebar>
 					</div>
 				</LargeScreen>

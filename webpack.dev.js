@@ -1,5 +1,7 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = merge(common, {
 	entry : {
@@ -17,9 +19,9 @@ module.exports = merge(common, {
 		contentBase        : path.resolve(path.resolve(__dirname), 'out'),
 		publicPath         : '/'
 	},
-	plugins : {
+	plugins : [
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NamedModulesPlugin(),
 		new webpack.NoEmitOnErrorsPlugin()
-	}
+	]
 });

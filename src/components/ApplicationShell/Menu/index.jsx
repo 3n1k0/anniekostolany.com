@@ -1,7 +1,6 @@
 import React from 'react';
 import MenuBlock from './MenuBlock';
 import MenuItem from './MenuItem';
-import { Facebook, Instagram } from './SocialIcons';
 
 export default () => (
 	<div>
@@ -29,6 +28,5 @@ export default () => (
 			<MenuItem to="/events">Events</MenuItem>
 		</MenuBlock>
 		<MenuItem to="/contact">Contact</MenuItem>
-		<Facebook/><Instagram/>
 	</div>
 );
