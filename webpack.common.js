@@ -16,8 +16,8 @@ module.exports = {
 	},
 	output : {
 		path          : path.join(__dirname, './out/'),
-		filename      : '[name]-[hash].js',
-		chunkFilename : '[id]-[hash].bundle.js',
+		filename      : '[name]-[hash:6].js',
+		chunkFilename : '[id]-[hash:6].bundle.js',
 		publicPath    : '/'
 	},
 	devtool: 'source-map',
@@ -60,6 +60,6 @@ module.exports = {
 		new HtmlWebpackPlugin({filename : 'children.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'lifestyle.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'events.html', template : 'src/index.html'}),
-		new ExtractTextPlugin({filename  : 'index.css', allChunks : true})
+		new ExtractTextPlugin({filename  : 'bundle-[hash:6].css', allChunks : true})
 	]
 };
