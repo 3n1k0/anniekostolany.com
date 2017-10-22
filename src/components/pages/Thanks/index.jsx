@@ -1,12 +1,12 @@
 import React from 'react';
-import BasePage from '../BasePage';
+import TextPage from '../TextPage';
 import {thanksPage} from './style.scss';
 
 export default () => (
-	<BasePage>
+	<TextPage>
 		<div className={thanksPage}>
 			<h2>Thank you for your inquiry!</h2>
 			<p>Your message has been sent successfully.</p>
 		</div>
-	</BasePage>
+	</TextPage>
 );

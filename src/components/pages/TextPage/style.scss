@@ -3,5 +3,15 @@
 	font-family: Arial, sans-serif;
 	line-height: 1.5em;
 	margin: 0 auto;
-	width: 60%;
+	padding: 40px 0 0 0;
+	width: 50%;
+
+	@media (max-width: 500px) {
+		padding: 40px 20px 0 20px;
+		width: auto;
+	}
+
+	h2 {
+		font-weight: normal;
+	}
 }

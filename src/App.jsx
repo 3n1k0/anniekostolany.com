@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Route } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
-import Sidebar from './components/Sidebar';
+import ApplicationShell from './components/ApplicationShell';
 
 import ContactPage from './components/pages/Contact';
 import ThanksPage from './components/pages/Thanks';
@@ -35,7 +35,7 @@ history.listen((location, action) => {
 
 export default () => (
 	<Router history={history}>
-		<div>
+		<ApplicationShell>
 			<Route exact path="/" component={HomePage} />
 			<Route exact path="/contact" component={ContactPage} />
 			<Route exact path="/thanks" component={ThanksPage} />
@@ -59,8 +59,6 @@ export default () => (
 			<Route exact path="/children" component={ChildrenAlbumPage} />
 			<Route exact path="/lifestyle" component={LifestylePage} />
 			<Route exact path="/events" component={EventsPage} />
-
-			<Sidebar/>
-		</div>
+		</ApplicationShell>
 	</Router>
 );

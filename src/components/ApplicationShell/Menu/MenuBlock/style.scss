@@ -5,11 +5,12 @@
 		list-style-type: none;
 		display: block;
 		margin: 0;
-		padding: 0 0 0 5px;
+		padding: 0 0 0 10px;
 		width: 100%;
 		transition-property: max-height;
 		transition-duration: 1s;
 		overflow: hidden;
+		will-change: max-height;
 	}
 
 	a {
@@ -17,7 +18,6 @@
 		font-size: 16px;
 		color: #000000;
 		display: block;
-		//padding: 5px 0;
 		text-decoration: none;
 	}
 

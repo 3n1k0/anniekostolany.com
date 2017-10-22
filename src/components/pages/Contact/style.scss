@@ -1,10 +1,11 @@
 .contactPage {
 	margin: 0 auto;
-	width: 50%;
+	//width: 50%;
 
 	input, textarea {
 		background: #ffffff;
 		border: 1px solid #000000;
+		border-radius: 0;
 		color: #000000;
 		font-size: 16px;
 		margin: 10px 0;

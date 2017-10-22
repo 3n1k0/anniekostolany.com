@@ -1,5 +1,6 @@
 import React from 'react';
 import TextPage from './TextPage';
+import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<TextPage>
@@ -20,5 +21,7 @@ export default () => (
 		<p>Genres I enjoy the most are portrait and couple shoots, but I would love to challenge myself as an event photographer too.</p>
 
 		<p>If you have any questions please don’t hesitate to email me at info@anniekostolany.com or by filling out the contact form.</p>
+
+		<BookNowButton />
 	</TextPage>
 );

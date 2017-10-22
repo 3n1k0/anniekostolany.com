@@ -25,5 +25,7 @@ export default () => (
 		<p>If you have any more questions, feel free to email me at info@anniekostolany.com or by filling out the contact form.</p>
 
 		<p>Maximum delivery time takes up to 14 days. <br /> Event photography is excluded from promotion. All events are individually priced based on location, number of people and length of the period you need me to be there.</p>
+
+		<BookNowButton />
 	</TextPage>
 );

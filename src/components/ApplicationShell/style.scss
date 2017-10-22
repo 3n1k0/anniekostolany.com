@@ -1,12 +1,4 @@
-.hamburgerButton {
-	display: block;
-	left: 20px;
-	position: fixed;
-	top: 20px;
-}
-
 .navigation {
-	//background: rgba(#ffffff, 0.8);
 	bottom: 0;
 	left: 0;
 	padding: 0 20px;
@@ -28,10 +20,10 @@
 	}
 }
 
-.opened {
-	display: block;
+.pages {
+	will-change: filter;
 }
 
-.closed {
-	display: none;
+.blur {
+	filter: blur(25px);
 }
