@@ -1,5 +1,22 @@
 .scroller {
-	width: 200px;
+	width: 25%;
+
+	h1 {
+		color: #000000;
+		display: block;
+		font-family: Cardo, serif;
+		font-size: 36px;
+		font-weight: lighter;
+		margin: 0;
+		padding: 40px 0;
+		width: 200px;
+		z-index: -1
+	}
+}
+
+.inside {
+	padding: 0 20px;
+	width: auto;
 }
 
 .alignBottom {

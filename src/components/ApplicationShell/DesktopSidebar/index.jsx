@@ -1,5 +1,5 @@
 import React from 'react';
-import { scroller, alignBottom, scroll, alignTop } from './style.scss';
+import { inside, scroller, alignBottom, scroll, alignTop } from './style.scss';
 
 export default class Scroller extends React.Component {
 
@@ -74,9 +74,10 @@ export default class Scroller extends React.Component {
 			<div
 				className={scroller + ' ' + this.state.alignClass}
 				ref={(container) => { this.container = container; }}
-				style={{top: this.state.offsetTop}}
-			>
-				{this.props.children}
+				style={{top: this.state.offsetTop}}>
+				<div className={inside}>
+					{this.props.children}
+				</div>
 			</div>
 		);
 	}

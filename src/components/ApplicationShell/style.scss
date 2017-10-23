@@ -1,27 +1,21 @@
-.navigation {
-	bottom: 0;
-	left: 0;
-	padding: 0 20px;
-	position: absolute;
-	right: auto;
-	top: 0;
-	width: 200px;
-
-	h1 {
-		color: #000000;
-		display: block;
-		font-family: Cardo, serif;
-		font-size: 36px;
-		font-weight: lighter;
-		margin: 0;
-		padding: 40px 0;
-		width: 100%;
-		z-index: -1
-	}
-}
-
 .pages {
 	will-change: filter;
+	width: 75%;
+	position: absolute;
+	right: 0;
+
+	@media (max-width: 768px) {
+		margin: 0 auto;
+		position: relative;
+		right: auto;
+	}
+
+	@media (max-width: 414px) {
+		margin: 0 auto;
+		position: relative;
+		right: auto;
+		width: 100%;
+	}
 }
 
 .blur {
