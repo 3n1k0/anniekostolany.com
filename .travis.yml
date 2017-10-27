@@ -12,5 +12,4 @@ deploy:
   provider: script
   script: ./deploy.sh production
   on:
-    tags: true
     all_branches: true
