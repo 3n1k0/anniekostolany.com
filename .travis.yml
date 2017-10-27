@@ -1,5 +1,16 @@
 language: node_js
+node_js:
+  - "6"
 install:
   - npm install
 script:
   - npm run build
+cache:
+  directories:
+    - "node_modules"
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: ./deploy.sh production
+  on:
+    all_branches: true
