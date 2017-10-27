@@ -1,6 +1,6 @@
 #!/bin/sh
-cd out
-for f in ./*
+
+for f in ./out/*
 do
-  curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS ftp://anniekostolany.com/public_html/$f
+  curl -T $f -u $FTP_USER:$FTP_PASS ftp://anniekostolany.com/public_html/$(basename "$f")
 done
