@@ -10,6 +10,7 @@ cache:
     - "node_modules"
 deploy:
   provider: script
+  skip_cleanup: true
   script: ./deploy.sh production
   on:
     all_branches: true
