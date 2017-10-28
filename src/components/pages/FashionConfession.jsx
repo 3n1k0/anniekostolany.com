@@ -3,7 +3,7 @@ import { AlbumPage, Photo } from './AlbumPage';
 
 export default () => (
 	<AlbumPage>
-		Photo file="fashion_confession/annasand.jpg"/>
+		<Photo file="fashion_confession/annasand.jpg"/>
 		<Photo file="fashion_confession/annasand1.jpg"/>
 		<Photo file="fashion_confession/oszlopok.jpg"/>
 		<Photo file="fashion_confession/lepcso.jpg"/>
