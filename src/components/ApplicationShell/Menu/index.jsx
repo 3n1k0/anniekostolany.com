@@ -16,12 +16,12 @@ export default () => (
 		</MenuBlock>
 		<MenuBlock title="Portraiture">
 			<MenuItem to="/streetstyle">#streetstyle</MenuItem>
-			<MenuItem to="/tropical-vibes">Tropical vibes 🌴</MenuItem>
-			<MenuItem to="/confidence-is-key">Confidence is key</MenuItem>
 			<MenuItem to="/fashion-confession">Fashion Confession</MenuItem>
+			<MenuItem to="/confidence-is-key">Confidence is key</MenuItem>
 			<MenuItem to="/rebellion">Rebellion</MenuItem>
-			<MenuItem to="/lost-bride">The Lost Bride</MenuItem>
+			<MenuItem to="/tropical-vibes">Tropical vibes 🌴</MenuItem>
 			<MenuItem to="/dreamy-beach">Dreamy beach photoshoot</MenuItem>
+			<MenuItem to="/lost-bride">The Lost Bride</MenuItem>
 		</MenuBlock>
 		<MenuBlock title="Families">
 			<MenuItem to="/children">Children</MenuItem>
