@@ -1,5 +1,5 @@
 .scroller {
-	width: 25%;
+	width: 15%;
 
 	h1 {
 		color: #000000;
@@ -11,6 +11,10 @@
 		padding: 40px 0;
 		width: 200px;
 		z-index: -1
+	}
+
+	@media (max-width: 1200px) {
+		width: 20%;
 	}
 }
 

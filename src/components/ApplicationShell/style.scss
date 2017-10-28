@@ -1,6 +1,7 @@
 .pages {
 	will-change: filter;
-	width: 75%;
+	width: 70%;
+	padding-right: 15%;
 	position: absolute;
 	right: 0;
 
@@ -15,6 +16,11 @@
 		position: relative;
 		right: auto;
 		width: 100%;
+	}
+
+	@media (max-width: 1200px) {
+		padding-right: 0;
+		width: 80%;
 	}
 }
 
