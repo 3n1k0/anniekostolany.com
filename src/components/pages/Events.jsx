@@ -11,10 +11,12 @@ export default () => (
 
 		<p>These photos will also come in handy if you have loved-ones who cannot make it to the event and you don’t want them to feel to be left out.</p>
 		
-		<p>Session fee for events: 120 Eur (btw not included)</p>
+		<p>Session fee for events: 120 Eur/hour*</p>
 
 		<p><a href="/contat">Send me an email</a> and we can set up a Skype call or meet for a coffee to discuss all the details.</p>
 		
+		<p>*Btw and travel cost in price is not included.</p>
+
 
 		<BookNowButton />
 	</TextPage>
