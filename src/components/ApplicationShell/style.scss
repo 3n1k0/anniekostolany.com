@@ -5,6 +5,11 @@
 	position: absolute;
 	right: 0;
 
+	@media (max-width: 1200px) {
+		padding-right: 0;
+		width: 80%;
+	}
+
 	@media (max-width: 768px) {
 		margin: 0 auto;
 		position: relative;
@@ -16,11 +21,6 @@
 		position: relative;
 		right: auto;
 		width: 100%;
-	}
-
-	@media (max-width: 1200px) {
-		padding-right: 0;
-		width: 80%;
 	}
 }
 
