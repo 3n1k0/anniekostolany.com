@@ -15,12 +15,12 @@ export default () => (
 <p>A session includes:</p>
 
 <ul>
-<li>90 minutes shooting</li>
+<li>60 minutes shooting</li>
 <li>25 edited, high resolution images of your choice</li>
 <li>Access to password-protected online gallery</li>
 </ul>
 		
-
+Every extra 30 minutes - 50 Eur. 
 
 <p>Workflow</p>
 <p>First of all, contact me with your idea. We will discuss the location, the clothes I recommend, the makeup and the possible props.
