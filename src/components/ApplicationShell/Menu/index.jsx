@@ -13,7 +13,6 @@ export default () => (
 			{/*<MenuItem to="/couple-miami">Miami</MenuItem>*/}
 			<MenuItem to="/couple-germany">Germany</MenuItem>
 			<MenuItem to="/couple-hungary">Hungary</MenuItem>
-			
 		</MenuBlock>
 		<MenuBlock title="Portraiture">
 			<MenuItem to="/streetstyle">#streetstyle</MenuItem>
