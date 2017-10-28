@@ -15,7 +15,7 @@ export default () => (
 
 		<p><a href="/contat">Send me an email</a> and we can set up a Skype call or meet for a coffee to discuss all the details.</p>
 		
-		<p>*Btw and travel cost not included.</p>
+		<p>*Tax and travel costs not included.</p>
 
 
 		<BookNowButton />
