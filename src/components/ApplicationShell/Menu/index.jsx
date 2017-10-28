@@ -4,7 +4,7 @@ import MenuItem from './MenuItem';
 
 export default () => (
 	<div>
-		<MenuBlock title="Info">
+		<MenuBlock title="info">
 			<MenuItem to="/about-me">about me</MenuItem>
 			{/*<MenuItem to="/blog">Blog</MenuItem>*/}
 			<MenuItem to="/pricing">pricing</MenuItem>
