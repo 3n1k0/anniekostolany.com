@@ -30,8 +30,7 @@ It's ok if you haven't figured out everything yet, I can help you with the plann
 <p>It's really quick and easy.</p>
 <p>If you have any more questions, feel free to email me at info@anniekostolany.com or by filling out the contact form.</p>
 
-<p>Please keep in mind, that delivery time can take up to 14 days. </p>
-In case of urgent enquires please contact me for express rates.</p>
+<p>Please keep in mind, that delivery time can take up to 14 days. In case of urgent enquires please contact me for express rates. </p>
 
 	<p>Event photography is excluded from promotion. All events are individually priced based on location, number of people and length of the period you need me to be there.</p>
 <p>50% discount is only valid for bookings made until 17. 11.</p>
