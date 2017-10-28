@@ -15,6 +15,7 @@ export default () => (
 			<MenuItem to="/couple-germany">Germany</MenuItem>
 		</MenuBlock>
 		<MenuBlock title="Portraiture">
+			<MenuItem to="/streetstyle">#streetstyle</MenuItem>
 			<MenuItem to="/tropical-vibes">Tropical vibes 🌴</MenuItem>
 			<MenuItem to="/confidence-is-key">Confidence is key</MenuItem>
 			<MenuItem to="/fashion-confession">Fashion Confession</MenuItem>
