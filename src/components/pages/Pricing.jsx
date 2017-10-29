@@ -25,7 +25,7 @@ Every extra 30 minutes - 50 Eur.
 
 <h4>Mini session: 70 Eur</h4>
 		
-<p>Perfect for bloggers, vloggers, photographers and anyone who need to update their profile photo or 'about me' picture.</p>
+<p>Perfect for bloggers, vloggers, photographers and anyone who needs to update their profile photo or 'about me' picture.</p>
 
 <ul>
 <li>30 minutes of shooting</li>
