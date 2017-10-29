@@ -33,8 +33,9 @@ Every extra 30 minutes - 50 Eur.
 <li>Access to a password-protected online gallery</li>
 </ul>
 
-*Tax and travel cost not included in price.
+*Prices exclude travel costs and tax.
 
+		
 <h3>Workflow</h3>
 <p>After you contact me with your idea, we will discuss the location, the clothes I recommend, the makeup and the possible props.
 It's ok if you haven't figured out everything yet, I can help you with the planning.</p>
