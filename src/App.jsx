@@ -15,6 +15,7 @@ import RebellionAlbumPage from './components/pages/Rebellion';
 import FashionConfessionAlbumPage from './components/pages/FashionConfession';
 import ConfidenceIsKeyAlbumPage from './components/pages/ConfidenceIsKey';
 import TropicalVibesAlbumPage from './components/pages/TropicalVibes';
+import StreetStyleAlbumPage from './components/pages/StreetStyle';
 
 import CoupleGermanyAlbumPage from './components/pages/CoupleGermany';
 import CoupleHungaryAlbumPage from './components/pages/CoupleHungary';
@@ -43,6 +44,7 @@ export default () => (
 			<Route exact path="/pricing" component={PricingPage} />
 
 			{/* Portraiture */}
+			<Route exact path="/streetstyle" component={StreetStyleAlbumPage} />
 			<Route exact path="/dreamy-beach" component={DreamyBeachAlbumPage} />
 			<Route exact path="/lost-bride" component={LostBrideAlbumPage} />
 			<Route exact path="/rebellion" component={RebellionAlbumPage} />

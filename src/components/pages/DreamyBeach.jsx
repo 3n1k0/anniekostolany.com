@@ -12,6 +12,7 @@ export default () => (
 		<Photo file="dreamy_beach/23539526988_24cbf3c0c5_k.jpg"/>
 		<Photo file="dreamy_beach/37391794761_789acb98cf_k.jpg"/>
 		<Photo file="dreamy_beach/37361195732_b5815be886_k.jpg"/>
+		<Photo file="dreamy_beach/st.jpg"/>
 		<Photo file="dreamy_beach/37391781721_de9fa7bc64_k.jpg"/>
 	</AlbumPage>
 );

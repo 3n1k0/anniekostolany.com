@@ -4,29 +4,30 @@ import MenuItem from './MenuItem';
 
 export default () => (
 	<div>
-		<MenuBlock title="Info">
-			<MenuItem to="/about-me">About me</MenuItem>
+		<MenuBlock title="info">
+			<MenuItem to="/about-me">about me</MenuItem>
 			{/*<MenuItem to="/blog">Blog</MenuItem>*/}
-			<MenuItem to="/pricing">Pricing</MenuItem>
+			<MenuItem to="/pricing">pricing</MenuItem>
 		</MenuBlock>
-		<MenuBlock title="Couple shoots">
+		<MenuBlock title="couple shoots">
 			{/*<MenuItem to="/couple-miami">Miami</MenuItem>*/}
-			{/*<MenuItem to="/couple-hungary">Hungary</MenuItem>*/}
-			<MenuItem to="/couple-germany">Germany</MenuItem>
+			<MenuItem to="/couple-germany">germany</MenuItem>
+			<MenuItem to="/couple-hungary">hungary</MenuItem>
 		</MenuBlock>
-		<MenuBlock title="Portraiture">
-			<MenuItem to="/tropical-vibes">Tropical vibes 🌴</MenuItem>
-			<MenuItem to="/confidence-is-key">Confidence is key</MenuItem>
-			<MenuItem to="/fashion-confession">Fashion Confession</MenuItem>
-			<MenuItem to="/rebellion">Rebellion</MenuItem>
-			<MenuItem to="/lost-bride">The Lost Bride</MenuItem>
-			<MenuItem to="/dreamy-beach">Dreamy beach photoshoot</MenuItem>
+		<MenuBlock title="portraiture">
+			<MenuItem to="/streetstyle">#streetstyle</MenuItem>
+			<MenuItem to="/fashion-confession">fashion confession</MenuItem>
+			<MenuItem to="/confidence-is-key">confidence is key</MenuItem>
+			<MenuItem to="/rebellion">rebellion</MenuItem>
+			<MenuItem to="/tropical-vibes">tropical vibes 🌴</MenuItem>
+			<MenuItem to="/dreamy-beach">dreamy beach photoshoot</MenuItem>
+			<MenuItem to="/lost-bride">the lost bride</MenuItem>
 		</MenuBlock>
-		<MenuBlock title="Families">
-			<MenuItem to="/children">Children</MenuItem>
-			<MenuItem to="/lifestyle">Lifestyle</MenuItem>
-			<MenuItem to="/events">Events</MenuItem>
+		<MenuBlock title="families">
+			<MenuItem to="/children">children</MenuItem>
+			<MenuItem to="/lifestyle">lifestyle</MenuItem>
+			<MenuItem to="/events">events</MenuItem>
 		</MenuBlock>
-		<MenuItem to="/contact">Contact</MenuItem>
+		<MenuItem to="/contact">contact</MenuItem>
 	</div>
 );

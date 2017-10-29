@@ -54,6 +54,7 @@ module.exports = {
 		new HtmlWebpackPlugin({filename : 'fashion-confession.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'confidence-is-key.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'tropical-vibes.html', template : 'src/index.html'}),
+		new HtmlWebpackPlugin({filename : 'streetstyle.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'couple-germany.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'couple-hungary.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'couple-miami.html', template : 'src/index.html'}),
