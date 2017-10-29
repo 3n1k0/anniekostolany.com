@@ -21,6 +21,18 @@ export default () => (
 </ul>
 		
 Every extra 30 minutes - 50 Eur. 
+		
+
+<p>Mini session: 70 Eur</p>
+		
+<p>Perfect for bloggers, vloggers, photographers and anyone who need to update their profile photo or 'about me' picture.</p>
+
+<ul>
+<li>30 minutes of shooting</li>
+<li>10 edited, high resolution images of your choice</li>
+<li>Access to a password-protected online gallery</li>
+</ul>
+
 
 <h3>Workflow</h3>
 <p>After you contact me with your idea, we will discuss the location, the clothes I recommend, the makeup and the possible props.
