@@ -32,6 +32,7 @@ const history = createBrowserHistory();
 history.listen((location, action) => {
 	window.scrollTo(0, 0);
 	ga('send', 'pageview', location.pathname);
+	fbq('track', 'ViewContent');
 });
 
 export default () => (
