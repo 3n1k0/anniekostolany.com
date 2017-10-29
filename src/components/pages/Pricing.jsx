@@ -7,7 +7,7 @@ export default () => (
 		
 <h2>Rates</h2>
 
-<p>All portrait sessions booked until 17th November (couple, family and baby) are discounted by 50%.</p>
+<p>All portrait sessions booked until 17th November (couple, family and baby) are discounted by 50% from the prices below.</p>
 
 
 <h4>Portrait sessions: 180 Eur</h4>
