@@ -10,7 +10,7 @@ export default () => (
 <p>All portrait sessions booked until 17th November (couple, family and baby) are discounted by 50%.</p>
 
 
-<p>Portrait sessions: 180 Eur</p>
+<h4>Portrait sessions: 180 Eur</h4>
 		
 <p>A session includes:</p>
 
@@ -23,7 +23,7 @@ export default () => (
 Every extra 30 minutes - 50 Eur. 
 		
 
-<p>Mini session: 70 Eur</p>
+<h4>Mini session: 70 Eur</h4>
 		
 <p>Perfect for bloggers, vloggers, photographers and anyone who need to update their profile photo or 'about me' picture.</p>
 
