@@ -1,17 +1,17 @@
 import React from 'react';
-import TextPage from './TextPage';
+import Page from './Page';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
-	<TextPage>
-		
+	<Page>
+
 <h2>Rates</h2>
 
 <p>All portrait sessions booked until 17th November (couple, family and baby) are discounted by 50% from the prices below.</p>
 
 
 <h4>Portrait sessions: 180 Eur</h4>
-		
+
 <p>A session includes:</p>
 
 <ul>
@@ -19,12 +19,12 @@ export default () => (
 <li>30 edited, high resolution images of your choice</li>
 <li>Access to a password-protected online gallery</li>
 </ul>
-		
-Every extra 30 minutes - 50 Eur. 
-		
+
+Every extra 30 minutes - 50 Eur.
+
 
 <h4>Mini session: 70 Eur</h4>
-		
+
 <p>Perfect for bloggers, vloggers, photographers and anyone who needs to update their profile photo or 'about me' picture.</p>
 
 <ul>
@@ -35,7 +35,7 @@ Every extra 30 minutes - 50 Eur.
 
 *Prices exclude travel costs and tax.
 
-		
+
 <h3>Workflow</h3>
 <p>After you contact me with your idea, we will discuss the location, the clothes I recommend, the makeup and the possible props.
 It's ok if you haven't figured out everything yet, I can help you with the planning.</p>
@@ -49,5 +49,5 @@ It's ok if you haven't figured out everything yet, I can help you with the plann
 	<p>Event photography is excluded from promotion. All events are individually priced based on location, number of people and length of the period you need me to be there.</p>
 <p>50% discount is only valid for bookings made until 17. 11.</p>
 		<BookNowButton />
-	</TextPage>
+	</Page>
 );

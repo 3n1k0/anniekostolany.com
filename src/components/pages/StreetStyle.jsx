@@ -1,5 +1,6 @@
 import React from 'react';
-import { AlbumPage, Photo } from './AlbumPage';
+import { Page, Photo } from './Page';
+import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<AlbumPage>
@@ -23,7 +24,6 @@ export default () => (
 		<Photo file="streetsyle/flare2.jpg"/>
 		<Photo file="streetsyle/flare3.jpg"/>
 		<Photo file="streetsyle/flare4.jpg"/>
-	
-		
+		<BookNowButton />
 	</AlbumPage>
 );

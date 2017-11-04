@@ -1,10 +1,10 @@
 import React from 'react';
-import TextPage from './TextPage';
+import { Page } from './Page';
 import { Link } from 'react-router-dom';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
-	<TextPage>
+	<Page>
 		<h2>Lifestyle</h2>
 
 		<p>Check out <Link to="/pricing">my rates</Link> to see the amazing deal I figured out for you to make this fall really special!</p>
@@ -14,5 +14,5 @@ export default () => (
 		<br/>You will have nothing to do, except having fun with the people you love. This way I can promise that your photos will turn out to be really candid and natural.</p>
 
 		<BookNowButton />
-	</TextPage>
+	</Page>
 );

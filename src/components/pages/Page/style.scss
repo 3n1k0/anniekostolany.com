@@ -1,4 +1,7 @@
-.photosPage {
+.page {
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	line-height: 1.5em;
 	padding: 40px 40px 0 40px;
 	width: auto;
 
@@ -14,5 +17,9 @@
 		@media (max-width: 500px) {
 			padding-bottom: 0;
 		}
+	}
+
+	h2 {
+		font-weight: normal;
 	}
 }
