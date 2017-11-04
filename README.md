@@ -2,4 +2,4 @@
 
 # Annie Kostolany Photography
 
-Website link: [http://anniekostolany.com](http://anniekostolany.com)
+Website link: [https://anniekostolany.com](https://anniekostolany.com)
