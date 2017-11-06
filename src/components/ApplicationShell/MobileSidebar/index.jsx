@@ -1,5 +1,5 @@
 import React from 'react';
-import { open, closed, container } from './style.scss';
+import { open, closed } from './style.scss';
 
 export default class HideableSidebar extends React.Component {
 	constructor(props) {

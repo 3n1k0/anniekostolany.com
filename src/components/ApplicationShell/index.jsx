@@ -33,7 +33,7 @@ class ApplicationShell extends React.Component {
 	}
 
 	closeMenu() {
-		this.setState(prevState => ({
+		this.setState(() => ({
 			isMenuOpen : false
 		}));
 	}
@@ -66,6 +66,6 @@ class ApplicationShell extends React.Component {
 			</div>
 		);
 	}
-};
+}
 
 export default withRouter(ApplicationShell);

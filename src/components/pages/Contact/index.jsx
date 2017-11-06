@@ -1,9 +1,9 @@
 import React from 'react';
-import TextPage from '../TextPage';
+import { Page } from '../Page';
 import {contactPage} from './style.scss';
 
 export default () => (
-	<TextPage>
+	<Page>
 		<div className={contactPage}>
 			<form action="https://formspree.io/eniko.kosztolanyi@gmail.com" method="POST">
 				<input type="hidden" name="_next" value="//anniekostolany.com/thanks" />
@@ -17,7 +17,7 @@ export default () => (
 				<label htmlFor="message">Message:</label>
 				<textarea name="message"></textarea>
 				<input type="submit" value="Send" />
-				</form>
+			</form>
 		</div>
-	</TextPage>
+	</Page>
 );

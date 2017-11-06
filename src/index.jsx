@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader'
+import { AppContainer } from 'react-hot-loader';
 import App from './App.jsx';
 
 const render = Component => {
@@ -17,6 +17,6 @@ render(App);
 if (module.hot) {
 	module.hot.accept('./App.jsx', () => {
 		const NextApp = require('./App.jsx').default;
-		render(NextApp)
+		render(NextApp);
 	});
 }
