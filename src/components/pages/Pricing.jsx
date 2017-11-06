@@ -7,47 +7,58 @@ export default () => (
 
 <h2>Rates</h2>
 
-<p>All portrait sessions booked until 17th November (couple, family and baby) are discounted by 50% from the prices below.</p>
+<p>All portrait sessions booked until 30th November (excl. mini sessions) are discounted by 50% from the prices below.</p>
 
 
-<h4>Portrait sessions: 180 Eur</h4>
-
-<p>A session includes:</p>
+<h4>Love / pre-wedding shoot: 180 Eur</h4>
 
 <ul>
-<li>90 minutes of shooting</li>
-<li>30 edited, high resolution images of your choice</li>
-<li>Access to a password-protected online gallery</li>
+<li>Perfect for celebrating your engagement, your friendship</li>
+<li>Or just because</li> 
+<li>Best to do it on-location</li>
+<li>90 minutes, 30 beautifully edited photos</li> 
+<li>Including 5 classic and elegant black and white</li> 
+<li>You receive 1 photo on the same day that you can post instantly to social media</li>
+<li>All photos will be delivered to your own password-protected online gallery</li>
+
 </ul>
 
-Every extra 30 minutes - 50 Eur.
 
-
-<h4>Mini session: 70 Eur</h4>
-
-<p>Perfect for bloggers, vloggers, photographers and anyone who needs to update their profile photo or 'about me' picture.</p>
+<h4>Family portrait session: 180eur</h4>
 
 <ul>
-<li>30 minutes of shooting</li>
-<li>10 edited, high resolution images of your choice</li>
-<li>Access to a password-protected online gallery</li>
+<li>Perfect for any family occasions, or for a relaxed Sunday afternoon</li> 
+<li>Can be done on-location and in your own home (wherever you think it suits you better)</li> 
+<li>I spend 1,5 hours with your family and will capture your best moments</li> 
+<li>You receive 30 beautifully edited photos including 1 same-day photo</li> 
+<li>All photos will be delivered to your own password-protected online gallery</li> 
 </ul>
 
-*Prices exclude travel costs and tax.
+		
+<h4>Children Mini Holiday Special: 80eur</h4>	
+<ul>		
+<li>Great as Christmas card for grandmas, grandpas, and any family members or friends</li> 
+<li>Christmas-styled (fairy lights, cute decoration)</li> 
+<li>In my home-studio in Haarlem, really close to the train station</li> 
+<li>30 minutes, real quick </li> 
+<li>10 edited images</li> 
+</ul>
+		
+		
+<h4>Mini session for everybody: 80eur</h4>	
+<ul>	
+<li>Perfect for bloggers, vloggers, photographers and for anyone who needs to refresh their profile photo or 'about me' information</li> 
+<li>Best to be done on-location</li> 
+<li>30 minutes </li> 
+<li>10 perfectly edited photos </li> 
+</ul>
+		
+		
+		
+<p>Delivery time can take up to 7 days.</p>
 
-
-<h3>Workflow</h3>
-<p>After you contact me with your idea, we will discuss the location, the clothes I recommend, the makeup and the possible props.
-It's ok if you haven't figured out everything yet, I can help you with the planning.</p>
-<p>The photoshoot will take 1-1,5 hour and we will be having a lot of fun!</p>
-<p>In 3-4 days I will send you a selection of preview images (not the full resolution yet). From these, you will be able to pick 25 of your favourite photos, which I`ll edit to perfection in my signature style.</p>
-<p>It's really quick and easy.</p>
-<p>If you have any more questions, feel free to email me at info@anniekostolany.com or by filling out the contact form.</p>
-
-<p>Please keep in mind, that delivery time can take up to 14 days. In case of urgent enquires please contact me for express rates. </p>
-
-	<p>Event photography is excluded from promotion. All events are individually priced based on location, number of people and length of the period you need me to be there.</p>
-<p>50% discount is only valid for bookings made until 17. 11.</p>
+	
+<p>50% discount is only valid for bookings made until 30. 11. 2017.</p>
 		<BookNowButton />
 	</Page>
 );
