@@ -1,12 +1,13 @@
 import React from 'react';
 import { Page } from './Page';
 import BookNowButton from '../BookNowButton';
+import RatesDownloadLink from '../RatesDownloadLink';
 
 export default () => (
 	<Page>
 		<h2>Rates</h2>
 		<p>All portrait sessions booked until 30th November (couple, family and baby) are discounted by 50%!</p>
-		<p>For more information and detailed prices please see the following document:</p>
+		<p>For more information and detailed prices please see the following document: <RatesDownloadLink>anniekostolany_rates2017.pdf</RatesDownloadLink></p>
 
 		<h3>Workflow</h3>
 		<p>After you contact me with your idea, we will discuss the location, the clothes I would recommend, the makeup and the possible props, so everything about the styling.</p>
