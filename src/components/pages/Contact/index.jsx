@@ -17,7 +17,7 @@ export default () => (
 				<label htmlFor="message">Message:</label>
 				<textarea name="message"></textarea>
 				<input type="submit" value="Send" />
-				</form>
+			</form>
 		</div>
 	</TextPage>
 );

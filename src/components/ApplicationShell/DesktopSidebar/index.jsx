@@ -32,7 +32,7 @@ export default class Scroller extends React.Component {
 			!this.fitsInTheWindow()
 		) {
 			this.offsetTop = window.scrollY - (this.container.clientHeight - window.innerHeight);
-			this.setState(prevState => ({
+			this.setState(() => ({
 				alignClass : alignBottom,
 				offsetTop  : 'auto'
 			}));
@@ -41,7 +41,7 @@ export default class Scroller extends React.Component {
 			this.isTopReached() && direction === 'up'
 		) {
 			this.offsetTop = window.scrollY;
-			this.setState(prevState => ({
+			this.setState(() => ({
 				alignClass : alignTop,
 				offsetTop  : 'auto'
 			}));
@@ -49,7 +49,7 @@ export default class Scroller extends React.Component {
 		else if (
 			!this.fitsInTheWindow()
 		) {
-			this.setState(prevState => ({
+			this.setState(() => ({
 				alignClass : scroll,
 				offsetTop  : this.offsetTop
 			}));
