@@ -25,14 +25,12 @@ import LifestylePage from './components/pages/Lifestyle';
 import ChildrenAlbumPage from './components/pages/Children';
 import EventsPage from './components/pages/Events';
 
-import './style.scss';
-
 const history = createBrowserHistory();
 
-history.listen((location, action) => {
+history.listen((location) => {
 	window.scrollTo(0, 0);
-	ga('send', 'pageview', location.pathname);
-	fbq('track', 'ViewContent');
+	window.ga('send', 'pageview', location.pathname);
+	window.fbq('track', 'ViewContent');
 });
 
 export default () => (

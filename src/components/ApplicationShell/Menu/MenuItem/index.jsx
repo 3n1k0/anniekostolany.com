@@ -20,7 +20,7 @@ class MenuItem extends React.Component {
 
 	onHistory(location) {
 		if (location.pathname === this.props.to) {
-			this.setState(prevState => {
+			this.setState(() => {
 				return {active : true};
 			});
 		}
@@ -29,7 +29,7 @@ class MenuItem extends React.Component {
 			this.state.active &&
 			location.pathname !== this.props.to
 		) {
-			this.setState(prevState => {
+			this.setState(() => {
 				return {active : false};
 			});
 		}
@@ -40,8 +40,8 @@ class MenuItem extends React.Component {
 			<li className={menuItem}>
 				<Link className={this.state.active ? active : ''} to={this.props.to}>{this.props.children}</Link>
 			</li>
-		)
+		);
 	}
-};
+}
 
 export default withRouter(MenuItem);
