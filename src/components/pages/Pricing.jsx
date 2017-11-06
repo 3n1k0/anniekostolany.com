@@ -24,7 +24,7 @@ export default () => (
 </ul>
 
 
-<h4>Family portrait session: 180eur</h4>
+<h4>Family portrait session: 180 Eur</h4>
 
 <ul>
 <li>Perfect for any family occasions, or for a relaxed Sunday afternoon</li> 
@@ -35,7 +35,7 @@ export default () => (
 </ul>
 
 		
-<h4>Children Mini Holiday Special: 80eur</h4>	
+<h4>Children Mini Holiday Special: 80 Eur</h4>	
 <ul>		
 <li>Great as Christmas card for grandmas, grandpas, and any family members or friends</li> 
 <li>Christmas-styled (fairy lights, cute decoration)</li> 
@@ -45,7 +45,7 @@ export default () => (
 </ul>
 		
 		
-<h4>Mini session for everybody: 80eur</h4>	
+<h4>Mini session for everybody: 80 Eur</h4>	
 <ul>	
 <li>Perfect for bloggers, vloggers, photographers and for anyone who needs to refresh their profile photo or 'about me' information</li> 
 <li>Best to be done on-location</li> 
