@@ -20,7 +20,6 @@ module.exports = {
 		chunkFilename : '[id]-[hash:6].bundle.js',
 		publicPath    : '/'
 	},
-	devtool: 'source-map',
 	module  : {
 		rules : [
 			{
@@ -28,7 +27,7 @@ module.exports = {
 				exclude : /(node_modules)/,
 				loader  : 'babel-loader',
 				options : {
-					"presets" : ["es2015", "react"]
+					"presets" : ["env", "react"]
 				}
 			},
 			{
