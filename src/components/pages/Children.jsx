@@ -4,7 +4,6 @@ import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<Page>
-
 		<Photo file="children/kiskutyas.jpg" alt="Boy smiling with stuffed dog"/>
 		<Photo file="children/35804680386_91d0cde856_k.jpg" alt="Little girl sitting in wash-basin"/>
 		<Photo file="children/zoe.jpg" alt="Little girl splashing water in wash-basin"/>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { menuBlock, opened, closed } from './style.scss';
-import MenuItem from '../MenuItem';
 
 class MenuBlock extends React.Component {
 	constructor(props) {
@@ -59,6 +58,6 @@ class MenuBlock extends React.Component {
 			</div>
 		);
 	}
-};
+}
 
 export default withRouter(MenuBlock);
