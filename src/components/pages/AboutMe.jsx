@@ -6,6 +6,8 @@ export default () => (
 	<Page>
 		<h2>About me</h2>
 
+		<Photo file="aboutme/anniekostolany.jpg" alt="Annie Kostolany Photographer"/>
+		
 		<p>Hello!</p>
 		<p>My name is Annie, I am a Hungarian girl living in Haarlem, Netherlands. I take photos and and I'm in love with it.</p>
 		<p>I studied literature, which taught me to express my thoughts but I have always been struggled with expressing my feelings. I tried different forms of writing but I always felt somehow limited. It was not the language, it was me. I simply needed something else.</p>
