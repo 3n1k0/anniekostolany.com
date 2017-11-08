@@ -4,7 +4,7 @@
 
 # Annie Kostolany Photography
 
-Website link: [http://anniekostolany.com](http://anniekostolany.com)
+Website link: [https://anniekostolany.com](https://anniekostolany.com)
 
 [travis-svg]: https://travis-ci.org/andormade/anniekostolany.com.svg?branch=master
 [travis-url]: https://travis-ci.org/andormade/anniekostolany.com
