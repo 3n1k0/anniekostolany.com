@@ -5,8 +5,17 @@ import RatesDownloadLink from '../RatesDownloadLink';
 
 export default () => (
 	<Page>
-		<h2>Rates</h2>
-		<p>All portrait sessions booked until 30th November (couple, family and baby) are discounted by 50%!</p>
+		<h3>Rates</h3>
+		
+		<h2>Children Holiday Minis for only 80 Eur!</h2>
+		<p>
+			<ul>
+			<li>Great as Christmas card for grandmas, grandpas, and for any family member or friend</li>
+			<li>Christmas-styled (fairy lights, really cute decoration!)</li> 
+			<li>In my home-studio in Haarlem, really close to the train station</li>
+			<li>30 minutes long  5 hand edited high resolution images</li>
+			</ul></p>
+		
 		<p>For more information and detailed prices please see the following document: <RatesDownloadLink>anniekostolany_rates2017.pdf</RatesDownloadLink></p>
 
 	
