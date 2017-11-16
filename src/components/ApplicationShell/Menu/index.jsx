@@ -9,11 +9,6 @@ export default () => (
 			{/*<MenuItem to="/blog">Blog</MenuItem>*/}
 			<MenuItem to="/pricing">rates</MenuItem>
 		</MenuBlock>
-		<MenuBlock title="couple shoots">
-			{/*<MenuItem to="/couple-miami">Miami</MenuItem>*/}
-			<MenuItem to="/couple-germany">germany</MenuItem>
-			<MenuItem to="/couple-hungary">hungary</MenuItem>
-		</MenuBlock>
 		<MenuBlock title="portraiture">
 			<MenuItem to="/streetstyle">#streetstyle</MenuItem>
 			<MenuItem to="/fashion-confession">fashion confession</MenuItem>
@@ -22,6 +17,11 @@ export default () => (
 			<MenuItem to="/tropical-vibes">tropical vibes 🌴</MenuItem>
 			<MenuItem to="/dreamy-beach">dreamy beach photoshoot</MenuItem>
 			<MenuItem to="/lost-bride">the lost bride</MenuItem>
+		</MenuBlock>
+		<MenuBlock title="couple shoots">
+			{/*<MenuItem to="/couple-miami">Miami</MenuItem>*/}
+			<MenuItem to="/couple-germany">germany</MenuItem>
+			<MenuItem to="/couple-hungary">hungary</MenuItem>
 		</MenuBlock>
 		<MenuBlock title="families">
 			<MenuItem to="/children">children</MenuItem>
