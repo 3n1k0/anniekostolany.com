@@ -16,7 +16,7 @@ export default () => (
 			<li>In my home-studio in Haarlem, really close to the train station</li>
 			<li>Relaxed environment</li>
 			<li>30 minutes</li>
-			<li>3 hand edited, high-resolution images</li>
+			<li>6 hand edited, high-resolution images</li>
 			</ul></p>
 		
 		<p>For more information and detailed prices please see the following document: <RatesDownloadLink>anniekostolany_rates2017.pdf</RatesDownloadLink></p>
