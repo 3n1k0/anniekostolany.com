@@ -9,6 +9,8 @@ import HomePage from './components/pages/Home';
 import AboutMePage from './components/pages/AboutMe';
 import PricingPage from './components/pages/Pricing';
 
+import StyledBridalPage from './components/pages/StyledBridal';
+
 import DreamyBeachAlbumPage from './components/pages/DreamyBeach';
 import LostBrideAlbumPage from './components/pages/LostBride';
 import RebellionAlbumPage from './components/pages/Rebellion';
@@ -41,6 +43,9 @@ export default () => (
 			<Route exact path="/thanks" component={ThanksPage} />
 			<Route exact path="/about-me" component={AboutMePage} />
 			<Route exact path="/pricing" component={PricingPage} />
+
+			{/* Styled Bridal */}
+			<Route exact path="/styled-bridal" component={StyledBridalPage} />
 
 			{/* Portraiture */}
 			<Route exact path="/streetstyle" component={StreetStyleAlbumPage} />
