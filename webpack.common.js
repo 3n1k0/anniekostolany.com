@@ -60,6 +60,7 @@ module.exports = {
 		new HtmlWebpackPlugin({filename : 'children.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'lifestyle.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'events.html', template : 'src/index.html'}),
+		new HtmlWebpackPlugin({filename : 'styled-bridal.html', template : 'src/index.html'}),
 		new ExtractTextPlugin({filename  : 'bundle-[hash:6].css', allChunks : true})
 	]
 };
