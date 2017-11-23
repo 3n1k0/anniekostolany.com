@@ -13,7 +13,6 @@ export default () => (
 		<Photo file="styled_bridal/bride6.jpg"/>
 		<Photo file="styled_bridal/bride7.jpg"/>
 		<Photo file="styled_bridal/bride8.jpg"/>
-		<Photo file="styled_bridal/bride9.jpg"/>
 		<Photo file="styled_bridal/bride10.jpg"/>
 		<Photo file="styled_bridal/bride11.jpg"/>
 		<Photo file="styled_bridal/bride12.jpg"/>
