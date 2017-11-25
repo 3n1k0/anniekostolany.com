@@ -11,7 +11,7 @@ export default () => (
 		</MenuBlock>
 		<MenuItem to="/styled-bridal">styled bridal 👰🏻</MenuItem>
 		<MenuBlock title="portraiture">
-			<MenuItem to="/autumns-scent">Autumn's Scent 🍂</MenuItem>
+			<MenuItem to="/autumns-scent">autumn's scent 🍂</MenuItem>
 			<MenuItem to="/streetstyle">#streetstyle</MenuItem>
 			<MenuItem to="/fashion-confession">fashion confession</MenuItem>
 			<MenuItem to="/confidence-is-key">confidence is key</MenuItem>
