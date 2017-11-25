@@ -18,6 +18,7 @@ import FashionConfessionAlbumPage from './components/pages/FashionConfession';
 import ConfidenceIsKeyAlbumPage from './components/pages/ConfidenceIsKey';
 import TropicalVibesAlbumPage from './components/pages/TropicalVibes';
 import StreetStyleAlbumPage from './components/pages/StreetStyle';
+import AutumnsScent from './components/pages/AutumnsScent';
 
 import CoupleGermanyAlbumPage from './components/pages/CoupleGermany';
 import CoupleHungaryAlbumPage from './components/pages/CoupleHungary';
@@ -48,6 +49,7 @@ export default () => (
 			<Route exact path="/styled-bridal" component={StyledBridalPage} />
 
 			{/* Portraiture */}
+			<Route exact path="/autumns-scent" component={AutumnsScent} />
 			<Route exact path="/streetstyle" component={StreetStyleAlbumPage} />
 			<Route exact path="/dreamy-beach" component={DreamyBeachAlbumPage} />
 			<Route exact path="/lost-bride" component={LostBrideAlbumPage} />
