@@ -27,7 +27,7 @@ module.exports = {
 				exclude : /(node_modules)/,
 				loader  : 'babel-loader',
 				options : {
-					"presets" : ["env", "react"]
+					presets : ['env', 'react']
 				}
 			},
 			{
@@ -61,6 +61,7 @@ module.exports = {
 		new HtmlWebpackPlugin({filename : 'lifestyle.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'events.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'styled-bridal.html', template : 'src/index.html'}),
+		new HtmlWebpackPlugin({filename : 'autumns-scent.html', template : 'src/index.html'}),
 		new ExtractTextPlugin({filename  : 'bundle-[hash:6].css', allChunks : true})
 	]
 };
