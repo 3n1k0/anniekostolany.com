@@ -8,7 +8,9 @@ export default () => (
 		<h3>Rates</h3>
 
 		<h2>Children Holiday Minis</h2>
-		<Photo file="images/cicuka-2.jpg" alt="Christmas cat"/>
+		<Photo file="cicuka-2.jpg" alt="Christmas cat"/>
+		
+		<p>
 			<ul>
 				<li>Perfect as Christmas card to family members and friends</li>
 				<li>1-3 children in one set</li>
