@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page } from './Page';
+import { Photo, Page } from './Page';
 import BookNowButton from '../BookNowButton';
 import RatesDownloadLink from '../RatesDownloadLink';
 
