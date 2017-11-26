@@ -7,8 +7,9 @@ export default () => (
 	<Page>
 		<h3>Rates</h3>
 
-		<h2>Children Holiday Minis</h2>
+		
 		<Photo file="cicuka-2.jpg" alt="Christmas cat"/>
+		<h2>Children Holiday Minis</h2>
 		
 		<p>
 			<ul>
