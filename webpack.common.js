@@ -1,7 +1,6 @@
 const path = require('path'),
 	HtmlWebpackPlugin = require('html-webpack-plugin'),
-	ExtractTextPlugin = require('extract-text-webpack-plugin'),
-	webpack = require('webpack');
+	ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry : {
@@ -62,6 +61,7 @@ module.exports = {
 		new HtmlWebpackPlugin({filename : 'events.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'styled-bridal.html', template : 'src/index.html'}),
 		new HtmlWebpackPlugin({filename : 'autumns-scent.html', template : 'src/index.html'}),
+		new HtmlWebpackPlugin({filename : 'photo-walk-amsterdam.html', template : 'src/index.html'}),
 		new ExtractTextPlugin({filename  : 'bundle-[hash:6].css', allChunks : true})
 	]
 };

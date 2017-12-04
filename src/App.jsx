@@ -24,6 +24,8 @@ import CoupleGermanyAlbumPage from './components/pages/CoupleGermany';
 import CoupleHungaryAlbumPage from './components/pages/CoupleHungary';
 import CoupleMiamiAlbumPage from './components/pages/CoupleMiami';
 
+import PhotoWalkAmsterdamAlbumPage from './components/pages/PhotoWalkAmsterdam';
+
 import LifestylePage from './components/pages/Lifestyle';
 import ChildrenAlbumPage from './components/pages/Children';
 import EventsPage from './components/pages/Events';
@@ -62,6 +64,8 @@ export default () => (
 			<Route exact path="/couple-germany" component={CoupleGermanyAlbumPage} />
 			<Route exact path="/couple-hungary" component={CoupleHungaryAlbumPage} />
 			<Route exact path="/couple-miami" component={CoupleMiamiAlbumPage} />
+
+			<Route exact path="/photo-walk-amsterdam" component={PhotoWalkAmsterdamAlbumPage} />
 
 			{/* Family */}
 			<Route exact path="/children" component={ChildrenAlbumPage} />
