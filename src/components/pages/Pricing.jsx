@@ -10,13 +10,14 @@ export default () => (
 		<Photo file="pricing.jpg" alt="Inspirational quote"/>
 		
 		<ul>
-			<li>Portrait sessions start at 190 EUR</li>
-		<li>Couple and family sessions start at 190 EUR</li>
-		<li>Mini sessions from 90 EUR</li>
-		<li>Weddings from 900EUR</li>
+			<li>Portrait sessions start at 190 eur</li>
+		<li>Couple and family sessions start at 190 eur</li>
+		<li>Mini sessions from 90 eur</li>
+		<li>Weddings from 900 eur</li>
 		</ul>
 		
-		<p>Event rate: 110 EUR/hour</p>
+		<p>Event rate: 110 eur/hour</p>
+		<p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below.</p>
 
 		
 		<Photo file="cicuka-2.jpg" alt="Christmas cat"/>
@@ -31,10 +32,9 @@ export default () => (
 				<li>Relaxed environment</li>
 				<li>30 minutes</li>
 				<li>6 hand edited, high-resolution images</li>
+				<li>80 eur</li>
 			</ul>
 		</p>
-
-		<p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below.</p>
 	
 <BookNowButton />
 	</Page>
