@@ -9,12 +9,11 @@ export default () => (
 	
 		<Photo file="pricing.jpg" alt="Inspirational quote"/>
 		
-		<ul>
-			<li>Portrait sessions start at 190 eur</li>
-		<li>Couple and family sessions start at 190 eur</li>
-		<li>Mini sessions from 90 eur</li>
-		<li>Weddings from 900 eur</li>
-		</ul>
+	<br />Portrait sessions start at 190 eur
+	<br />Couple and family sessions start at 190 eur
+	<br />Mini sessions from 90 eur
+	<br />Weddings from 900 eur
+		
 		
 		<p>Event rate: 110 eur/hour</p>
 		<p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below.</p>
