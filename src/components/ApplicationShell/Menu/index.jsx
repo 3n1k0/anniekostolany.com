@@ -7,7 +7,7 @@ export default () => (
 		<MenuBlock title="info">
 			<MenuItem to="/about-me">about me</MenuItem>
 			{/*<MenuItem to="/blog">Blog</MenuItem>*/}
-			<MenuItem to="/pricing">rates</MenuItem>
+			<MenuItem to="/pricing">investment</MenuItem>
 		</MenuBlock>
 		<MenuItem to="/styled-bridal">styled bridal 👰🏻</MenuItem>
 		<MenuBlock title="portraiture">
