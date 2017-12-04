@@ -12,7 +12,7 @@ export default () => (
 		
 		<p>Portrait sessions start at 190 EUR
 		Couple and family sessions start at 190 EUR
-		Mini session start at 90 EUR</p>
+		Mini sessions start at 90 EUR</p>
 		
 		<p>Weddings start at 900EUR</p>
 		
