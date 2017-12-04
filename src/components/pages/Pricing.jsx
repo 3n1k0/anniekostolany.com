@@ -12,7 +12,7 @@ export default () => (
 	<br />Portrait sessions start at 190 eur
 	<br />Couple and family sessions start at 190 eur
 	<br />Mini sessions from 90 eur
-	<br />Weddings from 900 eur
+	<br />Wedding packages start from 900 eur
 		
 		
 		<p>Event rate: 110 eur/hour</p>
