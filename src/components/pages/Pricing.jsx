@@ -5,7 +5,10 @@ import RatesDownloadLink from '../RatesDownloadLink';
 
 export default () => (
 	<Page>
-		<h3>Rates</h3>
+		
+		<p>“It’s one thing to make a picture of what a person looks like, it’s another thing to make a portrait of who they are.”</p>
+		– Paul Caponigro
+		<h3>Investment</h3>
 
 		<h2>Children Holiday Minis</h2>
 		<Photo file="cicuka-2.jpg" alt="Christmas cat"/>
@@ -22,9 +25,9 @@ export default () => (
 			</ul>
 		</p>
 
-		<p>For more information and detailed prices please see the following document: <RatesDownloadLink>anniekostolany_rates2017.pdf</RatesDownloadLink></p>
-		
-		<p>If you have any more questions, feel free to email me at mail@anniekostolany.com or by filling out the contact form.</p>
+		<p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below.
+Feel free to tell me a little bit more about your ideas and plans.</p>
+	
 
 		<BookNowButton />
 	</Page>
