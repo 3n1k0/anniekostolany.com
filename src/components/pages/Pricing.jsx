@@ -7,7 +7,6 @@ export default () => (
 	<Page>
 		
 	
-		<Photo file="pricing.jpg" alt="Inspirational quote"/>
 		
 	<br />Portrait sessions start at 190 eur
 	<br />Couple and family sessions start at 190 eur
