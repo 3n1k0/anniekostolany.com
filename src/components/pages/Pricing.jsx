@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page } from './Page';
+import { Photo, Page } from './Page';
 import BookNowButton from '../BookNowButton';
 import RatesDownloadLink from '../RatesDownloadLink';
 
@@ -18,8 +18,9 @@ export default () => (
 		
 		<p>Event rate: 110 EUR/hour</p>
 
-		<h2>Children Holiday Minis</h2>
+		
 		<Photo file="cicuka-2.jpg" alt="Christmas cat"/>
+		<h2>Children Holiday Minis</h2>
 		
 		<p>
 			<ul>
