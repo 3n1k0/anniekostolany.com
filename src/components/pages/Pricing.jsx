@@ -6,15 +6,15 @@ import RatesDownloadLink from '../RatesDownloadLink';
 export default () => (
 	<Page>
 		
-		<p>“It’s one thing to make a picture of what a person looks like, it’s another thing to make a portrait of who they are.”</p>
-		– Paul Caponigro
 		<h3>Investment</h3>
 		
-		<p>Portrait sessions start at 190 EUR
-		Couple and family sessions start at 190 EUR
-		Mini sessions start at 90 EUR</p>
+		<Photo file="pricing.jpg" alt="Inspirational quote"/>
 		
-		<p>Weddings start at 900EUR</p>
+		<p>Portrait sessions start at 190 EUR</p>
+		<p>Couple and family sessions start at 190 EUR</p>
+		<p>Mini sessions from 90 EUR</p>
+		
+		<p>Weddings from 900EUR</p>
 		
 		<p>Event rate: 110 EUR/hour</p>
 
