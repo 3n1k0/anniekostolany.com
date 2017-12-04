@@ -9,6 +9,14 @@ export default () => (
 		<p>“It’s one thing to make a picture of what a person looks like, it’s another thing to make a portrait of who they are.”</p>
 		– Paul Caponigro
 		<h3>Investment</h3>
+		
+		<p>Portrait sessions start at 190 EUR
+		Couple and family sessions start at 190 EUR
+		Mini session start at 90 EUR</p>
+		
+		<p>Weddings start at 900EUR</p>
+		
+		<p>Event rate: 110 EUR/hour</p>
 
 		<h2>Children Holiday Minis</h2>
 		<Photo file="cicuka-2.jpg" alt="Christmas cat"/>
@@ -25,7 +33,7 @@ export default () => (
 			</ul>
 		</p>
 
-		<p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below. Just say hello and feel free to tell me a little bit more about your ideas and plans.</p>
+		<p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below.</p>
 	
 <BookNowButton />
 	</Page>
