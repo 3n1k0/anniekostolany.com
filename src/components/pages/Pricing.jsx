@@ -16,13 +16,11 @@ export default () => (
 		
 		
 		<p>Event rate: 110 eur/hour</p>
-		<p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below.</p>
 
 		
 		<Photo file="cicuka-2.jpg" alt="Christmas cat"/>
 		<h2>Children Holiday Minis</h2>
 		
-		<p>
 			<ul>
 				<li>Perfect as Christmas card to family members and friends</li>
 				<li>1-3 children in one set</li>
@@ -33,7 +31,8 @@ export default () => (
 				<li>6 hand edited, high-resolution images</li>
 				<li>80 eur</li>
 			</ul>
-		</p>
+			
+<p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below.</p>
 	
 <BookNowButton />
 	</Page>
