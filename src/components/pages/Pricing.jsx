@@ -13,6 +13,7 @@ export default () => (
 	<br />Couple and family sessions start at 190 eur
 	<br />Mini sessions from 90 eur
 	<br />Wedding packages start from 900 eur
+	<br />Photo walk Haarlem & Amsterdam from 90 EUR 
 		
 		
 		<p>Event rate: 110 eur/hour</p>
@@ -30,7 +31,9 @@ export default () => (
 				<li>30 minutes</li>
 				<li>6 hand edited, high-resolution images</li>
 				<li>80 eur</li>
-			</ul>
+		</ul>
+		<h2>Photo walk in Amsterdam</h2>
+		<Photo file="ams.jpg" alt="Amsterdam"/>
 			
 <p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below.</p>
 	
