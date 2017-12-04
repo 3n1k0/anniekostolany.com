@@ -6,6 +6,7 @@ import BookNowButton from '../BookNowButton';
 export default () => (
 	<Page>
 		<h2>Lifestyle</h2>
+		<Photo file="coffee.jpg" alt="Girl drinking coffee"/>
 
 		<p>Check out <Link to="/pricing">my rates</Link> to see the amazing deal I figured out for you to make this fall really special!</p>
 
