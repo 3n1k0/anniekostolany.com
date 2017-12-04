@@ -22,18 +22,15 @@ export default () => (
 		<Photo file="cicuka-2.jpg" alt="Christmas cat"/>
 		<h2>Children Holiday Minis</h2>
 		
-			<ul>
-				<li>Perfect as Christmas card to family members and friends</li>
-				<li>1-3 children in one set</li>
-				<li>Christmas-styled (fairy lights, really cute decoration!)</li>
-				<li>In my home-studio in Haarlem, really close to the train station</li>
-				<li>Relaxed environment</li>
-				<li>30 minutes</li>
-				<li>6 hand edited, high-resolution images</li>
-				<li>80 eur</li>
-		</ul>
-		<h2>Photo walk in Amsterdam</h2>
-		<Photo file="ams.jpg" alt="Amsterdam"/>
+			<br />Perfect as Christmas card to family members and friends
+			<br />1-3 children in one set
+			<br />Christmas-styled (fairy lights, really cute decoration!)
+			<br />In my home-studio in Haarlem, really close to the train station
+			<br />Relaxed environment
+			<br />30 minutes
+			<br />6 hand edited, high-resolution images
+			<br />80 eur
+	
 			
 <p>For more information and detailed prices please send me an email to mail@anniekostolany.com or fill out the contact form below.</p>
 	
