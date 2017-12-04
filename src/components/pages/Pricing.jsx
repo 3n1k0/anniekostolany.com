@@ -6,15 +6,15 @@ import RatesDownloadLink from '../RatesDownloadLink';
 export default () => (
 	<Page>
 		
-		<h3>Investment</h3>
-		
+	
 		<Photo file="pricing.jpg" alt="Inspirational quote"/>
 		
-		<p>Portrait sessions start at 190 EUR</p>
-		<p>Couple and family sessions start at 190 EUR</p>
-		<p>Mini sessions from 90 EUR</p>
-		
-		<p>Weddings from 900EUR</p>
+		<ul>
+			<li>Portrait sessions start at 190 EUR</li>
+		<li>Couple and family sessions start at 190 EUR</li>
+		<li>Mini sessions from 90 EUR</li>
+		<li>Weddings from 900EUR</li>
+		</ul>
 		
 		<p>Event rate: 110 EUR/hour</p>
 
