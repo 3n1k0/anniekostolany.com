@@ -10,7 +10,7 @@ export default () => (
 		
 		<p>Hey there!</p>
 <p>Welcome to my website, my name is Annie and I am a Hungarian girl living in the Netherlands. I am a self-taught portrait photographer.</p>	
-<p>My inspiration comes from life and from all the beauty that surround us, even if we are not aware of it anymore.
+<p>My inspiration comes from life and from all the beauty that surround us, even if we are not aware of it anymore.</p>
 <p>I just observe. I wait until light, texture, color and shape adds up and creates a feeling. 
 Then I transform it into photographs.</p>	
 
