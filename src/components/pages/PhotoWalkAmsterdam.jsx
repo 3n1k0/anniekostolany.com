@@ -17,7 +17,7 @@ export default () => (
 		<Photo file="photo_walk_amsterdam/6.jpg"/>
 		<Photo file="photo_walk_amsterdam/8.jpg"/>
 	<p> I cannot imagine a more romantic background for either couple shoots or simple portrait sessions. 
-		If you feel like windmills, bridges, canals and flowers are something you'd like to see on your photos, message me by clicking the button below.
+		If you feel like windmills, bridges, canals and flowers are something you'd like to see on your photos, message me by clicking the button below.</p>
 		<BookNowButton />
 	</Page>
 );
