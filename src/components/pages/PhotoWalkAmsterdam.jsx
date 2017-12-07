@@ -5,8 +5,8 @@ import BookNowButton from '../BookNowButton';
 export default () => (
 	<Page>
 	<p> For most European people Amsterdam is the city of freedom. But besides that, it is utterly romantic too. As soon as you walk through the narrow streets and cross the canals on one of the million charming bridges you will immediately know what I mean. 
-		It is one of my favourite places on Earth. There is something else, less known but just as spectacular: Haarlem. This little town is exactly like a mini-Amsterdam but why I like it is that it's easier to get the perfect photos since there are not so many tourists there.
-		Leave the selfie stick home for now and book a photo session! Contact me for further details and availability. </p>
+		It is one of my favourite places on Earth. There is an other place too, less known but just as spectacular: Haarlem. This little town is exactly like a mini-Amsterdam but the reason I like is because it's not as crowded as the center of Amsterdam so it's easier to get the perfect photos here.
+		Whatever city you prefer, leave the selfie stick home for now and book a photo session now! Contact me for further details and availability. </p>
 		
 		<Photo file="photo_walk_amsterdam/1.jpg"/>
 		<Photo file="photo_walk_amsterdam/2.jpg"/>
