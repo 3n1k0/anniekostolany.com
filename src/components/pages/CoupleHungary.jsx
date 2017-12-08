@@ -5,7 +5,7 @@ import BookNowButton from '../BookNowButton';
 export default () => (
 	<Page>
 		<h2> Romantic fall theme couple shoot </h2>
-		<p> I must say, love and pre-wedding photography is one of the fields I can express myself the best. I just really like how easy it is to shoot with couples as they tend to entertain each other, kiss, whisper and laugh.
+		<p> I must say, love / pre-wedding photography is one of the fields I can express myself the best. I just really like how easy it is to shoot with couples as they tend to entertain each other, kiss, whisper and laugh.
 			And while they do all that, I find the perfect light and angles and take their most romantic photos.
 		</p>
 			
