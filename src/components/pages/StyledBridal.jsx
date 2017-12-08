@@ -4,6 +4,10 @@ import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<Page>
+		<h2> Bridal shoots </h2>
+	<p> If I think about a bride, the first words that come to my mind are magnificent, marvelous, graceful and delicate. The reason I do styled bridal shoots is to show my perspective on how I see these beautiful occasions.
+		If you like my style, it is possible to book me for your own wedding, not only in the Netherlands but wherever you're planning to get married. </p>
+	
 		
 		<Photo file="styled_bridal/bride1.jpg"/>
 		<Photo file="styled_bridal/bride2.jpg"/>
@@ -22,7 +26,7 @@ export default () => (
 		<Photo file="styled_bridal/bride16.jpg"/>
 		<Photo file="styled_bridal/bride17.jpg"/>
 		
-		
+		<p> This photoshoot in Den Bosch was inspired by fairytales and my beautiful model, Celine. </p>
 		
 		<BookNowButton />
 	</Page>
