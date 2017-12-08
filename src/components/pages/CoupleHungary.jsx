@@ -18,7 +18,7 @@ export default () => (
 		<Photo file="couple_shoots_hun/7.jpg" alt="Couple looking each other on long street"/>
 			
 			<p> Couple shoots in Amsterdam are really sweet and precious but I also enjoy to work in nature, as it gives me endless inspiration. 
-				We can discuss your ideas over a coffee or on Skype. I am also happy to help picking out the location and dresses so everything will match perfectly.
+				We can discuss your ideas over a coffee or on Skype. I am also happy to help picking out the location and dresses so everything can match perfectly.
 			</p>
 		<BookNowButton />
 	</Page>
