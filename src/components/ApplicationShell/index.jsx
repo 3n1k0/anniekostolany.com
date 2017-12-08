@@ -1,5 +1,5 @@
 import React from 'react';
-import { blur, pages } from './style.scss';
+import { blur, pages, logo } from './style.scss';
 import DesktopSidebar from './DesktopSidebar';
 import Menu from './Menu';
 import { SmallScreen, LargeScreen } from '../ResponsiveComponents';
@@ -58,7 +58,7 @@ class ApplicationShell extends React.Component {
 				<LargeScreen>
 					<div className={pages}>{this.props.children}</div>
 					<DesktopSidebar>
-						<h1>Annie Kostolany</h1>
+						<div className={logo}></div>
 						<Menu />
 						<SocialIcons />
 					</DesktopSidebar>
