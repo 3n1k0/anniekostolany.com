@@ -6,7 +6,7 @@ export default () => (
 	<Page>
 		<h2> Wedding & bridal shoots </h2>
 	<p> When I think about a bride, the first words that come to my mind are magnificent, marvelous, graceful and delicate. The reason I do styled bridal shoots is to show my perspective on how I see these beautiful occasions.
-		Do you like my style? It is possible to book me for your own wedding, not only in the Netherlands but wherever you're planning to get married. </p>
+	<br />Do you like my style? It is possible to book me for your own wedding, not only in the Netherlands but wherever you're planning to get married. </p>
 	
 		
 		<Photo file="styled_bridal/bride1.jpg"/>
