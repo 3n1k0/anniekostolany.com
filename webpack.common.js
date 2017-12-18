@@ -5,7 +5,7 @@ const path = require('path'),
 module.exports = {
 	entry : {
 		app : [
-			'./src/index.jsx'
+			'./src/browser.jsx'
 		]
 	},
 	resolve : {
@@ -19,7 +19,7 @@ module.exports = {
 		chunkFilename : '[id]-[hash:6].bundle.js',
 		publicPath    : '/'
 	},
-	module  : {
+	module : {
 		rules : [
 			{
 				test    : /\.jsx$/,
@@ -42,26 +42,6 @@ module.exports = {
 	},
 	plugins : [
 		new HtmlWebpackPlugin({filename : 'index.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'contact.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'thanks.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'about-me.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'pricing.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'dreamy-beach.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'lost-bride.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'rebellion.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'fashion-confession.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'confidence-is-key.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'tropical-vibes.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'streetstyle.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'couple-germany.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'couple-hungary.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'couple-miami.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'children.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'lifestyle.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'events.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'styled-bridal.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'autumns-scent.html', template : 'src/index.html'}),
-		new HtmlWebpackPlugin({filename : 'photo-walk-amsterdam.html', template : 'src/index.html'}),
 		new ExtractTextPlugin({filename  : 'bundle-[hash:6].css', allChunks : true})
 	]
 };
