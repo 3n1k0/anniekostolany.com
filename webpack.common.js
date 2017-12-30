@@ -15,8 +15,8 @@ module.exports = {
 	},
 	output : {
 		path          : path.join(__dirname, './out/'),
-		filename      : '[name]-[hash:6].js',
-		chunkFilename : '[id]-[hash:6].bundle.js',
+		filename      : '[name].js',
+		chunkFilename : '[id].bundle.js',
 		publicPath    : '/'
 	},
 	module : {
@@ -41,7 +41,6 @@ module.exports = {
 		]
 	},
 	plugins : [
-		new HtmlWebpackPlugin({filename : 'index.html', template : 'src/index.html'}),
-		new ExtractTextPlugin({filename  : 'bundle-[hash:6].css', allChunks : true})
+		new ExtractTextPlugin({filename  : 'bundle.css', allChunks : true})
 	]
 };

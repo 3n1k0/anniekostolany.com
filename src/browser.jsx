@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import App from './App.jsx';
+import App from './App';
 import createBrowserHistory from 'history/createBrowserHistory';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 
 const history = createBrowserHistory();
 
@@ -14,11 +14,11 @@ history.listen((location) => {
 });
 
 const render = Component => {
-	ReactDOM.render(
+	ReactDOM.hydrate(
 		<AppContainer>
-			<BrowserRouter history={history}>
+			<Router history={history}>
 				<Component />
-			</BrowserRouter>
+			</Router>
 		</AppContainer>,
 		document.getElementById('root')
 	);

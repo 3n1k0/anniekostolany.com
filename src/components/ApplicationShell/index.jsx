@@ -13,7 +13,7 @@ class ApplicationShell extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isOpen : false
+			isMenuOpen : false
 		};
 
 		this.onHistory = this.onHistory.bind(this);
@@ -42,7 +42,7 @@ class ApplicationShell extends React.Component {
 		return (
 			<div>
 				<SmallScreen>
-					<div className={pages + ' ' + (this.state.isMenuOpen ? blur : '')}
+					<div className={pages + (this.state.isMenuOpen ? ' ' + blur : '')}
 						onClick={this.closeMenu}
 					>
 						{this.props.children}

@@ -2,7 +2,6 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const webpack = require('webpack');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
-const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
 module.exports = merge(common, {
 	plugins : [
@@ -11,7 +10,6 @@ module.exports = merge(common, {
 			'process.env' : {
 				'NODE_ENV' : JSON.stringify('production')
 			}
-		}),
-		new WebpackCleanupPlugin()
+		})
 	]
 });
