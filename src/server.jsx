@@ -4,23 +4,27 @@ import routes from './routes';
 import App from './App';
 import React from 'react';
 import fs from 'fs';
+import Helmet from 'react-helmet';
 
 const context = {};
 
 routes.forEach((route) => {
+	const body = ReactDOMServer.renderToString(
+		<StaticRouter location={route.path} context={context}>
+			<App />
+		</StaticRouter>
+	);
+	const helmet = Helmet.renderStatic();
+
 	const content = `<!DOCTYPE html>
 		<html>
 			<head>
-				<meta charset="utf-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-				<meta name="description" content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Haarlem, Netherlands, available worldwide. Let's create magic!" />
-				<meta name="msvalidate.01" content="CC9A36425DA97869438FEFFB720A6432" />
+				${helmet.title.toString()}
+				${helmet.meta.toString()}
+				${helmet.link.toString()}
 
-				<link href="https://fonts.googleapis.com/css?family=Cardo|Cinzel|EB+Garamond|Lora" rel="stylesheet" />
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+				<meta property="og:url" content="https://anniekostolany.com${ route.path }" />
 				<link rel="canonical" href="https://anniekostolany.com${ route.path }" />
-
-				<title>Portrait &amp; Event Photography in Haarlem | Annie Kostolany</title>
 
 				<script>
 				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -53,11 +57,7 @@ routes.forEach((route) => {
 				<link href="/bundle.css" rel="stylesheet" />
 			</head>
 			<body>
-				<div id="root">${ ReactDOMServer.renderToString(
-						<StaticRouter location={route.path} context={context}>
-							<App />
-						</StaticRouter>
-				)}</div>
+				<div id="root">${ body }</div>
 				<script type="text/javascript" src="/app.js"></script>
 			</body>
 		</html>`;

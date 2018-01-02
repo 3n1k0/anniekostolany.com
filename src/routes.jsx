@@ -26,7 +26,7 @@ import ChildrenAlbumPage from './components/pages/Children';
 import EventsPage from './components/pages/Events';
 
 export default [
-	{ path : '/', title : 'Home', component : HomePage, exact : true },
+	{ path : '/', component : HomePage, exact : true },
 	{ path : '/contact', title : 'Contact', component : ContactPage },
 	{ path : '/thanks', title : 'Contact', component : ThanksPage },
 	{ path : '/about-me', title : 'About me', component : AboutMePage },
