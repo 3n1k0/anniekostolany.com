@@ -62,6 +62,10 @@ routes.forEach((route) => {
 			</body>
 		</html>`;
 
+	if (!fs.existsSync('./out')) {
+		fs.mkdirSync('./out');
+	}
+
 	fs.writeFileSync(
 		'./out' + (route.path === '/' ? '/index' : route.path) + '.html',
 		content
