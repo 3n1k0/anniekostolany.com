@@ -10,8 +10,13 @@ const getInstagramUrl = ua => (
 );
 
 export default () => (
-	<div className={socialIcons}>
-		<a href={getInstagramUrl(window.navigator.userAgent)} target="_blank"><i className="fa fa-instagram"></i></a>
-		<a href={getFacebookUrl(window.navigator.userAgent)} target="_blank"><i className="fa fa-facebook-official"></i></a>
-	</div>
+	global.window ?
+		<div className={socialIcons}>
+			<a href={getInstagramUrl(window.navigator.userAgent)} target="_blank"><i className="fa fa-instagram"></i></a>
+			<a href={getFacebookUrl(window.navigator.userAgent)} target="_blank"><i className="fa fa-facebook-official"></i></a>
+		</div> :
+		<div className={socialIcons}>
+			<a href="https://instagram.com/anniekostolany" target="_blank"><i className="fa fa-instagram"></i></a>
+			<a href="https://facebook.com/anniekostolany" target="_blank"><i className="fa fa-facebook-official"></i></a>
+		</div>
 );
