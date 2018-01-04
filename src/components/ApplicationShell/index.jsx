@@ -51,12 +51,8 @@ class ApplicationShell extends React.Component {
 					<meta property="og:title" content="Portrait &amp; Event Photography in Haarlem | Annie Kostolany" />
 					<meta property="og:description" content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Haarlem, Netherlands, available worldwide. Let's create magic!" />
 					<meta property="og:image" content="" />
-					<meta property="og:type" content="business.business" />
+					<meta property="og:type" content="website" />
 					<meta property="og:locale" content="en_US" />
-					<meta property="business:contact_data:street_address" content="Haarlem, Netherlands" />
-					<meta property="business:contact_data:locality" content="Haarlem" />
-					<meta property="business:contact_data:postal_code" content="2011MG" />
-					<meta property="business:contact_data:country_name" content="Netherlands" />
 
 					<link href="https://fonts.googleapis.com/css?family=Cardo|Cinzel|EB+Garamond|Lora" rel="stylesheet" />
 					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
