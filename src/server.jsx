@@ -7,6 +7,11 @@ import fs from 'fs';
 import Helmet from 'react-helmet';
 
 const context = {};
+const urlset = [];
+
+if (!fs.existsSync('./out')) {
+	fs.mkdirSync('./out');
+}
 
 routes.forEach((route) => {
 	const { path } = route.props;
@@ -17,6 +22,8 @@ routes.forEach((route) => {
 		</StaticRouter>
 	);
 	const helmet = Helmet.renderStatic();
+
+	urlset.push(`<url><loc>https://anniekostolany.com${ path }</loc></url>`);
 
 	const content = `<!DOCTYPE html>
 		<html>
@@ -64,12 +71,17 @@ routes.forEach((route) => {
 			</body>
 		</html>`;
 
-	if (!fs.existsSync('./out')) {
-		fs.mkdirSync('./out');
-	}
-
 	fs.writeFileSync(
 		'./out' + (path === '/' ? '/index' : path) + '.html',
 		content
 	);
 });
+
+fs.writeFileSync(
+	'./out/sitemap.xml',
+	`<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+			${ urlset.join('\n')  }
+		</urlset>
+	`
+);
