@@ -9,8 +9,10 @@ import Helmet from 'react-helmet';
 const context = {};
 
 routes.forEach((route) => {
+	const { path } = route.props;
+
 	const body = ReactDOMServer.renderToString(
-		<StaticRouter location={route.path} context={context}>
+		<StaticRouter location={path} context={context}>
 			<App />
 		</StaticRouter>
 	);
@@ -23,8 +25,8 @@ routes.forEach((route) => {
 				${helmet.meta.toString()}
 				${helmet.link.toString()}
 
-				<meta property="og:url" content="https://anniekostolany.com${ route.path }" />
-				<link rel="canonical" href="https://anniekostolany.com${ route.path }" />
+				<meta property="og:url" content="https://anniekostolany.com${ path }" />
+				<link rel="canonical" href="https://anniekostolany.com${ path }" />
 
 				<script>
 				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -67,7 +69,7 @@ routes.forEach((route) => {
 	}
 
 	fs.writeFileSync(
-		'./out' + (route.path === '/' ? '/index' : route.path) + '.html',
+		'./out' + (path === '/' ? '/index' : path) + '.html',
 		content
 	);
 });

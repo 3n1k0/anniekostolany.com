@@ -1,3 +1,6 @@
+import React from 'react';
+import { Route } from 'react-router-dom';
+
 import ContactPage from './components/pages/Contact';
 import ThanksPage from './components/pages/Thanks';
 import HomePage from './components/pages/Home';
@@ -26,33 +29,34 @@ import ChildrenAlbumPage from './components/pages/Children';
 import EventsPage from './components/pages/Events';
 
 export default [
-	{ path : '/', component : HomePage, exact : true },
-	{ path : '/contact', title : 'Contact', component : ContactPage },
-	{ path : '/thanks', title : 'Contact', component : ThanksPage },
-	{ path : '/about-me', title : 'About me', component : AboutMePage },
-	{ path : '/pricing', title : 'Investment', component : PricingPage },
+	<Route exact path="/" component={HomePage} />,
+	<Route exact path="/contact" component={ContactPage} />,
+	<Route exact path="/thanks" component={ThanksPage} />,
+	<Route exact path="/about-me" component={AboutMePage} />,
+	<Route exact path="/pricing" component={PricingPage} />,
 
-	{ path : '/styled-bridal', component : StyledBridalPage },
+	/* Styled Bridal */
+	<Route exact path="/styled-bridal" component={StyledBridalPage} />,
 
 	/* Portraiture */
-	{ path : '/autumns-scent', component : AutumnsScent },
-	{ path : '/streetstyle', component : StreetStyleAlbumPage },
-	{ path : '/dreamy-beach', component : DreamyBeachAlbumPage },
-	{ path : '/lost-bride', component : LostBrideAlbumPage },
-	{ path : '/rebellion', component : RebellionAlbumPage },
-	{ path : '/fashion-confession', component : FashionConfessionAlbumPage },
-	{ path : '/confidence-is-key', component : ConfidenceIsKeyAlbumPage },
-	{ path : '/tropical-vibes', component : TropicalVibesAlbumPage },
+	<Route exact path="/autumns-scent" component={AutumnsScent} />,
+	<Route exact path="/streetstyle" component={StreetStyleAlbumPage} />,
+	<Route exact path="/dreamy-beach" component={DreamyBeachAlbumPage} />,
+	<Route exact path="/lost-bride" component={LostBrideAlbumPage} />,
+	<Route exact path="/rebellion" component={RebellionAlbumPage} />,
+	<Route exact path="/fashion-confession" component={FashionConfessionAlbumPage} />,
+	<Route exact path="/confidence-is-key" component={ConfidenceIsKeyAlbumPage} />,
+	<Route exact path="/tropical-vibes" component={TropicalVibesAlbumPage} />,
 
 	/* Couple shoots */
-	{ path : '/couple-germany', component : CoupleGermanyAlbumPage },
-	{ path : '/couple-hungary', component : CoupleHungaryAlbumPage },
-	{ path : '/couple-miami', component : CoupleMiamiAlbumPage },
+	<Route exact path="/couple-germany" component={CoupleGermanyAlbumPage} />,
+	<Route exact path="/couple-hungary" component={CoupleHungaryAlbumPage} />,
+	<Route exact path="/couple-miami" component={CoupleMiamiAlbumPage} />,
 
-	{ path : '/photo-walk-amsterdam', component : PhotoWalkAmsterdamAlbumPage },
+	<Route exact path="/photo-walk-amsterdam" component={PhotoWalkAmsterdamAlbumPage} />,
 
 	/* Family */
-	{ path : '/children', component : ChildrenAlbumPage },
-	{ path : '/lifestyle', component : LifestylePage },
-	{ path : '/events', component : EventsPage }
+	<Route exact path="/children" component={ChildrenAlbumPage} />,
+	<Route exact path="/lifestyle" component={LifestylePage} />,
+	<Route exact path="/events" component={EventsPage} />
 ];

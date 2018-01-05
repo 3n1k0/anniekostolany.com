@@ -13,7 +13,7 @@ Prerequisites: you need to have at least node v8.9.1 and git to make it work.
 
     $ git clone https://github.com/andormade/anniekostolany.com.git
     $ npm install
-    $ npm run serve
+    $ npm run dev
 
 [travis-svg]: https://travis-ci.org/andormade/anniekostolany.com.svg?branch=master
 [travis-url]: https://travis-ci.org/andormade/anniekostolany.com
