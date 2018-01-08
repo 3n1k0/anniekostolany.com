@@ -7,14 +7,23 @@ import fs from 'fs';
 import Helmet from 'react-helmet';
 
 const context = {};
+const urlset = [];
+
+if (!fs.existsSync('./out')) {
+	fs.mkdirSync('./out');
+}
 
 routes.forEach((route) => {
+	const { path } = route.props;
+
 	const body = ReactDOMServer.renderToString(
-		<StaticRouter location={route.path} context={context}>
+		<StaticRouter location={path} context={context}>
 			<App />
 		</StaticRouter>
 	);
 	const helmet = Helmet.renderStatic();
+
+	urlset.push(`<url><loc>https://anniekostolany.com${ path }</loc></url>`);
 
 	const content = `<!DOCTYPE html>
 		<html>
@@ -23,8 +32,8 @@ routes.forEach((route) => {
 				${helmet.meta.toString()}
 				${helmet.link.toString()}
 
-				<meta property="og:url" content="https://anniekostolany.com${ route.path }" />
-				<link rel="canonical" href="https://anniekostolany.com${ route.path }" />
+				<meta property="og:url" content="https://anniekostolany.com${ path }" />
+				<link rel="canonical" href="https://anniekostolany.com${ path }" />
 
 				<script>
 				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -62,12 +71,17 @@ routes.forEach((route) => {
 			</body>
 		</html>`;
 
-	if (!fs.existsSync('./out')) {
-		fs.mkdirSync('./out');
-	}
-
 	fs.writeFileSync(
-		'./out' + (route.path === '/' ? '/index' : route.path) + '.html',
+		'./out' + (path === '/' ? '/index' : path) + '.html',
 		content
 	);
 });
+
+fs.writeFileSync(
+	'./out/sitemap.xml',
+	`<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+			${ urlset.join('\n')  }
+		</urlset>
+	`
+);
