@@ -14,7 +14,7 @@ export default () => (
 			<meta property="og:image" content="https://anniekostolany.com/images/lost_bride/mermaid.jpg" />
 		</Helmet>
 		<h2> Lost Bride </h2>
-		<p> Dramatic and moody photoshoot in the cold waves of Zandvoort beach. This is a story of a bride who lost and found herself.</p>
+		<p> Dramatic and moody photoshoot in the cold waves of Zandvoort beach. This is a story of a bride who once lost but then found herself.</p>
 
 		<Photo file="lost_bride/mermaid.jpg"/>
 		<Photo file="lost_bride/lookingback.jpg"/>
