@@ -1,11 +1,13 @@
 import React from 'react';
 import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
+import Helmet from 'react-helmet';
+
 
 export default () => (
 	<Page>
 		<Helmet>
-			<meta name="description" content="Stlyish & edgy street fashion photoshoot with the amazing Zsofia Cank." />
+			<meta name="description" content="Stylish & edgy street fashion photoshoot with the amazing Zsofia Cank." />
 			<title>#streetstyle | Annie Kostolany</title>
 
 			<meta property="og:title" content="Tropical Vibes | Annie Kostolany" />
