@@ -7,11 +7,11 @@ export default () => (
 	<Page>
 		
 		<Helmet>
-			<meta name="description" content="You can really go wrong with a naturally beautiful model and palm trees." />
+			<meta name="description" content="You can really go wrong with a naturally beautiful model and exotic palm trees." />
 			<title>Tropical Vibes | Annie Kostolany</title>
 
 			<meta property="og:title" content="Tropical Vibes | Annie Kostolany" />
-			<meta property="og:description" content="You can really go wrong with a naturally beautiful model and palm trees." />
+			<meta property="og:description" content="You can really go wrong with a naturally beautiful model and exoctic palm trees." />
 			<meta property="og:image" content="https://anniekostolany.com/images/tropical_vibes/palmak.jpg" />
 		</Helmet>
 
