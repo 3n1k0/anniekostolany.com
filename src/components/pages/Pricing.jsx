@@ -11,7 +11,7 @@ export default () => (
 			<title>Investment| Annie Kostolany</title>
 
 			<meta property="og:title" content="Investment | Annie Kostolany" />
-			<meta property="og:description" content=""Rates, packages & information. />
+			<meta property="og:description" content="Rates, packages & information." />
 			<meta property="og:image" content="https://anniekostolany.com/images/investment/dorinaek.jpg" />
 		</Helmet>
 		<h2>Investment</h2>
