@@ -15,7 +15,7 @@ export default () => (
 		</Helmet>
 
 		<h2> Rebellion </h2>
-		<p> Nivine is a true rebel inside and out and she's not afraid to show it to the world. A strong and ambitious girl who's able to express herself to the world. My ideal model.</p>
+		<p> Nivine is a true rebel inside and out and she's not afraid to show it to the world. A strong and ambitious girl who's able to express herself through her way of living. My ideal model.</p>
 		<Photo file="rebellion/cigi.jpg"/>
 		<Photo file="rebellion/kocsi.jpg"/>
 		<Photo file="rebellion/korlat.jpg"/>
