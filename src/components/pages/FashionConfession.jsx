@@ -1,3 +1,4 @@
+import React from 'react';
 import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
 import Helmet from 'react-helmet';
