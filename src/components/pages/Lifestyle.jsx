@@ -2,7 +2,7 @@ import React from 'react';
 import { Page, Photo } from './Page';
 import { Link } from 'react-router-dom';
 import BookNowButton from '../BookNowButton';
-mport Helmet from 'react-helmet';
+import Helmet from 'react-helmet';
 
 export default () => (
 	<Page>
