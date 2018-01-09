@@ -10,7 +10,7 @@ export default () => (
 			<meta name="description" content="Stylish & edgy street fashion photoshoot with the amazing Zsofia Cank." />
 			<title>#streetstyle | Annie Kostolany</title>
 
-			<meta property="og:title" content="Tropical Vibes | Annie Kostolany" />
+			<meta property="og:title" content="#streestyle | Annie Kostolany" />
 			<meta property="og:description" content="Stlyish & edgy street fashion photoshoot with the amazing Zsofia Cank." />
 			<meta property="og:image" content="https://anniekostolany.com/images/streetsyle/anker1.jpg" />
 		</Helmet>
