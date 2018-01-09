@@ -21,3 +21,4 @@ export default () => (
 		<Photo file="home/jillsunset.jpg"/>
 		<BookNowButton />
 	</Page>
+);
