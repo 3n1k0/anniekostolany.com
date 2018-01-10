@@ -8,7 +8,8 @@
     "build": "npm run server && ./node_modules/.bin/webpack --config webpack.prod.js",
     "server": "./node_modules/.bin/webpack --config webpack.server.js && node ./dist/server.js",
     "lint": "./node_modules/.bin/eslint src/* --ext .jsx",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "./node_modules/.bin/prettier --write --single-quote 'src/**/*.jsx'"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,7 @@
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.4",
     "node-sass": "^4.6.0",
-    "prettier": "^1.7.4",
+    "prettier": "^1.9.2",
     "react-test-renderer": "^16.1.1",
     "regenerator-runtime": "^0.11.0",
     "sass-loader": "^6.0.6",
