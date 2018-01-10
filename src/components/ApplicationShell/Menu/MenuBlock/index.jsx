@@ -7,13 +7,13 @@ class MenuBlock extends React.Component {
 		super(props);
 
 		this.state = {
-			opened : false
+			opened: false
 		};
 
 		this.toggle = this.toggle.bind(this);
 		this.urls = [];
 
-		React.Children.forEach(this.props.children, (child) => {
+		React.Children.forEach(this.props.children, child => {
 			if (child.props.to) {
 				this.urls.push(child.props.to);
 			}
@@ -30,13 +30,13 @@ class MenuBlock extends React.Component {
 	onHistory(location) {
 		if (this.urls.indexOf(location.pathname) !== -1) {
 			this.setState({
-				opened : true
+				opened: true
 			});
 		}
 
 		if (this.state.opened && this.urls.indexOf(location.pathname) === -1) {
 			this.setState({
-				opened : false
+				opened: false
 			});
 		}
 	}
@@ -44,17 +44,21 @@ class MenuBlock extends React.Component {
 	toggle(event) {
 		event.preventDefault();
 		this.setState(prevState => ({
-			opened : !prevState.opened
+			opened: !prevState.opened
 		}));
 	}
 
 	render() {
 		return (
-			<div className={menuBlock + ' ' + (this.state.opened ? opened : closed)}>
-				<a href="#" onClick={this.toggle}>{this.props.title}</a>
-				<ul>
-					{this.props.children}
-				</ul>
+			<div
+				className={
+					menuBlock + ' ' + (this.state.opened ? opened : closed)
+				}
+			>
+				<a href="#" onClick={this.toggle}>
+					{this.props.title}
+				</a>
+				<ul>{this.props.children}</ul>
 			</div>
 		);
 	}

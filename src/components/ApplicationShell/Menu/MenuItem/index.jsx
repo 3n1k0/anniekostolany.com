@@ -7,7 +7,7 @@ class MenuItem extends React.Component {
 		super(props);
 
 		this.state = {
-			active : false
+			active: false
 		};
 
 		this.onHistory = this.onHistory.bind(this);
@@ -21,16 +21,13 @@ class MenuItem extends React.Component {
 	onHistory(location) {
 		if (location.pathname === this.props.to) {
 			this.setState(() => {
-				return {active : true};
+				return { active: true };
 			});
 		}
 
-		if (
-			this.state.active &&
-			location.pathname !== this.props.to
-		) {
+		if (this.state.active && location.pathname !== this.props.to) {
 			this.setState(() => {
-				return {active : false};
+				return { active: false };
 			});
 		}
 	}
@@ -38,7 +35,12 @@ class MenuItem extends React.Component {
 	render() {
 		return (
 			<li className={menuItem}>
-				<Link className={this.state.active ? active : ''} to={this.props.to}>{this.props.children}</Link>
+				<Link
+					className={this.state.active ? active : ''}
+					to={this.props.to}
+				>
+					{this.props.children}
+				</Link>
 			</li>
 		);
 	}
