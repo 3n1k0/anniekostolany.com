@@ -9,13 +9,13 @@ export default () => (
 			<meta name="description" content="Photo walk Amsterdam & Haarlem" />
 			<title>Photo walk Amsterdam & Haarlem | Annie Kostolany</title>
 
-			<meta property="og:title" content="Photo walk Amsterdam & Haarlem| Annie Kostolany" />
+			<meta property="og:title" content="Photo walk Amsterdam & Haarlem | Annie Kostolany" />
 			<meta property="og:description" content="Photo walk Amsterdam & Haarlem" />
 			<meta property="og:image" content="https://anniekostolany.com/images/rebellion/photo_walk_amsterdam/1.jpg" />
 		</Helmet>
 		<h2> Photo walk Amsterdam & Haarlem </h2>
-		<p> For most European people Amsterdam is the city of freedom. But besides that, it is utterly romantic too. As soon as you walk through the narrow streets and cross the canals on one of the million charming bridges you will immediately know what I mean. It is one of my favourite places on Earth. There is an other place too, less known but just as spectacular: Haarlem. This little town is exactly like a mini-Amsterdam but the reason I like is because it's not as crowded as the center of Amsterdam so it's easier to get the perfect photos here.
-		Whatever city you prefer, leave the selfie stick home for now and book a photo session now! Contact me for further details and availability.</p>
+		<p> Amsterdam is the well-known city of freedom. You can be here who you are, and you don't have to be afraid of discrimination or negativity. But besides all of this, the city is utterly romantic too. As soon as you walk through the narrow streets and cross the canals on one of the million charming bridges you will immediately know what I mean. It is one of my favourite places on Earth. There is an other place too, less known but just as spectacular: Haarlem. This little town is exactly like a mini-Amsterdam. The reason I like is because it's not as crowded as the center of Amsterdam so it's easier to get the perfect photos here.
+		Whatever location you prefer, leave the selfie stick home for now, and book a photo session with me instead! Contact me for further details and availability.</p>
 
 		<Photo file="photo_walk_amsterdam/1.jpg"/>
 		<Photo file="photo_walk_amsterdam/2.jpg"/>
