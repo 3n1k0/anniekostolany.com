@@ -6,7 +6,7 @@ export default class HideableSidebar extends React.Component {
 		super(props);
 		this.handleClick = this.handleClick.bind(this);
 		this.state = {
-			isOpen: false
+			isOpen : false
 		};
 	}
 

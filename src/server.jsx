@@ -13,7 +13,7 @@ if (!fs.existsSync('./out')) {
 	fs.mkdirSync('./out');
 }
 
-routes.forEach(route => {
+routes.forEach((route) => {
 	const { path } = route.props;
 
 	const body = ReactDOMServer.renderToString(
@@ -23,7 +23,7 @@ routes.forEach(route => {
 	);
 	const helmet = Helmet.renderStatic();
 
-	urlset.push(`<url><loc>https://anniekostolany.com${path}</loc></url>`);
+	urlset.push(`<url><loc>https://anniekostolany.com${ path }</loc></url>`);
 
 	const content = `<!DOCTYPE html>
 		<html>
@@ -32,8 +32,8 @@ routes.forEach(route => {
 				${helmet.meta.toString()}
 				${helmet.link.toString()}
 
-				<meta property="og:url" content="https://anniekostolany.com${path}" />
-				<link rel="canonical" href="https://anniekostolany.com${path}" />
+				<meta property="og:url" content="https://anniekostolany.com${ path }" />
+				<link rel="canonical" href="https://anniekostolany.com${ path }" />
 
 				<script>
 				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -66,7 +66,7 @@ routes.forEach(route => {
 				<link href="/bundle.css" rel="stylesheet" />
 			</head>
 			<body>
-				<div id="root">${body}</div>
+				<div id="root">${ body }</div>
 				<script type="text/javascript" src="/app.js"></script>
 			</body>
 		</html>`;
@@ -81,7 +81,7 @@ fs.writeFileSync(
 	'./out/sitemap.xml',
 	`<?xml version="1.0" encoding="UTF-8"?>
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-			${urlset.join('\n')}
+			${ urlset.join('\n')  }
 		</urlset>
 	`
 );

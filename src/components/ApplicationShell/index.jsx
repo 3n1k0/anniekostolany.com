@@ -14,7 +14,7 @@ class ApplicationShell extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isMenuOpen: false
+			isMenuOpen : false
 		};
 
 		this.onHistory = this.onHistory.bind(this);
@@ -25,7 +25,7 @@ class ApplicationShell extends React.Component {
 
 	handleMenuButtonClick() {
 		this.setState(prevState => ({
-			isMenuOpen: !prevState.isMenuOpen
+			isMenuOpen : !prevState.isMenuOpen
 		}));
 	}
 
@@ -35,7 +35,7 @@ class ApplicationShell extends React.Component {
 
 	closeMenu() {
 		this.setState(() => ({
-			isMenuOpen: false
+			isMenuOpen : false
 		}));
 	}
 
@@ -44,50 +44,23 @@ class ApplicationShell extends React.Component {
 			<div>
 				<Helmet>
 					<meta charset="utf-8" />
-					<meta
-						name="viewport"
-						content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
-					/>
-					<meta
-						name="description"
-						content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Haarlem, Netherlands, available worldwide. Let's create magic!"
-					/>
-					<meta
-						name="msvalidate.01"
-						content="CC9A36425DA97869438FEFFB720A6432"
-					/>
+					<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+					<meta name="description" content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Haarlem, Netherlands, available worldwide. Let's create magic!" />
+					<meta name="msvalidate.01" content="CC9A36425DA97869438FEFFB720A6432" />
 
-					<meta
-						property="og:title"
-						content="Portrait &amp; Event Photography in Haarlem | Annie Kostolany"
-					/>
-					<meta
-						property="og:description"
-						content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Haarlem, Netherlands, available worldwide. Let's create magic!"
-					/>
+					<meta property="og:title" content="Portrait &amp; Event Photography in Haarlem | Annie Kostolany" />
+					<meta property="og:description" content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Haarlem, Netherlands, available worldwide. Let's create magic!" />
 					<meta property="og:image" content="" />
 					<meta property="og:type" content="website" />
 					<meta property="og:locale" content="en_US" />
 
-					<link
-						href="https://fonts.googleapis.com/css?family=Cardo|Cinzel|EB+Garamond|Lora"
-						rel="stylesheet"
-					/>
-					<link
-						rel="stylesheet"
-						href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-					/>
+					<link href="https://fonts.googleapis.com/css?family=Cardo|Cinzel|EB+Garamond|Lora" rel="stylesheet" />
+					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-					<title>
-						Portrait &amp; Event Photography in Haarlem | Annie
-						Kostolany
-					</title>
+					<title>Portrait &amp; Event Photography in Haarlem | Annie Kostolany</title>
 				</Helmet>
 				<SmallScreen>
-					<div
-						className={
-							pages + (this.state.isMenuOpen ? ' ' + blur : '')
-						}
+					<div className={pages + (this.state.isMenuOpen ? ' ' + blur : '')}
 						onClick={this.closeMenu}
 					>
 						{this.props.children}
@@ -103,7 +76,7 @@ class ApplicationShell extends React.Component {
 				<LargeScreen>
 					<div className={pages}>{this.props.children}</div>
 					<DesktopSidebar>
-						<div className={logo} />
+						<div className={logo}></div>
 						<Menu />
 						<SocialIcons />
 					</DesktopSidebar>
