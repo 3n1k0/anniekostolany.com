@@ -44,16 +44,8 @@ export default [
 	<Route exact path="/dreamy-beach" component={DreamyBeachAlbumPage} />,
 	<Route exact path="/lost-bride" component={LostBrideAlbumPage} />,
 	<Route exact path="/rebellion" component={RebellionAlbumPage} />,
-	<Route
-		exact
-		path="/fashion-confession"
-		component={FashionConfessionAlbumPage}
-	/>,
-	<Route
-		exact
-		path="/confidence-is-key"
-		component={ConfidenceIsKeyAlbumPage}
-	/>,
+	<Route exact path="/fashion-confession" component={FashionConfessionAlbumPage} />,
+	<Route exact path="/confidence-is-key" component={ConfidenceIsKeyAlbumPage} />,
 	<Route exact path="/tropical-vibes" component={TropicalVibesAlbumPage} />,
 
 	/* Couple shoots */
@@ -61,11 +53,7 @@ export default [
 	<Route exact path="/couple-hungary" component={CoupleHungaryAlbumPage} />,
 	<Route exact path="/couple-miami" component={CoupleMiamiAlbumPage} />,
 
-	<Route
-		exact
-		path="/photo-walk-amsterdam"
-		component={PhotoWalkAmsterdamAlbumPage}
-	/>,
+	<Route exact path="/photo-walk-amsterdam" component={PhotoWalkAmsterdamAlbumPage} />,
 
 	/* Family */
 	<Route exact path="/children" component={ChildrenAlbumPage} />,

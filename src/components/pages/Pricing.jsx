@@ -5,14 +5,7 @@ import BookNowButton from '../BookNowButton';
 export default () => (
 	<Page>
 		<h2>Investment</h2>
-		<p>
-			I'm so happy to have you here. I hope I can help you to achieve the
-			perfect photos you dream about. These numbers below will give you
-			and idea of the investment for my photography but I am more than
-			happy to send you a detailed document. <br /> All you need to do is
-			just to send me an email to mail@anniekostolany.com or fill out the
-			contact form below.
-		</p>
+		<p>I'm so happy to have you here. I hope I can help you to achieve the perfect photos you dream about. These numbers below will give you and idea of the investment for my photography but I am more than happy to send you a detailed document. <br /> All you need to do is just to send me an email to mail@anniekostolany.com or fill out the contact form below.</p>
 
 		<p>
 			<br />Portrait sessions start at 190 eur
