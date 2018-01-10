@@ -7,7 +7,7 @@ import { Router } from 'react-router-dom';
 
 const history = createBrowserHistory();
 
-history.listen((location) => {
+history.listen(location => {
 	window.scrollTo(0, 0);
 	window.ga('send', 'pageview', location.pathname);
 	window.fbq('track', 'ViewContent');
