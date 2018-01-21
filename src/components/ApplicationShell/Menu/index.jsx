@@ -26,11 +26,6 @@ export default () => (
 			<MenuItem to="/couple-hungary">hungary</MenuItem>
 		</MenuBlock>
 		<MenuItem to="/photo-walk-amsterdam">photo walk amsterdam 🚲</MenuItem>
-		<MenuBlock title="families">
-			<MenuItem to="/children">children</MenuItem>
-			<MenuItem to="/lifestyle">lifestyle</MenuItem>
-			<MenuItem to="/events">events</MenuItem>
-		</MenuBlock>
 		<MenuItem to="/contact">contact</MenuItem>
 	</div>
 );
