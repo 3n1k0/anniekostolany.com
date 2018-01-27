@@ -1,34 +1,15 @@
 import React from 'react';
 import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
-import Helmet from 'react-helmet';
 
 export default () => (
-	<Page>
-		<Helmet>
-			<meta
-				name="description"
-				content="Rock'n roll spirit reborn in fashion"
-			/>
-			<title>Rock'n roll girl | Annie Kostolany</title>
-
-			<meta
-				property="og:title"
-				content="Rock'n roll girl | Annie Kostolany"
-			/>
-			<meta
-				property="og:description"
-				content="Rock'n roll spirit reborn in fashion"
-			/>
-			<meta
-				property="og:image"
-				content="https://anniekostolany.com/images/rebellion/korlat.jpg"
-			/>
-		</Helmet>
-
-		<h2> Rebellion </h2>
+	<Page
+		title="Rock'n roll girl"
+		description="Rock'n roll spirit reborn in fashion"
+		image="rebellion/korlat.jpg"
+	>
+		<h2>Rebellion</h2>
 		<p>
-			{' '}
 			Nivine is a true rebel inside and out and she's not afraid to show
 			it to the world. A strong and ambitious girl who's able to express
 			herself through her way of living. My ideal model.

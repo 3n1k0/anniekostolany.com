@@ -1,30 +1,15 @@
 import React from 'react';
 import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
-import Helmet from 'react-helmet';
 
 export default () => (
-	<Page>
-		<Helmet>
-			<meta name="description" content="Photo walk Amsterdam & Haarlem" />
-			<title>Photo walk Amsterdam & Haarlem | Annie Kostolany</title>
-
-			<meta
-				property="og:title"
-				content="Photo walk Amsterdam & Haarlem | Annie Kostolany"
-			/>
-			<meta
-				property="og:description"
-				content="Photo walk Amsterdam & Haarlem"
-			/>
-			<meta
-				property="og:image"
-				content="https://anniekostolany.com/images/rebellion/photo_walk_amsterdam/1.jpg"
-			/>
-		</Helmet>
+	<Page
+		title="Photo walk Amsterdam & Haarlem"
+		description="Photo walk Amsterdam & Haarlem"
+		image="rebellion/photo_walk_amsterdam/1.jpg"
+	>
 		<h2> Photo walk Amsterdam & Haarlem </h2>
 		<p>
-			{' '}
 			Amsterdam is the well-known city of freedom. You can be here who you
 			are, and you don't have to be afraid of discrimination or
 			negativity. But besides all of this, the city is utterly romantic

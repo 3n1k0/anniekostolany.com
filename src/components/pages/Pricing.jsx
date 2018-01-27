@@ -1,24 +1,13 @@
 import React from 'react';
 import { Photo, Page } from './Page';
 import BookNowButton from '../BookNowButton';
-import Helmet from 'react-helmet';
 
 export default () => (
-	<Page>
-		<Helmet>
-			<meta name="description" content="Rates, packages & information." />
-			<title>Investment| Annie Kostolany</title>
-
-			<meta property="og:title" content="Investment | Annie Kostolany" />
-			<meta
-				property="og:description"
-				content="Rates, packages & information."
-			/>
-			<meta
-				property="og:image"
-				content="https://anniekostolany.com/images/investment/dorinaek.jpg"
-			/>
-		</Helmet>
+	<Page
+		title="Investment"
+		description="Rates, packages & information."
+		image="investment/dorinaek.jpg"
+	>
 		<h2>Investment</h2>
 		<Photo file="investment/dorinaek.jpg" />
 		<p>
@@ -27,7 +16,7 @@ export default () => (
 			interested in my rates, I can send you a detailed document of my
 			full package prices to answer all the questions you might have right
 			now.
-		</p>{' '}
+		</p>
 		<br /> All you need to do for this is just to send me an email to
 		mail@anniekostolany.com or fill out the contact form below.
 		<p>

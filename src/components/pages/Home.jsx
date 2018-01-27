@@ -1,16 +1,12 @@
 import React from 'react';
 import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
-import Helmet from 'react-helmet';
 
 export default () => (
-	<Page>
-		<Helmet>
-			<meta
-				property="og:image"
-				content="https://anniekostolany.com/images/home/zsofi.jpg"
-			/>
-		</Helmet>
+	<Page
+		title="Portrait &amp; Event Photography in Haarlem"
+		image="home/zsofi.jpg"
+	>
 		<Photo file="home/zsofi.jpg" />
 		<Photo file="home/jillmermaid.jpg" />
 		<Photo file="home/anna.jpg" />
