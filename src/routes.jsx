@@ -28,7 +28,8 @@ import LifestylePage from './components/pages/Lifestyle';
 import ChildrenAlbumPage from './components/pages/Children';
 import EventsPage from './components/pages/Events';
 
-import { BlogPosts } from './components/Blog';
+import BlogPage from './components/pages/Blog';
+import blogPosts from './posts';
 
 export default [
 	<Route exact path="/" component={HomePage} />,
@@ -74,8 +75,9 @@ export default [
 	<Route exact path="/lifestyle" component={LifestylePage} />,
 	<Route exact path="/events" component={EventsPage} />,
 
-	...BlogPosts.map(post => {
-		console.log(post);
+	<Route exact path="/blog" component={BlogPage} />,
+
+	...blogPosts.map(post => {
 		return (
 			<Route
 				exact
