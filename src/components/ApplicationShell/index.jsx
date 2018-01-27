@@ -65,7 +65,6 @@ class ApplicationShell extends React.Component {
 						property="og:description"
 						content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Haarlem, Netherlands, available worldwide. Let's create magic!"
 					/>
-					<meta property="og:image" content="" />
 					<meta property="og:type" content="website" />
 					<meta property="og:locale" content="en_US" />
 

@@ -9,21 +9,35 @@ export var Photo = props => (
 );
 
 export var Page = props => {
-	const title = props.title
-		? props.title
-		: 'Portrait &amp; Event Photography in Haarlem';
+	const title = props.title ? props.title : '';
+
+	const description = props.description ? props.description : '';
 
 	return (
 		<div className={page}>
 			<Helmet>
-				<meta name="description" content={props.description} />
-				<title>{title} | Annie Kostolany</title>
-				<meta
-					property="og:title"
-					content={title + ' | Annie Kostolany'}
-				/>
-				<meta property="og:description" content={props.description} />
-				<meta property="og:image" content={IMAGE_PATH + props.image} />
+				{props.title && [
+					<title>{title} | Annie Kostolany</title>,
+					<meta
+						property="og:title"
+						content={title + ' | Annie Kostolany'}
+					/>
+				]}
+
+				{props.description && [
+					<meta name="description" content={props.description} />,
+					<meta
+						property="og:description"
+						content={props.description}
+					/>
+				]}
+
+				{props.image && (
+					<meta
+						property="og:image"
+						content={IMAGE_PATH + props.image}
+					/>
+				)}
 			</Helmet>
 			{props.children}
 		</div>
