@@ -4,29 +4,12 @@ import BookNowButton from '../BookNowButton';
 import Helmet from 'react-helmet';
 
 export default () => (
-	<Page>
-		<Helmet>
-			<meta
-				name="description"
-				content="This photoshoot in Den Bosch was inspired by ancient fairytales and my beautiful model, Celine."
-			/>
-			<title>Wedding & bridal shoots | Annie Kostolany</title>
-
-			<meta
-				property="og:title"
-				content="Wedding & bridal shoots | Annie Kostolany"
-			/>
-			<meta
-				property="og:description"
-				content="This photoshoot in Den Bosch was inspired by ancient fairytales and my beautiful model, Celine."
-			/>
-			<meta
-				property="og:image"
-				content="https://anniekostolany.com/images/styled_bridal/bride1.jpg"
-			/>
-		</Helmet>
-
-		<h2> Wedding & bridal shoots </h2>
+	<Page
+		title="Wedding & bridal shoots"
+		description="This photoshoot in Den Bosch was inspired by ancient fairytales and my beautiful model, Celine."
+		image="styled_bridal/bride1.jpg"
+	>
+		<h2>Wedding & bridal shoots</h2>
 		<p>
 			When I think about a bride, the first words that come to my mind are
 			magnificent, graceful and delicate. The reason I do styled bridal

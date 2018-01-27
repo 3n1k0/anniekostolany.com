@@ -1,31 +1,13 @@
 import React from 'react';
 import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
-import Helmet from 'react-helmet';
 
 export default () => (
-	<Page>
-		<Helmet>
-			<meta
-				name="description"
-				content="You cannot really go wrong with a naturally beautiful model and exotic palm trees."
-			/>
-			<title>Tropical Vibes | Annie Kostolany</title>
-
-			<meta
-				property="og:title"
-				content="Tropical Vibes | Annie Kostolany"
-			/>
-			<meta
-				property="og:description"
-				content="You cannot really go wrong with a naturally beautiful model and exotic palm trees."
-			/>
-			<meta
-				property="og:image"
-				content="https://anniekostolany.com/images/tropical_vibes/palmak.jpg"
-			/>
-		</Helmet>
-
+	<Page
+		title="Tropical Vibes"
+		description="You cannot really go wrong with a naturally beautiful model and exotic palm trees."
+		image="tropical_vibes/palmak.jpg"
+	>
 		<h2>Tropical Vibes</h2>
 		<p>
 			Zsofia is a naturally beautiful model who barely wore any makeup for

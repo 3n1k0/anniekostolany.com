@@ -3,7 +3,7 @@ import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
-	<Page>
+	<Page title="Autumn's Scent">
 		<Photo file="autumn_scent/1.jpg" alt="" />
 		<Photo file="autumn_scent/2.jpg" alt="" />
 		<Photo file="autumn_scent/3.jpg" alt="" />

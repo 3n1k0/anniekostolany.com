@@ -1,28 +1,13 @@
 import React from 'react';
 import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
-import Helmet from 'react-helmet';
 
 export default () => (
-	<Page>
-		<Helmet>
-			<meta
-				name="description"
-				content="Stylish & edgy street fashion photoshoot with the amazing Zsofia Cank."
-			/>
-			<title>#streetstyle | Annie Kostolany</title>
-
-			<meta property="og:title" content="#streestyle | Annie Kostolany" />
-			<meta
-				property="og:description"
-				content="Stlyish & edgy street fashion photoshoot with the amazing Zsofia Cank."
-			/>
-			<meta
-				property="og:image"
-				content="https://anniekostolany.com/images/streetsyle/anker1.jpg"
-			/>
-		</Helmet>
-
+	<Page
+		title="#streestyle"
+		description="Stlyish & edgy street fashion photoshoot with the amazing Zsofia Cank."
+		image="streetsyle/anker1.jpg"
+	>
 		<h2>#streetstyle</h2>
 		<p>
 			Stlyish & edgy street fashion photoshoot with the amazing Zsofia
