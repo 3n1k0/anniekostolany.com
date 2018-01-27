@@ -1,5 +1,6 @@
 import React from 'react';
 import { Page, Photo } from '../pages/Page';
+import { Link } from 'react-router-dom';
 
 export class BlogPost extends React.Component {
 	render() {
@@ -9,9 +10,9 @@ export class BlogPost extends React.Component {
 		return (
 			<Page {...this.props}>
 				<h2>
-					<a href={website + BlogPost.getPermalink(date, title)}>
+					<Link to={'/blog/' + BlogPost.getPermalink(date, title)}>
 						{title}
-					</a>
+					</Link>
 				</h2>
 				{children}
 			</Page>
