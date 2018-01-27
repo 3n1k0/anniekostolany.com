@@ -30,6 +30,7 @@ import EventsPage from './components/pages/Events';
 
 import BlogPage from './components/pages/Blog';
 import blogPosts from './posts';
+import { BlogPost } from './components/posts/BlogPost';
 
 export default [
 	<Route exact path="/" component={HomePage} />,
@@ -78,10 +79,12 @@ export default [
 	<Route exact path="/blog" component={BlogPage} />,
 
 	...blogPosts.map(post => {
+		const { date, title } = post.props;
+
 		return (
 			<Route
 				exact
-				path={'/blog/' + post.props.permalink}
+				path={'/blog/' + BlogPost.getPermalink(date, title)}
 				component={() => post}
 			/>
 		);

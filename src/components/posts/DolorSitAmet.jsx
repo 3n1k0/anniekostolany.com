@@ -1,8 +1,12 @@
-import BlogPost from './BlogPost';
+import { BlogPost, Photo } from './BlogPost';
 import React from 'react';
 
-export default () => (
-	<BlogPost title="Amsterdam dolor sit amet" description="Lorem ipsum">
+export default (
+	<BlogPost
+		title="Amsterdam dolor sit amet"
+		description="Lorem ipsum"
+		date="2017-09-11"
+	>
 		<p>
 			Amsterdam is the well-known city of freedom. You can be here who you
 			are, and you don't have to be afraid of discrimination or
@@ -17,6 +21,9 @@ export default () => (
 			leave the selfie stick home for now, and book a photo session with
 			me instead! Contact me for further details and availability.
 		</p>
+
+		<Photo file="photo_walk_amsterdam/1.jpg" />
+		<Photo file="photo_walk_amsterdam/2.jpg" />
 
 		<p>
 			I cannot imagine a more romantic background for either couple shoots
