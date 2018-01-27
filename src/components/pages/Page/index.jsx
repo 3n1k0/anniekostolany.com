@@ -17,18 +17,24 @@ export var Page = props => {
 		<div className={page}>
 			<Helmet>
 				{props.title && [
-					<title>{title} | Annie Kostolany</title>,
+					<title key="1">{title} | Annie Kostolany</title>,
 					<meta
 						property="og:title"
 						content={title + ' | Annie Kostolany'}
+						key="2"
 					/>
 				]}
 
 				{props.description && [
-					<meta name="description" content={props.description} />,
+					<meta
+						name="description"
+						content={props.description}
+						key="1"
+					/>,
 					<meta
 						property="og:description"
 						content={props.description}
+						key="2"
 					/>
 				]}
 
