@@ -3,7 +3,7 @@ import { Page } from './Page';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
-	<Page>
+	<Page title="Events">
 		<h2>Events</h2>
 
 		<p>

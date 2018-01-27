@@ -2,31 +2,14 @@ import React from 'react';
 import { Page, Photo } from './Page';
 import { Link } from 'react-router-dom';
 import BookNowButton from '../BookNowButton';
-import Helmet from 'react-helmet';
 
 export default () => (
-	<Page>
-		<Helmet>
-			<meta
-				name="description"
-				content="Capture the best moments of your life."
-			/>
-			<title>Lifestyle photography | Annie Kostolany</title>
-
-			<meta
-				property="og:title"
-				content="Lifestyle photography| Annie Kostolany"
-			/>
-			<meta
-				property="og:description"
-				content="Capture the best moments of your life."
-			/>
-			<meta
-				property="og:image"
-				content="https://anniekostolany.com/images/coffee.jpg"
-			/>
-		</Helmet>
-		<h2> Lifestyle photography </h2>
+	<Page
+		title="Lifestyle photography"
+		description="Capture the best moments of your life."
+		image="coffee.jpg"
+	>
+		<h2>Lifestyle photography</h2>
 
 		<Photo file="coffee.jpg" alt="Girl drinking coffee" />
 

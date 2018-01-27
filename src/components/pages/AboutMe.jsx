@@ -3,7 +3,7 @@ import { Photo, Page } from './Page';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
-	<Page>
+	<Page title="About me">
 		<Photo
 			file="aboutme/anniekostolany.jpg"
 			alt="Annie Kostolany Photographer"
