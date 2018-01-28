@@ -8,6 +8,8 @@ import AboutMePage from './components/pages/AboutMe';
 import PricingPage from './components/pages/Pricing';
 
 import StyledBridalPage from './components/pages/StyledBridal';
+import ForestFairyTale from './components/pages/ForestFairyTale';
+import BridalBeauty from './components/pages/BridalBeauty';
 
 import DreamyBeachAlbumPage from './components/pages/DreamyBeach';
 import LostBrideAlbumPage from './components/pages/LostBride';
@@ -37,6 +39,8 @@ export default [
 
 	/* Styled Bridal */
 	<Route exact path="/styled-bridal" component={StyledBridalPage} />,
+	<Route exact path="/forest-fairy-tale" component={ForestFairyTale} />,
+	<Route exact path="/bridal-beauty" component={BridalBeauty} />,
 
 	/* Portraiture */
 	<Route exact path="/autumns-scent" component={AutumnsScent} />,
