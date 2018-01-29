@@ -63,11 +63,11 @@ routes.forEach(route => {
 				/></noscript>
 				<!-- End Facebook Pixel Code -->
 
-				<link href="/bundle.css" rel="stylesheet" />
+				<link href="/bundle.css?${Date.now()}" rel="stylesheet" />
 			</head>
 			<body>
 				<div id="root">${body}</div>
-				<script type="text/javascript" src="/app.js"></script>
+				<script type="text/javascript" src="/app.js?${Date.now()}"></script>
 			</body>
 		</html>`;
 
