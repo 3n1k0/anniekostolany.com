@@ -11,12 +11,7 @@ export default () => (
 		<h2>Wedding & bridal shoots</h2>
 		<p>
 			When I think about a bride, the first words that come to my mind are
-			magnificent, graceful and delicate. The reason I do styled bridal
-			shoots is to show my perspective on how I picture these beautiful
-			occasions.
-			<br />Do you like my style? It is possible to book me for your own
-			wedding, not only in the Netherlands but wherever you're planning to
-			get married.
+			magnificent, graceful and delicate. This bohemian shoot took place one early autumn morning. The lawn was still frozen as Celine stepped on it.
 		</p>
 
 		<Photo file="styled_bridal/bride1.jpg" />
