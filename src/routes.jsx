@@ -5,14 +5,14 @@ import Contact from './components/pages/Contact';
 import Thanks from './components/pages/Thanks';
 import Home from './components/pages/Home';
 import AboutMe from './components/pages/AboutMe';
-import Pricing from './components/pages/Pricing';
+import Investments from './components/pages/Investments';
 
 import StyledBridal from './components/pages/StyledBridal';
 import ForestFairyTale from './components/pages/ForestFairyTale';
 import BridalBeauty from './components/pages/BridalBeauty';
 import LostBride from './components/pages/LostBride';
 
-import Budoir from './components/pages/Budoir';
+import Boudoir from './components/pages/Boudoir';
 import DreamyBeach from './components/pages/DreamyBeach';
 import Rebellion from './components/pages/Rebellion';
 import FashionConfession from './components/pages/FashionConfession';
@@ -40,7 +40,7 @@ export default [
 	<Route path="/contact" component={Contact} key="2" />,
 	<Route path="/thanks" component={Thanks} key="3" />,
 	<Route path="/about-me" component={AboutMe} key="4" />,
-	<Route path="/pricing" component={Pricing} key="5" />,
+	<Route path="/investments" component={Investments} key="5" />,
 
 	/* Styled Bridal */
 
@@ -49,7 +49,7 @@ export default [
 	<Route path="/lost-bride" component={LostBride} key="8" />,
 
 	/* Portraiture */
-	<Route path="/budoir" component={Budoir} key="9" />,
+	<Route path="/boudoir" component={Boudoir} key="9" />,
 	<Route path="/autumns-scent" component={AutumnsScent} key="10" />,
 	<Route path="/streetstyle" component={StreetStyle} key="11" />,
 	<Route path="/dreamy-beach" component={DreamyBeach} key="12" />,
