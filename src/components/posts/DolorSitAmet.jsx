@@ -1,7 +1,7 @@
 import { BlogPost, Photo } from './BlogPost';
 import React from 'react';
 
-export default (
+export default () => (
 	<BlogPost
 		title="Amsterdam dolor sit amet"
 		description="Lorem ipsum"

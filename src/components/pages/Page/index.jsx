@@ -22,30 +22,30 @@ export class Page extends React.Component {
 	render() {
 		const { title, description, image } = this.props;
 
-	return (
-		<div className={page}>
-			<Helmet>
-				{props.title && [
-					<title key="1">{title} | Annie Kostolany</title>,
-					<meta
-						property="og:title"
-						content={title + ' | Annie Kostolany'}
-						key="2"
-					/>
-				]}
+		return (
+			<div className={page}>
+				<Helmet>
+					{title && [
+						<title key="1">{title} | Annie Kostolany</title>,
+						<meta
+							property="og:title"
+							content={title + ' | Annie Kostolany'}
+							key="2"
+						/>
+					]}
 
-				{props.description && [
-					<meta
-						name="description"
-						content={props.description}
-						key="1"
-					/>,
-					<meta
-						property="og:description"
-						content={props.description}
-						key="2"
-					/>
-				]}
+					{description && [
+						<meta
+							name="description"
+							content={description}
+							key="1"
+						/>,
+						<meta
+							property="og:description"
+							content={description}
+							key="2"
+						/>
+					]}
 
 					{image && (
 						<meta
