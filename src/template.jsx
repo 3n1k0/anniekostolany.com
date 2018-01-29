@@ -37,14 +37,14 @@ export default props => {
 					rel="canonical"
 					href="https://anniekostolany.com{props.path}"
 				/>
-				<link href="/bundle.css" rel="stylesheet" />
+				<link href="/bundle.css?{Date.now()}" rel="stylesheet" />
 
 				<script dangerouslySetInnerHTML={{ __html: googleAnalytics }} />
 				<script dangerouslySetInnerHTML={{ __html: facebookPixel }} />
 			</head>
 			<body>
 				<div id="root">{props.children}</div>
-				<script type="text/javascript" src="/app.js" />
+				<script type="text/javascript" src="/app.js?{Date.now()}" />
 			</body>
 		</html>
 	);
