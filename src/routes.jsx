@@ -10,9 +10,10 @@ import Pricing from './components/pages/Pricing';
 import StyledBridal from './components/pages/StyledBridal';
 import ForestFairyTale from './components/pages/ForestFairyTale';
 import BridalBeauty from './components/pages/BridalBeauty';
-
-import DreamyBeach from './components/pages/DreamyBeach';
 import LostBride from './components/pages/LostBride';
+
+import Budoir from './components/pages/Budoir';
+import DreamyBeach from './components/pages/DreamyBeach';
 import Rebellion from './components/pages/Rebellion';
 import FashionConfession from './components/pages/FashionConfession';
 import ConfidenceIsKey from './components/pages/ConfidenceIsKey';
@@ -43,36 +44,37 @@ export default [
 
 	/* Styled Bridal */
 
-	<Route path="/forest-fairy-tale" component={ForestFairyTale} key="6"/>,
-	<Route path="/bridal-beauty" component={BridalBeauty} key="7"/>,
+	<Route path="/forest-fairy-tale" component={ForestFairyTale} key="6" />,
+	<Route path="/bridal-beauty" component={BridalBeauty} key="7" />,
+	<Route path="/lost-bride" component={LostBride} key="8" />,
 
 	/* Portraiture */
-	<Route path="/autumns-scent" component={AutumnsScent} key="8" />,
-	<Route path="/streetstyle" component={StreetStyle} key="9" />,
-	<Route path="/dreamy-beach" component={DreamyBeach} key="10" />,
-	<Route path="/lost-bride" component={LostBride} key="11" />,
-	<Route path="/rebellion" component={Rebellion} key="12" />,
-	<Route path="/fashion-confession" component={FashionConfession} key="13" />,
-	<Route path="/confidence-is-key" component={ConfidenceIsKey} key="14" />,
-	<Route path="/tropical-vibes" component={TropicalVibes} key="15" />,
+	<Route path="/budoir" component={Budoir} key="9" />,
+	<Route path="/autumns-scent" component={AutumnsScent} key="10" />,
+	<Route path="/streetstyle" component={StreetStyle} key="11" />,
+	<Route path="/dreamy-beach" component={DreamyBeach} key="12" />,
+	<Route path="/rebellion" component={Rebellion} key="13" />,
+	<Route path="/fashion-confession" component={FashionConfession} key="14" />,
+	<Route path="/confidence-is-key" component={ConfidenceIsKey} key="15" />,
+	<Route path="/tropical-vibes" component={TropicalVibes} key="16" />,
 
 	/* Couple shoots */
-	<Route path="/couple-germany" component={CoupleGermany} key="16" />,
-	<Route path="/couple-hungary" component={CoupleHungary} key="17" />,
-	<Route path="/couple-miami" component={CoupleMiami} key="18" />,
+	<Route path="/couple-germany" component={CoupleGermany} key="17" />,
+	<Route path="/couple-hungary" component={CoupleHungary} key="18" />,
+	<Route path="/couple-miami" component={CoupleMiami} key="19" />,
 
 	<Route
 		path="/photo-walk-amsterdam"
 		component={PhotoWalkAmsterdam}
-		key="19"
+		key="20"
 	/>,
 
 	/* Family */
-	<Route path="/children" component={Children} key="20" />,
-	<Route path="/lifestyle" component={Lifestyle} key="21" />,
-	<Route path="/events" component={Events} key="22" />,
+	<Route path="/children" component={Children} key="21" />,
+	<Route path="/lifestyle" component={Lifestyle} key="22" />,
+	<Route path="/events" component={Events} key="23" />,
 
-	<Route exact path="/blog" component={Blog} key="23" />,
+	<Route exact path="/blog" component={Blog} key="24" />,
 
 	...blogPosts.map((post, i) => {
 		const { date, title } = post.props;
@@ -82,7 +84,7 @@ export default [
 				exact
 				path={'/blog/' + BlogPost.getPermalink(date, title)}
 				component={() => post}
-				key={i + 24}
+				key={i + 25}
 			/>
 		);
 	})
