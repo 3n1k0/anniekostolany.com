@@ -30,21 +30,21 @@ export default props => {
 				{helmet.meta.toComponent()}
 				<meta
 					property="og:url"
-					content={'https://anniekostolany.com' + props.path}
+					content="https://anniekostolany.com{props.path}"
 				/>
 				{helmet.link.toComponent()}
 				<link
 					rel="canonical"
-					href={'https://anniekostolany.com' + props.path}
+					href="https://anniekostolany.com{props.path}"
 				/>
-				<link href={'/bundle.css?' + Date.now()} rel="stylesheet" />
+				<link href="/bundle.css" rel="stylesheet" />
 
 				<script dangerouslySetInnerHTML={{ __html: googleAnalytics }} />
 				<script dangerouslySetInnerHTML={{ __html: facebookPixel }} />
 			</head>
 			<body>
 				<div id="root">{props.children}</div>
-				<script type="text/javascript" src={'/app.js?' + Date.now()} />
+				<script type="text/javascript" src="/app.js" />
 			</body>
 		</html>
 	);
