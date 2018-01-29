@@ -6,7 +6,7 @@ export default () => (
 	<Page
 		title="Fashion Confession"
 		description="Street fashion photoshoot with a Southern European beauty"
-		image="tropical_vibes/oszlopok.jpg"
+		image="fashion_confession/oszlopok.jpg"
 	>
 		<h2>Fashion Confession</h2>
 		<p>
