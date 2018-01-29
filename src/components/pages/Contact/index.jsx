@@ -3,7 +3,7 @@ import { Page } from '../Page';
 import { contactPage } from './style.scss';
 
 export default () => (
-	<Page>
+	<Page title="Contact">
 		<div className={contactPage}>
 			<form
 				action="https://formspree.io/eniko.kosztolanyi@gmail.com"

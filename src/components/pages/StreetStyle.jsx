@@ -4,7 +4,7 @@ import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<Page
-		title="#streestyle"
+		title="#streetstyle"
 		description="Stlyish & edgy street fashion photoshoot with the amazing Zsofia Cank."
 		image="streetsyle/anker1.jpg"
 	>

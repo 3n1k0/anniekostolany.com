@@ -3,15 +3,13 @@ import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
-	<Page>
+	<Page title="Romantic fall theme couple shoot" permalink="/couple-hungary">
 		<h2> Romantic fall theme couple shoot </h2>
 		<p>
 			{' '}
-			I must say, love / pre-wedding photography is one of the fields I
-			can express myself the best. I just really like how easy it is to
-			shoot with couples as they tend to entertain each other, kiss,
-			whisper and laugh. And while they do all that, I find the perfect
-			light and angles and take their most romantic photos.
+			I must say, engagement photography is I love the most. 
+			I just really like how easy it is to
+			work with couples who sometimes just happen to forget about the camera.
 		</p>
 
 		<Photo file="couple_shoots_hun/3.jpg" alt="Couple sitting in nature" />

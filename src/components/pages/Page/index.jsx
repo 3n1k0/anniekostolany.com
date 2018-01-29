@@ -8,38 +8,45 @@ export var Photo = props => (
 	<img src={IMAGE_PATH + props.file} alt={props.alt} />
 );
 
-export var Page = props => {
-	const title = props.title ? props.title : '';
+export class Page extends React.Component {
+	static getPermalink(title) {
+		return (
+			'/' +
+			title
+				.replace(/[^a-zA-Z0-9 ]+/g, '')
+				.replace(/ +/g, '-')
+				.toLowerCase()
+		);
+	}
 
-	const description = props.description ? props.description : '';
+	render() {
+		const { title, description, image } = this.props;
 
-	return (
-		<div className={page}>
-			<Helmet>
-				{props.title && [
-					<title>{title} | Annie Kostolany</title>,
-					<meta
-						property="og:title"
-						content={title + ' | Annie Kostolany'}
-					/>
-				]}
+		return (
+			<div className={page}>
+				<Helmet>
+					{title && [
+						<title>{title} | Annie Kostolany</title>,
+						<meta
+							property="og:title"
+							content={title + ' | Annie Kostolany'}
+						/>
+					]}
 
-				{props.description && [
-					<meta name="description" content={props.description} />,
-					<meta
-						property="og:description"
-						content={props.description}
-					/>
-				]}
+					{description && [
+						<meta name="description" content={description} />,
+						<meta property="og:description" content={description} />
+					]}
 
-				{props.image && (
-					<meta
-						property="og:image"
-						content={IMAGE_PATH + props.image}
-					/>
-				)}
-			</Helmet>
-			{props.children}
-		</div>
-	);
-};
+					{image && (
+						<meta
+							property="og:image"
+							content={IMAGE_PATH + image}
+						/>
+					)}
+				</Helmet>
+				{this.props.children}
+			</div>
+		);
+	}
+}
