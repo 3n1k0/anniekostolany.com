@@ -3,7 +3,7 @@ import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
-	<Page>
+	<Page title="Romantic fall theme couple shoot" permalink="/couple-hungary">
 		<h2> Romantic fall theme couple shoot </h2>
 		<p>
 			{' '}

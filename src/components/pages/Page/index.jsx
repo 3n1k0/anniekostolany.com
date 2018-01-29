@@ -8,10 +8,19 @@ export var Photo = props => (
 	<img src={IMAGE_PATH + props.file} alt={props.alt} />
 );
 
-export var Page = props => {
-	const title = props.title ? props.title : '';
+export class Page extends React.Component {
+	static getPermalink(title) {
+		return (
+			'/' +
+			title
+				.replace(/[^a-zA-Z0-9 ]+/g, '')
+				.replace(/ +/g, '-')
+				.toLowerCase()
+		);
+	}
 
-	const description = props.description ? props.description : '';
+	render() {
+		const { title, description, image } = this.props;
 
 	return (
 		<div className={page}>
@@ -38,14 +47,15 @@ export var Page = props => {
 					/>
 				]}
 
-				{props.image && (
-					<meta
-						property="og:image"
-						content={IMAGE_PATH + props.image}
-					/>
-				)}
-			</Helmet>
-			{props.children}
-		</div>
-	);
-};
+					{image && (
+						<meta
+							property="og:image"
+							content={IMAGE_PATH + image}
+						/>
+					)}
+				</Helmet>
+				{this.props.children}
+			</div>
+		);
+	}
+}

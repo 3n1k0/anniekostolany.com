@@ -4,7 +4,7 @@ import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<Page
-		title="Wedding & bridal shoots"
+		title="Forest fairy tale"
 		description="This photoshoot in Den Bosch was inspired by ancient fairytales and my beautiful model, Celine."
 		image="styled_bridal/bride1.jpg"
 	>

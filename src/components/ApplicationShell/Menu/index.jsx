@@ -20,16 +20,16 @@ export default () => (
 			<MenuItem to="/streetstyle">#streetstyle</MenuItem>
 			<MenuItem to="/fashion-confession">fashion confession</MenuItem>
 			<MenuItem to="/confidence-is-key">confidence is key</MenuItem>
-			<MenuItem to="/rebellion">rebellion</MenuItem>
+			<MenuItem to="/rockn-roll-girl">rebellion</MenuItem>
 			<MenuItem to="/tropical-vibes">tropical vibes 🌴</MenuItem>
-			<MenuItem to="/dreamy-beach">dreamy beach photoshoot</MenuItem>
+			<MenuItem to="/dreamy-beach-photoshoot">dreamy beach photoshoot</MenuItem>
 		</MenuBlock>
 		<MenuBlock title="couple shoots">
 			{/*<MenuItem to="/couple-miami">Miami</MenuItem>*/}
 			<MenuItem to="/couple-germany">germany</MenuItem>
 			<MenuItem to="/couple-hungary">hungary</MenuItem>
 		</MenuBlock>
-		<MenuItem to="/photo-walk-amsterdam">photo walk amsterdam 🚲</MenuItem>
+		<MenuItem to="/photo-walk-amsterdam-haarlem">photo walk amsterdam 🚲</MenuItem>
 		<MenuItem to="/contact">contact</MenuItem>
 	</div>
 );
