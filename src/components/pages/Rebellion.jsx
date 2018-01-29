@@ -12,7 +12,7 @@ export default () => (
 		<p>
 			Nivine is a true rebel inside and out and she's not afraid to show
 			it to the world. A strong and ambitious girl who's able to express
-			herself through her way of living. My ideal model.
+			herself through her way of living. The perfect model.
 		</p>
 		<Photo file="rebellion/cigi.jpg" />
 		<Photo file="rebellion/kocsi.jpg" />
