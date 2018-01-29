@@ -5,7 +5,7 @@ import BookNowButton from '../BookNowButton';
 export default () => (
 	<Page
 		title="Dreamy beach photoshoot"
-		description=" Is this girl a French model or a bohemian bride? She's full of life and always ready to smile back, just like the city of Marseille."
+		description="Stéphanie is a cheerful French model from Marseille. We chose this magical beach as location for this shoot."
 		image="dreamy_beach/23539526988_24cbf3c0c5_k.jpg"
 	>
 		<Photo file="dreamy_beach/23539538448_d820efbc30_k.jpg" />
