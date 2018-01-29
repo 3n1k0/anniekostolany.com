@@ -6,6 +6,7 @@ export default () => (
 	<Page
 		title="Portrait &amp; Event Photography in Haarlem"
 		image="home/zsofi.jpg"
+		permalink="/"
 	>
 		<Photo file="home/zsofi.jpg" />
 		<Photo file="home/jillmermaid.jpg" />

@@ -3,7 +3,7 @@ import { Page } from '../Page';
 import { thanksPage } from './style.scss';
 
 export default () => (
-	<Page>
+	<Page title="Thanks">
 		<div className={thanksPage}>
 			<h2>Thank you for your inquiry!</h2>
 			<p>Your message has been sent successfully.</p>
