@@ -5,13 +5,12 @@ import BookNowButton from '../BookNowButton';
 export default () => (
 	<Page
 		title="Lost Bride"
-		description="Moody styled beach photoshoot with a beautiful Dutch model."
+		description="Moody photoshoot in the ice-cold waves of Zandvoort beach."
 		image="lost_bride/mermaid.jpg"
 	>
 		<h2>Lost Bride</h2>
 		<p>
-			Dramatic and moody photoshoot in the cold waves of Zandvoort beach.
-			This is a story of a bride who once lost but then found herself.
+			Visual story-telling with my beautiful model and the dramatic, orange-red sunset.
 		</p>
 
 		<Photo file="lost_bride/mermaid.jpg" />
@@ -21,6 +20,7 @@ export default () => (
 		<Photo file="lost_bride/backlit.jpg" />
 		<Photo file="lost_bride/sunset.jpg" />
 		<Photo file="lost_bride/szep.jpg" />
+		<p>Jill Valerie, Zandvoort, 2017.</p>
 		<BookNowButton />
 	</Page>
 );
