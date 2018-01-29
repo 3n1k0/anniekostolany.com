@@ -7,7 +7,7 @@ export default () => (
 		<MenuBlock title="info">
 			<MenuItem to="/about-me">about me</MenuItem>
 			{/*<MenuItem to="/blog">Blog</MenuItem>*/}
-			<MenuItem to="/pricing">investment</MenuItem>
+			<MenuItem to="/investments">investment</MenuItem>
 		</MenuBlock>
 		<MenuBlock title="styled bridal 👰🏻">
 			<MenuItem to="/forest-fairy-tale">forest fairy tale</MenuItem>
@@ -15,7 +15,7 @@ export default () => (
 			<MenuItem to="/lost-bride">the lost bride</MenuItem>
 		</MenuBlock>
 		<MenuBlock title="portraiture">
-			<MenuItem to="/budoir">budoir</MenuItem>
+			<MenuItem to="/boudoir">boudoir</MenuItem>
 			<MenuItem to="/autumns-scent">autumn's scent 🍂</MenuItem>
 			<MenuItem to="/streetstyle">#streetstyle</MenuItem>
 			<MenuItem to="/fashion-confession">fashion confession</MenuItem>

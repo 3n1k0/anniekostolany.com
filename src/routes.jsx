@@ -5,14 +5,14 @@ import ContactPage from './components/pages/Contact';
 import ThanksPage from './components/pages/Thanks';
 import HomePage from './components/pages/Home';
 import AboutMePage from './components/pages/AboutMe';
-import PricingPage from './components/pages/Pricing';
+import Investments from './components/pages/Investments';
 
 import StyledBridalPage from './components/pages/StyledBridal';
 import ForestFairyTale from './components/pages/ForestFairyTale';
 import BridalBeauty from './components/pages/BridalBeauty';
 import LostBrideAlbumPage from './components/pages/LostBride';
 
-import Budoir from './components/pages/Budoir';
+import Boudoir from './components/pages/Boudoir';
 import DreamyBeachAlbumPage from './components/pages/DreamyBeach';
 import RebellionAlbumPage from './components/pages/Rebellion';
 import FashionConfessionAlbumPage from './components/pages/FashionConfession';
@@ -36,7 +36,7 @@ export default [
 	<Route exact path="/contact" component={ContactPage} />,
 	<Route exact path="/thanks" component={ThanksPage} />,
 	<Route exact path="/about-me" component={AboutMePage} />,
-	<Route exact path="/pricing" component={PricingPage} />,
+	<Route exact path="/investments" component={Investments} />,
 
 	/* Styled Bridal */
 	<Route exact path="/styled-bridal" component={StyledBridalPage} />,
@@ -44,7 +44,7 @@ export default [
 	<Route exact path="/bridal-beauty" component={BridalBeauty} />,
 
 	/* Portraiture */
-	<Route exact path="/budoir" component={Budoir} />,
+	<Route exact path="/boudoir" component={Boudoir} />,
 	<Route exact path="/autumns-scent" component={AutumnsScent} />,
 	<Route exact path="/streetstyle" component={StreetStyleAlbumPage} />,
 	<Route exact path="/dreamy-beach" component={DreamyBeachAlbumPage} />,
