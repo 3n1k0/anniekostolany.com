@@ -12,6 +12,7 @@ export default () => (
 		<MenuBlock title="styled bridal 👰🏻">
 			<MenuItem to="/forest-fairy-tale">forest fairy tale</MenuItem>
 			<MenuItem to="/bridal-beauty">bridal beauty</MenuItem>
+			<MenuItem to="/lost-bride">the lost bride</MenuItem>
 		</MenuBlock>
 		<MenuBlock title="portraiture">
 			<MenuItem to="/budoir">budoir</MenuItem>
@@ -22,7 +23,6 @@ export default () => (
 			<MenuItem to="/rebellion">rebellion</MenuItem>
 			<MenuItem to="/tropical-vibes">tropical vibes 🌴</MenuItem>
 			<MenuItem to="/dreamy-beach">dreamy beach photoshoot</MenuItem>
-			<MenuItem to="/lost-bride">the lost bride</MenuItem>
 		</MenuBlock>
 		<MenuBlock title="couple shoots">
 			{/*<MenuItem to="/couple-miami">Miami</MenuItem>*/}
