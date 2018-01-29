@@ -9,9 +9,7 @@ export default () => (
 		image="fashion_confession/oszlopok.jpg"
 	>
 		<h2>Fashion Confession</h2>
-		<p>
-			This girl is half Italian, half Greek and full of life. 
-		</p>
+		<p>This girl is half Italian, half Greek and full of life.</p>
 		<Photo file="fashion_confession/annasand.jpg" />
 		<Photo file="fashion_confession/annasand1.jpg" />
 		<Photo file="fashion_confession/fuggony.jpg" />

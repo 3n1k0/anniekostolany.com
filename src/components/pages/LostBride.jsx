@@ -10,7 +10,8 @@ export default () => (
 	>
 		<h2>Lost Bride</h2>
 		<p>
-			Visual story-telling with my beautiful model and the dramatic, orange-red sunset.
+			Visual story-telling with my beautiful model and the dramatic,
+			orange-red sunset.
 		</p>
 
 		<Photo file="lost_bride/mermaid.jpg" />

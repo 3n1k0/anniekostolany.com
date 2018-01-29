@@ -13,7 +13,8 @@ export default () => (
 		<p>
 			<br />Portrait sessions start from 170 eur
 			<br />Mini sessions from 90 eur
-			<br /> Please contact me for my wedding package guide and other requests.
+			<br /> Please contact me for my wedding package guide and other
+			requests.
 		</p>
 		<BookNowButton />
 	</Page>

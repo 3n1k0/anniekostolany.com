@@ -7,9 +7,9 @@ export default () => (
 		<h2> Romantic fall theme couple shoot </h2>
 		<p>
 			{' '}
-			I must say, engagement photography is I love the most. 
-			I just really like how easy it is to
-			work with couples who sometimes just happen to forget about the camera.
+			I must say, engagement photography is I love the most. I just really
+			like how easy it is to work with couples who sometimes just happen
+			to forget about the camera.
 		</p>
 
 		<Photo file="couple_shoots_hun/3.jpg" alt="Couple sitting in nature" />

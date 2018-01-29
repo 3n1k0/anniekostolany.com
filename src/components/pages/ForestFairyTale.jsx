@@ -11,7 +11,9 @@ export default () => (
 		<h2>Wedding & bridal shoots</h2>
 		<p>
 			When I think about a bride, the first words that come to my mind are
-			magnificent, graceful and delicate. This bohemian shoot took place one early autumn morning. The lawn was still frozen as Celine stepped on it.
+			magnificent, graceful and delicate. This bohemian shoot took place
+			one early autumn morning. The lawn was still frozen as Celine
+			stepped on it.
 		</p>
 
 		<Photo file="styled_bridal/bride1.jpg" />
