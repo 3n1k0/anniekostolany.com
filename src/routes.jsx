@@ -5,7 +5,7 @@ import ContactPage from './components/pages/Contact';
 import ThanksPage from './components/pages/Thanks';
 import HomePage from './components/pages/Home';
 import AboutMePage from './components/pages/AboutMe';
-import Investments from './components/pages/Investments';
+import Investment from './components/pages/Investment';
 
 import StyledBridalPage from './components/pages/StyledBridal';
 import ForestFairyTale from './components/pages/ForestFairyTale';
@@ -36,7 +36,7 @@ export default [
 	<Route exact path="/contact" component={ContactPage} />,
 	<Route exact path="/thanks" component={ThanksPage} />,
 	<Route exact path="/about-me" component={AboutMePage} />,
-	<Route exact path="/investments" component={Investments} />,
+	<Route exact path="/investment" component={Investment} />,
 
 	/* Styled Bridal */
 	<Route exact path="/styled-bridal" component={StyledBridalPage} />,
