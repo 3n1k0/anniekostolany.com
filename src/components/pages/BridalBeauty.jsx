@@ -3,14 +3,17 @@ import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
-		<Page
+	<Page
 		title="Bridal beauty"
 		description="Photoshoot in Budapest with breathtakingly beautiful models in a vintage studio."
 		image="bridal_beauty/1.jpg"
 	>
 		<h2>Bridal beauty styled photoshoots</h2>
 		<p>
-	This is a selection of the numerous styled photos I took as a part of this project. It's not a secret that I'm obsessed with these beautiful dresses, sophisticated makeup and exciting details about weddings and bridal looks.
+			This is a selection of the numerous styled photos I took as a part
+			of this project. It's not a secret that I'm obsessed with these
+			beautiful dresses, sophisticated makeup and exciting details about
+			weddings and bridal looks.
 		</p>
 
 		<Photo file="bridal_beauty/0.jpg" />
@@ -28,7 +31,7 @@ export default () => (
 		<Photo file="bridal_beauty/12.jpg" />
 		<Photo file="bridal_beauty/13.jpg" />
 		<Photo file="bridal_beauty/14.jpg" />
-		
 
 		<BookNowButton />
 	</Page>
+);
