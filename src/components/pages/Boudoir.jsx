@@ -3,7 +3,7 @@ import { Page, Photo } from './Page';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
-<Page
+	<Page
 		title="Boudoir session"
 		description="It's the confidence booster every girls should try."
 		image="boudoir/12.jpg"
@@ -21,11 +21,10 @@ export default () => (
 		<Photo file="boudoir/7.jpg" />
 		<Photo file="boudoir/8.jpg" />
 		<Photo file="boudoir/9.jpg" />
-	<Photo file="boudoir/10.jpg" />
-	<Photo file="boudoir/11.jpg" />
-	<Photo file="boudoir/12.jpg" />
-	
-		<BookNowButton />
+		<Photo file="boudoir/10.jpg" />
+		<Photo file="boudoir/11.jpg" />
+		<Photo file="boudoir/12.jpg" />
 
+		<BookNowButton />
 	</Page>
 );

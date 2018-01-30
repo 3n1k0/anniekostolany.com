@@ -11,8 +11,9 @@ export default () => (
 		<h2>Tropical Vibes</h2>
 		<p>
 			Zsofia is a naturally beautiful model who barely wore any makeup for
-			these photos. She's making modeling look easy by doing it so naturally. The tall and graceful palm
-			trees are just the perfect match for her southern features.
+			these photos. She's making modeling look easy by doing it so
+			naturally. The tall and graceful palm trees are just the perfect
+			match for her southern features.
 		</p>
 
 		<Photo file="tropical_vibes/kezekfent.jpg" />
