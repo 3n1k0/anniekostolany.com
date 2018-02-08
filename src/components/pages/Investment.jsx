@@ -11,6 +11,7 @@ export default () => (
 		<h2>Investment</h2>
 		<Photo file="investment/lucyandrick-11.jpg" />
 		<p>
+			<br />A limited number of Valentine's Day gift vouchers are now available. 
 			<br />Portrait sessions start from 170 eur
 			<br />Mini sessions from 90 eur
 			<br /> Please contact me for my wedding package guide and other
