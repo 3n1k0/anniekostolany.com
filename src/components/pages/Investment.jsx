@@ -9,7 +9,7 @@ export default () => (
 		image="investment/dorinaek.jpg"
 	>
 		<h2>Investment</h2>
-		<Photo file="investment/dorinaek.jpg" />
+		<Photo file="investment/lucyandrick-11.jpg" />
 		<p>
 			<br />Portrait sessions start from 170 eur
 			<br />Mini sessions from 90 eur
