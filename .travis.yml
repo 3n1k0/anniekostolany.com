@@ -1,31 +1,33 @@
 language: node_js
 node_js:
-  - "6"
+- '6'
 install:
-  - npm install
+- npm install
 script:
-  - npm run build
+- npm run build
 cache:
   directories:
-    - "node_modules"
+  - node_modules
 addons:
   ssh_known_hosts: anniekostolany.com
 env:
-  - REMOTE_DIR_STAGE=~/web/staging.anniekostolany.com/public_html REMOTE_DIR_PROD=~/web/anniekostolany.com/public_html REMOTE_HOST=anniekostolany.com
+- REMOTE_DIR_STAGE=~/web/staging.anniekostolany.com/public_html REMOTE_DIR_PROD=~/web/anniekostolany.com/public_html
+  REMOTE_HOST=anniekostolany.com
 before_deploy:
-  - echo $SSH_KEY > /tmp/deploy_rsa
-  - chmod 600 /tmp/deploy_rsa
-  - mv /tmp/deploy_rsa ~/.ssh/id_rsa
+- echo $SSH_KEY > /tmp/deploy_rsa
+- chmod 600 /tmp/deploy_rsa
+- mv /tmp/deploy_rsa ~/.ssh/id_rsa
 deploy:
-  # deploy to the staging environment
-  - provider: script
-    skip_cleanup: true
-    script: rsync --quiet -azP $TRAVIS_BUILD_DIR/out $SSH_STAGE_USER@$REMOTE_HOST:$REMOTE_DIR_STAGE
-    on:
-      branch: staging
-  # deploy to production
-  - provider: script
-    skip_cleanup: true
-    script: rsync --quiet -azP $TRAVIS_BUILD_DIR/out $SSH_PROD_USER@$REMOTE_HOST:$REMOTE_DIR_PROD
-    on:
-      branch: master
+- provider: script
+  skip_cleanup: true
+  script: rsync --quiet -azP $TRAVIS_BUILD_DIR/out $SSH_STAGE_USER@$REMOTE_HOST:$REMOTE_DIR_STAGE
+  on:
+    branch: staging
+- provider: script
+  skip_cleanup: true
+  script: rsync --quiet -azP $TRAVIS_BUILD_DIR/out $SSH_PROD_USER@$REMOTE_HOST:$REMOTE_DIR_PROD
+  on:
+    branch: master
+before_install:
+- openssl aes-256-cbc -K $encrypted_0b6c03e7cb09_key -iv $encrypted_0b6c03e7cb09_iv
+  -in deploy_rsa.enc -out deploy_rsa -d
