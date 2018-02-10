@@ -22,6 +22,7 @@ import AutumnsScent from './components/pages/AutumnsScent';
 import CoupleGermany from './components/pages/CoupleGermany';
 import CoupleHungary from './components/pages/CoupleHungary';
 import CoupleMiami from './components/pages/CoupleMiami';
+import CoupleShootHaarlem from './components/pages/CoupleShootHaarlem';
 
 import PhotoWalkAmsterdam from './components/pages/PhotoWalkAmsterdam';
 
@@ -52,5 +53,6 @@ export default [
 	PhotoWalkAmsterdam,
 	Lifestyle,
 	Children,
-	Events
+	Events,
+	CoupleShootHaarlem
 ];
