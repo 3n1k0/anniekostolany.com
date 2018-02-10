@@ -11,7 +11,7 @@ cache:
 addons:
   ssh_known_hosts: anniekostolany.com
 env:
-- REMOTE_DIR_STAGE=~/web/staging.anniekostolany.com/public_html REMOTE_DIR_PROD=~/web/anniekostolany.com/public_html
+- REMOTE_DIR_STAGE=home/admin/web/staging.anniekostolany.com/public_html REMOTE_DIR_PROD=/home/admin/web/anniekostolany.com/public_html
   REMOTE_HOST=anniekostolany.com
 before_deploy:
   - openssl aes-256-cbc -K $encrypted_0b6c03e7cb09_key -iv $encrypted_0b6c03e7cb09_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
