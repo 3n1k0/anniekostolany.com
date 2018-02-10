@@ -16,7 +16,6 @@ export default () => (
 			weddings and bridal looks.
 		</p>
 
-	
 		<Photo file="bridal_beauty/2.jpg" />
 		<Photo file="bridal_beauty/3.jpg" />
 		<Photo file="bridal_beauty/4.jpg" />
