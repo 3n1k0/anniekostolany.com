@@ -21,11 +21,11 @@ before_deploy:
 deploy:
 - provider: script
   skip_cleanup: true
-  script: rsync -azP $TRAVIS_BUILD_DIR/out $SSH_STAGE_USER@$REMOTE_HOST:$REMOTE_DIR_STAGE
+  script: rsync -azP $TRAVIS_BUILD_DIR/out/ $SSH_STAGE_USER@$REMOTE_HOST:$REMOTE_DIR_STAGE
   on:
     branch: staging
 - provider: script
   skip_cleanup: true
-  script: rsync -azP $TRAVIS_BUILD_DIR/out $SSH_PROD_USER@$REMOTE_HOST:$REMOTE_DIR_PROD
+  script: rsync -azP $TRAVIS_BUILD_DIR/out/ $SSH_PROD_USER@$REMOTE_HOST:$REMOTE_DIR_PROD
   on:
     branch: master
