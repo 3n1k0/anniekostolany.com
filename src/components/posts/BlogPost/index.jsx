@@ -26,8 +26,8 @@ export class BlogPost extends React.Component {
 			monthLz = ('0' + month).slice(-2),
 			dayLz = ('0' + day).slice(-2),
 			urlifiedTitle = title
-				.replace(/ /g, '-')
-				.replace(/[^a-zA-Z0-9-]+/g, '')
+				.replace(/[^a-zA-Z0-9 ]+/g, '')
+				.replace(/ +/g, '-')
 				.toLowerCase();
 
 		return year + '/' + monthLz + '/' + dayLz + '/' + urlifiedTitle;
