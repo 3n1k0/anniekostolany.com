@@ -13,7 +13,7 @@ addons:
 env:
   - REMOTE_DIR_STAGE=~/web/staging.anniekostolany.com/public_html REMOTE_DIR_PROD=~/web/anniekostolany.com/public_html REMOTE_HOST=anniekostolany.com
 before_deploy:
-  - echo $SSH_KEY > /tmp/
+  - echo $SSH_KEY > /tmp/deploy_rsa
   - chmod 600 /tmp/deploy_rsa
   - mv /tmp/deploy_rsa ~/.ssh/id_rsa
 deploy:
