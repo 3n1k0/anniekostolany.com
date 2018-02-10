@@ -8,8 +8,10 @@ export default () => (
 		description="It's the confidence booster every girls should try."
 		image="boudoir/12.jpg"
 	>
-		<h2>Fashion Confession</h2>
-		<p>Book your own boudoir session now!</p>
+		<h2>Boudoir photo session</h2>
+		<p>
+			Book your own boudoir session now!
+		</p>
 		<Photo file="boudoir/1.jpg" />
 		<Photo file="boudoir/2.jpg" />
 		<Photo file="boudoir/3.jpg" />
