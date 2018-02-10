@@ -15,7 +15,7 @@ env:
 before_deploy:
   - echo $SSH_KEY > /tmp/deploy_rsa
   - chmod 600 /tmp/deploy_rsa
-  - mv deploy_rsa ~/.ssh/id_rsa
+  - mv /tmp/deploy_rsa ~/.ssh/id_rsa
 deploy:
   # deploy to the staging environment
   - provider: script
