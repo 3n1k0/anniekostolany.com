@@ -30,6 +30,7 @@ export default () => (
 			{/*<MenuItem to="/couple-miami">Miami</MenuItem>*/}
 			<MenuItem to="/couple-germany">germany</MenuItem>
 			<MenuItem to="/couple-hungary">hungary</MenuItem>
+			<MenuItem to="/couple-haarlem">haarlem</MenuItem>
 		</MenuBlock>
 		<MenuItem to="/photo-walk-amsterdam-haarlem">
 			photo walk amsterdam 🚲
