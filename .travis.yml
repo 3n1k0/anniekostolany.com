@@ -11,9 +11,7 @@ cache:
 addons:
   ssh_known_hosts: anniekostolany.com
 env:
-  - REMOTE_DIR_STAGE=~/web/staging.anniekostolany.com/public_html
-  - REMOTE_DIR_PROD=~/web/anniekostolany.com/public_html
-  - REMOTE_HOST=anniekostolany.com
+  - REMOTE_DIR_STAGE=~/web/staging.anniekostolany.com/public_html REMOTE_DIR_PROD=~/web/anniekostolany.com/public_html REMOTE_HOST=anniekostolany.com
 before_deploy:
   - echo '$SSH_KEY' > /tmp/deploy_rsa
   - eval "$(ssh-agent -s)"
