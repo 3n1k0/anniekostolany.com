@@ -1,5 +1,5 @@
 import React from 'react';
-import LoremIpsum from './components/posts/LoremIpsum';
-import DolorSitAmet from './components/posts/DolorSitAmet';
+import PhotoWalkAmsterdam from './components/posts/PhotoWalkAmsterdam';
+import PhotoSessionsForValentines from './components/posts/PhotoSessionsForValentines';
 
-export default [LoremIpsum, DolorSitAmet];
+export default [PhotoSessionsForValentines, PhotoWalkAmsterdam];
