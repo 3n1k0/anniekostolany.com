@@ -9,9 +9,9 @@ module.exports = {
 		]
 	},
 	resolve : {
-		enforceExtension   : false,
-		extensions         : ['.js', '.jsx'],
-		mainFiles          : ['index']
+		enforceExtension : false,
+		extensions       : ['.js', '.jsx'],
+		mainFiles        : ['index']
 	},
 	output : {
 		path          : path.join(__dirname, './out/'),

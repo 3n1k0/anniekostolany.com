@@ -69,7 +69,7 @@ class ApplicationShell extends React.Component {
 					<meta property="og:locale" content="en_US" />
 
 					<link
-						href="https://fonts.googleapis.com/css?family=Cardo|Cinzel|EB+Garamond|Lora"
+						href="https://fonts.googleapis.com/css?family=Cardo|Roboto|Open+Sans"
 						rel="stylesheet"
 					/>
 					<link

@@ -26,16 +26,25 @@ export class Page extends React.Component {
 			<div className={page}>
 				<Helmet>
 					{title && [
-						<title>{title} | Annie Kostolany</title>,
+						<title key="1">{title} | Annie Kostolany</title>,
 						<meta
 							property="og:title"
 							content={title + ' | Annie Kostolany'}
+							key="2"
 						/>
 					]}
 
 					{description && [
-						<meta name="description" content={description} />,
-						<meta property="og:description" content={description} />
+						<meta
+							name="description"
+							content={description}
+							key="1"
+						/>,
+						<meta
+							property="og:description"
+							content={description}
+							key="2"
+						/>
 					]}
 
 					{image && (

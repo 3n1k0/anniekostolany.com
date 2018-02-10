@@ -5,25 +5,23 @@ import App from './App';
 import React from 'react';
 import fs from 'fs';
 import Helmet from 'react-helmet';
+import mkdirp from 'mkdirp';
+import path from 'path';
 
 const context = {};
 const urlset = [];
 
-if (!fs.existsSync('./out')) {
-	fs.mkdirSync('./out');
-}
-
 routes.forEach(route => {
-	const { path } = route.props;
+	const { path: routePath } = route.props;
 
 	const body = ReactDOMServer.renderToString(
-		<StaticRouter location={path} context={context}>
+		<StaticRouter location={routePath} context={context}>
 			<App />
 		</StaticRouter>
 	);
 	const helmet = Helmet.renderStatic();
 
-	urlset.push(`<url><loc>https://anniekostolany.com${path}</loc></url>`);
+	urlset.push(`<url><loc>https://anniekostolany.com${routePath}</loc></url>`);
 
 	const content = `<!DOCTYPE html>
 		<html>
@@ -32,8 +30,8 @@ routes.forEach(route => {
 				${helmet.meta.toString()}
 				${helmet.link.toString()}
 
-				<meta property="og:url" content="https://anniekostolany.com${path}" />
-				<link rel="canonical" href="https://anniekostolany.com${path}" />
+				<meta property="og:url" content="https://anniekostolany.com${routePath}" />
+				<link rel="canonical" href="https://anniekostolany.com${routePath}" />
 
 				<script>
 				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -71,8 +69,10 @@ routes.forEach(route => {
 			</body>
 		</html>`;
 
+	mkdirp.sync('./out' + path.dirname(routePath));
+
 	fs.writeFileSync(
-		'./out' + (path === '/' ? '/index' : path) + '.html',
+		'./out' + (routePath === '/' ? '/index' : routePath) + '.html',
 		content
 	);
 });
