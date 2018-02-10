@@ -11,7 +11,7 @@ export default () => (
 
 		<Photo file="haarlem_couple/haarlemcouple1.jpg" alt="Couple kissing on stairs" />
 		<Photo file="haarlem_couple/haarlemcouple2.jpg" alt="Couple by windmill" />
-		<Photo file="chaarlem_couple/haarlemcouple3.jpg" alt="Couple by windmill" />
+		<Photo file="haarlem_couple/haarlemcouple3.jpg" alt="Couple by windmill" />
 		<Photo file="haarlem_couple/haarlemcouple4.jpg" alt="Couple by brick wall" />
     <Photo file="haarlem_couple/haarlemcouple5.jpg" alt="Couple with heart shaped window" />
     <Photo file="haarlem_couple/haarlemcouple6.jpg" alt="Couple walking on street" />
