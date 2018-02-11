@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run build && node ./devserver.js",
+    "dev": "node ./devserver.js",
     "build": "npm run server && ./node_modules/.bin/webpack --config webpack.prod.js",
     "server": "./node_modules/.bin/webpack --config webpack.server.js && node ./dist/server.js",
     "lint": "./node_modules/.bin/eslint src/* --ext .jsx",

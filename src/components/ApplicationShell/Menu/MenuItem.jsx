@@ -56,14 +56,14 @@ class MenuItem extends React.Component {
 
 	render() {
 		return (
-			<li className={menuItem}>
+			<Button>
 				<Link
-					className={this.state.active ? active : ''}
+					className={this.state.active ? 'active' : ''}
 					to={this.props.to}
 				>
 					{this.props.children}
 				</Link>
-			</li>
+			</Button>
 		);
 	}
 }
