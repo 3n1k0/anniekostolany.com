@@ -14,8 +14,8 @@ const Title = styled.h2`
 	}
 `;
 
-const Date = styled.span`
-	font-size: 14px;
+const PostDate = styled.span`
+	color: #999999;
 `;
 
 export class BlogPost extends React.Component {
@@ -30,7 +30,7 @@ export class BlogPost extends React.Component {
 						{title}
 					</Link>
 				</Title>
-				<Date>{formattedDate}</Date>
+				<PostDate>{formattedDate}</PostDate>
 				{children}
 			</Page>
 		);
