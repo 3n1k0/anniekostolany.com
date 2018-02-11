@@ -1,4 +1,8 @@
-.bookNowButton {
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const Button = styled.div`
 	padding: 40px 0 80px 0;
 
 	a {
@@ -18,4 +22,10 @@
 		background: #000000;
 		color: #ffffff;
 	}
-}
+`;
+
+export default () => (
+	<Button>
+		<Link to="/contact">Book now</Link>
+	</Button>
+);
