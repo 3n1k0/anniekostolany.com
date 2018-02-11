@@ -8,6 +8,7 @@ export default () => (
 		especially for those who struggle a lot finding a nice and
 		meaningful present."
 		date="2018-02-10"
+		permalink="valentines-gift"
 	>
 		<p>Are you looking for a simple yet amazing gift for Valentines?</p>
 
