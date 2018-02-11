@@ -8,7 +8,6 @@ export default () => (
 			<MenuItem to="/about-me">about me</MenuItem>
 			<MenuItem to="/investment">investment</MenuItem>
 		</MenuBlock>
-		<MenuItem to="/blog">blog</MenuItem>
 		<MenuBlock title="styled bridal 👰🏻">
 			<MenuItem to="/forest-fairy-tale">forest fairy tale</MenuItem>
 			<MenuItem to="/bridal-beauty">bridal beauty</MenuItem>
@@ -35,6 +34,7 @@ export default () => (
 		<MenuItem to="/photo-walk-amsterdam-haarlem">
 			photo walk amsterdam 🚲
 		</MenuItem>
+		<MenuItem to="/blog">blog</MenuItem>
 		<MenuItem to="/contact">contact</MenuItem>
 	</div>
 );

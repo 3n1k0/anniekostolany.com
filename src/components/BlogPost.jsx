@@ -1,18 +1,36 @@
 import React from 'react';
 import { Page, Photo } from './Page';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import moment from 'moment';
+
+const Title = styled.h2`
+	padding: 1rem 0 0 0;
+	margin: 0;
+
+	a {
+		color: #000000;
+		text-decoration: none;
+	}
+`;
+
+const Date = styled.span`
+	font-size: 14px;
+`;
 
 export class BlogPost extends React.Component {
 	render() {
 		const { date, title, children } = this.props;
+		const formattedDate = moment(date).format('MMMM Do, YYYY');
 
 		return (
 			<Page {...this.props}>
-				<h2>
+				<Title>
 					<Link to={'/blog/' + BlogPost.getPermalink(date, title)}>
 						{title}
 					</Link>
-				</h2>
+				</Title>
+				<Date>{formattedDate}</Date>
 				{children}
 			</Page>
 		);
