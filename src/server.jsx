@@ -1,29 +1,33 @@
 import ReactDOMServer from 'react-dom/server';
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 import { StaticRouter } from 'react-router';
 import routes from './routes';
 import App from './App';
 import React from 'react';
 import fs from 'fs';
 import Helmet from 'react-helmet';
+import mkdirp from 'mkdirp';
+import path from 'path';
 
 const context = {};
 const urlset = [];
 
-if (!fs.existsSync('./out')) {
-	fs.mkdirSync('./out');
-}
-
 routes.forEach(route => {
-	const { path } = route.props;
+	const { path: routePath } = route.props;
+
+	const sheet = new ServerStyleSheet();
 
 	const body = ReactDOMServer.renderToString(
-		<StaticRouter location={path} context={context}>
-			<App />
-		</StaticRouter>
+		<StyleSheetManager sheet={sheet.instance}>
+			<StaticRouter location={routePath} context={context}>
+				<App />
+			</StaticRouter>
+		</StyleSheetManager>
 	);
 	const helmet = Helmet.renderStatic();
+	const styleTags = sheet.getStyleTags();
 
-	urlset.push(`<url><loc>https://anniekostolany.com${path}</loc></url>`);
+	urlset.push(`<url><loc>https://anniekostolany.com${routePath}</loc></url>`);
 
 	const content = `<!DOCTYPE html>
 		<html>
@@ -32,8 +36,8 @@ routes.forEach(route => {
 				${helmet.meta.toString()}
 				${helmet.link.toString()}
 
-				<meta property="og:url" content="https://anniekostolany.com${path}" />
-				<link rel="canonical" href="https://anniekostolany.com${path}" />
+				<meta property="og:url" content="https://anniekostolany.com${routePath}" />
+				<link rel="canonical" href="https://anniekostolany.com${routePath}" />
 
 				<script>
 				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -63,6 +67,8 @@ routes.forEach(route => {
 				/></noscript>
 				<!-- End Facebook Pixel Code -->
 
+				${styleTags}
+
 				<link href="/bundle.css?${Date.now()}" rel="stylesheet" />
 			</head>
 			<body>
@@ -71,8 +77,10 @@ routes.forEach(route => {
 			</body>
 		</html>`;
 
+	mkdirp.sync('./out' + path.dirname(routePath));
+
 	fs.writeFileSync(
-		'./out' + (path === '/' ? '/index' : path) + '.html',
+		'./out' + (routePath === '/' ? '/index' : routePath) + '.html',
 		content
 	);
 });

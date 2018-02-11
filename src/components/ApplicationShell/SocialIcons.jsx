@@ -1,5 +1,17 @@
 import React from 'react';
-import { socialIcons } from './style.scss';
+import styled from 'styled-components';
+
+const Button = styled.div`
+	font-size: 30px;
+	line-height: 40px;
+	padding-top: 10px;
+
+	a {
+		color: #000000;
+		display: inline-block;
+		padding-right: 10px;
+	}
+`;
 
 const getFacebookUrl = ua =>
 	/iPhone|iPad|iPod/.test(ua)
@@ -13,7 +25,7 @@ const getInstagramUrl = ua =>
 
 export default () =>
 	global.window ? (
-		<div className={socialIcons}>
+		<Button>
 			<a
 				href={getInstagramUrl(window.navigator.userAgent)}
 				target="_blank"
@@ -26,14 +38,14 @@ export default () =>
 			>
 				<i className="fa fa-facebook-official" />
 			</a>
-		</div>
+		</Button>
 	) : (
-		<div className={socialIcons}>
+		<Button>
 			<a href="https://instagram.com/anniekostolany" target="_blank">
 				<i className="fa fa-instagram" />
 			</a>
 			<a href="https://facebook.com/anniekostolany" target="_blank">
 				<i className="fa fa-facebook-official" />
 			</a>
-		</div>
+		</Button>
 	);

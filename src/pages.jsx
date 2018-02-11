@@ -5,6 +5,7 @@ import Thanks from './components/pages/Thanks';
 import Home from './components/pages/Home';
 import AboutMe from './components/pages/AboutMe';
 import Investment from './components/pages/Investment';
+import Blog from './components/pages/Blog';
 
 import ForestFairyTale from './components/pages/ForestFairyTale';
 import BridalBeauty from './components/pages/BridalBeauty';
@@ -35,6 +36,7 @@ export default [
 	Thanks,
 	Home,
 	AboutMe,
+	Blog,
 	Investment,
 	ForestFairyTale,
 	BridalBeauty,

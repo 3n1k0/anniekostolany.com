@@ -1,14 +1,13 @@
 import React from 'react';
-import { Page, Photo } from '../Page';
-import BookNowButton from '../BookNowButton';
+import { BlogPost, Photo } from '../BlogPost';
 
 export default () => (
-	<Page
+	<BlogPost
 		title="Photo walk Amsterdam & Haarlem"
 		description="Photo walk Amsterdam & Haarlem"
+		date="2017-09-12"
 		image="rebellion/photo_walk_amsterdam/1.jpg"
 	>
-		<h2> Photo walk Amsterdam & Haarlem </h2>
 		<p>
 			Most people know Amsterdam as the city of freedom. Maybe because
 			here you don't have to hide who you are and you will be accepted
@@ -27,7 +26,5 @@ export default () => (
 		<Photo file="photo_walk_amsterdam/4.jpg" />
 		<Photo file="photo_walk_amsterdam/88.jpg" />
 		<Photo file="photo_walk_amsterdam/8.jpg" />
-
-		<BookNowButton />
-	</Page>
+	</BlogPost>
 );

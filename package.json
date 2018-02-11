@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run build && node ./devserver.js",
+    "dev": "node ./devserver.js",
     "build": "npm run server && ./node_modules/.bin/webpack --config webpack.prod.js",
     "server": "./node_modules/.bin/webpack --config webpack.server.js && node ./dist/server.js",
     "lint": "./node_modules/.bin/eslint src/* --ext .jsx",
@@ -36,6 +36,7 @@
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.4",
+    "mkdirp": "^0.5.1",
     "node-sass": "^4.6.0",
     "prettier": "^1.9.2",
     "react-test-renderer": "^16.1.1",
@@ -53,6 +54,8 @@
     "react-helmet": "^5.2.0",
     "react-hot-loader": "^3.1.1",
     "react-responsive": "^4.0.3",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "react-side-effect": "^1.1.3",
+    "styled-components": "^3.1.6"
   }
 }

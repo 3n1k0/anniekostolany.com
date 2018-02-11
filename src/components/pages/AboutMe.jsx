@@ -1,5 +1,5 @@
 import React from 'react';
-import { Photo, Page } from './Page';
+import { Photo, Page } from '../Page';
 import BookNowButton from '../BookNowButton';
 
 export default () => (
@@ -13,7 +13,7 @@ export default () => (
 
 		<p>
 			Welcome to my website, my name is Annie and I am a Hungarian girl
-			living in the Netherlands. I am a self-taught portrait photographer.{' '}
+			living in the Netherlands. I am a self-taught portrait photographer.
 			<br /> My inspiration comes from life and from all the beauty that
 			surrounds us, even if we are not aware of it anymore. Most of the
 			time I just quietly observe. I wait until light, texture, color and
