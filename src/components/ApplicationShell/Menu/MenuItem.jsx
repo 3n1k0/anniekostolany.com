@@ -9,7 +9,7 @@ const Button = styled.li`
 	padding: 0;
 
 	a {
-		font-family: "Open Sans", sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-size: 16px;
 		color: #000000;
 		display: block;

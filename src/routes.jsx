@@ -12,7 +12,7 @@ export default [
 		return (
 			<Route
 				exact
-				path={'/blog/' + BlogPost.getPermalink(date, title)}
+				path={'/blog/' + BlogPost.getPermalink(date, title, permalink)}
 				component={post}
 				key={i}
 			/>

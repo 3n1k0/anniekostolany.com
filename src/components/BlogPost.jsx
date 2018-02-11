@@ -20,13 +20,13 @@ const PostDate = styled.span`
 
 export class BlogPost extends React.Component {
 	render() {
-		const { date, title, children } = this.props;
+		const { date, title, children, permalink } = this.props;
 		const formattedDate = moment(date).format('MMMM Do, YYYY');
 
 		return (
 			<Page {...this.props}>
 				<Title>
-					<Link to={'/blog/' + BlogPost.getPermalink(date, title)}>
+					<Link to={'/blog/' + BlogPost.getPermalink(date, title, permalink)}>
 						{title}
 					</Link>
 				</Title>
@@ -36,7 +36,7 @@ export class BlogPost extends React.Component {
 		);
 	}
 
-	static getPermalink(date, title) {
+	static getPermalink(date, title, permalink) {
 		const jsDate = new Date(date),
 			year = jsDate.getFullYear(),
 			month = jsDate.getMonth() + 1,
@@ -48,7 +48,7 @@ export class BlogPost extends React.Component {
 				.replace(/ +/g, '-')
 				.toLowerCase();
 
-		return year + '/' + monthLz + '/' + dayLz + '/' + urlifiedTitle;
+		return year + '/' + monthLz + '/' + dayLz + '/' + (permalink ? permalink : urlifiedTitle);
 	}
 }
 
