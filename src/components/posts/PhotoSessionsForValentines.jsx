@@ -1,4 +1,4 @@
-import { BlogPost, Photo } from './BlogPost';
+import { BlogPost, Photo } from '../BlogPost';
 import React from 'react';
 
 export default () => (

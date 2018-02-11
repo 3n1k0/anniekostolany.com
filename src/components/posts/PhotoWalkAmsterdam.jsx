@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlogPost, Photo } from './BlogPost';
+import { BlogPost, Photo } from '../BlogPost';
 
 export default () => (
 	<BlogPost

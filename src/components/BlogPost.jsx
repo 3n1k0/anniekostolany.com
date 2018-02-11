@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Photo } from '../../Page';
+import { Page, Photo } from './Page';
 import { Link } from 'react-router-dom';
 
 export class BlogPost extends React.Component {

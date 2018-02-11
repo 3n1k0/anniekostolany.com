@@ -1,4 +1,5 @@
 import ReactDOMServer from 'react-dom/server';
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
 import { StaticRouter } from 'react-router';
 import routes from './routes';
 import App from './App';
@@ -11,15 +12,22 @@ import path from 'path';
 const context = {};
 const urlset = [];
 
+
+
 routes.forEach(route => {
 	const { path: routePath } = route.props;
 
+	const sheet = new ServerStyleSheet();
+
 	const body = ReactDOMServer.renderToString(
-		<StaticRouter location={routePath} context={context}>
-			<App />
-		</StaticRouter>
+		<StyleSheetManager sheet={sheet.instance}>
+			<StaticRouter location={routePath} context={context}>
+				<App />
+			</StaticRouter>
+		</StyleSheetManager>
 	);
 	const helmet = Helmet.renderStatic();
+	const styleTags = sheet.getStyleTags();
 
 	urlset.push(`<url><loc>https://anniekostolany.com${routePath}</loc></url>`);
 
@@ -60,6 +68,8 @@ routes.forEach(route => {
 				  src="https://www.facebook.com/tr?id=190552224845834&ev=PageView&noscript=1"
 				/></noscript>
 				<!-- End Facebook Pixel Code -->
+
+				${styleTags}
 
 				<link href="/bundle.css?${Date.now()}" rel="stylesheet" />
 			</head>
