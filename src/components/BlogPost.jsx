@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 export class BlogPost extends React.Component {
 	render() {
-		const { date, title, children, listed } = this.props;
+		const { date, title, children } = this.props;
 
 		return (
-			<Page {...(listed ? {} : this.props)}>
+			<Page {...this.props}>
 				<h2>
 					<Link to={'/blog/' + BlogPost.getPermalink(date, title)}>
 						{title}

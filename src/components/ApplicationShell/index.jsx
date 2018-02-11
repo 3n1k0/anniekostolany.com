@@ -9,6 +9,11 @@ import MenuButton from './MenuButton';
 import { withRouter } from 'react-router-dom';
 import SocialIcons from './SocialIcons';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
+
+const Page = styled.div`
+	padding: 40px 40px 0 40px;
+`;
 
 class ApplicationShell extends React.Component {
 	constructor(props) {
@@ -89,7 +94,7 @@ class ApplicationShell extends React.Component {
 						}
 						onClick={this.closeMenu}
 					>
-						{this.props.children}
+						<Page>{this.props.children}</Page>
 					</div>
 					<Header>
 						<MenuButton onClick={this.handleMenuButtonClick} />
@@ -100,7 +105,9 @@ class ApplicationShell extends React.Component {
 					</MobileSidebar>
 				</SmallScreen>
 				<LargeScreen>
-					<div className={pages}>{this.props.children}</div>
+					<div className={pages}>
+						<Page>{this.props.children}</Page>
+					</div>
 					<DesktopSidebar>
 						<div className={logo} />
 						<Menu />

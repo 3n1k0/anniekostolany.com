@@ -6,7 +6,6 @@ const PageContainer = styled.div`
 	font-size: 16px;
 	font-family: "Open Sans", sans-serif;
 	line-height: 1.5em;
-	padding: 40px 40px 0 40px;
 	width: auto;
 
 	@media (max-width: 768px) {
@@ -46,11 +45,11 @@ export class Page extends React.Component {
 	}
 
 	render() {
-		const { title, description, image } = this.props;
+		const { title, description, image, isInListView } = this.props;
 
 		return (
 			<PageContainer>
-				<Helmet>
+				{!isInListView || <Helmet>
 					{title && [
 						<title key="1">{title} | Annie Kostolany</title>,
 						<meta
@@ -79,7 +78,7 @@ export class Page extends React.Component {
 							content={IMAGE_PATH + image}
 						/>
 					)}
-				</Helmet>
+				</Helmet>}
 				{this.props.children}
 			</PageContainer>
 		);

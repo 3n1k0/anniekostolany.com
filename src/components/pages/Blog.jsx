@@ -3,5 +3,5 @@ import blogPosts from '../../posts';
 import { Page } from '../Page';
 
 export default () => (
-	<Page title="Blog">{blogPosts.map(Post => <Post />)}</Page>
+	<Page title="Blog">{blogPosts.map(Post => <Post isInListView />)}</Page>
 );

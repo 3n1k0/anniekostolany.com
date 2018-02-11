@@ -5,7 +5,8 @@ import styled from 'styled-components';
 const ContactPage = styled.div`
 	margin: 0 auto;
 
-	input, textarea {
+	input,
+	textarea {
 		background: #ffffff;
 		border: 1px solid #000000;
 		border-radius: 0;
@@ -22,7 +23,7 @@ const ContactPage = styled.div`
 		resize: vertical;
 	}
 
-	input[name="_gotcha"] {
+	input[name='_gotcha'] {
 		display: none;
 	}
 
@@ -31,7 +32,7 @@ const ContactPage = styled.div`
 		font-family: arial;
 	}
 
-	input[type="submit"]:hover {
+	input[type='submit']:hover {
 		background: #000000;
 		color: #ffffff;
 		cursor: pointer;

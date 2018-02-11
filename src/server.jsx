@@ -1,5 +1,5 @@
 import ReactDOMServer from 'react-dom/server';
-import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 import { StaticRouter } from 'react-router';
 import routes from './routes';
 import App from './App';
@@ -11,8 +11,6 @@ import path from 'path';
 
 const context = {};
 const urlset = [];
-
-
 
 routes.forEach(route => {
 	const { path: routePath } = route.props;
