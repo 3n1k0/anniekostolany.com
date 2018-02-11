@@ -1,6 +1,32 @@
 import React from 'react';
-import { page } from './style.scss';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
+
+const PageContainer = styled.div`
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.5em;
+	padding: 40px 40px 0 40px;
+	width: auto;
+
+	@media (max-width: 768px) {
+		padding: 40px 0 0 0;
+	}
+
+	img {
+		display: block;
+		padding: 0 0 40px 0;
+		width: 100%;
+
+		@media (max-width: 500px) {
+			padding-bottom: 0;
+		}
+	}
+
+	h2 {
+		font-weight: normal;
+	}
+`;
 
 const IMAGE_PATH = 'https://anniekostolany.com/images/';
 
@@ -23,7 +49,7 @@ export class Page extends React.Component {
 		const { title, description, image } = this.props;
 
 		return (
-			<div className={page}>
+			<PageContainer>
 				<Helmet>
 					{title && [
 						<title key="1">{title} | Annie Kostolany</title>,
@@ -55,7 +81,7 @@ export class Page extends React.Component {
 					)}
 				</Helmet>
 				{this.props.children}
-			</div>
+			</PageContainer>
 		);
 	}
 }

@@ -1,10 +1,46 @@
 import React from 'react';
 import { Page } from '../Page';
-import { contactPage } from './style.scss';
+import styled from 'styled-components';
+
+const ContactPage = styled.div`
+	margin: 0 auto;
+
+	input, textarea {
+		background: #ffffff;
+		border: 1px solid #000000;
+		border-radius: 0;
+		color: #000000;
+		font-size: 16px;
+		margin: 10px 0;
+		outline: none;
+		padding: 10px;
+		width: 100%;
+	}
+
+	textarea {
+		height: 200px;
+		resize: vertical;
+	}
+
+	input[name="_gotcha"] {
+		display: none;
+	}
+
+	label {
+		font-size: 16px;
+		font-family: arial;
+	}
+
+	input[type="submit"]:hover {
+		background: #000000;
+		color: #ffffff;
+		cursor: pointer;
+	}
+`;
 
 export default () => (
 	<Page title="Contact">
-		<div className={contactPage}>
+		<ContactPage>
 			<form
 				action="https://formspree.io/eniko.kosztolanyi@gmail.com"
 				method="POST"
@@ -25,6 +61,6 @@ export default () => (
 				<textarea name="message" />
 				<input type="submit" value="Send" />
 			</form>
-		</div>
+		</ContactPage>
 	</Page>
 );

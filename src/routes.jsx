@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page } from './components/pages/Page';
+import { Page } from './components/Page';
 import { BlogPost } from './components/posts/BlogPost';
 import pages from './pages';
 import posts from './posts';
