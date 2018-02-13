@@ -9,7 +9,6 @@ export default () => (
 		image="investment/dorinaek.jpg"
 	>
 		<h2>Investment</h2>
-		<Photo file="investment/lucyandrick-11.jpg" />
 		<p>
 			<br />A limited number of Valentine's Day gift vouchers are now
 			available.
