@@ -1,18 +1,27 @@
 import React from 'react';
-import { blur, pages, logo } from './style.scss';
+import { blur, pages } from './style.scss';
 import DesktopSidebar from './DesktopSidebar';
 import Menu from './Menu';
 import { SmallScreen, LargeScreen } from '../ResponsiveComponents';
 import MobileSidebar from './MobileSidebar';
 import Header from './Header';
 import MenuButton from './MenuButton';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import SocialIcons from './SocialIcons';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 const Page = styled.div`
 	padding: 40px 40px 0 40px;
+`;
+
+const Logo = styled.div`
+	background-image: url(https://anniekostolany.com/images/logo.png);
+	height: 0;
+	width: 100%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	padding-bottom: 56%;
 `;
 
 class ApplicationShell extends React.Component {
@@ -109,7 +118,9 @@ class ApplicationShell extends React.Component {
 						<Page>{this.props.children}</Page>
 					</div>
 					<DesktopSidebar>
-						<div className={logo} />
+						<Link to="/">
+							<Logo />
+						</Link>
 						<Menu />
 						<SocialIcons />
 					</DesktopSidebar>
