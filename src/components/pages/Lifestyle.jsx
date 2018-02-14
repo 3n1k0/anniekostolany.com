@@ -1,5 +1,6 @@
 import React from 'react';
-import { Page, Photo } from '../Page';
+import Page from '../Page';
+import Photo from '../Photo';
 import { Link } from 'react-router-dom';
 import BookNowButton from '../BookNowButton';
 
