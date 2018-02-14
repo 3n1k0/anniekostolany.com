@@ -8,11 +8,6 @@ export default () => (
 			<MenuItem to="/about-me">about me</MenuItem>
 			<MenuItem to="/investment">investment</MenuItem>
 		</MenuBlock>
-		<MenuBlock title="styled bridal 👰🏻">
-			<MenuItem to="/forest-fairy-tale">forest fairy tale</MenuItem>
-			<MenuItem to="/bridal-beauty">bridal beauty</MenuItem>
-			<MenuItem to="/lost-bride">the lost bride</MenuItem>
-		</MenuBlock>
 		<MenuBlock title="portraiture">
 			<MenuItem to="/boudoir-session">boudoir</MenuItem>
 			<MenuItem to="/autumns-scent">autumn's scent 🍂</MenuItem>
@@ -24,6 +19,11 @@ export default () => (
 			<MenuItem to="/dreamy-beach-photoshoot">
 				dreamy beach photoshoot
 			</MenuItem>
+				<MenuBlock title="weddings 👰🏻">
+			<MenuItem to="/forest-fairy-tale">forest fairy tale</MenuItem>
+			<MenuItem to="/bridal-beauty">styled bridal</MenuItem>
+			<MenuItem to="/lost-bride">the lost bride</MenuItem>
+		</MenuBlock>
 		</MenuBlock>
 		<MenuItem to="/blog">blog</MenuItem>
 		<MenuItem to="/contact">contact</MenuItem>
