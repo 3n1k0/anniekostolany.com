@@ -9,7 +9,7 @@ export default () => (
 		image="streetsyle/7.jpg"
 	>
 		<h2>portraits</h2>
-		
+
 		<Photo file="streetsyle/7.jpg" />
 		<Photo file="streetsyle/palmak.jpg" />
 		<Photo file="streetsyle/kady.jpg" />

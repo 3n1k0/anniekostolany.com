@@ -26,7 +26,12 @@ export class BlogPost extends React.Component {
 		return (
 			<Page {...this.props}>
 				<Title>
-					<Link to={'/blog/' + BlogPost.getPermalink(date, title, permalink)}>
+					<Link
+						to={
+							'/blog/' +
+							BlogPost.getPermalink(date, title, permalink)
+						}
+					>
 						{title}
 					</Link>
 				</Title>
@@ -48,7 +53,15 @@ export class BlogPost extends React.Component {
 				.replace(/ +/g, '-')
 				.toLowerCase();
 
-		return year + '/' + monthLz + '/' + dayLz + '/' + (permalink ? permalink : urlifiedTitle);
+		return (
+			year +
+			'/' +
+			monthLz +
+			'/' +
+			dayLz +
+			'/' +
+			(permalink ? permalink : urlifiedTitle)
+		);
 	}
 }
 

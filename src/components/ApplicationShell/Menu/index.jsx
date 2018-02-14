@@ -13,7 +13,7 @@ export default () => (
 			<MenuItem to="/fashion">fashion</MenuItem>
 			<MenuItem to="/boudoir-session">boudoir</MenuItem>
 		</MenuBlock>
-			<MenuBlock title="weddings 👰🏻">
+		<MenuBlock title="weddings 👰🏻">
 			<MenuItem to="/forest-fairy-tale">forest fairy tale</MenuItem>
 			<MenuItem to="/bridal-beauty">styled bridal</MenuItem>
 			<MenuItem to="/lost-bride">the lost bride</MenuItem>

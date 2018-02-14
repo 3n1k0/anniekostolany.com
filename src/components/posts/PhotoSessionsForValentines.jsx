@@ -49,7 +49,5 @@ export default () => (
 			first-served basis. Feel free to contact me if you have any more
 			questions left.
 		</p>
-
-
 	</BlogPost>
 );
