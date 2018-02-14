@@ -16,6 +16,7 @@ export default () => (
 		<Photo file="home/amanda6.jpg" />
 		<Photo file="home/amanda3.jpg" />
 		<Photo file="home/9.jpg" />
+		<Photo file="home/menyasszonyok.jpg" />
 		<BookNowButton />
 	</Page>
 );
