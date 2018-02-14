@@ -12,7 +12,6 @@ export default () => (
 			<MenuItem to="/streetstyle">portraits</MenuItem>
 			<MenuItem to="/fashion-confession">fashion</MenuItem>
 			<MenuItem to="/boudoir-session">boudoir</MenuItem>
-			</MenuItem>
 		</MenuBlock>
 			<MenuBlock title="weddings 👰🏻">
 			<MenuItem to="/forest-fairy-tale">forest fairy tale</MenuItem>
