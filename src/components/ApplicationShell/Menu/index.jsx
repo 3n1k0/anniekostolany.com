@@ -10,7 +10,7 @@ export default () => (
 		</MenuBlock>
 		<MenuBlock title="my work">
 			<MenuItem to="/portraits">portraits</MenuItem>
-			<MenuItem to="/fashion-confession">fashion</MenuItem>
+			<MenuItem to="/fashion">fashion</MenuItem>
 			<MenuItem to="/boudoir-session">boudoir</MenuItem>
 		</MenuBlock>
 			<MenuBlock title="weddings 👰🏻">
