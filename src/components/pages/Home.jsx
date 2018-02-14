@@ -8,13 +8,13 @@ export default () => (
 		image="home/zsofi.jpg"
 		permalink="/"
 	>
+		<Photo file="home/amanda2.jpg" />
+		<Photo file="home/kady2.jpg" />
 		<Photo file="home/zsofi.jpg" />
 		<Photo file="home/jillmermaid.jpg" />
-		<Photo file="home/amanda2.jpg" />
+		<Photo file="home/11.jpg" />
 		<Photo file="home/zsofifuveszkert.jpg" />
-		<Photo file="home/anna.jpg" />
-		<Photo file="home/evi.jpg" />
-		<Photo file="home/kady2.jpg" />
+		<Photo file="home/9.jpg" />
 		<BookNowButton />
 	</Page>
 );
