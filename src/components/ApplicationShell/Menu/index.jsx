@@ -25,14 +25,12 @@ export default () => (
 				dreamy beach photoshoot
 			</MenuItem>
 		</MenuBlock>
-		<MenuBlock title="couple shoots">
+			{/*<MenuBlock to="/couple shoots>*/}
 			{/*<MenuItem to="/couple-miami">Miami</MenuItem>*/}
 			<MenuItem to="/couple-germany">germany</MenuItem>
 			<MenuItem to="/couple-hungary">hungary</MenuItem>
-			<MenuItem to="/couple-haarlem">haarlem</MenuItem>
 		</MenuBlock>
-		<MenuItem to="/photo-walk-amsterdam-haarlem">
-			photo walk amsterdam 🚲
+		{/*<MenuItem to="/photo-walk-amsterdam-haarlem>*/}
 		</MenuItem>
 		<MenuItem to="/blog">blog</MenuItem>
 		<MenuItem to="/contact">contact</MenuItem>
