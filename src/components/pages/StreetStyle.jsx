@@ -6,11 +6,10 @@ export default () => (
 	<Page
 		title="portraits"
 		description="portraits by Annie"
-		image="streetsyle/anker1.jpg"
+		image="streetsyle/7.jpg"
 	>
 		<h2>portraits</h2>
 		
-
 		<Photo file="streetsyle/7.jpg" />
 		<Photo file="streetsyle/palmak.jpg" />
 		<Photo file="streetsyle/kady.jpg" />
