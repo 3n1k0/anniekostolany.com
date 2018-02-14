@@ -9,7 +9,7 @@ export default () => (
 			<MenuItem to="/investment">investment</MenuItem>
 		</MenuBlock>
 		<MenuBlock title="my work">
-			<MenuItem to="/streetstyle">portraits</MenuItem>
+			<MenuItem to="/portraits">portraits</MenuItem>
 			<MenuItem to="/fashion-confession">fashion</MenuItem>
 			<MenuItem to="/boudoir-session">boudoir</MenuItem>
 		</MenuBlock>
