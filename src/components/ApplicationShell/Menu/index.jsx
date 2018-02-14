@@ -8,22 +8,15 @@ export default () => (
 			<MenuItem to="/about-me">about me</MenuItem>
 			<MenuItem to="/investment">investment</MenuItem>
 		</MenuBlock>
-		<MenuBlock title="styled bridal 👰🏻">
-			<MenuItem to="/forest-fairy-tale">forest fairy tale</MenuItem>
-			<MenuItem to="/bridal-beauty">bridal beauty</MenuItem>
-			<MenuItem to="/lost-bride">the lost bride</MenuItem>
-		</MenuBlock>
-		<MenuBlock title="portraiture">
+		<MenuBlock title="my work">
+			<MenuItem to="/portraits">portraits</MenuItem>
+			<MenuItem to="/fashion">fashion</MenuItem>
 			<MenuItem to="/boudoir-session">boudoir</MenuItem>
-			<MenuItem to="/autumns-scent">autumn's scent 🍂</MenuItem>
-			<MenuItem to="/streetstyle">#streetstyle</MenuItem>
-			<MenuItem to="/fashion-confession">fashion confession</MenuItem>
-			<MenuItem to="/confidence-is-key">confidence is key</MenuItem>
-			<MenuItem to="/rockn-roll-girl">rebellion</MenuItem>
-			<MenuItem to="/tropical-vibes">tropical vibes 🌴</MenuItem>
-			<MenuItem to="/dreamy-beach-photoshoot">
-				dreamy beach photoshoot
-			</MenuItem>
+		</MenuBlock>
+			<MenuBlock title="weddings 👰🏻">
+			<MenuItem to="/forest-fairy-tale">forest fairy tale</MenuItem>
+			<MenuItem to="/bridal-beauty">styled bridal</MenuItem>
+			<MenuItem to="/lost-bride">the lost bride</MenuItem>
 		</MenuBlock>
 		<MenuItem to="/blog">blog</MenuItem>
 		<MenuItem to="/contact">contact</MenuItem>

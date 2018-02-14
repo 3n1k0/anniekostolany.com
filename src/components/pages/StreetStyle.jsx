@@ -4,37 +4,22 @@ import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<Page
-		title="#streetstyle"
-		description="Stlyish & edgy street fashion photoshoot with the amazing Zsofia Cank."
-		image="streetsyle/anker1.jpg"
+		title="portraits"
+		description="portraits by Annie"
+		image="streetsyle/7.jpg"
 	>
-		<h2>#streetstyle</h2>
-		<p>
-			Stlyish & edgy street fashion photoshoot with the amazing Zsofia
-			Cank.
-		</p>
-
-		<Photo file="streetsyle/smink.jpg" />
-		<Photo file="streetsyle/utszele.jpg" />
-		<Photo file="streetsyle/parkolohaz.jpg" />
-		<Photo file="streetsyle/parkolo.jpg" />
-		<Photo file="streetsyle/oszlop.jpg" />
-		<Photo file="streetsyle/guggolos.jpg" />
-		<Photo file="streetsyle/piros.jpg" />
-		<Photo file="streetsyle/mozaik.jpg" />
-		<Photo file="streetsyle/mozaikkozel.jpg" />
-		<Photo file="streetsyle/hajszal.jpg" />
-		<Photo file="streetsyle/anker2.jpg" />
-		<Photo file="streetsyle/anker1.jpg" />
-		<Photo file="streetsyle/anker3.jpg" />
-		<Photo file="streetsyle/anker4.jpg" />
-		<Photo file="streetsyle/zold.jpg" />
-		<Photo file="streetsyle/zold2.jpg" />
-		<Photo file="streetsyle/flare1.jpg" />
-		<Photo file="streetsyle/flare2.jpg" />
-		<Photo file="streetsyle/flare3.jpg" />
-		<Photo file="streetsyle/flare4.jpg" />
-		<p>Zsofia Cank, Budapest, 2017.</p>
+		<h2>portraits</h2>
+		
+		<Photo file="streetsyle/7.jpg" />
+		<Photo file="streetsyle/palmak.jpg" />
+		<Photo file="streetsyle/kady.jpg" />
+		<Photo file="streetsyle/amanda8.jpg" />
+		<Photo file="streetsyle/evi.jpg" />
+		<Photo file="streetsyle/amanda.jpg" />
+		<Photo file="streetsyle/1.jpg" />
+		<Photo file="streetsyle/35269218404_06c62d3003_k.jpg" />
+		<Photo file="streetsyle/23539526988_24cbf3c0c5_k.jpg" />
+		<Photo file="streetsyle/sitting3.jpg" />
 		<BookNowButton />
 	</Page>
 );

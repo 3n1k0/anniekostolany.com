@@ -9,12 +9,13 @@ export default () => (
 		image="investment/dorinaek.jpg"
 	>
 		<h2>Investment</h2>
-		<Photo file="investment/lucyandrick-11.jpg" />
+		<Photo
+			file="couple_shoots/34939741490_6f1c0bc417_k.jpg"
+			alt="Couple kissing on purple flower-field"
+		/>
 		<p>
-			<br />A limited number of Valentine's Day gift vouchers are now
-			available.
-			<br />Portrait sessions start from 170 eur
-			<br />Mini sessions from 90 eur
+			<br />Portrait sessions start from 220 eur
+			<br />Mini sessions from 110 eur
 			<br /> Please contact me for my wedding package guide and other
 			requests.
 		</p>

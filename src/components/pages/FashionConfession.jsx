@@ -4,21 +4,24 @@ import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<Page
-		title="Fashion Confession"
-		description="Street fashion photoshoot with a Southern European beauty"
-		image="fashion_confession/oszlopok.jpg"
+		title="fashion"
+		description="fashion by Annie"
+		image="fashion_confession/333.jpg"
 	>
-		<h2>Fashion Confession</h2>
-		<p>This girl is half Italian, half Greek and full of life.</p>
+		<h2>fashion</h2>
+		<Photo file="fashion_confession/tresor.jpg" />
+		<Photo file="fashion_confession/anker4.jpg" />
 		<Photo file="fashion_confession/annasand.jpg" />
-		<Photo file="fashion_confession/annasand1.jpg" />
-		<Photo file="fashion_confession/fuggony.jpg" />
-		<Photo file="fashion_confession/oszlopok.jpg" />
-		<Photo file="fashion_confession/lepcso.jpg" />
-		<Photo file="fashion_confession/kerites.jpg" />
+		<Photo file="fashion_confession/cigi.jpg" />
+		<Photo file="fashion_confession/333.jpg" />
+		<Photo file="fashion_confession/korlat.jpg" />
+		<Photo file="fashion_confession/lines.jpg" />
+		<Photo file="fashion_confession/oszlop.jpg" />
+		<Photo file="fashion_confession/legjobb.jpg" />
 		<Photo file="fashion_confession/mezitlab.jpg" />
-		<Photo file="fashion_confession/yellow1.jpg" />
-		<Photo file="fashion_confession/yellow2.jpg" />
+		<Photo file="fashion_confession/13.jpg" />
+		<Photo file="fashion_confession/lepcso.jpg" />
+		<Photo file="fashion_confession/9.jpg" />
 		<BookNowButton />
 	</Page>
 );

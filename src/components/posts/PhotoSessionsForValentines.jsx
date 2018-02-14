@@ -50,18 +50,6 @@ export default () => (
 			questions left.
 		</p>
 
-		<p>
-			Do you need a little inspiration? Check out my galleries from the
-			menu or scroll down to see some more couple pictures!
-		</p>
 
-		<Photo file="haarlem_couple/haarlemcouple1.jpg" />
-		<Photo file="haarlem_couple/haarlemcouple6.jpg" />
-		<Photo file="haarlem_couple/haarlemcouple2.jpg" />
-		<Photo file="haarlem_couple/haarlemcouple3.jpg" />
-		<Photo file="couple_shoots_hun/4.jpg" />
-		<Photo file="couple_shoots_hun/7.jpg" />
-		<Photo file="couple_shoots/34939741490_6f1c0bc417_k.jpg" />
-		<Photo file="haarlem_couple/haarlemcouple5.jpg" />
 	</BlogPost>
 );

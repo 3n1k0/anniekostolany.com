@@ -4,20 +4,19 @@ import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<Page
-		title="Portrait &amp; Event Photography in Haarlem"
+		title="Portrait &amp; wedding Photography in Haarlem"
 		image="home/zsofi.jpg"
 		permalink="/"
 	>
+		<Photo file="home/amanda2.jpg" />
+		<Photo file="home/kady2.jpg" />
 		<Photo file="home/zsofi.jpg" />
+		<Photo file="home/11.jpg" />
 		<Photo file="home/jillmermaid.jpg" />
-		<Photo file="home/anna.jpg" />
-		<Photo file="home/nivine2.jpg" />
-		<Photo file="home/zsofia.jpg" />
-		<Photo file="home/nivine3.jpg" />
-		<Photo file="home/zsofifuveszkert.jpg" />
-		<Photo file="home/evi.jpg" />
-		<Photo file="home/stephanie.jpg" />
-		<Photo file="home/jillsunset.jpg" />
+		<Photo file="home/amanda6.jpg" />
+		<Photo file="home/amanda3.jpg" />
+		<Photo file="home/9.jpg" />
+		<Photo file="home/menyasszonyok.jpg" />
 		<BookNowButton />
 	</Page>
 );
