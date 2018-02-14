@@ -1,6 +1,6 @@
 import React from 'react';
-import { Page } from './components/Page';
-import { BlogPost } from './components/BlogPost';
+import Page from './components/Page';
+import BlogPost from './components/BlogPost';
 import pages from './pages';
 import posts from './posts';
 import { Route } from 'react-router-dom';

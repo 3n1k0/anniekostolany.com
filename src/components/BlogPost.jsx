@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Photo } from './Page';
+import Page from './Page';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import moment from 'moment';
@@ -18,7 +18,7 @@ const PostDate = styled.span`
 	color: #999999;
 `;
 
-export class BlogPost extends React.Component {
+export default class BlogPost extends React.Component {
 	render() {
 		const { date, title, children, permalink } = this.props;
 		const formattedDate = moment(date).format('MMMM Do, YYYY');
@@ -64,5 +64,3 @@ export class BlogPost extends React.Component {
 		);
 	}
 }
-
-export { Photo };
