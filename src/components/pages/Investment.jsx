@@ -14,8 +14,8 @@ export default () => (
 			alt="Couple kissing on purple flower-field"
 		/>
 		<p>
-			<br />Portrait sessions start from 170 eur
-			<br />Mini sessions from 90 eur
+			<br />Portrait sessions start from 220 eur
+			<br />Mini sessions from 110 eur
 			<br /> Please contact me for my wedding package guide and other
 			requests.
 		</p>
