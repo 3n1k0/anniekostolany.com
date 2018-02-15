@@ -5,4 +5,4 @@ import Marjolein from './components/posts/Marjolein';
 import MalePortraitSession from './components/posts/MalePortraitSession';
 import TropicalVibes from './components/posts/TropicalVibes';
 
-export default [TropicalVibes, MalePortraitSession, Marjolein, PhotoSessionsForValentines, PhotoWalkAmsterdam];
+export default [TropicalVibes, Marjolein, PhotoSessionsForValentines, PhotoWalkAmsterdam, MalePortraitSession];
