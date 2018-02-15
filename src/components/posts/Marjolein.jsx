@@ -10,8 +10,9 @@ export default () => (
 		permalink="dutch-model-fall-photoshoot"
 	>
 		<p>
-			This girl literally looks like this with close to no effort. I love
-			to work with natural beauties like her.
+			We took this photos at Park Frankendael in Amsterdam. Nature always inspired me, and we were lucky to catch some (rare!) sunlight too. 
+			When I shoot I always look for interesting textures and complementary colors because I believe they play a big part of reaching more interesting results.
+
 		</p>
 
 		<Photo file="autumn_scent/1.jpg" />
