@@ -4,7 +4,7 @@ import React from 'react';
 
 export default () => (
 	<BlogPost
-		title="Guys can pose too!"
+		title="Male fashion portrait session in Amsterdam"
 		description="Refreshing portrait session with the super stylish Matias."
 		date="2018-02-10"
 		permalink="dutch-model-fall-photoshoot"
