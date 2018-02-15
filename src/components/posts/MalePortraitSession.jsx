@@ -6,8 +6,8 @@ export default () => (
 	<BlogPost
 		title="Male fashion portrait session in Amsterdam"
 		description="Refreshing portrait session with the super stylish Matias."
-		date="2018-02-10"
-		permalink="dutch-model-fall-photoshoot"
+		date="2017-09-10"
+		permalink="male-fashion-portrait-session"
 	>
 		<p>
 			I tell you a secret about this session: we actually shot these photos around (and in) an office. I think location is not that important when it comes to fashion photos.
