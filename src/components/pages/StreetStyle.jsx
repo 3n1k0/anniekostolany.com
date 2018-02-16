@@ -2,7 +2,7 @@ import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
 import BookNowButton from '../BookNowButton';
-import { "/blog/2018/02/10/dutch-model-fall-photoshoot" } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default () => (
 	<Page
@@ -11,7 +11,7 @@ export default () => (
 		image="streetsyle/7.jpg"
 	>
 		<h2>portraits</h2>
-<Link to="/blog/2018/02/10/dutch-model-fall-photoshoot"><Photo file="streetsyle/7.jpg" /></Link>
+		<Link to="/blog/2018/02/10/dutch-model-fall-photoshoot"><Photo file="streetsyle/7.jpg" /></Link>
 		<Photo file="streetsyle/palmak.jpg" />
 		<Photo file="streetsyle/kady.jpg" />
 		<Photo file="streetsyle/amanda8.jpg" />
