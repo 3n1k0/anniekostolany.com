@@ -12,17 +12,17 @@ export default () => (
 		<h2>fashion</h2>
 		<Photo file="fashion_confession/tresor.jpg" />
 		<Photo file="fashion_confession/anker4.jpg" />
-		<Photo file="fashion_confession/annasand.jpg" />
+		<Link to="/blog/2017/10/09/calvin-portrait-session"><Photo file="fashion_confession/annasand.jpg" /></Link>
 		<Photo file="fashion_confession/cigi.jpg" />
 		<Photo file="fashion_confession/333.jpg" />
 		<Photo file="fashion_confession/korlat.jpg" />
 		<Photo file="fashion_confession/lines.jpg" />
 		<Photo file="fashion_confession/oszlop.jpg" />
 		<Photo file="fashion_confession/legjobb.jpg" />
-		<Photo file="fashion_confession/mezitlab.jpg" />
-		<Photo file="fashion_confession/13.jpg" />
-		<Photo file="fashion_confession/lepcso.jpg" />
-		<Photo file="fashion_confession/9.jpg" />
+		<Link to="/blog/2017/10/09/calvin-portrait-session"><Photo file="fashion_confession/mezitlab.jpg" /></Link>
+		<Link to="/blog/2018/02/10/dutch-model-fall-photoshoot"><Photo file="fashion_confession/13.jpg" /></Link>
+		<Link to="/blog/2017/10/09/calvin-portrait-session"><Photo file="fashion_confession/lepcso.jpg" /></Link>
+		<Link to="/blog/2018/02/10/dutch-model-fall-photoshoot"><Photo file="streetsyle/9.jpg" /></Link>
 		<BookNowButton />
 	</Page>
 );
