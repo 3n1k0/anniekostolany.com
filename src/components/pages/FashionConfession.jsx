@@ -2,6 +2,7 @@ import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
 import BookNowButton from '../BookNowButton';
+import { Link } from 'react-router-dom';
 
 export default () => (
 	<Page
