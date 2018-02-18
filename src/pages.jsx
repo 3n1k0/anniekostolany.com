@@ -17,7 +17,7 @@ import Rebellion from './components/pages/Rebellion';
 import FashionConfession from './components/pages/FashionConfession';
 import ConfidenceIsKey from './components/pages/ConfidenceIsKey';
 import TropicalVibes from './components/pages/TropicalVibes';
-import StreetStyle from './components/pages/StreetStyle';
+import Portraits from './components/pages/Portraits';
 import AutumnsScent from './components/pages/AutumnsScent';
 
 import CoupleGermany from './components/pages/CoupleGermany';
@@ -46,7 +46,7 @@ export default [
 	FashionConfession,
 	ConfidenceIsKey,
 	TropicalVibes,
-	StreetStyle,
+	Portraits,
 	AutumnsScent,
 	CoupleGermany,
 	CoupleHungary,
