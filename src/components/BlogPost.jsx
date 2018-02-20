@@ -3,6 +3,8 @@ import Page from './Page';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import moment from 'moment';
+import PhotoSet from './PhotoSet';
+import Photo from './Photo';
 
 const Title = styled.h2`
 	padding: 1rem 0 0 0;
@@ -18,9 +20,18 @@ const PostDate = styled.span`
 	color: #999999;
 `;
 
+export { PhotoSet, Photo };
+
 export default class BlogPost extends React.Component {
 	render() {
-		const { date, title, children, permalink } = this.props;
+		const {
+			date,
+			title,
+			children,
+			permalink,
+			image,
+			description
+		} = this.props;
 		const formattedDate = moment(date).format('MMMM Do, YYYY');
 
 		return (

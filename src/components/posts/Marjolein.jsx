@@ -1,18 +1,21 @@
-import BlogPost from '../BlogPost';
+import BlogPost, { ReadMore, PhotoSet } from '../BlogPost';
 import Photo from '../Photo';
 import React from 'react';
 
-export default () => (
+export default props => (
 	<BlogPost
 		title="Forests & freckles"
 		description="Low-key portraiture always works with natural beauties like Marjolein."
 		date="2018-02-10"
 		permalink="dutch-model-fall-photoshoot"
+		image="autumn_scent/1.jpg"
 	>
 		<p>
-			We took this photos at Park Frankendael in Amsterdam. Nature always inspired me, and we were lucky to catch some (rare!) sunlight too. 
-			When I shoot I always look for interesting textures and complementary colors because I believe they play a big part of reaching more interesting results.
-
+			We took this photos at Park Frankendael in Amsterdam. Nature always
+			inspired me, and we were lucky to catch some (rare!) sunlight too.
+			When I shoot I always look for interesting textures and
+			complementary colors because I believe they play a big part of
+			reaching more interesting results.
 		</p>
 
 		<Photo file="autumn_scent/1.jpg" />

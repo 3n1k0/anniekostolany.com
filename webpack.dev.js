@@ -1,9 +1,10 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const server = require('./webpack.server.js');
 const webpack = require('webpack');
 const path = require('path');
 
-module.exports = merge(common, {
+const client = merge(common, {
 	entry : {
 		app : [
 			'react-hot-loader/patch',
@@ -11,17 +12,11 @@ module.exports = merge(common, {
 			'webpack/hot/only-dev-server'
 		]
 	},
-	devServer : {
-		host               : 'localhost',
-		port               : 3000,
-		historyApiFallback : false,
-		hot                : true,
-		contentBase        : path.resolve(path.resolve(__dirname), 'out'),
-		publicPath         : '/'
-	},
 	plugins : [
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NamedModulesPlugin(),
 		new webpack.NoEmitOnErrorsPlugin()
 	]
 });
+
+module.exports = [client, server];

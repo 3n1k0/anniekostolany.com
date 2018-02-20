@@ -15,6 +15,8 @@ const urlset = [];
 routes.forEach(route => {
 	const { path: routePath } = route.props;
 
+	console.log('render: ', routePath);
+
 	const sheet = new ServerStyleSheet();
 
 	const body = ReactDOMServer.renderToString(
@@ -79,10 +81,14 @@ routes.forEach(route => {
 
 	mkdirp.sync('./out' + path.dirname(routePath));
 
-	fs.writeFileSync(
-		'./out' + (routePath === '/' ? '/index' : routePath) + '.html',
-		content
-	);
+	if (routePath === '/') {
+		fs.writeFileSync('./out/index.html', content);
+	} else if (routePath === '/blog') {
+		mkdirp.sync('./out/blog');
+		fs.writeFileSync('./out/blog/index.html', content);
+	} else {
+		fs.writeFileSync('./out' + routePath + '.html', content);
+	}
 });
 
 fs.writeFileSync(
