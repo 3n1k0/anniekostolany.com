@@ -5,5 +5,6 @@ import Marjolein from './components/posts/Marjolein';
 import MalePortraitSession from './components/posts/MalePortraitSession';
 import TropicalVibes from './components/posts/TropicalVibes';
 import Calvins from './components/posts/Calvins';
+import LostBride from './components/posts/LostBride';
 
-export default [Calvins, TropicalVibes, Marjolein, PhotoSessionsForValentines, PhotoWalkAmsterdam, MalePortraitSession];
+export default [Calvins, TropicalVibes, Marjolein, PhotoSessionsForValentines, PhotoWalkAmsterdam, LostBride, MalePortraitSession];
