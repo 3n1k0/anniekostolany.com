@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogPost from '../BlogPost';
+import BlogPost, { ReadMore } from '../BlogPost';
 import Photo from '../Photo';
 
 export default () => (
@@ -7,7 +7,7 @@ export default () => (
 		title="Photo walk Amsterdam & Haarlem"
 		description="Photo walk Amsterdam & Haarlem"
 		date="2017-09-12"
-		image="rebellion/photo_walk_amsterdam/1.jpg"
+		image="photo_walk_amsterdam/1.jpg"
 	>
 		<p>
 			Most people know Amsterdam as the city of freedom. Maybe because

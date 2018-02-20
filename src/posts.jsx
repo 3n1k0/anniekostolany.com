@@ -7,4 +7,12 @@ import TropicalVibes from './components/posts/TropicalVibes';
 import Calvins from './components/posts/Calvins';
 import LostBride from './components/posts/LostBride';
 
-export default [Calvins, TropicalVibes, Marjolein, PhotoSessionsForValentines, PhotoWalkAmsterdam, LostBride, MalePortraitSession];
+export default [
+	Calvins,
+	TropicalVibes,
+	Marjolein,
+	PhotoSessionsForValentines,
+	PhotoWalkAmsterdam,
+	LostBride,
+	MalePortraitSession
+];

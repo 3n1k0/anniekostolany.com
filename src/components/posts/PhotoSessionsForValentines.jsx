@@ -10,6 +10,7 @@ export default () => (
 		meaningful present."
 		date="2018-02-10"
 		permalink="valentines-gift"
+		image="kupon-1.jpg"
 	>
 		<p>Are you looking for a simple yet amazing gift for Valentines?</p>
 

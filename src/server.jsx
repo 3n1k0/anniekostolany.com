@@ -15,6 +15,8 @@ const urlset = [];
 routes.forEach(route => {
 	const { path: routePath } = route.props;
 
+	console.log('render: ', routePath);
+
 	const sheet = new ServerStyleSheet();
 
 	const body = ReactDOMServer.renderToString(
