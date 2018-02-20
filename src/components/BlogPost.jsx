@@ -34,8 +34,6 @@ export default class BlogPost extends React.Component {
 		} = this.props;
 		const formattedDate = moment(date).format('MMMM Do, YYYY');
 
-		console.log(this.props);
-
 		return (
 			<Page {...this.props}>
 				<Title>

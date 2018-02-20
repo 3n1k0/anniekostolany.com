@@ -81,10 +81,16 @@ routes.forEach(route => {
 
 	mkdirp.sync('./out' + path.dirname(routePath));
 
-	fs.writeFileSync(
-		'./out' + (routePath === '/' ? '/index' : routePath) + '.html',
-		content
-	);
+	if (routePath === '/') {
+		fs.writeFileSync('./out/index.html', content);
+	}
+	else if (routePath === '/blog') {
+		mkdirp.sync('./out/blog');
+		fs.writeFileSync('./out/blog/index.html', content);
+	}
+	else {
+		fs.writeFileSync('./out' + routePath + '.html', content);
+	}
 });
 
 fs.writeFileSync(
