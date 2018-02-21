@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Button = styled.a`
 	font-size: 30px;
 	line-height: 40px;
-	padding-top: 10px;
+	//padding-top: 10px;
 	color: #000000;
 	display: inline-block;
 	padding-right: 10px;

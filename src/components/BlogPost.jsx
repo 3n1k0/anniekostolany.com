@@ -25,6 +25,10 @@ const Author = styled.span`
 	color: #999999;
 `;
 
+const BlogPostContainer = styled.div`
+	padding-top: 20px;
+`;
+
 export { PhotoSet, Photo };
 
 export default class BlogPost extends React.Component {
@@ -41,11 +45,11 @@ export default class BlogPost extends React.Component {
 
 		return (
 			<Page {...this.props}>
+			<BlogPostContainer>
 				<Helmet>
 					<meta name="author" content="Annie Kostolany" />
 					<meta property="og:type" content="article" />
 				</Helmet>
-
 				<Title>
 					<Link
 						to={
@@ -59,6 +63,7 @@ export default class BlogPost extends React.Component {
 				<PostDate>{formattedDate}</PostDate> &middot;{' '}
 				<Author>Annie Kostolany</Author>
 				{children}
+				</BlogPostContainer>
 			</Page>
 		);
 	}

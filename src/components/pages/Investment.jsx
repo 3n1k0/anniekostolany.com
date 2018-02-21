@@ -9,7 +9,6 @@ export default () => (
 		description="Rates, packages & information."
 		image="investment/dorinaek.jpg"
 	>
-		<h2>Investment</h2>
 		<Photo
 			file="couple_shoots/34939741490_6f1c0bc417_k.jpg"
 			alt="Couple kissing on purple flower-field"

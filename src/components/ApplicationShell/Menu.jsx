@@ -4,18 +4,21 @@ import { Link } from 'react-router-dom';
 import { Facebook, Instagram } from './SocialIcons';
 
 const Menu = styled.div`
+	background: #ffffff;
+	border: 1px solid #000000;
+	display: block;
 	padding: 0;
 
 	&:after {
 		clear: both;
-		content: ' ';
+		content: " ";
 		display: block;
 	}
 `;
 
 const MenuItem = styled(Link)`
 	color: #000000;
-	font-family: 'Open sans';
+	font-family: "Open sans";
 	float: left;
 	padding: 10px;
 	text-decoration: none;
@@ -28,6 +31,7 @@ const MenuItem = styled(Link)`
 
 export default () => (
 	<Menu>
+		<MenuItem to="/">Home</MenuItem>
 		<MenuItem to="/about-me">About me</MenuItem>
 		<MenuItem to="/investment">Investment</MenuItem>
 		<MenuItem to="/blog">Blog</MenuItem>
