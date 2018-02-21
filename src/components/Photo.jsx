@@ -6,7 +6,6 @@ export default styled.img.attrs({
 	src: props => IMAGE_PATH + props.file
 })`
 	display: block;
-	padding: 0 0 40px 0;
 	width: 100%;
 
 	@media (max-width: 500px) {

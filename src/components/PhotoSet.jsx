@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export default styled.div`
-	img {
+	> * {
 		float: left;
-		width: 50%;
+		width: 50% !important;
 	}
 
 	&:after {

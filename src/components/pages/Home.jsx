@@ -3,6 +3,7 @@ import Page from '../Page';
 import Photo from '../Photo';
 import PhotoSet from '../PhotoSet';
 import BookNowButton from '../BookNowButton';
+import PrettyLink from '../PrettyLink';
 
 export default () => (
 	<Page
@@ -11,10 +12,27 @@ export default () => (
 		permalink="/"
 	>
 		<PhotoSet>
-			<Photo file="home/amanda2.jpg" />
+			<PrettyLink
+				to="/portraits"
+				title="Lorem ipsum dolor sit amet"
+				color="black"
+				background="white"
+				image="home/amanda2.jpg"
+			>
+				<Photo file="home/amanda2.jpg" />
+			</PrettyLink>
 			<Photo file="home/kady2.jpg" />
 		</PhotoSet>
-		<Photo file="home/zsofi.jpg" />
+
+		<PrettyLink
+			to="/portraits"
+			title="Lorem ipsum dolor sit amet"
+			color="white"
+			background="black"
+			image="home/zsofi.jpg"
+		>
+			<Photo file="home/zsofi.jpg" />
+		</PrettyLink>
 		<Photo file="home/11.jpg" />
 		<Photo file="home/jillmermaid.jpg" />
 		<PhotoSet>

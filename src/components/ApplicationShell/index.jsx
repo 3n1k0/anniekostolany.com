@@ -1,61 +1,29 @@
 import React from 'react';
-import { blur, pages } from './style.scss';
-import DesktopSidebar from './DesktopSidebar';
-import Menu from './Menu';
-import { SmallScreen, LargeScreen } from '../ResponsiveComponents';
-import MobileSidebar from './MobileSidebar';
-import Header from './Header';
-import MenuButton from './MenuButton';
-import { Link, withRouter } from 'react-router-dom';
-import SocialIcons from './SocialIcons';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
+import Header from './Header';
 
 const Page = styled.div`
-	padding: 40px 40px 0 40px;
+	width: 70%;
+	margin: 0 auto;
+
+	@media (max-width: 768px) {
+		width: 80%;
+	}
+
+	@media (max-width: 400px) {
+		width: 100%;
+	}
 `;
 
-const Logo = styled.div`
-	background-image: url(https://anniekostolany.com/images/logo.png);
-	height: 0;
-	width: 100%;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	padding-bottom: 56%;
-`;
-
-class ApplicationShell extends React.Component {
+export default class ApplicationShell extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			isMenuOpen: false
-		};
-
-		this.onHistory = this.onHistory.bind(this);
-		this.handleMenuButtonClick = this.handleMenuButtonClick.bind(this);
-		this.closeMenu = this.closeMenu.bind(this);
-		this.props.history.listen(this.onHistory);
-	}
-
-	handleMenuButtonClick() {
-		this.setState(prevState => ({
-			isMenuOpen: !prevState.isMenuOpen
-		}));
-	}
-
-	onHistory() {
-		this.closeMenu();
-	}
-
-	closeMenu() {
-		this.setState(() => ({
-			isMenuOpen: false
-		}));
 	}
 
 	render() {
 		return (
-			<div>
+			<Page>
 				<Helmet>
 					<meta charset="utf-8" />
 					<meta
@@ -96,38 +64,11 @@ class ApplicationShell extends React.Component {
 						Kostolany
 					</title>
 				</Helmet>
-				<SmallScreen>
-					<div
-						className={
-							pages + (this.state.isMenuOpen ? ' ' + blur : '')
-						}
-						onClick={this.closeMenu}
-					>
-						<Page>{this.props.children}</Page>
-					</div>
-					<Header>
-						<MenuButton onClick={this.handleMenuButtonClick} />
-					</Header>
-					<MobileSidebar isOpen={this.state.isMenuOpen}>
-						<Menu />
-						<SocialIcons />
-					</MobileSidebar>
-				</SmallScreen>
-				<LargeScreen>
-					<div className={pages}>
-						<Page>{this.props.children}</Page>
-					</div>
-					<DesktopSidebar>
-						<Link to="/">
-							<Logo />
-						</Link>
-						<Menu />
-						<SocialIcons />
-					</DesktopSidebar>
-				</LargeScreen>
-			</div>
+
+				<Header />
+
+				{this.props.children}
+			</Page>
 		);
 	}
 }
-
-export default withRouter(ApplicationShell);

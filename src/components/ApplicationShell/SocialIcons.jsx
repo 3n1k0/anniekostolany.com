@@ -1,16 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = styled.div`
+const Button = styled.a`
 	font-size: 30px;
 	line-height: 40px;
 	padding-top: 10px;
-
-	a {
-		color: #000000;
-		display: inline-block;
-		padding-right: 10px;
-	}
+	color: #000000;
+	display: inline-block;
+	padding-right: 10px;
 `;
 
 const getFacebookUrl = ua =>
@@ -23,29 +20,30 @@ const getInstagramUrl = ua =>
 		? 'instagram://user?username=anniekostolany'
 		: 'https://instagram.com/anniekostolany';
 
-export default () =>
+export const Instagram = () =>
 	global.window ? (
-		<Button>
-			<a
-				href={getInstagramUrl(window.navigator.userAgent)}
-				target="_blank"
-			>
-				<i className="fa fa-instagram" />
-			</a>
-			<a
-				href={getFacebookUrl(window.navigator.userAgent)}
-				target="_blank"
-			>
-				<i className="fa fa-facebook-official" />
-			</a>
+		<Button
+			href={getInstagramUrl(window.navigator.userAgent)}
+			target="_blank"
+		>
+			<i className="fa fa-instagram" />
 		</Button>
 	) : (
-		<Button>
-			<a href="https://instagram.com/anniekostolany" target="_blank">
-				<i className="fa fa-instagram" />
-			</a>
-			<a href="https://facebook.com/anniekostolany" target="_blank">
-				<i className="fa fa-facebook-official" />
-			</a>
+		<Button href="https://instagram.com/anniekostolany" target="_blank">
+			<i className="fa fa-instagram" />
+		</Button>
+	);
+
+export const Facebook = () =>
+	global.window ? (
+		<Button
+			href={getFacebookUrl(window.navigator.userAgent)}
+			target="_blank"
+		>
+			<i className="fa fa-facebook-official" />
+		</Button>
+	) : (
+		<Button href="https://facebook.com/anniekostolany" target="_blank">
+			<i className="fa fa-facebook-official" />
 		</Button>
 	);

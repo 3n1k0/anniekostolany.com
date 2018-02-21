@@ -8,10 +8,6 @@ const PageContainer = styled.div`
 	line-height: 1.5em;
 	width: auto;
 
-	@media (max-width: 768px) {
-		padding: 40px 0 0 0;
-	}
-
 	h2 {
 		font-weight: normal;
 	}

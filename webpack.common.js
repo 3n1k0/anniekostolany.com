@@ -1,6 +1,4 @@
-const path = require('path'),
-	HtmlWebpackPlugin = require('html-webpack-plugin'),
-	ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
 
 module.exports = {
 	entry : {
@@ -28,19 +26,7 @@ module.exports = {
 				options : {
 					presets : ['env', 'react']
 				}
-			},
-			{
-				test    : /\.html$/,
-				exclude : /(node_modules)/,
-				loader  : 'html-loader'
-			},
-			{
-				test   : /\.scss$/,
-				loader : ExtractTextPlugin.extract('css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:5]!sass-loader')
 			}
 		]
-	},
-	plugins : [
-		new ExtractTextPlugin({filename  : 'bundle.css', allChunks : true})
-	]
+	}
 };

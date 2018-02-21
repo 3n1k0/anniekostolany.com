@@ -20,6 +20,10 @@ const PostDate = styled.span`
 	color: #999999;
 `;
 
+const Author = styled.span`
+	color: #999999;
+`;
+
 export { PhotoSet, Photo };
 
 export default class BlogPost extends React.Component {
@@ -46,7 +50,8 @@ export default class BlogPost extends React.Component {
 						{title}
 					</Link>
 				</Title>
-				<PostDate>{formattedDate}</PostDate>
+				<PostDate>{formattedDate}</PostDate> &middot;{' '}
+				<Author>Annie Kostolany</Author>
 				{children}
 			</Page>
 		);
