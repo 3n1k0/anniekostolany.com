@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import Header from './Header';
 
 const Page = styled.div`
-	width: 70%;
+	width: 60%;
 	margin: 0 auto;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
 		width: 80%;
 	}
 

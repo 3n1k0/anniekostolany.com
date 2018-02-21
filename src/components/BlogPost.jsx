@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import moment from 'moment';
 import PhotoSet from './PhotoSet';
 import Photo from './Photo';
+import Helmet from 'react-helmet';
 
 const Title = styled.h2`
 	padding: 1rem 0 0 0;
@@ -40,6 +41,11 @@ export default class BlogPost extends React.Component {
 
 		return (
 			<Page {...this.props}>
+				<Helmet>
+					<meta name="author" content="Annie Kostolany" />
+					<meta property="og:type" content="article" />
+				</Helmet>
+
 				<Title>
 					<Link
 						to={
