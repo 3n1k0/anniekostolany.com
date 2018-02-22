@@ -11,18 +11,19 @@ export default props => (
 		image="autumn_scent/1.jpg"
 	>
 		<p>
-			We took this photos at Park Frankendael in Amsterdam. Nature always
-			inspired me, and we were lucky to catch some (rare!) sunlight too.
-			When I shoot I always look for interesting textures and
-			complementary colors because I believe they play a big part of
-			reaching more interesting results.
+			
+			Marjolein is a Dutch model. She's working with like a hundred agencies which is understandable as she's super pretty.
 		</p>
 
 		<Photo file="autumn_scent/1.jpg" />
 		<Photo file="autumn_scent/2.jpg" />
+		<p>Amsterdam photo sessions are my favourite since I'm in love with the street layouts and all the pretty locations.</p>
 		<Photo file="autumn_scent/3.jpg" />
+		<p>Nature always inspired me a lot.</p>
 		<Photo file="autumn_scent/4.jpg" />
+		<p>Looking through my porfolio there's definitely a pattern of flowers, leaves and all kinds of nature stuff.</p>
 		<Photo file="autumn_scent/5.jpg" />
+		<p>This photos were taken in Park Frankendael in Amsterdam.</p>
 		<Photo file="autumn_scent/6.jpg" />
 		<Photo file="autumn_scent/7.jpg" />
 		<Photo file="autumn_scent/8.jpg" />
