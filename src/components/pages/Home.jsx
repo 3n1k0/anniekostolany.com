@@ -7,7 +7,7 @@ import PrettyLink from '../PrettyLink';
 
 export default () => (
 	<Page
-		title="Portrait &amp; wedding Photography in Haarlem"
+		title="Portrait &amp; wedding Photography in Amsterdam"
 		image="home/zsofi.jpg"
 		permalink="/"
 	>

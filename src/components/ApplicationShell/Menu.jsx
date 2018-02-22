@@ -4,24 +4,27 @@ import { Link } from 'react-router-dom';
 import { Facebook, Instagram } from './SocialIcons';
 
 const Menu = styled.div`
-	background: #ffffff;
-	border: 1px solid #000000;
+	background: #eee;
+	//border: 1px solid #000000;
 	display: block;
 	padding: 0;
 
 	&:after {
 		clear: both;
-		content: " ";
+		content: ' ';
 		display: block;
 	}
 `;
 
 const MenuItem = styled(Link)`
 	color: #000000;
-	font-family: "Open sans";
+	font-family: 'Open sans';
 	float: left;
-	padding: 10px;
+	padding: 10px 0;
 	text-decoration: none;
+	border-right: 1px solid #fff;
+	width: calc(100% /6);
+	text-align: center;
 
 	&:hover {
 		background: #000000;

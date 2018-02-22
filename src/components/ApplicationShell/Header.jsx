@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Header = styled.div`
+	width: 60%;
+	margin: 0 auto;
+	padding: 0 0 40px 0;
 `;
 
 const Logo = styled(Link)`

@@ -8,6 +8,7 @@ const Button = styled.a`
 	color: #000000;
 	display: inline-block;
 	padding-right: 10px;
+	float: right;
 `;
 
 const getFacebookUrl = ua =>

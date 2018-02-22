@@ -22,7 +22,8 @@ export default class ApplicationShell extends React.Component {
 	}
 
 	render() {
-		return (
+		return [
+			<Header />,
 			<Page>
 				<Helmet>
 					<meta charset="utf-8" />
@@ -45,7 +46,7 @@ export default class ApplicationShell extends React.Component {
 					/>
 					<meta
 						property="og:description"
-						content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Haarlem, Netherlands, available worldwide. Let's create magic!"
+						content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Amsterdam, Netherlands, available worldwide. Let's create magic!"
 					/>
 					<meta property="og:type" content="website" />
 					<meta property="og:locale" content="en_US" />
@@ -64,11 +65,8 @@ export default class ApplicationShell extends React.Component {
 						Kostolany
 					</title>
 				</Helmet>
-
-				<Header />
-
 				{this.props.children}
 			</Page>
-		);
+		];
 	}
 }

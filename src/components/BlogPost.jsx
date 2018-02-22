@@ -45,24 +45,24 @@ export default class BlogPost extends React.Component {
 
 		return (
 			<Page {...this.props}>
-			<BlogPostContainer>
-				<Helmet>
-					<meta name="author" content="Annie Kostolany" />
-					<meta property="og:type" content="article" />
-				</Helmet>
-				<Title>
-					<Link
-						to={
-							'/blog/' +
-							BlogPost.getPermalink(date, title, permalink)
-						}
-					>
-						{title}
-					</Link>
-				</Title>
-				<PostDate>{formattedDate}</PostDate> &middot;{' '}
-				<Author>Annie Kostolany</Author>
-				{children}
+				<BlogPostContainer>
+					<Helmet>
+						<meta name="author" content="Annie Kostolany" />
+						<meta property="og:type" content="article" />
+					</Helmet>
+					<Title>
+						<Link
+							to={
+								'/blog/' +
+								BlogPost.getPermalink(date, title, permalink)
+							}
+						>
+							{title}
+						</Link>
+					</Title>
+					<PostDate>{formattedDate}</PostDate> &middot;{' '}
+					<Author>Annie Kostolany</Author>
+					{children}
 				</BlogPostContainer>
 			</Page>
 		);
