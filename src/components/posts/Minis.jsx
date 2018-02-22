@@ -6,7 +6,7 @@ export default () => (
 	<BlogPost
 		title="Amsterdam mini sessions"
 		description="30-minute photo sessions in Amsterdam "
-		date="2017-22-02"
+		date="2017-02-22"
 		permalink="amsterdam-mini-session"
 		image="mini/2.jpg"
 	>
