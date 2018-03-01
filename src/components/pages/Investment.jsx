@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<Page
@@ -19,6 +19,7 @@ export default () => (
 			<br /> Please contact me for my wedding package guide and other
 			requests.
 		</p>
-		<BookNowButton />
+
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );

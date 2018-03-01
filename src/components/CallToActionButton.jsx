@@ -24,8 +24,8 @@ const Button = styled.div`
 	}
 `;
 
-export default () => (
+export default (props) => (
 	<Button>
-		<Link to="/contact">Book now</Link>
+		<Link to={props.to}>{props.text}</Link>
 	</Button>
 );

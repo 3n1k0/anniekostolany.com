@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<Page title="About me">
@@ -32,6 +32,6 @@ export default () => (
 			mail@anniekostolany.com or by clicking this button below.
 		</p>
 
-		<BookNowButton />
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );

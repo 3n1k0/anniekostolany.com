@@ -27,7 +27,7 @@ const Dimmer = styled.div`
 
 const Title = styled.span`
 	bottom: 80px;
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.8);
 	display: block;
 	font-size: 24px;
 	left: 40px;

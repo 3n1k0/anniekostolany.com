@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 import { Link } from 'react-router-dom';
 
 export default () => (
@@ -25,6 +25,6 @@ export default () => (
 		<Photo file="streetsyle/35269218404_06c62d3003_k.jpg" />
 		<Photo file="streetsyle/23539526988_24cbf3c0c5_k.jpg" />
 		<Photo file="streetsyle/sitting3.jpg" />
-		<BookNowButton />
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );

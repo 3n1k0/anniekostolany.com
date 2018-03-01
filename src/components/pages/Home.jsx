@@ -2,7 +2,7 @@ import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
 import PhotoSet from '../PhotoSet';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 import PrettyLink from '../PrettyLink';
 
 export default () => (
@@ -41,6 +41,7 @@ export default () => (
 		</PhotoSet>
 		<Photo file="home/9.jpg" />
 		<Photo file="home/menyasszonyok.jpg" />
-		<BookNowButton />
+
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );

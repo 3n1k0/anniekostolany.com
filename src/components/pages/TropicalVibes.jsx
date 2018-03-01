@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<Page
@@ -25,8 +25,8 @@ export default () => (
 		<Photo file="tropical_vibes/borostyan.jpg" />
 		<Photo file="tropical_vibes/36109559835_6c223f0283_k.jpg" />
 		<Photo file="tropical_vibes/palmak.jpg" />
-		<BookNowButton />
-
 		<p>Zsofia Cank, Budapest, 2017.</p>
+
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );

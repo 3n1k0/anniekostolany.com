@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<Page
@@ -25,6 +25,6 @@ export default () => (
 		<Photo file="rebellion/csikos.jpg" />
 		<Photo file="rebellion/lines.jpg" />
 		<p> Nivine Massoud, Amsterdam, 2017.</p>
-		<BookNowButton />
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );

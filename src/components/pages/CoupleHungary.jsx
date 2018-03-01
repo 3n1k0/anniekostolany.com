@@ -1,13 +1,12 @@
 import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<Page title="Romantic fall theme couple shoot" permalink="/couple-hungary">
 		<h2> Romantic fall theme couple shoot </h2>
 		<p>
-			{' '}
 			I must say, engagement photography is I love the most. I just really
 			like how easy it is to work with couples who sometimes just happen
 			to forget about the camera.
@@ -27,13 +26,13 @@ export default () => (
 		/>
 
 		<p>
-			{' '}
 			Couple shoots in Amsterdam are really sweet and precious but I also
 			enjoy to work in nature, as it gives me endless inspiration. We can
 			discuss your ideas over a coffee or on Skype. I am also happy to
 			help picking out the location and dresses so everything can match
 			perfectly.
 		</p>
-		<BookNowButton />
+
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );

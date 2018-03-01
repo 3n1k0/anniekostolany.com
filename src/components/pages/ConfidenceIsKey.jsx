@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<Page title="Confidence is key">
@@ -12,6 +12,7 @@ export default () => (
 		<Photo file="confidence_is_key/matiasorange.jpg" />
 		<Photo file="confidence_is_key/tamaszkodos.jpg" />
 		<Photo file="confidence_is_key/legjobb.jpg" />
-		<BookNowButton />
+
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );

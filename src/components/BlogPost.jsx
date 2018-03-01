@@ -6,6 +6,7 @@ import moment from 'moment';
 import PhotoSet from './PhotoSet';
 import Photo from './Photo';
 import Helmet from 'react-helmet';
+import CallToActionButton from './CallToActionButton';
 
 const Title = styled.h2`
 	line-height: 1.25;
@@ -72,6 +73,7 @@ export default class BlogPost extends React.Component {
 					<PostDate>{formattedDate}</PostDate> &middot;{' '}
 					<Author>Annie Kostolany</Author>
 					{children}
+					<CallToActionButton to="/blog" text="Read more" />
 				</BlogPostContainer>
 			</Page>
 		);

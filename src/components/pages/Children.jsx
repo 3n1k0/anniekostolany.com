@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<Page title="Children photography">
@@ -69,6 +69,7 @@ export default () => (
 		<Photo file="children/gyerekek-10.jpg" alt="Little boy with flowers" />
 		<Photo file="children/gyerekek-17.jpg" alt="Little girl smiling" />
 		<Photo file="children/gyerekek-22.jpg" alt="Little girl portrait" />
-		<BookNowButton />
+
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );

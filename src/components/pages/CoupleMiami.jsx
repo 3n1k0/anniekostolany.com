@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../Page';
 import Photo from '../Photo';
-import BookNowButton from '../BookNowButton';
+import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<Page title="Couple shoots" permalink="/couple-miami">
@@ -11,6 +11,7 @@ export default () => (
 		<Photo file="couple_shoots/35197522641_a8a3b05128_k.jpg" />
 		<Photo file="couple_shoots/35197523791_4e180460af_k.jpg" />
 		<Photo file="couple_shoots/35197525161_cc09a2300d_k.jpg" />
-		<BookNowButton />
+
+		<CallToActionButton to="/contact" text="Book now" />
 	</Page>
 );
