@@ -11,10 +11,12 @@ export default () => (
 		image="tropical_vibes/1.jpg"
 	>
 		<p>
-		This is an older project of mine but I'd like to share cause I still really like it. Sofia is a real beauty with interesting southern characteristics. 
-		This was actually the first time we worked together. I like her bubbly, flexible, cheerful personality a lot. 
-		She's also super smart, speaks a bunch of languages and still studying. Follow her on instagram @sofiacnk.
-		
+			This is an older project of mine but I'd like to share cause I still
+			really like it. Sofia is a real beauty with interesting southern
+			characteristics. This was actually the first time we worked
+			together. I like her bubbly, flexible, cheerful personality a lot.
+			She's also super smart, speaks a bunch of languages and still
+			studying. Follow her on instagram @sofiacnk.
 		</p>
 
 		<Photo file="tropical_vibes/1.jpg" />
