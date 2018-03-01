@@ -8,7 +8,7 @@ export default () => (
 		description="What to do if you have booked your first photo session?"
 		date="2017-03-01"
 		permalink="portrait-session-checklist"
-		image="confidence_is_key/gettingready.jpg"
+		image="blog/gettingready.jpg"
 	>
 		<Photo file="blog/gettingready.jpg" />
 		<p>
