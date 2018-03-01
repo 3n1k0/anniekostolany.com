@@ -11,12 +11,12 @@ export default () => (
 		image="tropical_vibes/1.jpg"
 	>
 		<p>
-			I took these photos in Budapest. I am originally from Hungary and I
-			love to do creative work whenever I come around my home. It was
-			super hot (summers are way warmer than in the Netherlands) and Sofia
-			had no makeup on, other than some lipstick. I think she has a nice,
-			charasteristic face and she will pursue a successful modeling
-			career.
+			This is an older project of mine but I'd like to share cause I still
+			really like it. Sofia is a real beauty with interesting southern
+			characteristics. This was actually the first time we worked
+			together. I like her bubbly, flexible, cheerful personality a lot.
+			She's also super smart, speaks a bunch of languages and still
+			studying. Follow her on instagram @sofiacnk.
 		</p>
 
 		<Photo file="tropical_vibes/1.jpg" />

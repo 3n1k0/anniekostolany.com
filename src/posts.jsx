@@ -6,8 +6,10 @@ import MalePortraitSession from './components/posts/MalePortraitSession';
 import TropicalVibes from './components/posts/TropicalVibes';
 import Calvins from './components/posts/Calvins';
 import LostBride from './components/posts/LostBride';
+import Minis from './components/posts/Minis';
 
 export default [
+	Minis,
 	Calvins,
 	TropicalVibes,
 	Marjolein,
