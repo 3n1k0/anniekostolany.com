@@ -5,14 +5,14 @@ const webpack = require('webpack');
 const path = require('path');
 
 const client = merge(common, {
-	entry : {
-		app : [
+	entry: {
+		app: [
 			'react-hot-loader/patch',
 			'webpack-dev-server/client?http://localhost:3000',
 			'webpack/hot/only-dev-server'
 		]
 	},
-	plugins : [
+	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NamedModulesPlugin(),
 		new webpack.NoEmitOnErrorsPlugin()

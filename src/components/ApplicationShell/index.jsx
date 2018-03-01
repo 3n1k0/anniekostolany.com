@@ -33,7 +33,7 @@ export default class ApplicationShell extends React.Component {
 					/>
 					<meta
 						name="description"
-						content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Haarlem, Netherlands, available worldwide. Let's create magic!"
+						content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Amsterdam, Netherlands, available worldwide. Let's create magic!"
 					/>
 					<meta
 						name="msvalidate.01"
@@ -42,7 +42,7 @@ export default class ApplicationShell extends React.Component {
 
 					<meta
 						property="og:title"
-						content="Portrait &amp; Event Photography in Haarlem | Annie Kostolany"
+						content="Portrait &amp; Event Photography in Amsterdam | Annie Kostolany"
 					/>
 					<meta
 						property="og:description"

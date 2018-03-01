@@ -1,30 +1,28 @@
 const path = require('path');
 
 module.exports = {
-	entry : {
-		app : [
-			'./src/browser.jsx'
-		]
+	entry: {
+		app: ['./src/browser.jsx']
 	},
-	resolve : {
-		enforceExtension : false,
-		extensions       : ['.js', '.jsx'],
-		mainFiles        : ['index']
+	resolve: {
+		enforceExtension: false,
+		extensions: ['.js', '.jsx'],
+		mainFiles: ['index']
 	},
-	output : {
-		path          : path.join(__dirname, './out/'),
-		filename      : '[name].js',
-		chunkFilename : '[id].bundle.js',
-		publicPath    : '/'
+	output: {
+		path: path.join(__dirname, './out/'),
+		filename: '[name].js',
+		chunkFilename: '[id].bundle.js',
+		publicPath: '/'
 	},
-	module : {
-		rules : [
+	module: {
+		rules: [
 			{
-				test    : /\.jsx$/,
-				exclude : /(node_modules)/,
-				loader  : 'babel-loader',
-				options : {
-					presets : ['env', 'react']
+				test: /\.jsx$/,
+				exclude: /(node_modules)/,
+				loader: 'babel-loader',
+				options: {
+					presets: ['env', 'react']
 				}
 			}
 		]

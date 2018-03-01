@@ -5,11 +5,11 @@ const webpack = require('webpack');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 const client = merge(common, {
-	plugins : [
+	plugins: [
 		new MinifyPlugin(),
 		new webpack.DefinePlugin({
-			'process.env' : {
-				'NODE_ENV' : JSON.stringify('production')
+			'process.env': {
+				NODE_ENV: JSON.stringify('production')
 			}
 		})
 	]
