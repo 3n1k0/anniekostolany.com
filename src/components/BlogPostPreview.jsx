@@ -19,7 +19,7 @@ const Banner = styled.div`
 `;
 
 const Title = styled.h2`
-	color: #000000;
+	color: #333333;
 	line-height: 1.2em;
 	margin: 0;
 	padding: 1rem 0 0 0;
@@ -27,15 +27,13 @@ const Title = styled.h2`
 `;
 
 const Description = styled.span`
-	color: #000000;
+	color: #999999;
 	display: block;
-	padding: 1rem 0 1rem 0;
+	padding: 1rem 0 2rem 0;
 `;
 
 const ReadMore = styled.span`
 	color: #336699;
-	display: block;
-	padding: 0 0 2rem 0;
 `;
 
 const StyledLink = styled(Link)`
@@ -51,8 +49,9 @@ export default props => {
 		<StyledLink to={permaLink}>
 			<Banner src={'https://anniekostolany.com/images/' + image} />
 			<Title>{title}</Title>
-			<Description>{description}</Description>
-			<ReadMore>Read more...</ReadMore>
+			<Description>
+				{description} <ReadMore>Read more...</ReadMore>
+			</Description>
 		</StyledLink>
 	);
 };

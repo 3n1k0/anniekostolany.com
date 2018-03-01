@@ -19,7 +19,7 @@ const Cell = styled.div`
 
 	@media (max-width: 768px) {
 		float: initial;
-		padding: 0!important;
+		padding: 0 !important;
 		width: 100%;
 	}
 `;
@@ -39,5 +39,6 @@ export default () => (
 				index % 2 === 1 ? <ClearFix /> : null
 			];
 		})}
+		<ClearFix />
 	</Page>
 );

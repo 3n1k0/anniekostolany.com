@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import { Facebook, Instagram } from './SocialIcons';
 
 const Menu = styled.div`
-	background: #eee;
-	//border: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 	display: block;
 	padding: 0;
 

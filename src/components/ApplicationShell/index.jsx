@@ -1,11 +1,27 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 import Header from './Header';
+
+injectGlobal`
+	html {
+		background: #ffffff;
+	}
+
+	body {
+		background: #ffffff;
+	}
+
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+`;
 
 const Page = styled.div`
 	width: 60%;
 	margin: 0 auto;
+	padding: 4rem 0;
 
 	@media (max-width: 1024px) {
 		width: 80%;

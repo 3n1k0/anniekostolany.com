@@ -4,25 +4,37 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Header = styled.div`
-	width: 60%;
+	background: #ffffff;
+	width: 100%;
 	margin: 0 auto;
-	padding: 0 0 40px 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
 `;
 
 const Logo = styled(Link)`
-	background-image: url(https://anniekostolany.com/images/logo.png);
 	display: block;
-	height: 130px;
-	width: 100%;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	margin: 20px 0;
-	width: 300px;
+	width: 15%;
+	opacity: 0.1;
+
+
+	position: fixed;
+	top: 2%;
+	left: 2%;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	img {
+		width: 100%;
+	}
+
 `;
 
 export default () => (
 	<Header>
-		<Logo to="/" />
 		<Menu />
 	</Header>
 );

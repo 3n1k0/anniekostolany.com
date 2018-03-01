@@ -8,7 +8,8 @@ const PrettyLink = styled(Link)`
 `;
 
 const Dimmer = styled.div`
-	background: ${props => props.background};
+	//${props => props.color}
+	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
 	bottom: 0;
 	display: block;
 	opacity: 0;
@@ -20,13 +21,13 @@ const Dimmer = styled.div`
 	will-change: transform, opacity;
 
 	&:hover {
-		opacity: 0.7;
+		opacity: 1;
 	}
 `;
 
 const Title = styled.span`
 	bottom: 80px;
-	color: ${props => props.color};
+	color: rgba(255, 255, 255, 0.75);
 	display: block;
 	font-size: 24px;
 	left: 40px;
