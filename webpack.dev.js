@@ -8,7 +8,7 @@ const client = merge(common, {
 	entry: {
 		app: [
 			'react-hot-loader/patch',
-			'webpack-dev-server/client?http://localhost:3000',
+			'webpack-dev-server/client?http://159.65.198.31:3000',
 			'webpack/hot/only-dev-server'
 		]
 	},

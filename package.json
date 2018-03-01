@@ -9,7 +9,7 @@
     "server": "./node_modules/.bin/webpack --config webpack.server.js && node ./dist/server.js",
     "lint": "./node_modules/.bin/eslint src/* --ext .jsx",
     "test": "jest",
-    "prettier": "./node_modules/.bin/prettier --write './**/*.js'"
+    "prettier": "./node_modules/.bin/prettier --write './**/*.jsx'"
   },
   "repository": {
     "type": "git",

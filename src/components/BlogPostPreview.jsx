@@ -22,24 +22,24 @@ const Title = styled.h2`
 	color: #000000;
 	line-height: 1.2em;
 	margin: 0;
-	padding: 1rem 1rem 0 1rem;
-
+	padding: 1rem 0 0 0;
 	text-decoration: none;
 `;
 
 const Description = styled.span`
 	color: #000000;
 	display: block;
-	padding: 1rem;
+	padding: 1rem 0 1rem 0;
 `;
 
 const ReadMore = styled.span`
 	color: #336699;
 	display: block;
-	padding: 0 1rem 2rem 1rem;
+	padding: 0 0 2rem 0;
 `;
 
 const StyledLink = styled(Link)`
+	display: block;
 	text-decoration: none;
 `;
 

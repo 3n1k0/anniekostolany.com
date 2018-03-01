@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-const PageContainer = styled.div`
+const PageContainer = styled.article`
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5em;

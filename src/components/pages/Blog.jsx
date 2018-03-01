@@ -7,7 +7,15 @@ import BlogPostPreview from '../BlogPostPreview';
 const Cell = styled.div`
 	display: block;
 	float: left;
-	width: 50%;
+	width: calc(50% - 1rem);
+
+	&:nth-of-type(3n + 1) {
+		padding-right: 1rem;
+	}
+
+	&:nth-of-type(3n + 2) {
+		padding-left: 1rem;
+	}
 
 	@media (max-width: 768px) {
 		float: initial;
