@@ -47,16 +47,16 @@ export default () => (
 			prayed a lot not to get any breakouts. (Photo by Andras Kranitz.){' '}
 		</p>
 		<p>
+			For men, I would recommend to shave in the morning, before the shoot
+			to arrive with a fresh face. Try a new razor and use shaving foam
+			and proper lotion after, to make sure you don't get too many of
+			those red bumps.		
+		</p>
+		<p>
 			Also, please do yourself a favour and moisturize a lot. It is really
 			important, because no Photoshop can help if your skin looks too dry
 			and flaky. Your foundation will sit in all of your wrinkles, making
 			visible even those you didn't know existed before.
-		</p>
-		<p>
-			For men, I would recommend to shave in the morning, before the shoot
-			to arrive with a fresh face. Try a new razor and use shaving foam
-			and proper lotion after, to make sure you don't get too many of
-			those red bumps.
 		</p>
 		<Photo file="blog/evike.jpg" />
 		<p>
