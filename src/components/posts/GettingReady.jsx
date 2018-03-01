@@ -8,7 +8,7 @@ export default () => (
 		description="What to do if you have booked your first photo session?"
 		date="2017-03-01"
 		permalink="portrait-session-checklist"
-		image="confidence_is_key/gettingready.jpg"
+		image="blog/gettingready.jpg"
 	>
 		<Photo file="blog/gettingready.jpg" />
 		<p>
@@ -47,29 +47,30 @@ export default () => (
 			prayed a lot not to get any breakouts. (Photo by Andras Kranitz.){' '}
 		</p>
 		<p>
+			For men, I would recommend to shave in the morning, before the shoot
+			to arrive with a fresh face. Try a new razor and use shaving foam
+			and proper lotion after, to make sure you don't get too many of
+			those red bumps.		
+		</p>
+		<p>
 			Also, please do yourself a favour and moisturize a lot. It is really
 			important, because no Photoshop can help if your skin looks too dry
 			and flaky. Your foundation will sit in all of your wrinkles, making
 			visible even those you didn't know existed before.
 		</p>
-		<p>
-			For men, I would recommend to shave in the morning, before the shoot
-			to arrive with a fresh face. Try a new razor and use shaving foam
-			and proper lotion after, to make sure you don't get too many of
-			those red bumps.
-		</p>
 		<Photo file="blog/evike.jpg" />
 		<p>
 			Get a nice manicure and a pedicure. It's easy to overlook these
 			things but it is way more expensive to get the photographer fix your
-			nails in post, then to clip and clean your nails before. Choose your
-			outfits wisely, and don't forget to bring them! If there is more
+			nails in post, then to clip and clean your nails before. 
+			<br /> Choose your outfits wisely, and don't forget to bring them! If there is more
 			than one person in the shoot, pay extra attention to all of the
 			outfits. The goal is not to match perfectly, but to wear something
 			that harmonize in color and style. I always ask clients not to wear
 			anything distracting: texts, too many patterns or bright, neon
 			colors. Unless you have a fashion shoot, a simple, shirt or T-shirt
-			is the best you can do. Don't forget to bring all the props you'd
+			is the best you can do.
+			<br /> Don't forget to bring all the props you'd
 			like to use. Hats, flowers, chalk tables, books, or anything that is
 			important for you to be in the pictures.
 		</p>
@@ -86,8 +87,8 @@ export default () => (
 		<Photo file="blog/marseille.jpg" />
 
 		<p>
-			Don't get drunk the night before. Not because I'm trying to be a
-			party pooper but because literally no makeup can cover it. And
+			Try not to get drunk the night before. Not because I'm trying to be a
+			party pooper here but because literally no makeup can cover it. And
 			swollen face and red eyes are really not appealing. Just get a
 			plenty of rest, and drink a lot of water instead. Finally, just go
 			to the shoot and be yourself. Have fun, enjoy the time and the rest
