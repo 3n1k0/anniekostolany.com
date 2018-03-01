@@ -19,6 +19,7 @@ const Cell = styled.div`
 
 	@media (max-width: 768px) {
 		float: initial;
+		padding: 0!important;
 		width: 100%;
 	}
 `;

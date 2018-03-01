@@ -8,6 +8,7 @@ import Photo from './Photo';
 import Helmet from 'react-helmet';
 
 const Title = styled.h2`
+	line-height: 1.25;
 	padding: 1rem 0 0 0;
 	margin: 0;
 
@@ -26,7 +27,15 @@ const Author = styled.span`
 `;
 
 const BlogPostContainer = styled.div`
-	padding-top: 20px;
+	img {
+		display: block;
+		padding: 1rem 0;
+	}
+
+	p {
+		margin: 0;
+		padding: 1rem 0;
+	}
 `;
 
 export { PhotoSet, Photo };
