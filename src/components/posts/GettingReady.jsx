@@ -62,14 +62,15 @@ export default () => (
 		<p>
 			Get a nice manicure and a pedicure. It's easy to overlook these
 			things but it is way more expensive to get the photographer fix your
-			nails in post, then to clip and clean your nails before. Choose your
-			outfits wisely, and don't forget to bring them! If there is more
+			nails in post, then to clip and clean your nails before. 
+			<br /> Choose your outfits wisely, and don't forget to bring them! If there is more
 			than one person in the shoot, pay extra attention to all of the
 			outfits. The goal is not to match perfectly, but to wear something
 			that harmonize in color and style. I always ask clients not to wear
 			anything distracting: texts, too many patterns or bright, neon
 			colors. Unless you have a fashion shoot, a simple, shirt or T-shirt
-			is the best you can do. Don't forget to bring all the props you'd
+			is the best you can do.
+			<br /> Don't forget to bring all the props you'd
 			like to use. Hats, flowers, chalk tables, books, or anything that is
 			important for you to be in the pictures.
 		</p>
@@ -86,8 +87,8 @@ export default () => (
 		<Photo file="blog/marseille.jpg" />
 
 		<p>
-			Don't get drunk the night before. Not because I'm trying to be a
-			party pooper but because literally no makeup can cover it. And
+			Try not to get drunk the night before. Not because I'm trying to be a
+			party pooper here but because literally no makeup can cover it. And
 			swollen face and red eyes are really not appealing. Just get a
 			plenty of rest, and drink a lot of water instead. Finally, just go
 			to the shoot and be yourself. Have fun, enjoy the time and the rest
