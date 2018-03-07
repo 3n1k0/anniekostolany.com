@@ -6,10 +6,11 @@ import styled from 'styled-components';
 const Banner = styled.div`
 	background-image: url(${props => props.src});
 	background-position: center center;
+	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 200px;
+	padding-bottom: 60%;
 	display: block;
-	width: 100;
+	width: 100%;
 	transition: background-size 0.1s ease-out, opacity 0.1s ease-out;
 
 	&:hover {
@@ -20,16 +21,17 @@ const Banner = styled.div`
 
 const Title = styled.h2`
 	color: #333333;
-	line-height: 1.2em;
+	font-size: 1.5rem;
+	line-height: 1.25;
 	margin: 0;
-	padding: 1rem 0 0 0;
+	padding: 1rem 1rem 0 1rem;
 	text-decoration: none;
 `;
 
 const Description = styled.span`
 	color: #999999;
 	display: block;
-	padding: 1rem 0 2rem 0;
+	padding: 1rem 1rem 2rem 1rem;
 `;
 
 const ReadMore = styled.span`

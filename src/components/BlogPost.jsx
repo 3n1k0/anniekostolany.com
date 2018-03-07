@@ -9,8 +9,9 @@ import Helmet from 'react-helmet';
 import CallToActionButton from './CallToActionButton';
 
 const Title = styled.h2`
+	font-size: 2rem;
 	line-height: 1.25;
-	padding: 1rem 0 0 0;
+	padding: 1rem 1rem 0 1rem;
 	margin: 0;
 
 	a {
@@ -35,7 +36,7 @@ const BlogPostContainer = styled.div`
 
 	p {
 		margin: 0;
-		padding: 1rem 0;
+		padding: 1rem;
 	}
 `;
 

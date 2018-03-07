@@ -7,7 +7,7 @@ const Header = styled.div`
 	background: #ffffff;
 	width: 100%;
 	margin: 0 auto;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 0;
 	left: 0;
