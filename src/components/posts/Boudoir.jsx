@@ -10,7 +10,6 @@ export default () => (
 		permalink="boudoir-sessions"
 		image="blog/budi.png"
 	>
-		<h1>What is boudoir?</h1>
 
 		<Photo file="blog/budi.png" />
 		<p>
