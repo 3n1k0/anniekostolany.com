@@ -8,8 +8,10 @@ import Calvins from './components/posts/Calvins';
 import LostBride from './components/posts/LostBride';
 import Minis from './components/posts/Minis';
 import GettingReady from './components/posts/GettingReady';
+import Boudoir from './components/posts/Boudoir';
 
 export default [
+	Boudoir,
 	GettingReady,
 	Minis,
 	Calvins,
