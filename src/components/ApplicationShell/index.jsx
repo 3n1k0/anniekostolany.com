@@ -21,7 +21,7 @@ injectGlobal`
 const Page = styled.div`
 	width: 60%;
 	margin: 0 auto;
-	padding: 6rem 0 4rem 0;
+	padding: 50px 0 40px 0;
 
 	@media (max-width: 1024px) {
 		width: 80%;
