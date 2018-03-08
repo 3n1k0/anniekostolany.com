@@ -10,6 +10,7 @@ import CallToActionButton from './CallToActionButton';
 
 const Title = styled.h2`
 	font-size: 2rem;
+	font-family: Cardo, serif;
 	line-height: 1.25;
 	padding: 1rem 1rem 0 1rem;
 	margin: 0;

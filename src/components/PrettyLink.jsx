@@ -23,6 +23,11 @@ const Dimmer = styled.div`
 	&:hover {
 		opacity: 1;
 	}
+
+	@media (max-width: 500px) {
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+		opacity: 1;
+	}
 `;
 
 const Title = styled.span`
@@ -31,9 +36,17 @@ const Title = styled.span`
 	display: block;
 	font-size: 24px;
 	left: 40px;
-	line-height: 1.5em;
+	line-height: 1.5;
 	position: absolute;
 	width: 50%;
+
+
+	@media (max-width: 500px) {
+		bottom: 30px;
+		font-size: 18px;
+		left: 30px;
+		line-height: 1.25;
+	}
 `;
 
 export default props => (

@@ -13,26 +13,6 @@ const Header = styled.div`
 	left: 0;
 `;
 
-const Logo = styled(Link)`
-	display: block;
-	width: 15%;
-	opacity: 0.1;
-
-
-	position: fixed;
-	top: 2%;
-	left: 2%;
-
-	&:hover {
-		opacity: 1;
-	}
-
-	img {
-		width: 100%;
-	}
-
-`;
-
 export default () => (
 	<Header>
 		<Menu />

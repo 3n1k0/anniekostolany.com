@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const CarouselContainer = styled.div`
 	display: block;
-	overflow: hidden;
+	overflow-x: hidden;
 	position: relative;
 `;
 
@@ -13,7 +13,7 @@ const CarouselScroller = styled.div`
 
 	&:after {
 		clear: both;
-		content: " ";
+		content: ' ';
 		display: block;
 	}
 `;
@@ -22,9 +22,9 @@ export default class Carousel extends React.Component {
 	constructor() {
 		super(props);
 		this.state = {
-			offset : 0,
-			startingOffset : 0,
-			scrolling : false
+			offset: 0,
+			startingOffset: 0,
+			scrolling: false
 		};
 	}
 
@@ -36,29 +36,36 @@ export default class Carousel extends React.Component {
 		this.mc.on('panend', this.onPanEnd);
 	}
 
-	onPanStart = event => {
-
+	componentWillUnmount() {
+		this.mc.off('panmove', this.onPanMove);
+		this.mc.off('panend', this.onPanEnd);
+		this.mc.off('panstart', this.onPanStart);
+		delete this.mc;
 	}
 
-	onPanMove = event => {
+	onPanStart = event => {};
 
-	}
+	onPanMove = event => {};
 
-	onPanEnd = event => {
-
-	}
+	onPanEnd = event => {};
 
 	render() {
 		const { className, children } = this.props;
 		const scrollerStyle = {
-			transform : 'translate3d(0, ' + (this.state.offset) + 'px, 0)',
-			transition : this.state.scrolling ? 'unset' : 'transform 0.5s'
+			transform: 'translate3d(0, ' + this.state.offset + 'px, 0)',
+			transition: this.state.scrolling ? 'unset' : 'transform 0.5s'
 		};
 
 		return (
-			<CarouselContainer ref={el => { this._containerEl = el; }}>
+			<CarouselContainer
+				ref={el => {
+					this._containerEl = el;
+				}}
+			>
 				<CarouselScroller
-					ref={el => { this._scrollerEl = el; }}
+					ref={el => {
+						this._scrollerEl = el;
+					}}
 					style={scrollerStyle}
 				>
 					{this.props.children}

@@ -24,7 +24,7 @@ const Button = styled.div`
 	}
 `;
 
-export default (props) => (
+export default props => (
 	<Button>
 		<Link to={props.to}>{props.text}</Link>
 	</Button>
