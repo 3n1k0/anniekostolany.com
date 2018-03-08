@@ -86,7 +86,7 @@ export default () => (
 			about, drink your wine, shove handfuls of popcorn in your mouth and
 			laugh loudly. Don't be too polite to say "no" whenever you want to,
 			wear too much makeup or do not wear any, apply to the job you are
-			afraid of. I mean yeah, people have right to judge you for being
+			afraid to. I mean yeah, people have right to judge you for being
 			confident in your own skin, but you also have the right not to give
 			a fuck about it.
 		</p>
