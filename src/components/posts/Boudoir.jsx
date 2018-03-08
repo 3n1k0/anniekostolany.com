@@ -33,7 +33,7 @@ export default () => (
 		<Photo file="blog/boudoir8.jpg" />
 		<p>
 			Before I tried photographing boudoir, I wasn't completely sure it
-			was something I liked. But a couple sessions later I can tell it is
+			was something I liked. But a couple sessions later I can tell that it is
 			definitely something every girl should try. It boosts your
 			confidence ridiculously and helps A LOT to accept yourself. And why
 			is it important at all?
@@ -81,7 +81,7 @@ export default () => (
 		</p>
 		<p>
 			Please remember that you only have one life and it wouldn't be fair
-			if you'd spend most of it with worrying about what other people
+			if you'd spend most of it worrying about what other people
 			might say or think about you. So forget all the bullshit you stress
 			about, drink your wine, shove handfuls of popcorn in your mouth and
 			laugh loudly. Don't be too polite to say "no" whenever you want to,
