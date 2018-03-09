@@ -2,17 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-const PageContainer = styled.article`
-	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 1.5em;
-	width: auto;
-
-	h2 {
-		font-weight: normal;
-	}
-`;
-
 const IMAGE_PATH = 'https://anniekostolany.com/images/';
 
 export default class Page extends React.Component {
@@ -27,10 +16,16 @@ export default class Page extends React.Component {
 	}
 
 	render() {
-		const { title, description, image, isInListView } = this.props;
+		const {
+			title,
+			description,
+			image,
+			isInListView,
+			className
+		} = this.props;
 
 		return (
-			<PageContainer>
+			<section className={className}>
 				<Helmet>
 					{title && [
 						<title key="1">{title} | Annie Kostolany</title>,
@@ -63,7 +58,7 @@ export default class Page extends React.Component {
 				</Helmet>
 
 				{this.props.children}
-			</PageContainer>
+			</section>
 		);
 	}
 }

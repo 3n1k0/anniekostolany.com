@@ -1,12 +1,12 @@
 import React from 'react';
-import Page from '../Page';
+import AlbumPage from '../AlbumPage';
 import Photo from '../Photo';
 import PhotoSet from '../PhotoSet';
 import CallToActionButton from '../CallToActionButton';
 import PrettyLink from '../PrettyLink';
 
 export default () => (
-	<Page
+	<AlbumPage
 		title="Portrait &amp; wedding Photography in Amsterdam"
 		image="home/zsofi.jpg"
 		permalink="/"
@@ -43,5 +43,5 @@ export default () => (
 		<Photo file="home/menyasszonyok.jpg" />
 
 		<CallToActionButton to="/contact" text="Book now" />
-	</Page>
+	</AlbumPage>
 );

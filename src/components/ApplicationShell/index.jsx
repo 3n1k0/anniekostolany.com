@@ -27,7 +27,8 @@ const Page = styled.div`
 		width: 80%;
 	}
 
-	@media (max-width: 400px) {
+	@media (max-width: 600px) {
+		padding-top: 0;
 		width: 100%;
 	}
 `;

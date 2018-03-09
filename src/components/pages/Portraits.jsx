@@ -10,7 +10,6 @@ export default () => (
 		description="portraits by Annie"
 		image="streetsyle/7.jpg"
 	>
-		<h2>portraits</h2>
 		<Link to="/blog/2018/02/10/dutch-model-fall-photoshoot">
 			<Photo file="streetsyle/7.jpg" />
 		</Link>

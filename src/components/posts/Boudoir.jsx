@@ -31,8 +31,8 @@ export default () => (
 		<Photo file="blog/boudoir8.jpg" />
 		<p>
 			Before I tried photographing boudoir, I wasn't completely sure it
-			was something I liked. But a couple sessions later I can tell that it is
-			definitely something every girl should try. It boosts your
+			was something I liked. But a couple sessions later I can tell that
+			it is definitely something every girl should try. It boosts your
 			confidence ridiculously and helps A LOT to accept yourself. And why
 			is it important at all?
 		</p>
@@ -79,14 +79,14 @@ export default () => (
 		</p>
 		<p>
 			Please remember that you only have one life and it wouldn't be fair
-			if you'd spend most of it worrying about what other people
-			might say or think about you. So forget all the bullshit you stress
-			about, drink your wine, shove handfuls of popcorn in your mouth and
-			laugh loudly. Don't be too polite to say "no" whenever you want to,
-			wear too much makeup or do not wear any, apply to the job you are
-			afraid to. I mean yeah, people have right to judge you for being
-			confident in your own skin, but you also have the right not to give
-			a fuck about it.
+			if you'd spend most of it worrying about what other people might say
+			or think about you. So forget all the bullshit you stress about,
+			drink your wine, shove handfuls of popcorn in your mouth and laugh
+			loudly. Don't be too polite to say "no" whenever you want to, wear
+			too much makeup or do not wear any, apply to the job you are afraid
+			to. I mean yeah, people have right to judge you for being confident
+			in your own skin, but you also have the right not to give a fuck
+			about it.
 		</p>
 		<p>Oh, and Happy International Women's Day everyone!</p>
 		<Photo file="blog/boudoir5.jpg" />

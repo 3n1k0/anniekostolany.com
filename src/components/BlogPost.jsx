@@ -8,12 +8,27 @@ import Photo from './Photo';
 import Helmet from 'react-helmet';
 import CallToActionButton from './CallToActionButton';
 
+const StyledPage = styled(Page)`
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+
+	p {
+		margin: 0;
+		padding: 20px;
+	}
+
+	img {
+		padding: 20px 0;
+	}
+`;
+
 const Title = styled.h2`
-	font-size: 2rem;
 	font-family: Cardo, serif;
+	font-size: 32px;
+	font-weight: bold;
 	line-height: 1.25;
-	padding: 1rem 1rem 0 1rem;
 	margin: 0;
+	padding: 0 20px;
 
 	a {
 		color: #000000;
@@ -21,24 +36,10 @@ const Title = styled.h2`
 	}
 `;
 
-const PostDate = styled.span`
+const PostDetails = styled.span`
 	color: #999999;
-`;
-
-const Author = styled.span`
-	color: #999999;
-`;
-
-const BlogPostContainer = styled.div`
-	img {
-		display: block;
-		padding: 1rem 0;
-	}
-
-	p {
-		margin: 0;
-		padding: 1rem;
-	}
+	display: block;
+	padding: 0 20px;
 `;
 
 export { PhotoSet, Photo };
@@ -56,28 +57,27 @@ export default class BlogPost extends React.Component {
 		const formattedDate = moment(date).format('MMMM Do, YYYY');
 
 		return (
-			<Page {...this.props}>
-				<BlogPostContainer>
-					<Helmet>
-						<meta name="author" content="Annie Kostolany" />
-						<meta property="og:type" content="article" />
-					</Helmet>
-					<Title>
-						<Link
-							to={
-								'/blog/' +
-								BlogPost.getPermalink(date, title, permalink)
-							}
-						>
-							{title}
-						</Link>
-					</Title>
-					<PostDate>{formattedDate}</PostDate> &middot;{' '}
-					<Author>Annie Kostolany</Author>
-					{children}
-					<CallToActionButton to="/blog" text="Read more" />
-				</BlogPostContainer>
-			</Page>
+			<StyledPage {...this.props}>
+				<Helmet>
+					<meta name="author" content="Annie Kostolany" />
+					<meta property="og:type" content="article" />
+				</Helmet>
+				<Title>
+					<Link
+						to={
+							'/blog/' +
+							BlogPost.getPermalink(date, title, permalink)
+						}
+					>
+						{title}
+					</Link>
+				</Title>
+				<PostDetails>
+					{formattedDate} &middot; Annie Kostolany
+				</PostDetails>
+				{children}
+				<CallToActionButton to="/blog" text="Read more" />
+			</StyledPage>
 		);
 	}
 

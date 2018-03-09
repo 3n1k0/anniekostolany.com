@@ -34,12 +34,12 @@ const Title = styled.span`
 	bottom: 80px;
 	color: rgba(255, 255, 255, 0.8);
 	display: block;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 24px;
 	left: 40px;
 	line-height: 1.5;
 	position: absolute;
 	width: 50%;
-
 
 	@media (max-width: 500px) {
 		bottom: 30px;

@@ -21,7 +21,8 @@ const Banner = styled.div`
 
 const Title = styled.h2`
 	color: #333333;
-	font-size: 1.5rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
 	line-height: 1.25;
 	margin: 0;
 	padding: 1rem 1rem 0 1rem;
@@ -31,6 +32,8 @@ const Title = styled.h2`
 const Description = styled.span`
 	color: #999999;
 	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 	padding: 1rem 1rem 2rem 1rem;
 `;
 
@@ -39,8 +42,11 @@ const ReadMore = styled.span`
 `;
 
 const StyledLink = styled(Link)`
-	display: block;
 	text-decoration: none;
+`;
+
+const BlogPostPreview = styled.article`
+	display: block;
 `;
 
 export default props => {
@@ -48,12 +54,16 @@ export default props => {
 	const permaLink = '/blog/' + BlogPost.getPermalink(date, title, permalink);
 
 	return (
-		<StyledLink to={permaLink}>
-			<Banner src={'https://anniekostolany.com/images/' + image} />
-			<Title>{title}</Title>
+		<BlogPostPreview>
+			<StyledLink to={permaLink}>
+				<Banner src={'https://anniekostolany.com/images/' + image} />
+			</StyledLink>
+			<StyledLink to={permaLink}>
+				<Title>{title}</Title>
+			</StyledLink>
 			<Description>
 				{description} <ReadMore>Read more...</ReadMore>
 			</Description>
-		</StyledLink>
+		</BlogPostPreview>
 	);
 };
