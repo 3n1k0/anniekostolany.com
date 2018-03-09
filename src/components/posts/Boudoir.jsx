@@ -8,10 +8,8 @@ export default () => (
 		description="Slightly feminist content."
 		date="2018-03-08"
 		permalink="boudoir-sessions"
-		image="blog/budi.png"
+		image="blog/boudoir2.jpg"
 	>
-		<h1>What is boudoir?</h1>
-
 		<Photo file="blog/budi.png" />
 		<p>
 			According to the Cambridge online dictionary:
@@ -33,7 +31,7 @@ export default () => (
 		<Photo file="blog/boudoir8.jpg" />
 		<p>
 			Before I tried photographing boudoir, I wasn't completely sure it
-			was something I liked. But a couple sessions later I can tell it is
+			was something I liked. But a couple sessions later I can tell that it is
 			definitely something every girl should try. It boosts your
 			confidence ridiculously and helps A LOT to accept yourself. And why
 			is it important at all?
@@ -81,12 +79,12 @@ export default () => (
 		</p>
 		<p>
 			Please remember that you only have one life and it wouldn't be fair
-			if you'd spend most of it with worrying about what other people
+			if you'd spend most of it worrying about what other people
 			might say or think about you. So forget all the bullshit you stress
 			about, drink your wine, shove handfuls of popcorn in your mouth and
 			laugh loudly. Don't be too polite to say "no" whenever you want to,
 			wear too much makeup or do not wear any, apply to the job you are
-			afraid of. I mean yeah, people have right to judge you for being
+			afraid to. I mean yeah, people have right to judge you for being
 			confident in your own skin, but you also have the right not to give
 			a fuck about it.
 		</p>
@@ -95,6 +93,5 @@ export default () => (
 		<Photo file="blog/boudoir6.jpg" />
 		<Photo file="blog/boudoir3.jpg" />
 		<Photo file="blog/boudoir7.jpg" />
-		<Photo file="blog/boudoir2.jpg" />
 	</BlogPost>
 );
