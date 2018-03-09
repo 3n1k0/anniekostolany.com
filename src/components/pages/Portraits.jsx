@@ -1,11 +1,11 @@
 import React from 'react';
-import Page from '../Page';
+import AlbumPage from '../AlbumPage';
 import Photo from '../Photo';
 import CallToActionButton from '../CallToActionButton';
 import { Link } from 'react-router-dom';
 
 export default () => (
-	<Page
+	<AlbumPage
 		title="portraits"
 		description="portraits by Annie"
 		image="streetsyle/7.jpg"
@@ -25,5 +25,5 @@ export default () => (
 		<Photo file="streetsyle/23539526988_24cbf3c0c5_k.jpg" />
 		<Photo file="streetsyle/sitting3.jpg" />
 		<CallToActionButton to="/contact" text="Book now" />
-	</Page>
+	</AlbumPage>
 );

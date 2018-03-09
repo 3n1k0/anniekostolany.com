@@ -21,14 +21,17 @@ injectGlobal`
 const Page = styled.div`
 	width: 60%;
 	margin: 0 auto;
-	padding: 50px 0 40px 0;
+	padding: 0;
 
 	@media (max-width: 1024px) {
 		width: 80%;
 	}
 
+	@media (max-width: 900px) {
+		padding-top: 50px;
+	}
+
 	@media (max-width: 600px) {
-		padding-top: 0;
 		width: 100%;
 	}
 `;

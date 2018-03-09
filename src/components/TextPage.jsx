@@ -6,10 +6,17 @@ export default styled(Page)`
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5em;
+	padding-top: 50px;
 	width: auto;
 
-	h2 {
+	@media (max-width: 600px) {
+		padding-top: 0;
+	}
+
+	h2, h3 {
 		font-weight: normal;
+		margin: 0;
+		padding: 20px;
 	}
 
 	p {

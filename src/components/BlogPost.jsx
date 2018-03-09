@@ -11,6 +11,7 @@ import CallToActionButton from './CallToActionButton';
 const StyledPage = styled(Page)`
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
+	padding-top: 50px;
 
 	p {
 		margin: 0;

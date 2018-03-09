@@ -4,11 +4,9 @@ import styled from 'styled-components';
 const Button = styled.a`
 	font-size: 30px;
 	line-height: 46px;
-	//padding-top: 10px;
 	color: #ffffff;
 	display: inline-block;
-	padding-right: 10px;
-	float: right;
+	padding: 0 15px;
 `;
 
 const getFacebookUrl = ua =>
@@ -21,30 +19,40 @@ const getInstagramUrl = ua =>
 		? 'instagram://user?username=anniekostolany'
 		: 'https://instagram.com/anniekostolany';
 
-export const Instagram = () =>
+export const Instagram = ({ className }) =>
 	global.window ? (
 		<Button
 			href={getInstagramUrl(window.navigator.userAgent)}
 			target="_blank"
+			className={className}
 		>
 			<i className="fa fa-instagram" />
 		</Button>
 	) : (
-		<Button href="https://instagram.com/anniekostolany" target="_blank">
+		<Button
+			href="https://instagram.com/anniekostolany"
+			target="_blank"
+			className={className}
+		>
 			<i className="fa fa-instagram" />
 		</Button>
 	);
 
-export const Facebook = () =>
+export const Facebook = ({ className }) =>
 	global.window ? (
 		<Button
 			href={getFacebookUrl(window.navigator.userAgent)}
 			target="_blank"
+			className={className}
 		>
 			<i className="fa fa-facebook-official" />
 		</Button>
 	) : (
-		<Button href="https://facebook.com/anniekostolany" target="_blank">
+		<Button
+			href="https://facebook.com/anniekostolany"
+			target="_blank"
+			className={className}
+		>
 			<i className="fa fa-facebook-official" />
 		</Button>
 	);

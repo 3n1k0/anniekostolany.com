@@ -4,6 +4,14 @@ import Page from '../Page';
 import styled from 'styled-components';
 import BlogPostPreview from '../BlogPostPreview';
 
+const BlogPage = styled(Page)`
+	padding-top: 50px;
+
+	@media (max-width: 600px) {
+		padding-top: 0;
+	}
+`;
+
 const Cell = styled.div`
 	display: block;
 	float: left;
@@ -29,7 +37,7 @@ const ClearFix = styled.div`
 `;
 
 export default () => (
-	<Page title="Blog">
+	<BlogPage title="Blog">
 		{blogPosts.map((post, index) => {
 			const { props } = post();
 			return [
@@ -40,5 +48,5 @@ export default () => (
 			];
 		})}
 		<ClearFix />
-	</Page>
+	</BlogPage>
 );
