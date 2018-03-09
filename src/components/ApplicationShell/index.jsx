@@ -28,7 +28,7 @@ const Page = styled.div`
 	}
 
 	@media (max-width: 900px) {
-		padding-top: 50px;
+	//	padding-top: 50px;
 	}
 
 	@media (max-width: 600px) {

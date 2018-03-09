@@ -20,10 +20,10 @@ const HeaderContainer = styled.header`
 	}
 
 	@media (max-width: 900px) {
-		left: 0;
-		position: fixed;
-		right: 0;
-		top: 0;
+		// left: 0;
+		// position: fixed;
+		// right: 0;
+		// top: 0;
 	}
 `;
 
@@ -103,6 +103,7 @@ export default class Header extends React.Component {
 		const headerStyle = this.state.menuOpen
 			? {
 					height: 'auto'
+					//'box-shadow': '0 0 100px #000000'
 				}
 			: {};
 
