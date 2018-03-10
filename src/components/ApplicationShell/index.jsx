@@ -75,10 +75,7 @@ export default class ApplicationShell extends React.Component {
 						href="https://fonts.googleapis.com/css?family=Cardo|Roboto|Open+Sans"
 						rel="stylesheet"
 					/>
-					<link
-						rel="stylesheet"
-						href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-					/>
+					<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"/>
 
 					<title>
 						Portrait &amp; Event Photography in Haarlem | Annie

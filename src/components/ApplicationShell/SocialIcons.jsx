@@ -26,7 +26,7 @@ export const Instagram = ({ className }) =>
 			target="_blank"
 			className={className}
 		>
-			<i className="fa fa-instagram" />
+			<i className="fab fa-instagram" />
 		</Button>
 	) : (
 		<Button
@@ -34,7 +34,7 @@ export const Instagram = ({ className }) =>
 			target="_blank"
 			className={className}
 		>
-			<i className="fa fa-instagram" />
+			<i className="fab fa-instagram" />
 		</Button>
 	);
 
@@ -45,7 +45,7 @@ export const Facebook = ({ className }) =>
 			target="_blank"
 			className={className}
 		>
-			<i className="fa fa-facebook-official" />
+			<i className="fab fa-facebook" />
 		</Button>
 	) : (
 		<Button
@@ -53,6 +53,16 @@ export const Facebook = ({ className }) =>
 			target="_blank"
 			className={className}
 		>
-			<i className="fa fa-facebook-official" />
+			<i className="fab fa-facebook" />
 		</Button>
 	);
+
+export const Messenger = ({ className }) => (
+	<Button
+		href="https://messenger.com/t/anniekostolany"
+		target="_blank"
+		className={className}
+	>
+		<i className="fab fa-facebook-messenger" />
+	</Button>
+);

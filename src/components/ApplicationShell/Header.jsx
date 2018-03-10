@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import { Facebook, Instagram } from './SocialIcons';
+import { Facebook, Instagram, Messenger } from './SocialIcons';
 
 const HeaderContainer = styled.header`
 	background: #000000;
@@ -118,9 +118,10 @@ export default class Header extends React.Component {
 					<MenuItem to="/contact">Contact</MenuItem>
 					<Instagram />
 					<Facebook />
+					<Messenger />
 				</HorizontalMenu>
 				<MenuButton
-					className="fa fa-bars"
+					className="fas fa-bars"
 					onClick={this.onMenuButtonClick}
 				/>
 			</HeaderContainer>
