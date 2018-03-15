@@ -9,8 +9,10 @@ import LostBride from './components/posts/LostBride';
 import Minis from './components/posts/Minis';
 import GettingReady from './components/posts/GettingReady';
 import Boudoir from './components/posts/Boudoir';
+import Newyear from './components/posts/Newyear';
 
 export default [
+	Newyear,
 	Boudoir,
 	GettingReady,
 	Minis,
