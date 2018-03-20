@@ -7,18 +7,18 @@ export default () => (
 	<Page
 		title="Investment"
 		description="Rates, packages & information."
-		image="investment/dorinaek.jpg"
+		image="investment/amsterdam.jpg"
 	>
 		<h2>Investment</h2>
+
 		<Photo
-			file="couple_shoots/34939741490_6f1c0bc417_k.jpg"
-			alt="Couple kissing on purple flower-field"
+			file="investment/amsterdam.jpg"
+			alt="Girl walking in Amsterdam"
 		/>
 		<p>
-			<br />Portrait sessions start from 220 eur
-			<br />Mini sessions from 99 eur
-			<br /> Please contact me for my wedding package guide and other
-			requests.
+			<br />Sessions start from 99 eur
+			<br />Message me to get my extensive pricing and package guide with useful information, posing and location advice. 
+			
 		</p>
 		<BookNowButton />
 	</Page>
