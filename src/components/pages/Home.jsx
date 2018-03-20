@@ -6,7 +6,7 @@ import BookNowButton from '../BookNowButton';
 
 export default () => (
 	<Page
-		title="Portrait &amp; wedding Photography in Haarlem"
+		title="Portrait &amp; Lifestyle Photography in Amsterdam"
 		image="home/zsofi.jpg"
 		permalink="/"
 	>
@@ -15,7 +15,6 @@ export default () => (
 			<Photo file="home/kady2.jpg" />
 		</PhotoSet>
 		<Photo file="home/zsofi.jpg" />
-		<Photo file="home/fary.jpg" />
 		<Photo file="home/11.jpg" />
 		<Photo file="home/jillmermaid.jpg" />
 		<PhotoSet>
