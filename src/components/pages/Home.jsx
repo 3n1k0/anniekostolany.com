@@ -15,6 +15,7 @@ export default () => (
 			<Photo file="home/kady2.jpg" />
 		</PhotoSet>
 		<Photo file="home/zsofi.jpg" />
+		<Photo file="home/fary.jpg" />
 		<Photo file="home/11.jpg" />
 		<Photo file="home/jillmermaid.jpg" />
 		<PhotoSet>
