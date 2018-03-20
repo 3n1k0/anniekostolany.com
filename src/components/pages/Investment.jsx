@@ -16,8 +16,8 @@ export default () => (
 			alt="Girl walking in Amsterdam"
 		/>
 		<p>
+			<br />Message me to get my extensive pricing and package guide with useful information, posing and location advice.
 			<br />Sessions start from 99 eur
-			<br />Message me to get my extensive pricing and package guide with useful information, posing and location advice. 
 			
 		</p>
 		<BookNowButton />
