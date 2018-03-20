@@ -36,7 +36,6 @@ export default () => (
     <Photo file="kady_amanda/17.jpg" />
 		<Photo file="kady_amanda/18.jpg" />
     <Photo file="kady_amanda/19.jpg" />		
-    <Photo file="kady_amanda/20.jpg" />
-    <p>Feel free to let me know how you like the outcome, and message me if you dream about shooting something similar. </p>
+    <p>Feel free to let me know how do you like the outcome, and don't hesitate to message me if you dream about shooting something similar. </p>
 	</BlogPost>
 );
