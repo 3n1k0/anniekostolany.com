@@ -42,5 +42,4 @@ export default () => (
     <p>Treasure the best moments of your relationship with an Amsterdam photo session. Spots are available during the tulip season, which you might not wanna leave out.  
    Also, another good news: from now on I provide high quality prints and photo albums! Feel free to ask for more details.</p>
 	</BlogPost>
-	<BookNowButton />
 );
