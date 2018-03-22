@@ -10,8 +10,10 @@ import Minis from './components/posts/Minis';
 import GettingReady from './components/posts/GettingReady';
 import Boudoir from './components/posts/Boudoir';
 import Newyear from './components/posts/Newyear';
+import Couples from './components/posts/Couples';
 
 export default [
+	Couples,
 	Newyear,
 	Boudoir,
 	GettingReady,
