@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export default styled(Page)`
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-	line-height: 1.5em;
+	line-height: 1.5;
 	padding-top: 50px;
 	width: auto;
 
