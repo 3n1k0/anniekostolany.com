@@ -62,9 +62,6 @@ export default () => (
 			<Photo file="home/jillmermaid.jpg" />
 		</PrettyLink>
 
-
-
-
 		<PhotoSet>
 			<PrettyLink
 				to="/blog/2018/03/15/creative-freedom"
@@ -75,10 +72,8 @@ export default () => (
 			>
 				<Photo file="home/amanda3.jpg" />
 			</PrettyLink>
-			<Photo file="home/kady6.jpg" />
+			<Photo file="home/amanda6.jpg" />
 		</PhotoSet>
-
-
 
 		<PrettyLink
 			to="/blog/2018/02/10/dutch-model-fall-photoshoot"
