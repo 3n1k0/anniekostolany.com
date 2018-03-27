@@ -12,6 +12,7 @@ const client = merge(common, {
 			'webpack/hot/only-dev-server'
 		]
 	},
+	mode : 'development',
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NamedModulesPlugin(),
@@ -19,4 +20,4 @@ const client = merge(common, {
 	]
 });
 
-module.exports = [client, server];
+module.exports = [client];

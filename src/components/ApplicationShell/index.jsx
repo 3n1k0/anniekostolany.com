@@ -28,7 +28,7 @@ const Page = styled.div`
 	}
 
 	@media (max-width: 900px) {
-	//	padding-top: 50px;
+		//	padding-top: 50px;
 	}
 
 	@media (max-width: 600px) {
@@ -75,7 +75,10 @@ export default class ApplicationShell extends React.Component {
 						href="https://fonts.googleapis.com/css?family=Cardo|Roboto|Open+Sans"
 						rel="stylesheet"
 					/>
-					<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"/>
+					<link
+						href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+						rel="stylesheet"
+					/>
 
 					<title>
 						Portrait &amp; Event Photography in Haarlem | Annie

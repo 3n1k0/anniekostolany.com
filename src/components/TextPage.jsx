@@ -13,7 +13,8 @@ export default styled(Page)`
 		padding-top: 0;
 	}
 
-	h2, h3 {
+	h2,
+	h3 {
 		font-weight: normal;
 		margin: 0;
 		padding: 20px;

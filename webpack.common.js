@@ -26,7 +26,8 @@ module.exports = {
 					plugins: [
 						'transform-object-rest-spread',
 						'transform-react-jsx',
-						'transform-class-properties'
+						'transform-class-properties',
+						'syntax-dynamic-import'
 					]
 				}
 			}
