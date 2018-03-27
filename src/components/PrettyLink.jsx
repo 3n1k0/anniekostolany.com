@@ -9,7 +9,7 @@ const PrettyLink = styled(Link)`
 
 const Dimmer = styled.div`
 	//${props => props.color}
-	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 100%);
 	bottom: 0;
 	display: block;
 	opacity: 0;
@@ -25,14 +25,14 @@ const Dimmer = styled.div`
 	}
 
 	@media (max-width: 500px) {
-		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 50%,rgba(255,255,255,0.8) 100%);
 		opacity: 1;
 	}
 `;
 
 const Title = styled.span`
-	bottom: 80px;
-	color: rgba(255, 255, 255, 0.8);
+	bottom: 40px;
+	color: rgba(0, 0, 0, 1);
 	display: block;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 24px;
