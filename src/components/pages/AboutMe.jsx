@@ -5,8 +5,6 @@ import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<TextPage title="About me">
-		<h2>About me</h2>
-
 		<Photo
 			file="aboutme/anniekostolany.jpg"
 			alt="Annie Kostolany Photographer"
