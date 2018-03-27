@@ -7,7 +7,7 @@ import PrettyLink from '../PrettyLink';
 
 export default () => (
 	<AlbumPage
-		title="Portrait &amp; wedding Photography in Amsterdam"
+		title="Portrait &amp; Lifestyle Photography in Amsterdam"
 		image="home/zsofi.jpg"
 		permalink="/"
 	>
@@ -24,8 +24,8 @@ export default () => (
 			<Photo file="home/kady2.jpg" />
 		</PhotoSet>
 
-		
-		
+
+
 		<PrettyLink
 			to="/portraits"
 			title="Never give up dreaming"
@@ -35,10 +35,10 @@ export default () => (
 		>
 			<Photo file="home/zsofi.jpg" />
 		</PrettyLink>
-		
-		
-		
-		
+
+
+
+
 		<PrettyLink
 			to="/blog/2018/02/10/dutch-model-fall-photoshoot"
 			title="Simplicity is key"
@@ -48,10 +48,10 @@ export default () => (
 		>
 			<Photo file="home/11.jpg" />
 		</PrettyLink>
-		
-		
-	
-		
+
+
+
+
 		<PrettyLink
 			to="/forest-fairy-tale"
 			title="Styled bridals"
@@ -61,10 +61,10 @@ export default () => (
 		>
 			<Photo file="home/jillmermaid.jpg" />
 		</PrettyLink>
-		
-		
-		
-		
+
+
+
+
 		<PhotoSet>
 			<PrettyLink
 				to="/blog/2018/03/15/creative-freedom"
@@ -77,9 +77,9 @@ export default () => (
 			</PrettyLink>
 			<Photo file="home/kady6.jpg" />
 		</PhotoSet>
-		
 
-		
+
+
 		<PrettyLink
 			to="/blog/2018/02/10/dutch-model-fall-photoshoot"
 			title="Simplicity is key"
@@ -89,8 +89,8 @@ export default () => (
 		>
 			<Photo file="home/9.jpg" />
 		</PrettyLink>
-		
-		
+
+
 		<PrettyLink
 			to="/bridal-beauty"
 			title="Styled bridals"
@@ -100,8 +100,8 @@ export default () => (
 		>
 			<Photo file="home/menyasszonyok.jpg" />
 		</PrettyLink>
-		
-		
+
+
 
 		<CallToActionButton to="/contact" text="Book now" />
 	</AlbumPage>
