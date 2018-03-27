@@ -1,10 +1,10 @@
 import React from 'react';
-import Page from '../Page';
+import TextPage from '../TextPage';
 import Photo from '../Photo';
 import CallToActionButton from '../CallToActionButton';
 
 export default () => (
-	<Page
+	<TextPage
 		title="Bridal beauty"
 		description="Photoshoot in Budapest with breathtakingly beautiful models in a vintage studio."
 		image="bridal_beauty/1.jpg"
@@ -33,5 +33,5 @@ export default () => (
 		<Photo file="bridal_beauty/14.jpg" />
 
 		<CallToActionButton to="/contact" text="Book now" />
-	</Page>
+	</TextPage>
 );

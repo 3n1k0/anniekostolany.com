@@ -1,10 +1,10 @@
 import React from 'react';
-import Page from '../Page';
+import TextPage from '../TextPage';
 import Photo from '../Photo';
 import CallToActionButton from '../CallToActionButton';
 
 export default () => (
-	<Page
+	<TextPage
 		title="Forest fairy tale"
 		description="This photoshoot in Den Bosch was inspired by ancient fairytales and my beautiful model, Celine."
 		image="styled_bridal/bride1.jpg"
@@ -41,5 +41,5 @@ export default () => (
 		</p>
 
 		<CallToActionButton to="/contact" text="Book now" />
-	</Page>
+	</TextPage>
 );
