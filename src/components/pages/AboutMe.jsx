@@ -13,23 +13,12 @@ export default () => (
 		<p>Hey there!</p>
 
 		<p>
-			Welcome to my website! My name is Annie, I am a Hungarian girl
-			living in the Netherlands. I am a self-taught portrait photographer.
-			<br /> My inspiration comes from my life and from all the beauty
-			that surrounds me. Most of the time I just quietly observe. I wait
-			until light, texture, color and shape create my feelings. <br />{' '}
-			Then I take them and transform them into photographs. <br />{' '}
-			Travelling is an essential part of my life. When I travel I feel
-			like the world has no limits, and everything is possible. I have a
-			strong opinion on feminism, human and animal rights. I like to ask
-			questions, find answers, get to know people and understand them
-			better.
-		</p>
-
-		<p>
-			Is it me you're looking for? Let's meet for a coffee and find it
-			out! For all enquires don't hesitate to email me at
-			mail@anniekostolany.com or by clicking this button below.
+			Welcome to my website! My name is Annie, I am Hungarian couple & lifestyle photographer
+			living in Amsterdam. 
+			<br /> My inspiration comes from my travels and all the amazing people I have met during my journey. 
+			I'm specialized in portrait photography. My style is clean, airy and bright with a romantic touch.
+			If this is what you're looking for, I'm happy to send you my package & information guide. 
+			
 		</p>
 
 		<BookNowButton />
