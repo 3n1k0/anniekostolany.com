@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import { Facebook, Instagram, Messenger } from './SocialIcons';
 
-const HeaderContainer = styled.header`
-	background: #000000;
+const HeaderContainer =
+ styled.header`
+	background: #E6BE8A;
 	margin: 0 auto;
 	height: 46px;
 	overflow: hidden;
