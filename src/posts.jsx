@@ -11,8 +11,10 @@ import GettingReady from './components/posts/GettingReady';
 import Boudoir from './components/posts/Boudoir';
 import Newyear from './components/posts/Newyear';
 import Couples from './components/posts/Couples';
+import Children from './components/posts/Children';
 
 export default [
+	Children,
 	Couples,
 	Newyear,
 	Boudoir,
