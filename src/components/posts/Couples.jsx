@@ -12,15 +12,15 @@ export default () => (
 		image="couple_shoots/9.jpg"
 	>
 		<p>
-     I sipmly LOVE to photograph couples. I always seek for the most perfect, authentic moments between them. 
+     I simply LOVE to photograph couples. I always seek for their most perfect, authentic moments. 
      If I wait patiently enough, I can capture their love, passion and even respect, in a true, organic form. 
-     I search for these moments on purpose because I believe they make all relationships one of a kind, and really special. What I mean is that there are no two couples who are exactly the same to each other. And this special bond is what should be remembered.</p>
+     I search for these moments on purpose because I believe they make all relationships one of a kind, and really special. What I mean is that there are no two couples who are exactly the same. This special bond is what we treasure as time passes by.</p>
     <p>It's no secret that most people are terrified in front of the camera. What they don't know is that it is so much easier to be done, when they are not alone.
      Being there with a partner saves a huge amount of stress. 
      As a photographer, I am really sensitive to people's insecurities, and I usually spot these issues way before we start the whole process. This simply guarantess that my clients have a great time without the fear of embarrassment or awkwardness.  
 		</p>
     <p>
-      In-home sessions are a great way to show your personality on more than one level. Your apartment, choice of color and design add a lot to the photos. 
+      In-home sessions are a great way to showcase your personality. Your apartment, choice of color and design add a lot to the photos. 
     </p>
 		<Photo file="couple_shoots/1.jpg" />
 		<Photo file="couple_shoots/2.jpg" />
@@ -39,7 +39,7 @@ export default () => (
 		<Photo file="couple_shoots/9.jpg" />
     <Photo file="couple_shoots/10.jpg" />
     
-    <p>Treasure the best moments of your relationship with an Amsterdam photo session. Spots are available during the tulip season, which you might not wanna leave out.  
+    <p>Have you ever wanted to freeze time, take a moment and treasure it forever? With a photo session you can do it. Spots are available during the tulip season, which you might not wanna leave out.  
    Also, another good news: from now on I provide high quality prints and photo albums! Feel free to ask for more details.</p>
 	</BlogPost>
 );
