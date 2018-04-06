@@ -19,21 +19,18 @@ export default () => (
      Being there with a partner saves a huge amount of stress. 
      As a photographer, I am really sensitive to people's insecurities, and I usually spot these issues way before we start the whole process. This simply guarantess that my clients have a great time without the fear of embarrassment or awkwardness.  
 		</p>
-    <p>
-      In-home sessions are a great way to showcase your personality. Your apartment, choice of color and design add a lot to the photos. 
-    </p>
 		<Photo file="couple_shoots/1.jpg" />
 		<Photo file="couple_shoots/2.jpg" />
 		<Photo file="couple_shoots/3.jpg" />
-    <p>
-    A few people know this, but location is actually secondary when it comes to photographing couples. 
+		 <p>
+      In-home sessions are a great way to showcase your personality. Your apartment, choice of color and design add a lot to the photos. 
     </p>
 		<Photo file="couple_shoots/4.jpg" />
 		<Photo file="couple_shoots/5.jpg" />
 		<Photo file="couple_shoots/6.jpg" />
-    
-   <p>I love when I am able to unleash my creativity and work freely. I am a hopeless romantic soul, so the results are most likely to be the same.
-   </p>
+    <p>
+    A few people know this, but location is actually secondary when it comes to photos.
+    </p>
     <Photo file="couple_shoots/7.jpg" />
 		<Photo file="couple_shoots/8.jpg" />
 		<Photo file="couple_shoots/9.jpg" />
