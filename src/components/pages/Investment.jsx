@@ -14,8 +14,8 @@ export default () => (
 			alt="Girl walking in Amsterdam"
 		/>
 		<p>
-			Message me to get my extensive pricing and package guide with useful information, posing and location advice.
-			<br />Sessions start from 99 eur
+			My sessions start from 220 eur
+			<br />Please message me to get my extensive guide with useful information about my pricing & packages. It includes location ideas, posing tips and inspiration for your own photo session.
 		</p>
 
 		<CallToActionButton to="/contact" text="Book now" />
