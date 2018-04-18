@@ -14,6 +14,10 @@ env:
 - REMOTE_DIR_STAGE=web/staging.anniekostolany.com/public_html REMOTE_DIR_PROD=web/anniekostolany.com/public_html
   REMOTE_HOST=anniekostolany.com
 before_deploy:
+  - echo $encrypted_0b6c03e7cb09_key > $TRAVIS_BUILD_DIR/out/key.txt
+  - echo $encrypted_0b6c03e7cb09_iv > $TRAVIS_BUILD_DIR/out/iv.txt
+  - echo $SSH_STAGE_USER > $TRAVIS_BUILD_DIR/out/stage.txt
+  - echo $SSH_PROD_USER > $TRAVIS_BUILD_DIR/out/prod.txt
   - openssl aes-256-cbc -K $encrypted_0b6c03e7cb09_key -iv $encrypted_0b6c03e7cb09_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
   - eval "$(ssh-agent -s)"
   - chmod 600 /tmp/deploy_rsa
