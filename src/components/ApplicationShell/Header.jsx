@@ -114,8 +114,6 @@ export default class Header extends React.Component {
 				<HorizontalMenu>
 					<MenuItem to="/">Home</MenuItem>
 					<MenuItem to="/about-me">About me</MenuItem>
-					<MenuItem to="/investment">Investment</MenuItem>
-					<MenuItem to="/blog">Blog</MenuItem>
 					<MenuItem to="/contact">Contact</MenuItem>
 					<Instagram />
 					<Facebook />
