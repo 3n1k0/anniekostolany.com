@@ -5,7 +5,7 @@ import { Facebook, Instagram, Messenger } from './SocialIcons';
 
 const HeaderContainer =
  styled.header`
-	background: #E6BE8A;
+	background: #000000;
 	margin: 0 auto;
 	height: 46px;
 	overflow: hidden;
