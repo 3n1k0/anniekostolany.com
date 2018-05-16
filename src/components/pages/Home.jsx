@@ -9,7 +9,7 @@ export default () => (
 		image="home/zsofi.jpg"
 		permalink="/"
 	>
-		<Photo file="image="home/amanda2.jpg"" />
+		<Photo file="home/amanda2.jpg" />
 		<Photo file="home/kady2.jpg" />
 		<Photo file="home/zsofi.jpg" />
 		<Photo file="home/11.jpg" />
