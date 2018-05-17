@@ -51,58 +51,12 @@ routes.forEach(route => {
 				  ga('send', 'pageview');
 				</script>
 
-				<!-- Facebook SDK -->
-				<script>
-				  window.fbAsyncInit = function() {
-				    FB.init({
-				      appId            : '198784207521209',
-				      autoLogAppEvents : true,
-				      xfbml            : true,
-				      version          : 'v2.12'
-				    });
-				  };
-
-				  (function(d, s, id){
-				     var js, fjs = d.getElementsByTagName(s)[0];
-				     if (d.getElementById(id)) {return;}
-				     js = d.createElement(s); js.id = id;
-				     js.src = "https://connect.facebook.net/en_US/sdk.js";
-				     fjs.parentNode.insertBefore(js, fjs);
-				   }(document, 'script', 'facebook-jssdk'));
-				</script>
-
-				<script>
-					window.fbAsyncInit = function() {
-						FB.init({
-							appId            : 'your-app-id',
-							autoLogAppEvents : true,
-							xfbml            : true,
-							version          : 'v2.12'
-						});
-					};
-					(function(d, s, id){
-						var js, fjs = d.getElementsByTagName(s)[0];
-						if (d.getElementById(id)) {return;}
-						js = d.createElement(s); js.id = id;
-						js.src = "https://connect.facebook.net/en_US/sdk.js";
-						fjs.parentNode.insertBefore(js, fjs);
-					}(document, 'script', 'facebook-jssdk'));
-				</script>
-
-				<!-- Facebook SDK -->
-
 				${styleTags}
 
 				<link href="/bundle.css?${Date.now()}" rel="stylesheet" />
 			</head>
 			<body>
 				<div id="root">${body}</div>
-				<div class="fb-customerchat"
-					page_id="1389097571179740"
-					theme_color="#0084ff"
-				>
-				</div>
-
 				<script type="text/javascript" src="/app.js?${Date.now()}"></script>
 			</body>
 		</html>`;
