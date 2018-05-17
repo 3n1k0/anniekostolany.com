@@ -5,7 +5,7 @@ import CallToActionButton from '../CallToActionButton';
 
 export default () => (
 	<AlbumPage
-		title="Fashion photographer based in Amsterdam"
+		title="Fashion photography in Amsterdam"
 		image="home/zsofi.jpg"
 		permalink="/"
 	>
