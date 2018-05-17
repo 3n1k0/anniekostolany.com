@@ -7,20 +7,17 @@ export default () => (
 	<TextPage title="About me">
 		<Photo
 			file="aboutme/anniekostolany.jpg"
-			alt="Annie Kostolany Photographer"
+			alt="Annie Kostolany fashion photographer"
 		/>
 
-		<p>Hey there!</p>
+		<p>Hi!</p>
 
 		<p>
-			My name is Annie, I am Hungarian couple & lifestyle photographer
-			living in Amsterdam. 
-			<br /> My inspiration comes from my travels and all the amazing people I have met during my journey. 
-			I'm specialized in portrait photography.
-			<br />My style is clean, airy and bright with a romantic touch.
-			If this is what you're looking for, I'm happy to send you my package & information guide. 
-			
+			My name is Annie, I an Amsterdam-based fashion photographer. 
+		Originally I am from Eastern-Europe, which influences my work just as much as nature, feminine beauty and natural light.
 		</p>
+		
+		<p>mail@anniekostolany.com</>
 
 		<CallToActionButton to="/contact" text="Book now" />
 	</TextPage>
