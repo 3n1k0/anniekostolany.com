@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 const ContactPage = styled.div`
 	margin: 0 auto;
+	padding-top: 50px;
 
 	input,
 	textarea {

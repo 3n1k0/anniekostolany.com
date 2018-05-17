@@ -22,12 +22,12 @@ export default styled(Page)`
 
 	p {
 		margin: 0;
-		padding: 20px;
+		padding: 0 0 20px 0;
 	}
 
 	img {
 		display: block;
-		padding: 20px 0;
+		padding: 0 0 20px 0;
 		width: 100%;
 	}
 `;

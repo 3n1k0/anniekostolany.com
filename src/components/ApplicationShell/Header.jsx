@@ -19,13 +19,6 @@ const HeaderContainer =
 		content: ' ';
 		display: block;
 	}
-
-	@media (max-width: 900px) {
-		// left: 0;
-		// position: fixed;
-		// right: 0;
-		// top: 0;
-	}
 `;
 
 const HorizontalMenu = styled.nav`
@@ -101,18 +94,14 @@ export default class Header extends React.Component {
 	};
 
 	render() {
-		const headerStyle = this.state.menuOpen
-			? {
-					height: 'auto'
-					//'box-shadow': '0 0 100px #000000'
-				}
-			: {};
+		const headerStyle = this.state.menuOpen ? { height: 'auto' } : {};
 
 		return (
 			<HeaderContainer style={headerStyle}>
 				<Logo to="/">Annie Kostolany Photography</Logo>
 				<HorizontalMenu>
-					<MenuItem to="/">Home</MenuItem>
+					<MenuItem to="/">Book I</MenuItem>
+					<MenuItem to="/book-2">Book II</MenuItem>
 					<MenuItem to="/about-me">About me</MenuItem>
 					<MenuItem to="/contact">Contact</MenuItem>
 					<Instagram />

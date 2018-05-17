@@ -7,6 +7,7 @@ export default styled.img.attrs({
 })`
 	display: block;
 	width: 100%;
+	padding-bottom: 40px;
 
 	@media (max-width: 500px) {
 		padding-bottom: 0;
