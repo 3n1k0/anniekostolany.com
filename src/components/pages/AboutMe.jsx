@@ -14,7 +14,7 @@ export default () => (
 
 		<p>
 			My name is Annie, I am an Amsterdam-based fashion photographer. 
-		Nature and feminine beauty inspire a big part of my work but I am always happy to challenge myself with new styles and ideas. I work both with natural light and in studio environment confidently.
+		Nature and feminine beauty inspire a big part of my work but I am always happy to challenge myself with new styles and ideas. I confidently work both with natural light and in studio environment.
 			
 		</p>
 		
