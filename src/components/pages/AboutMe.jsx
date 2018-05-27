@@ -13,11 +13,12 @@ export default () => (
 		<p>Hi!</p>
 
 		<p>
-			My name is Annie, I an Amsterdam-based fashion photographer. 
-		Originally I am from Eastern-Europe, which influences my work just as much as nature, feminine beauty and natural light.
+			My name is Annie, I am an Amsterdam-based fashion photographer. 
+		Nature and feminine beauty inspire a big part of my work but I am always happy to challenge myself with new styles and ideas. I work both with natural light and in studio environment confidently.
+			
 		</p>
 		
-		<p>mail@anniekostolany.com</p>
+		<p>Inquiries: mail@anniekostolany.com</p>
 
 		<CallToActionButton to="/contact" text="Book now" />
 	</TextPage>
