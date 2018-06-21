@@ -2,6 +2,7 @@ import React from 'react';
 import AlbumPage from '../AlbumPage';
 import Photo from '../Photo';
 import CallToActionButton from '../CallToActionButton';
+import PhotoSet from '../PhotoSet';
 
 export default () => (
 	<AlbumPage
