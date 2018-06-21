@@ -1,12 +1,13 @@
 import React from 'react';
 import AlbumPage from '../AlbumPage';
 import Photo from '../Photo';
-
+import CallToActionButton from '../CallToActionButton';
 
 export default () => (
+	
 	<AlbumPage
 		title="Fashion photography in Amsterdam"
-		image="home/zsofi.jpg"
+		image="home/2.jpg"
 		permalink="/book-2"
 	>
 		<Photo file="book2/1.jpg" />
