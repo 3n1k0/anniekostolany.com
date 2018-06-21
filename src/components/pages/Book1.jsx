@@ -7,7 +7,7 @@ import PhotoSet from '../PhotoSet';
 export default () => (
 	<AlbumPage
 		title="Fashion photography in Amsterdam"
-		image="home/zsofi.jpg"
+		image="home/3.jpg"
 		permalink="/"
 	>
 		<PhotoSet>
@@ -16,9 +16,9 @@ export default () => (
 		</PhotoSet>
 		<Photo file="home/3.jpg" />
 		<Photo file="home/4.jpg" />
+		<Photo file="home/4a.jpg" />
 		<Photo file="home/5.jpg" />
 		<Photo file="home/6.jpg" />
-		<Photo file="home/7.jpg" />
 		<Photo file="home/8.jpg" />
 		<CallToActionButton to="/contact" text="Book now" />
 	</AlbumPage>
