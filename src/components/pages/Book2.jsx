@@ -10,17 +10,15 @@ export default () => (
 		permalink="/book-2"
 	>
 		<Photo file="book2/1.jpg" />
+		<PhotoSet>
 		<Photo file="book2/2.jpg" />
 		<Photo file="book2/3.jpg" />
+		</PhotoSet>
 		<Photo file="book2/4.jpg" />
 		<Photo file="book2/5.jpg" />
 		<Photo file="book2/6.jpg" />
 		<Photo file="book2/7.jpg" />
 		<Photo file="book2/8.jpg" />
-		<Photo file="book2/8A.jpg" />
-		<Photo file="book2/9.jpg" />
-		<Photo file="book2/10.jpg" />
-		<Photo file="book2/11.jpg" />
 		<CallToActionButton to="/contact" text="Book now" />
 	</AlbumPage>
 );
