@@ -17,11 +17,10 @@ export default () => (
 		<Photo file="home/0.jpg" />
 		<Photo file="home/4.jpg" />
 		<Photo file="home/5.jpg" />
-		<Photo file="home/6.jpg" />
 		<Photo file="home/7.jpg" />
 		<Photo file="home/8.jpg" />
-		<Photo file="home/9.jpg" />
 		<Photo file="home/12.jpg" />
+		<Photo file="home/9.jpg" />
 		<CallToActionButton to="/contact" text="Book now" />
 	</AlbumPage>
 );
