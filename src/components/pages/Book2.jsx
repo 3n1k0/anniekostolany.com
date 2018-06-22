@@ -15,8 +15,6 @@ export default () => (
 		<Photo file="book2/3.jpg" />
 		<Photo file="book2/4.jpg" />
 		<Photo file="book2/6.jpg" />
-		<Photo file="book2/7.jpg" />
-		<Photo file="book2/8.jpg" />
 		<CallToActionButton to="/contact" text="Book now" />
 	</AlbumPage>
 );
