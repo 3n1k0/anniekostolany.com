@@ -40,7 +40,7 @@ routes.forEach(route => {
 
 				<meta property="og:url" content="https://anniekostolany.com${routePath}" />
 				<link rel="canonical" href="https://anniekostolany.com${routePath}" />
-
+				<meta name="google-site-verification" content="wCVSDU6aRiLMSG2q1CiWLSgw-pSMP8yTBft1FrLHcXI" />
 				<script>
 				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
