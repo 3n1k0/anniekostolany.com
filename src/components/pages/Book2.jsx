@@ -10,6 +10,12 @@ export default () => (
 		image="home/2.jpg"
 		permalink="/book-2"
 	>
+		
+		<PhotoSet>
+			<Photo file="home/a.jpg" />
+			<Photo file="home/b.jpg" />
+		</PhotoSet>
+		
 		<Photo file="book2/1.jpg" />
 		<Photo file="book2/2.jpg" />
 		<Photo file="book2/3.jpg" />
