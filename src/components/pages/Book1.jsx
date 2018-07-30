@@ -16,9 +16,9 @@ export default () => (
 		</PhotoSet>
 		<Photo file="home/3.jpg" />
 		<Photo file="home/4.jpg" />
-		<Photo file="home/4a.jpg" />
 		<Photo file="home/5.jpg" />
 		<Photo file="home/6.jpg" />
+		<Photo file="home/7.jpg" />
 		<Photo file="home/8.jpg" />
 		<CallToActionButton to="/contact" text="Book now" />
 	</AlbumPage>
