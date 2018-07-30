@@ -4,6 +4,7 @@ import Thanks from './components/pages/Thanks';
 import Book1 from './components/pages/Book1';
 import Book2 from './components/pages/Book2';
 import AboutMe from './components/pages/AboutMe';
+import Publications from './components/pages/Publications';
 
 export default [
 	Contact,
@@ -11,4 +12,5 @@ export default [
 	Book1,
 	Book2,
 	AboutMe,
+	Publications,
 ];
