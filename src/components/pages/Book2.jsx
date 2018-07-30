@@ -13,8 +13,8 @@ export default () => (
 	>
 		
 		<PhotoSet>
-			<Photo file="home/a.jpg" />
-			<Photo file="home/b.jpg" />
+			<Photo file="book2/a.jpg" />
+			<Photo file="book2/b.jpg" />
 		</PhotoSet>
 		
 		<Photo file="book2/1.jpg" />
