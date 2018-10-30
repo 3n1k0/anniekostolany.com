@@ -4,6 +4,8 @@ import TextPage from '../TextPage';
 
 export default () => (
 	<TextPage title="Publications">
+		<p><a href="http://www.vogue.it/en/photovogue/portfolio/?id=168716">PhotoVogue Italy | February 2018</a></p>
+		<p><a href="http://www.magcloud.com/browse/issue/1476055">SALYSÉ Magazine | Vol 4 : No 46 | May 2018</a></p>
 		<p><a href="http://www.magcloud.com/browse/issue/1476055">SALYSÉ Magazine | Vol 4 : No 46 | May 2018</a></p>
 		<p><a href="http://www.magcloud.com/browse/issue/1475992">Elléments Body</a></p>		
 		<p><a href="http://www.magcloud.com/browse/issue/1473216">IMIRAGE Magazine Issue #213</a></p>
