@@ -100,9 +100,9 @@ export default class Header extends React.Component {
 			<HeaderContainer style={headerStyle}>
 				<Logo to="/">Annie Kostolany Photography</Logo>
 				<HorizontalMenu>
-					<MenuItem to="/">Book I</MenuItem>
-					<MenuItem to="/book-2">Book II</MenuItem>
-					<MenuItem to="/about-me">About me</MenuItem>
+					<MenuItem to="/">Home</MenuItem>
+					<MenuItem to="/book-2">Changing of seasons</MenuItem>
+					<MenuItem to="/about-me">About Annie</MenuItem>
 					<MenuItem to="/publications">Publications</MenuItem>
 					<MenuItem to="/contact">Contact</MenuItem>
 					<Instagram />
