@@ -53,7 +53,7 @@ export default class ApplicationShell extends React.Component {
 					/>
 					<meta
 						name="description"
-						content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Amsterdam, Netherlands, available worldwide. Let's create magic!"
+						content="Fashion Photography in Amsterdam"
 					/>
 					<meta
 						name="msvalidate.01"
@@ -62,11 +62,11 @@ export default class ApplicationShell extends React.Component {
 
 					<meta
 						property="og:title"
-						content="Portrait &amp; Event Photography in Amsterdam | Annie Kostolany"
+						content="Fashion Photography in Amsterdam | Annie Kostolany"
 					/>
 					<meta
 						property="og:description"
-						content="Family, portrait &amp; pre-wedding photography with a dreamy touch. Based in Amsterdam, Netherlands, available worldwide. Let's create magic!"
+						content="Fashion photography from Amsterdam."
 					/>
 					<meta property="og:type" content="website" />
 					<meta property="og:locale" content="en_US" />
@@ -81,7 +81,7 @@ export default class ApplicationShell extends React.Component {
 					/>
 
 					<title>
-						Portrait &amp; Event Photography in Haarlem | Annie
+						Fashion Photography in Haarlem | Annie
 						Kostolany
 					</title>
 				</Helmet>
