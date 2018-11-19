@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-const IMAGE_PATH = 'https://anniekostolany.com/images/';
+const IMAGE_PATH = 'http://anniekostolany.com/images/';
 
 export default class Page extends React.Component {
 	static getPermalink(title) {
