@@ -49,7 +49,7 @@ const MenuItem = styled(Link)`
 `;
 
 const Logo = styled(Link)`
-	background-image: url(https://anniekostolany.com/images/logo_white.png);
+	background-image: url(http://anniekostolany.com/images/logo_white.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center center;
