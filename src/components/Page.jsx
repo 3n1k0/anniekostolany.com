@@ -1,8 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
-
-const IMAGE_PATH = 'http://anniekostolany.com/images/';
 
 export default class Page extends React.Component {
 	static getPermalink(title) {
@@ -20,7 +17,6 @@ export default class Page extends React.Component {
 			title,
 			description,
 			image,
-			isInListView,
 			className
 		} = this.props;
 
@@ -52,7 +48,7 @@ export default class Page extends React.Component {
 					{image && (
 						<meta
 							property="og:image"
-							content={IMAGE_PATH + image}
+							content={image}
 						/>
 					)}
 				</Helmet>

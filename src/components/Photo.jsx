@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
-const IMAGE_PATH = 'http://anniekostolany.com/images/';
-
 export default styled.img.attrs({
-	src: props => IMAGE_PATH + props.file
+	src: props => props.file
 })`
 	display: block;
 	width: 100%;
