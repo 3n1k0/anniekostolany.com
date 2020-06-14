@@ -1,5 +1,5 @@
 import { device } from './mediaquery'
-import styled from 'styled-components/macro';
+import styled, {css} from 'styled-components/macro';
 
 export const HamburgerMenu = styled.div`
     display: flex;
@@ -11,7 +11,29 @@ export const HamburgerMenu = styled.div`
     top: 25px;
     right: 50px;
     position: absolute;
+ 
+    ${({ isOpen }) => isOpen ? css`
+        div:nth-child(2) {
+            opacity: 0
+        }
 
+        div:nth-child(1) {
+            transform: rotate(45deg);
+            position: absolute;
+  
+
+        }
+
+
+        div:nth-child(3)  {
+            transform: rotate(-45deg);
+            position: absolute;
+    
+
+
+        }
+    
+    ` : ''}
 
     @media ${device.desktop} {
 
@@ -33,30 +55,16 @@ export const Stripe = styled.div`
 `
 
 
-export const Menuitem = styled.div`
-    display: none;
-    padding: 20px;
 
-
-
-    @media ${device.desktop} {
-    display: flex;
-    font-style: normal;
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 1em;
-    font-family: 'Lato', sans-serif;
-    padding: 10px;
-    color: white;
-    }
-
-`
 export const Navbar = styled.nav`
-
 display: flex;
-flex-flow: column nowrap;
+position: absolute;
+right: 0px;
+top: 0px;
+background: rgba(0, 0, 0, 0.3);
+width: ${({ isOpen }) => isOpen ? '200' : '0'}px;
+height: 100%;
+
 
 @media ${device.desktop} {
 
@@ -85,6 +93,7 @@ display: none;
     text-transform: uppercase;
     line-height: 1em;
     padding: 0;
+    display: inline-block;
 }
 
 &:hover{
@@ -93,5 +102,36 @@ display: none;
   background: white;
   color: black;
 }
+
+`
+
+export const Menuitems = styled.div`
+display: flex;
+flex-flow: column nowrap;
+position: absolute;
+top: 100px;
+color: white;
+
+`
+
+export const Menuitem = styled.div`
+    display: flex;
+    padding: 15px 30px;
+    font-weight: 600;
+
+
+
+    @media ${device.desktop} {
+    display: flex;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1em;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    color: white;
+    }
 
 `

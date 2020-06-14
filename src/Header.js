@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { device } from './mediaquery'
 import styled, { createGlobalStyle } from 'styled-components/macro';
-import { Stripe, HamburgerMenu, Navbar, Menuitem, ContactButton } from './Menu'
+import { Stripe, HamburgerMenu, Navbar, Menuitem, ContactButton, Menuitems } from './Menu'
 
 const Title = styled.h1`
   color: #ffffff;
@@ -114,6 +114,8 @@ const TextboxButton = styled.button`
     padding: 0;
     margin: 0 auto;
     width: 190px;
+    margin-top: 20px;
+
 
     &:hover{
       background: white;
@@ -126,52 +128,64 @@ const TextboxButton = styled.button`
 
 
 
-function Header() {
+class Header extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      isOpen: false
+    }
+  }
 
-  return (
-    <div className="Header">
-      <GlobalStyle />
-      <Container>
-        <Maincontainer>
-          <TitleDiv>
-            <Title>Annie Kostolany Photography</Title>
-          </TitleDiv>
-          <Navbar>
-          <HamburgerMenu>
-              <Stripe />
-              <Stripe />
-              <Stripe />
-            </HamburgerMenu>
+  render() {
+    return (
+      <div className="Header">
+        <GlobalStyle />
+        <Container  onClick={() => { this.setState({ isOpen: false })}}>
+          <Maincontainer>
+            <TitleDiv>
+              <Title>Annie Kostolany Photography</Title>
+            </TitleDiv>
+            <Navbar isOpen={this.state.isOpen}>
+              <HamburgerMenu isOpen={this.state.isOpen} onClick={(event) => { 
+                event.stopPropagation()
+                      this.setState({ isOpen: !this.state.isOpen })                
+                }}>
+                <Stripe />
+                <Stripe />
+                <Stripe />
+              </HamburgerMenu>
 
-            <Menuitem>Home</Menuitem>
-            <Menuitem>About me</Menuitem>
-            <Menuitem>Portfolio</Menuitem>
-            <Menuitem>Investment</Menuitem>
-            <Menuitem>Preset shop </Menuitem>
-            <Menuitem>Blog </Menuitem>
-            <Menuitem><ContactButton>Contact</ContactButton></Menuitem>
-          </Navbar>
+              <Menuitems>
+                <Menuitem>Home</Menuitem>
+                <Menuitem>About me</Menuitem>
+                <Menuitem>Portfolio</Menuitem>
+                <Menuitem>Investment</Menuitem>
+                <Menuitem>Preset shop </Menuitem>
+                <Menuitem>Blog </Menuitem>
+                <Menuitem><ContactButton>Contact</ContactButton></Menuitem>
+              </Menuitems>
+            </Navbar>
           </Maincontainer>
-      
-        <Textcontainer>
-          <Subtitle>
-            <p>Photo sessions in the Netherlands & worldwide</p>
-          </Subtitle>
-          <MottoContainer>
-            <Motto>
-              <h1>BE YOUR OWN KIND OF BEAUTIFUL</h1>
-            </Motto>
-          </MottoContainer>
-          <TextboxButton>
-            See portfolio
+
+          <Textcontainer>
+            <Subtitle>
+              <p>Photo sessions in the Netherlands & worldwide</p>
+            </Subtitle>
+            <MottoContainer>
+              <Motto>
+                <h1>BE YOUR OWN KIND OF BEAUTIFUL</h1>
+              </Motto>
+            </MottoContainer>
+            <TextboxButton>
+              See portfolio
           </TextboxButton>
 
-        </Textcontainer>
-       
-      </Container>
+          </Textcontainer>
+
+        </Container>
 
 
-      {/* <Test><img src={logo} className="App-logo" alt="logo" />
+        {/* <Test><img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -183,8 +197,9 @@ function Header() {
           >
             Learn React
         </a></Test> */}
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default Header;
