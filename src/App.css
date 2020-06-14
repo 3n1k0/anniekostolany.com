@@ -1,5 +1,11 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  
+}
 .App {
   text-align: center;
+  background:  lightblue;
 }
 
 .App-logo {
@@ -36,3 +42,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.tweet {
+  border: 2px solid white;
+  height: 300px; 
+  width: 300px;
+} */
