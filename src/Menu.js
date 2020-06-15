@@ -1,5 +1,7 @@
 import { device } from './mediaquery'
 import styled, {css} from 'styled-components/macro';
+import { fonts } from './config'
+
 
 export const HamburgerMenu = styled.div`
     display: flex;
@@ -13,6 +15,10 @@ export const HamburgerMenu = styled.div`
     position: absolute;
  
     ${({ isOpen }) => isOpen ? css`
+    
+
+
+
         div:nth-child(2) {
             opacity: 0
         }
@@ -21,14 +27,11 @@ export const HamburgerMenu = styled.div`
             transform: rotate(45deg);
             position: absolute;
   
-
         }
-
 
         div:nth-child(3)  {
             transform: rotate(-45deg);
             position: absolute;
-    
 
 
         }
@@ -69,11 +72,9 @@ height: 100%;
 @media ${device.desktop} {
 
 display: flex;
-flex-flow: row nowrap;
-align-items: center;
-justify-items: flex-end;
-padding-top: 20px;
-padding-right: 40px;
+width: 100%;
+background: none;
+
 }
 `
 
@@ -112,6 +113,18 @@ position: absolute;
 top: 100px;
 color: white;
 
+@media ${device.desktop} {
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+justify-items: flex-end;
+padding-top: 20px;
+padding-right: 40px;
+position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
 `
 
 export const Menuitem = styled.div`
@@ -129,9 +142,10 @@ export const Menuitem = styled.div`
     text-transform: uppercase;
     text-decoration: none;
     line-height: 1em;
-    font-family: 'Lato', sans-serif;
+    font-family: ${fonts.cimek};
     padding: 10px;
     color: white;
-    }
 
+}
+    
 `

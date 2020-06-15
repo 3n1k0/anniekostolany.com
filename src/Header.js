@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { device } from './mediaquery'
 import styled, { createGlobalStyle } from 'styled-components/macro';
 import { Stripe, HamburgerMenu, Navbar, Menuitem, ContactButton, Menuitems } from './Menu'
+import { fonts } from './config'
+
 
 const Title = styled.h1`
   color: #ffffff;
   padding: 25px;
- 
-  font-family: 'Lato', sans-serif;
+  font-family: ${fonts.cimek};
   font-size: 1.5em;
   font-size: 21px;
   letter-spacing: 2px;
@@ -68,7 +69,7 @@ align-items: center;
 `
 
 const Subtitle = styled.div`
-font-family: 'Cormorant Garamond', serif;
+font-family: ${fonts.kacskaringos};
 font-size: 18px;
 font-style: italic;
 color: white;
@@ -88,7 +89,7 @@ text-align: center;
 `
 
 const Motto = styled.div`
-font-family: 'Roboto', sans-serif;
+font-family: ${fonts.focim};
 color: white;
 font-style: normal;
 font-size: 1rem;
@@ -124,8 +125,6 @@ const TextboxButton = styled.button`
     }
 
 `
-
-
 
 
 class Header extends React.Component {
@@ -184,19 +183,6 @@ class Header extends React.Component {
 
         </Container>
 
-
-        {/* <Test><img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-        </a></Test> */}
       </div>
     );
   }
