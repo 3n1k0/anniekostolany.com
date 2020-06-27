@@ -3,6 +3,10 @@ import { device } from './mediaquery'
 import styled, { createGlobalStyle } from 'styled-components/macro';
 import { Stripe, HamburgerMenu, Navbar, Menuitem, ContactButton, Menuitems } from './Menu'
 import { fonts } from './config'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './Home'
+
+
 
 
 const Title = styled.h1`
@@ -139,32 +143,41 @@ class Header extends React.Component {
     return (
       <div className="Header">
         <GlobalStyle />
-        <Container  onClick={() => { this.setState({ isOpen: false })}}>
+        <Container onClick={() => { this.setState({ isOpen: false }) }}>
           <Maincontainer>
             <TitleDiv>
               <Title>Annie Kostolany Photography</Title>
             </TitleDiv>
             <Navbar isOpen={this.state.isOpen}>
-              <HamburgerMenu isOpen={this.state.isOpen} onClick={(event) => { 
+              <HamburgerMenu isOpen={this.state.isOpen} onClick={(event) => {
                 event.stopPropagation()
-                      this.setState({ isOpen: !this.state.isOpen })                
-                }}>
+                this.setState({ isOpen: !this.state.isOpen })
+              }}>
                 <Stripe />
                 <Stripe />
                 <Stripe />
               </HamburgerMenu>
 
-              <Menuitems>
-                <Menuitem>Home</Menuitem>
-                <Menuitem>About me</Menuitem>
-                <Menuitem>Portfolio</Menuitem>
-                <Menuitem>Investment</Menuitem>
-                <Menuitem>Preset shop </Menuitem>
-                <Menuitem>Blog </Menuitem>
-                <Menuitem><ContactButton>Contact</ContactButton></Menuitem>
-              </Menuitems>
+             
+               
+
+
+                    <Menuitems>
+                        <Menuitem><Link to="/">Home</Link></Menuitem>
+                        <Menuitem><Link to="/about">About me</Link></Menuitem>
+                        <Menuitem><Link to="/portfolio">Portfolio</Link></Menuitem>
+                        <Menuitem><Link to="/investment">Investment</Link></Menuitem>
+                        <Menuitem><Link to="/preset-shop">Preset shop</Link></Menuitem>
+                        <Menuitem><Link to="/blog">Blog </Link></Menuitem>
+                        <Menuitem><Link to="/contact-form"><ContactButton>Contact</ContactButton></Link></Menuitem>
+                    </Menuitems>
+
+                   
+
+
             </Navbar>
           </Maincontainer>
+
 
           <Textcontainer>
             <Subtitle>

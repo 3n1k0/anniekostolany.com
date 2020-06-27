@@ -1,14 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import Header from './Header';
+import Footer from './Footer';
 import * as serviceWorker from './serviceWorker';
-import Body from './Body'
+import Home from './Home'
+import About from './About'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import  Portfolio from './Portfolio'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Body />
+    <BrowserRouter>
+      <Header />
+
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={About} />
+        <Route path="/portfolio" exact component={Portfolio} />
+
+      </Switch>
+
+
+      <Footer />
+    </BrowserRouter>
 
   </React.StrictMode>,
   document.getElementById('root')

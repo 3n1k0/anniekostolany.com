@@ -1,6 +1,37 @@
 import { device } from './mediaquery'
-import styled, {css} from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 import { fonts } from './config'
+
+
+
+const Maincontainer = styled.div`
+display:  inline-block;
+
+
+@media ${device.desktop} {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+`
+
+
+const TitleDiv = styled.div`
+min-width: 250px;
+max-width: 270px;
+`
+
+const Title = styled.h1`
+  color: #ffffff;
+  padding: 25px;
+  font-family: ${fonts.cimek};
+  font-size: 1.5em;
+  font-size: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1em;
+  width: 300px;
+  `
 
 
 export const HamburgerMenu = styled.div`
@@ -57,11 +88,9 @@ export const Stripe = styled.div`
     }
 `
 
-
-
 export const Navbar = styled.nav`
 display: flex;
-position: absolute;
+position: fixed;
 right: 0px;
 top: 0px;
 background: rgba(0, 0, 0, 0.3);
@@ -74,7 +103,7 @@ height: 100%;
 display: flex;
 width: 100%;
 background: none;
-
+position: relative;
 }
 `
 
@@ -109,7 +138,6 @@ display: none;
 export const Menuitems = styled.div`
 display: flex;
 flex-flow: column nowrap;
-position: absolute;
 top: 100px;
 color: white;
 
@@ -120,7 +148,7 @@ align-items: center;
 justify-items: flex-end;
 padding-top: 20px;
 padding-right: 40px;
-position: fixed;
+position: absolute;
     top: 0px;
     right: 0px;
 }
@@ -147,5 +175,6 @@ export const Menuitem = styled.div`
     color: white;
 
 }
-    
-`
+    `
+
+
