@@ -12,8 +12,6 @@ import  Portfolio from './Portfolio'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header />
-
   
       <Switch>
         <Route path="/" exact component={Home} />
