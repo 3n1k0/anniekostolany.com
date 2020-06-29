@@ -28,9 +28,9 @@ class Footer extends React.Component {
     render() {
         return <Container>
             <Icontainer>
-                <Icon><a target="_blank" href="https://instagram.com/anniekostolany"><i style={{color: "papayawhip"}} class="fab fa-instagram"></i></a></Icon>
-                <Icon><a target="_blank" href="https://facebook.com/anniekostolany"><i style={{color: "papayawhip"}} class="fab fa-facebook-f"></i></a></Icon>
-                <Icon><a href="mailto:mail@anniekostolany.com"><i style={{color: "papayawhip"}} class="far fa-envelope"></i></a></Icon>
+                <Icon><a target="_blank" href="https://instagram.com/anniekostolany"><i style={{color: "white"}} class="fab fa-instagram"></i></a></Icon>
+                <Icon><a target="_blank" href="https://facebook.com/anniekostolany"><i style={{color: "white"}} class="fab fa-facebook-f"></i></a></Icon>
+                <Icon><a href="mailto:mail@anniekostolany.com"><i style={{color: "white"}} class="far fa-envelope"></i></a></Icon>
             </Icontainer>
 
         </Container>
