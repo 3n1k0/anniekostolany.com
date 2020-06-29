@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
+
 import Footer from './Footer';
 import * as serviceWorker from './serviceWorker';
 import Home from './Home'
@@ -14,6 +14,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Header />
 
+  
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
