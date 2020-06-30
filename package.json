@@ -6,11 +6,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.20",
-    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -37,18 +32,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": ".babel-plugin-macrosrc.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/3n1k0/anniekostolany.com.git"
-  },
-  "author": "3n1k0",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/3n1k0/anniekostolany.com/issues"
-  },
-  "homepage": "https://github.com/3n1k0/anniekostolany.com#readme"
+  }
 }

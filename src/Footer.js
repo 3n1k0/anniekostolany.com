@@ -9,6 +9,9 @@ width: 100%;
 display: flex;
 flex-flow: column;
 align-items: center;
+padding-bottom: 40px;
+text-align: center;
+letter-spacing: 1px;
 `
 
 const Icontainer = styled.div`
