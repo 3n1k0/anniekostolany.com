@@ -7,6 +7,10 @@ import Home from './Home'
 import About from './About'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import  Portfolio from './Portfolio'
+import PresetShop from './PresetShop'
+import Investment from './Investment'
+import Blog from './Blog'
+import Contact from './Contact'
 
 
 ReactDOM.render(
@@ -17,6 +21,10 @@ ReactDOM.render(
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
         <Route path="/portfolio" exact component={Portfolio} />
+        <Route path="/preset-shop" exact component={PresetShop} />
+        <Route path="/investment" exact component={Investment} />
+        <Route path="/blog" exact component={Blog} />
+        <Route path="/contact-form" exact component={Contact} />
 
       </Switch>
 
