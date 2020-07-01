@@ -13,10 +13,11 @@ height: 100%;
 width:100%;
 display: flex;
 flex-flow: column nowrap;
-justify-content: center;
-align-content: center;
+justify-content: space-evenly;
+align-items:center;
 position: relative;
 padding-top: 150px;
+
     
     
 @media ${device.desktop} {
@@ -24,7 +25,8 @@ display: flex;
 flex-flow: row wrap;
 justify-items: center;
 align-content: center;
-padding-top: 200px;
+padding: 200px 100px;
+
 
 }
 
@@ -36,22 +38,16 @@ display: flex;
 flex-flow: column nowrap;
 align-items: center;
 justify-content: space-between;
-height: 600px;
 width: 100%;
 
-@media ${device.tablet}{
-width: 80%;
-display: flex;
-}
 
 @media ${device.desktop} {
 display: flex;
 flex-flow: column nowrap;
 align-items: center;
-height: 600px;
-width: 50%;
+width: 40%;
+padding-bottom: 50px;
 }
-
 `
 
 const Post = styled.div`
@@ -59,29 +55,27 @@ display: flex;
 flex-flow: column nowrap;
 align-items: flex-start;
 justify-content: flex-start;
-width: 100%;
-height: 600px;
 
 @media ${device.desktop} {
 display: flex;
 flex-flow: column nowrap;
-height: 600px;
-width: 500px;
+
 }
 
 `
 
-const PostTitle = styled.h1`
+export const PostTitle = styled.h1`
 font-family: ${fonts.cimek};
 padding-bottom: 30px;
 letter-spacing: 1px;
 `
 
-const StyledImg = styled.img`
+export const StyledImg = styled.img`
     width: 100%;
     padding-bottom: 30px;
 
 `
+
 
 class Blog extends React.Component {
 

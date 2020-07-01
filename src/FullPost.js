@@ -1,66 +1,83 @@
-import React, { useState } from 'react';
-import Navbar from './Navbar';
-import styled, { createGlobalStyle, css } from 'styled-components/macro';
-import posts from './posts'
-
-
+import React, { useState } from "react";
+import Navbar from "./Navbar";
+import styled, { createGlobalStyle, css } from "styled-components/macro";
+import posts from "./posts";
+import { PostTitle } from "./Blog";
 
 const Container = styled.div`
-height: 100vh;
-width: 100%;
-display: flex;
-`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+`;
 
 const Post = styled.div`
-width: 60%;
-height: 400px;
-
-
-`
+  width: 60%;
+  padding-top: 60px;
+`;
 
 const PostContainer = styled.div`
-margin-top: 150px;
-display: flex;
-flex-flow: column nowrap;
-align-items: center;
+  margin-top: 150px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+`;
 
-`
+const TextContainer = styled.div`
+  width: 100%;
+`;
+
+const StyledImg = styled.img`
+  padding: 50px 0px;
+  width: 100%;
+`;
+const GoToTopButton = styled.button`
+  outline: none;
+`;
 
 class FullPost extends React.Component {
+  render() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
+    const slug = this.props.match.params.slug;
 
-    render() {
+    const index = posts.findIndex((post) => {
+      return post.slug === slug;
+    });
 
-        const slug = this.props.match.params.slug
+    const post = posts[index];
 
-        const index = posts.findIndex((post) => {
-            return post.slug === slug
-        })
+    return (
+      <div>
+        <Navbar style={{ background: "black", marginBottom: "20px" }} />
 
-        const post = posts[index];
+        <Container>
+          <PostContainer>
+            <Post>
+              <PostTitle style={{ textAlign: "center" }}>
+                {post.title}
+              </PostTitle>
+              <TextContainer>
+                <p>{post.content} </p>
+              </TextContainer>
 
-        return (
+              {post.postimage &&
+                post.postimage.map((image) => {
+                  return <StyledImg src={image} />;
+                })}
+            </Post>
 
-            <div>
-                <Navbar style={{ background: "black", marginBottom: "20px" }} />
-
-                <Container> 
-                     <PostContainer>
-
-                        <Post>
-                            <h1>{post.title}</h1>
-                            <p>{post.content} </p>
-                        </Post>
-                    </PostContainer>
-            
-
-
-
-                </Container>
-            </div>
-        )
-
-    }
-
+            <GoToTopButton
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              Go to top{" "}
+            </GoToTopButton>
+          </PostContainer>
+        </Container>
+      </div>
+    );
+  }
 }
-export default FullPost 
+export default FullPost;
