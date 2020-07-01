@@ -1,23 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import Footer from './Footer';
-import * as serviceWorker from './serviceWorker';
-import Home from './Home'
-import About from './About'
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import  Portfolio from './Portfolio'
-import PresetShop from './PresetShop'
-import Investment from './Investment'
-import Blog from './Blog'
-import Contact from './Contact'
-import posts from './posts'
-import FullPost from './FullPost';
+import Footer from "./Footer";
+import * as serviceWorker from "./serviceWorker";
+import Home from "./Home";
+import About from "./About";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Portfolio from "./Portfolio";
+import PresetShop from "./PresetShop";
+import Investment from "./Investment";
+import Blog from "./Blog";
+import Contact from "./Contact";
+import posts from "./posts";
+import FullPost from "./FullPost";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-  
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
@@ -27,15 +26,12 @@ ReactDOM.render(
         <Route path="/blog" exact component={Blog} />
         <Route path="/contact-form" exact component={Contact} />
         <Route path="/blog/posts/:slug" exact component={FullPost} />
-
       </Switch>
-
 
       <Footer />
     </BrowserRouter>
-
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
