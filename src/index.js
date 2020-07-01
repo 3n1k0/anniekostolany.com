@@ -11,7 +11,8 @@ import PresetShop from './PresetShop'
 import Investment from './Investment'
 import Blog from './Blog'
 import Contact from './Contact'
-
+import posts from './posts'
+import FullPost from './FullPost';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -25,6 +26,7 @@ ReactDOM.render(
         <Route path="/investment" exact component={Investment} />
         <Route path="/blog" exact component={Blog} />
         <Route path="/contact-form" exact component={Contact} />
+        <Route path="/blog/posts/:slug" exact component={FullPost} />
 
       </Switch>
 

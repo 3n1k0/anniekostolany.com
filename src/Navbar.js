@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { device } from './mediaquery'
 import styled, { createGlobalStyle, css } from 'styled-components/macro';
 import { fonts } from './config'
-import { BrowserRouter as Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 

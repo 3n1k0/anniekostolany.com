@@ -71,7 +71,7 @@ padding: 0px 50px;
 width: 50%;
 `
 
-const Button = styled.button`
+export const Button = styled.button`
     border: 2px solid black;
     background: transparent;
     color: black;
