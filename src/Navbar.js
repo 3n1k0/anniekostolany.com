@@ -96,7 +96,7 @@ export const ContactButton = styled.button`
   }
 `;
 
-export const Menuitems = styled.div`
+export const Menuitems = styled.ul`
   display: flex;
   flex-flow: column nowrap;
   color: white;
@@ -114,7 +114,7 @@ export const Menuitems = styled.div`
   }
 `;
 
-export const Menuitem = styled.div`
+export const Menuitem = styled.li`
   display: flex;
   padding: 15px 30px;
   font-weight: 600;
@@ -142,6 +142,7 @@ const Title = styled.h1`
   text-transform: uppercase;
   line-height: 1em;
   width: 300px;
+  font-weight: 400;
 `;
 
 const GlobalStyle = createGlobalStyle`

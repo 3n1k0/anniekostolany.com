@@ -3,24 +3,25 @@ import { device } from "./mediaquery";
 import styled, { createGlobalStyle } from "styled-components/macro";
 import { fonts } from "./config";
 import Navbar from "./Navbar";
+import { NavLink } from "react-router-dom";
 
 const TextBox = styled.div`
   margin: 50px auto;
   display: flex;
   flex-flow: column nowrap;
-  width: 600px;
 `;
 
 const TextTitle = styled.div`
   margin: 0 auto;
   font-family: ${fonts.kacskaringos};
-  font-size: 3em;
-  padding-bottom: 20px;
+  font-size: 2.5em;
+  padding-bottom: 30px;
 `;
 
 const Text = styled.div`
   margin: 0 auto;
   font-family: ${fonts.mindenmas};
+  max-width: 900px;
 `;
 
 export const ImageContainer = styled.div`
@@ -28,14 +29,7 @@ export const ImageContainer = styled.div`
   margin: 0 auto;
 `;
 export const Image = styled.img`
-  width: 900px;
-  height: 600px;
-`;
-
-const Img = styled.div`
-  background: url("https://ucarecdn.com/ebb062f7-cfc1-4f6a-a380-6b64cfc8838b/header.jpg");
-  width: 50%;
-  height: 350px;
+  max-width: 900px;
 `;
 
 const CardsContainer = styled.div`
@@ -48,13 +42,25 @@ const CardsContainer = styled.div`
 
 const CardTitle = styled.div`
   text-align: center;
+  text-align: center;
+
+  h2 {
+    font-family: ${fonts.cimek};
+    font-size: 15px;
+    color: goldenrod;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-family: ${fonts.mindenmas};
+    font-size: 18px;
+    opacity: 1;
+  }
 `;
 
 const h2 = styled.div`
   font-family: ${fonts.focim};
   font-size: 1em;
-  color: grey;
-  letter-spacing: 2px;
 `;
 
 const CardInnerContainer = styled.div`
@@ -80,13 +86,7 @@ export const Button = styled.button`
   margin: 0 auto;
   width: 190px;
   margin-top: 35px;
-`;
-
-const Img3 = styled.div`
-/* height: ${({ magassag }) => magassag}px; */
-background: url('https://ucarecdn.com/ebb062f7-cfc1-4f6a-a380-6b64cfc8838b/header.jpg');
-width: 50%;
-height: 550px;
+  cursor: pointer;
 `;
 
 const Testimonials = styled.div`
@@ -95,6 +95,15 @@ const Testimonials = styled.div`
   align-items: center;
   width: 60%;
   margin: 0 auto;
+  padding-bottom: 50px;
+
+  h2 {
+    font-family: ${fonts.kacskaringos};
+    font-size: 32px;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 1.2em;
+  }
 `;
 
 const Testimonial = styled.div`
@@ -103,14 +112,14 @@ const Testimonial = styled.div`
 
 const Container = styled.div`
   height: 700px;
-  background: url("https://ucarecdn.com/ebb062f7-cfc1-4f6a-a380-6b64cfc8838b/header.jpg")
-    rgba(0, 0, 0, 0.3);
-  background-blend-mode: multiply;
+  width: 100%;
+  /* background-blend-mode: multiply;
   background-size: cover;
-  background-position: center 70%;
+  background-position: center 70%; */
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   position: relative;
 `;
 
@@ -120,6 +129,7 @@ const Textcontainer = styled.div`
   justify-content: center;
   height: 500px;
   align-items: center;
+  position: absolute;
 `;
 
 const Subtitle = styled.div`
@@ -129,6 +139,7 @@ const Subtitle = styled.div`
   color: white;
   text-align: center;
   padding: 20px;
+  letter-spacing: 1px;
 
   @media ${device.desktop} {
     font-size: 24px;
@@ -145,7 +156,7 @@ const Motto = styled.div`
   color: white;
   font-style: normal;
   font-size: 1rem;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   text-transform: uppercase;
 
   @media ${device.tablet} {
@@ -157,15 +168,15 @@ const TextboxButton = styled.button`
   border: 2px solid white;
   background: transparent;
   color: white;
-  height: 42px;
-  width: 101px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  height: 49px;
+  display: inline-block;
   line-height: 1em;
-  padding: 0;
-  margin: 0 auto;
-  width: 190px;
+  letter-spacing: 2px;
+  width: 193px;
   margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 1.75em;
 
   &:hover {
     background: white;
@@ -179,6 +190,26 @@ class Home extends React.Component {
       <div className="Home">
         <Navbar style={{ background: "transparent" }} />
         <Container>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/60dfdd67-df68-4276-ba1b-b74ce42dc5bb/header.webp"
+              type="image/webp"
+              loading="lazy"
+            />
+            <source
+              srcset="https://ucarecdn.com/e742370a-5e45-41f5-a3c4-7ab5ce979a85/header.jpg"
+              type="image/jpeg"
+              loading="lazy"
+            />
+
+            <Image
+              style={{ objectFit: "cover", maxWidth: "100%"}}
+              alt="Beach wedding couple"
+              src="https://ucarecdn.com/e742370a-5e45-41f5-a3c4-7ab5ce979a85/header.jpg"
+              loading="lazy"
+            ></Image>
+          </picture>
+
           <Textcontainer>
             <Subtitle>
               <p>Photo sessions in the Netherlands & worldwide</p>
@@ -204,12 +235,86 @@ class Home extends React.Component {
           </Text>
         </TextBox>
         <ImageContainer>
-          <Image src="https://ucarecdn.com/ebb062f7-cfc1-4f6a-a380-6b64cfc8838b/header.jpg"></Image>
-          <Image src="https://ucarecdn.com/ebb062f7-cfc1-4f6a-a380-6b64cfc8838b/header.jpg"></Image>
-          <Image src="https://ucarecdn.com/ebb062f7-cfc1-4f6a-a380-6b64cfc8838b/header.jpg"></Image>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/home1.webp"
+              type="image/webp"
+              loading="lazy"
+            />
+            <source
+              srcset="https://ucarecdn.com/e79670e6-26d9-4dc4-8580-6342b4611e13/home1.jpg"
+              type="image/jpeg"
+              loading="lazy"
+            />
+
+            <Image
+              alt="Beach wedding couple"
+              src="https://ucarecdn.com/e79670e6-26d9-4dc4-8580-6342b4611e13/home1.jpg"
+              loading="lazy"
+            ></Image>
+          </picture>
+        </ImageContainer>
+        <ImageContainer>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/e13a2d81-9a15-4812-9c62-9f4e72776172/home2.webp"
+              type="image/webp"
+              loading="lazy"
+            />
+            <source
+              srcset="https://ucarecdn.com/b286f314-d52c-4b25-8eb4-c943aa97b404/home2.jpg"
+              type="image/jpeg"
+              loading="lazy"
+            />
+
+            <Image
+              alt="Amsterdam model bikes and tulips"
+              src="https://ucarecdn.com/b286f314-d52c-4b25-8eb4-c943aa97b404/home2.jpg"
+              loading="lazy"
+            ></Image>
+          </picture>
+        </ImageContainer>
+        <ImageContainer>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/ac9d9011-17ae-4a52-825f-6913f36ee858/home3.webp"
+              type="image/webp"
+              loading="lazy"
+            />
+            <source
+              srcset="https://ucarecdn.com/1e54e891-9704-4660-9b36-95389633c2b7/home3.jpg"
+              type="image/jpeg"
+              loading="lazy"
+            />
+
+            <Image
+              alt="Windmill engagement couple"
+              src="https://ucarecdn.com/1e54e891-9704-4660-9b36-95389633c2b7/home3.jpg"
+              loading="lazy"
+            ></Image>
+          </picture>
         </ImageContainer>
         <CardsContainer>
-          <Img></Img>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/28cda8e9-e274-444b-9a60-02cbb1424ae9/home4.webp"
+              type="image/webp"
+              loading="lazy"
+            />
+            <source
+              srcset="https://ucarecdn.com/36afc3be-e95c-408e-bcfd-7d56295bb21d/home4.jpg"
+              type="image/jpeg"
+              loading="lazy"
+            />
+
+            <Image
+              style={{ width: "500px" }}
+              alt="Mom with child"
+              src="https://ucarecdn.com/36afc3be-e95c-408e-bcfd-7d56295bb21d/home4.jpg"
+              loading="lazy"
+            ></Image>
+          </picture>
+
           <CardInnerContainer>
             <CardTitle>
               <h2>FOR COUPLES AND FAMILIES</h2>
@@ -219,11 +324,32 @@ class Home extends React.Component {
                 documenting the most important milestones!
               </p>
             </CardTitle>
-            <Button>Learn more</Button>
+            <NavLink to={"/couples"}>
+              <Button> More info</Button>
+            </NavLink>
           </CardInnerContainer>
         </CardsContainer>
         <CardsContainer style={{ flexFlow: "row-reverse" }}>
-          <Img></Img>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/3d344f8f-377c-4fa5-a8b3-9e3d93a19939/home5.webp"
+              type="image/webp"
+              loading="lazy"
+            />
+            <source
+              srcset="https://ucarecdn.com/5ced9396-cfdd-47d0-b848-093daa40a9ba/home5.jpg"
+              type="image/jpeg"
+              loading="lazy"
+            />
+
+            <Image
+              style={{ width: "500px" }}
+              alt="Girl with windmill and flowers"
+              src="https://ucarecdn.com/5ced9396-cfdd-47d0-b848-093daa40a9ba/home5.jpg"
+              loading="lazy"
+            ></Image>
+          </picture>
+
           <CardInnerContainer>
             <CardTitle>
               <h2>FOR TRAVELERS</h2>
@@ -234,17 +360,40 @@ class Home extends React.Component {
                 for years to come, with the perfect set of pictures.
               </p>
             </CardTitle>
-            <Button>Read more</Button>
+            <NavLink to={"/travelers"}>
+              <Button> Details</Button>
+            </NavLink>
           </CardInnerContainer>
         </CardsContainer>
         <CardsContainer style={{ borderTop: "1px solid grey" }}>
-          <Img style={{ height: "500px" }}></Img>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/377abeca-1940-41a0-84c5-14d759eac7f9/home6.webp"
+              type="image/webp"
+              loading="lazy"
+            />
+            <source
+              srcset="https://ucarecdn.com/9d113365-7771-4661-a775-84c46c8d38d6/home6.jpg"
+              type="image/jpeg"
+              loading="lazy"
+            />
+
+            <Image
+              style={{ width: "500px" }}
+              alt="Tulip model fashion shoot"
+              src="https://ucarecdn.com/9d113365-7771-4661-a775-84c46c8d38d6/home6.jpg"
+              loading="lazy"
+            ></Image>
+          </picture>
+
           <CardInnerContainer>
             <CardTitle>
               <h2>FASHION</h2>
-              <p>WFashion might change but style is eternal.</p>
+              <p>Fashion might change but style is eternal.</p>
             </CardTitle>
-            <Button>See fashion portfolio</Button>
+            <NavLink to={"/fashion"}>
+              <Button> Fashion work</Button>
+            </NavLink>
           </CardInnerContainer>
         </CardsContainer>
         <Testimonials>

@@ -19,7 +19,8 @@ const Icontainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 50%;
+  padding-top: 30px;
 `;
 
 const Icon = styled.div`
@@ -32,6 +33,11 @@ const Numbers = styled.div`
   color: white;
   list-style: none;
   font-family: ${fonts.mindenmas};
+
+  li {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.82);
+  }
 `;
 
 class Footer extends React.Component {
@@ -40,25 +46,26 @@ class Footer extends React.Component {
       <Container>
         <Icontainer>
           <Icon>
-            <a target="_blank" href="https://instagram.com/anniekostolany">
-              <i style={{ color: "white" }} class="fab fa-instagram"></i>
+            <a target="_blank" href="https://instagram.com/anniekostolany"  rel="noopener">
+              <i style={{ color: "white" }} class="fab fa-instagram" label="Instagram profile"></i></a>
+          </Icon>
+          <Icon>
+            <a target="_blank" href="https://facebook.com/anniekostolany" rel="noopener">
+              <i style={{ color: "white" }} class="fab fa-facebook-f" label="Facebook profile"></i>
             </a>
           </Icon>
           <Icon>
-            <a target="_blank" href="https://facebook.com/anniekostolany">
-              <i style={{ color: "white" }} class="fab fa-facebook-f"></i>
-            </a>
-          </Icon>
-          <Icon>
-            <a href="mailto:mail@anniekostolany.com">
+            <a href="mailto:mail@anniekostolany.com" label="Send an email">
               <i style={{ color: "white" }} class="far fa-envelope"></i>
             </a>
           </Icon>
         </Icontainer>
         <Numbers>
+            <ul>
           <li>VAT No. NL002489576B16</li>
           <li>KvK number: 69847843</li>
           <li> PayPal: mail@anniekostolany.com</li>
+          </ul>
         </Numbers>
       </Container>
     );

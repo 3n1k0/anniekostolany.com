@@ -11,7 +11,6 @@ import PresetShop from "./PresetShop";
 import Investment from "./Investment";
 import Blog from "./Blog";
 import Contact from "./Contact";
-import posts from "./posts";
 import FullPost from "./FullPost";
 
 ReactDOM.render(
