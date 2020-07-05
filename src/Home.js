@@ -4,6 +4,7 @@ import styled, { createGlobalStyle } from "styled-components/macro";
 import { fonts } from "./config";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const TextBox = styled.div`
   margin: 50px auto;
@@ -47,7 +48,7 @@ const CardTitle = styled.div`
   h2 {
     font-family: ${fonts.cimek};
     font-size: 15px;
-    color: goldenrod;
+    color: sienna;
     letter-spacing: 2px;
   }
 
@@ -113,14 +114,12 @@ const Testimonial = styled.div`
 const Container = styled.div`
   height: 700px;
   width: 100%;
-  /* background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center 70%; */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   position: relative;
+  
 `;
 
 const Textcontainer = styled.div`
@@ -130,6 +129,7 @@ const Textcontainer = styled.div`
   height: 500px;
   align-items: center;
   position: absolute;
+  top: 30%;
 `;
 
 const Subtitle = styled.div`
@@ -164,6 +164,13 @@ const Motto = styled.div`
   }
 `;
 
+const HeaderImage = styled.img`
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
+  filter: brightness(75%);
+`;
+
 const TextboxButton = styled.button`
   border: 2px solid white;
   background: transparent;
@@ -188,6 +195,11 @@ class Home extends React.Component {
   render() {
     return (
       <div className="Home">
+         <Helmet>
+        <title>Home</title>
+        <meta name="description"  content="Annie Kostolany professional photographer based in the Netherlands"/>
+        </Helmet>
+
         <Navbar style={{ background: "transparent" }} />
         <Container>
           <picture>
@@ -202,12 +214,11 @@ class Home extends React.Component {
               loading="lazy"
             />
 
-            <Image
-              style={{ objectFit: "cover", maxWidth: "100%"}}
-              alt="Beach wedding couple"
+            <HeaderImage
+              alt="Girl with flowers"
               src="https://ucarecdn.com/e742370a-5e45-41f5-a3c4-7ab5ce979a85/header.jpg"
               loading="lazy"
-            ></Image>
+            ></HeaderImage>
           </picture>
 
           <Textcontainer>

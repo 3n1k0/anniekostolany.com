@@ -3,6 +3,8 @@ import { device } from "./mediaquery";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
 import { fonts } from "./config";
 import { NavLink } from "react-router-dom";
+import Dropdown from 'react-dropdown'
+
 
 export const HamburgerMenu = styled.div`
     display: flex;
@@ -181,6 +183,8 @@ const StyledNavLink = styled(NavLink)`
   color: white;
 `;
 
+
+
 class Navbar extends React.Component {
   constructor() {
     super();
@@ -189,7 +193,17 @@ class Navbar extends React.Component {
     };
   }
 
+  
+
   render() {
+    const options = [
+      '/',
+      'Gallery',
+      'Contact'
+    ]
+    const defaultOption = options[0];
+
+  
     return (
       <div className="Navbar">
         <GlobalStyle />
@@ -223,9 +237,13 @@ class Navbar extends React.Component {
               <Menuitem>
                 <StyledNavLink to="/about">About me</StyledNavLink>
               </Menuitem>
-              <Menuitem>
-                <StyledNavLink to="/portfolio">Portfolio</StyledNavLink>
-              </Menuitem>
+
+              {/* <Menuitem>
+              <StyledNavLink
+                  Portfolio      = {options}
+                />
+              </Menuitem> */}
+
               <Menuitem>
                 <StyledNavLink to="/investment">Investment</StyledNavLink>
               </Menuitem>

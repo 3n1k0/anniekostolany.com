@@ -4,6 +4,7 @@ import styled, { createGlobalStyle } from "styled-components/macro";
 import { fonts } from "./config";
 import { StyledImg } from "./Blog";
 import Navbar from "./Navbar";
+import { Helmet } from "react-helmet";
 
 const Container = styled.div`
   width: 956px;
@@ -32,9 +33,18 @@ class About extends React.Component {
     return (
       <div className="PresetShop">
         <Navbar style={{ background: "black" }} />
-
+        <Helmet>
+          <title>About Annie</title>
+          <meta
+            name="description"
+            content="About Annie - Amsterdam-based professional photographer"
+          />
+        </Helmet>
         <Container>
-          <StyledImg alt = "Annie Kostolany" src="https://ucarecdn.com/3c6be24b-afaf-41a0-afd5-b062ea61693d/anniekostolanyaboutmepage1.jpg"></StyledImg>
+          <StyledImg
+            alt="Annie Kostolany"
+            src="https://ucarecdn.com/3c6be24b-afaf-41a0-afd5-b062ea61693d/anniekostolanyaboutmepage1.jpg"
+          ></StyledImg>
 
           <h2>hey there</h2>
           <p>
