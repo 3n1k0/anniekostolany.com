@@ -1,53 +1,42 @@
 {
   "name": "anniekostolany.com",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node ./devserver.js",
-    "build": "./node_modules/.bin/webpack --config webpack.prod.js && node ./dist/server.js",
-    "server": "./node_modules/.bin/webpack --config webpack.server.js && node ./dist/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andormade/anniekostolany.com.git"
-  },
-  "author": "Andor Polgar",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/andormade/anniekostolany.com/issues"
-  },
-  "homepage": "https://github.com/andormade/anniekostolany.com#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-jest": "^22.4.3",
-    "babel-loader": "^7.1.4",
-    "babel-minify-webpack-plugin": "^0.3.1",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "eslint": "^4.19.1",
-    "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-react": "^7.8.2",
-    "hammerjs": "^2.0.8",
-    "mkdirp": "^0.5.1",
-    "prettier": "^1.12.1",
-    "regenerator-runtime": "^0.11.1",
-    "webpack": "^4.17.2",
-    "webpack-cleanup-plugin": "^0.5.1",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.4",
-    "webpack-merge": "^4.1.2"
-  },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "moment": "^2.22.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-helmet": "^5.2.0",
-    "react-hot-loader": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "styled-components": "^3.2.6"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-dropdown": "^1.7.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^5.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "json-loader": "^0.5.7"
   }
 }
