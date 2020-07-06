@@ -75,7 +75,7 @@ const CardInnerContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  border: 2px solid black;
+  border: 1px solid goldenrod;
   background: transparent;
   color: black;
   height: 42px;
@@ -88,6 +88,13 @@ export const Button = styled.button`
   width: 190px;
   margin-top: 35px;
   cursor: pointer;
+
+  &:hover {
+    background: sienna;
+    opacity: 0.7;
+    color: rgb(237, 239, 242);
+    transition: 0.3s;
+  } 
 `;
 
 const Testimonials = styled.div`

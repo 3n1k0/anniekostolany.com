@@ -3,8 +3,6 @@ import { device } from "./mediaquery";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
 import { fonts } from "./config";
 import { NavLink } from "react-router-dom";
-import Dropdown from 'react-dropdown'
-
 
 export const HamburgerMenu = styled.div`
     display: flex;
@@ -110,9 +108,9 @@ export const Menuitems = styled.ul`
     justify-items: flex-end;
     padding-top: 20px;
     padding-right: 40px;
-    position: absolute;
     top: 0px;
     right: 0px;
+    position: absolute;
   }
 `;
 
@@ -120,6 +118,10 @@ export const Menuitem = styled.li`
   display: flex;
   padding: 15px 30px;
   font-weight: 600;
+
+  p {
+    cursor: pointer;
+  }
 
   @media ${device.desktop} {
     display: flex;
@@ -183,35 +185,63 @@ const StyledNavLink = styled(NavLink)`
   color: white;
 `;
 
+const InnerStyledNavLink = styled(StyledNavLink)`
+  & :hover {
+    transform: rotate(1deg);
+  }
+`;
 
+const DropDown = styled.div`
+  background: rgba(0, 0, 0, 0.7);
+  width: 220px;
+  height: 270px;
+  position: absolute;
+  z-index: -2;
+  top: 90px;
+  padding: 35px 15px;
+  display: flex;
+  flex-flow: column;
+
+
+  ${({ isOpen }) =>
+    isOpen
+      ? css`
+          display: flex;
+        `
+      : `display: none`}
+`;
 
 class Navbar extends React.Component {
   constructor() {
     super();
     this.state = {
       isOpen: false,
+      isDropDownOpen: false,
     };
   }
 
-  
+  onBodyClick = () => {
+    this.setState({ isOpen: false });
+    this.setState({ isDropDownOpen: false });
+  }
+
+  componentDidMount() {
+    window.addEventListener('click', this.onBodyClick);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('click', this.onBodyClick);
+  }
 
   render() {
-    const options = [
-      '/',
-      'Gallery',
-      'Contact'
-    ]
+    const options = ["/", "Gallery", "Contact"];
     const defaultOption = options[0];
 
-  
     return (
       <div className="Navbar">
         <GlobalStyle />
         <Maincontainer
           style={this.props.style}
-          onClick={() => {
-            this.setState({ isOpen: false });
-          }}
         >
           <TitleDiv>
             <Title>Annie Kostolany Photography</Title>
@@ -238,17 +268,59 @@ class Navbar extends React.Component {
                 <StyledNavLink to="/about">About me</StyledNavLink>
               </Menuitem>
 
-              {/* <Menuitem>
-              <StyledNavLink
-                  Portfolio      = {options}
-                />
-              </Menuitem> */}
+              <Menuitem
+                onMouseOver={() => {
+                  this.setState({ isDropDownOpen: true });
+                }}
+
+                onClick={(event) => {
+                  event.stopPropagation()
+                  this.setState({ isDropDownOpen: !this.state.isDropDownOpen });
+                }}
+              >
+                <p>Portfolio</p>
+
+                <DropDown
+                  isOpen={this.state.isDropDownOpen}
+                  onMouseOut={() => {
+                    this.setState({ isDropDownOpen: false });
+                  }}
+                >
+                  <Menuitem>
+                    <InnerStyledNavLink to="/solo-travelers">
+                     Solo travelers
+                    </InnerStyledNavLink>
+                  </Menuitem>
+                  <Menuitem>
+                    <InnerStyledNavLink to="/couples">
+                      Love shoots 
+                    </InnerStyledNavLink>
+                  </Menuitem>
+                  <Menuitem>
+                    <InnerStyledNavLink to="/families">
+                      Family & celebration
+                    </InnerStyledNavLink>
+                  </Menuitem>
+                  <Menuitem>
+                    <InnerStyledNavLink to="/wedding">
+                      Wedding
+                    </InnerStyledNavLink>
+                  </Menuitem>
+                  <Menuitem>
+                    <InnerStyledNavLink to="/boudoir">
+                      Boudoir
+                    </InnerStyledNavLink>
+                  </Menuitem>
+                  <Menuitem>
+                    <InnerStyledNavLink to="/how-does-it-work">
+                      How does it work?
+                    </InnerStyledNavLink>
+                  </Menuitem>
+                </DropDown>
+              </Menuitem>
 
               <Menuitem>
                 <StyledNavLink to="/investment">Investment</StyledNavLink>
-              </Menuitem>
-              <Menuitem>
-                <StyledNavLink to="/preset-shop">Preset shop</StyledNavLink>
               </Menuitem>
               <Menuitem>
                 <StyledNavLink to="/blog">Blog </StyledNavLink>
