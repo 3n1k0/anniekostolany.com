@@ -58,9 +58,14 @@ export const Navigation = styled.nav`
   position: absolute;
   right: 0px;
   top: 0px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    176deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(190, 190, 191, 0) 85%
+  );
   width: ${({ isOpen }) => (isOpen ? "300" : "0")}px;
-  height: 100%;
+  height: 700px;
   z-index: 4;
 
   @media ${device.desktop} {
@@ -68,6 +73,8 @@ export const Navigation = styled.nav`
     width: 100%;
     background: none;
     position: relative;
+    height: 100%;
+    justify-content: flex-end;
   }
 `;
 
@@ -100,6 +107,10 @@ export const Menuitems = styled.ul`
   display: flex;
   flex-flow: column nowrap;
   color: white;
+  position: relative;
+  top: 80px;
+  left: 20px;
+  height: 100%;
 
   @media ${device.desktop} {
     display: flex;
@@ -110,7 +121,6 @@ export const Menuitems = styled.ul`
     padding-right: 40px;
     top: 0px;
     right: 0px;
-    position: absolute;
   }
 `;
 
@@ -135,6 +145,11 @@ export const Menuitem = styled.li`
     padding: 10px;
   }
 `;
+
+const PortfolioMenuitem = styled(Menuitem)`
+  flex-flow: column;
+
+`
 
 const Title = styled.h1`
   color: #ffffff;
@@ -192,16 +207,19 @@ const InnerStyledNavLink = styled(StyledNavLink)`
 `;
 
 const DropDown = styled.div`
-  background: rgba(0, 0, 0, 0.7);
-  width: 220px;
-  height: 270px;
-  position: absolute;
-  z-index: -2;
-  top: 90px;
-  padding: 35px 15px;
-  display: flex;
-  flex-flow: column;
-
+  position: relative;
+  display: flex; 
+  
+  @media ${device.desktop} {
+    background: rgba(0, 0, 0, 0.7);
+    width: 220px;
+    height: 270px;
+    position: absolute;
+    z-index: -2;
+    top: 68px;
+    padding: 24px 15px;
+    flex-flow: column;
+  }
 
   ${({ isOpen }) =>
     isOpen
@@ -223,14 +241,14 @@ class Navbar extends React.Component {
   onBodyClick = () => {
     this.setState({ isOpen: false });
     this.setState({ isDropDownOpen: false });
-  }
+  };
 
   componentDidMount() {
-    window.addEventListener('click', this.onBodyClick);
+    window.addEventListener("click", this.onBodyClick);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('click', this.onBodyClick);
+    window.removeEventListener("click", this.onBodyClick);
   }
 
   render() {
@@ -240,9 +258,7 @@ class Navbar extends React.Component {
     return (
       <div className="Navbar">
         <GlobalStyle />
-        <Maincontainer
-          style={this.props.style}
-        >
+        <Maincontainer style={this.props.style}>
           <TitleDiv>
             <Title>Annie Kostolany Photography</Title>
           </TitleDiv>
@@ -268,32 +284,33 @@ class Navbar extends React.Component {
                 <StyledNavLink to="/about">About me</StyledNavLink>
               </Menuitem>
 
-              <Menuitem
+              <PortfolioMenuitem
                 onMouseOver={() => {
                   this.setState({ isDropDownOpen: true });
                 }}
-
                 onClick={(event) => {
-                  event.stopPropagation()
+                  console.log('idaigeljut', this.state.isDropDownOpen)
+                  event.stopPropagation();
                   this.setState({ isDropDownOpen: !this.state.isDropDownOpen });
                 }}
               >
+                
                 <p>Portfolio</p>
-
                 <DropDown
                   isOpen={this.state.isDropDownOpen}
                   onMouseOut={() => {
                     this.setState({ isDropDownOpen: false });
                   }}
                 >
+               
                   <Menuitem>
                     <InnerStyledNavLink to="/solo-travelers">
-                     Solo travelers
+                      Solo travelers
                     </InnerStyledNavLink>
                   </Menuitem>
                   <Menuitem>
                     <InnerStyledNavLink to="/couples">
-                      Love shoots 
+                      Love shoots ♡
                     </InnerStyledNavLink>
                   </Menuitem>
                   <Menuitem>
@@ -317,7 +334,7 @@ class Navbar extends React.Component {
                     </InnerStyledNavLink>
                   </Menuitem>
                 </DropDown>
-              </Menuitem>
+              </PortfolioMenuitem>
 
               <Menuitem>
                 <StyledNavLink to="/investment">Investment</StyledNavLink>

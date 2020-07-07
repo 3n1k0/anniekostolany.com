@@ -12,7 +12,7 @@ const Container = styled.div`
 
   form {
     max-width: 500px;
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 10px 20px;
     background: rgba(255,228,225, 0.3);
     border-radius: 8px;
@@ -44,6 +44,10 @@ const Container = styled.div`
     color: #384047;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     margin-bottom: 30px;
+
+    & :focus {
+      box-shadow: 8px 8px 35px rgba(192,192,192, 0.3);
+    }
   }
 
   textarea {
@@ -59,6 +63,7 @@ const Container = styled.div`
     letter-spacing: 0.337em;
     font-weight: 100;
     padding-bottom: 50px;
+    padding-top: 26px;
 }
   
 
@@ -90,19 +95,19 @@ class Contact extends React.Component {
             <h1>Contact</h1>
             <fieldset>
               <label for="name">Name </label>
-              <input type="text" name="name" />
+              <input type="text" name="name" required />
 
               <br />
               <label for="email">Email</label>
-              <input type="email" name="_replyto" />
+              <input type="email" name="_replyto" required />
 
               <br />
               <label for="subject">Subject</label>
-              <input type="text" name="subject" />
+              <input type="text" name="subject"  />
 
               <br />
               <label for="message">Message</label>
-              <textarea name="message"></textarea>
+              <textarea name="message" required></textarea>
 
             </fieldset>
             <Button type="submit">Send</Button>

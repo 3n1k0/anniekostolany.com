@@ -48,7 +48,7 @@ const CardTitle = styled.div`
   h2 {
     font-family: ${fonts.cimek};
     font-size: 15px;
-    color: sienna;
+    color: black;
     letter-spacing: 2px;
   }
 
@@ -75,7 +75,7 @@ const CardInnerContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  border: 1px solid goldenrod;
+  border: 3px solid black;
   background: transparent;
   color: black;
   height: 42px;
@@ -90,10 +90,9 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: sienna;
-    opacity: 0.7;
-    color: rgb(237, 239, 242);
-    transition: 0.3s;
+    background: rgba(192, 192, 192, 0.3);
+    opacity: 0.9;
+    transition: 0.6s;
   } 
 `;
 
@@ -104,13 +103,15 @@ const Testimonials = styled.div`
   width: 60%;
   margin: 0 auto;
   padding-bottom: 50px;
+  font-family: ${fonts.mindenmas};
 
   h2 {
-    font-family: ${fonts.kacskaringos};
+    font-family: ${fonts.mindenmas};
     font-size: 32px;
     letter-spacing: 0px;
     text-transform: none;
     line-height: 1.2em;
+    padding: 40px;
   }
 `;
 
@@ -415,8 +416,11 @@ class Home extends React.Component {
           </CardInnerContainer>
         </CardsContainer>
         <Testimonials>
-          <h2>Testimonials</h2>
+          <h2>Testimonials <br / >
+
+          </h2>
           <Testimonial>
+          
             A friend and I scheduled a joint boudoir shoot with Annie during my
             visit to Amsterdam, and in addition to having SO MUCH fun that
             afternoon, the photos ended up being more breath-taking than I ever
@@ -428,6 +432,7 @@ class Home extends React.Component {
           </Testimonial>
 
           <Testimonial>
+          
             I worked with Annie two times and both are amazing experiences. Most
             of beautiful pictures on my instagram is her worked. I dont have
             sense/idea of how to make good pictures, but i want to have one for
@@ -438,12 +443,14 @@ class Home extends React.Component {
           </Testimonial>
 
           <Testimonial>
+         
             Annie is such a great person to work with. She really listens to
             what you want, gives tips and makes you feel very relaxed. Thinking
             'bout doing another session with her already!! — Agatha C.
           </Testimonial>
 
           <Testimonial>
+          
             Yesterday we had an engagement photoshoot with Annie. Annie
             recommended us a great place, Zaanse Schans. We have never been in a
             photoshoot before, but Annie made the whole session really easy and
@@ -453,10 +460,12 @@ class Home extends React.Component {
           </Testimonial>
 
           <Testimonial>
+        
             The way Annie works is authentic and simple yet so effective. The
             whole day was a vibe. When I first saw my photos I was GOBSMACKED!!
             I enjoyed every minute of the shoot and would do it again 10x over.
             Thank you Annie for a beautiful experience ❤️ — Amanda C.
+          
           </Testimonial>
         </Testimonials>
         );
