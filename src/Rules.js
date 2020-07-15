@@ -5,8 +5,8 @@ import { fonts } from "./config";
 import { StyledImg } from "./Blog";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
-import { NavLink } from 'react-router-dom'
-import { Button } from './Home'
+import { NavLink } from "react-router-dom";
+import { Button } from "./Home";
 
 const Container = styled.div`
   width: 720px;
@@ -33,9 +33,14 @@ const Container = styled.div`
     line-height: 1.5;
     letter-spacing: 0.005em;
   }
+
+  ul{
+    text-align: center;
+    padding-top: 50px;
+  }
 `;
 
-class About extends React.Component {
+class Rules extends React.Component {
   render() {
     return (
       <div className="PresetShop">
@@ -48,68 +53,99 @@ class About extends React.Component {
           />
         </Helmet>
         <Container>
-          <StyledImg
+          <p>
+            Since first picking up a camera, I have captured so many of life’s
+            most important moments via couple portraits to engagements,
+            weddings, maternity shoots, children, and many more. <br />
+            At the same time, my work has been featured by a number of different
+            publishers, including SALYSÉ, and Vogue Italia. <br /> Both facets
+            of photography require the same level of respect, discipline and
+            understanding, if you are to excel in them. The quality of my work
+            ultimately boils down to the knowledge of one key factor:
+            photography is the art of storytelling. It’s more than pointing and
+            clicking, taking pictures and hoping for the best. It’s about
+            constructing an image that encapsulates a moment in time. Using a
+            bright, colorful, airy style, my photos are able to capture not just
+            the sights, but the sounds, smells, and emotions of a special time
+            in your life. In order to ensure that my work will do your life’s
+            moments – big and small – justice, I have an array of tailored
+            sessions, which will cater to your photographic needs, whatever your
+            tastes or targets.{" "}
+          </p>
+          <br />
+          <p>
+            If one sounds good to you, or if you have any questions, please feel
+            free to reach out to mail@anniekostolany.com or by filling out the
+            <NavLink to="/contact">contact form</NavLink>.
+            </p>
+          <p>
+            <ul>
+              <li>
+                <h2>Step 1</h2> Go to
+                <NavLink to="/investment">Investments</NavLink> and pick a
+                package you like.
+              </li>
+              <br />
+
+              <li>
+                <h2>Step 2</h2> Shoot me a message to check my availability.
+              </li>
+              <br />
+
+              <li>
+                <h2>Step 3</h2> I will send you an email to confirm the date for
+                your shoot and you can simply buy your package through the
+                Investments tab. You will also get a contract and a Dutch
+                invoice at the time of your booking. If you prefer another
+                payment method or would like to discuss a payment plan, just let
+                me know and I will do my best to find the right solution for
+                you.
+              </li>
+              <br />
+
+              <li>
+                <h2>Step 4</h2> We will discuss your ideas through a Zoom/Skype
+                call, and go through your mood board together to talk about your
+                expectations.
+              </li>
+              <br />
+
+              <li>
+                <h2>Step 5</h2> Let’s shoot! You can expect your digital photos
+                in a couple of weeks, delivered beautifully in a private online
+                gallery.
+              </li>
+            </ul>
+          </p>
+          <br />
+
+          <NavLink to={"/contact"}>
+            <Button> Contact Annie </Button>
+          </NavLink>
+          <StyledImg style={{paddingTop: "60px" }}
             alt="Annie Kostolany"
             src="https://ucarecdn.com/3c6be24b-afaf-41a0-afd5-b062ea61693d/anniekostolanyaboutmepage1.jpg"
           ></StyledImg>
-
-          <h2>hey there</h2>
-          <p>
-            My name is Annie. I’m a Hungarian wanderlust, who settled in
-            Amsterdam by way of Budapest, Trier and Los Angeles. <br />
-            Perhaps the most important thing I’ve learned since becoming a
-            photographer is that without that magical connection, you have
-            nothing.  If you don’t build trust and rapport between the human
-            being behind the lens and the one in front of it, you have a
-            picture, but not a photograph. With that in mind, I think it’s
-            important to tell you a little about myself. </p>
-            <br />
-            <p>
-            Before I first picked
-            up a camera, I always struggled to find the right words to express
-            myself. That might seem ironic for someone who studied Philology and
-            Hungarian Literature, but I always felt I needed to communicate in
-            some way beyond writing. <br /> Eventually this put an end to my brief
-            flirtation with journalism too, and while working sales jobs I
-            realized I would have to get out of my comfort zone if I was going
-            to find my calling. After trying my luck in a number of lines of
-            work – moving half way round the world and back in the process – it
-            was in Amsterdam that I finally found my voice. </p>
-            
-            <p><br /> Over the past three
-            years, I have captured so many of life’s most important moments,
-            everything from couples portraits to engagements, weddings,
-            maternity shoots, children, alongside pets, cityscapes and more. <br /> My
-            work has even been featured by a number of different publishers,
-            including SALYSÉ, and Vogue Italia. Before I took up photography, I
-            felt like I had so much to say, but was deprived of a manner to say
-            it. Now, using a camera as a tool to express myself, and the vision
-            of my clients, I feel a huge relief. I have found what I was looking
-            for all this time, and that makes me incredibly happy. </p>
-            
-            <p><br /> Becoming a
-            self-taught photographer can be tricky, but my eye for detail and
-            passion for the art-form gave me a hunger to master every aspect of
-            the craft quickly. I can now handle anything the photographic
-            process throws at me, connecting with my clients to deliver a
-            relationship-based end-to-end service, crafted to their needs. <br />If
-            you think that sounds like the right service for you, please feel
-            free to send me a message. 
-            <br /> We can meet for a coffee, or discuss your
-            ideas via Skype, phone or email. 
-            <br />
-            <br />Now that I’ve told you a little
-            about me, I look forward to getting to know you too.
-          </p>
-          <NavLink to={"/contact"}>
-              <Button> Contact Annie </Button>
-            </NavLink>
+              <StyledImg style={{paddingTop: "60px" }}
+            alt="Annie Kostolany"
+            src="https://ucarecdn.com/3c6be24b-afaf-41a0-afd5-b062ea61693d/anniekostolanyaboutmepage1.jpg"
+          ></StyledImg>
+              <StyledImg style={{paddingTop: "60px" }}
+            alt="Annie Kostolany"
+            src="https://ucarecdn.com/3c6be24b-afaf-41a0-afd5-b062ea61693d/anniekostolanyaboutmepage1.jpg"
+          ></StyledImg>
+              <StyledImg style={{paddingTop: "60px" }}
+            alt="Annie Kostolany"
+            src="https://ucarecdn.com/3c6be24b-afaf-41a0-afd5-b062ea61693d/anniekostolanyaboutmepage1.jpg"
+          ></StyledImg>
+              <StyledImg style={{paddingTop: "60px" }}
+            alt="Annie Kostolany"
+            src="https://ucarecdn.com/3c6be24b-afaf-41a0-afd5-b062ea61693d/anniekostolanyaboutmepage1.jpg"
+          ></StyledImg>
         </Container>
-       
-    
       </div>
     );
   }
 }
 
-export default About;
+export default Rules;

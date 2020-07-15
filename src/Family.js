@@ -35,10 +35,10 @@ const Container = styled.div`
   }
 `;
 
-class About extends React.Component {
+class Family extends React.Component {
   render() {
     return (
-      <div className="PresetShop">
+      <div className="Family">
         <Navbar style={{ background: "black" }} />
         <Helmet>
           <title>About Annie</title>
@@ -112,4 +112,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default Family;

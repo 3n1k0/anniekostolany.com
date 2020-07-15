@@ -35,7 +35,7 @@ const Container = styled.div`
   }
 `;
 
-class About extends React.Component {
+class Wedding extends React.Component {
   render() {
     return (
       <div className="PresetShop">
@@ -112,4 +112,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default Wedding;

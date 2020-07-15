@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled, { createGlobalStyle } from "styled-components/macro";
-import { fonts } from "./config";
+import { fonts, colors } from "./config";
 
 const Container = styled.div`
   height: 350px;
@@ -30,13 +30,13 @@ const Icon = styled.div`
 `;
 
 const Numbers = styled.div`
-  color: white;
+  color: ${colors.tortfeher};
   list-style: none;
   font-family: ${fonts.mindenmas};
 
   li {
     padding: 10px;
-    color: rgba(255, 255, 255, 0.82);
+    color: ${colors.tortfeher};
     list-style: none;
   }
 `;

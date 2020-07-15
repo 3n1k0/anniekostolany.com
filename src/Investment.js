@@ -3,9 +3,11 @@ import Navbar from "./Navbar";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
 import { Helmet } from 'react-helmet'
 
+
 const Container = styled.div`
-  height: 1000vh;
+  height: 100vh;
   width: 100%;
+  background: #fffff4;
 `;
 
 class Investment extends React.Component {

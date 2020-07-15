@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { device } from "./mediaquery";
 import styled, { createGlobalStyle } from "styled-components/macro";
-import { fonts } from "./config";
+import { fonts, colors } from "./config";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -17,12 +17,14 @@ const TextTitle = styled.div`
   font-family: ${fonts.kacskaringos};
   font-size: 2.5em;
   padding-bottom: 30px;
+  color: ${colors.cimek};
 `;
 
 const Text = styled.div`
   margin: 0 auto;
   font-family: ${fonts.mindenmas};
   max-width: 900px;
+  color: ${colors.cimek};
 `;
 
 export const ImageContainer = styled.div`
@@ -35,11 +37,18 @@ export const Image = styled.img`
 
 const CardsContainer = styled.div`
   display: flex;
+  flex-flow: column nowrap;
   width: 60%;
   margin: 0 auto;
   padding: 100px 0px;
   justify-content: flex-start;
+
+  @media ${device.desktop}{
+    flex-flow: row nowrap;
+
+  }
 `;
+
 
 const CardTitle = styled.div`
   text-align: center;
@@ -48,7 +57,7 @@ const CardTitle = styled.div`
   h2 {
     font-family: ${fonts.cimek};
     font-size: 15px;
-    color: black;
+    color: ${colors.cimek};
     letter-spacing: 2px;
   }
 
@@ -72,10 +81,11 @@ const CardInnerContainer = styled.div`
   line-height: 2;
   padding: 0px 50px;
   width: 50%;
+  color: rgb(88, 86, 86);
 `;
 
 export const Button = styled.button`
-  border: 3px solid black;
+  border: 2px solid black;
   background: transparent;
   color: black;
   height: 42px;
@@ -100,10 +110,16 @@ const Testimonials = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   padding-bottom: 50px;
   font-family: ${fonts.mindenmas};
+  color: ${colors.cimek};
+
+  @media ${device. desktop} {
+    width: 60%;
+
+  }
 
   h2 {
     font-family: ${fonts.mindenmas};
@@ -116,7 +132,9 @@ const Testimonials = styled.div`
 `;
 
 const Testimonial = styled.div`
+  color: ${colors.cimek};
   padding: 20px;
+
 `;
 
 const Container = styled.div`
@@ -238,7 +256,10 @@ class Home extends React.Component {
                 <h1>BE YOUR OWN KIND OF BEAUTIFUL</h1>
               </Motto>
             </MottoContainer>
+            <NavLink to={"/solo-travelers"}>
             <TextboxButton>See portfolio</TextboxButton>
+            </NavLink>
+            
           </Textcontainer>
         </Container>
         <TextBox>
@@ -379,7 +400,7 @@ class Home extends React.Component {
                 for years to come, with the perfect set of pictures.
               </p>
             </CardTitle>
-            <NavLink to={"/travelers"}>
+            <NavLink to={"/solo-travelers"}>
               <Button> Details</Button>
             </NavLink>
           </CardInnerContainer>

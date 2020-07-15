@@ -11,9 +11,11 @@ export const HamburgerMenu = styled.div`
     height: 30px;
     width: 40px;
     position: relative;
-    top: 25px;
+    top: 50px;
     right: 50px;
     position: absolute;
+    z-index: 10;
+
  
     ${({ isOpen }) =>
       isOpen
@@ -54,19 +56,18 @@ export const Stripe = styled.div`
 `;
 
 export const Navigation = styled.nav`
+  font-family: ${fonts.mindenmas};
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
   display: flex;
   position: absolute;
   right: 0px;
   top: 0px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    176deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(190, 190, 191, 0) 85%
-  );
-  width: ${({ isOpen }) => (isOpen ? "300" : "0")}px;
-  height: 700px;
+
   z-index: 4;
+  height: 700px;
+  width: 300px;
 
   @media ${device.desktop} {
     display: flex;
@@ -104,34 +105,46 @@ export const ContactButton = styled.button`
 `;
 
 export const Menuitems = styled.ul`
-  display: flex;
   flex-flow: column nowrap;
   color: white;
-  position: relative;
-  top: 80px;
-  left: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
   height: 100%;
+  width: 300px;
+  padding: 70px 20px;
+  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  background: rgb(88, 86, 86);
+  background: linear-gradient(
+    176deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(190, 190, 191, 0) 90%
+  );
 
   @media ${device.desktop} {
-    display: flex;
-    flex-flow: row nowrap;
     align-items: center;
-    justify-items: flex-end;
+    justify-content: flex-end;
     padding-top: 20px;
     padding-right: 40px;
     top: 0px;
     right: 0px;
+    width: 100%;
+    display: flex;
+    background: none;
+    flex-flow: row nowrap;
+    height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    top: 30px;
   }
 `;
 
 export const Menuitem = styled.li`
   display: flex;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-weight: 600;
-
-  p {
-    cursor: pointer;
-  }
+  cursor: pointer;
 
   @media ${device.desktop} {
     display: flex;
@@ -141,15 +154,14 @@ export const Menuitem = styled.li`
     text-transform: uppercase;
     text-decoration: none;
     line-height: 1em;
-    font-family: ${fonts.cimek};
+    font-family: ${fonts.mindenmas};
     padding: 10px;
   }
 `;
 
 const PortfolioMenuitem = styled(Menuitem)`
   flex-flow: column;
-
-`
+`;
 
 const Title = styled.h1`
   color: #ffffff;
@@ -172,6 +184,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     outline: none;
     text-decoration: none;
+    list-style: none;
+
+ 
 
   }
 
@@ -208,10 +223,11 @@ const InnerStyledNavLink = styled(StyledNavLink)`
 
 const DropDown = styled.div`
   position: relative;
-  display: flex; 
-  
+  display: flex;
+  flex-flow: column;
+
   @media ${device.desktop} {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.2);
     width: 220px;
     height: 270px;
     position: absolute;
@@ -276,65 +292,67 @@ class Navbar extends React.Component {
               <Stripe />
             </HamburgerMenu>
 
-            <Menuitems>
+            <Menuitems isOpen={this.state.isOpen}>
               <Menuitem>
                 <StyledNavLink to="/">Home</StyledNavLink>
               </Menuitem>
               <Menuitem>
                 <StyledNavLink to="/about">About me</StyledNavLink>
               </Menuitem>
-
-              <PortfolioMenuitem
-                onMouseOver={() => {
-                  this.setState({ isDropDownOpen: true });
-                }}
-                onClick={(event) => {
-                  console.log('idaigeljut', this.state.isDropDownOpen)
-                  event.stopPropagation();
-                  this.setState({ isDropDownOpen: !this.state.isDropDownOpen });
-                }}
-              >
-                
-                <p>Portfolio</p>
-                <DropDown
-                  isOpen={this.state.isDropDownOpen}
-                  onMouseOut={() => {
-                    this.setState({ isDropDownOpen: false });
+              <ul>
+                <PortfolioMenuitem
+                  onMouseOver={() => {
+                    this.setState({ isDropDownOpen: true });
+                  }}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    this.setState({
+                      isDropDownOpen: !this.state.isDropDownOpen,
+                    });
                   }}
                 >
-               
                   <Menuitem>
-                    <InnerStyledNavLink to="/solo-travelers">
-                      Solo travelers
-                    </InnerStyledNavLink>
+                    <StyledNavLink to="solo-travelers">Portfolio</StyledNavLink>
                   </Menuitem>
-                  <Menuitem>
-                    <InnerStyledNavLink to="/couples">
-                      Love shoots ♡
-                    </InnerStyledNavLink>
-                  </Menuitem>
-                  <Menuitem>
-                    <InnerStyledNavLink to="/families">
-                      Family & celebration
-                    </InnerStyledNavLink>
-                  </Menuitem>
-                  <Menuitem>
-                    <InnerStyledNavLink to="/wedding">
-                      Wedding
-                    </InnerStyledNavLink>
-                  </Menuitem>
-                  <Menuitem>
-                    <InnerStyledNavLink to="/boudoir">
-                      Boudoir
-                    </InnerStyledNavLink>
-                  </Menuitem>
-                  <Menuitem>
-                    <InnerStyledNavLink to="/how-does-it-work">
-                      How does it work?
-                    </InnerStyledNavLink>
-                  </Menuitem>
-                </DropDown>
-              </PortfolioMenuitem>
+                  <DropDown
+                    isOpen={this.state.isDropDownOpen}
+                    onMouseOut={() => {
+                      this.setState({ isDropDownOpen: false });
+                    }}
+                  >
+                    <Menuitem>
+                      <InnerStyledNavLink to="/solo-travelers">
+                        Solo travelers
+                      </InnerStyledNavLink>
+                    </Menuitem>
+                    <Menuitem>
+                      <InnerStyledNavLink to="/couples">
+                        Love shoots ♡
+                      </InnerStyledNavLink>
+                    </Menuitem>
+                    <Menuitem>
+                      <InnerStyledNavLink to="/family">
+                        Family & celebration
+                      </InnerStyledNavLink>
+                    </Menuitem>
+                    <Menuitem>
+                      <InnerStyledNavLink to="/wedding">
+                        Wedding
+                      </InnerStyledNavLink>
+                    </Menuitem>
+                    <Menuitem>
+                      <InnerStyledNavLink to="/boudoir">
+                        Boudoir
+                      </InnerStyledNavLink>
+                    </Menuitem>
+                    <Menuitem>
+                      <InnerStyledNavLink to="/how-does-it-work">
+                        How does it work?
+                      </InnerStyledNavLink>
+                    </Menuitem>
+                  </DropDown>
+                </PortfolioMenuitem>
+              </ul>
 
               <Menuitem>
                 <StyledNavLink to="/investment">Investment</StyledNavLink>

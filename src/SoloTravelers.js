@@ -9,8 +9,9 @@ import { NavLink } from 'react-router-dom'
 import { Button } from './Home'
 
 const Container = styled.div`
-  width: 720px;
+
   margin: 0 auto;
+  width: 100%;
   padding: 150px 0px 100px 0px;
   color: #585656;
 
@@ -35,10 +36,10 @@ const Container = styled.div`
   }
 `;
 
-class About extends React.Component {
+class SoloTravelers extends React.Component {
   render() {
     return (
-      <div className="PresetShop">
+      <div className="SoloTravelers">
         <Navbar style={{ background: "black" }} />
         <Helmet>
           <title>About Annie</title>
@@ -112,4 +113,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default SoloTravelers;

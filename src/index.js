@@ -12,10 +12,11 @@ import Blog from "./Blog";
 import Contact from "./Contact";
 import FullPost from "./FullPost";
 import Boudoir from "./Boudoir";
-import Weddings from "./Weddings";
+import Wedding from "./Wedding";
 import Rules from "./Rules";
 import Family from "./Family";
 import SoloTravelers from "./SoloTravelers";
+import Couples from './Couples'
 
 
 ReactDOM.render(
@@ -31,9 +32,10 @@ ReactDOM.render(
         <Route path="/blog/posts/:slug" exact component={FullPost} />
         <Route path="/family" exact component={Family} />
         <Route path="/solo-travelers" exact component={SoloTravelers} />
+        <Route path="/couples" exact component={Couples} />
         <Route path="/boudoir" exact component={Boudoir} />
         <Route path="/how-does-it-work" exact component={Rules} />
-        <Route path="/weddings" exact component={Weddings} />
+        <Route path="/wedding" exact component={Wedding} />
         <Route path="/contact" exact component={Contact} />
       </Switch>
 
