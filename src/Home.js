@@ -13,14 +13,13 @@ const TextBox = styled.div`
 `;
 
 const TextTitle = styled.div`
-  margin: 0 auto;
   font-family: ${fonts.kacskaringos};
   font-size: 2.5em;
   padding-bottom: 30px;
   color: ${colors.cimek};
 `;
 
-const Text = styled.div`
+export const Text = styled.div`
   margin: 0 auto;
   font-family: ${fonts.mindenmas};
   max-width: 900px;
@@ -28,31 +27,34 @@ const Text = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  width: 900px;
+  width: 60%;
   margin: 0 auto;
 `;
 export const Image = styled.img`
-  max-width: 900px;
+  max-width: 100%;
 `;
 
 const CardsContainer = styled.div`
   display: flex;
-  flex-flow: column nowrap;
-  width: 60%;
-  margin: 0 auto;
-  padding: 100px 0px;
-  justify-content: flex-start;
+  flex-flow: column;
+  width: 70%;
+  margin: 50px auto;
+  padding: 20px 20px;
+  justify-content: center;
 
-  @media ${device.desktop}{
+  @media ${device.desktop} {
     flex-flow: row nowrap;
-
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 0px;
+    justify-content: flex-start;
   }
 `;
 
-
 const CardTitle = styled.div`
   text-align: center;
-  text-align: center;
+  padding: 50px 0px 0px 0px;
 
   h2 {
     font-family: ${fonts.cimek};
@@ -80,7 +82,7 @@ const CardInnerContainer = styled.div`
   align-items: center;
   line-height: 2;
   padding: 0px 50px;
-  width: 50%;
+  width: 100%;
   color: rgb(88, 86, 86);
 `;
 
@@ -96,14 +98,16 @@ export const Button = styled.button`
   padding: 0;
   margin: 0 auto;
   width: 190px;
-  margin-top: 35px;
+  margin: 35px 0px;
   cursor: pointer;
 
   &:hover {
-    background: rgba(192, 192, 192, 0.3);
+    background: rgba(0, 0, 0, 0.9);
     opacity: 0.9;
     transition: 0.6s;
-  } 
+    color: ${colors.tortfeher}
+
+  }
 `;
 
 const Testimonials = styled.div`
@@ -116,9 +120,8 @@ const Testimonials = styled.div`
   font-family: ${fonts.mindenmas};
   color: ${colors.cimek};
 
-  @media ${device. desktop} {
+  @media ${device.desktop} {
     width: 60%;
-
   }
 
   h2 {
@@ -134,7 +137,6 @@ const Testimonials = styled.div`
 const Testimonial = styled.div`
   color: ${colors.cimek};
   padding: 20px;
-
 `;
 
 const Container = styled.div`
@@ -145,7 +147,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  
 `;
 
 const Textcontainer = styled.div`
@@ -217,15 +218,23 @@ const TextboxButton = styled.button`
   }
 `;
 
+const CardsContainerReversed = styled(CardsContainer)`
+  @media ${device.desktop} {
+    flex-flow: row-reverse;
+  }
+`;
+
 class Home extends React.Component {
   render() {
     return (
       <div className="Home">
-         <Helmet>
-        <title>Home</title>
-        <meta name="description"  content="Annie Kostolany professional photographer based in the Netherlands"/>
+        <Helmet>
+          <title>Home</title>
+          <meta
+            name="description"
+            content="Annie Kostolany professional photographer based in the Netherlands"
+          />
         </Helmet>
-
         <Navbar style={{ background: "transparent" }} />
         <Container>
           <picture>
@@ -257,9 +266,8 @@ class Home extends React.Component {
               </Motto>
             </MottoContainer>
             <NavLink to={"/solo-travelers"}>
-            <TextboxButton>See portfolio</TextboxButton>
+              <TextboxButton>See portfolio</TextboxButton>
             </NavLink>
-            
           </Textcontainer>
         </Container>
         <TextBox>
@@ -277,26 +285,6 @@ class Home extends React.Component {
         <ImageContainer>
           <picture>
             <source
-              srcset="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/home1.webp"
-              type="image/webp"
-              loading="lazy"
-            />
-            <source
-              srcset="https://ucarecdn.com/e79670e6-26d9-4dc4-8580-6342b4611e13/home1.jpg"
-              type="image/jpeg"
-              loading="lazy"
-            />
-
-            <Image
-              alt="Beach wedding couple"
-              src="https://ucarecdn.com/e79670e6-26d9-4dc4-8580-6342b4611e13/home1.jpg"
-              loading="lazy"
-            ></Image>
-          </picture>
-        </ImageContainer>
-        <ImageContainer>
-          <picture>
-            <source
               srcset="https://ucarecdn.com/e13a2d81-9a15-4812-9c62-9f4e72776172/home2.webp"
               type="image/webp"
               loading="lazy"
@@ -310,6 +298,26 @@ class Home extends React.Component {
             <Image
               alt="Amsterdam model bikes and tulips"
               src="https://ucarecdn.com/b286f314-d52c-4b25-8eb4-c943aa97b404/home2.jpg"
+              loading="lazy"
+            ></Image>
+          </picture>
+        </ImageContainer>
+        <ImageContainer>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/home1.webp"
+              type="image/webp"
+              loading="lazy"
+            />
+            <source
+              srcset="https://ucarecdn.com/e79670e6-26d9-4dc4-8580-6342b4611e13/home1.jpg"
+              type="image/jpeg"
+              loading="lazy"
+            />
+
+            <Image
+              alt="Beach wedding couple"
+              src="https://ucarecdn.com/e79670e6-26d9-4dc4-8580-6342b4611e13/home1.jpg"
               loading="lazy"
             ></Image>
           </picture>
@@ -348,7 +356,6 @@ class Home extends React.Component {
             />
 
             <Image
-              style={{ width: "500px" }}
               alt="Mom with child"
               src="https://ucarecdn.com/36afc3be-e95c-408e-bcfd-7d56295bb21d/home4.jpg"
               loading="lazy"
@@ -369,7 +376,7 @@ class Home extends React.Component {
             </NavLink>
           </CardInnerContainer>
         </CardsContainer>
-        <CardsContainer style={{ flexFlow: "row-reverse" }}>
+        <CardsContainerReversed>
           <picture>
             <source
               srcset="https://ucarecdn.com/3d344f8f-377c-4fa5-a8b3-9e3d93a19939/home5.webp"
@@ -383,7 +390,6 @@ class Home extends React.Component {
             />
 
             <Image
-              style={{ width: "500px" }}
               alt="Girl with windmill and flowers"
               src="https://ucarecdn.com/5ced9396-cfdd-47d0-b848-093daa40a9ba/home5.jpg"
               loading="lazy"
@@ -404,7 +410,7 @@ class Home extends React.Component {
               <Button> Details</Button>
             </NavLink>
           </CardInnerContainer>
-        </CardsContainer>
+        </CardsContainerReversed>
         <CardsContainer style={{ borderTop: "1px solid grey" }}>
           <picture>
             <source
@@ -437,11 +443,10 @@ class Home extends React.Component {
           </CardInnerContainer>
         </CardsContainer>
         <Testimonials>
-          <h2>Testimonials <br / >
-
+          <h2>
+            Testimonials <br />
           </h2>
           <Testimonial>
-          
             A friend and I scheduled a joint boudoir shoot with Annie during my
             visit to Amsterdam, and in addition to having SO MUCH fun that
             afternoon, the photos ended up being more breath-taking than I ever
@@ -453,7 +458,6 @@ class Home extends React.Component {
           </Testimonial>
 
           <Testimonial>
-          
             I worked with Annie two times and both are amazing experiences. Most
             of beautiful pictures on my instagram is her worked. I dont have
             sense/idea of how to make good pictures, but i want to have one for
@@ -464,14 +468,12 @@ class Home extends React.Component {
           </Testimonial>
 
           <Testimonial>
-         
             Annie is such a great person to work with. She really listens to
             what you want, gives tips and makes you feel very relaxed. Thinking
             'bout doing another session with her already!! — Agatha C.
           </Testimonial>
 
           <Testimonial>
-          
             Yesterday we had an engagement photoshoot with Annie. Annie
             recommended us a great place, Zaanse Schans. We have never been in a
             photoshoot before, but Annie made the whole session really easy and
@@ -481,12 +483,10 @@ class Home extends React.Component {
           </Testimonial>
 
           <Testimonial>
-        
             The way Annie works is authentic and simple yet so effective. The
             whole day was a vibe. When I first saw my photos I was GOBSMACKED!!
             I enjoyed every minute of the shoot and would do it again 10x over.
             Thank you Annie for a beautiful experience ❤️ — Amanda C.
-          
           </Testimonial>
         </Testimonials>
         );

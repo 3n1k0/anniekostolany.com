@@ -112,7 +112,7 @@ export const Menuitems = styled.ul`
   right: 0px;
   height: 100%;
   width: 300px;
-  padding: 70px 20px;
+  padding: 90px 20px;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   background: rgb(88, 86, 86);
   background: linear-gradient(
@@ -142,7 +142,7 @@ export const Menuitems = styled.ul`
 
 export const Menuitem = styled.li`
   display: flex;
-  padding: 10px 30px;
+  padding: 5px 30px;
   font-weight: 600;
   cursor: pointer;
 
@@ -159,7 +159,7 @@ export const Menuitem = styled.li`
   }
 `;
 
-const PortfolioMenuitem = styled(Menuitem)`
+export const PortfolioMenuitem = styled(Menuitem)`
   flex-flow: column;
 `;
 
@@ -227,12 +227,12 @@ const DropDown = styled.div`
   flex-flow: column;
 
   @media ${device.desktop} {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.8);
     width: 220px;
     height: 270px;
     position: absolute;
     z-index: -2;
-    top: 68px;
+    top: 50px;
     padding: 24px 15px;
     flex-flow: column;
   }
@@ -312,7 +312,7 @@ class Navbar extends React.Component {
                   }}
                 >
                   <Menuitem>
-                    <StyledNavLink to="solo-travelers">Portfolio</StyledNavLink>
+                Portfolio
                   </Menuitem>
                   <DropDown
                     isOpen={this.state.isDropDownOpen}
