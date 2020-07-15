@@ -10,6 +10,8 @@ const TextBox = styled.div`
   margin: 50px auto;
   display: flex;
   flex-flow: column nowrap;
+  text-align: center;
+
 `;
 
 const TextTitle = styled.div`
@@ -17,18 +19,29 @@ const TextTitle = styled.div`
   font-size: 2.5em;
   padding-bottom: 30px;
   color: ${colors.cimek};
+
+
 `;
 
 export const Text = styled.div`
   margin: 0 auto;
   font-family: ${fonts.mindenmas};
-  max-width: 900px;
+  max-width: 90%;
   color: ${colors.cimek};
+
+  @media ${device.desktop}{
+    max-width: 60%
+  }
 `;
 
 export const ImageContainer = styled.div`
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
+
+  @media ${device. desktop}{
+    width: 60%;
+  }
+
 `;
 export const Image = styled.img`
   max-width: 100%;
@@ -56,6 +69,10 @@ const CardTitle = styled.div`
   text-align: center;
   padding: 50px 0px 0px 0px;
 
+  @media ${device.desktop}{
+    padding: 0px;
+  }
+
   h2 {
     font-family: ${fonts.cimek};
     font-size: 15px;
@@ -65,7 +82,6 @@ const CardTitle = styled.div`
 
   p {
     font-family: ${fonts.mindenmas};
-    font-size: 18px;
     opacity: 1;
   }
 `;
@@ -81,10 +97,12 @@ const CardInnerContainer = styled.div`
   justify-content: center;
   align-items: center;
   line-height: 2;
-  padding: 0px 50px;
   width: 100%;
   color: rgb(88, 86, 86);
-`;
+
+  @media ${device.desktop}{
+    padding: 0px 50px;
+  }`;
 
 export const Button = styled.button`
   border: 2px solid black;
@@ -98,7 +116,7 @@ export const Button = styled.button`
   padding: 0;
   margin: 0 auto;
   width: 190px;
-  margin: 35px 0px;
+  margin: 35px;
   cursor: pointer;
 
   &:hover {

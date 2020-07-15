@@ -19,9 +19,8 @@ const Container = styled.div`
     letter-spacing: 0px;
     text-transform: none;
     line-height: 1.2em;
-    padding: 40px 0px;
+    padding-bottom: 30px;
     font-style: italic;
-    color: rosybrown;
     text-align: center;
   }
 
@@ -54,7 +53,8 @@ class About extends React.Component {
           />
         </Helmet>
         <Container>
-          <ImageContainer>
+        <h2>hey there!</h2>
+          <ImageContainer style={{paddingBottom:"40px"}}>
             <picture>
               <source
                 srcset="https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/anniekostolanyaboutmepage1webp.webp"
@@ -76,7 +76,7 @@ class About extends React.Component {
           </ImageContainer>
 
           <Text>
-            <h2>hey there</h2>
+            
             <p>
               My name is Annie. I’m a Hungarian wanderlust, who settled in
               Amsterdam by way of Budapest, Trier and Los Angeles. <br />

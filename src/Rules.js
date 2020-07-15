@@ -7,30 +7,39 @@ import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import { Button, Image, ImageContainer } from "./Home";
 
-
 const Video = styled.iframe`
-border: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`;
 
-`
-
-const VideoBox = styled.div `
-    width: 100%;
-    height: 100%;
-    position: relative;
-`
+const VideoBox = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  margin: 55px 0px 100px 0px;
+`;
 const Line = styled.hr`
-width: 100%;
-border-top: 1px yellow;
-margin: 20px 0px;
-`
+  width: 100%;
+  border-top: 1px yellow;
+  margin: 20px 0px;
+`;
 
 const BookingSteps = styled.div`
-padding: 40px 0px;
-`
+  padding-top: 30px;
+  width: 90%;
+
+  @media ${device.desktop}{
+    width: 70%;
+  }`;
 
 const Container = styled.div`
   margin: 0 auto;
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-items: center;
@@ -38,36 +47,37 @@ const Container = styled.div`
   padding: 150px 0px 100px 0px;
   color: #585656;
 
+  @media ${device.desktop}{
+    width: 90%;
+  };
+
   h2 {
     font-family: ${fonts.kacskaringos};
     color: ${colors.mindenmas};
     font-size: 30px;
     letter-spacing: 1px;
     text-transform: none;
+    font-weight: 900;
 
     font-style: italic;
     color: ${colors.mindenmas};
     padding-right: 50px;
     width: 200px;
   }
-
-  p {
-    font-family: ${fonts.mindenmas};
-    font-size: 18px;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.005em;
-  }
 `;
 
 const Text = styled.div`
-  width: 70%;
+  width: 90%;
   font-family: ${fonts.mindenmas};
-  font-size: 18px;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.005em;
-`
+
+  @media ${device.dekstop}{
+    width: 70%;
+    font-size: 18px;
+  }
+`;
 const Step = styled.div`
   display: flex;
   flex-flow: row nowrap;
@@ -91,8 +101,7 @@ class Rules extends React.Component {
         </Helmet>
 
         <Container>
-
-          <p>
+          <Text>
             Since first picking up a camera, I have captured so many of life’s
             most important moments via couple portraits to engagements,
             weddings, maternity shoots, children, and many more. <br />
@@ -116,56 +125,56 @@ class Rules extends React.Component {
             free to reach out to <i>mail@anniekostolany.com</i> or by filling
             out the
             <NavLink to="/contact"> contact form</NavLink>.
-          </p>
+          </Text>
 
-      <BookingSteps>
-          <Step>
-            <h2>Step 1</h2>
-            <p>
-              Go to
-              <NavLink to="/investment"> Investments</NavLink> and pick a
-              package you like.
-            </p>
-          </Step>
-          <Line/>
+          <BookingSteps>
+            <Step>
+              <h2>Step 1</h2>
+              <Text>
+                Go to
+                <NavLink to="/investment"> Investments</NavLink> and pick a
+                package you like.
+              </Text>
+            </Step>
+            <Line />
 
-          <Step>
-            <h2>Step 2</h2>
-            <Text>Send me a message to check my availability.</Text>
-          </Step>
-          <Line/>
+            <Step>
+              <h2>Step 2</h2>
+              <Text>Send me a message to check my availability.</Text>
+            </Step>
+            <Line />
 
-          <Step>
-            <h2>Step 3</h2>
-            <Text>
-              I will send you an email to confirm the date for your shoot and
-              you can simply buy your package through the Investments tab. You
-              will also get a contract and a Dutch invoice at the time of your
-              booking.
-              <br /> If you prefer another payment method or would like to
-              discuss a payment plan, just let me know and I will do my best to
-              find the right solution for you.
-            </Text>
-          </Step>
-          <Line/>
+            <Step>
+              <h2>Step 3</h2>
+              <Text>
+                I will send you an email to confirm the date for your shoot and
+                you can simply buy your package through the Investments tab. You
+                will also get a contract and a Dutch invoice at the time of your
+                booking.
+                <br /> If you prefer another payment method or would like to
+                discuss a payment plan, just let me know and I will do my best
+                to find the right solution for you.
+              </Text>
+            </Step>
+            <Line />
 
+            <Step>
+              <h2>Step 4</h2>
+              <Text>
+                We will discuss your ideas through a Zoom/Skype call, and go
+                through your mood board together to talk about your
+                expectations.
+              </Text>
+            </Step>
+            <Line />
 
-          <Step>
-            <h2>Step 4</h2>
-            <Text>
-              We will discuss your ideas through a Zoom/Skype call, and go
-              through your mood board together to talk about your expectations.
-            </Text>
-          </Step>
-          <Line/>
-
-          <Step>
-            <h2>Step 5</h2>
-            <Text>
-              Let’s shoot! You can expect your digital photos in a couple of
-              weeks, delivered beautifully in a private online gallery.
-            </Text>
-          </Step>
+            <Step>
+              <h2>Step 5</h2>
+              <Text>
+                Let’s shoot! You can expect your digital photos in a couple of
+                weeks, delivered beautifully in a private online gallery.
+              </Text>
+            </Step>
           </BookingSteps>
 
           <NavLink to={"/contact"}>
@@ -173,14 +182,14 @@ class Rules extends React.Component {
           </NavLink>
 
           <VideoBox>
-            {/* <p>This is how I work together with all my clients. After discussing everything I will use my artistic vision to create everlasting memories for you. </p> */}
+  
             <Video
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/Q9DR0DHwmE0?controls=0"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          ></Video>
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/Q9DR0DHwmE0?controls=0"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            ></Video>
           </VideoBox>
 
           <ImageContainer>
