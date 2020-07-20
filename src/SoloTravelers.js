@@ -1,19 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { device } from "./mediaquery";
-import styled, { createGlobalStyle } from "styled-components/macro";
+import styled from "styled-components/macro";
 import { fonts } from "./config";
-import { StyledImg } from "./Blog";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import {
-  Button,
   Image,
   ImageContainer,
   CardsContainer,
   CardInnerContainer,
   CardTitle,
 } from "./Home";
+import { Button } from "./Ui";
 
 const Sharedbox = styled.div`
   width: 90%;

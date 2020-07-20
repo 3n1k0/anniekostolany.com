@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { device } from "./mediaquery";
-import styled, { createGlobalStyle } from "styled-components/macro";
+import React from "react";
+import styled from "styled-components/macro";
 import { fonts } from "./config";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
-import { Button, Image, ImageContainer, Text } from "./Home";
-import { VideoBox, Video} from "./Rules"
+import { Image, ImageContainer, Text } from "./Home";
+import { Button } from "./Ui";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -38,10 +36,6 @@ const Container = styled.div`
   }
 `;
 
-const ContactButton = styled(Button)`
-  color: white;
-  margin: 30px 30px 60px 30px;
-`;
 class About extends React.Component {
   render() {
     return (
@@ -132,13 +126,8 @@ class About extends React.Component {
               getting to know you too.
             </p>
           </Text>
-          <ContactButton>
-            <NavLink to={"/contact"}>Contact Annie</NavLink>
-          </ContactButton>
-
+          <Button to={"/contact"}>Contact Annie</Button>
         </Container>
-
-
       </div>
     );
   }

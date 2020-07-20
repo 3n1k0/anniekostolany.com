@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
-import styled, { createGlobalStyle, css } from "styled-components/macro";
-import { Helmet } from 'react-helmet'
-
+import styled from "styled-components/macro";
+import { Helmet } from "react-helmet";
 
 const Container = styled.div`
   height: 100vh;

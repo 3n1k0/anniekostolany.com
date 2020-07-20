@@ -1,19 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { device } from "./mediaquery";
-import styled, { createGlobalStyle } from "styled-components/macro";
+import styled from "styled-components/macro";
 import { fonts } from "./config";
-import { StyledImg } from "./Blog";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
 import {
-  Button,
   Image,
   ImageContainer,
   CardsContainer,
   CardInnerContainer,
   CardTitle,
 } from "./Home";
+import { Button } from "./Ui";
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -50,11 +48,19 @@ const Container = styled.div`
   }
 `;
 
-const Quote = styled(CardTitle)`
+export const Quote = styled(CardTitle)`
   color: grey;
   text-align: center;
   font-family: ${fonts.kacskaringos};
-  font-size: 1em;
+  font-size: 1.3em;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+  @media ${device.desktop} {
+    padding: 50px;
+    font-size: 1.5em;
+  }
 `;
 
 class Couples extends React.Component {
@@ -63,37 +69,16 @@ class Couples extends React.Component {
       <div className="Couples">
         <Navbar style={{ background: "black" }} />
         <Helmet>
-          <title>About Annie</title>
+          <title>Couple photographer in Amsterdam</title>
           <meta
             name="description"
-            content="About Annie - Amsterdam-based professional photographer"
+            content="Couple photography - Amsterdam-based professional photographer"
           />
         </Helmet>
         <Container>
           <h3>
             I bet you are adorable together, but never get 'real photos' taken.
           </h3>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
 
           <ImageContainer>
             <picture>
@@ -111,6 +96,27 @@ class Couples extends React.Component {
               <Image
                 alt="Couple with windmills"
                 src="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple kissing"
+                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -223,17 +229,14 @@ class Couples extends React.Component {
             </picture>
 
             <CardInnerContainer>
-              <Quote>
-                You wanna know how you can tell if you’re meant to be with
-                someone? It’s simple. Just sit and have a conversation. Some
-                people when you talk to them, it’s like trying to listen to
-                classical music on a radio with no antenna. You can push that
-                dial back and forth all you want, but you only get static. But
-                when you’re meant to be with someone, and they truly are the
-                one, you just sit, start talking and a Beethoven sonata will
-                begin to play.
-                <br />— — The Perfect Date (2019)
-              </Quote>
+              You wanna know how you can tell if you’re meant to be with
+              someone? It’s simple. Just sit and have a conversation. Some
+              people when you talk to them, it’s like trying to listen to
+              classical music on a radio with no antenna. You can push that dial
+              back and forth all you want, but you only get static. But when
+              you’re meant to be with someone, and they truly are the one, you
+              just sit, start talking and a Beethoven sonata will begin to play.
+              <br /> — The Perfect Date (2019)
             </CardInnerContainer>
           </CardsContainer>
 
@@ -405,9 +408,7 @@ class Couples extends React.Component {
             </picture>
           </ImageContainer>
 
-          <NavLink to={"/contact"}>
-            <Button> Contact Annie </Button>
-          </NavLink>
+          <Button to={"/contact"}> Contact Annie </Button>
         </Container>
       </div>
     );

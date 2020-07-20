@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
-import styled, { createGlobalStyle, css } from "styled-components/macro";
+import styled from "styled-components/macro";
 import posts from "./posts";
 import { PostTitle } from "./Blog";
 import { Helmet } from "react-helmet";
@@ -51,12 +51,8 @@ class FullPost extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>{post.title}
-          </title>
-          <meta
-            name="description"
-            content={post.excerpt}
-          />
+          <title>{post.title}</title>
+          <meta name="description" content={post.excerpt} />
         </Helmet>
         <Navbar style={{ background: "black", marginBottom: "20px" }} />
 

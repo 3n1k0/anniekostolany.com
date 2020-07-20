@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import styled, { createGlobalStyle } from "styled-components/macro";
+import React from "react";
+import styled from "styled-components/macro";
 import { fonts, colors } from "./config";
 
 const Container = styled.div`
@@ -47,12 +47,29 @@ class Footer extends React.Component {
       <Container>
         <Icontainer>
           <Icon>
-            <a target="_blank" href="https://instagram.com/anniekostolany"  rel="noopener">
-              <i style={{ color: "white" }} class="fab fa-instagram" label="Instagram profile"></i></a>
+            <a
+              target="_blank"
+              href="https://instagram.com/anniekostolany"
+              rel="noopener"
+            >
+              <i
+                style={{ color: "white" }}
+                class="fab fa-instagram"
+                label="Instagram profile"
+              ></i>
+            </a>
           </Icon>
           <Icon>
-            <a target="_blank" href="https://facebook.com/anniekostolany" rel="noopener">
-              <i style={{ color: "white" }} class="fab fa-facebook-f" label="Facebook profile"></i>
+            <a
+              target="_blank"
+              href="https://facebook.com/anniekostolany"
+              rel="noopener"
+            >
+              <i
+                style={{ color: "white" }}
+                class="fab fa-facebook-f"
+                label="Facebook profile"
+              ></i>
             </a>
           </Icon>
           <Icon>
@@ -62,10 +79,10 @@ class Footer extends React.Component {
           </Icon>
         </Icontainer>
         <Numbers>
-            <ul>
-          <li>VAT No. NL002489576B16</li>
-          <li>KvK number: 69847843</li>
-          <li> PayPal: mail@anniekostolany.com</li>
+          <ul>
+            <li>VAT No. NL002489576B16</li>
+            <li>KvK number: 69847843</li>
+            <li> PayPal: mail@anniekostolany.com</li>
           </ul>
         </Numbers>
       </Container>

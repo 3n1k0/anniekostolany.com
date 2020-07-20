@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { device } from "./mediaquery";
-import styled, { createGlobalStyle } from "styled-components/macro";
+import styled from "styled-components/macro";
 import { fonts, colors } from "./config";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
-import { Button, Image, ImageContainer } from "./Home";
-
+import { Button } from "./Ui";
 export const Video = styled.iframe`
   border: none;
   position: absolute;
@@ -33,9 +32,10 @@ const BookingSteps = styled.div`
   padding-top: 30px;
   width: 90%;
 
-  @media ${device.desktop}{
+  @media ${device.desktop} {
     width: 70%;
-  }`;
+  }
+`;
 
 const Container = styled.div`
   margin: 0 auto;
@@ -47,9 +47,9 @@ const Container = styled.div`
   padding: 150px 0px 100px 0px;
   color: #585656;
 
-  @media ${device.desktop}{
+  @media ${device.desktop} {
     width: 90%;
-  };
+  }
 
   h2 {
     font-family: ${fonts.kacskaringos};
@@ -73,7 +73,7 @@ const Text = styled.div`
   line-height: 1.5;
   letter-spacing: 0.005em;
 
-  @media ${device.dekstop}{
+  @media ${device.dekstop} {
     width: 70%;
     font-size: 18px;
   }
@@ -183,7 +183,6 @@ class Rules extends React.Component {
           </NavLink>
 
           <VideoBox>
-  
             <Video
               width="100%"
               height="100%"
@@ -192,8 +191,6 @@ class Rules extends React.Component {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             ></Video>
           </VideoBox>
-
-        
         </Container>
       </div>
     );

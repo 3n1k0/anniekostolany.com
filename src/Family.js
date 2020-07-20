@@ -1,19 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { device } from "./mediaquery";
-import styled, { createGlobalStyle } from "styled-components/macro";
+import styled from "styled-components/macro";
 import { fonts } from "./config";
-import { StyledImg } from "./Blog";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
 import {
-  Button,
   Image,
   ImageContainer,
   CardsContainer,
-  CardInnerContainer,
-  CardTitle,
+  CardInnerContainer
 } from "./Home";
+import { Quote } from "./Couples";
+import { Button } from "./Ui";
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -32,15 +30,6 @@ const Container = styled.div`
   color: #585656;
   text-align: center;
 
-  h3 {
-    font-family: ${fonts.kacskaringos};
-    font-size: 2em;
-    letter-spacing: 0px;
-    text-transform: none;
-    line-height: 1.2em;
-    padding-bottom: 30px;
-  }
-
   p {
     font-family: ${fonts.mindenmas};
     font-size: 1em;
@@ -50,30 +39,54 @@ const Container = styled.div`
   }
 `;
 
-const Quote = styled(CardTitle)`
-  color: grey;
-  text-align: center;
-  font-family: ${fonts.kacskaringos};
-  font-size: 1em;
-`;
-
 class Family extends React.Component {
   render() {
     return (
       <div className="Family">
         <Navbar style={{ background: "black" }} />
         <Helmet>
-          <title>About Annie</title>
+          <title>Family & event photography in Amsterdam</title>
           <meta
             name="description"
-            content="About Annie - Amsterdam-based professional photographer"
+            content="Family photography - Amsterdam-based professional photographer"
           />
         </Helmet>
         <Container>
-          <h3>
-            I bet you are adorable together, but never get 'real photos' taken.
-          </h3>
+          <ImageContainer>
+            <p>
+              Whether it's the arrival of a new family member, an engagement, a
+              bachelorette party or a family get-together, it's important to
+              have these memories captured.
+              <br />
+            </p>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/cedb59a9-ff26-464e-a421-62a31cbe5a36/coupleshoot10webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
 
+              <Image
+                alt="Couple with windmills"
+                src="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+          <Quote>
+            Annie is wonderful to work with! We’re not camera-natural but Annie
+            really made us at ease. The photos turned out so well even at a time
+            when natural light was fading away. There was nothing artificial or
+            posed about the photos, they captured our moments. Planning around
+            the time of the shoot and our communication were also easy. We
+            received our photos earlier than expected. We would recommend this
+            experience to everyone! Once again – thank you Annie!! — Karen
+          </Quote>
           <ImageContainer>
             <picture>
               <source
@@ -94,27 +107,11 @@ class Family extends React.Component {
               ></Image>
             </picture>
           </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/cedb59a9-ff26-464e-a421-62a31cbe5a36/coupleshoot10webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple with windmills"
-                src="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <Quote>
+            Annie is such a great person to work with. She really listens to
+            what you want, gives tips and makes you feel very relaxed. Thinking
+            ‘bout doing another session with her already!! 😀 — Agatha C.
+          </Quote>
 
           <ImageContainer>
             <picture>
@@ -405,9 +402,7 @@ class Family extends React.Component {
             </picture>
           </ImageContainer>
 
-          <NavLink to={"/contact"}>
-            <Button> Contact Annie </Button>
-          </NavLink>
+          <Button to={"/contact"}> Contact Annie </Button>
         </Container>
       </div>
     );

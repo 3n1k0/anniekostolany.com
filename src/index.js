@@ -16,8 +16,7 @@ import Wedding from "./Wedding";
 import Rules from "./Rules";
 import Family from "./Family";
 import SoloTravelers from "./SoloTravelers";
-import Couples from './Couples'
-
+import Couples from "./Couples";
 
 ReactDOM.render(
   <React.StrictMode>

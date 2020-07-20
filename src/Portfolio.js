@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
-import styled, { createGlobalStyle, css } from "styled-components/macro";
+import styled from "styled-components/macro";
 
 const Container = styled.div`
   width: 100%;

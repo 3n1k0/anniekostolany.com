@@ -1,27 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import { device } from "./mediaquery";
-import styled, { createGlobalStyle } from "styled-components/macro";
+import styled from "styled-components/macro";
 import { fonts, colors } from "./config";
 import Navbar from "./Navbar";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { Button } from "./Ui";
 
 const TextBox = styled.div`
   margin: 50px auto;
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
-
 `;
-
 
 const TextTitle = styled.div`
   font-family: ${fonts.kacskaringos};
   font-size: 2.5em;
   padding-bottom: 30px;
   color: ${colors.cimek};
-
-
 `;
 
 export const Text = styled.div`
@@ -30,8 +26,8 @@ export const Text = styled.div`
   max-width: 90%;
   color: ${colors.cimek};
 
-  @media ${device.desktop}{
-    max-width: 60%
+  @media ${device.desktop} {
+    max-width: 60%;
   }
 `;
 
@@ -39,10 +35,9 @@ export const ImageContainer = styled.div`
   width: 90%;
   margin: 0 auto;
 
-  @media ${device. desktop}{
+  @media ${device.desktop} {
     width: 60%;
   }
-
 `;
 export const Image = styled.img`
   max-width: 100%;
@@ -71,7 +66,7 @@ export const CardTitle = styled.div`
   text-align: center;
   padding: 50px 0px 0px 0px;
 
-  @media ${device.desktop}{
+  @media ${device.desktop} {
     padding: 0px;
   }
 
@@ -102,42 +97,9 @@ export const CardInnerContainer = styled.div`
   width: 100%;
   color: rgb(88, 86, 86);
 
-  @media ${device.desktop}{
+  @media ${device.desktop} {
     padding: 0px 50px;
-  }`;
-
-export const Button = styled.button`
-  border: 2px solid black;
-  background: transparent;
-  color: black;
-  height: 42px;
-  width: 101px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 1em;
-  padding: 0;
-  margin: 0 auto;
-  width: 190px;
-  margin: 35px;
-  cursor: pointer;
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.9);
-    opacity: 0.9;
-    transition: 0.6s;
-    color: ${colors.tortfeher}
-
   }
-  a:visited {
-    color: black;
-  }
-
-  a:visited:hover {
-    color:white;
-  }
-
-
-
 `;
 
 const Testimonials = styled.div`
@@ -241,6 +203,7 @@ const TextboxButton = styled.button`
   text-transform: uppercase;
   text-decoration: none;
   padding: 1em 1.75em;
+  cursor: pointer;
 
   &:hover {
     background: white;
@@ -265,7 +228,11 @@ class Home extends React.Component {
             content="Annie Kostolany professional photographer based in the Netherlands"
           />
         </Helmet>
-        <Navbar style={{ background: "transparent" }} dropDowncolor="white" />
+        <Navbar
+          style={{ background: "transparent" }}
+          dropDowncolor="rgb(248,248,255, 0.4)"
+          linkColor="black"
+        />
         <Container>
           <picture>
             <source
@@ -295,9 +262,7 @@ class Home extends React.Component {
                 <h1>BE YOUR OWN KIND OF BEAUTIFUL</h1>
               </Motto>
             </MottoContainer>
-            <NavLink to={"/solo-travelers"}>
-              <TextboxButton>See portfolio</TextboxButton>
-            </NavLink>
+            <TextboxButton to={"/solo-travelers"}>See portfolio</TextboxButton>
           </Textcontainer>
         </Container>
         <TextBox>
@@ -401,9 +366,7 @@ class Home extends React.Component {
                 documenting the most important milestones!
               </p>
             </CardTitle>
-            <NavLink to={"/couples"}>
-              <Button> More info</Button>
-            </NavLink>
+            <Button to={"/couples"}>More info</Button>
           </CardInnerContainer>
         </CardsContainer>
         <CardsContainerReversed>
@@ -436,9 +399,7 @@ class Home extends React.Component {
                 for years to come, with the perfect set of pictures.
               </p>
             </CardTitle>
-            <NavLink to={"/solo-travelers"}>
-              <Button> Details</Button>
-            </NavLink>
+            <Button to={"/couples"}>Details</Button>
           </CardInnerContainer>
         </CardsContainerReversed>
         <CardsContainer style={{ borderTop: "1px solid grey" }}>
@@ -467,9 +428,7 @@ class Home extends React.Component {
               <h2>FASHION</h2>
               <p>Fashion might change but style is eternal.</p>
             </CardTitle>
-            <NavLink to={"/fashion"}>
-              <Button> Fashion work</Button>
-            </NavLink>
+            <Button to={"/fashion"}>Fashion work</Button>
           </CardInnerContainer>
         </CardsContainer>
         <Testimonials>

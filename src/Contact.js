@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
-import styled, { createGlobalStyle, css } from "styled-components/macro";
+import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
-import { Button } from "./Home";
-import { fonts, colors } from "./config";
+import { fonts } from "./config";
+import { Button } from "./Ui";
 
 const Container = styled.div`
   min-height: 1200px;
@@ -14,7 +14,7 @@ const Container = styled.div`
     max-width: 500px;
     margin: 0 auto;
     padding: 10px 20px 30px 20px;
-    background: rgba(	255, 182, 193, 0.3);
+    background: rgba(255, 182, 193, 0.3);
     border-radius: 8px;
     position: relative;
     top: 200px;
@@ -22,7 +22,6 @@ const Container = styled.div`
     display: flex;
     flex-flow: column;
     justify-content: center;
-
   }
 
   fieldset {
@@ -89,7 +88,7 @@ class Contact extends React.Component {
           />
         </Helmet>
         <Navbar style={{ background: "black" }} />
-
+        setTimeout(function () {window.scrollTo(500, 0)},2);
         <Container>
           <form action="https://formspree.io/mknqqvoz" method="POST">
             <h1>Contact</h1>
@@ -109,7 +108,9 @@ class Contact extends React.Component {
               <label for="message">Message</label>
               <textarea name="message" required></textarea>
             </fieldset>
-            <Button style={{margin:"0 auto"}}type="submit">Send</Button>
+            <Button style={{ margin: "0 auto" }} type="submit">
+              Send
+            </Button>
           </form>
         </Container>
       </div>

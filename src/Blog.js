@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
-import styled, { createGlobalStyle, css } from "styled-components/macro";
+import styled from "styled-components/macro";
 import posts from "./posts";
 import { device } from "./mediaquery";
 import { fonts } from "./config";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
 
 const Container = styled.div`
   height: 100%;
@@ -69,10 +68,12 @@ class Blog extends React.Component {
   render() {
     return (
       <div>
-
         <Helmet>
-        <title>Blog</title>
-        <meta name="description"  content="A blog about professional photography. Stories, inspiration and photo galleries."/>
+          <title>Blog</title>
+          <meta
+            name="description"
+            content="A blog about professional photography. Stories, inspiration and photo galleries."
+          />
         </Helmet>
 
         <Navbar style={{ background: "black", marginBottom: "20px" }} />

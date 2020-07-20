@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { device } from "./mediaquery";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
 import { fonts } from "./config";
@@ -231,6 +231,7 @@ const DropDown = styled.div`
 
   @media ${device.desktop} {
     background-color: ${({ backgroundColor }) => backgroundColor};
+
     width: 220px;
     height: 240px;
     position: absolute;
@@ -259,6 +260,7 @@ class Navbar extends React.Component {
 
   static defaultProps = {
     dropDowncolor: "black",
+    linkColors: "white",
   };
 
   onBodyClick = () => {
