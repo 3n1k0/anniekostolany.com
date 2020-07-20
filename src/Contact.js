@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
 import { Helmet } from "react-helmet";
 import { Button } from "./Home";
-import { fonts } from "./config";
+import { fonts, colors } from "./config";
 
 const Container = styled.div`
   min-height: 1200px;
@@ -13,8 +13,8 @@ const Container = styled.div`
   form {
     max-width: 500px;
     margin: 0 auto;
-    padding: 10px 20px;
-    background: rgba(255,228,225, 0.3);
+    padding: 10px 20px 30px 20px;
+    background: rgba(	255, 182, 193, 0.3);
     border-radius: 8px;
     position: relative;
     top: 200px;
@@ -22,6 +22,7 @@ const Container = styled.div`
     display: flex;
     flex-flow: column;
     justify-content: center;
+
   }
 
   fieldset {
@@ -31,7 +32,8 @@ const Container = styled.div`
     border: none;
   }
 
-  input, textarea {
+  input,
+  textarea {
     background: #384047;
     border: none;
     font-size: 16px;
@@ -40,13 +42,13 @@ const Container = styled.div`
     outline: 0;
     padding: 15px;
     width: 100%;
-    background-color:rgba(214, 212, 208, 0.2);
+    background-color: rgba(214, 212, 208, 0.2);
     color: #384047;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     margin-bottom: 30px;
 
     & :focus {
-      box-shadow: 8px 8px 35px rgba(192,192,192, 0.3);
+      box-shadow: 8px 8px 35px rgba(192, 192, 192, 0.3);
     }
   }
 
@@ -64,13 +66,12 @@ const Container = styled.div`
     font-weight: 100;
     padding-bottom: 50px;
     padding-top: 26px;
-}
-  
+  }
 
   label {
     padding-bottom: 10px;
     font-family: ${fonts.cimek};
-    opacity: 0.7 ;
+    opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -90,8 +91,7 @@ class Contact extends React.Component {
         <Navbar style={{ background: "black" }} />
 
         <Container>
-          <form
-           action="https://formspree.io/mknqqvoz" method="POST">
+          <form action="https://formspree.io/mknqqvoz" method="POST">
             <h1>Contact</h1>
             <fieldset>
               <label for="name">Name </label>
@@ -103,14 +103,13 @@ class Contact extends React.Component {
 
               <br />
               <label for="subject">Subject</label>
-              <input type="text" name="subject"  />
+              <input type="text" name="subject" />
 
               <br />
               <label for="message">Message</label>
               <textarea name="message" required></textarea>
-
             </fieldset>
-            <Button type="submit">Send</Button>
+            <Button style={{margin:"0 auto"}}type="submit">Send</Button>
           </form>
         </Container>
       </div>

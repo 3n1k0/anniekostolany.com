@@ -5,34 +5,56 @@ import { fonts } from "./config";
 import { StyledImg } from "./Blog";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
-import { NavLink } from 'react-router-dom'
-import { Button } from './Home'
+import { NavLink } from "react-router-dom";
+import {
+  Button,
+  Image,
+  ImageContainer,
+  CardsContainer,
+  CardInnerContainer,
+  CardTitle,
+} from "./Home";
+
+const Sharedbox = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+
+  @media ${device.desktop} {
+    width: 60%;
+  }
+`;
 
 const Container = styled.div`
-  width: 720px;
+  width: 80%;
   margin: 0 auto;
   padding: 150px 0px 100px 0px;
   color: #585656;
+  text-align: center;
 
-  h2 {
+  h3 {
     font-family: ${fonts.kacskaringos};
-    font-size: 60px;
+    font-size: 2em;
     letter-spacing: 0px;
     text-transform: none;
     line-height: 1.2em;
     padding-bottom: 30px;
-    font-style: italic;
-    color: sienna;
   }
 
   p {
     font-family: ${fonts.mindenmas};
-    font-size: 18px;
+    font-size: 1em;
     text-align: left;
-    font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.005em;
   }
+`;
+
+const Quote = styled(CardTitle)`
+  color: grey;
+  text-align: center;
+  font-family: ${fonts.kacskaringos};
+  font-size: 1em;
 `;
 
 class Family extends React.Component {
@@ -48,65 +70,345 @@ class Family extends React.Component {
           />
         </Helmet>
         <Container>
-          <StyledImg
-            alt="Annie Kostolany"
-            src="https://ucarecdn.com/3c6be24b-afaf-41a0-afd5-b062ea61693d/anniekostolanyaboutmepage1.jpg"
-          ></StyledImg>
+          <h3>
+            I bet you are adorable together, but never get 'real photos' taken.
+          </h3>
 
-          <h2>hey there</h2>
-          <p>
-            My name is Annie. I’m a Hungarian wanderlust, who settled in
-            Amsterdam by way of Budapest, Trier and Los Angeles. <br />
-            Perhaps the most important thing I’ve learned since becoming a
-            photographer is that without that magical connection, you have
-            nothing.  If you don’t build trust and rapport between the human
-            being behind the lens and the one in front of it, you have a
-            picture, but not a photograph. With that in mind, I think it’s
-            important to tell you a little about myself. </p>
-            <br />
-            <p>
-            Before I first picked
-            up a camera, I always struggled to find the right words to express
-            myself. That might seem ironic for someone who studied Philology and
-            Hungarian Literature, but I always felt I needed to communicate in
-            some way beyond writing. <br /> Eventually this put an end to my brief
-            flirtation with journalism too, and while working sales jobs I
-            realized I would have to get out of my comfort zone if I was going
-            to find my calling. After trying my luck in a number of lines of
-            work – moving half way round the world and back in the process – it
-            was in Amsterdam that I finally found my voice. </p>
-            
-            <p><br /> Over the past three
-            years, I have captured so many of life’s most important moments,
-            everything from couples portraits to engagements, weddings,
-            maternity shoots, children, alongside pets, cityscapes and more. <br /> My
-            work has even been featured by a number of different publishers,
-            including SALYSÉ, and Vogue Italia. Before I took up photography, I
-            felt like I had so much to say, but was deprived of a manner to say
-            it. Now, using a camera as a tool to express myself, and the vision
-            of my clients, I feel a huge relief. I have found what I was looking
-            for all this time, and that makes me incredibly happy. </p>
-            
-            <p><br /> Becoming a
-            self-taught photographer can be tricky, but my eye for detail and
-            passion for the art-form gave me a hunger to master every aspect of
-            the craft quickly. I can now handle anything the photographic
-            process throws at me, connecting with my clients to deliver a
-            relationship-based end-to-end service, crafted to their needs. <br />If
-            you think that sounds like the right service for you, please feel
-            free to send me a message. 
-            <br /> We can meet for a coffee, or discuss your
-            ideas via Skype, phone or email. 
-            <br />
-            <br />Now that I’ve told you a little
-            about me, I look forward to getting to know you too.
-          </p>
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple kissing"
+                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/cedb59a9-ff26-464e-a421-62a31cbe5a36/coupleshoot10webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple with windmills"
+                src="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/76a0e245-8dc9-4f0c-ae5b-b6c0ff700a4d/coupleshoot11webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/37bab4af-f212-4e20-8cc9-9b45085a5c61/coupleshoot11.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Japanese wedding couple"
+                src="https://ucarecdn.com/37bab4af-f212-4e20-8cc9-9b45085a5c61/coupleshoot11.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <Sharedbox>
+            <ImageContainer>
+              <picture>
+                <source
+                  srcset="https://ucarecdn.com/1c7357c3-4923-45ec-94a0-71711501f7c0/box1.webp"
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  srcset="https://ucarecdn.com/405ba882-5687-4a67-af10-7c91783ca903/box1.jpg"
+                  type="image/jpeg"
+                  loading="lazy"
+                />
+
+                <Image
+                  alt="Couple kissing"
+                  src="https://ucarecdn.com/405ba882-5687-4a67-af10-7c91783ca903/box1.jpg"
+                  loading="lazy"
+                ></Image>
+              </picture>
+            </ImageContainer>
+            {/* 
+            <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/362ec4e0-1aa1-48f8-8706-528d38364ea8/couplephotos3webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/5de32435-6ccf-4df0-ab96-06c275af0a6f/couplephotos3.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple in front of cafe"
+                src="https://ucarecdn.com/5de32435-6ccf-4df0-ab96-06c275af0a6f/couplephotos3.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer> */}
+
+            <ImageContainer>
+              <picture>
+                <source
+                  srcset="https://ucarecdn.com/d4561dff-998d-4567-99fc-9b78827fd266/box2.webp"
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  srcset="https://ucarecdn.com/53ccd4ec-85fb-4d70-acd1-64788800af98/box2.jpg"
+                  type="image/jpeg"
+                  loading="lazy"
+                />
+
+                <Image
+                  alt="Couple kissing"
+                  src="https://ucarecdn.com/53ccd4ec-85fb-4d70-acd1-64788800af98/box2.jpg"
+                  loading="lazy"
+                ></Image>
+              </picture>
+            </ImageContainer>
+          </Sharedbox>
+
+          <CardsContainer>
+            <picture style={{ width: "70%" }}>
+              <source
+                srcset="https://ucarecdn.com/89a9e174-5bc7-42df-956c-e32c54bc7e5e/couplephotos7webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/2785f603-716d-407d-851b-cb2d3eb669e1/couplephotos7.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple with bouquet"
+                src="https://ucarecdn.com/2785f603-716d-407d-851b-cb2d3eb669e1/couplephotos7.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+
+            <CardInnerContainer>
+              <Quote>
+                You wanna know how you can tell if you’re meant to be with
+                someone? It’s simple. Just sit and have a conversation. Some
+                people when you talk to them, it’s like trying to listen to
+                classical music on a radio with no antenna. You can push that
+                dial back and forth all you want, but you only get static. But
+                when you’re meant to be with someone, and they truly are the
+                one, you just sit, start talking and a Beethoven sonata will
+                begin to play.
+                <br />— — The Perfect Date (2019)
+              </Quote>
+            </CardInnerContainer>
+          </CardsContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/fc9f7629-8888-40cd-a8e4-7f9bf6600de2/birthdayshoot001webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/b3e134b6-bcdf-40d8-9575-8d76ac054340/coupleshoot8.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple in field having picnic"
+                src="https://ucarecdn.com/b3e134b6-bcdf-40d8-9575-8d76ac054340/coupleshoot8.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/9b40987d-31ff-4f10-a73d-f423a6c79f56/couplephotos9.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/18b2e230-3acf-4435-b26b-3a745f5a6598/couplephotos9.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple in street"
+                src="https://ucarecdn.com/18b2e230-3acf-4435-b26b-3a745f5a6598/couplephotos9.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple kissing"
+                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple kissing"
+                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple kissing"
+                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple kissing"
+                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Couple kissing"
+                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/8f9f36c0-b25e-474a-852d-c1fd0c017345/couplephotos10webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/05c72d85-a63a-4772-b40a-b07d52db6d19/couplephotos10.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Hand with tulips"
+                src="https://ucarecdn.com/05c72d85-a63a-4772-b40a-b07d52db6d19/couplephotos10.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
           <NavLink to={"/contact"}>
-              <Button> Contact Annie </Button>
-            </NavLink>
+            <Button> Contact Annie </Button>
+          </NavLink>
         </Container>
-       
-    
       </div>
     );
   }

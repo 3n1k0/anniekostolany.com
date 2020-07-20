@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import { Button, Image, ImageContainer } from "./Home";
 
-const Video = styled.iframe`
+export const Video = styled.iframe`
   border: none;
   position: absolute;
   top: 0;
@@ -16,7 +16,7 @@ const Video = styled.iframe`
   height: 100%;
 `;
 
-const VideoBox = styled.div`
+export const VideoBox = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
@@ -78,6 +78,7 @@ const Text = styled.div`
     font-size: 18px;
   }
 `;
+
 const Step = styled.div`
   display: flex;
   flex-flow: row nowrap;
@@ -192,68 +193,7 @@ class Rules extends React.Component {
             ></Video>
           </VideoBox>
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/anniekostolanyaboutmepage1webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/2637abab-171e-46b0-8f70-b606894a5c90/anniekostolanyaboutmepage.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Annie Kostolany professional photographer"
-                src="https://ucarecdn.com/2637abab-171e-46b0-8f70-b606894a5c90/anniekostolanyaboutmepage.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/anniekostolanyaboutmepage1webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/2637abab-171e-46b0-8f70-b606894a5c90/anniekostolanyaboutmepage.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Annie Kostolany professional photographer"
-                src="https://ucarecdn.com/2637abab-171e-46b0-8f70-b606894a5c90/anniekostolanyaboutmepage.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/anniekostolanyaboutmepage1webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/2637abab-171e-46b0-8f70-b606894a5c90/anniekostolanyaboutmepage.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Annie Kostolany professional photographer"
-                src="https://ucarecdn.com/2637abab-171e-46b0-8f70-b606894a5c90/anniekostolanyaboutmepage.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+        
         </Container>
       </div>
     );

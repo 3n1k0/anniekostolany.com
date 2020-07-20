@@ -41,6 +41,7 @@ export const HamburgerMenu = styled.div`
         width: 41px;
         height: 39px;
         align-items: center;
+        display: none;
     }
 
   `;
@@ -94,6 +95,8 @@ export const ContactButton = styled.button`
     line-height: 1em;
     padding: 0;
     display: inline-block;
+    z-index: 100;
+    cursor: pointer;
   }
 
   &:hover {
@@ -126,7 +129,7 @@ export const Menuitems = styled.ul`
     justify-content: flex-end;
     padding-top: 20px;
     padding-right: 40px;
-    top: 0px;
+    top: 60px;
     right: 0px;
     width: 100%;
     display: flex;
@@ -155,7 +158,7 @@ export const Menuitem = styled.li`
     text-decoration: none;
     line-height: 1em;
     font-family: ${fonts.mindenmas};
-    padding: 10px;
+    padding: 8px;
   }
 `;
 
@@ -227,11 +230,11 @@ const DropDown = styled.div`
   flex-flow: column;
 
   @media ${device.desktop} {
-    background: rgba(0, 0, 0, 0.8);
+    background-color: ${({ backgroundColor }) => backgroundColor};
     width: 220px;
-    height: 270px;
+    height: 240px;
     position: absolute;
-    z-index: -2;
+    z-index: 5;
     top: 50px;
     padding: 24px 15px;
     flex-flow: column;
@@ -253,6 +256,10 @@ class Navbar extends React.Component {
       isDropDownOpen: false,
     };
   }
+
+  static defaultProps = {
+    dropDowncolor: "black",
+  };
 
   onBodyClick = () => {
     this.setState({ isOpen: false });
@@ -311,38 +318,40 @@ class Navbar extends React.Component {
                     });
                   }}
                 >
-                  <Menuitem>
-                Portfolio
-                  </Menuitem>
+                  <Menuitem>Portfolio</Menuitem>
                   <DropDown
                     isOpen={this.state.isDropDownOpen}
                     onMouseOut={() => {
                       this.setState({ isDropDownOpen: false });
                     }}
+                    backgroundColor={this.props.dropDowncolor}
                   >
-                    <Menuitem>
-                      <InnerStyledNavLink to="/solo-travelers">
-                        Solo travelers
-                      </InnerStyledNavLink>
-                    </Menuitem>
                     <Menuitem>
                       <InnerStyledNavLink to="/couples">
                         Love shoots ♡
                       </InnerStyledNavLink>
                     </Menuitem>
+
                     <Menuitem>
                       <InnerStyledNavLink to="/family">
                         Family & celebration
                       </InnerStyledNavLink>
                     </Menuitem>
+
                     <Menuitem>
-                      <InnerStyledNavLink to="/wedding">
-                        Wedding
+                      <InnerStyledNavLink to="/solo-travelers">
+                        Solo travelers
                       </InnerStyledNavLink>
                     </Menuitem>
+
                     <Menuitem>
                       <InnerStyledNavLink to="/boudoir">
                         Boudoir
+                      </InnerStyledNavLink>
+                    </Menuitem>
+                    <Menuitem>
+                      <InnerStyledNavLink to="/wedding">
+                        Wedding
                       </InnerStyledNavLink>
                     </Menuitem>
                     <Menuitem>

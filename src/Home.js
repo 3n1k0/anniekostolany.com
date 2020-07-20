@@ -14,6 +14,7 @@ const TextBox = styled.div`
 
 `;
 
+
 const TextTitle = styled.div`
   font-family: ${fonts.kacskaringos};
   font-size: 2.5em;
@@ -47,13 +48,14 @@ export const Image = styled.img`
   max-width: 100%;
 `;
 
-const CardsContainer = styled.div`
+export const CardsContainer = styled.div`
   display: flex;
   flex-flow: column;
   width: 70%;
   margin: 50px auto;
   padding: 20px 20px;
   justify-content: center;
+  align-items: center;
 
   @media ${device.desktop} {
     flex-flow: row nowrap;
@@ -65,7 +67,7 @@ const CardsContainer = styled.div`
   }
 `;
 
-const CardTitle = styled.div`
+export const CardTitle = styled.div`
   text-align: center;
   padding: 50px 0px 0px 0px;
 
@@ -91,7 +93,7 @@ const h2 = styled.div`
   font-size: 1em;
 `;
 
-const CardInnerContainer = styled.div`
+export const CardInnerContainer = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -126,6 +128,16 @@ export const Button = styled.button`
     color: ${colors.tortfeher}
 
   }
+  a:visited {
+    color: black;
+  }
+
+  a:visited:hover {
+    color:white;
+  }
+
+
+
 `;
 
 const Testimonials = styled.div`
@@ -253,7 +265,7 @@ class Home extends React.Component {
             content="Annie Kostolany professional photographer based in the Netherlands"
           />
         </Helmet>
-        <Navbar style={{ background: "transparent" }} />
+        <Navbar style={{ background: "transparent" }} dropDowncolor="white" />
         <Container>
           <picture>
             <source

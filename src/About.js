@@ -6,12 +6,15 @@ import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import { Button, Image, ImageContainer, Text } from "./Home";
+import { VideoBox, Video} from "./Rules"
 
 const Container = styled.div`
-  width: 80%;
   margin: 0 auto;
-  padding: 150px 0px 100px 0px;
+  width: 80%;
   color: #585656;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 
   h2 {
     font-family: ${fonts.kacskaringos};
@@ -27,19 +30,18 @@ const Container = styled.div`
   p {
     font-family: ${fonts.mindenmas};
     font-size: 18px;
-    text-align: left;
-    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1em;
     line-height: 1.5;
     letter-spacing: 0.005em;
   }
-`
+`;
 
-const ContactButton = styled.div `
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-`
-;
+const ContactButton = styled(Button)`
+  color: white;
+  margin: 30px 30px 60px 30px;
+`;
 class About extends React.Component {
   render() {
     return (
@@ -53,8 +55,8 @@ class About extends React.Component {
           />
         </Helmet>
         <Container>
-        <h2>hey there!</h2>
-          <ImageContainer style={{paddingBottom:"40px"}}>
+          <h2>hey there!</h2>
+          <ImageContainer style={{ paddingBottom: "40px", marginTop: "40px" }}>
             <picture>
               <source
                 srcset="https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/anniekostolanyaboutmepage1webp.webp"
@@ -76,7 +78,6 @@ class About extends React.Component {
           </ImageContainer>
 
           <Text>
-            
             <p>
               My name is Annie. I’m a Hungarian wanderlust, who settled in
               Amsterdam by way of Budapest, Trier and Los Angeles. <br />
@@ -130,14 +131,14 @@ class About extends React.Component {
               Now that I’ve told you a little about me, I look forward to
               getting to know you too.
             </p>
-       
           </Text>
           <ContactButton>
-          <NavLink to={"/contact"}>
-            <Button> Contact Annie </Button>
-          </NavLink>
+            <NavLink to={"/contact"}>Contact Annie</NavLink>
           </ContactButton>
+
         </Container>
+
+
       </div>
     );
   }
