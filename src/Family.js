@@ -7,10 +7,9 @@ import { Helmet } from "react-helmet";
 import {
   Image,
   ImageContainer,
-  CardsContainer,
-  CardInnerContainer
+  Text
 } from "./Home";
-import { Quote } from "./Couples";
+import { Quote, ButtonContainer } from "./Couples";
 import { Button } from "./Ui";
 
 const Sharedbox = styled.div`
@@ -26,7 +25,7 @@ const Sharedbox = styled.div`
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
-  padding: 150px 0px 100px 0px;
+  padding: 150px 0px 0px 0px;
   color: #585656;
   text-align: center;
 
@@ -51,29 +50,29 @@ class Family extends React.Component {
             content="Family photography - Amsterdam-based professional photographer"
           />
         </Helmet>
+  
         <Container>
-          <ImageContainer>
-            <p>
-              Whether it's the arrival of a new family member, an engagement, a
+          <Text style={{paddingBottom: "50px"}}>    Whether it's the arrival of a new family member, an engagement, a
               bachelorette party or a family get-together, it's important to
               have these memories captured.
-              <br />
-            </p>
+              <br /></Text>
+          <ImageContainer>
+           
             <picture>
               <source
-                srcset="https://ucarecdn.com/cedb59a9-ff26-464e-a421-62a31cbe5a36/coupleshoot10webp.webp"
+                srcset="https://ucarecdn.com/94c82395-3d66-4a9e-b203-59d26f1b070f/family1webp.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
+                srcset="https://ucarecdn.com/57c2b527-bce5-490c-a364-6ae7f1abe496/family1.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Couple with windmills"
-                src="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
+                alt="Mom with child"
+                src="https://ucarecdn.com/57c2b527-bce5-490c-a364-6ae7f1abe496/family1.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -90,19 +89,19 @@ class Family extends React.Component {
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                srcset="https://ucarecdn.com/a062c50e-8940-4330-8859-8afa84aef62e/family2webp.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                srcset="https://ucarecdn.com/f5d740cc-8c2b-4e2a-8ba1-51186c55f5c1/family2.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                alt="Maternity session"
+                src="https://ucarecdn.com/f5d740cc-8c2b-4e2a-8ba1-51186c55f5c1/family2.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -116,19 +115,19 @@ class Family extends React.Component {
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/76a0e245-8dc9-4f0c-ae5b-b6c0ff700a4d/coupleshoot11webp.webp"
+                srcset="https://ucarecdn.com/9f6d9897-4e66-47c0-b094-4e4c379e39ec/family3webp.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/37bab4af-f212-4e20-8cc9-9b45085a5c61/coupleshoot11.jpg"
+                srcset="https://ucarecdn.com/7b62c14c-eaf0-4288-95e3-59b56317953b/family3.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Japanese wedding couple"
-                src="https://ucarecdn.com/37bab4af-f212-4e20-8cc9-9b45085a5c61/coupleshoot11.jpg"
+                alt="Little girl with wreath"
+                src="https://ucarecdn.com/7b62c14c-eaf0-4288-95e3-59b56317953b/family3.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -138,118 +137,62 @@ class Family extends React.Component {
             <ImageContainer>
               <picture>
                 <source
-                  srcset="https://ucarecdn.com/1c7357c3-4923-45ec-94a0-71711501f7c0/box1.webp"
+                  srcset="https://ucarecdn.com/09d27c81-d76c-47f6-a041-437e5ad62e43/family4webp.webp"
                   type="image/webp"
                   loading="lazy"
                 />
                 <source
-                  srcset="https://ucarecdn.com/405ba882-5687-4a67-af10-7c91783ca903/box1.jpg"
+                  srcset="https://ucarecdn.com/49c0ddb8-9c7b-45ec-b48c-12158465d6bd/family4.jpg"
                   type="image/jpeg"
                   loading="lazy"
                 />
 
                 <Image
-                  alt="Couple kissing"
-                  src="https://ucarecdn.com/405ba882-5687-4a67-af10-7c91783ca903/box1.jpg"
+                  alt="Engagement ring on lavender"
+                  src="https://ucarecdn.com/49c0ddb8-9c7b-45ec-b48c-12158465d6bd/family4.jpg"
                   loading="lazy"
                 ></Image>
               </picture>
             </ImageContainer>
-            {/* 
-            <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/362ec4e0-1aa1-48f8-8706-528d38364ea8/couplephotos3webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/5de32435-6ccf-4df0-ab96-06c275af0a6f/couplephotos3.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple in front of cafe"
-                src="https://ucarecdn.com/5de32435-6ccf-4df0-ab96-06c275af0a6f/couplephotos3.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer> */}
 
             <ImageContainer>
               <picture>
                 <source
-                  srcset="https://ucarecdn.com/d4561dff-998d-4567-99fc-9b78827fd266/box2.webp"
+                  srcset="https://ucarecdn.com/2e9bbff2-6f91-4fa1-b681-d5621f8182be/family5webp.webp"
                   type="image/webp"
                   loading="lazy"
                 />
                 <source
-                  srcset="https://ucarecdn.com/53ccd4ec-85fb-4d70-acd1-64788800af98/box2.jpg"
+                  srcset="https://ucarecdn.com/e4e2f15c-749f-4958-b647-5b638fc1f4af/family5.jpg"
                   type="image/jpeg"
                   loading="lazy"
                 />
 
                 <Image
-                  alt="Couple kissing"
-                  src="https://ucarecdn.com/53ccd4ec-85fb-4d70-acd1-64788800af98/box2.jpg"
+                  alt="Engaged couple"
+                  src="https://ucarecdn.com/e4e2f15c-749f-4958-b647-5b638fc1f4af/family5.jpg"
                   loading="lazy"
                 ></Image>
               </picture>
             </ImageContainer>
           </Sharedbox>
 
-          <CardsContainer>
-            <picture style={{ width: "70%" }}>
-              <source
-                srcset="https://ucarecdn.com/89a9e174-5bc7-42df-956c-e32c54bc7e5e/couplephotos7webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/2785f603-716d-407d-851b-cb2d3eb669e1/couplephotos7.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple with bouquet"
-                src="https://ucarecdn.com/2785f603-716d-407d-851b-cb2d3eb669e1/couplephotos7.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-
-            <CardInnerContainer>
-              <Quote>
-                You wanna know how you can tell if you’re meant to be with
-                someone? It’s simple. Just sit and have a conversation. Some
-                people when you talk to them, it’s like trying to listen to
-                classical music on a radio with no antenna. You can push that
-                dial back and forth all you want, but you only get static. But
-                when you’re meant to be with someone, and they truly are the
-                one, you just sit, start talking and a Beethoven sonata will
-                begin to play.
-                <br />— — The Perfect Date (2019)
-              </Quote>
-            </CardInnerContainer>
-          </CardsContainer>
-
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/fc9f7629-8888-40cd-a8e4-7f9bf6600de2/birthdayshoot001webp.webp"
+                srcset="https://ucarecdn.com/ac028e34-f6af-46d6-8c0e-4a3947514d3a/family8webp.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/b3e134b6-bcdf-40d8-9575-8d76ac054340/coupleshoot8.jpg"
+                srcset="https://ucarecdn.com/a1d8f254-0c14-4899-8910-52978d039bf2/family8.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Couple in field having picnic"
-                src="https://ucarecdn.com/b3e134b6-bcdf-40d8-9575-8d76ac054340/coupleshoot8.jpg"
+                alt="Little boy smiling"
+                src="https://ucarecdn.com/a1d8f254-0c14-4899-8910-52978d039bf2/family8.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -258,19 +201,84 @@ class Family extends React.Component {
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/9b40987d-31ff-4f10-a73d-f423a6c79f56/couplephotos9.webp"
+                srcset="https://ucarecdn.com/a8535f5b-2803-41f3-b151-e2954198b794/family7webp.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/18b2e230-3acf-4435-b26b-3a745f5a6598/couplephotos9.jpg"
+                srcset="https://ucarecdn.com/95a1a976-501d-42d4-9179-28bdad691639/family7.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Couple in street"
-                src="https://ucarecdn.com/18b2e230-3acf-4435-b26b-3a745f5a6598/couplephotos9.jpg"
+                alt="Silver baby shoes"
+                src="https://ucarecdn.com/95a1a976-501d-42d4-9179-28bdad691639/family7.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+          <Sharedbox>
+            <ImageContainer>
+              <picture>
+                <source
+                  srcset="https://ucarecdn.com/778aff22-471e-443a-85cc-0b738fae555a/family9.webp"
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  srcset="https://ucarecdn.com/89076473-df28-4dec-aa0e-17c15e0f516b/family9.jpg"
+                  type="image/jpeg"
+                  loading="lazy"
+                />
+
+                <Image
+                  alt="Little girl cake mash"
+                  src="https://ucarecdn.com/89076473-df28-4dec-aa0e-17c15e0f516b/family9.jpg"
+                  loading="lazy"
+                ></Image>
+              </picture>
+            </ImageContainer>
+
+            <ImageContainer>
+              <picture>
+                <source
+                  srcset="https://ucarecdn.com/88fbb8c2-c5c3-484d-a097-e8da1d34d3b1/family6webp.webp"
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  srcset="https://ucarecdn.com/c9b89843-162b-4165-ac55-eb39220de0a5/family6.jpg"
+                  type="image/jpeg"
+                  loading="lazy"
+                />
+
+                <Image
+                  alt="Baby in Santa hat"
+                  src="https://ucarecdn.com/c9b89843-162b-4165-ac55-eb39220de0a5/family6.jpg"
+                  loading="lazy"
+                ></Image>
+              </picture>
+            </ImageContainer>
+          </Sharedbox>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/445803d0-ac3f-44c0-a76f-0c8a434dc390/family10webp.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/0b57eedc-3b72-4395-9838-61a0cc2d25b8/family10.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Siblings with dog"
+                src="https://ucarecdn.com/0b57eedc-3b72-4395-9838-61a0cc2d25b8/family10.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -279,19 +287,19 @@ class Family extends React.Component {
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                srcset="https://ucarecdn.com/f1de2e17-8c5f-4ea3-8275-dbb8cdb26fad/family11webp.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                srcset="https://ucarecdn.com/9be00310-3d01-4d8e-9d7a-12aad9124079/family11.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                alt="Maternity session"
+                src="https://ucarecdn.com/9be00310-3d01-4d8e-9d7a-12aad9124079/family11.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -300,109 +308,26 @@ class Family extends React.Component {
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                srcset="https://ucarecdn.com/685b444f-f8e9-4b4a-89b5-a23427faccdf/family12webp.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                srcset="https://ucarecdn.com/fd981fa5-c4a8-44c4-a2aa-63333fc4ae57/family12.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                alt="Event photography"
+                src="https://ucarecdn.com/fd981fa5-c4a8-44c4-a2aa-63333fc4ae57/family12.jpg"
                 loading="lazy"
               ></Image>
             </picture>
           </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/8f9f36c0-b25e-474a-852d-c1fd0c017345/couplephotos10webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/05c72d85-a63a-4772-b40a-b07d52db6d19/couplephotos10.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Hand with tulips"
-                src="https://ucarecdn.com/05c72d85-a63a-4772-b40a-b07d52db6d19/couplephotos10.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <Button to={"/contact"}> Contact Annie </Button>
+          <ButtonContainer>
+            <Button to={"/contact"}> Contact Annie </Button>
+          </ButtonContainer>
         </Container>
       </div>
     );

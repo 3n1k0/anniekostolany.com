@@ -404,9 +404,9 @@ class SoloTravelers extends React.Component {
             </picture>
           </ImageContainer>
 
-          <NavLink to={"/contact"}>
-            <Button> Contact Annie </Button>
-          </NavLink>
+      
+            <Button to={"/contact"}> Contact Annie </Button>
+            
         </Container>
       </div>
     );

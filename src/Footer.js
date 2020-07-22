@@ -12,6 +12,7 @@ const Container = styled.div`
   padding-bottom: 40px;
   text-align: center;
   letter-spacing: 1px;
+  position: relative;
 `;
 
 const Icontainer = styled.div`
@@ -72,6 +73,7 @@ class Footer extends React.Component {
               ></i>
             </a>
           </Icon>
+
           <Icon>
             <a href="mailto:mail@anniekostolany.com" label="Send an email">
               <i style={{ color: "white" }} class="far fa-envelope"></i>

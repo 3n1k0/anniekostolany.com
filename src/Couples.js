@@ -10,8 +10,16 @@ import {
   CardsContainer,
   CardInnerContainer,
   CardTitle,
+  Text
 } from "./Home";
 import { Button } from "./Ui";
+import { GoToTopButton } from './FullPost'
+
+
+export const ButtonContainer = styled.div`
+margin: 0 auto;
+padding: 40px;
+`
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -26,7 +34,7 @@ const Sharedbox = styled.div`
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
-  padding: 150px 0px 100px 0px;
+  padding-top: 150px;
   color: #585656;
   text-align: center;
 
@@ -76,9 +84,9 @@ class Couples extends React.Component {
           />
         </Helmet>
         <Container>
-          <h3>
+          <Text>
             I bet you are adorable together, but never get 'real photos' taken.
-          </h3>
+            </Text>
 
           <ImageContainer>
             <picture>
@@ -407,9 +415,18 @@ class Couples extends React.Component {
               ></Image>
             </picture>
           </ImageContainer>
-
-          <Button to={"/contact"}> Contact Annie </Button>
         </Container>
+        <ButtonContainer>
+          <Button to={"/contact"}> Contact Annie </Button>
+        </ButtonContainer>
+
+        <GoToTopButton
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          Go to top{" "}
+        </GoToTopButton>
       </div>
     );
   }

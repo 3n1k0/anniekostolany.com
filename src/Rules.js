@@ -178,9 +178,9 @@ class Rules extends React.Component {
             </Step>
           </BookingSteps>
 
-          <NavLink to={"/contact"}>
-            <Button> Contact Annie </Button>
-          </NavLink>
+
+            <Button to={"/contact"}> Contact Annie </Button>
+
 
           <VideoBox>
             <Video

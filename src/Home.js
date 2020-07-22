@@ -5,6 +5,7 @@ import { fonts, colors } from "./config";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
 import { Button } from "./Ui";
+import { NavLink} from 'react-router-dom'; 
 
 const TextBox = styled.div`
   margin: 50px auto;
@@ -35,13 +36,17 @@ export const ImageContainer = styled.div`
   width: 90%;
   margin: 0 auto;
 
+
   @media ${device.desktop} {
     width: 60%;
+
+
   }
 `;
 export const Image = styled.img`
   max-width: 100%;
 `;
+
 
 export const CardsContainer = styled.div`
   display: flex;
@@ -141,7 +146,7 @@ const Container = styled.div`
   position: relative;
 `;
 
-const Textcontainer = styled.div`
+ export const Textcontainer = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -151,7 +156,7 @@ const Textcontainer = styled.div`
   top: 30%;
 `;
 
-const Subtitle = styled.div`
+export const Subtitle = styled.div`
   font-family: ${fonts.kacskaringos};
   font-size: 18px;
   font-style: italic;
@@ -165,12 +170,12 @@ const Subtitle = styled.div`
   }
 `;
 
-const MottoContainer = styled.div`
+export const MottoContainer = styled.div`
   max-width: 65%;
   text-align: center;
 `;
 
-const Motto = styled.div`
+export const Motto = styled.div`
   font-family: ${fonts.focim};
   color: white;
   font-style: normal;
@@ -183,27 +188,19 @@ const Motto = styled.div`
   }
 `;
 
-const HeaderImage = styled.img`
+ export const HeaderImage = styled.img`
   width: 100%;
   object-fit: cover;
   height: 700px;
+  position: relative;
   filter: brightness(75%);
 `;
 
-const TextboxButton = styled.button`
-  border: 2px solid white;
-  background: transparent;
-  color: white;
-  height: 49px;
-  display: inline-block;
-  line-height: 1em;
-  letter-spacing: 2px;
-  width: 193px;
-  margin-top: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1em 1.75em;
-  cursor: pointer;
+const TextboxButton = styled(Button)`
+background: transparent;
+border: 2px solid white;
+padding: 20px 10px;
+color: white;
 
   &:hover {
     background: white;

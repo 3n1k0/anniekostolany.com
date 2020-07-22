@@ -84,14 +84,17 @@ class Blog extends React.Component {
             return (
               <PostContainer>
                 <Post>
+                <NavLink to={"/blog/posts/" + post.slug}>
                   <PostTitle>{post.title}</PostTitle>
                   <StyledImg src={post.leadimage} />
+                  </NavLink>
                   <p>
                     {post.excerpt}{" "}
                     <NavLink to={"/blog/posts/" + post.slug}>
                       ...read more
                     </NavLink>
                   </p>
+                  
                 </Post>
               </PostContainer>
             );
