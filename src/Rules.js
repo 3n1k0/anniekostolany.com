@@ -52,14 +52,12 @@ const Container = styled.div`
   }
 
   h2 {
-    font-family: ${fonts.kacskaringos};
+    font-family: ${fonts.mindenmas};
     color: ${colors.mindenmas};
     font-size: 30px;
     letter-spacing: 1px;
     text-transform: none;
-    font-weight: 900;
-
-    font-style: italic;
+    font-weight: 100;
     color: ${colors.mindenmas};
     padding-right: 50px;
     width: 200px;
@@ -92,7 +90,7 @@ class Rules extends React.Component {
   render() {
     return (
       <div className="HowtoBook">
-        <Navbar style={{ background: "black" }} />
+        <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         <Helmet>
           <title>About Annie</title>
           <meta

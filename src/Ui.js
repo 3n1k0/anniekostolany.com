@@ -5,9 +5,9 @@ import { colors } from "./config";
 import { fonts } from './config'
 
 export const Button = styled(NavLink)`
-  border: 2px solid black;
+  border: 2px solid #1f1f1f;;
   background: transparent;
-  color: black;
+  color: ${colors.cimek};
   height: 42px;
   width: 220px;
   letter-spacing: 1.5px;
@@ -20,17 +20,19 @@ export const Button = styled(NavLink)`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  font-size: 14px;
 
 
 
   &:hover {
-    background: black;
+    background: #1f1f1f;;
     color: ${colors.tortfeher};
     transition: 0.6s;
   }
 
   a:visited {
-    color: black;
+    color: #1f1f1f;;
   }
 
   a:visited:hover {

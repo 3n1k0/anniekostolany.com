@@ -1,7 +1,7 @@
 import React from "react";
 import { device } from "./mediaquery";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
-import { fonts } from "./config";
+import { fonts, colors } from "./config";
 import { NavLink } from "react-router-dom";
 
 export const HamburgerMenu = styled.div`
@@ -81,7 +81,17 @@ export const Navigation = styled.nav`
 `;
 
 export const ContactButton = styled.button`
-  display: none;
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1em;
+    padding: 0;
+    display: inline-block;
+    z-index: 100;
+    cursor: pointer;
 
   @media ${device.desktop} {
     border: 2px solid white;
@@ -97,14 +107,16 @@ export const ContactButton = styled.button`
     display: inline-block;
     z-index: 100;
     cursor: pointer;
-  }
 
-  &:hover {
+    &:hover {
     border: 2px solid white;
     border-radius: 20px;
     background: white;
-    color: black;
+    color: ${colors.footerfekete};
   }
+  }
+
+
 `;
 
 export const Menuitems = styled.ul`
@@ -114,14 +126,15 @@ export const Menuitems = styled.ul`
   top: 0px;
   right: 0px;
   height: 100%;
+  font-size: 13px;
   width: 300px;
-  padding: 90px 20px;
+  padding: 100px 20px;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   background: rgb(88, 86, 86);
   background: linear-gradient(
     176deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(190, 190, 191, 0) 90%
+    rgba(9, 6, 10, 1) 30%,
+    rgba(190, 190, 191, 0.0) 90%
   );
 
   @media ${device.desktop} {
@@ -145,20 +158,20 @@ export const Menuitems = styled.ul`
 
 export const Menuitem = styled.li`
   display: flex;
-  padding: 5px 30px;
-  font-weight: 600;
+  padding: 8px 30px;
+  font-family: ${fonts.cimek};
+  font-weight: 500;
   cursor: pointer;
 
   @media ${device.desktop} {
     display: flex;
     font-style: normal;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 1em;
-    font-family: ${fonts.mindenmas};
-    padding: 8px;
+    padding: 10px;
   }
 `;
 
@@ -188,6 +201,7 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     text-decoration: none;
     list-style: none;
+    
 
  
 
@@ -198,7 +212,7 @@ const Maincontainer = styled.div`
   display: flex;
   height: 100px;
   width: 100%;
-  background: black;
+  background: ${colors.footerfekete};
   position: absolute;
 
   @media ${device.desktop} {
@@ -206,6 +220,7 @@ const Maincontainer = styled.div`
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    background: ${colors.footerfekete};
   }
 `;
 const TitleDiv = styled.div`
@@ -233,7 +248,7 @@ const DropDown = styled.div`
     background-color: ${({ backgroundColor }) => backgroundColor};
 
     width: 220px;
-    height: 240px;
+    height: 270px;
     position: absolute;
     z-index: 5;
     top: 50px;
@@ -259,7 +274,7 @@ class Navbar extends React.Component {
   }
 
   static defaultProps = {
-    dropDowncolor: "black",
+    dropDowncolor: "rgb(8, 8, 8)",
     linkColors: "white",
   };
 
@@ -320,7 +335,7 @@ class Navbar extends React.Component {
                     });
                   }}
                 >
-                  <Menuitem>Portfolio</Menuitem>
+                  <Menuitem><b>+ Portfolio</b></Menuitem>
                   <DropDown
                     isOpen={this.state.isDropDownOpen}
                     onMouseOut={() => {

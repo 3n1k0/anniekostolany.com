@@ -60,7 +60,7 @@ class Wedding extends React.Component {
   render() {
     return (
       <div className="Wedding">
-        <Navbar style={{ background: "black" }} />
+        <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         <Helmet>
           <title>About Annie</title>
           <meta

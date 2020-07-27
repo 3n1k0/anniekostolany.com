@@ -3,7 +3,25 @@ import Navbar from "./Navbar";
 import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
 import { fonts } from "./config";
-import { Button } from "./Ui";
+
+const Button = styled.button`
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 21px 34px;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  width: 150px;
+  margin: 0 auto;
+
+  &:hover {
+    background: rgba(10, 10, 10, 0.3);
+  }
+`;
 
 const Container = styled.div`
   min-height: 1200px;
@@ -87,7 +105,7 @@ class Contact extends React.Component {
             content="Amsterdam-based professional photography - Contact Annie "
           />
         </Helmet>
-        <Navbar style={{ background: "black" }} />
+        <Navbar style={{ background: "#1f1f1f" }} />
         setTimeout(function () {window.scrollTo(500, 0)},2);
         <Container>
           <form action="https://formspree.io/mknqqvoz" method="POST">
@@ -108,9 +126,7 @@ class Contact extends React.Component {
               <label for="message">Message</label>
               <textarea name="message" required></textarea>
             </fieldset>
-            <Button style={{ margin: "0 auto" }} type="submit">
-              Send
-            </Button>
+            <Button type="submit">Send</Button>
           </form>
         </Container>
       </div>

@@ -4,13 +4,10 @@ import styled from "styled-components/macro";
 import { fonts } from "./config";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
-import {
-  Image,
-  ImageContainer,
-  Text
-} from "./Home";
-import { Quote, ButtonContainer } from "./Couples";
+import { Image, ImageContainer, Text } from "./Home";
+import { Quote, ButtonContainer, Szepalcim } from "./Couples";
 import { Button } from "./Ui";
+import { GoToTopButton } from './FullPost'
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -42,7 +39,7 @@ class Family extends React.Component {
   render() {
     return (
       <div className="Family">
-        <Navbar style={{ background: "black" }} />
+        <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         <Helmet>
           <title>Family & event photography in Amsterdam</title>
           <meta
@@ -50,14 +47,15 @@ class Family extends React.Component {
             content="Family photography - Amsterdam-based professional photographer"
           />
         </Helmet>
-  
+
         <Container>
-          <Text style={{paddingBottom: "50px"}}>    Whether it's the arrival of a new family member, an engagement, a
-              bachelorette party or a family get-together, it's important to
-              have these memories captured.
-              <br /></Text>
+        <Szepalcim>
+            Whether it's the arrival of a new family member, an engagement, a
+            bachelorette party or a family get-together, it's important to have
+            these memories captured.{" "}
+          </Szepalcim>
+
           <ImageContainer>
-           
             <picture>
               <source
                 srcset="https://ucarecdn.com/94c82395-3d66-4a9e-b203-59d26f1b070f/family1webp.webp"
@@ -77,15 +75,7 @@ class Family extends React.Component {
               ></Image>
             </picture>
           </ImageContainer>
-          <Quote>
-            Annie is wonderful to work with! We’re not camera-natural but Annie
-            really made us at ease. The photos turned out so well even at a time
-            when natural light was fading away. There was nothing artificial or
-            posed about the photos, they captured our moments. Planning around
-            the time of the shoot and our communication were also easy. We
-            received our photos earlier than expected. We would recommend this
-            experience to everyone! Once again – thank you Annie!! — Karen
-          </Quote>
+
           <ImageContainer>
             <picture>
               <source
@@ -106,11 +96,7 @@ class Family extends React.Component {
               ></Image>
             </picture>
           </ImageContainer>
-          <Quote>
-            Annie is such a great person to work with. She really listens to
-            what you want, gives tips and makes you feel very relaxed. Thinking
-            ‘bout doing another session with her already!! 😀 — Agatha C.
-          </Quote>
+
 
           <ImageContainer>
             <picture>
@@ -325,10 +311,41 @@ class Family extends React.Component {
               ></Image>
             </picture>
           </ImageContainer>
+
           <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
+            <GoToTopButton
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              Go to top{" "}
+            </GoToTopButton>
           </ButtonContainer>
+
+
         </Container>
+        <Quote>
+            <p>Annie is wonderful to work with! We’re not camera-natural but Annie
+            really made us at ease. The photos turned out so well even at a time
+            when natural light was fading away. There was nothing artificial or
+            posed about the photos, they captured our moments. Planning around
+            the time of the shoot and our communication were also easy. We
+            received our photos earlier than expected. We would recommend this
+            experience to everyone! Once again – thank you Annie!
+            <br /> — Karen
+            <br /> ⭐⭐⭐⭐⭐
+            </p>
+          </Quote>
+          <Quote>
+            <p>
+            Annie is such a great person to work with. She really listens to
+            what you want, gives tips and makes you feel very relaxed. Thinking
+            ‘bout doing another session with her already!! 😀 
+            <br /> — Agatha C.
+            <br /> ⭐⭐⭐⭐⭐
+            </p>
+          </Quote>
       </div>
     );
   }

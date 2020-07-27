@@ -20,7 +20,7 @@ class Investment extends React.Component {
             content="Amsterdam based photographer - investment & packages"
           />
         </Helmet>
-        <Navbar style={{ background: "black" }} />
+        <Navbar style={{ background: "rgb(9, 6, 10)" }} />
 
         <Container>
           <h1>Hello Preset shop</h1>

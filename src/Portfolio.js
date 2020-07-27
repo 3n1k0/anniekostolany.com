@@ -11,7 +11,7 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div>
-        <Navbar style={{ background: "black" }} />
+        <Navbar style={{ background: "rgb(9, 6, 10)" }} />
 
         <Container>
           <h1>Hello PORTFOLIO PAGE</h1>

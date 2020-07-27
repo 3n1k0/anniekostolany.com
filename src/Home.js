@@ -12,20 +12,22 @@ const TextBox = styled.div`
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
+  width: 60%;
+  font-size: 1.5em;
 `;
 
 const TextTitle = styled.div`
   font-family: ${fonts.kacskaringos};
-  font-size: 2.5em;
+  font-size: 2em;
   padding-bottom: 30px;
-  color: ${colors.cimek};
+  color: ${colors.footerfekete};
 `;
 
 export const Text = styled.div`
   margin: 0 auto;
   font-family: ${fonts.mindenmas};
   max-width: 90%;
-  color: ${colors.cimek};
+  color: ${colors.footerfekete};
 
   @media ${device.desktop} {
     max-width: 60%;
@@ -37,8 +39,10 @@ export const ImageContainer = styled.div`
   margin: 0 auto;
 
 
+
   @media ${device.desktop} {
     width: 60%;
+    padding: 20px 0px;
 
 
   }
@@ -62,7 +66,7 @@ export const CardsContainer = styled.div`
     display: flex;
     width: 60%;
     margin: 0 auto;
-    padding: 100px 0px;
+    padding: 50px 0px;
     justify-content: flex-start;
   }
 `;
@@ -84,7 +88,7 @@ export const CardTitle = styled.div`
 
   p {
     font-family: ${fonts.mindenmas};
-    opacity: 1;
+    padding: 20px;
   }
 `;
 
@@ -115,7 +119,7 @@ const Testimonials = styled.div`
   margin: 0 auto;
   padding-bottom: 50px;
   font-family: ${fonts.mindenmas};
-  color: ${colors.cimek};
+  color: ${colors.footerfekete};
 
   @media ${device.desktop} {
     width: 60%;
@@ -123,16 +127,16 @@ const Testimonials = styled.div`
 
   h2 {
     font-family: ${fonts.mindenmas};
-    font-size: 32px;
-    letter-spacing: 0px;
+    font-size: 30px;
+    letter-spacing: 1px;
     text-transform: none;
     line-height: 1.2em;
-    padding: 40px;
+    padding: 20px;
   }
 `;
 
 const Testimonial = styled.div`
-  color: ${colors.cimek};
+  color: ${colors.footerfekete};
   padding: 20px;
 `;
 
@@ -160,7 +164,7 @@ export const Subtitle = styled.div`
   font-family: ${fonts.kacskaringos};
   font-size: 18px;
   font-style: italic;
-  color: white;
+  color: rgb(97.2%, 96.9%, 91%);
   text-align: center;
   padding: 20px;
   letter-spacing: 1px;
@@ -201,6 +205,9 @@ background: transparent;
 border: 2px solid white;
 padding: 20px 10px;
 color: white;
+font-size: 14px;
+letter-spacing: 2px;
+transition: 0.6s;
 
   &:hover {
     background: white;
@@ -227,7 +234,7 @@ class Home extends React.Component {
         </Helmet>
         <Navbar
           style={{ background: "transparent" }}
-          dropDowncolor="rgb(248,248,255, 0.4)"
+          dropDowncolor="rgb(248,248,255, 0.3)"
           linkColor="black"
         />
         <Container>

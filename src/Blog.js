@@ -76,7 +76,7 @@ class Blog extends React.Component {
           />
         </Helmet>
 
-        <Navbar style={{ background: "black", marginBottom: "20px" }} />
+        <Navbar style={{ background: "rgb(9, 6, 10)", marginBottom: "20px" }} />
 
         <Container>
           {" "}

@@ -67,6 +67,8 @@ export const GoToTopButton = styled.button`
   border: none;
   cursor: pointer;
   margin: 0 auto;
+  padding: 20px;
+  background: none;
 `;
 
 class FullPost extends React.Component {
@@ -87,7 +89,7 @@ class FullPost extends React.Component {
           <title>{post.title}</title>
           <meta name="description" content={post.excerpt} />
         </Helmet>
-        <Navbar style={{ background: "black", marginBottom: "20px" }} />
+        <Navbar style={{ background: "rgb(9, 6, 10)", marginBottom: "20px" }} />
 
         <Container>
           <HeaderImage src={post.leadimage} loading="lazy"></HeaderImage>
