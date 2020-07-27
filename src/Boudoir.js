@@ -52,7 +52,7 @@ class Boudoir extends React.Component {
           <title>Book your travelphotographer in Amsterdam</title>
           <meta
             name="description"
-            content="Travel photography - Amsterdam-based professional photographer"
+            content="Boudoir and escort photography in Amsterdam"
           />
         </Helmet>
 
@@ -62,38 +62,27 @@ class Boudoir extends React.Component {
             The softness of silk, the color of peonies, the touch of lace...
             boudoir photography is about the details that reflect inner beauty
             and confidence. It's all about self-love and acceptance. <br />
-            Feel empowered and strong, beautiful. You are unstoppable.{" "}
+            Feel like the empowered, strong and beautiful person you are. <br />
+            You are unique and capable.<br />
+            You are unstoppable.{" "}
           </Szepalcim>
-          <p>
-            When people think of the Netherlands, their imaginations are often
-            limited to a few clichés: wooden clogs, windmills, bicycles… you get
-            the picture. <br />
-            <br /> When visiting, it’s important to remember that size isn’t
-            everything, and despite being a small country geographically, the
-            Netherlands is packed with world famous icons. <br />
-            <br />
-            The fact is that Amsterdam’s web of canals, the stunning works of
-            Old Masters, unique Delft Blue earthenware, and tulip fields
-            stretching as far as the eye can see are just the tip of the
-            iceberg.
-          </p>
-
+        
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/ede82bee-a352-45ab-9391-e774b5ae1ee8/travelers1.webp"
+                srcset="https://ucarecdn.com/108988b4-88d8-4f77-8113-c1ac7dff994a/boudoir1.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/00c770e4-5184-44cb-8ebd-ed38c1d88bdb/travelers1.jpg"
+                srcset="https://ucarecdn.com/1be19a9b-516b-4475-9fea-e3bc23a5e088/boudoir1.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Girl in front of windmill"
-                src="https://ucarecdn.com/00c770e4-5184-44cb-8ebd-ed38c1d88bdb/travelers1.jpg"
+                alt="Girl posing with flowers"
+                src="https://ucarecdn.com/1be19a9b-516b-4475-9fea-e3bc23a5e088/boudoir1.jpg"
                 loading="lazy"
               ></Image>
             </picture>
