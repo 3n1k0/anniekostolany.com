@@ -4,15 +4,10 @@ import styled from "styled-components/macro";
 import { fonts } from "./config";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
-import {
-  Image,
-  ImageContainer,
-  CardsContainer,
-  CardInnerContainer,
-  CardTitle,
-} from "./Home";
+import { Image, ImageContainer, Text } from "./Home";
+import { Quote, ButtonContainer, Szepalcim } from "./Couples";
 import { Button } from "./Ui";
+import { GoToTopButton } from "./FullPost";
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -27,33 +22,25 @@ const Sharedbox = styled.div`
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
-  padding: 150px 0px 100px 0px;
+  padding: 150px 0px 0px 0px;
   color: #585656;
   text-align: center;
 
-  h3 {
-    font-family: ${fonts.kacskaringos};
-    font-size: 2em;
-    letter-spacing: 0px;
-    text-transform: none;
-    line-height: 1.2em;
-    padding-bottom: 30px;
-  }
-
   p {
     font-family: ${fonts.mindenmas};
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: left;
     line-height: 1.5;
     letter-spacing: 0.005em;
-  }
-`;
+    max-width: 90%;
+    padding-bottom: 20px;
 
-const Quote = styled(CardTitle)`
-  color: grey;
-  text-align: center;
-  font-family: ${fonts.kacskaringos};
-  font-size: 1em;
+    margin: 0 auto;
+
+    @media ${device.desktop} {
+      max-width: 60%;
+    }
+  }
 `;
 
 class Wedding extends React.Component {
@@ -62,33 +49,45 @@ class Wedding extends React.Component {
       <div className="Wedding">
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         <Helmet>
-          <title>About Annie</title>
+          <title>Book your travelphotographer in Amsterdam</title>
           <meta
             name="description"
-            content="About Annie - Amsterdam-based professional photographer"
+            content="Wedding photography in the Netherlands"
           />
         </Helmet>
+
         <Container>
-          <h3>
-            I bet you are adorable together, but never get 'real photos' taken.
-          </h3>
-
+          <p>
+            It might seem cliché, but it’s still true; a picture paints a
+            thousand words. <br />
+            What makes photography such a special medium is its ability to
+            distil the essence of a magical day into a single image – and on no
+            day is this more important than that of your wedding. <br />
+            As a gathering of friends and family celebrating the love between
+            two special people, your wedding will be filled with the moments
+            that make life worth living, from the biggest events to the sweetest
+            little things. <br />
+            <br />A smile, a hug, the look on your fathers face, or maybe your
+            mom helping you to get dressed; all these beautiful instants may
+            only last a second, but their memories can last a lifetime with the
+            right picture.
+          </p>
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                srcset="https://ucarecdn.com/93834bdb-4f48-4cb2-a641-777589332922/wedding1.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                srcset="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                alt="Wedding couple"
+                src="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -97,19 +96,54 @@ class Wedding extends React.Component {
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/cedb59a9-ff26-464e-a421-62a31cbe5a36/coupleshoot10webp.webp"
+                srcset="https://ucarecdn.com/d1f2ac84-f838-4752-b93e-76e9bb57ce1c/wedding2.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
+                srcset="https://ucarecdn.com/2632ff54-eeb5-4037-886d-4b4499824e03/wedding2.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Couple with windmills"
-                src="https://ucarecdn.com/c0922ba5-1a9c-4ba1-8343-ab48b6ba4fba/coupleshoot10.jpg"
+                alt="Wedding couple at church"
+                src="https://ucarecdn.com/2632ff54-eeb5-4037-886d-4b4499824e03/wedding2.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+          <p>
+            Perfectly catching such precious memories on camera is no easy task
+            though, meaning your wedding photographer will be one of the most
+            important and valuable suppliers that you book. Having organized my
+            own wedding three years ago, I also know that from the moment the
+            blushing bride/groom to be say “yes”, there are a host of other
+            crucial matters to attend to. <br /> Rest assured if you choose me
+            to document your special day, photography is one thing you won’t
+            have to worry about anymore.
+            <br /> As an accomplished international portrait, wedding and
+            lifestyle photographer, I can promise you to give all my
+            professional knowledge, my artistic skills and the best equipment
+            available to capture the most significant moments of your big day.
+          </p>
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/9945de54-9b77-4995-a255-02e396e34a7e/wedding3.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/1afa25b5-de6a-4d52-a7ca-c73d5b516578/wedding3.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Wedding coupel on boat"
+                src="https://ucarecdn.com/1afa25b5-de6a-4d52-a7ca-c73d5b516578/wedding3.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -118,19 +152,19 @@ class Wedding extends React.Component {
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/76a0e245-8dc9-4f0c-ae5b-b6c0ff700a4d/coupleshoot11webp.webp"
+                srcset="https://ucarecdn.com/164c35b3-9ba2-473a-874d-4ee523ebf091/wedding4.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/37bab4af-f212-4e20-8cc9-9b45085a5c61/coupleshoot11.jpg"
+                srcset="https://ucarecdn.com/0148af6e-13fb-4d8e-ad1c-c424617661da/wedding4.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Japanese wedding couple"
-                src="https://ucarecdn.com/37bab4af-f212-4e20-8cc9-9b45085a5c61/coupleshoot11.jpg"
+                alt="Wedding couple laughing"
+                src="https://ucarecdn.com/0148af6e-13fb-4d8e-ad1c-c424617661da/wedding4.jpg"
                 loading="lazy"
               ></Image>
             </picture>
@@ -140,273 +174,212 @@ class Wedding extends React.Component {
             <ImageContainer>
               <picture>
                 <source
-                  srcset="https://ucarecdn.com/1c7357c3-4923-45ec-94a0-71711501f7c0/box1.webp"
+                  srcset="https://ucarecdn.com/e3437f95-38c2-46de-bbe9-fe31d715783e/wedding7.webp"
                   type="image/webp"
                   loading="lazy"
                 />
                 <source
-                  srcset="https://ucarecdn.com/405ba882-5687-4a67-af10-7c91783ca903/box1.jpg"
+                  srcset="https://ucarecdn.com/801a2243-0661-4223-966c-0786b8b4a192/wedding7.jpg"
                   type="image/jpeg"
                   loading="lazy"
                 />
 
                 <Image
-                  alt="Couple kissing"
-                  src="https://ucarecdn.com/405ba882-5687-4a67-af10-7c91783ca903/box1.jpg"
+                  alt="Ballerina shoes on piano"
+                  src="https://ucarecdn.com/801a2243-0661-4223-966c-0786b8b4a192/wedding7.jpg"
                   loading="lazy"
                 ></Image>
               </picture>
             </ImageContainer>
-            {/* 
-            <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/362ec4e0-1aa1-48f8-8706-528d38364ea8/couplephotos3webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/5de32435-6ccf-4df0-ab96-06c275af0a6f/couplephotos3.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple in front of cafe"
-                src="https://ucarecdn.com/5de32435-6ccf-4df0-ab96-06c275af0a6f/couplephotos3.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer> */}
-
             <ImageContainer>
               <picture>
                 <source
-                  srcset="https://ucarecdn.com/d4561dff-998d-4567-99fc-9b78827fd266/box2.webp"
+                  srcset="https://ucarecdn.com/07e272ea-a371-4850-ade9-5b877b82afd7/wedding6.webp"
                   type="image/webp"
                   loading="lazy"
                 />
                 <source
-                  srcset="https://ucarecdn.com/53ccd4ec-85fb-4d70-acd1-64788800af98/box2.jpg"
+                  srcset="https://ucarecdn.com/5e78a858-9f6a-4089-bbdb-9c370d816a78/wedding6.jpg"
                   type="image/jpeg"
                   loading="lazy"
                 />
 
                 <Image
-                  alt="Couple kissing"
-                  src="https://ucarecdn.com/53ccd4ec-85fb-4d70-acd1-64788800af98/box2.jpg"
+                  alt="Ring with bouquet"
+                  src="https://ucarecdn.com/5e78a858-9f6a-4089-bbdb-9c370d816a78/wedding6.jpg"
                   loading="lazy"
                 ></Image>
               </picture>
             </ImageContainer>
           </Sharedbox>
 
-          <CardsContainer>
-            <picture style={{ width: "70%" }}>
-              <source
-                srcset="https://ucarecdn.com/89a9e174-5bc7-42df-956c-e32c54bc7e5e/couplephotos7webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/2785f603-716d-407d-851b-cb2d3eb669e1/couplephotos7.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
+          <Sharedbox>
+            <ImageContainer>
+              <picture>
+                <source
+                  srcset="https://ucarecdn.com/bb0ca539-d231-4001-9e4b-a1e75c6e21a9/wedding5.webp"
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  srcset="https://ucarecdn.com/b4323325-1596-4a96-9c3f-cd98d4b6e1c7/wedding5.jpg"
+                  type="image/jpeg"
+                  loading="lazy"
+                />
 
-              <Image
-                alt="Couple with bouquet"
-                src="https://ucarecdn.com/2785f603-716d-407d-851b-cb2d3eb669e1/couplephotos7.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
+                <Image
+                  alt="Wedding couple walking"
+                  src="https://ucarecdn.com/b4323325-1596-4a96-9c3f-cd98d4b6e1c7/wedding5.jpg"
+                  loading="lazy"
+                ></Image>
+              </picture>
+            </ImageContainer>
 
-            <CardInnerContainer>
-              <Quote>
-                You wanna know how you can tell if you’re meant to be with
-                someone? It’s simple. Just sit and have a conversation. Some
-                people when you talk to them, it’s like trying to listen to
-                classical music on a radio with no antenna. You can push that
-                dial back and forth all you want, but you only get static. But
-                when you’re meant to be with someone, and they truly are the
-                one, you just sit, start talking and a Beethoven sonata will
-                begin to play.
-                <br />— — The Perfect Date (2019)
-              </Quote>
-            </CardInnerContainer>
-          </CardsContainer>
+            <ImageContainer>
+              <picture>
+                <source
+                  srcset="https://ucarecdn.com/aeb10e38-8714-439e-bc3b-07f3b941667d/wedding8.webp"
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  srcset="https://ucarecdn.com/31205414-c6ae-4f5e-9202-21f05b538ddd/wedding8.jpg"
+                  type="image/jpeg"
+                  loading="lazy"
+                />
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/fc9f7629-8888-40cd-a8e4-7f9bf6600de2/birthdayshoot001webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/b3e134b6-bcdf-40d8-9575-8d76ac054340/coupleshoot8.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
+                <Image
+                  alt="Wedding couple laughing"
+                  src="https://ucarecdn.com/31205414-c6ae-4f5e-9202-21f05b538ddd/wedding8.jpg"
+                  loading="lazy"
+                ></Image>
+              </picture>
+            </ImageContainer>
+          </Sharedbox>
 
-              <Image
-                alt="Couple in field having picnic"
-                src="https://ucarecdn.com/b3e134b6-bcdf-40d8-9575-8d76ac054340/coupleshoot8.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <Sharedbox>
+            <ImageContainer>
+              <picture>
+                <source
+                  srcset="https://ucarecdn.com/5e401f96-0e69-4fea-b308-9d5a6206ffb0/wedding9.webp"
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  srcset="https://ucarecdn.com/0ec2c95d-349b-40b1-a8d5-df5f2c3d20d1/wedding9.jpg"
+                  type="image/jpeg"
+                  loading="lazy"
+                />
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/9b40987d-31ff-4f10-a73d-f423a6c79f56/couplephotos9.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/18b2e230-3acf-4435-b26b-3a745f5a6598/couplephotos9.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
+                <Image
+                  alt="Wedding couple in front of church"
+                  src="https://ucarecdn.com/0ec2c95d-349b-40b1-a8d5-df5f2c3d20d1/wedding9.jpg"
+                  loading="lazy"
+                ></Image>
+              </picture>
+            </ImageContainer>
 
-              <Image
-                alt="Couple in street"
-                src="https://ucarecdn.com/18b2e230-3acf-4435-b26b-3a745f5a6598/couplephotos9.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+            <ImageContainer>
+              <picture>
+                <source
+                  srcset="https://ucarecdn.com/475e3e9b-6276-42ea-a063-747d8c2781cc/weddding10.webp"
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  srcset="https://ucarecdn.com/36b1b0b5-6693-45c1-92b2-fdbc9a170890/weddding10.jpg"
+                  type="image/jpeg"
+                  loading="lazy"
+                />
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+                <Image
+                  alt="Wedding couple in front of church"
+                  src="https://ucarecdn.com/36b1b0b5-6693-45c1-92b2-fdbc9a170890/weddding10.jpg"
+                  loading="lazy"
+                ></Image>
+              </picture>
+            </ImageContainer>
+          </Sharedbox>
 
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
+                srcset="https://ucarecdn.com/422d4122-abc7-4bad-8f77-1909bbc85868/wedding11.webp"
                 type="image/webp"
                 loading="lazy"
               />
               <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                srcset="https://ucarecdn.com/978cc10e-fbf9-4223-b407-41ee0aade5a9/wedding11.jpg"
                 type="image/jpeg"
                 loading="lazy"
               />
 
               <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
+                alt="Wedding couple"
+                src="https://ucarecdn.com/978cc10e-fbf9-4223-b407-41ee0aade5a9/wedding11.jpg"
                 loading="lazy"
               ></Image>
             </picture>
           </ImageContainer>
+          <p>
+            While I am currently based in the Netherlands, I am available
+            worldwide, so if my services sound right for you, please feel free
+            to reach out and send me a message. We can meet for a coffee, or we
+            can discuss your ideas via Skype, phone or email.
+          </p>
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/c327f660-2fbc-46af-b4b8-39b942876196/couplephotos5webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Couple kissing"
-                src="https://ucarecdn.com/21ea186e-24c9-487a-8fd2-47bbdf2c2c65/couplephotos5.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/8f9f36c0-b25e-474a-852d-c1fd0c017345/couplephotos10webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/05c72d85-a63a-4772-b40a-b07d52db6d19/couplephotos10.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Hand with tulips"
-                src="https://ucarecdn.com/05c72d85-a63a-4772-b40a-b07d52db6d19/couplephotos10.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-
-            <Button to={"/contact"}> Contact Annie </Button>
+          <ButtonContainer>
+            <Button to={"/contact"}> Request  </Button>
+            <GoToTopButton
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              Go to top{" "}
+            </GoToTopButton>
+          </ButtonContainer>
         </Container>
+        <Quote>
+          Annie has a great eye for photos. She was very friendly and made me
+          feel comfortable in front of the camera. She knows her way around
+          Haarlem and many cool photo spots. She turned around my photos really
+          quickly and they all turned out great. I would highly recommend this
+          experience with Annie, especially if you travel a lot on your own, its
+          so nice to have photos of your trip that aren’t selfies!!
+          <br /> — Autumn
+          <br /> ⭐⭐⭐⭐⭐
+        </Quote>
+
+        <Quote>
+          I’m so happy I found Annie she is Truly an Amazing Professional
+          Photographer and a Great person . Super sweet , funny and very easy
+          going . I can’t say enough positive things about her. I love all my
+          pictures . She also delivered them very quick, faster than I expected.
+          She was amazing and super easy to work with . 100% recommend Most
+          definitely 5 stars !!! Couldn’t be happier with the quality of work!
+          Best service for the value! HIGHLY RECOMMENDED !!
+          <br />- Andreina
+          <br /> ⭐⭐⭐⭐⭐
+        </Quote>
+
+        <Quote>
+          This photo shoot with Annie was a highlight of our trip. She’s so
+          incredibly personable and friendly and was really flexible about
+          rescheduling when I got a nasty cold in Amsterdam. Getting to know a
+          new unexplored city with a someone who knew all the best spots for
+          photos and a bit of the history and culture was incredibly fun. My
+          fiancé and I don’t just have a whole collection of gorgeous photos,
+          but a really, really special memory of the afternoon we spent with
+          Annie. She had excellent tips not just about locations for photos, but
+          different poses and activities to try that made the whole experience
+          really relaxed and so much more fun than I was expecting (as I’ve felt
+          kind of awkward in front of the camera in the past). Annie gave us a
+          truly unique afternoon and even had recommendations for what to do
+          with the rest of our afternoon in Haarlem. I truly cannot recommend
+          this experience enough!
+          <br /> — Jessica
+          <br /> ⭐⭐⭐⭐⭐
+        </Quote>
       </div>
     );
   }

@@ -6,6 +6,8 @@ import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import { Button } from "./Ui";
+import { GoToTopButton } from "./FullPost";
+import { Quote, ButtonContainer, Szepalcim } from "./Couples";
 export const Video = styled.iframe`
   border: none;
   position: absolute;
@@ -177,9 +179,6 @@ class Rules extends React.Component {
           </BookingSteps>
 
 
-            <Button to={"/contact"}> Contact Annie </Button>
-
-
           <VideoBox>
             <Video
               width="100%"
@@ -189,6 +188,18 @@ class Rules extends React.Component {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             ></Video>
           </VideoBox>
+
+          <ButtonContainer>
+            <Button to={"/contact"}> Contact Annie  </Button>
+            <GoToTopButton
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              Go to top{" "}
+            </GoToTopButton>
+          </ButtonContainer>
+
         </Container>
       </div>
     );

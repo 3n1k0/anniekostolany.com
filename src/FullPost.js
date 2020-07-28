@@ -6,9 +6,21 @@ import { PostTitle } from "./Blog";
 import { Helmet } from "react-helmet";
 import { HeaderImage } from "./Home";
 import { fonts } from "./config";
+import { Icon } from "./Footer";
+
+const ShareContainer = styled.div`
+  width: 30%;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+`;
 
 const Container = styled.div`
-  height: 700px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -23,17 +35,26 @@ const Post = styled.div`
   padding: 100px;
   position: relative;
   display: block;
+
 `;
 
 const Title = styled.div`
-  margin: 0 auto;
   position: absolute;
   color: white;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: ${fonts.focim};
   font-size: 3em;
   letter-spacing: 2px;
   font-weight: 600;
+  max-width: 70%;
+  text-align: center;
+`;
+
+const Header = styled.div`
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Date = styled(Title)`
@@ -55,12 +76,13 @@ const TextContainer = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+
 `;
 
 const StyledImg = styled.img`
-  padding: 50px 0px;
-  width: 100%;
+  margin: 50px;
 `;
+
 export const GoToTopButton = styled.button`
   outline: none;
   text-transform: uppercase;
@@ -92,15 +114,17 @@ class FullPost extends React.Component {
         <Navbar style={{ background: "rgb(9, 6, 10)", marginBottom: "20px" }} />
 
         <Container>
-          <HeaderImage src={post.leadimage} loading="lazy"></HeaderImage>
+          <Header>
+            <HeaderImage src={post.leadimage} loading="lazy"></HeaderImage>
+            <Title>{post.title}</Title>
 
-          <Date>October 25, 2018</Date>
-          <Title>{post.title}</Title>
+            <Date>{post.date}</Date>
+          </Header>
 
           <Post>
-            <TextContainer>
-              <p>{post.content} </p>
-            </TextContainer>
+            <TextContainer
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            ></TextContainer>
 
             {post.postimage &&
               post.postimage.map((image) => {
@@ -108,16 +132,42 @@ class FullPost extends React.Component {
               })}
           </Post>
 
+          <ShareContainer>
+            <div
+              class="fb-share-button"
+              data-href="https://developers.facebook.com/docs/plugins/"
+              data-layout="button"
+              data-size="large"
+            >
+              <a
+                target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                class="fb-xfbml-parse-ignore"
+              >
+                Share
+              </a>
+            </div>
 
-        <GoToTopButton
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        >
-          Go to top{" "}
-        </GoToTopButton>
+            <Icon>
+              <a href="mailto:mail@anniekostolany.com" label="Send an email">
+                <i style={{ color: "black" }} class="far fa-envelope"></i>
+              </a>
+            </Icon>
+            <Icon>
+              <a href="mailto:mail@anniekostolany.com" label="Send an email">
+                <i style={{ color: "black" }} class="far fa-envelope"></i>
+              </a>
+            </Icon>
+          </ShareContainer>
+
+          <GoToTopButton
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            Go to top{" "}
+          </GoToTopButton>
         </Container>
-
       </div>
     );
   }

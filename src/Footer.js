@@ -15,7 +15,7 @@ const Container = styled.div`
   position: relative;
 `;
 
-const Icontainer = styled.div`
+export const Icontainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,9 +24,10 @@ const Icontainer = styled.div`
   padding-top: 30px;
 `;
 
-const Icon = styled.div`
+export const Icon = styled.div`
   font-size: 2em;
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
   outline: none;
 `;
 
