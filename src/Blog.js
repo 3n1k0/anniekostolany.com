@@ -3,65 +3,82 @@ import Navbar from "./Navbar";
 import styled from "styled-components/macro";
 import posts from "./posts";
 import { device } from "./mediaquery";
-import { fonts } from "./config";
+import { fonts, colors } from "./config";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { Button } from "./Ui";
 
 const Container = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
+  flex-flow: row wrap;
+
   padding-top: 150px;
 
   @media ${device.desktop} {
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    align-content: center;
-    padding: 200px 100px;
+ 
   }
 `;
-const PostContainer = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
 
-  @media ${device.desktop} {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 40%;
-    padding-bottom: 50px;
-  }
-`;
+
 
 const Post = styled.div`
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+  flex-flow: column;
+  max-width: 600px;
+  padding: 50px 0px;
 
   @media ${device.desktop} {
-    display: flex;
-    flex-flow: column nowrap;
+  
   }
+
+
 `;
 
 export const PostTitle = styled.h1`
-  font-family: ${fonts.cimek};
+  font-family: ${fonts.mindenmas};
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: left;
   padding-bottom: 30px;
   letter-spacing: 1px;
+  color: ${colors.cimek};
+  max-width: 600px;
 `;
 
 export const StyledImg = styled.img`
   width: 100%;
+  height: 400px;
   padding-bottom: 30px;
+  object-fit: cover;
+
+  &:hover {
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+
+  }
+
+  @media ${device.desktop} {
+    width: 600px;
+    height: 400px;
+  }
+`;
+
+const Readmore = styled(Button)`
+  border: none;
+  background: none;
+  font-size: 15px;
+  color: black;
+
+  &:hover {
+    background: none;
+    color: black;
+
+  
+  }
 `;
 
 class Blog extends React.Component {
@@ -82,21 +99,16 @@ class Blog extends React.Component {
           {" "}
           {posts.map((post) => {
             return (
-              <PostContainer>
-                <Post>
+              <Post>
                 <NavLink to={"/blog/posts/" + post.slug}>
                   <PostTitle>{post.title}</PostTitle>
                   <StyledImg src={post.leadimage} />
-                  </NavLink>
-                  <p>
-                    {post.excerpt}{" "}
-                    <NavLink to={"/blog/posts/" + post.slug}>
-                      ...read more
-                    </NavLink>
-                  </p>
-                  
-                </Post>
-              </PostContainer>
+                </NavLink>
+                <p>{post.excerpt} </p>
+                <Readmore to={"/blog/posts/" + post.slug}>
+                  ...Read more
+                </Readmore>
+              </Post>
             );
           })}
         </Container>

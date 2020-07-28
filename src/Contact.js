@@ -105,7 +105,7 @@ class Contact extends React.Component {
             content="Amsterdam-based professional photography - Contact Annie "
           />
         </Helmet>
-        <Navbar style={{ background: "#1f1f1f" }} />
+        <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         setTimeout(function () {window.scrollTo(500, 0)},2);
         <Container>
           <form action="https://formspree.io/mknqqvoz" method="POST">

@@ -6,7 +6,7 @@ import { PostTitle } from "./Blog";
 import { Helmet } from "react-helmet";
 import { HeaderImage } from "./Home";
 import { fonts } from "./config";
-import { Icon } from "./Footer";
+import { device } from "./mediaquery";
 
 const ShareContainer = styled.div`
   width: 30%;
@@ -30,57 +30,72 @@ const Container = styled.div`
 `;
 
 const Post = styled.div`
-  width: 60%;
+  width: 90%;
   height: 100%;
-  padding: 100px;
-  position: relative;
-  display: block;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: ${fonts.mindenmas};
+  line-height: 1.5;
+  font-size: 17px;
 
+  @media ${device.desktop} {
+    padding: 100px 100px 50px 100px;
+    width: 60%;
+  }
 `;
 
 const Title = styled.div`
   position: absolute;
   color: white;
-  /* text-transform: uppercase; */
   font-family: ${fonts.focim};
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: 2px;
   font-weight: 600;
   max-width: 70%;
   text-align: center;
+  text-transform: uppercase;
+
+  @media ${device.desktop}{
+    font-size: 3em;
+  }
+
 `;
 
 const Header = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 `;
 
-const Date = styled(Title)`
+const Date = styled.div`
   font-size: 1.5em;
   top: 270px;
   font-family: ${fonts.kacskaringos};
   text-transform: none;
-`;
+  position: absolute;
+  color: white;
 
-const PostContainer = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  height: 100%;
-  width: 100%;
 `;
 
 const TextContainer = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-items: center;
 
+  img {
+    padding-top: 30px;
+    width: 100%;
+  }
 `;
 
 const StyledImg = styled.img`
-  margin: 50px;
+  padding: 50px;
 `;
 
 export const GoToTopButton = styled.button`
@@ -132,7 +147,7 @@ class FullPost extends React.Component {
               })}
           </Post>
 
-          <ShareContainer>
+          {/* <ShareContainer>
             <div
               class="fb-share-button"
               data-href="https://developers.facebook.com/docs/plugins/"
@@ -158,7 +173,7 @@ class FullPost extends React.Component {
                 <i style={{ color: "black" }} class="far fa-envelope"></i>
               </a>
             </Icon>
-          </ShareContainer>
+          </ShareContainer> */}
 
           <GoToTopButton
             onClick={() => {

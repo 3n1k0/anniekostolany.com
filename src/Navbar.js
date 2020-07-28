@@ -251,7 +251,7 @@ const DropDown = styled.div`
     height: 270px;
     position: absolute;
     z-index: 5;
-    top: 50px;
+    top: 40px;
     padding: 24px 15px;
     flex-flow: column;
   }
@@ -326,7 +326,11 @@ class Navbar extends React.Component {
               <ul>
                 <PortfolioMenuitem
                   onMouseOver={() => {
+
                     this.setState({ isDropDownOpen: true });
+                  }}
+                  onMouseLeave={() => {
+                    this.setState({ isDropDownOpen: false });
                   }}
                   onClick={(event) => {
                     event.stopPropagation();
@@ -338,7 +342,7 @@ class Navbar extends React.Component {
                   <Menuitem><b>+ Portfolio</b></Menuitem>
                   <DropDown
                     isOpen={this.state.isDropDownOpen}
-                    onMouseOut={() => {
+                    onMouseLeave={() => {
                       this.setState({ isDropDownOpen: false });
                     }}
                     backgroundColor={this.props.dropDowncolor}
