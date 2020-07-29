@@ -4,11 +4,7 @@ import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import {
-  Button,
-  ButtonContainer,
-  GoToTopButton,
-} from "../Ui";
+import { Button, ButtonContainer, GoToTopButton } from "../Ui";
 import Reviews from "../Reviews";
 
 const ImageContainer = styled.div`
@@ -20,7 +16,6 @@ const ImageContainer = styled.div`
   flex-flow: column;
   padding-top: 100px;
 
-
   img {
     height: 100%;
     object-fit: cover;
@@ -30,12 +25,12 @@ const ImageContainer = styled.div`
   @media ${device.tablet} {
     height: 100%;
     flex-flow: row wrap;
-
+    width: 70%;
+    margin: 0 auto;
   }
   @media ${device.desktop} {
     height: 500px;
     flex-flow: row;
-
   }
 `;
 
@@ -45,8 +40,6 @@ const Container = styled.div`
   margin: 0 auto;
   color: #585656;
   text-align: left;
-
-
 
   p {
     font-family: ${fonts.mindenmas};
@@ -76,7 +69,6 @@ const Package = styled.div`
   align-items: center;
   justify-content: center;
 
-
   p {
     text-align: center;
   }
@@ -89,16 +81,18 @@ const Package = styled.div`
     text-transform: uppercase;
   }
 
-  @media ${device.desktop}{
+  @media ${device.desktop} {
     flex-flow: row nowrap;
     margin-top: 100px;
   }
+
+
 `;
 
 const Option = styled.div`
   padding: 40px;
   height: 100%;
-  min-height: 400px;
+  min-height: 420px;
 `;
 
 const Information = styled(Package)`
@@ -111,6 +105,11 @@ const Information = styled(Package)`
 
   h1 {
     padding-top: 80px;
+  }
+
+  @media ${device.tablet} {
+    width: 70%;
+    margin: 0 auto;
   }
 `;
 
@@ -134,6 +133,10 @@ const Honor = styled.div`
     text-align: justify;
     width: 60%;
   }
+
+  @media ${device.tablet} {
+    width: 70%;
+  }
 `;
 
 class Investment extends React.Component {
@@ -149,46 +152,41 @@ class Investment extends React.Component {
           />
         </Helmet>
 
-
         <ImageContainer>
-            
-        <picture>
-              <source
-                srcset="http://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/webp/"
-                type="image/webp"
-              />
-              <img src="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/auto/" />
-            </picture>
-            <picture>
-              <source
-                srcset="http://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/webp/"
-                type="image/webp"
-              />
-              <img src="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/auto/" />
-            </picture>
+          <picture>
+            <source
+              srcset="http://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/webp/"
+              type="image/webp"
+            />
+            <img src="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/auto/" />
+          </picture>
+          <picture>
+            <source
+              srcset="http://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/webp/"
+              type="image/webp"
+            />
+            <img src="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/auto/" />
+          </picture>
 
-            <picture>
-              <source
-                srcset="http://ucarecdn.com/0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/webp/"
-                type="image/webp"
-              />
-              <img src="https://0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/auto/" />
-            </picture>
+          <picture>
+            <source
+              srcset="http://ucarecdn.com/0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/webp/"
+              type="image/webp"
+            />
+            <img src="https://0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/auto/" />
+          </picture>
 
-            <picture>
-              <source
-                srcset="http://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/webp/"
-                type="image/webp"
-              />
-              <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/auto/" />
-            </picture>
-
-          </ImageContainer>
+          <picture>
+            <source
+              srcset="http://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/webp/"
+              type="image/webp"
+            />
+            <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/auto/" />
+          </picture>
+        </ImageContainer>
         <Container>
-          
-
           <Package>
-            <Option style={{background:"#d4af37"}}>
+            <Option style={{ background: "#d4af37" }}>
               <h1>Gold Option</h1>
               <p>
                 <ul>
@@ -254,8 +252,8 @@ class Investment extends React.Component {
               deliver all your images on Pixieset in high resolution jpeg, in a
               private, password-protected online gallery.
               <br />
-              0% interest payment plans are available with any purchase with
-              Annei Kostolany Photography.
+              0% interest payment plans are available with any package of your
+              choice from Annie Kostolany Photography.
             </p>
           </Information>
 

@@ -12,7 +12,7 @@ export const Quote = styled(CardTitle)`
   font-size: 17px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 60px;
+  padding: 30px;
   background: #ccafaf;
 
   p {
@@ -23,7 +23,6 @@ export const Quote = styled(CardTitle)`
   @media ${device.desktop} {
     padding: 100px;
     font-size: 18px;
-    max-width: 100%;
     height: 20%;
 
     p {

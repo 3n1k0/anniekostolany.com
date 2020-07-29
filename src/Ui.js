@@ -37,6 +37,7 @@ export const CardInnerContainer = styled.div`
   line-height: 2;
   width: 100%;
   color: rgb(88, 86, 86);
+  font-family: ${fonts.mindenmas};
 
   @media ${device.desktop} {
     padding: 0px 50px;
