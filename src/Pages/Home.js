@@ -227,24 +227,26 @@ class Home extends React.Component {
           </picture>
         </ImageContainer>
 
+
+       
+
+        
+
+
         <CardsContainer>
-          <picture>
+  
+        <picture>
             <source
-              srcset="https://ucarecdn.com/28cda8e9-e274-444b-9a60-02cbb1424ae9/home4.webp"
+              srcset="http://ucarecdn.com/28cda8e9-e274-444b-9a60-02cbb1424ae9/-/preview/-/format/webp/"
               type="image/webp"
-              loading="lazy"
-            />
-            <source
-              srcset="https://ucarecdn.com/36afc3be-e95c-408e-bcfd-7d56295bb21d/home4.jpg"
-              type="image/jpeg"
               loading="lazy"
             />
 
             <Image
               alt="Mom with child"
-              src="https://ucarecdn.com/36afc3be-e95c-408e-bcfd-7d56295bb21d/home4.jpg"
+              src="https://ucarecdn.com/28cda8e9-e274-444b-9a60-02cbb1424ae9/-/preview/-/format/auto/"
               loading="lazy"
-            ></Image>
+            />
           </picture>
 
           <CardInnerContainer>
