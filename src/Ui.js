@@ -8,9 +8,9 @@ import { device } from "./mediaquery";
 export const CardsContainer = styled.div`
   display: flex;
   flex-flow: column;
-  width: 70%;
+  width: 100%;
   margin: 50px auto;
-  padding: 20px 20px;
+  padding: 20px 0px;
   justify-content: center;
   align-items: center;
 
@@ -22,6 +22,10 @@ export const CardsContainer = styled.div`
     padding: 50px 0px;
     justify-content: flex-start;
   }
+  @media ${device.tablet} {
+    width: 60%;
+  }
+
 `;
 
 const h2 = styled.div`
@@ -47,12 +51,20 @@ export const CardInnerContainer = styled.div`
 export const Text = styled.div`
   margin: 0 auto;
   font-family: ${fonts.mindenmas};
-  max-width: 90%;
+  width: 90%;
   color: ${colors.footerfekete};
 
+
   @media ${device.desktop} {
-    max-width: 60%;
+    width: 60%;
   }
+
+  p{
+    font-size: 20px;
+    width: 100%;
+  }
+
+
 `;
 
 export const Szepalcim = styled.div`
@@ -75,7 +87,7 @@ export const Szepalcim = styled.div`
 
 
 export const ImageContainer = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 
   @media ${device.desktop} {

@@ -130,8 +130,8 @@ export const Menuitems = styled.ul`
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   background: rgb(88, 86, 86);
   background: linear-gradient(
-    176deg,
-    rgba(9, 6, 10, 1) 30%,
+    170deg,
+    rgba(9, 6, 10, 1) 40%,
     rgba(190, 190, 191, 0) 90%
   );
 

@@ -14,7 +14,6 @@ import {
   CardInnerContainer,
   CardTitle,
   Text,
-  Szepalcim,
 } from "../Ui";
 
 const TextBox = styled.div`
@@ -22,15 +21,21 @@ const TextBox = styled.div`
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
-  width: 60%;
+  width: 100%;
   font-size: 1.5em;
 `;
 
 const TextTitle = styled.div`
   font-family: ${fonts.kacskaringos};
-  font-size: 2em;
+  font-size: 1.5em;
   padding-bottom: 30px;
   color: ${colors.footerfekete};
+  width: 90%;
+  margin: 0 auto;
+
+  @media ${device.desktop} {
+    font-size: 2em;
+  }
 `;
 
 const Container = styled.div`
@@ -77,10 +82,15 @@ export const Motto = styled.div`
   color: white;
   font-style: normal;
   font-size: 1rem;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   text-transform: uppercase;
+  padding-bottom: 20px;
+  width: 110%;
 
   @media ${device.tablet} {
+    font-size: 2rem;
+  }
+  @media ${device.desktop} {
     font-size: 2rem;
   }
 `;
@@ -191,8 +201,6 @@ class Home extends React.Component {
           </picture>
         </ImageContainer>
 
-
-      
         <ImageContainer>
           <picture>
             <source
@@ -208,8 +216,6 @@ class Home extends React.Component {
             />
           </picture>
         </ImageContainer>
-
-
 
         <ImageContainer>
           <picture>
@@ -227,15 +233,8 @@ class Home extends React.Component {
           </picture>
         </ImageContainer>
 
-
-       
-
-        
-
-
         <CardsContainer>
-  
-        <picture>
+          <picture>
             <source
               srcset="http://ucarecdn.com/28cda8e9-e274-444b-9a60-02cbb1424ae9/-/preview/-/format/webp/"
               type="image/webp"
