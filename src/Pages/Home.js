@@ -174,45 +174,59 @@ class Home extends React.Component {
             </p>
           </Text>
         </TextBox>
-       
-       <ImageContainer>
-     
-        <picture>
-          <source
-            srcset="http://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/webp/"
-            type="image/webp"
-            loading="lazy"
-          />
-      
-          <Image 
-          alt="Beach wedding couple"
-          src="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/auto/"
-          loading="lazy" />
-        </picture>
-        
-        
-        </ImageContainer>
-        
+
         <ImageContainer>
           <picture>
             <source
-              srcset="https://ucarecdn.com/ac9d9011-17ae-4a52-825f-6913f36ee858/home3.webp"
+              srcset="http://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/webp/"
               type="image/webp"
               loading="lazy"
             />
+
+            <Image
+              alt="Beach wedding couple"
+              src="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/auto/"
+              loading="lazy"
+            />
+          </picture>
+        </ImageContainer>
+
+
+      
+        <ImageContainer>
+          <picture>
             <source
-              srcset="https://ucarecdn.com/1e54e891-9704-4660-9b36-95389633c2b7/home3.jpg"
-              type="image/jpeg"
+              srcset="http://ucarecdn.com/e7011a88-163a-43da-b4a5-f2edc506a456/-/preview/-/format/webp/"
+              type="image/webp"
+              loading="lazy"
+            />
+
+            <Image
+              alt="Amsterdam girl with bike"
+              src="https://ucarecdn.com/e7011a88-163a-43da-b4a5-f2edc506a456/-/preview/-/format/auto/"
+              loading="lazy"
+            />
+          </picture>
+        </ImageContainer>
+
+
+
+        <ImageContainer>
+          <picture>
+            <source
+              srcset="http://ucarecdn.com/ac9d9011-17ae-4a52-825f-6913f36ee858/-/preview/-/format/webp/"
+              type="image/webp"
               loading="lazy"
             />
 
             <Image
               alt="Windmill engagement couple"
-              src="https://ucarecdn.com/1e54e891-9704-4660-9b36-95389633c2b7/home3.jpg"
+              src="https://ucarecdn.com/ac9d9011-17ae-4a52-825f-6913f36ee858/-/preview/-/format/auto/"
               loading="lazy"
-            ></Image>
+            />
           </picture>
         </ImageContainer>
+
         <CardsContainer>
           <picture>
             <source
