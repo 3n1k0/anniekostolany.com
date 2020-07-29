@@ -8,18 +8,45 @@ import {
   Button,
   ButtonContainer,
   GoToTopButton,
-  Image,
-  ImageContainer,
-  Szepalcim,
 } from "../Ui";
 import Reviews from "../Reviews";
 
+const ImageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-top: 100px;
+
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 400px;
+  }
+
+  @media ${device.tablet} {
+    height: 100%;
+    flex-flow: row wrap;
+
+  }
+  @media ${device.desktop} {
+    height: 500px;
+    flex-flow: row;
+
+  }
+`;
+
 const Container = styled.div`
   width: 100%;
+  height: 100%;
   margin: 0 auto;
-  padding: 150px 0px 0px 0px;
   color: #585656;
-  text-align: center;
+  text-align: left;
+
+
 
   p {
     font-family: ${fonts.mindenmas};
@@ -41,33 +68,72 @@ const Container = styled.div`
 
 const Package = styled.div`
   height: 100%;
-  background: #d4af37;
   width: 100%;
   text-align: center;
   opacity: 0.9;
   display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
 
   p {
     text-align: center;
   }
 
   h1 {
-    margin-top: 30px;
     font-family: ${fonts.mindenmas};
     font-size: 3em;
     padding: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
+
+  @media ${device.desktop}{
+    flex-flow: row nowrap;
+    margin-top: 100px;
+  }
 `;
 
 const Option = styled.div`
-  width: 50%;
+  padding: 40px;
+  height: 100%;
+  min-height: 400px;
 `;
 
 const Information = styled(Package)`
   display: block;
   background: white;
+
+  p {
+    text-align: left;
+  }
+
+  h1 {
+    padding-top: 80px;
+  }
+`;
+
+const Honor = styled.div`
+  margin: 0 auto;
+  background: lightpink;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-flow: column-reverse;
+
+  img {
+    padding: 10px;
+    width: 100%;
+  }
+
+  @media ${device.desktop} {
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 60%;
+  }
 `;
 
 class Investment extends React.Component {
@@ -83,18 +149,56 @@ class Investment extends React.Component {
           />
         </Helmet>
 
+
+        <ImageContainer>
+            
+        <picture>
+              <source
+                srcset="http://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/webp/"
+                type="image/webp"
+              />
+              <img src="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/auto/" />
+            </picture>
+            <picture>
+              <source
+                srcset="http://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/webp/"
+                type="image/webp"
+              />
+              <img src="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/auto/" />
+            </picture>
+
+            <picture>
+              <source
+                srcset="http://ucarecdn.com/0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/webp/"
+                type="image/webp"
+              />
+              <img src="https://0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/auto/" />
+            </picture>
+
+            <picture>
+              <source
+                srcset="http://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/webp/"
+                type="image/webp"
+              />
+              <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/auto/" />
+            </picture>
+
+          </ImageContainer>
         <Container>
+          
+
           <Package>
-            <Option>
+            <Option style={{background:"#d4af37"}}>
               <h1>Gold Option</h1>
               <p>
                 <ul>
-                  <li>Pre-consultation before your session</li>
+                  <li>A pre-session style consultation before your session</li>
                   <li>2-2,5 hours of shooting time</li>
                   <li>Unlimited outfit changes</li>
                   <li>40 retouched, high-resolution</li>
                   <li>
-                    Delivered to you in a password-protected online gallery
+                    A customized, password-protected online gallery available
+                    for 6 months after your shoot
                   </li>
                   <li>Price including VAT: 380 Eur</li>
                 </ul>
@@ -105,12 +209,12 @@ class Investment extends React.Component {
               <h1>Silver Option </h1>
               <p>
                 <ul>
-                  <li>Up to 6 people</li>
                   <li>1-1,5 hours of shooting time</li>
                   <li>Pre-consultation before your session</li>
                   <li>30 retouched, high-resolution photographs</li>
                   <li>
-                    Delivered to you in a password-protected online gallery
+                    A customized, password-protected online gallery available
+                    for 6 months after your shoot
                   </li>
                   <li>Price including VAT: 320 Eur</li>
                 </ul>
@@ -119,41 +223,76 @@ class Investment extends React.Component {
           </Package>
 
           <Information>
-          <h1>Events</h1>
+            <h1>Events</h1>
             <p>
-              
-              You can book Annie Kostolany's photography
-              services for events, celebrations, weddings. (min. booking time -
-              2 hours, €130 / hour) Please email me with the details (time, location, number
-              of people, duration) to get a perfectly tailored price offer. For
-              my wedding price guide and other enquiries please send an email to
+              You can book Annie Kostolany's photography services for events,
+              celebrations, weddings. (min. booking time - 2 hours, €130 / hour)
+              Please email me with the details (time, location, number of
+              people, duration) to get a perfectly tailored price offer. For my
+              wedding price guide and other enquiries please send an email to
               mail@anniekostolany.com.
             </p>
           </Information>
 
           <Information>
-            <h1>Important information</h1>
+            <h1>Additional information</h1>
 
             <p>
               50% non-refundable retainer is required for bookings. Bookings
               will not be accepted without this deposit. (In case of illness or
               bad weather, a new appointment date can be agreed, but in the case
               of outright cancellation, the deposit is non-refundable.)
+              <br />
               Remaining payment becomes due after the shoot via bank transfer,
               PayPal or cash. Annie Kostolany Photography does not provide .raw
-              or unedited photos. Image delivery: First I provide a Pixieset
-              gallery of low-resolution, watermarked images from which you can
-              pick your favorites from. When you create this list, I receive a
-              notification and can immediately start to retouch and edit your
-              final images. During this process you may always choose to
-              purchase more photos than the previously agreed number. I deliver
-              all your images on Pixieset in high resolution jpeg, in a private,
-              password-protected online gallery.
+              or unedited photos. <br /> Image delivery: First I provide a
+              Pixieset gallery of low-resolution, watermarked images from which
+              you can pick your favorites from. When you create this list, I
+              receive a notification and can immediately start to retouch and
+              edit your final images. During this process you may always choose
+              to purchase more photos than the previously agreed number. I
+              deliver all your images on Pixieset in high resolution jpeg, in a
+              private, password-protected online gallery.
+              <br />
+              0% interest payment plans are available with any purchase with
+              Annei Kostolany Photography.
             </p>
           </Information>
 
+          <Honor>
+            <p>
+              It's an honor that you are considering Annie Kostolany Photography
+              - Amsterdam Photographer to capture one of the most important
+              moments of your life for YOU and YOUR family. <br />
+              We begin the planning with an in-person or phone consultation
+              where we will gather all the desires and aspects of what you are
+              expecting for your session, including color palette, wardrobe,
+              styling, any personal items you'd like to incorporate and we will
+              decide the perfect location for your session. <br />
+              I am so excited to start planning your DREAM photo session! <br />{" "}
+              Let's capture your life’s important moments forever.
+              <br />
+              <br />
+              Ready to book? <br /> Click below to schedule your design
+              consultation!
+              <ButtonContainer>
+                <Button style={{ marginTop: "20px" }} to={"/contact"}>
+                  {" "}
+                  Contact Annie{" "}
+                </Button>
+              </ButtonContainer>
+            </p>
+
+            <picture>
+              <source
+                srcset="http://ucarecdn.com/df3ab74b-37b5-4458-9b23-9e8d883419f6/-/preview/1000x1300/-/format/webp/"
+                type="image/webp"
+              />
+              <img src="https://ucarecdn.com/df3ab74b-37b5-4458-9b23-9e8d883419f6/-/preview/1000x1300/-/format/auto/" />
+            </picture>
+          </Honor>
+
           <ButtonContainer>
-            <Button to={"/contact"}> Contact Annie </Button>
             <GoToTopButton
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
