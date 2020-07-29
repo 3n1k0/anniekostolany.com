@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
-import { fonts } from "./config";
+import { fonts } from "../config";
 
 const Button = styled.button`
   padding: 20px;

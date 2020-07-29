@@ -4,9 +4,10 @@ import styled from "styled-components/macro";
 import posts from "./posts";
 import { PostTitle } from "./Blog";
 import { Helmet } from "react-helmet";
-import { HeaderImage } from "./Home";
+import { HeaderImage } from "./Pages/Home";
 import { fonts } from "./config";
 import { device } from "./mediaquery";
+import { GoToTopButton } from './Ui'
 
 const ShareContainer = styled.div`
   width: 30%;
@@ -98,15 +99,7 @@ const StyledImg = styled.img`
   padding: 50px;
 `;
 
-export const GoToTopButton = styled.button`
-  outline: none;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  margin: 0 auto;
-  padding: 20px;
-  background: none;
-`;
+
 
 class FullPost extends React.Component {
   render() {

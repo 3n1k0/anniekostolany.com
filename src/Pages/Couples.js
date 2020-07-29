@@ -1,25 +1,21 @@
 import React from "react";
-import { device } from "./mediaquery";
+import { device } from "../mediaquery";
 import styled from "styled-components/macro";
-import { fonts, colors } from "./config";
-import Navbar from "./Navbar";
+import { fonts, colors } from "../config";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import {
+  Button,
+  ButtonContainer,
+  GoToTopButton,
   Image,
   ImageContainer,
   CardsContainer,
   CardInnerContainer,
-  CardTitle,
   Text,
-} from "./Home";
-import { Button } from "./Ui";
-import { GoToTopButton } from "./FullPost";
-
-export const ButtonContainer = styled.div`
-  padding: 10px;
-  display: flex;
-  flex-flow: column;
-`;
+  Szepalcim,
+} from "../Ui";
+import Reviews from "../Reviews";
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -28,24 +24,6 @@ const Sharedbox = styled.div`
 
   @media ${device.desktop} {
     width: 60%;
-  }
-`;
-
-export const Szepalcim = styled.div`
-  font-family: ${fonts.mindenmas};
-  font-weight: 100;
-  font-size: 1.3em;
-
-  letter-spacing: 0px;
-  text-transform: none;
-  line-height: 1.5em;
-  padding-bottom: 30px;
-  max-width: 100%;
-  margin: 0 auto;
-
-  @media ${device.desktop} {
-    max-width: 65%;
-    font-size: 1.3em;
   }
 `;
 
@@ -62,33 +40,6 @@ const Container = styled.div`
     text-align: left;
     line-height: 1.5;
     letter-spacing: 0.005em;
-  }
-`;
-
-export const Quote = styled(CardTitle)`
-  color: ${colors.cimek};
-  text-align: center;
-  font-family: ${fonts.mindenmas};
-  font-size: 17px;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 30px;
-  background: rgba(98.4%, 97.3%, 75.6%, 1);
-
-  p {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  @media ${device.desktop} {
-    padding: 60px;
-    font-size: 18px;
-    max-width: 100%;
-
-    p {
-      width: 60%;
-      margin: 0 auto;
-    }
   }
 `;
 
@@ -448,6 +399,7 @@ class Couples extends React.Component {
             </GoToTopButton>
           </ButtonContainer>
         </Container>
+        <Reviews />
       </div>
     );
   }

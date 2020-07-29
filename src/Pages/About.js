@@ -1,12 +1,9 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { fonts } from "./config";
-import Navbar from "./Navbar";
+import { fonts } from "../config";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import { Image, ImageContainer, Text } from "./Home";
-import { Button } from "./Ui";
-import { GoToTopButton } from "./FullPost";
-import { ButtonContainer } from './Couples'
+import { Button, ButtonContainer, GoToTopButton, Image, ImageContainer, Text } from '../Ui'
 
 
 const Container = styled.div`

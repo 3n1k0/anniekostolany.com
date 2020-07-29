@@ -1,13 +1,20 @@
 import React from "react";
-import { device } from "./mediaquery";
+import { device } from "../mediaquery";
 import styled from "styled-components/macro";
-import { fonts } from "./config";
-import Navbar from "./Navbar";
+import { fonts } from "../config";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import { Image, ImageContainer, Text } from "./Home";
-import { Quote, ButtonContainer, Szepalcim } from "./Couples";
-import { Button } from "./Ui";
-import { GoToTopButton } from "./FullPost";
+import {
+  Button,
+  ButtonContainer,
+  GoToTopButton,
+  Image,
+  ImageContainer,
+  CardsContainer,
+  CardInnerContainer,
+  Text,
+} from "../Ui";
+import Reviews from '../Reviews';
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -378,48 +385,7 @@ class Travelers extends React.Component {
           </ButtonContainer>
           
         </Container>
-        <Quote>
-            Annie has a great eye for photos. She was very friendly and made me
-            feel comfortable in front of the camera. She knows her way around
-            Haarlem and many cool photo spots. She turned around my photos
-            really quickly and they all turned out great. I would highly
-            recommend this experience with Annie, especially if you travel a lot
-            on your own, its so nice to have photos of your trip that aren’t
-            selfies!!
-            <br /> — Autumn
-            <br /> ⭐⭐⭐⭐⭐
-          </Quote>
-
-          <Quote>
-            I’m so happy I found Annie she is Truly an Amazing Professional
-            Photographer and a Great person . Super sweet , funny and very easy
-            going . I can’t say enough positive things about her. I love all my
-            pictures . She also delivered them very quick, faster than I
-            expected. She was amazing and super easy to work with . 100%
-            recommend Most definitely 5 stars !!! Couldn’t be happier with the
-            quality of work! Best service for the value! HIGHLY RECOMMENDED !! 
-            <br />- Andreina
-            <br /> ⭐⭐⭐⭐⭐
-          </Quote>
-
-          <Quote>
-            This photo shoot with Annie was a highlight of our trip. She’s so
-            incredibly personable and friendly and was really flexible about
-            rescheduling when I got a nasty cold in Amsterdam. Getting to know a
-            new unexplored city with a someone who knew all the best spots for
-            photos and a bit of the history and culture was incredibly fun. My
-            fiancé and I don’t just have a whole collection of gorgeous photos,
-            but a really, really special memory of the afternoon we spent with
-            Annie. She had excellent tips not just about locations for photos,
-            but different poses and activities to try that made the whole
-            experience really relaxed and so much more fun than I was expecting
-            (as I’ve felt kind of awkward in front of the camera in the past).
-            Annie gave us a truly unique afternoon and even had recommendations
-            for what to do with the rest of our afternoon in Haarlem. I truly
-            cannot recommend this experience enough! 
-            <br /> — Jessica
-            <br /> ⭐⭐⭐⭐⭐
-          </Quote>
+        <Reviews />
       </div>
     );
   }

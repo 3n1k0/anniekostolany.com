@@ -1,13 +1,11 @@
 import React from "react";
-import { device } from "./mediaquery";
+import { device } from "../mediaquery";
 import styled from "styled-components/macro";
-import { fonts } from "./config";
-import Navbar from "./Navbar";
+import { fonts } from "../config";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import { Image, ImageContainer, Text } from "./Home";
-import { Quote, ButtonContainer, Szepalcim } from "./Couples";
-import { Button } from "./Ui";
-import { GoToTopButton } from "./FullPost";
+import { Button, ButtonContainer, GoToTopButton, Image, ImageContainer, Szepalcim, } from "../Ui";
+import Reviews from '../Reviews';
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -44,6 +42,8 @@ const Container = styled.div`
 `;
 
 class Boudoir extends React.Component {
+
+
   render() {
     return (
       <div className="Boudoir">
@@ -94,13 +94,16 @@ class Boudoir extends React.Component {
             photography but you’re afraid to be too awkward. Let me tell you
             that most of my clients used to have this fear before we worked
             together. It is normal to be a little nervous or shy. Heck, most
-            people freak out to pose in front of the camera all dressed up! <br /><br />The
-            beauty in boudoir photography is that you will immerse in intimacy,
-            then find your voice and a way to express your inner beauty through
-            your body language.<br /> I will always respect your boundaries in the
-            meantime and never ask you to do something that makes you feel
-            uncomfortable.<br /> The goal is for you to feel and see the empowered,
-            strong and irresistible woman you are.
+            people freak out to pose in front of the camera all dressed up!{" "}
+            <br />
+            <br />
+            The beauty in boudoir photography is that you will immerse in
+            intimacy, then find your voice and a way to express your inner
+            beauty through your body language.
+            <br /> I will always respect your boundaries in the meantime and
+            never ask you to do something that makes you feel uncomfortable.
+            <br /> The goal is for you to feel and see the empowered, strong and
+            irresistible woman you are.
           </p>
           <ImageContainer>
             <picture>
@@ -143,9 +146,11 @@ class Boudoir extends React.Component {
               ></Image>
             </picture>
           </ImageContainer>
-          <p>My detailed and sophisticated retouch process includes several steps to ensure you get the results you seek for.
-
-I will make sure that you feel 100% confident and comfortable with the images I deliver.</p>
+          <p>
+            My detailed and sophisticated retouch process includes several steps
+            to ensure you get the results you seek for. I will make sure that
+            you feel 100% confident and comfortable with the images I deliver.
+          </p>
 
           <ImageContainer>
             <picture>
@@ -362,7 +367,12 @@ I will make sure that you feel 100% confident and comfortable with the images I 
               ></Image>
             </picture>
           </ImageContainer>
-          <Szepalcim><b>MAYBE YOU DON’T THINK IT’S IN YOU, BUT BELIEVE ME, GIVE A GIRL THE RIGHT LIGHTING AND SHE CAN DO ANYTHING.</b></Szepalcim>
+          <Szepalcim>
+            <b>
+              MAYBE YOU DON’T THINK IT’S IN YOU, BUT BELIEVE ME, GIVE A GIRL THE
+              RIGHT LIGHTING AND SHE CAN DO ANYTHING.
+            </b>
+          </Szepalcim>
 
           <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
@@ -375,47 +385,7 @@ I will make sure that you feel 100% confident and comfortable with the images I 
             </GoToTopButton>
           </ButtonContainer>
         </Container>
-        <Quote>
-          Annie has a great eye for photos. She was very friendly and made me
-          feel comfortable in front of the camera. She knows her way around
-          Haarlem and many cool photo spots. She turned around my photos really
-          quickly and they all turned out great. I would highly recommend this
-          experience with Annie, especially if you travel a lot on your own, its
-          so nice to have photos of your trip that aren’t selfies!!
-          <br /> — Autumn
-          <br /> ⭐⭐⭐⭐⭐
-        </Quote>
-
-        <Quote>
-          I’m so happy I found Annie she is Truly an Amazing Professional
-          Photographer and a Great person . Super sweet , funny and very easy
-          going . I can’t say enough positive things about her. I love all my
-          pictures . She also delivered them very quick, faster than I expected.
-          She was amazing and super easy to work with . 100% recommend Most
-          definitely 5 stars !!! Couldn’t be happier with the quality of work!
-          Best service for the value! HIGHLY RECOMMENDED !!
-          <br />- Andreina
-          <br /> ⭐⭐⭐⭐⭐
-        </Quote>
-
-        <Quote>
-          This photo shoot with Annie was a highlight of our trip. She’s so
-          incredibly personable and friendly and was really flexible about
-          rescheduling when I got a nasty cold in Amsterdam. Getting to know a
-          new unexplored city with a someone who knew all the best spots for
-          photos and a bit of the history and culture was incredibly fun. My
-          fiancé and I don’t just have a whole collection of gorgeous photos,
-          but a really, really special memory of the afternoon we spent with
-          Annie. She had excellent tips not just about locations for photos, but
-          different poses and activities to try that made the whole experience
-          really relaxed and so much more fun than I was expecting (as I’ve felt
-          kind of awkward in front of the camera in the past). Annie gave us a
-          truly unique afternoon and even had recommendations for what to do
-          with the rest of our afternoon in Haarlem. I truly cannot recommend
-          this experience enough!
-          <br /> — Jessica
-          <br /> ⭐⭐⭐⭐⭐
-        </Quote>
+        <Reviews/>
       </div>
     );
   }

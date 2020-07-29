@@ -1,13 +1,12 @@
 import React from "react";
-import { device } from "./mediaquery";
+import { device } from "../mediaquery";
 import styled from "styled-components/macro";
-import { fonts, colors } from "./config";
-import Navbar from "./Navbar";
+import { fonts, colors } from "../config";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
-import { Button } from "./Ui";
-import { GoToTopButton } from "./FullPost";
-import { Quote, ButtonContainer, Szepalcim } from "./Couples";
+import { Button, ButtonContainer, GoToTopButton } from "../Ui";
+
 export const Video = styled.iframe`
   border: none;
   position: absolute;
@@ -125,7 +124,7 @@ class Rules extends React.Component {
             If one sounds good to you, or if you have any questions, please feel
             free to reach out to <i>mail@anniekostolany.com</i> or by filling
             out the
-            <NavLink to="/contact"> contact form</NavLink>.
+            <NavLink style={{color: "darkred"}} to="/contact"> contact form</NavLink>.
           </Text>
 
           <BookingSteps>
@@ -133,7 +132,7 @@ class Rules extends React.Component {
               <h2>Step 1</h2>
               <Text>
                 Go to
-                <NavLink to="/investment"> Investments</NavLink> and pick a
+                <NavLink style={{color: "darkred"}} to="/investment"> Investments</NavLink> and pick a
                 package you like.
               </Text>
             </Step>
@@ -201,6 +200,7 @@ class Rules extends React.Component {
           </ButtonContainer>
 
         </Container>
+
       </div>
     );
   }

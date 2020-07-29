@@ -1,11 +1,21 @@
 import React from "react";
-import { device } from "./mediaquery";
+import { device } from "../mediaquery";
 import styled from "styled-components/macro";
-import { fonts, colors } from "./config";
-import Navbar from "./Navbar";
+import { fonts, colors } from "../config";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import { Button } from "./Ui";
-import { NavLink} from 'react-router-dom'; 
+import { NavLink } from "react-router-dom";
+import Reviews from "../Reviews";
+import {
+  Button,
+  Image,
+  ImageContainer,
+  CardsContainer,
+  CardInnerContainer,
+  CardTitle,
+  Text,
+  Szepalcim,
+} from "../Ui";
 
 const TextBox = styled.div`
   margin: 50px auto;
@@ -23,122 +33,7 @@ const TextTitle = styled.div`
   color: ${colors.footerfekete};
 `;
 
-export const Text = styled.div`
-  margin: 0 auto;
-  font-family: ${fonts.mindenmas};
-  max-width: 90%;
-  color: ${colors.footerfekete};
 
-  @media ${device.desktop} {
-    max-width: 60%;
-  }
-`;
-
-export const ImageContainer = styled.div`
-  width: 90%;
-  margin: 0 auto;
-
-
-
-  @media ${device.desktop} {
-    width: 60%;
-    padding: 20px 0px;
-
-
-  }
-`;
-export const Image = styled.img`
-  max-width: 100%;
-`;
-
-
-export const CardsContainer = styled.div`
-  display: flex;
-  flex-flow: column;
-  width: 70%;
-  margin: 50px auto;
-  padding: 20px 20px;
-  justify-content: center;
-  align-items: center;
-
-  @media ${device.desktop} {
-    flex-flow: row nowrap;
-    display: flex;
-    width: 60%;
-    margin: 0 auto;
-    padding: 50px 0px;
-    justify-content: flex-start;
-  }
-`;
-
-export const CardTitle = styled.div`
-  text-align: center;
-  padding: 50px 0px 0px 0px;
-
-  @media ${device.desktop} {
-    padding: 0px;
-  }
-
-  h2 {
-    font-family: ${fonts.cimek};
-    font-size: 15px;
-    color: ${colors.cimek};
-    letter-spacing: 2px;
-  }
-
-  p {
-    font-family: ${fonts.mindenmas};
-    padding: 20px;
-  }
-`;
-
-const h2 = styled.div`
-  font-family: ${fonts.focim};
-  font-size: 1em;
-`;
-
-export const CardInnerContainer = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  line-height: 2;
-  width: 100%;
-  color: rgb(88, 86, 86);
-
-  @media ${device.desktop} {
-    padding: 0px 50px;
-  }
-`;
-
-const Testimonials = styled.div`
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  font-family: ${fonts.mindenmas};
-  color: ${colors.footerfekete};
-
-  @media ${device.desktop} {
-    width: 60%;
-  }
-
-  h2 {
-    font-family: ${fonts.mindenmas};
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-transform: none;
-    line-height: 1.2em;
-    padding: 20px;
-  }
-`;
-
-const Testimonial = styled.div`
-  color: ${colors.footerfekete};
-  padding: 20px;
-`;
 
 const Container = styled.div`
   height: 700px;
@@ -150,7 +45,7 @@ const Container = styled.div`
   position: relative;
 `;
 
- export const Textcontainer = styled.div`
+export const Textcontainer = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -192,7 +87,7 @@ export const Motto = styled.div`
   }
 `;
 
- export const HeaderImage = styled.img`
+export const HeaderImage = styled.img`
   width: 100%;
   object-fit: cover;
   height: 700px;
@@ -201,13 +96,13 @@ export const Motto = styled.div`
 `;
 
 const TextboxButton = styled(Button)`
-background: transparent;
-border: 2px solid white;
-padding: 20px 10px;
-color: white;
-font-size: 14px;
-letter-spacing: 2px;
-transition: 0.6s;
+  background: transparent;
+  border: 2px solid white;
+  padding: 20px 10px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: 0.6s;
 
   &:hover {
     background: white;
@@ -435,54 +330,8 @@ class Home extends React.Component {
             <Button to={"/fashion"}>Fashion work</Button>
           </CardInnerContainer>
         </CardsContainer>
-        <Testimonials>
-          <h2>
-            Testimonials <br />
-          </h2>
-          <Testimonial>
-            A friend and I scheduled a joint boudoir shoot with Annie during my
-            visit to Amsterdam, and in addition to having SO MUCH fun that
-            afternoon, the photos ended up being more breath-taking than I ever
-            could have imagined. Annie was terrific to work with, and made us
-            feel comfortable immediately; her cues and tips make posing easy,
-            and her sense of what will look incredible on camera (even if not
-            intuitive to me) is spot on. I can't stop scrolling through my
-            photos. Thank you, Annie! — Kate Z.
-          </Testimonial>
-
-          <Testimonial>
-            I worked with Annie two times and both are amazing experiences. Most
-            of beautiful pictures on my instagram is her worked. I dont have
-            sense/idea of how to make good pictures, but i want to have one for
-            my social media. luckily she have the best taste in taking
-            pictures... always love to shoot with her and never disappoint with
-            the result. I will book her again definitely for the fall shoot! —
-            Anna B.
-          </Testimonial>
-
-          <Testimonial>
-            Annie is such a great person to work with. She really listens to
-            what you want, gives tips and makes you feel very relaxed. Thinking
-            'bout doing another session with her already!! — Agatha C.
-          </Testimonial>
-
-          <Testimonial>
-            Yesterday we had an engagement photoshoot with Annie. Annie
-            recommended us a great place, Zaanse Schans. We have never been in a
-            photoshoot before, but Annie made the whole session really easy and
-            fun. She helped us with the poses and her great personality made the
-            photoshoot even better. Cannot wait to see the photos!! Highly
-            recommended for every couple!!❤️ — Dora N.
-          </Testimonial>
-
-          <Testimonial>
-            The way Annie works is authentic and simple yet so effective. The
-            whole day was a vibe. When I first saw my photos I was GOBSMACKED!!
-            I enjoyed every minute of the shoot and would do it again 10x over.
-            Thank you Annie for a beautiful experience ❤️ — Amanda C.
-          </Testimonial>
-        </Testimonials>
-        );
+        <Reviews />
+        
       </div>
     );
   }
