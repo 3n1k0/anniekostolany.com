@@ -33,8 +33,6 @@ const TextTitle = styled.div`
   color: ${colors.footerfekete};
 `;
 
-
-
 const Container = styled.div`
   height: 700px;
   width: 100%;
@@ -176,46 +174,25 @@ class Home extends React.Component {
             </p>
           </Text>
         </TextBox>
-        <ImageContainer>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/e13a2d81-9a15-4812-9c62-9f4e72776172/home2.webp"
-              type="image/webp"
-              loading="lazy"
-            />
-            <source
-              srcset="https://ucarecdn.com/b286f314-d52c-4b25-8eb4-c943aa97b404/home2.jpg"
-              type="image/jpeg"
-              loading="lazy"
-            />
-
-            <Image
-              alt="Amsterdam model bikes and tulips"
-              src="https://ucarecdn.com/b286f314-d52c-4b25-8eb4-c943aa97b404/home2.jpg"
-              loading="lazy"
-            ></Image>
-          </picture>
+       
+       <ImageContainer>
+     
+        <picture>
+          <source
+            srcset="http://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/webp/"
+            type="image/webp"
+            loading="lazy"
+          />
+      
+          <Image 
+          alt="Beach wedding couple"
+          src="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/auto/"
+          loading="lazy" />
+        </picture>
+        
+        
         </ImageContainer>
-        <ImageContainer>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/home1.webp"
-              type="image/webp"
-              loading="lazy"
-            />
-            <source
-              srcset="https://ucarecdn.com/e79670e6-26d9-4dc4-8580-6342b4611e13/home1.jpg"
-              type="image/jpeg"
-              loading="lazy"
-            />
-
-            <Image
-              alt="Beach wedding couple"
-              src="https://ucarecdn.com/e79670e6-26d9-4dc4-8580-6342b4611e13/home1.jpg"
-              loading="lazy"
-            ></Image>
-          </picture>
-        </ImageContainer>
+        
         <ImageContainer>
           <picture>
             <source
@@ -331,7 +308,6 @@ class Home extends React.Component {
           </CardInnerContainer>
         </CardsContainer>
         <Reviews />
-        
       </div>
     );
   }

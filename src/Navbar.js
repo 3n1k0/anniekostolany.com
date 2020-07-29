@@ -81,17 +81,17 @@ export const Navigation = styled.nav`
 `;
 
 export const ContactButton = styled.button`
-    border: none;
-    border-radius: 20px;
-    background: transparent;
-    color: white;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 1em;
-    padding: 0;
-    display: inline-block;
-    z-index: 100;
-    cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1em;
+  padding: 0;
+  display: inline-block;
+  z-index: 100;
+  cursor: pointer;
 
   @media ${device.desktop} {
     border: 2px solid white;
@@ -109,14 +109,12 @@ export const ContactButton = styled.button`
     cursor: pointer;
 
     &:hover {
-    border: 2px solid white;
-    border-radius: 20px;
-    background: white;
-    color: ${colors.footerfekete};
+      border: 2px solid white;
+      border-radius: 20px;
+      background: white;
+      color: ${colors.footerfekete};
+    }
   }
-  }
-
-
 `;
 
 export const Menuitems = styled.ul`
@@ -134,7 +132,7 @@ export const Menuitems = styled.ul`
   background: linear-gradient(
     176deg,
     rgba(9, 6, 10, 1) 30%,
-    rgba(190, 190, 191, 0.0) 90%
+    rgba(190, 190, 191, 0) 90%
   );
 
   @media ${device.desktop} {
@@ -300,7 +298,9 @@ class Navbar extends React.Component {
         <GlobalStyle />
         <Maincontainer style={this.props.style}>
           <TitleDiv>
-            <Title>Annie Kostolany Photography</Title>
+            <NavLink to="/">
+              <Title>Annie Kostolany Photography</Title>
+            </NavLink>
           </TitleDiv>
 
           <Navigation isOpen={this.state.isOpen}>
@@ -326,7 +326,6 @@ class Navbar extends React.Component {
               <ul>
                 <PortfolioMenuitem
                   onMouseOver={() => {
-
                     this.setState({ isDropDownOpen: true });
                   }}
                   onMouseLeave={() => {
@@ -339,7 +338,9 @@ class Navbar extends React.Component {
                     });
                   }}
                 >
-                  <Menuitem><b>+ Portfolio</b></Menuitem>
+                  <Menuitem>
+                    <b>+ Portfolio</b>
+                  </Menuitem>
                   <DropDown
                     isOpen={this.state.isDropDownOpen}
                     onMouseLeave={() => {
