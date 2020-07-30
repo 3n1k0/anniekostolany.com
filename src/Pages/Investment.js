@@ -155,14 +155,14 @@ class Investment extends React.Component {
         <ImageContainer>
           <picture>
             <source
-              srcset="http://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/webp/"
+              srcset="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/webp/"
               type="image/webp"
             />
             <img src="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/auto/" />
           </picture>
           <picture>
             <source
-              srcset="http://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/webp/"
+              srcset="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/webp/"
               type="image/webp"
             />
             <img src="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/auto/" />
@@ -170,7 +170,7 @@ class Investment extends React.Component {
 
           <picture>
             <source
-              srcset="http://ucarecdn.com/0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/webp/"
+              srcset="https://ucarecdn.com/0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/webp/"
               type="image/webp"
             />
             <img src="https://0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/auto/" />
@@ -178,7 +178,7 @@ class Investment extends React.Component {
 
           <picture>
             <source
-              srcset="http://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/webp/"
+              srcset="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/webp/"
               type="image/webp"
             />
             <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/auto/" />
@@ -283,7 +283,7 @@ class Investment extends React.Component {
 
             <picture>
               <source
-                srcset="http://ucarecdn.com/df3ab74b-37b5-4458-9b23-9e8d883419f6/-/preview/1000x1300/-/format/webp/"
+                srcset="https://ucarecdn.com/df3ab74b-37b5-4458-9b23-9e8d883419f6/-/preview/1000x1300/-/format/webp/"
                 type="image/webp"
               />
               <img src="https://ucarecdn.com/df3ab74b-37b5-4458-9b23-9e8d883419f6/-/preview/1000x1300/-/format/auto/" />

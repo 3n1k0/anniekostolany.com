@@ -188,7 +188,7 @@ class Home extends React.Component {
         <ImageContainer>
           <picture>
             <source
-              srcset="http://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/webp/"
+              srcset="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/webp/"
               type="image/webp"
               loading="lazy"
             />
@@ -204,7 +204,7 @@ class Home extends React.Component {
         <ImageContainer>
           <picture>
             <source
-              srcset="http://ucarecdn.com/e7011a88-163a-43da-b4a5-f2edc506a456/-/preview/-/format/webp/"
+              srcset="https://ucarecdn.com/e7011a88-163a-43da-b4a5-f2edc506a456/-/preview/-/format/webp/"
               type="image/webp"
               loading="lazy"
             />
@@ -220,7 +220,7 @@ class Home extends React.Component {
         <ImageContainer>
           <picture>
             <source
-              srcset="http://ucarecdn.com/ac9d9011-17ae-4a52-825f-6913f36ee858/-/preview/-/format/webp/"
+              srcset="https://ucarecdn.com/ac9d9011-17ae-4a52-825f-6913f36ee858/-/preview/-/format/webp/"
               type="image/webp"
               loading="lazy"
             />
@@ -236,7 +236,7 @@ class Home extends React.Component {
         <CardsContainer>
           <picture>
             <source
-              srcset="http://ucarecdn.com/28cda8e9-e274-444b-9a60-02cbb1424ae9/-/preview/-/format/webp/"
+              srcset="https://ucarecdn.com/28cda8e9-e274-444b-9a60-02cbb1424ae9/-/preview/-/format/webp/"
               type="image/webp"
               loading="lazy"
             />
