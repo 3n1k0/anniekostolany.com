@@ -70,9 +70,11 @@ const Package = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-bottom: 100px;
 
   p {
     text-align: center;
+    font-size: 20px;
   }
 
   h1 {
@@ -98,6 +100,10 @@ const Option = styled.div`
   width: 100%;
   position: relative;
   top: 100px;
+
+  li {
+    padding: 5px;
+  }
 `;
 
 const Information = styled(Package)`
@@ -167,7 +173,7 @@ class Investment extends React.Component {
                   <li>A pre-session style consultation before your session</li>
                   <li>2-2,5 hours of shooting time</li>
                   <li>Unlimited outfit changes</li>
-                  <li>40 retouched, high-resolution</li>
+                  <li>40 retouched, high-resolution images with print-release included</li>
                   <li>
                     A customized, password-protected online gallery available
                     for 6 months after your shoot
@@ -181,9 +187,10 @@ class Investment extends React.Component {
               <h1>Silver Option </h1>
               <p>
                 <ul>
+                <li>A pre-session style consultation before your session</li>
                   <li>1-1,5 hours of shooting time</li>
-                  <li>Pre-consultation before your session</li>
-                  <li>30 retouched, high-resolution photographs</li>
+                  <li>1 outfit change</li>
+                  <li>30 retouched, high-resolution images with print-release included</li>
                   <li>
                     A customized, password-protected online gallery available
                     for 6 months after your shoot
