@@ -29,7 +29,7 @@ const Container = styled.div`
   p {
     font-family: ${fonts.mindenmas};
     font-size: 18px;
-    text-align: justify;
+    text-align: left;
     text-justify: inter-word;
     font-size: 1em;
     line-height: 1.5;
