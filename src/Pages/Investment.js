@@ -73,8 +73,13 @@ const Package = styled.div`
   padding-bottom: 100px;
 
   p {
-    text-align: center;
+    text-align: left;
+    font-size: 18px;
+
+    @media ${device.desktop}{
+      text-align: center;
     font-size: 20px;
+    }
   }
 
   h1 {
@@ -167,7 +172,7 @@ class Investment extends React.Component {
         <Container>
           <Package>
             <Option style={{ background: "#d4af37" }}>
-              <h1>Gold Option</h1>
+              <h1>Gold Package</h1>
               <p>
                 <ul>
                   <li>A pre-session style consultation before your session</li>
@@ -184,7 +189,7 @@ class Investment extends React.Component {
             </Option>
 
             <Option style={{ background: "#C0C0C0" }}>
-              <h1>Silver Option </h1>
+              <h1>Silver Package </h1>
               <p>
                 <ul>
                 <li>A pre-session style consultation before your session</li>
