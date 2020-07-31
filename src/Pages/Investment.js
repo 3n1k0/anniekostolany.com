@@ -8,18 +8,19 @@ import { Button, ButtonContainer, GoToTopButton } from "../Ui";
 import Reviews from "../Reviews";
 
 const ImageContainer = styled.div`
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
   padding-top: 100px;
+  margin: 0 auto;
 
   img {
     height: 100%;
     object-fit: cover;
-    width: 400px;
+    width: 100%;
   }
 
   @media ${device.tablet} {
@@ -93,6 +94,7 @@ const Option = styled.div`
   padding: 40px;
   height: 100%;
   min-height: 420px;
+  width: 100%;
 `;
 
 const Information = styled(Package)`
