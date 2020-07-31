@@ -112,7 +112,6 @@ const TextboxButton = styled(Button)`
   font-size: 14px;
   letter-spacing: 2px;
   transition: 0.6s;
-  z-index:100;
 
   &:hover {
     background: white;

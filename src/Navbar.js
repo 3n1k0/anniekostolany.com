@@ -137,7 +137,7 @@ export const Menuitems = styled.ul`
   right: 0px;
   height: 200%;
   font-size: 18px;
-  width: 320px;
+  width: 280px;
   padding: 100px 20px;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   background: linear-gradient(
