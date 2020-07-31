@@ -124,16 +124,22 @@ export const Menuitems = styled.ul`
   top: 0px;
   right: 0px;
   height: 100%;
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 400;
   width: 300px;
   padding: 100px 20px;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
-  background: rgb(88, 86, 86);
-  background: linear-gradient(
+  background: black;
+
+
+
+  @media ${device.tablet}{
+    background: linear-gradient(
     170deg,
     rgba(9, 6, 10, 1) 40%,
     rgba(190, 190, 191, 0) 90%
   );
+  }
 
   @media ${device.desktop} {
     align-items: center;
@@ -158,8 +164,9 @@ export const Menuitem = styled.li`
   display: flex;
   padding: 8px 30px;
   font-family: ${fonts.cimek};
-  font-weight: 500;
+  font-weight: 800;
   cursor: pointer;
+  letter-spacing: 2px;
 
   @media ${device.desktop} {
     display: flex;
