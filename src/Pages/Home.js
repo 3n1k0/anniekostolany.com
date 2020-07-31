@@ -23,6 +23,7 @@ const TextBox = styled.div`
   text-align: center;
   width: 100%;
   font-size: 1.5em;
+
 `;
 
 const TextTitle = styled.div`
@@ -111,6 +112,7 @@ const TextboxButton = styled(Button)`
   font-size: 14px;
   letter-spacing: 2px;
   transition: 0.6s;
+  z-index:100;
 
   &:hover {
     background: white;
