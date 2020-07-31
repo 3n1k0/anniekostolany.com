@@ -13,7 +13,7 @@ export const HamburgerMenu = styled.div`
     width: 30px;
     position: relative;
     top: 35px;
-    right: 50px;
+    right: 20px;
     position: absolute;
     z-index: 10;
 
