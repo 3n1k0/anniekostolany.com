@@ -68,11 +68,10 @@ export const Navigation = styled.nav`
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 15px;
-  display: flex;
+  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   position: absolute;
   right: 0px;
   top: 0px;
-
   z-index: 4;
   height: 700px;
   width: 300px;
