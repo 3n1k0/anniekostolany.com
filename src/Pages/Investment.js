@@ -87,7 +87,7 @@ const Package = styled.div`
 
   @media ${device.desktop} {
     flex-flow: row nowrap;
-    margin-top: 100px;
+   
   }
 
 
