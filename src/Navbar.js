@@ -3,6 +3,7 @@ import { device } from "./mediaquery";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
 import { fonts, colors } from "./config";
 import { NavLink } from "react-router-dom";
+import { Icon } from "./Footer";
 
 export const HamburgerMenu = styled.div`
     display: flex;
@@ -117,17 +118,15 @@ export const ContactButton = styled.button`
     z-index: 100;
     cursor: pointer;
     font-weight: 800;
-  font-size: 15px;
+    font-size: 15px;
   }
 
-
-    &:hover {
-      border: 2px solid white;
-      border-radius: 20px;
-      background: white;
-      color: ${colors.footerfekete};
-    }
-  
+  &:hover {
+    border: 2px solid white;
+    border-radius: 20px;
+    background: white;
+    color: ${colors.footerfekete};
+  }
 `;
 
 export const Menuitems = styled.ul`
@@ -138,15 +137,14 @@ export const Menuitems = styled.ul`
   right: 0px;
   height: 200%;
   font-size: 18px;
-  width: 300px;
+  width: 320px;
   padding: 100px 20px;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   background: linear-gradient(
-      170deg,
-      rgba(9, 6, 10, 1) 40%,
-      rgba(190, 190, 191, 0) 90%
-    );
-  
+    170deg,
+    rgba(9, 6, 10, 1) 40%,
+    rgba(190, 190, 191, 0) 90%
+  );
 
   @media ${device.desktop} {
     align-items: center;
@@ -165,7 +163,6 @@ export const Menuitems = styled.ul`
     font-size: 15px;
     top: 30px;
   }
-  
 `;
 
 export const Menuitem = styled.li`
@@ -175,6 +172,7 @@ export const Menuitem = styled.li`
   font-weight: 800;
   cursor: pointer;
   letter-spacing: 2px;
+  align-items: center;
 
   @media ${device.desktop} {
     display: flex;
@@ -204,7 +202,7 @@ const Title = styled.h1`
   width: 300px;
   font-weight: 400;
 
-  @media ${device.desktop}{
+  @media ${device.desktop} {
     font-size: 18px;
   }
 `;
@@ -361,7 +359,15 @@ class Navbar extends React.Component {
                   }}
                 >
                   <Menuitem>
-                    <b>+ Portfolio</b>
+                    Portfolio
+                    <i
+                      style={{
+                        color: "white",
+                        fontSize: "20px",
+                        padding: "3px",
+                      }}
+                      class="fas fa-angle-down"
+                    ></i>
                   </Menuitem>
                   <DropDown
                     isOpen={this.state.isDropDownOpen}
@@ -372,7 +378,7 @@ class Navbar extends React.Component {
                   >
                     <Menuitem>
                       <InnerStyledNavLink to="/couples">
-                        Love shoots ♡
+                        Love shoots 
                       </InnerStyledNavLink>
                     </Menuitem>
 

@@ -77,7 +77,7 @@ const Package = styled.div`
 
   h1 {
     font-family: ${fonts.mindenmas};
-    font-size: 3em;
+    font-size: 2em;
     padding: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
