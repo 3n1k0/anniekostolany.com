@@ -8,13 +8,17 @@ export const HamburgerMenu = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    height: 30px;
-    width: 40px;
+    height: 25px;
+    width: 30px;
     position: relative;
     top: 35px;
     right: 50px;
     position: absolute;
     z-index: 10;
+
+    @media ${device.tablet}{
+      width: 40px;
+    }
 
  
     ${({ isOpen }) =>
@@ -50,6 +54,8 @@ export const Stripe = styled.div`
   background: white;
   height: 3px;
   width: 100%;
+  height: 3px;
+  top: 26px;
 
   @media ${device.desktop} {
     display: none;
@@ -92,6 +98,9 @@ export const ContactButton = styled.button`
   display: inline-block;
   z-index: 100;
   cursor: pointer;
+  font-family: ${fonts.cimek};
+  font-weight: 800;
+  font-size: 18px;
 
   @media ${device.desktop} {
     border: 2px solid white;
@@ -107,6 +116,10 @@ export const ContactButton = styled.button`
     display: inline-block;
     z-index: 100;
     cursor: pointer;
+    font-weight: 800;
+  font-size: 15px;
+  }
+
 
     &:hover {
       border: 2px solid white;
@@ -114,7 +127,7 @@ export const ContactButton = styled.button`
       background: white;
       color: ${colors.footerfekete};
     }
-  }
+  
 `;
 
 export const Menuitems = styled.ul`
@@ -123,23 +136,17 @@ export const Menuitems = styled.ul`
   position: absolute;
   top: 0px;
   right: 0px;
-  height: 100%;
+  height: 200%;
   font-size: 18px;
-  font-weight: 400;
   width: 300px;
   padding: 100px 20px;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
-  background: black;
-
-
-
-  @media ${device.tablet}{
-    background: linear-gradient(
-    170deg,
-    rgba(9, 6, 10, 1) 40%,
-    rgba(190, 190, 191, 0) 90%
-  );
-  }
+  background: linear-gradient(
+      170deg,
+      rgba(9, 6, 10, 1) 40%,
+      rgba(190, 190, 191, 0) 90%
+    );
+  
 
   @media ${device.desktop} {
     align-items: center;
@@ -158,6 +165,7 @@ export const Menuitems = styled.ul`
     font-size: 15px;
     top: 30px;
   }
+  
 `;
 
 export const Menuitem = styled.li`
@@ -189,12 +197,16 @@ const Title = styled.h1`
   padding: 30px;
   font-family: ${fonts.cimek};
   font-size: 1.5em;
-  font-size: 21px;
+  font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1em;
   width: 300px;
   font-weight: 400;
+
+  @media ${device.desktop}{
+    font-size: 18px;
+  }
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -232,6 +244,9 @@ const TitleDiv = styled.div`
   min-width: 250px;
   max-width: 270px;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 const StyledNavLink = styled(NavLink)`
