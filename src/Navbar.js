@@ -323,8 +323,7 @@ class Navbar extends React.Component {
             </NavLink>
           </TitleDiv>
 
-          <Navigation isOpen={this.state.isOpen}>
-            <HamburgerMenu
+          <HamburgerMenu
               isOpen={this.state.isOpen}
               onClick={(event) => {
                 event.stopPropagation();
@@ -335,6 +334,9 @@ class Navbar extends React.Component {
               <Stripe />
               <Stripe />
             </HamburgerMenu>
+
+
+          <Navigation isOpen={this.state.isOpen}>
 
             <Menuitems isOpen={this.state.isOpen}>
               <Menuitem>
