@@ -64,11 +64,12 @@ const Package = styled.div`
   height: 100%;
   width: 100%;
   text-align: center;
-  opacity: 0.9;
+  opacity: 1;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   p {
     text-align: center;
@@ -95,6 +96,8 @@ const Option = styled.div`
   height: 100%;
   min-height: 420px;
   width: 100%;
+  position: relative;
+  top: 100px;
 `;
 
 const Information = styled(Package)`
@@ -154,38 +157,7 @@ class Investment extends React.Component {
           />
         </Helmet>
 
-        <ImageContainer>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/webp/"
-              type="image/webp"
-            />
-            <img src="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/auto/" />
-          </picture>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/webp/"
-              type="image/webp"
-            />
-            <img src="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/auto/" />
-          </picture>
-
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/webp/"
-              type="image/webp"
-            />
-            <img src="https://0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/auto/" />
-          </picture>
-
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/webp/"
-              type="image/webp"
-            />
-            <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/auto/" />
-          </picture>
-        </ImageContainer>
+        
         <Container>
           <Package>
             <Option style={{ background: "#d4af37" }}>
@@ -292,6 +264,38 @@ class Investment extends React.Component {
             </picture>
           </Honor>
 
+          <ImageContainer>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/webp/"
+              type="image/webp"
+            />
+            <img src="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/auto/" />
+          </picture>
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/webp/"
+              type="image/webp"
+            />
+            <img src="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/auto/" />
+          </picture>
+
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/webp/"
+              type="image/webp"
+            />
+            <img src="https://0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/auto/" />
+          </picture>
+
+          <picture>
+            <source
+              srcset="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/webp/"
+              type="image/webp"
+            />
+            <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/auto/" />
+          </picture>
+        </ImageContainer>
           <ButtonContainer>
             <GoToTopButton
               onClick={() => {
