@@ -81,19 +81,29 @@ class Wedding extends React.Component {
           </p>
 
 
-          <ImageContainer>
+          {/* <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/800x1300/-/format/webp/"
+                srcset="https://ucarecdn.com/93834bdb-4f48-4cb2-a641-777589332922/wedding1.webp"
                 type="image/webp"
                 loading="lazy"
-                alt="Wedding couple"
               />
-              <img src="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/800x1300/-/format/auto/" />
+              <source
+                srcset="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+
+              <Image
+                alt="Wedding couple in nature"
+                src="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/800x1300/-/format/auto/"
+                loading="lazy"
+              ></Image>
             </picture>
+          </ImageContainer> */}
 
 
-
+          <ImageContainer>
             <picture>
               <source
                 srcset="https://ucarecdn.com/93834bdb-4f48-4cb2-a641-777589332922/wedding1.webp"
