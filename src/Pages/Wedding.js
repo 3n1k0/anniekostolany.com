@@ -15,7 +15,7 @@ import {
   Text,
 } from "../Ui";
 import Reviews from "../Reviews";
-
+import UploadcareImage from "../UploadcareImage";
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -64,8 +64,6 @@ class Wedding extends React.Component {
           />
         </Helmet>
 
-  
-
         <Container>
           <p>
             It might seem cliché, but it’s still true; a picture paints a
@@ -83,43 +81,15 @@ class Wedding extends React.Component {
             right picture.
           </p>
 
+          <UploadcareImage
+            uuid="6539880f-af30-46f0-a507-072135598a15"
+            alt="wedding couple smiling kissing"
+          />
 
-
-
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/6539880f-af30-46f0-a507-072135598a15/-/preview/-/format/webp/"
-                type="image/webp"
-                loading="lazy"
-              />
-              <Image
-                alt="Wedding couple kissing"
-                src="https://ucarecdn.com/6539880f-af30-46f0-a507-072135598a15/-/preview/-/format/auto/"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/a1bf721f-0a0c-4933-8464-45082a737516/-/preview/-/format/webp/"
-                type="image/webp"
-                loading="lazy"
-              />
-              <Image
-                alt="Wedding couple kissing"
-                src="https://ucarecdn.com/a1bf721f-0a0c-4933-8464-45082a737516/-/preview/-/format/auto/"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          
+          <UploadcareImage
+            uuid="a1bf721f-0a0c-4933-8464-45082a737516"
+            alt="bridal couple standing on field"
+          />
 
           <p>
             Perfectly catching such precious memories on camera is no easy task
@@ -136,28 +106,7 @@ class Wedding extends React.Component {
             available to capture the most significant moments of your big day.
           </p>
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/9945de54-9b77-4995-a255-02e396e34a7e/wedding3.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/1afa25b5-de6a-4d52-a7ca-c73d5b516578/wedding3.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Wedding couple on boat"
-                src="https://ucarecdn.com/1afa25b5-de6a-4d52-a7ca-c73d5b516578/wedding3.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-
+          <UploadcareImage uuid="9945de54-9b77-4995-a255-02e396e34a7e" />
 
           <ImageContainer>
             <picture>
@@ -178,7 +127,6 @@ class Wedding extends React.Component {
               ></Image>
             </picture>
           </ImageContainer>
-          
 
           <ImageContainer>
             <picture>
@@ -288,8 +236,6 @@ class Wedding extends React.Component {
             </ImageContainer>
           </Sharedbox>
 
-       
-
           <ImageContainer>
             <picture>
               <source
@@ -305,8 +251,6 @@ class Wedding extends React.Component {
             </picture>
           </ImageContainer>
 
-
-
           <ImageContainer>
             <picture>
               <source
@@ -321,7 +265,6 @@ class Wedding extends React.Component {
               ></Image>
             </picture>
           </ImageContainer>
-
 
           <p>
             While I am currently based in the Netherlands, I am available
