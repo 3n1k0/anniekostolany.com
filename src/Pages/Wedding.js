@@ -16,6 +16,7 @@ import {
 } from "../Ui";
 import Reviews from "../Reviews";
 
+
 const Sharedbox = styled.div`
   width: 90%;
   margin: 0 auto;
@@ -56,12 +57,14 @@ class Wedding extends React.Component {
       <div className="Wedding">
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         <Helmet>
-          <title>Book your travelphotographer in Amsterdam</title>
+          <title>Book your wedding photographer in the Netherlands</title>
           <meta
             name="description"
             content="Wedding photography in the Netherlands"
           />
         </Helmet>
+
+  
 
         <Container>
           <p>
@@ -81,69 +84,43 @@ class Wedding extends React.Component {
           </p>
 
 
-          {/* <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/93834bdb-4f48-4cb2-a641-777589332922/wedding1.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
 
-              <Image
-                alt="Wedding couple in nature"
-                src="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/800x1300/-/format/auto/"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer> */}
 
 
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/93834bdb-4f48-4cb2-a641-777589332922/wedding1.webp"
+                srcset="https://ucarecdn.com/6539880f-af30-46f0-a507-072135598a15/-/preview/-/format/webp/"
                 type="image/webp"
                 loading="lazy"
               />
-              <source
-                srcset="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
               <Image
-                alt="Wedding couple"
-                src="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
+                alt="Wedding couple kissing"
+                src="https://ucarecdn.com/6539880f-af30-46f0-a507-072135598a15/-/preview/-/format/auto/"
                 loading="lazy"
               ></Image>
             </picture>
           </ImageContainer>
+
+
 
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/d1f2ac84-f838-4752-b93e-76e9bb57ce1c/wedding2.webp"
+                srcset="https://ucarecdn.com/a1bf721f-0a0c-4933-8464-45082a737516/-/preview/-/format/webp/"
                 type="image/webp"
                 loading="lazy"
               />
-              <source
-                srcset="https://ucarecdn.com/2632ff54-eeb5-4037-886d-4b4499824e03/wedding2.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
               <Image
-                alt="Wedding couple at church"
-                src="https://ucarecdn.com/2632ff54-eeb5-4037-886d-4b4499824e03/wedding2.jpg"
+                alt="Wedding couple kissing"
+                src="https://ucarecdn.com/a1bf721f-0a0c-4933-8464-45082a737516/-/preview/-/format/auto/"
                 loading="lazy"
               ></Image>
             </picture>
           </ImageContainer>
+
+          
+
           <p>
             Perfectly catching such precious memories on camera is no easy task
             though, meaning your wedding photographer will be one of the most
@@ -179,6 +156,29 @@ class Wedding extends React.Component {
               ></Image>
             </picture>
           </ImageContainer>
+
+
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/93834bdb-4f48-4cb2-a641-777589332922/wedding1.webp"
+                type="image/webp"
+                loading="lazy"
+              />
+              <source
+                srcset="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
+                type="image/jpeg"
+                loading="lazy"
+              />
+              <Image
+                alt="Wedding couple"
+                src="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+          
 
           <ImageContainer>
             <picture>
@@ -288,70 +288,41 @@ class Wedding extends React.Component {
             </ImageContainer>
           </Sharedbox>
 
-          <Sharedbox>
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/5e401f96-0e69-4fea-b308-9d5a6206ffb0/wedding9.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/0ec2c95d-349b-40b1-a8d5-df5f2c3d20d1/wedding9.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
-
-                <Image
-                  alt="Wedding couple in front of church"
-                  src="https://ucarecdn.com/0ec2c95d-349b-40b1-a8d5-df5f2c3d20d1/wedding9.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
-
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/475e3e9b-6276-42ea-a063-747d8c2781cc/weddding10.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/36b1b0b5-6693-45c1-92b2-fdbc9a170890/weddding10.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
-
-                <Image
-                  alt="Wedding couple in front of church"
-                  src="https://ucarecdn.com/36b1b0b5-6693-45c1-92b2-fdbc9a170890/weddding10.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
-          </Sharedbox>
+       
 
           <ImageContainer>
             <picture>
               <source
-                srcset="https://ucarecdn.com/422d4122-abc7-4bad-8f77-1909bbc85868/wedding11.webp"
+                srcset="https://ucarecdn.com/81a1f936-6bbf-4dad-b338-969acd6f4952/-/preview/-/format/webp/"
                 type="image/webp"
                 loading="lazy"
               />
-              <source
-                srcset="https://ucarecdn.com/978cc10e-fbf9-4223-b407-41ee0aade5a9/wedding11.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
               <Image
-                alt="Wedding couple"
-                src="https://ucarecdn.com/978cc10e-fbf9-4223-b407-41ee0aade5a9/wedding11.jpg"
+                alt="Wedding couple kissing"
+                src="https://ucarecdn.com/81a1f936-6bbf-4dad-b338-969acd6f4952/-/preview/-/format/auto/"
                 loading="lazy"
               ></Image>
             </picture>
           </ImageContainer>
+
+
+
+          <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/-/format/webp/"
+                type="image/webp"
+                loading="lazy"
+              />
+              <Image
+                alt="Wedding couple kissing"
+                src="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/-/format/auto/"
+                loading="lazy"
+              ></Image>
+            </picture>
+          </ImageContainer>
+
+
           <p>
             While I am currently based in the Netherlands, I am available
             worldwide, so if my services sound right for you, please feel free

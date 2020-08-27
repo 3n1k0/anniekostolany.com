@@ -21,7 +21,7 @@ export const Quote = styled(CardTitle)`
   }
 
   @media ${device.desktop} {
-    padding: 100px;
+    padding: 50px 400px;
     font-size: 18px;
     height: 20%;
 
