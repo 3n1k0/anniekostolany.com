@@ -14,7 +14,7 @@ import {
   CardInnerContainer,
   Text,
 } from "../Ui";
-import Reviews from '../Reviews';
+import Reviews from "../Reviews";
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -79,7 +79,21 @@ class Wedding extends React.Component {
             only last a second, but their memories can last a lifetime with the
             right picture.
           </p>
+
+
           <ImageContainer>
+            <picture>
+              <source
+                srcset="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/800x1300/-/format/webp/"
+                type="image/webp"
+                loading="lazy"
+                alt="Wedding couple"
+              />
+              <img src="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/800x1300/-/format/auto/" />
+            </picture>
+
+
+
             <picture>
               <source
                 srcset="https://ucarecdn.com/93834bdb-4f48-4cb2-a641-777589332922/wedding1.webp"
@@ -149,7 +163,7 @@ class Wedding extends React.Component {
               />
 
               <Image
-                alt="Wedding coupel on boat"
+                alt="Wedding couple on boat"
                 src="https://ucarecdn.com/1afa25b5-de6a-4d52-a7ca-c73d5b516578/wedding3.jpg"
                 loading="lazy"
               ></Image>
@@ -336,7 +350,7 @@ class Wedding extends React.Component {
           </p>
 
           <ButtonContainer>
-            <Button to={"/contact"}> Request  </Button>
+            <Button to={"/contact"}> Request </Button>
             <GoToTopButton
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
