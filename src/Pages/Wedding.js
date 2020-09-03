@@ -82,19 +82,20 @@ class Wedding extends React.Component {
         </Helmet>
 
         <CarouselContainer>
-          <AliceCarousel autoPlay autoPlayInterval="3000">
-            
+          <AliceCarousel autoPlay autoPlayInterval="2000">
             <SliderImage
-              uuid="93834bdb-4f48-4cb2-a641-777589332922"
-              alt="sliderimg"
+              uuid="220fec4e-f1b5-4205-9695-d7cae46b6627"
+              alt="wedding couple"
             />
-              <SliderImage
-              uuid="93834bdb-4f48-4cb2-a641-777589332922"
-              alt="sliderimg"
+
+            <SliderImage
+              uuid="120f83b8-c65e-4da0-9a5c-422d73fe2a7e"
+              alt="wedding couple"
             />
-               <SliderImage
-              uuid="93834bdb-4f48-4cb2-a641-777589332922"
-              alt="sliderimg"
+
+            <SliderImage
+              uuid="342b1cc6-9bc9-4232-9c15-c12864514be9"
+              alt="wedding couple"
             />
           </AliceCarousel>
         </CarouselContainer>
