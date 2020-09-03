@@ -16,6 +16,12 @@ import {
 } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+const SliderContainer = styled.div`
+  height: 400px;
+`;
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -30,7 +36,7 @@ const Sharedbox = styled.div`
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
-  padding: 150px 0px 0px 0px;
+  padding-top: 50px;
   color: #585656;
   text-align: center;
 
@@ -51,6 +57,17 @@ const Container = styled.div`
   }
 `;
 
+const SliderImage = styled(UploadcareImage)`
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+`;
+
+const CarouselContainer = styled.div`
+  position: relative;
+  padding: 100px 0px 0px 0px;
+`;
+
 class Wedding extends React.Component {
   render() {
     return (
@@ -63,6 +80,24 @@ class Wedding extends React.Component {
             content="Wedding photography in the Netherlands"
           />
         </Helmet>
+
+        <CarouselContainer>
+          <AliceCarousel autoPlay autoPlayInterval="3000">
+            
+            <SliderImage
+              uuid="93834bdb-4f48-4cb2-a641-777589332922"
+              alt="sliderimg"
+            />
+              <SliderImage
+              uuid="93834bdb-4f48-4cb2-a641-777589332922"
+              alt="sliderimg"
+            />
+               <SliderImage
+              uuid="93834bdb-4f48-4cb2-a641-777589332922"
+              alt="sliderimg"
+            />
+          </AliceCarousel>
+        </CarouselContainer>
 
         <Container>
           <p>
@@ -106,165 +141,47 @@ class Wedding extends React.Component {
             available to capture the most significant moments of your big day.
           </p>
 
-          <UploadcareImage uuid="9945de54-9b77-4995-a255-02e396e34a7e" />
+          <UploadcareImage
+            uuid="9945de54-9b77-4995-a255-02e396e34a7e"
+            alt="Wedding couple on boat"
+          />
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/93834bdb-4f48-4cb2-a641-777589332922/wedding1.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-              <Image
-                alt="Wedding couple"
-                src="https://ucarecdn.com/93e1b15c-a278-42e9-a357-f7f545fa83c0/wedding1.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <UploadcareImage
+            uuid="93834bdb-4f48-4cb2-a641-777589332922"
+            alt="Wedding couple with windmills"
+          />
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/164c35b3-9ba2-473a-874d-4ee523ebf091/wedding4.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/0148af6e-13fb-4d8e-ad1c-c424617661da/wedding4.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
+          <UploadcareImage
+            uuid="164c35b3-9ba2-473a-874d-4ee523ebf091"
+            alt="Wedding couple with fountain"
+          />
 
-              <Image
-                alt="Wedding couple laughing"
-                src="https://ucarecdn.com/0148af6e-13fb-4d8e-ad1c-c424617661da/wedding4.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <UploadcareImage
+            uuid="e3437f95-38c2-46de-bbe9-fe31d715783e"
+            alt="Bridesmaids shoes"
+          />
 
           <Sharedbox>
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/e3437f95-38c2-46de-bbe9-fe31d715783e/wedding7.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/801a2243-0661-4223-966c-0786b8b4a192/wedding7.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
+            <UploadcareImage
+              uuid="e3437f95-38c2-46de-bbe9-fe31d715783e"
+              alt="Bridesmaids shoes"
+            />
 
-                <Image
-                  alt="Ballerina shoes on piano"
-                  src="https://ucarecdn.com/801a2243-0661-4223-966c-0786b8b4a192/wedding7.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/07e272ea-a371-4850-ade9-5b877b82afd7/wedding6.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/5e78a858-9f6a-4089-bbdb-9c370d816a78/wedding6.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
-
-                <Image
-                  alt="Ring with bouquet"
-                  src="https://ucarecdn.com/5e78a858-9f6a-4089-bbdb-9c370d816a78/wedding6.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
+            <UploadcareImage
+              uuid="07e272ea-a371-4850-ade9-5b877b82afd7"
+              alt="Ring with bouquet"
+            />
           </Sharedbox>
 
-          <Sharedbox>
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/bb0ca539-d231-4001-9e4b-a1e75c6e21a9/wedding5.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/b4323325-1596-4a96-9c3f-cd98d4b6e1c7/wedding5.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
+          <UploadcareImage
+            uuid="81a1f936-6bbf-4dad-b338-969acd6f4952"
+            alt="Bride"
+          />
 
-                <Image
-                  alt="Wedding couple walking"
-                  src="https://ucarecdn.com/b4323325-1596-4a96-9c3f-cd98d4b6e1c7/wedding5.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
-
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/aeb10e38-8714-439e-bc3b-07f3b941667d/wedding8.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/31205414-c6ae-4f5e-9202-21f05b538ddd/wedding8.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
-
-                <Image
-                  alt="Wedding couple laughing"
-                  src="https://ucarecdn.com/31205414-c6ae-4f5e-9202-21f05b538ddd/wedding8.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
-          </Sharedbox>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/81a1f936-6bbf-4dad-b338-969acd6f4952/-/preview/-/format/webp/"
-                type="image/webp"
-                loading="lazy"
-              />
-              <Image
-                alt="Wedding couple kissing"
-                src="https://ucarecdn.com/81a1f936-6bbf-4dad-b338-969acd6f4952/-/preview/-/format/auto/"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/-/format/webp/"
-                type="image/webp"
-                loading="lazy"
-              />
-              <Image
-                alt="Wedding couple kissing"
-                src="https://ucarecdn.com/5e406a70-1d92-4ca1-be1a-f9bada28a891/-/preview/-/format/auto/"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <UploadcareImage
+            uuid="5e406a70-1d92-4ca1-be1a-f9bada28a891"
+            alt="Wedding couple in field"
+          />
 
           <p>
             While I am currently based in the Netherlands, I am available

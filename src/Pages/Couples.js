@@ -17,6 +17,9 @@ import {
 } from "../Ui";
 import Reviews from "../Reviews";
 
+
+
+
 const Sharedbox = styled.div`
   width: 90%;
   margin: 0 auto;
