@@ -344,7 +344,7 @@ class Navbar extends React.Component {
               <Menuitem>
                 <StyledNavLink to="/about">About me</StyledNavLink>
               </Menuitem>
-              <ul>
+        
                 <PortfolioMenuitem
                   onMouseOver={() => {
                     this.setState({ isDropDownOpen: true });
@@ -360,15 +360,17 @@ class Navbar extends React.Component {
                   }}
                 >
                   <Menuitem>
+             
                     Portfolio
                     <i
                       style={{
                         color: "white",
                         fontSize: "20px",
-                        padding: "3px",
+                        padding: "5px 3px 3px 3px",
                       }}
                       class="fas fa-angle-down"
                     ></i>
+                    
                   </Menuitem>
                   <DropDown
                     isOpen={this.state.isDropDownOpen}
@@ -412,7 +414,7 @@ class Navbar extends React.Component {
                     </Menuitem>
                   </DropDown>
                 </PortfolioMenuitem>
-              </ul>
+         
 
               <Menuitem>
                 <StyledNavLink to="/investment">Investment</StyledNavLink>
