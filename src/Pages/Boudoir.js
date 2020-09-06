@@ -4,8 +4,16 @@ import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, GoToTopButton, Image, ImageContainer, Szepalcim, } from "../Ui";
-import Reviews from '../Reviews';
+import {
+  Button,
+  ButtonContainer,
+  GoToTopButton,
+  Image,
+  ImageContainer,
+  Szepalcim,
+} from "../Ui";
+import Reviews from "../Reviews";
+import UploadcareImage from "../UploadcareImage";
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -42,8 +50,6 @@ const Container = styled.div`
 `;
 
 class Boudoir extends React.Component {
-
-
   render() {
     return (
       <div className="Boudoir">
@@ -68,26 +74,10 @@ class Boudoir extends React.Component {
             <b>You are unstoppable.</b>
           </Szepalcim>
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/108988b4-88d8-4f77-8113-c1ac7dff994a/boudoir1.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/1be19a9b-516b-4475-9fea-e3bc23a5e088/boudoir1.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Girl posing with flowers"
-                src="https://ucarecdn.com/1be19a9b-516b-4475-9fea-e3bc23a5e088/boudoir1.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <UploadcareImage
+            uuid="108988b4-88d8-4f77-8113-c1ac7dff994a"
+            alt="Girl posing with flowers"
+          />
 
           <p>
             I know what you’re thinking: that you would love to try boudoir
@@ -105,47 +95,17 @@ class Boudoir extends React.Component {
             <br /> The goal is for you to feel and see the empowered, strong and
             irresistible woman you are.
           </p>
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/31f2e79f-55de-4313-a318-bbf84019fc29/boudoir17.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/062315b1-64ae-4331-9b15-3edcfd04c6bf/boudoir17.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
 
-              <Image
-                alt="Girl under veil"
-                src="https://ucarecdn.com/062315b1-64ae-4331-9b15-3edcfd04c6bf/boudoir17.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <UploadcareImage
+            uuid="31f2e79f-55de-4313-a318-bbf84019fc29"
+            alt="Girl under veil"
+          />
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/8b478ff8-938d-4df9-8497-25e3b941b631/boudoiramsterdam17.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/b1bc6114-c72b-428d-b78e-8e72ead29e73/boudoiramsterdam17.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
+          <UploadcareImage
+            uuid="8b478ff8-938d-4df9-8497-25e3b941b631"
+            alt="Girl laughing on bed"
+          />
 
-              <Image
-                alt="Girl laughing on bed"
-                src="https://ucarecdn.com/b1bc6114-c72b-428d-b78e-8e72ead29e73/boudoiramsterdam17.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
           <p>
             My detailed and sophisticated retouch process includes several steps
             to ensure you get the results you seek for. I will make sure that
@@ -385,7 +345,7 @@ class Boudoir extends React.Component {
             </GoToTopButton>
           </ButtonContainer>
         </Container>
-        <Reviews/>
+        <Reviews />
       </div>
     );
   }

@@ -4,6 +4,7 @@ import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import { Button, ButtonContainer, GoToTopButton, Image, ImageContainer, Text } from '../Ui'
+import UploadcareImage from "../UploadcareImage";
 
 
 const Container = styled.div`
@@ -53,24 +54,11 @@ class About extends React.Component {
         <Container>
           <h2>hey there!</h2>
           <ImageContainer style={{ paddingBottom: "40px", marginTop: "40px" }}>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/anniekostolanyaboutmepage1webp.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/2637abab-171e-46b0-8f70-b606894a5c90/anniekostolanyaboutmepage.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
 
-              <Image
-                alt="Annie Kostolany professional photographer"
-                src="https://ucarecdn.com/2637abab-171e-46b0-8f70-b606894a5c90/anniekostolanyaboutmepage.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
+          <UploadcareImage
+            uuid="6b826330-9ead-430b-86a7-9b14bfcb9b85"
+            alt="Annie Kostolany professional photographer"
+          />
           </ImageContainer>
 
           <Text>
