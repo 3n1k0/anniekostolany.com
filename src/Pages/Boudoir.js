@@ -112,221 +112,63 @@ class Boudoir extends React.Component {
             you feel 100% confident and comfortable with the images I deliver.
           </p>
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/21f8ca05-b4fb-4de7-8817-f1181bd4e552/boudoir7.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/2835783b-ac2d-43be-9f44-3c715a73e55d/boudoir7.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
+          <UploadcareImage
+            uuid="21f8ca05-b4fb-4de7-8817-f1181bd4e552"
+            alt="Girl with bouquet"
+          />
 
-              <Image
-                alt="Girl with bouquet"
-                src="https://ucarecdn.com/2835783b-ac2d-43be-9f44-3c715a73e55d/boudoir7.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
-
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/4a517d56-4dd2-46e7-b192-97de0c773555/boudoir8.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/c7b8a541-c2b7-4d53-8877-9ed3d0336768/boudoir8.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Girl laying on bed"
-                src="https://ucarecdn.com/c7b8a541-c2b7-4d53-8877-9ed3d0336768/boudoir8.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <UploadcareImage
+            uuid="4a517d56-4dd2-46e7-b192-97de0c773555"
+            alt="Girl laying on bed"
+          />
 
           <Sharedbox>
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/41b58a57-0c23-4346-83d9-881ef3f0d104/boudoir9.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/efb9c397-c132-4f4a-b0d0-80a3a34fc908/boudoir9.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
+            <UploadcareImage
+              uuid="41b58a57-0c23-4346-83d9-881ef3f0d104"
+              alt="Girl laying on bed"
+            />
 
-                <Image
-                  alt="Girl laying on bed"
-                  src="https://ucarecdn.com/efb9c397-c132-4f4a-b0d0-80a3a34fc908/boudoir9.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
-
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/b1595a34-7207-4398-8ca6-05367ddcd912/boudoir10.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/0671ffa4-0535-4743-a7d6-6dabc8ce78fa/boudoir10.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
-
-                <Image
-                  alt="Girl laughing among flowers"
-                  src="https://ucarecdn.com/0671ffa4-0535-4743-a7d6-6dabc8ce78fa/boudoir10.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
+            <UploadcareImage
+              uuid="b1595a34-7207-4398-8ca6-05367ddcd912"
+              alt="Bridal boudoir"
+            />
           </Sharedbox>
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/0efec2c3-3a2c-4760-85e0-fce606435a5d/boudoir16.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/3ead00bd-7257-48e1-94f6-3c655d236160/boudoir16.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
-
-              <Image
-                alt="Woman sitting in window"
-                src="https://ucarecdn.com/3ead00bd-7257-48e1-94f6-3c655d236160/boudoir16.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <UploadcareImage
+            uuid="0efec2c3-3a2c-4760-85e0-fce606435a5d"
+            alt="Woman sitting in the window"
+          />
 
           <Sharedbox>
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/c5ece3de-03a7-495f-8521-93ee010a94ac/boudoir11.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/42e8cb10-6696-48da-8675-80c7e3bbeadf/boudoir11.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
+            <UploadcareImage
+              uuid="c5ece3de-03a7-495f-8521-93ee010a94ac"
+              alt="Woman with bouquet"
+            />
 
-                <Image
-                  alt="Woman with bouquet"
-                  src="https://ucarecdn.com/42e8cb10-6696-48da-8675-80c7e3bbeadf/boudoir11.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
-
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/c97c0d4a-68d6-4480-99a2-ab0d5be7c51d/boudoir12.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/021c993b-8f87-4814-93bb-9fb3ead2feda/boudoir12.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
-
-                <Image
-                  alt="Girl sitting on bed"
-                  src="https://ucarecdn.com/021c993b-8f87-4814-93bb-9fb3ead2feda/boudoir12.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
+            <UploadcareImage
+              uuid="c97c0d4a-68d6-4480-99a2-ab0d5be7c51d"
+              alt="Girl sitting on bed"
+            />
           </Sharedbox>
 
           <Sharedbox>
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/466280c7-b1fe-4f96-a354-aa2fd4f3d305/boudoir13.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/b32949be-9d66-47e3-ba1f-148482acd735/boudoir13.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
+            <UploadcareImage
+              uuid="466280c7-b1fe-4f96-a354-aa2fd4f3d305"
+              alt="Woman with bouquet"
+            />
 
-                <Image
-                  alt="Woman with bouquet"
-                  src="https://ucarecdn.com/b32949be-9d66-47e3-ba1f-148482acd735/boudoir13.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
-
-            <ImageContainer>
-              <picture>
-                <source
-                  srcset="https://ucarecdn.com/9c11f2f8-bb89-46bf-9313-5ff0f3b98138/boudoir14.webp"
-                  type="image/webp"
-                  loading="lazy"
-                />
-                <source
-                  srcset="https://ucarecdn.com/5f1b15c3-665d-4617-abbc-20eb93782528/boudoir14.jpg"
-                  type="image/jpeg"
-                  loading="lazy"
-                />
-
-                <Image
-                  alt="Girl laying on bed"
-                  src="https://ucarecdn.com/5f1b15c3-665d-4617-abbc-20eb93782528/boudoir14.jpg"
-                  loading="lazy"
-                ></Image>
-              </picture>
-            </ImageContainer>
+            <UploadcareImage
+              uuid="9c11f2f8-bb89-46bf-9313-5ff0f3b98138"
+              alt="Girl laying on bed"
+            />
           </Sharedbox>
 
-          <ImageContainer>
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/b6126280-9536-4534-bd8f-28345a2facec/boudoir15.webp"
-                type="image/webp"
-                loading="lazy"
-              />
-              <source
-                srcset="https://ucarecdn.com/767c9bd0-5848-48a2-8a91-b85ea91fa234/boudoir15.jpg"
-                type="image/jpeg"
-                loading="lazy"
-              />
 
-              <Image
-                alt="Girl through glass"
-                src="https://ucarecdn.com/767c9bd0-5848-48a2-8a91-b85ea91fa234/boudoir15.jpg"
-                loading="lazy"
-              ></Image>
-            </picture>
-          </ImageContainer>
+          <UploadcareImage
+              uuid="b6126280-9536-4534-bd8f-28345a2facec"
+              alt="Girl through window"
+            />
+
           <Szepalcim>
             <b>
               MAYBE YOU DON’T THINK IT’S IN YOU, BUT BELIEVE ME, GIVE A GIRL THE

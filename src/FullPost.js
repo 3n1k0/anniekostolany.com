@@ -139,35 +139,7 @@ class FullPost extends React.Component {
                 return <StyledImg src={image} />;
               })}
           </Post>
-
-          {/* <ShareContainer>
-            <div
-              class="fb-share-button"
-              data-href="https://developers.facebook.com/docs/plugins/"
-              data-layout="button"
-              data-size="large"
-            >
-              <a
-                target="_blank"
-                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
-                class="fb-xfbml-parse-ignore"
-              >
-                Share
-              </a>
-            </div>
-
-            <Icon>
-              <a href="mailto:mail@anniekostolany.com" label="Send an email">
-                <i style={{ color: "black" }} class="far fa-envelope"></i>
-              </a>
-            </Icon>
-            <Icon>
-              <a href="mailto:mail@anniekostolany.com" label="Send an email">
-                <i style={{ color: "black" }} class="far fa-envelope"></i>
-              </a>
-            </Icon>
-          </ShareContainer> */}
-
+          
           <GoToTopButton
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });

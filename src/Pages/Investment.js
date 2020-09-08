@@ -6,6 +6,7 @@ import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import { Button, ButtonContainer, GoToTopButton } from "../Ui";
 import Reviews from "../Reviews";
+import UploadcareImage from "../UploadcareImage";
 
 const ImageContainer = styled.div`
   width: 80%;

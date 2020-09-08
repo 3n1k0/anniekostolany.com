@@ -15,6 +15,7 @@ import {
   CardTitle,
   Text,
 } from "../Ui";
+import UploadcareImage from "../UploadcareImage";
 
 const TextBox = styled.div`
   margin: 50px auto;
@@ -141,6 +142,7 @@ class Home extends React.Component {
           dropDowncolor="rgb(248,248,255, 0.3)"
           linkColor="black"
         />
+
         <Container>
           <picture>
             <source
