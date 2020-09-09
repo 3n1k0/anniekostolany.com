@@ -3,7 +3,6 @@ import { device } from "./mediaquery";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
 import { fonts, colors } from "./config";
 import { NavLink } from "react-router-dom";
-import { Icon } from "./Footer";
 
 export const HamburgerMenu = styled.div`
     display: flex;

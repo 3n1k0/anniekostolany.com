@@ -8,8 +8,6 @@ import { NavLink } from "react-router-dom";
 import Reviews from "../Reviews";
 import {
   Button,
-  Image,
-  ImageContainer,
   CardsContainer,
   CardInnerContainer,
   CardTitle,
@@ -24,7 +22,6 @@ const TextBox = styled.div`
   text-align: center;
   width: 100%;
   font-size: 1.5em;
-
 `;
 
 const TextTitle = styled.div`
@@ -102,7 +99,7 @@ export const HeaderImage = styled.img`
   object-fit: cover;
   height: 700px;
   position: relative;
-  filter: brightness(75%);
+  filter: brightness(70%);
 `;
 
 const TextboxButton = styled(Button)`
@@ -144,15 +141,11 @@ class Home extends React.Component {
         />
 
         <Container>
+
           <picture>
             <source
               srcset="https://ucarecdn.com/60dfdd67-df68-4276-ba1b-b74ce42dc5bb/header.webp"
               type="image/webp"
-              loading="lazy"
-            />
-            <source
-              srcset="https://ucarecdn.com/e742370a-5e45-41f5-a3c4-7ab5ce979a85/header.jpg"
-              type="image/jpeg"
               loading="lazy"
             />
 
@@ -188,69 +181,27 @@ class Home extends React.Component {
           </Text>
         </TextBox>
 
-        <ImageContainer>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/webp/"
-              type="image/webp"
-              loading="lazy"
-            />
+        <UploadcareImage
+          uuid="83e78393-ce4e-4e52-bf0e-5a88a5244ab6"
+          alt="Beach wedding couple"
+        />
 
-            <Image
-              alt="Beach wedding couple"
-              src="https://ucarecdn.com/83e78393-ce4e-4e52-bf0e-5a88a5244ab6/-/preview/-/format/auto/"
-              loading="lazy"
-            />
-          </picture>
-        </ImageContainer>
+        <UploadcareImage
+          uuid="e7011a88-163a-43da-b4a5-f2edc506a456"
+          alt="Amsterdam girl with bike"
+        />
 
-        <ImageContainer>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/e7011a88-163a-43da-b4a5-f2edc506a456/-/preview/-/format/webp/"
-              type="image/webp"
-              loading="lazy"
-            />
-
-            <Image
-              alt="Amsterdam girl with bike"
-              src="https://ucarecdn.com/e7011a88-163a-43da-b4a5-f2edc506a456/-/preview/-/format/auto/"
-              loading="lazy"
-            />
-          </picture>
-        </ImageContainer>
-
-        <ImageContainer>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/ac9d9011-17ae-4a52-825f-6913f36ee858/-/preview/-/format/webp/"
-              type="image/webp"
-              loading="lazy"
-            />
-
-            <Image
-              alt="Windmill engagement couple"
-              src="https://ucarecdn.com/ac9d9011-17ae-4a52-825f-6913f36ee858/-/preview/-/format/auto/"
-              loading="lazy"
-            />
-          </picture>
-        </ImageContainer>
+        <UploadcareImage
+          uuid="ac9d9011-17ae-4a52-825f-6913f36ee858"
+          alt="Windmill engagement couple"
+        />
 
         <CardsContainer>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/28cda8e9-e274-444b-9a60-02cbb1424ae9/-/preview/-/format/webp/"
-              type="image/webp"
-              loading="lazy"
-            />
-
-            <Image
-              alt="Mom with child"
-              src="https://ucarecdn.com/28cda8e9-e274-444b-9a60-02cbb1424ae9/-/preview/-/format/auto/"
-              loading="lazy"
-            />
-          </picture>
-
+ 
+          <UploadcareImage
+            uuid="28cda8e9-e274-444b-9a60-02cbb1424ae9"
+            alt="Mom with child"
+          />
           <CardInnerContainer>
             <CardTitle>
               <h2>FOR COUPLES AND FAMILIES</h2>
@@ -264,25 +215,10 @@ class Home extends React.Component {
           </CardInnerContainer>
         </CardsContainer>
         <CardsContainerReversed>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/3d344f8f-377c-4fa5-a8b3-9e3d93a19939/home5.webp"
-              type="image/webp"
-              loading="lazy"
-            />
-            <source
-              srcset="https://ucarecdn.com/5ced9396-cfdd-47d0-b848-093daa40a9ba/home5.jpg"
-              type="image/jpeg"
-              loading="lazy"
-            />
-
-            <Image
-              alt="Girl with windmill and flowers"
-              src="https://ucarecdn.com/5ced9396-cfdd-47d0-b848-093daa40a9ba/home5.jpg"
-              loading="lazy"
-            ></Image>
-          </picture>
-
+          <UploadcareImage
+            uuid="3d344f8f-377c-4fa5-a8b3-9e3d93a19939"
+            alt="Girl with windmill and flowers"
+          />
           <CardInnerContainer>
             <CardTitle>
               <h2>FOR TRAVELERS</h2>
@@ -297,26 +233,11 @@ class Home extends React.Component {
           </CardInnerContainer>
         </CardsContainerReversed>
         <CardsContainer style={{ borderTop: "1px solid grey" }}>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/377abeca-1940-41a0-84c5-14d759eac7f9/home6.webp"
-              type="image/webp"
-              loading="lazy"
-            />
-            <source
-              srcset="https://ucarecdn.com/9d113365-7771-4661-a775-84c46c8d38d6/home6.jpg"
-              type="image/jpeg"
-              loading="lazy"
-            />
-
-            <Image
-              style={{ width: "500px" }}
-              alt="Tulip model fashion shoot"
-              src="https://ucarecdn.com/9d113365-7771-4661-a775-84c46c8d38d6/home6.jpg"
-              loading="lazy"
-            ></Image>
-          </picture>
-
+          <UploadcareImage
+            style={{ width: "500px" }}
+            uuid="9d113365-7771-4661-a775-84c46c8d38d6"
+            alt="Tulip model fashion shoot"
+          />
           <CardInnerContainer>
             <CardTitle>
               <h2>FASHION</h2>

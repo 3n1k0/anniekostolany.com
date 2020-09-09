@@ -8,11 +8,6 @@ import {
   Button,
   ButtonContainer,
   GoToTopButton,
-  Image,
-  ImageContainer,
-  CardsContainer,
-  CardInnerContainer,
-  Text,
 } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";

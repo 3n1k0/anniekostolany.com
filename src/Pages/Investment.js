@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, GoToTopButton } from "../Ui";
+import { Button, ButtonContainer, GoToTopButton, Image } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
 
@@ -77,9 +77,9 @@ const Package = styled.div`
     text-align: left;
     font-size: 18px;
 
-    @media ${device.desktop}{
+    @media ${device.desktop} {
       text-align: center;
-    font-size: 20px;
+      font-size: 20px;
     }
   }
 
@@ -93,10 +93,7 @@ const Package = styled.div`
 
   @media ${device.desktop} {
     flex-flow: row nowrap;
-   
   }
-
-
 `;
 
 const Option = styled.div`
@@ -169,7 +166,6 @@ class Investment extends React.Component {
           />
         </Helmet>
 
-        
         <Container>
           <Package>
             <Option style={{ background: "#d4af37" }}>
@@ -179,7 +175,10 @@ class Investment extends React.Component {
                   <li>A pre-session style consultation before your session</li>
                   <li>2-2,5 hours of shooting time</li>
                   <li>Unlimited outfit changes</li>
-                  <li>40 retouched, high-resolution images with print-release included</li>
+                  <li>
+                    40 retouched, high-resolution images with print-release
+                    included
+                  </li>
                   <li>
                     A customized, password-protected online gallery available
                     for 6 months after your shoot
@@ -193,10 +192,13 @@ class Investment extends React.Component {
               <h1>Silver Package </h1>
               <p>
                 <ul>
-                <li>A pre-session style consultation before your session</li>
+                  <li>A pre-session style consultation before your session</li>
                   <li>1-1,5 hours of shooting time</li>
                   <li>1 outfit change</li>
-                  <li>30 retouched, high-resolution images with print-release included</li>
+                  <li>
+                    30 retouched, high-resolution images with print-release
+                    included
+                  </li>
                   <li>
                     A customized, password-protected online gallery available
                     for 6 months after your shoot
@@ -268,47 +270,29 @@ class Investment extends React.Component {
               </ButtonContainer>
             </p>
 
-            <picture>
-              <source
-                srcset="https://ucarecdn.com/df3ab74b-37b5-4458-9b23-9e8d883419f6/-/preview/1000x1300/-/format/webp/"
-                type="image/webp"
-              />
-              <img src="https://ucarecdn.com/df3ab74b-37b5-4458-9b23-9e8d883419f6/-/preview/1000x1300/-/format/auto/" />
-            </picture>
+            <UploadcareImage
+              uuid="df3ab74b-37b5-4458-9b23-9e8d883419f6"
+              alt="Annie"
+            />
           </Honor>
 
           <ImageContainer>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/webp/"
-              type="image/webp"
-            />
-            <img src="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/auto/" />
-          </picture>
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/webp/"
-              type="image/webp"
-            />
-            <img src="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/auto/" />
-          </picture>
+            <picture>
+              <img src="https://ucarecdn.com/0e329440-e81e-4386-bd9f-95a09bc56304/-/scale_crop/1000x1000/smart/-/format/auto/" />
+            </picture>
 
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/webp/"
-              type="image/webp"
-            />
-            <img src="https://0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/auto/" />
-          </picture>
+            <picture>
+              <img src="https://ucarecdn.com/120f83b8-c65e-4da0-9a5c-422d73fe2a7e/-/scale_crop/1000x1000/smart/-/format/auto/" />
+            </picture>
 
-          <picture>
-            <source
-              srcset="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/webp/"
-              type="image/webp"
-            />
-            <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/auto/" />
-          </picture>
-        </ImageContainer>
+            <picture>
+              <img src="https://ucarecdn.com/0c036eea-42d5-4cb7-960d-0b2b3dd13980/-/scale_crop/1000x1000/smart/-/format/auto/" />
+            </picture>
+
+            <picture>
+              <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/auto/" />
+            </picture>
+          </ImageContainer>
           <ButtonContainer>
             <GoToTopButton
               onClick={() => {

@@ -8,8 +8,6 @@ import {
   Button,
   ButtonContainer,
   GoToTopButton,
-  Image,
-  ImageContainer,
   Szepalcim,
 } from "../Ui";
 import Reviews from "../Reviews";
