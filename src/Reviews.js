@@ -1,6 +1,6 @@
 import reviews from "./reviews.json";
 import styled from "styled-components/macro";
-import React from "react";
+import React, { lazy } from "react";
 import { device } from "./mediaquery";
 import { fonts, colors } from "./config";
 import { CardTitle } from "./Ui";

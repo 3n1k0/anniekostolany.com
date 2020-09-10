@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import styled from "styled-components/macro";
 import { fonts, colors } from "./config";
 

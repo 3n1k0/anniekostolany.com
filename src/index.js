@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import ReactDOM from "react-dom";
 import Footer from "./Footer";
 import * as serviceWorker from "./serviceWorker";

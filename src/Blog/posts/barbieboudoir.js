@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import BlogImage from "../BlogImage";
 
 const barbieboudoir = {

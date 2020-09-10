@@ -15,6 +15,7 @@ import {
 } from "../Ui";
 import UploadcareImage from "../UploadcareImage";
 
+
 const TextBox = styled.div`
   margin: 50px auto;
   display: flex;
@@ -211,7 +212,7 @@ class Home extends React.Component {
                 documenting the most important milestones!
               </p>
             </CardTitle>
-            <Button to={"/couples"}>More info</Button>
+            <Button to={"/couples"} aria-label="Couple photos portfolio">More info</Button>
           </CardInnerContainer>
         </CardsContainer>
         <CardsContainerReversed>
