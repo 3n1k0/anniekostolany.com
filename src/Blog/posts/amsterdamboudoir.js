@@ -65,8 +65,11 @@ const amsterdamboudoir = {
     </>
   ),
 
-  leadimage:
-    "https://ucarecdn.com/767c9bd0-5848-48a2-8a91-b85ea91fa234/-/preview/800x1300/-/format/auto/",
+  leadimage: {
+    src:
+      "https://ucarecdn.com/767c9bd0-5848-48a2-8a91-b85ea91fa234/-/preview/800x1300/-/format/auto/",
+    alt: "girl through window",
+  },
 };
 
 export default amsterdamboudoir;

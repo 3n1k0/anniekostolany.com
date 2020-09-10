@@ -102,7 +102,7 @@ class Blog extends React.Component {
               <Post>
                 <NavLink to={"/blog/posts/" + post.slug}>
                   <PostTitle>{post.title}</PostTitle>
-                  <StyledImg src={post.leadimage} />
+                  <StyledImg  alt = {post.leadimage.alt} src={post.leadimage.src} />
                 </NavLink>
                 <p>{post.excerpt} </p>
                 <Readmore to={"/blog/posts/" + post.slug}>

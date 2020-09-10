@@ -295,8 +295,9 @@ const rebeccaandkayley = {
     </>
   ),
 
-  leadimage:
-    "https://ucarecdn.com/3f9df706-202d-40a4-a8a1-fabcca901d68/-/preview/800x1300/-/format/webp/",
+  leadimage: {
+    src: "https://ucarecdn.com/3f9df706-202d-40a4-a8a1-fabcca901d68/-/preview/800x1300/-/format/webp/",
+    alt: "rings and hands" }
 };
 
 export default rebeccaandkayley;

@@ -142,8 +142,11 @@ const haarlem = {
       </picture>
     </>
   ),
-  leadimage:
-    "https://ucarecdn.com/b0b97f94-15d2-4309-8402-bf822ebbf2b0/-/preview/800x1300/-/format/auto/",
+  leadimage: {
+    src:
+      "https://ucarecdn.com/b0b97f94-15d2-4309-8402-bf822ebbf2b0/-/preview/800x1300/-/format/auto/",
+    alt: "haarlem",
+  },
 };
 
 export default haarlem;

@@ -71,8 +71,9 @@ const cozylifestylephotoshoot = {
     </>
   ),
 
-  leadimage:
-    "https://ucarecdn.com/5727471b-6df6-4910-95bb-7c9a627ea186/-/format/auto/",
+  leadimage: {
+    src: "https://ucarecdn.com/5727471b-6df6-4910-95bb-7c9a627ea186/-/format/auto/",
+    alt: "lifestyle couple"}
 };
 
 export default cozylifestylephotoshoot;

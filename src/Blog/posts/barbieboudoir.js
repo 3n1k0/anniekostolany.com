@@ -1,4 +1,5 @@
 import React from "react";
+import BlogImage from "../BlogImage";
 
 const barbieboudoir = {
   slug: "covid-19-barbie-boudoir",
@@ -30,83 +31,66 @@ const barbieboudoir = {
       </p>
       <br />
       <p>This boudoir session is a result of staying home for too long. </p>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/2fbfe50a-334d-4999-bdd4-66d9a55e3470/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/2fbfe50a-334d-4999-bdd4-66d9a55e3470/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/f5846a62-d8c4-4abd-aa0e-ce653e4982c9/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/f5846a62-d8c4-4abd-aa0e-ce653e4982c9/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/3b018fcf-d6c2-4ebe-b5aa-0881b74e82e6/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/3b018fcf-d6c2-4ebe-b5aa-0881b74e82e6/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/930c25ac-30e5-4258-a2e7-76a0b6579672/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/930c25ac-30e5-4258-a2e7-76a0b6579672/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/ebf1a2f8-723a-402e-b2dc-00992ad8ab9a/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/ebf1a2f8-723a-402e-b2dc-00992ad8ab9a/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/8a0769d7-3d89-4ea5-bd1f-f7697b50bbcf/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/8a0769d7-3d89-4ea5-bd1f-f7697b50bbcf  /-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/73c1de13-f62c-4439-a2dc-c36a3f8a3265/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/73c1de13-f62c-4439-a2dc-c36a3f8a3265/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/1487aa7c-0fcb-48b0-87cf-f7d939750653/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/1487aa7c-0fcb-48b0-87cf-f7d939750653/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/6958f704-5059-490b-b096-bc75d0d42621/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/6958f704-5059-490b-b096-bc75d0d42621/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/fbb1b859-1e17-4c6e-a158-57401d3659f1/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/fbb1b859-1e17-4c6e-a158-57401d3659f1/-/preview/800x1300/-/format/auto/" />
-      </picture>
+
+      <BlogImage
+        uuid="2fbfe50a-334d-4999-bdd4-66d9a55e3470"
+        alt="Barbie on bed"
+      />
+
+      <BlogImage
+        uuid="f5846a62-d8c4-4abd-aa0e-ce653e4982c9"
+        alt="Barbie on bed"
+      />
+
+      <BlogImage
+        uuid="3b018fcf-d6c2-4ebe-b5aa-0881b74e82e6"
+        alt="Barbie on bed"
+      />
+
+      <BlogImage
+        uuid="930c25ac-30e5-4258-a2e7-76a0b6579672"
+        alt="Barbie on bed"
+      />
+
+      <BlogImage
+        uuid="ebf1a2f8-723a-402e-b2dc-00992ad8ab9a"
+        alt="Barbie on bed"
+      />
+
+      <BlogImage
+        uuid="8a0769d7-3d89-4ea5-bd1f-f7697b50bbcf"
+        alt="Barbie on bed"
+      />
+
+      <BlogImage
+        uuid="73c1de13-f62c-4439-a2dc-c36a3f8a3265"
+        alt="Barbie on bed"
+      />
+
+      <BlogImage
+        uuid="1487aa7c-0fcb-48b0-87cf-f7d939750653"
+        alt="Barbie on bed"
+      />
+
+      <BlogImage
+        uuid="6958f704-5059-490b-b096-bc75d0d42621"
+        alt="Barbie on bed"
+      />
+
+      <BlogImage
+        uuid="fbb1b859-1e17-4c6e-a158-57401d3659f1"
+        alt="Barbie on bed"
+      />
+
       <p>
         What do you think? Does Barbie’s personality shine through the images?
       </p>
     </>
   ),
-  leadimage:
-    "https://ucarecdn.com/3b018fcf-d6c2-4ebe-b5aa-0881b74e82e6/-/preview/800x1300/-/format/auto/",
+
+  leadimage: {
+    src: "https://ucarecdn.com/3b018fcf-d6c2-4ebe-b5aa-0881b74e82e6/-/preview/800x1300/-/format/auto/",
+    alt: "barbie boudoir" }
 };
 
 export default barbieboudoir;

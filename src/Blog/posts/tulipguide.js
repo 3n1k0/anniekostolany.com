@@ -126,8 +126,9 @@ const tulipguide = {
     </>
   ),
 
-  leadimage:
-    "https://ucarecdn.com/42d6e9bc-6ecc-4416-96b9-86344eb4a34c/-/preview/800x1300/-/format/auto/",
+  leadimage: {
+    src: "https://ucarecdn.com/42d6e9bc-6ecc-4416-96b9-86344eb4a34c/-/preview/800x1300/-/format/auto/",
+    alt: "Tulip field"}
 };
 
 export default tulipguide;
