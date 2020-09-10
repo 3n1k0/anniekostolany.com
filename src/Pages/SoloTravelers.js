@@ -4,12 +4,7 @@ import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import {
-  Button,
-  ButtonContainer,
-  GoToTopButton,
-  Sharedbox
-} from "../Ui";
+import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
 
@@ -24,7 +19,7 @@ const Container = styled.div`
     font-family: ${fonts.mindenmas};
     font-size: 1.1em;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.8;
     letter-spacing: 0.005em;
     max-width: 90%;
     padding-bottom: 20px;
@@ -55,14 +50,6 @@ class Travelers extends React.Component {
             When people think of the Netherlands, their imaginations are often
             limited to a few clichés: wooden clogs, windmills, bicycles… you get
             the picture. <br />
-            <br /> When visiting, it’s important to remember that size isn’t
-            everything, and despite being a small country geographically, the
-            Netherlands is packed with world famous icons. <br />
-            <br />
-            The fact is that Amsterdam’s web of canals, the stunning works of
-            Old Masters, unique Delft Blue earthenware, and tulip fields
-            stretching as far as the eye can see are just the tip of the
-            iceberg.
           </p>
           <UploadcareImage
             uuid="ede82bee-a352-45ab-9391-e774b5ae1ee8"
@@ -80,10 +67,9 @@ class Travelers extends React.Component {
             />
           </Sharedbox>
           <p>
-            Whether you’re looking to explore the hidden beauty spots of
-            Amsterdam, or you’re keen to get to know the nearby gem of Haarlem,
-            I can show you a world of fantastical imagery you might otherwise
-            have missed, as your guide and photographer.
+            <br /> When visiting, it’s important to remember that size isn’t
+            everything, and despite being a small country geographically, the
+            Netherlands is packed with world famous icons. <br />
           </p>
           <Sharedbox>
             <UploadcareImage
@@ -95,12 +81,6 @@ class Travelers extends React.Component {
               alt="Girl in window"
             />
           </Sharedbox>
-          <p>
-            My extensive professional experience means I am able to pay
-            attention to detail to pick out the right location, while still
-            being able to focus a lot on bringing out your natural emotions to
-            catch on camera. <br />
-          </p>
           <UploadcareImage
             uuid="4bb6482e-4357-4645-bf19-075cc3aafba8"
             alt="Girl at canal and windmill"
@@ -134,15 +114,21 @@ class Travelers extends React.Component {
             alt="Girl in pink dress"
           />
           <UploadcareImage
-            uuid="7e9fea1f-7d72-4345-a8a0-43eff0cd3baa"
-            alt="Girl in pink dress"
-          />
-          <UploadcareImage
             uuid="a2b936d8-c276-4908-b0ad-f7226a2f5c6c"
             alt="Playful girl with flowers"
           />
           <p>
-            If you are traveling solo, this portrait session is perfect for you,
+            The fact is that Amsterdam’s web of canals, the stunning works of
+            Old Masters, unique Delft Blue earthenware, and tulip fields
+            stretching as far as the eye can see are just the tip of the
+            iceberg. Whether you’re looking to explore the hidden beauty spots
+            of Amsterdam, or you’re keen to get to know the nearby gem of
+            Haarlem, I can show you a world of fantastical imagery you might
+            otherwise have missed, as your guide and photographer. My extensive
+            professional experience means I am able to pay attention to detail
+            to pick out the right location, while still being able to focus a
+            lot on bringing out your natural emotions to catch on camera. If you
+            are traveling solo, this portrait session is perfect for you,
             providing you with a unique insight into some of the most gorgeous
             photo spots in Amsterdam. <br />
             Please feel free to get in touch, and let’s chat about your ideas!

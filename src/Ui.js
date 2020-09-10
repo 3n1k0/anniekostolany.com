@@ -128,6 +128,7 @@ export const GoToTopButton = styled.button`
   margin: 0 auto;
   padding: 20px;
   background: none;
+  font-weight: 800;
 `;
 
 export const Button = styled(NavLink)`

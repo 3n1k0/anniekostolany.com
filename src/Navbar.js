@@ -415,7 +415,7 @@ class Navbar extends React.Component {
                     </Menuitem>
                     <Menuitem>
                       <InnerStyledNavLink to="/how-does-it-work">
-                        How does it work?
+                        How does it work? <i class="fa fa-info-circle" aria-hidden="true"></i>
                       </InnerStyledNavLink>
                     </Menuitem>
                   </DropDown>
