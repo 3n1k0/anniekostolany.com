@@ -56,7 +56,7 @@ class Footer extends React.Component {
             >
               <i
                 style={{ color: "white" }}
-                class="fab fa-instagram"
+                className="fab fa-instagram"
                 label="Instagram profile"
               ></i>
             </a>
@@ -69,7 +69,7 @@ class Footer extends React.Component {
             >
               <i
                 style={{ color: "white" }}
-                class="fab fa-facebook-f"
+                className="fab fa-facebook-f"
                 label="Facebook profile"
               ></i>
             </a>
@@ -77,7 +77,7 @@ class Footer extends React.Component {
 
           <Icon>
             <a href="mailto:mail@anniekostolany.com" label="Send an email">
-              <i style={{ color: "white" }} class="far fa-envelope"></i>
+              <i style={{ color: "white" }} className="far fa-envelope"></i>
             </a>
           </Icon>
         </Icontainer>

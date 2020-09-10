@@ -4,7 +4,7 @@ const BlogImage = ({ uuid, alt }) => {
   return (
     <picture>
       <source
-        srcset={`https://ucarecdn.com/${uuid}/-/preview/800x1300/-/format/webp/`}
+        srcSet={`https://ucarecdn.com/${uuid}/-/preview/800x1300/-/format/webp/`}
         type="image/webp"
         loading = "lazy"
         alt = {alt}

@@ -184,8 +184,15 @@ export const Menuitem = styled.li`
   }
 `;
 
-export const PortfolioMenuitem = styled(Menuitem)`
+export const PortfolioMenuitem = styled.ul`
   flex-flow: column;
+  display: flex;
+  padding: 8px 30px;
+  font-family: ${fonts.cimek};
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 2px;
+  align-items: center;
 `;
 
 const Title = styled.h1`
@@ -367,7 +374,7 @@ class Navbar extends React.Component {
                         fontSize: "20px",
                         padding: "5px 3px 3px 3px",
                       }}
-                      class="fas fa-angle-down"
+                      className="fas fa-angle-down"
                     ></i>
                     
                   </Menuitem>

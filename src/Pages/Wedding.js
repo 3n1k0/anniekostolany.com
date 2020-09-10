@@ -14,9 +14,6 @@ import UploadcareImage from "../UploadcareImage";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-const SliderContainer = styled.div`
-  height: 400px;
-`;
 
 const Sharedbox = styled.div`
   width: 90%;

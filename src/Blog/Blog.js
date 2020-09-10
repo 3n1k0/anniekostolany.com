@@ -99,7 +99,7 @@ class Blog extends React.Component {
           {" "}
           {posts.map((post) => {
             return (
-              <Post>
+              <Post key={post.slug}>
                 <NavLink to={"/blog/posts/" + post.slug}>
                   <PostTitle>{post.title}</PostTitle>
                   <StyledImg  alt = {post.leadimage.alt} src={post.leadimage.src} />

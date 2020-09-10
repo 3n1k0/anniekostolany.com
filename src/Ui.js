@@ -1,4 +1,4 @@
-import React from "react";
+
 import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
 import { colors } from "./config";
@@ -28,10 +28,10 @@ export const CardsContainer = styled.div`
 
 `;
 
-const h2 = styled.div`
-  font-family: ${fonts.focim};
-  font-size: 1em;
-`;
+// const h2 = styled.div`
+//   font-family: ${fonts.focim};
+//   font-size: 1em;
+// `;
 
 export const CardInnerContainer = styled.div`
   display: flex;
