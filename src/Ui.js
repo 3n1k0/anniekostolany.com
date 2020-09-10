@@ -28,11 +28,6 @@ export const CardsContainer = styled.div`
 
 `;
 
-// const h2 = styled.div`
-//   font-family: ${fonts.focim};
-//   font-size: 1em;
-// `;
-
 export const CardInnerContainer = styled.div`
   display: flex;
   flex-flow: column nowrap;
@@ -109,7 +104,7 @@ export const CardTitle = styled.div`
   }
 
   h2 {
-    font-family: ${fonts.cimek};
+    font-family: ${fonts.mindenmas};
     font-size: 15px;
     color: ${colors.cimek};
     letter-spacing: 2px;

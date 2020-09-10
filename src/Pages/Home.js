@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from 'react';
 import { device } from "../mediaquery";
 import styled from "styled-components/macro";
 import { fonts, colors } from "../config";
@@ -77,7 +77,7 @@ export const MottoContainer = styled.div`
 `;
 
 export const Motto = styled.div`
-  font-family: ${fonts.focim};
+  font-family: ${fonts.mindenmas};
   color: white;
   font-style: normal;
   font-size: 1rem;

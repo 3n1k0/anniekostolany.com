@@ -97,7 +97,7 @@ export const ContactButton = styled.button`
   display: inline-block;
   z-index: 100;
   cursor: pointer;
-  font-family: ${fonts.cimek};
+  font-family: ${fonts.mindenmas};
   font-weight: 800;
   font-size: 18px;
 
@@ -136,7 +136,7 @@ export const Menuitems = styled.div`
   height: 200%;
   font-size: 18px;
   width: 280px;
-  padding: 100px 20px;
+  padding: 100px 40px;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   background: linear-gradient(
     170deg,
@@ -148,7 +148,7 @@ export const Menuitems = styled.div`
     align-items: center;
     justify-content: flex-end;
     padding-top: 20px;
-    padding-right: 40px;
+    padding-right: 10px;
     top: 60px;
     right: 0px;
     width: 100%;
@@ -166,7 +166,7 @@ export const Menuitems = styled.div`
 export const Menuitem = styled.div`
   display: flex;
   padding: 8px 30px;
-  font-family: ${fonts.cimek};
+  font-family: ${fonts.mindenmas};
   font-weight: 800;
   cursor: pointer;
   letter-spacing: 2px;
@@ -187,8 +187,8 @@ export const Menuitem = styled.div`
 export const PortfolioMenuitem = styled.div`
   flex-flow: column;
   display: flex;
-  padding: 8px 30px;
-  font-family: ${fonts.cimek};
+  padding: 8px 0px;
+  font-family: ${fonts.mindenmas};
   font-weight: 800;
   cursor: pointer;
   letter-spacing: 2px;
@@ -197,8 +197,8 @@ export const PortfolioMenuitem = styled.div`
 
 const Title = styled.h1`
   color: #ffffff;
-  padding: 30px;
-  font-family: ${fonts.cimek};
+  padding: 30px 40px;
+  font-family: ${fonts.mindenmas};
   font-size: 1.5em;
   font-size: 12px;
   letter-spacing: 2px;
@@ -270,7 +270,7 @@ const DropDown = styled.div`
   @media ${device.desktop} {
     background-color: ${({ backgroundColor }) => backgroundColor};
 
-    width: 220px;
+    width: 200px;
     height: 270px;
     position: absolute;
     z-index: 5;

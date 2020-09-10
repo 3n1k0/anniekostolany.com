@@ -14,6 +14,7 @@ export const Quote = styled(CardTitle)`
   margin: 0 auto;
   padding: 30px;
   background: #ccafaf;
+  line-height: 2em;
 
   p {
     width: 100%;
@@ -36,7 +37,7 @@ const Reviews = function () {
     
   const randomNumber = Math.round(Math.random() * (reviews.length-1));
   console.log(randomNumber)
-  return <Quote>{reviews[randomNumber]} <br /><br />⭐⭐⭐⭐⭐</Quote>;
+  return <Quote>{reviews[randomNumber]} <br />⭐⭐⭐⭐⭐</Quote>;
 };
 
 export default Reviews;

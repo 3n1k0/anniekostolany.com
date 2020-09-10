@@ -74,11 +74,11 @@ const Container = styled.div`
   }
 
   h1 {
-    font-family: ${fonts.cimek};
+    font-family: ${fonts.mindenmas};
     text-transform: uppercase;
     text-align: center;
     font-size: 37px;
-    line-height: 1.4;
+    line-height: 1.5;
     letter-spacing: 0.337em;
     font-weight: 100;
     padding-bottom: 50px;
@@ -87,7 +87,7 @@ const Container = styled.div`
 
   label {
     padding-bottom: 10px;
-    font-family: ${fonts.cimek};
+    font-family: ${fonts.mindenmas};
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;

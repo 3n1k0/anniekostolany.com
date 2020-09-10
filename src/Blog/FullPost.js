@@ -48,7 +48,7 @@ const Post = styled.div`
 const Title = styled.div`
   position: absolute;
   color: white;
-  font-family: ${fonts.focim};
+  font-family: ${fonts.mindenmas};
   font-size: 2em;
   letter-spacing: 2px;
   font-weight: 600;
