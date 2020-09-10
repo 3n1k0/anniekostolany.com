@@ -1,4 +1,5 @@
 import React from "react";
+import BlogImage from "../BlogImage";
 
 const tulipguide = {
   slug: "the-ultimate-guide-to-Dutch-tulip-fields",
@@ -95,40 +96,39 @@ const tulipguide = {
       </p>
       <br />
       <br />
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/42d6e9bc-6ecc-4416-96b9-86344eb4a34c/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/42d6e9bc-6ecc-4416-96b9-86344eb4a34c/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/ab163f31-fcf6-4ee9-97f2-5b986af2e2fb/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/ab163f31-fcf6-4ee9-97f2-5b986af2e2fb/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/a7ffc5b2-7d8b-4a89-9987-ff93ba016f26/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/a7ffc5b2-7d8b-4a89-9987-ff93ba016f26/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/c633b069-dede-480d-8eed-818fe8a25d67/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/c633b069-dede-480d-8eed-818fe8a25d67/-/preview/800x1300/-/format/auto/" />
-      </picture>
+
+      <BlogImage
+        uuid="42d6e9bc-6ecc-4416-96b9-86344eb4a34c"
+        alt="tulip field photoshoot"
+      />
+
+      <BlogImage
+        uuid="ab163f31-fcf6-4ee9-97f2-5b986af2e2fb"
+        alt="tulip field photoshoot"
+      />
+
+      <BlogImage
+        uuid="a7ffc5b2-7d8b-4a89-9987-ff93ba016f26"
+        alt="tulip field photoshoot"
+      />
+
+      <BlogImage
+        uuid="c633b069-dede-480d-8eed-818fe8a25d67"
+        alt="tulip field photoshoot"
+      />
+
+      <BlogImage
+        uuid="42d6e9bc-6ecc-4416-96b9-86344eb4a34c"
+        alt="tulip field photoshoot"
+      />
     </>
   ),
 
   leadimage: {
-    src: "https://ucarecdn.com/42d6e9bc-6ecc-4416-96b9-86344eb4a34c/-/preview/800x1300/-/format/auto/",
-    alt: "Tulip field"}
+    src:
+      "https://ucarecdn.com/42d6e9bc-6ecc-4416-96b9-86344eb4a34c/-/preview/800x1300/-/format/auto/",
+    alt: "Tulip field",
+  },
 };
 
 export default tulipguide;
