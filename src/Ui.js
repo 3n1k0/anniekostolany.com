@@ -1,8 +1,7 @@
-
 import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
 import { colors } from "./config";
-import { fonts } from './config'
+import { fonts } from "./config";
 import { device } from "./mediaquery";
 
 export const CardsContainer = styled.div`
@@ -25,7 +24,16 @@ export const CardsContainer = styled.div`
   @media ${device.tablet} {
     width: 60%;
   }
+`;
 
+export const Sharedbox = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+
+  @media ${device.desktop} {
+    width: 60%;
+  }
 `;
 
 export const CardInnerContainer = styled.div`
@@ -49,17 +57,14 @@ export const Text = styled.div`
   width: 90%;
   color: ${colors.footerfekete};
 
-
   @media ${device.desktop} {
     width: 60%;
   }
 
-  p{
+  p {
     font-size: 20px;
     width: 100%;
   }
-
-
 `;
 
 export const Szepalcim = styled.div`
@@ -79,7 +84,6 @@ export const Szepalcim = styled.div`
     font-size: 1.3em;
   }
 `;
-
 
 export const ImageContainer = styled.div`
   width: 100%;
@@ -127,7 +131,7 @@ export const GoToTopButton = styled.button`
 `;
 
 export const Button = styled(NavLink)`
-  border: 2px solid #1f1f1f;;
+  border: 2px solid #1f1f1f;
   background: transparent;
   color: ${colors.cimek};
   height: 42px;
@@ -145,16 +149,14 @@ export const Button = styled(NavLink)`
   padding: 10px;
   font-size: 14px;
 
-
-
   &:hover {
-    background: #1f1f1f;;
+    background: #1f1f1f;
     color: ${colors.tortfeher};
     transition: 0.6s;
   }
 
   a:visited {
-    color: #1f1f1f;;
+    color: #1f1f1f;
   }
 
   a:visited:hover {

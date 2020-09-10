@@ -8,22 +8,12 @@ import {
   Button,
   ButtonContainer,
   GoToTopButton,
+  Sharedbox
 } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-
-
-const Sharedbox = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-
-  @media ${device.desktop} {
-    width: 60%;
-  }
-`;
 
 const Container = styled.div`
   width: 80%;

@@ -8,8 +8,7 @@ import {
   Button,
   ButtonContainer,
   GoToTopButton,
-  Image,
-  ImageContainer,
+  Sharedbox,
   CardsContainer,
   CardInnerContainer,
   Text,
@@ -18,15 +17,6 @@ import {
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
 
-const Sharedbox = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-
-  @media ${device.desktop} {
-    width: 60%;
-  }
-`;
 
 const Container = styled.div`
   width: 75%;

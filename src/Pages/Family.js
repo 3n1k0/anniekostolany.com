@@ -9,19 +9,10 @@ import {
   ButtonContainer,
   GoToTopButton,
   Szepalcim,
+  Sharedbox
 } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
-
-const Sharedbox = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-
-  @media ${device.desktop} {
-    width: 60%;
-  }
-`;
 
 const Container = styled.div`
   width: 80%;
