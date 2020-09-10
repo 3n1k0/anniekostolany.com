@@ -127,7 +127,7 @@ export const ContactButton = styled.button`
   }
 `;
 
-export const Menuitems = styled.ul`
+export const Menuitems = styled.div`
   flex-flow: column nowrap;
   color: white;
   position: absolute;
@@ -163,7 +163,7 @@ export const Menuitems = styled.ul`
   }
 `;
 
-export const Menuitem = styled.li`
+export const Menuitem = styled.div`
   display: flex;
   padding: 8px 30px;
   font-family: ${fonts.cimek};
@@ -184,7 +184,7 @@ export const Menuitem = styled.li`
   }
 `;
 
-export const PortfolioMenuitem = styled.ul`
+export const PortfolioMenuitem = styled.div`
   flex-flow: column;
   display: flex;
   padding: 8px 30px;

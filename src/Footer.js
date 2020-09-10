@@ -46,13 +46,14 @@ const Numbers = styled.div`
 class Footer extends React.Component {
   render() {
     return (
-      <Container>
+      <Container role="contentinfo">
         <Icontainer>
           <Icon>
             <a
+              aria-label="This is a link to my Instagram profile"
               target="_blank"
               href="https://instagram.com/anniekostolany"
-              rel="noopener"
+              rel="noreferrer noopener"
             >
               <i
                 style={{ color: "white" }}
@@ -63,9 +64,10 @@ class Footer extends React.Component {
           </Icon>
           <Icon>
             <a
+              aria-label="This is a link to my Facebook page"
               target="_blank"
               href="https://facebook.com/anniekostolany"
-              rel="noopener"
+              rel="noreferrer noopener"
             >
               <i
                 style={{ color: "white" }}
@@ -76,7 +78,12 @@ class Footer extends React.Component {
           </Icon>
 
           <Icon>
-            <a href="mailto:mail@anniekostolany.com" label="Send an email">
+            <a
+              aria-label="By clicking here you can send me an email"
+              rel="noreferrer noopener"
+              href="mailto:mail@anniekostolany.com"
+              label="Send an email"
+            >
               <i style={{ color: "white" }} className="far fa-envelope"></i>
             </a>
           </Icon>
