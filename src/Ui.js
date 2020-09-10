@@ -8,8 +8,7 @@ export const CardsContainer = styled.div`
   display: flex;
   flex-flow: column;
   width: 100%;
-  margin: 50px auto;
-  padding: 20px 0px;
+  margin: 0px auto;
   justify-content: center;
   align-items: center;
 
@@ -27,7 +26,7 @@ export const CardsContainer = styled.div`
 `;
 
 export const Sharedbox = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
 
@@ -45,6 +44,7 @@ export const CardInnerContainer = styled.div`
   width: 100%;
   color: rgb(88, 86, 86);
   font-family: ${fonts.mindenmas};
+  font-size: 15px;
 
   @media ${device.desktop} {
     padding: 0px 50px;

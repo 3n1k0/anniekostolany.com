@@ -140,10 +140,10 @@ class Couples extends React.Component {
             alt="Couple walking"
           />
 
-          <UploadcareImage
+          {/* <UploadcareImage
             uuid="cb89ba729-e88b-4f78-ab7b-ef646a85dbae"
             alt="Couple in canal boat"
-          />
+          /> */}
           
           <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
