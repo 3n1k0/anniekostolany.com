@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import Navbar from "../Navbar";
 import styled from "styled-components/macro";
 import posts from "./posts/allposts";
