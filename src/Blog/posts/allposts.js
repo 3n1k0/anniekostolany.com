@@ -7,6 +7,5 @@ import amsterdamboudoir from './amsterdamboudoir'
 
 const posts = [
   cozylifestylephotoshoot, rebeccaandkayley, barbieboudoir, tulipguide, haarlem, amsterdamboudoir
-
 ];
 export default posts;

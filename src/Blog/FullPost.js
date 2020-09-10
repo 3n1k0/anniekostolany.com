@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 import { HeaderImage } from "../Pages/Home";
 import { fonts } from "../config";
 import { device } from "../mediaquery";
-import { GoToTopButton } from '../Ui'
+import { GoToTopButton } from "../Ui";
 
 const ShareContainer = styled.div`
   width: 30%;
@@ -40,7 +40,7 @@ const Post = styled.div`
   font-size: 17px;
 
   @media ${device.desktop} {
-    padding: 100px 100px 50px 100px;
+    padding: 50px 100px 50px 100px;
     width: 60%;
   }
 `;
@@ -56,10 +56,9 @@ const Title = styled.div`
   text-align: center;
   text-transform: uppercase;
 
-  @media ${device.desktop}{
+  @media ${device.desktop} {
     font-size: 3em;
   }
-
 `;
 
 const Header = styled.div`
@@ -77,7 +76,6 @@ const Date = styled.div`
   text-transform: none;
   position: absolute;
   color: white;
-
 `;
 
 const TextContainer = styled.div`
@@ -98,8 +96,6 @@ const TextContainer = styled.div`
 const StyledImg = styled.img`
   padding: 50px;
 `;
-
-
 
 class FullPost extends React.Component {
   render() {
@@ -130,9 +126,7 @@ class FullPost extends React.Component {
           </Header>
 
           <Post>
-            <TextContainer
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            ></TextContainer>
+            <TextContainer>{post.content()}</TextContainer>
 
             {post.postimage &&
               post.postimage.map((image) => {
