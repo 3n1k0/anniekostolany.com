@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React, { lazy } from "react";
 import Navbar from "../Navbar";
 import styled from "styled-components/macro";
 import posts from "./posts/allposts";
@@ -17,11 +17,8 @@ const Container = styled.div`
   padding-top: 150px;
 
   @media ${device.desktop} {
- 
   }
 `;
-
-
 
 const Post = styled.div`
   width: 90%;
@@ -32,17 +29,18 @@ const Post = styled.div`
   padding: 50px 0px;
 
   @media ${device.desktop} {
-  
+    font-family: ${fonts.mindenmas};
+    width: 60%;
+    letter-spacing: 1px;
+    text-align: center;
   }
-
-
 `;
 
 export const PostTitle = styled.h1`
   font-family: ${fonts.mindenmas};
-  font-size: 30px;
+  font-size: 32px;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   padding-bottom: 30px;
   letter-spacing: 1px;
   color: ${colors.cimek};
@@ -58,7 +56,6 @@ export const StyledImg = styled.img`
   &:hover {
     -webkit-filter: brightness(0.8);
     filter: brightness(0.8);
-
   }
 
   @media ${device.desktop} {
@@ -72,12 +69,11 @@ const Readmore = styled(Button)`
   background: none;
   font-size: 15px;
   color: black;
+  font-style: italic;
 
   &:hover {
     background: none;
     color: black;
-
-  
   }
 `;
 
@@ -102,12 +98,17 @@ class Blog extends React.Component {
               <Post key={post.slug}>
                 <NavLink to={"/blog/posts/" + post.slug}>
                   <PostTitle>{post.title}</PostTitle>
-                  <StyledImg  alt = {post.leadimage.alt} src={post.leadimage.src} />
+                  <StyledImg
+                    alt={post.leadimage.alt}
+                    src={post.leadimage.src}
+                  />
                 </NavLink>
-                <p>{post.excerpt} </p>
-                <Readmore to={"/blog/posts/" + post.slug}>
-                  ...Read more
-                </Readmore>
+                <p>
+                  {post.excerpt}
+                  <Readmore to={"/blog/posts/" + post.slug}>
+                    ...Read more
+                  </Readmore>
+                </p>
               </Post>
             );
           })}
