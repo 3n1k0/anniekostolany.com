@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 import styled from "styled-components/macro";
-import posts from "./posts";
-import { device } from "./mediaquery";
-import { fonts, colors } from "./config";
+import posts from "./posts/allposts";
+import { device } from "../mediaquery";
+import { fonts, colors } from "../config";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Button } from "./Ui";
+import { Button } from "../Ui";
 
 const Container = styled.div`
   height: 100%;

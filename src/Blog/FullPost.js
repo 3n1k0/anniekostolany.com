@@ -1,13 +1,13 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 import styled from "styled-components/macro";
-import posts from "./posts";
+import posts from "./posts/allposts";
 import { PostTitle } from "./Blog";
 import { Helmet } from "react-helmet";
-import { HeaderImage } from "./Pages/Home";
-import { fonts } from "./config";
-import { device } from "./mediaquery";
-import { GoToTopButton } from './Ui'
+import { HeaderImage } from "../Pages/Home";
+import { fonts } from "../config";
+import { device } from "../mediaquery";
+import { GoToTopButton } from '../Ui'
 
 const ShareContainer = styled.div`
   width: 30%;
@@ -139,7 +139,7 @@ class FullPost extends React.Component {
                 return <StyledImg src={image} />;
               })}
           </Post>
-          
+
           <GoToTopButton
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
