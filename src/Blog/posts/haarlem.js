@@ -1,4 +1,5 @@
 import React from "react";
+import BlogImage from '../BlogImage'
 
 const haarlem = {
   slug: "haarlem-the-charming-city-of-light",
@@ -77,69 +78,50 @@ const haarlem = {
         Here are some of my favourite photos I took of tourists visiting
         Haarlem:{" "}
       </p>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/8b56d4a6-d1ff-4d76-9376-632a3451883a/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/8b56d4a6-d1ff-4d76-9376-632a3451883a/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/b0b97f94-15d2-4309-8402-bf822ebbf2b0/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/b0b97f94-15d2-4309-8402-bf822ebbf2b0/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/9b1709ba-a433-4cad-9b43-d5dbfb337e19/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/9b1709ba-a433-4cad-9b43-d5dbfb337e19/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/559a07d4-7a45-4ed9-8d75-937b1f186690/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/559a07d4-7a45-4ed9-8d75-937b1f186690/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/3ada5c76-854f-4d55-9d3d-8a7aa1446c31/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/3ada5c76-854f-4d55-9d3d-8a7aa1446c31/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/85d39385-e14e-4667-ad31-e2502cead0c2/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/85d39385-e14e-4667-ad31-e2502cead0c2/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/6473f55a-24d9-422e-b15a-cc4df5a87896/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/6473f55a-24d9-422e-b15a-cc4df5a87896/-/preview/800x1300/-/format/auto/" />
-      </picture>
-      <picture>
-        <source
-          srcset="https://ucarecdn.com/916d6ec3-f827-42c5-bb6c-300e02823035/-/preview/800x1300/-/format/webp/"
-          type="image/webp"
-        />
-        <img src="https://ucarecdn.com/916d6ec3-f827-42c5-bb6c-300e02823035/-/preview/800x1300/-/format/auto/" />
-      </picture>
+
+      <BlogImage
+        uuid="8b56d4a6-d1ff-4d76-9376-632a3451883a"
+        alt="Girl with bouquet"
+      />
+
+      <BlogImage
+        uuid="b0b97f94-15d2-4309-8402-bf822ebbf2b0"
+        alt="Couple hugging"
+      />
+
+      <BlogImage
+        uuid="9b1709ba-a433-4cad-9b43-d5dbfb337e19"
+        alt="Girl on street"
+      />
+      <BlogImage
+        uuid="7492b378-d3cf-434f-9c6a-3d4d79b76bbf"
+        alt="Girl by windmill sunshine"
+      />
+
+      <BlogImage
+        uuid="559a07d4-7a45-4ed9-8d75-937b1f186690"
+        alt="Girl by windmill"
+      />
+
+      <BlogImage
+        uuid="3ada5c76-854f-4d55-9d3d-8a7aa1446c31"
+        alt="Girl by window windmill reflection"
+      />
+
+      <BlogImage
+        uuid="85d39385-e14e-4667-ad31-e2502cead0c2"
+        alt="Man sitting at cafe"
+      />
+
+      <BlogImage
+        uuid="6473f55a-24d9-422e-b15a-cc4df5a87896"
+        alt="Man sitting on stairs"
+      />
+
+      <BlogImage
+        uuid="916d6ec3-f827-42c5-bb6c-300e02823035"
+        alt="Woman playing violin in city"
+      />
     </>
   ),
   leadimage: {

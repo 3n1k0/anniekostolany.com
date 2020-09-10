@@ -109,6 +109,8 @@ class FullPost extends React.Component {
 
     const post = posts[index];
 
+    console.log()
+
     return (
       <div>
         <Helmet>
@@ -119,7 +121,7 @@ class FullPost extends React.Component {
 
         <Container>
           <Header>
-            <HeaderImage src={post.leadimage} loading="lazy"></HeaderImage>
+            <HeaderImage src={post.leadimage.src} loading="lazy"></HeaderImage>
             <Title>{post.title}</Title>
 
             <Date>{post.date}</Date>
@@ -127,11 +129,6 @@ class FullPost extends React.Component {
 
           <Post>
             <TextContainer>{post.content()}</TextContainer>
-
-            {post.postimage &&
-              post.postimage.map((image) => {
-                return <StyledImg src={image} />;
-              })}
           </Post>
 
           <GoToTopButton
