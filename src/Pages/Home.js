@@ -171,7 +171,14 @@ class Home extends React.Component {
                 <h1>BE YOUR OWN KIND OF BEAUTIFUL</h1>
               </Motto>
             </MottoContainer>
-            <TextboxButton to={"/solo-travelers"}>See portfolio</TextboxButton>
+            <TextboxButton
+              to={"/solo-travelers"}
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              See portfolio
+            </TextboxButton>
           </Textcontainer>
         </Container>
         <TextBox>
@@ -217,11 +224,10 @@ class Home extends React.Component {
               </p>
             </CardTitle>
             <Button
-              rel="noreferrer noopener"
               to={"/couples"}
               aria-label="This is a portfolio collection for couple photos"
             >
-              More info
+              See photos
             </Button>
           </CardInnerContainer>
         </CardsContainer>
