@@ -293,15 +293,6 @@ class Investment extends React.Component {
               <img src="https://ucarecdn.com/7492b378-d3cf-434f-9c6a-3d4d79b76bbf/-/scale_crop/1000x1000/smart/-/format/auto/" />
             </picture>
           </ImageContainer>
-          <ButtonContainer>
-            <GoToTopButton
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              Go to top{" "}
-            </GoToTopButton>
-          </ButtonContainer>
         </Container>
         <Reviews />
       </div>

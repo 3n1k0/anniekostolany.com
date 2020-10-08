@@ -3,9 +3,15 @@ import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, GoToTopButton, Image, ImageContainer, Text } from '../Ui'
+import {
+  Button,
+  ButtonContainer,
+  GoToTopButton,
+  Image,
+  ImageContainer,
+  Text,
+} from "../Ui";
 import UploadcareImage from "../UploadcareImage";
-
 
 const Container = styled.div`
   margin: 0 auto;
@@ -54,11 +60,10 @@ class About extends React.Component {
         <Container>
           <h2>hey there!</h2>
           <ImageContainer style={{ paddingBottom: "40px", marginTop: "40px" }}>
-
-          <UploadcareImage
-            uuid="6b826330-9ead-430b-86a7-9b14bfcb9b85"
-            alt="Annie Kostolany professional photographer"
-          />
+            <UploadcareImage
+              uuid="6b826330-9ead-430b-86a7-9b14bfcb9b85"
+              alt="Annie Kostolany professional photographer"
+            />
           </ImageContainer>
 
           <Text>
@@ -121,23 +126,19 @@ class About extends React.Component {
               getting to know you too.
             </p>
           </Text>
-
-
         </Container>
-          
-        <ButtonContainer>
-            <Button to={"/contact"}> Contact Annie </Button>
-            <GoToTopButton
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              Go to top{" "}
-            </GoToTopButton>
-          </ButtonContainer>
 
+        <ButtonContainer data-aos="fade-down">
+          <Button to={"/contact"}> Contact Annie </Button>
+          <GoToTopButton
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            Go to top{" "}
+          </GoToTopButton>
+        </ButtonContainer>
       </div>
-      
     );
   }
 }

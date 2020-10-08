@@ -1,11 +1,12 @@
-import React, { lazy } from 'react';
+import React from "react";
 import { device } from "../mediaquery";
 import styled from "styled-components/macro";
 import { fonts, colors } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
 import Reviews from "../Reviews";
+import { UpArrow } from "../UpArrow";
+import GlobalStyle from "../globalStyles";
 import {
   Button,
   CardsContainer,
@@ -15,14 +16,16 @@ import {
 } from "../Ui";
 import UploadcareImage from "../UploadcareImage";
 
-
 const TextBox = styled.div`
-  margin: 50px auto;
+  justify-content: center;
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
   width: 100%;
   font-size: 1.5em;
+  background: white;
+  z-index: 5;
+  height: 150px;
 `;
 
 const TextTitle = styled.div`
@@ -135,6 +138,7 @@ class Home extends React.Component {
             content="Annie Kostolany professional photographer based in the Netherlands"
           />
         </Helmet>
+        <GlobalStyle />
         <Navbar
           style={{ background: "transparent" }}
           dropDowncolor="rgb(248,248,255, 0.3)"
@@ -142,7 +146,6 @@ class Home extends React.Component {
         />
 
         <Container>
-
           <picture>
             <source
               srcset="https://ucarecdn.com/60dfdd67-df68-4276-ba1b-b74ce42dc5bb/header.webp"
@@ -158,11 +161,11 @@ class Home extends React.Component {
           </picture>
 
           <Textcontainer>
-            <Subtitle>
+            <Subtitle data-aos="fade-down">
               <p>Photo sessions in the Netherlands & worldwide</p>
             </Subtitle>
             <MottoContainer>
-              <Motto>
+              <Motto data-aos="fade-up">
                 <h1>BE YOUR OWN KIND OF BEAUTIFUL</h1>
               </Motto>
             </MottoContainer>
@@ -197,8 +200,7 @@ class Home extends React.Component {
           alt="Windmill engagement couple"
         />
 
-        <CardsContainer>
- 
+        <CardsContainer data-aos="flip-left">
           <UploadcareImage
             uuid="28cda8e9-e274-444b-9a60-02cbb1424ae9"
             alt="Mom with child"
@@ -212,10 +214,16 @@ class Home extends React.Component {
                 documenting the most important milestones!
               </p>
             </CardTitle>
-            <Button to={"/couples"} aria-label="Couple photos portfolio">More info</Button>
+            <Button
+              rel="noreferrer noopener"
+              to={"/couples"}
+              aria-label="This is a portfolio collection for couple photos"
+            >
+              More info
+            </Button>
           </CardInnerContainer>
         </CardsContainer>
-        <CardsContainerReversed>
+        <CardsContainerReversed data-aos="flip-right">
           <UploadcareImage
             uuid="3d344f8f-377c-4fa5-a8b3-9e3d93a19939"
             alt="Girl with windmill and flowers"
@@ -235,11 +243,11 @@ class Home extends React.Component {
         </CardsContainerReversed>
         <CardsContainer style={{ borderTop: "1px solid grey" }}>
           <UploadcareImage
-            style={{ width: "500px" }}
+            style={{ maxWidth: "500px" }}
             uuid="9d113365-7771-4661-a775-84c46c8d38d6"
             alt="Tulip model fashion shoot"
           />
-          <CardInnerContainer>
+          <CardInnerContainer data-aos="zoom-out-up">
             <CardTitle>
               <h2>FASHION</h2>
               <p>Fashion might change but style is eternal.</p>
@@ -247,6 +255,7 @@ class Home extends React.Component {
             <Button to={"/fashion"}>Fashion work</Button>
           </CardInnerContainer>
         </CardsContainer>
+        <UpArrow />
         <Reviews />
       </div>
     );

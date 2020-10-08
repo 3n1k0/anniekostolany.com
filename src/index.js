@@ -37,7 +37,6 @@ ReactDOM.render(
         <Route path="/contact" exact component={Contact} />
         <Route component={Contact} />
       </Switch>
-
       <Footer />
     </BrowserRouter>
   </React.StrictMode>,

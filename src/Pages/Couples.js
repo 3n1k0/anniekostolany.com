@@ -17,7 +17,6 @@ import {
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
 
-
 const Container = styled.div`
   width: 75%;
   margin: 0 auto;
@@ -91,7 +90,7 @@ class Couples extends React.Component {
             />
           </Sharedbox>
 
-          <CardsContainer>
+          <CardsContainer data-aos="fade-right">
             <UploadcareImage
               style={{ width: "70%" }}
               uuid="89a9e174-5bc7-42df-956c-e32c54bc7e5e"
@@ -140,12 +139,7 @@ class Couples extends React.Component {
             alt="Couple walking"
           />
 
-          {/* <UploadcareImage
-            uuid="cb89ba729-e88b-4f78-ab7b-ef646a85dbae"
-            alt="Couple in canal boat"
-          /> */}
-          
-          <ButtonContainer>
+          <ButtonContainer data-aos="fade-down">
             <Button to={"/contact"}> Contact Annie </Button>
             <GoToTopButton
               onClick={() => {

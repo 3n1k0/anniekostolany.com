@@ -4,13 +4,7 @@ import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import {
-  Button,
-  ButtonContainer,
-  GoToTopButton,
-  Szepalcim,
-  Sharedbox
-} from "../Ui";
+import { Button, ButtonContainer, Szepalcim, Sharedbox } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
 
@@ -116,13 +110,6 @@ class Family extends React.Component {
 
           <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
-            <GoToTopButton
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              Go to top{" "}
-            </GoToTopButton>
           </ButtonContainer>
         </Container>
         <Reviews />

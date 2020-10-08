@@ -1,8 +1,9 @@
-import { Image, ImageContainer} from './Ui'
+import { Image, ImageContainer } from "./Ui";
 import React, { lazy } from "react";
 
-const UploadcareImage = ({uuid, alt}) => {
-    return (<ImageContainer>
+const UploadcareImage = ({ uuid, alt }) => {
+  return (
+    <ImageContainer>
       <picture>
         <source
           srcset={`https://ucarecdn.com/${uuid}/-/preview/-/format/webp/`}
@@ -15,8 +16,8 @@ const UploadcareImage = ({uuid, alt}) => {
           loading="lazy"
         ></Image>
       </picture>
-    </ImageContainer>)
+    </ImageContainer>
+  );
+};
 
-}
-
-export default UploadcareImage
+export default UploadcareImage;
