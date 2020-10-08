@@ -11,7 +11,7 @@ export const UpArrow = () => {
     position: sticky;
     text-align: right;
     margin-right: 50px;
-    z-index: -1;
+    z-index: 1;
   `;
 
   return (

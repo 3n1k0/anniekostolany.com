@@ -1,7 +1,6 @@
 import React, { lazy } from "react";
 import ReactDOM from "react-dom";
 import Footer from "./Footer";
-import * as serviceWorker from "./serviceWorker";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -42,5 +41,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-
-serviceWorker.unregister();

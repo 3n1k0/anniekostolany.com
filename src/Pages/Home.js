@@ -24,8 +24,9 @@ const TextBox = styled.div`
   width: 100%;
   font-size: 1.5em;
   background: white;
-  z-index: 5;
+  z-index: 50;
   height: 150px;
+  position: relative;
 `;
 
 const TextTitle = styled.div`
@@ -107,6 +108,7 @@ export const HeaderImage = styled.img`
 `;
 
 const TextboxButton = styled(Button)`
+  position: relative;
   background: transparent;
   border: 2px solid white;
   padding: 20px 10px;

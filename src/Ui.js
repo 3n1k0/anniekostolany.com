@@ -11,6 +11,7 @@ export const CardsContainer = styled.div`
   margin: 0px auto;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 
   @media ${device.desktop} {
     flex-flow: row nowrap;
