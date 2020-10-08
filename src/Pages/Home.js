@@ -25,7 +25,7 @@ const TextBox = styled.div`
   font-size: 1.5em;
   background: white;
   z-index: 50;
-  height: 150px;
+  height: 220px;
   position: relative;
 `;
 
