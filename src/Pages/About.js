@@ -1,26 +1,39 @@
-import React, { lazy } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import {
-  Button,
-  ButtonContainer,
-  GoToTopButton,
-  Image,
-  ImageContainer,
-  Text,
-} from "../Ui";
+import { Button, Text } from "../Ui";
 import UploadcareImage from "../UploadcareImage";
+import { UpArrow } from "../UpArrow";
+import GlobalStyle from "../globalStyles";
+import { device } from "../mediaquery";
 
 const Container = styled.div`
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   color: #585656;
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
   padding-bottom: 50px;
+  background: white;
+  padding-top: 140px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background: white;
+    z-index: 20;
+
+    @media ${device.desktop} {
+      width: 60%;
+    }
+  }
 
   h2 {
     font-family: ${fonts.kacskaringos};
@@ -57,30 +70,34 @@ class About extends React.Component {
             content="About Annie - Amsterdam-based professional photographer"
           />
         </Helmet>
+        <GlobalStyle />
         <Container>
-          <h2>hey there!</h2>
-          <ImageContainer style={{ paddingBottom: "40px", marginTop: "40px" }}>
-            <UploadcareImage
-              uuid="6b826330-9ead-430b-86a7-9b14bfcb9b85"
-              alt="Annie Kostolany professional photographer"
-            />
-          </ImageContainer>
-
           <Text>
-            <p>
-              My name is Annie. I&rsquo;m a Hungarian wanderlust, who settled in
-              Amsterdam by way of Budapest, Trier and Los Angeles.
-              <br />
-              Perhaps the most important thing I&rsquo;ve learned since becoming
-              a photographer is that without that magical connection, you have
-              nothing. If you don&rsquo;t build trust and rapport between the
-              human being behind the lens and the one in front of it, you have a
-              picture, but not a photograph.&nbsp;
-            </p>
-            <p>
-              With that in mind, I think it&rsquo;s important to tell you a
-              little about myself.
-            </p>
+            <h2 data-aos="fade-up">hey there!</h2>
+
+            <img
+              alt="Annie Kostolany professional photographer"
+              src={`https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/-/preview/-/format/auto/`}
+              loading="lazy"
+            ></img>
+
+            <span>
+              {" "}
+              <p>
+                My name is Annie. I&rsquo;m a Hungarian wanderlust, who settled
+                in Amsterdam by way of Budapest, Trier and Los Angeles.
+                <br />
+                Perhaps the most important thing I&rsquo;ve learned since
+                becoming a photographer is that without that magical connection,
+                you have nothing. If you don&rsquo;t build trust and rapport
+                between the human being behind the lens and the one in front of
+                it, you have a picture, but not a photograph.&nbsp;
+              </p>
+              <p>
+                With that in mind, I think it&rsquo;s important to tell you a
+                little about myself.
+              </p>
+            </span>
             <p>
               Before I first picked up a camera, I always struggled to find the
               right words to express myself. That might seem ironic for someone
@@ -126,18 +143,9 @@ class About extends React.Component {
               getting to know you too.
             </p>
           </Text>
+          <Button to={"/contact"}>Contact Annie </Button>
         </Container>
-
-        <ButtonContainer data-aos="fade-down">
-          <Button to={"/contact"}> Contact Annie </Button>
-          <GoToTopButton
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-          >
-            Go to top{" "}
-          </GoToTopButton>
-        </ButtonContainer>
+        <UpArrow />
       </div>
     );
   }

@@ -58,6 +58,16 @@ export const Text = styled.div`
   font-family: ${fonts.mindenmas};
   width: 90%;
   color: ${colors.footerfekete};
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  padding-bottom: 50px;
+
+  span {
+    z-index: 20;
+    background: white;
+  }
 
   @media ${device.desktop} {
     width: 60%;

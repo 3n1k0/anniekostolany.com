@@ -1,11 +1,11 @@
-import React, { lazy } from "react";
+import React from "react";
 import Navbar from "../Navbar";
 import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
 import { fonts } from "../config";
+import { device } from "../mediaquery";
 
 const Button = styled.button`
-  padding: 20px;
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
@@ -15,11 +15,12 @@ const Button = styled.button`
   border-width: 2px;
   border-style: solid;
   background-color: transparent;
-  width: 150px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 30px auto;
+  border: 1px solid black;
 
   &:hover {
-    background: rgba(10, 10, 10, 0.3);
+    background: rgba(90, 10, 10, 0.3);
   }
 `;
 
@@ -29,17 +30,21 @@ const Container = styled.div`
   color: #384047;
 
   form {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
-    padding: 10px 20px 30px 20px;
+    padding: 10px 20px 10px 20px;
     background: rgba(255, 182, 193, 0.3);
     border-radius: 8px;
     position: relative;
-    top: 200px;
+    top: 150px;
     border: none;
     display: flex;
     flex-flow: column;
     justify-content: center;
+
+    @media ${device.desktop} {
+      max-width: 500px;
+    }
   }
 
   fieldset {
@@ -62,7 +67,7 @@ const Container = styled.div`
     background-color: rgba(214, 212, 208, 0.2);
     color: #384047;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 
     & :focus {
       box-shadow: 8px 8px 35px rgba(192, 192, 192, 0.3);
