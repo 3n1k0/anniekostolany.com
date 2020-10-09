@@ -50,6 +50,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 2;
 `;
 
 export const Textcontainer = styled.div`
@@ -174,7 +175,6 @@ class Home extends React.Component {
             <TextboxButton
               to={"/solo-travelers"}
               data-aos="fade-down"
-              data-aos-easing="linear"
               data-aos-duration="1500"
             >
               See portfolio
