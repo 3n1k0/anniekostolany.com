@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 const Container = styled.div`
   width: 80%;
@@ -55,7 +56,7 @@ class Travelers extends React.Component {
             uuid="ede82bee-a352-45ab-9391-e774b5ae1ee8"
             alt="Girl in front of windmill"
           />
-          <Sharedbox>
+          <Sharedbox data-aos="flip-left">
             <UploadcareImage
               uuid="87c8c464-2cd1-4e51-8cfa-3ab19b9bfb7b"
               alt="Girl sitting in restaurant"
@@ -71,7 +72,7 @@ class Travelers extends React.Component {
             everything, and despite being a small country geographically, the
             Netherlands is packed with world famous icons. <br />
           </p>
-          <Sharedbox>
+          <Sharedbox data-aos="flip-right">
             <UploadcareImage
               uuid="916d6ec3-f827-42c5-bb6c-300e02823035"
               alt="Girl playing violin in city center"
@@ -89,10 +90,6 @@ class Travelers extends React.Component {
             uuid="d0284b64-881c-4cf8-b002-b32c7a8fd5c1"
             alt="Man standing at green streets"
           />{" "}
-          <UploadcareImage
-            uuid="d0284b64-881c-4cf8-b002-b32c7a8fd5c1"
-            alt="Man standing at green streets"
-          />
           <UploadcareImage
             uuid="6f1a8938-5bae-4ef3-8e90-fef39ffa3769"
             alt="Girl laughing at bridge"
@@ -143,6 +140,7 @@ class Travelers extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
+          <FixedUpArrow />
         </Container>
         <Reviews />
       </div>

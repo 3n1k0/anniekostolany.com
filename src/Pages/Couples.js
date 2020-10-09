@@ -16,6 +16,7 @@ import {
 } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 const Container = styled.div`
   width: 75%;
@@ -52,7 +53,6 @@ class Couples extends React.Component {
               taken.
             </Szepalcim>
           </Text>
-
           <UploadcareImage
             uuid="09f92cee-4187-47fc-ab69-a7942b9695c0"
             alt="Couple kissing in boat"
@@ -62,7 +62,6 @@ class Couples extends React.Component {
             uuid="cedb59a9-ff26-464e-a421-62a31cbe5a36"
             alt="Couple with windmills"
           />
-
           <UploadcareImage
             uuid="c327f660-2fbc-46af-b4b8-39b942876196"
             alt="Couple kissing"
@@ -149,7 +148,9 @@ class Couples extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
+          <FixedUpArrow />
         </Container>
+
         <Reviews />
       </div>
     );

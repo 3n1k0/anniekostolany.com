@@ -4,14 +4,10 @@ import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import {
-  Button,
-  ButtonContainer,
-  GoToTopButton,
-  Szepalcim,
-} from "../Ui";
+import { Button, ButtonContainer, GoToTopButton, Szepalcim } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -161,11 +157,10 @@ class Boudoir extends React.Component {
             />
           </Sharedbox>
 
-
           <UploadcareImage
-              uuid="b6126280-9536-4534-bd8f-28345a2facec"
-              alt="Girl through window"
-            />
+            uuid="b6126280-9536-4534-bd8f-28345a2facec"
+            alt="Girl through window"
+          />
 
           <Szepalcim>
             <b>
@@ -184,6 +179,7 @@ class Boudoir extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
+          <FixedUpArrow />
         </Container>
         <Reviews />
       </div>

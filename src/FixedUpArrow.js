@@ -1,16 +1,13 @@
 import styled from "styled-components/macro";
 import React from "react";
 
-export const UpArrow = () => {
+export const FixedUpArrow = () => {
   const UpArrowWrapper = styled.div`
-    bottom: 80px;
     font-size: 60px;
     cursor: pointer;
-    opacity: 0.7;
-    position: sticky;
-    text-align: right;
-    margin-right: 30px;
-    z-index: 1;
+    position: fixed;
+    text-align: center;
+    position: relative;
   `;
 
   return (

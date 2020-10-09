@@ -6,6 +6,7 @@ import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import { Button, ButtonContainer, GoToTopButton } from "../Ui";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 export const Video = styled.iframe`
   border: none;
@@ -124,7 +125,11 @@ class Rules extends React.Component {
             If one sounds good to you, or if you have any questions, please feel
             free to reach out to <i>mail@anniekostolany.com</i> or by filling
             out the
-            <NavLink style={{color: "darkred"}} to="/contact"> contact form</NavLink>.
+            <NavLink style={{ color: "darkred" }} to="/contact">
+              {" "}
+              contact form
+            </NavLink>
+            .
           </Text>
 
           <BookingSteps>
@@ -132,8 +137,11 @@ class Rules extends React.Component {
               <h2>Step 1</h2>
               <Text>
                 Go to
-                <NavLink style={{color: "darkred"}} to="/investment"> Investments</NavLink> and pick a
-                package you like.
+                <NavLink style={{ color: "darkred" }} to="/investment">
+                  {" "}
+                  Investments
+                </NavLink>{" "}
+                and pick a package you like.
               </Text>
             </Step>
             <Line />
@@ -177,7 +185,6 @@ class Rules extends React.Component {
             </Step>
           </BookingSteps>
 
-
           <VideoBox>
             <Video
               width="100%"
@@ -189,7 +196,7 @@ class Rules extends React.Component {
           </VideoBox>
 
           <ButtonContainer>
-            <Button to={"/contact"}> Contact Annie  </Button>
+            <Button to={"/contact"}> Contact Annie </Button>
             <GoToTopButton
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
@@ -198,9 +205,8 @@ class Rules extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-
+          <FixedUpArrow />
         </Container>
-
       </div>
     );
   }

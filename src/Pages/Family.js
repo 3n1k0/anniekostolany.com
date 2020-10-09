@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { Button, ButtonContainer, Szepalcim, Sharedbox } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 const Container = styled.div`
   width: 80%;
@@ -111,6 +112,7 @@ class Family extends React.Component {
           <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
           </ButtonContainer>
+          <FixedUpArrow />
         </Container>
         <Reviews />
       </div>

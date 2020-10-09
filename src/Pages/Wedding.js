@@ -4,16 +4,12 @@ import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import {
-  Button,
-  ButtonContainer,
-  GoToTopButton,
-  Sharedbox
-} from "../Ui";
+import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 const Container = styled.div`
   width: 80%;
@@ -183,6 +179,7 @@ class Wedding extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
+          <FixedUpArrow />
         </Container>
         <Reviews />
       </div>
