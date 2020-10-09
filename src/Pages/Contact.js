@@ -4,6 +4,7 @@ import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
 import { fonts } from "../config";
 import { device } from "../mediaquery";
+import GlobalStyle from "../globalStyles";
 
 const Button = styled.button`
   font-size: 14px;
@@ -25,9 +26,11 @@ const Button = styled.button`
 `;
 
 const Container = styled.div`
-  min-height: 1200px;
+  min-height: 120vh;
   width: 100%;
   color: #384047;
+  z-index: 40;
+  background: white;
 
   form {
     max-width: 400px;
@@ -110,9 +113,11 @@ class Contact extends React.Component {
             content="Amsterdam-based professional photography - Contact Annie "
           />
         </Helmet>
+        <GlobalStyle />
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         setTimeout(function () {window.scrollTo(500, 0)},2);
         <Container>
+          <p>Hello</p>
           <form action="https://formspree.io/mknqqvoz" method="POST">
             <h1>Contact</h1>
             <fieldset>

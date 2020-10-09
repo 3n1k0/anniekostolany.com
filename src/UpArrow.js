@@ -7,7 +7,6 @@ export const UpArrow = () => {
     font-size: 60px;
     cursor: pointer;
     opacity: 0.7;
-    position: -webkit-sticky; /* Safari */
     position: sticky;
     text-align: right;
     margin-right: 50px;

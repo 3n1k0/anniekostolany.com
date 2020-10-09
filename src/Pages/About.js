@@ -4,7 +4,6 @@ import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import { Button, Text } from "../Ui";
-import UploadcareImage from "../UploadcareImage";
 import { UpArrow } from "../UpArrow";
 import GlobalStyle from "../globalStyles";
 import { device } from "../mediaquery";
@@ -20,6 +19,8 @@ const Container = styled.div`
   padding-bottom: 50px;
   background: white;
   padding-top: 140px;
+  top: 100px;
+  height: 100%;
 
   img {
     width: 100%;
@@ -28,10 +29,9 @@ const Container = styled.div`
     margin: 0 auto;
     padding-bottom: 40px;
     background: white;
-    z-index: 20;
 
     @media ${device.desktop} {
-      width: 60%;
+      padding: 100px;
     }
   }
 
@@ -40,8 +40,6 @@ const Container = styled.div`
     font-size: 60px;
     letter-spacing: 0px;
     text-transform: none;
-    line-height: 1.2em;
-    padding-bottom: 30px;
     font-style: italic;
     text-align: center;
   }
@@ -74,30 +72,25 @@ class About extends React.Component {
         <Container>
           <Text>
             <h2 data-aos="fade-up">hey there!</h2>
-
             <img
               alt="Annie Kostolany professional photographer"
               src={`https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/-/preview/-/format/auto/`}
               loading="lazy"
-            ></img>
-
-            <span>
-              {" "}
-              <p>
-                My name is Annie. I&rsquo;m a Hungarian wanderlust, who settled
-                in Amsterdam by way of Budapest, Trier and Los Angeles.
-                <br />
-                Perhaps the most important thing I&rsquo;ve learned since
-                becoming a photographer is that without that magical connection,
-                you have nothing. If you don&rsquo;t build trust and rapport
-                between the human being behind the lens and the one in front of
-                it, you have a picture, but not a photograph.&nbsp;
-              </p>
-              <p>
-                With that in mind, I think it&rsquo;s important to tell you a
-                little about myself.
-              </p>
-            </span>
+            ></img>{" "}
+            <p>
+              My name is Annie. I&rsquo;m a Hungarian wanderlust, who settled in
+              Amsterdam by way of Budapest, Trier and Los Angeles.
+              <br />
+              Perhaps the most important thing I&rsquo;ve learned since becoming
+              a photographer is that without that magical connection, you have
+              nothing. If you don&rsquo;t build trust and rapport between the
+              human being behind the lens and the one in front of it, you have a
+              picture, but not a photograph.&nbsp;
+            </p>
+            <p>
+              With that in mind, I think it&rsquo;s important to tell you a
+              little about myself.
+            </p>
             <p>
               Before I first picked up a camera, I always struggled to find the
               right words to express myself. That might seem ironic for someone
@@ -145,7 +138,6 @@ class About extends React.Component {
           </Text>
           <Button to={"/contact"}>Contact Annie </Button>
         </Container>
-        <UpArrow />
       </div>
     );
   }
