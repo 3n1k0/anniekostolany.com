@@ -143,11 +143,11 @@ const Container = styled.div`
 
   form {
     width: 100%;
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 450px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 10px 20px 10px 20px;
-    background: rgba(255, 182, 193, 0.3);
+    background: rgba(76, 0, 19, 0.09);
     border-radius: 8px;
     position: relative;
     border: none;
@@ -206,6 +206,7 @@ const Container = styled.div`
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: black;
   }
 `;
 
@@ -242,15 +243,15 @@ class Contact extends React.Component {
             <h1>Contact</h1>
             <fieldset>
               <label for="name">Name </label>
-              <input type="text" name="name" required />
+              <input type="text" name="name" id="name" required />
 
               <br />
               <label for="email">Email</label>
-              <input type="email" name="_replyto" required />
+              <input type="email" name="email" id="email" required />
 
               <br />
               <label for="subject">Subject</label>
-              <input type="text" name="subject" />
+              <input type="text" name="subject" id="subject" />
 
               <br />
               <label for="message">Message</label>
@@ -279,7 +280,7 @@ class Contact extends React.Component {
               </Box3>
             </a>
           </Recommendation>
-          <FixedUpArrow/>
+          <FixedUpArrow />
         </Container>
       </div>
     );
