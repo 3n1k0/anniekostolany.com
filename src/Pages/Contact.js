@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { fonts } from "../config";
 import { device } from "../mediaquery";
 import GlobalStyle from "../globalStyles";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 const Recommendation = styled.div`
   width: 100%;
@@ -128,6 +129,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+  padding-bottom: 20px; 
 
   h2 {
     text-align: center;
@@ -277,6 +279,7 @@ class Contact extends React.Component {
               </Box3>
             </a>
           </Recommendation>
+          <FixedUpArrow/>
         </Container>
       </div>
     );
