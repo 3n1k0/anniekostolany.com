@@ -255,7 +255,7 @@ class Contact extends React.Component {
 
               <br />
               <label for="message">Message</label>
-              <textarea name="message" required></textarea>
+              <textarea id="message" name="message" required></textarea>
             </fieldset>
             <Button type="submit">Send</Button>
           </form>
