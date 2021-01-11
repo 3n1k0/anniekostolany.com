@@ -4,7 +4,6 @@ import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import { Button, Text } from "../Ui";
-import { UpArrow } from "../UpArrow";
 import GlobalStyle from "../globalStyles";
 import { device } from "../mediaquery";
 

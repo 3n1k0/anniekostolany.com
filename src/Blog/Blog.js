@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React from "react";
 import Navbar from "../Navbar";
 import styled from "styled-components/macro";
 import posts from "./posts/allposts";
@@ -13,7 +13,6 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-
   padding-top: 150px;
 
   @media ${device.desktop} {

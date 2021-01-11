@@ -1,25 +1,12 @@
-import React, { lazy } from "react";
+import React from "react";
 import Navbar from "../Navbar";
 import styled from "styled-components/macro";
 import posts from "./posts/allposts";
-import { PostTitle } from "./Blog";
 import { Helmet } from "react-helmet";
 import { HeaderImage } from "../Pages/Home";
 import { fonts } from "../config";
 import { device } from "../mediaquery";
 import { GoToTopButton } from "../Ui";
-
-const ShareContainer = styled.div`
-  width: 30%;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
-  margin: 50px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-`;
 
 const Container = styled.div`
   width: 100%;
@@ -93,9 +80,6 @@ const TextContainer = styled.div`
   }
 `;
 
-const StyledImg = styled.img`
-  padding: 50px;
-`;
 
 class FullPost extends React.Component {
   render() {

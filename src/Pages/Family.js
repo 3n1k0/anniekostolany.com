@@ -1,5 +1,4 @@
-import React, { lazy } from "react";
-import { device } from "../mediaquery";
+import React from "react";
 import styled from "styled-components/macro";
 import { fonts } from "../config";
 import Navbar from "../Navbar";

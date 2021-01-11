@@ -1,5 +1,5 @@
-import React, { lazy } from "react";
 import ReactDOM from "react-dom";
+import React from "react";
 import Footer from "./Footer";
 import Home from "./Pages/Home";
 import About from "./Pages/About";

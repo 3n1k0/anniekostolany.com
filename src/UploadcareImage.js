@@ -1,5 +1,5 @@
 import { Image, ImageContainer } from "./Ui";
-import React, { lazy } from "react";
+import React from "react";
 
 const UploadcareImage = ({ uuid, alt }) => {
   return (

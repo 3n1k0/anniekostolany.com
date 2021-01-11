@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React from "react";
 import { device } from "./mediaquery";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
 import { fonts, colors } from "./config";
@@ -315,8 +315,7 @@ class Navbar extends React.Component {
   }
 
   render() {
-    const options = ["/", "Gallery", "Contact"];
-    const defaultOption = options[0];
+  
 
     return (
       <div className="Navbar">

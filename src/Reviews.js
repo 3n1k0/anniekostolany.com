@@ -1,6 +1,6 @@
 import reviews from "./reviews.json";
 import styled from "styled-components/macro";
-import React, { lazy } from "react";
+import React from "react";
 import { device } from "./mediaquery";
 import { fonts, colors } from "./config";
 import { CardTitle } from "./Ui";
@@ -35,7 +35,6 @@ export const Quote = styled(CardTitle)`
 
 const Reviews = function () {
   const randomNumber = Math.round(Math.random() * (reviews.length - 1));
-  console.log(randomNumber);
   return (
     <Quote>
       {reviews[randomNumber]} <br />
