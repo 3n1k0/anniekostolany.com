@@ -28,15 +28,6 @@ const Excerpt = styled.textarea`
   background-repeat: no-repeat;
 `;
 
-const EmptyArea = styled.textarea`
-  width: 300px;
-  height: 40px;
-  border: 3px solid #cccccc;
-  padding: 5px;
-  background-repeat: no-repeat;
-`;
-
-
 const Content = styled.textarea`
   width: 600px;
   height: 600px;
@@ -45,37 +36,81 @@ const Content = styled.textarea`
   background-repeat: no-repeat;
 `;
 
-
 const Date = styled.input`
   width: 200px;
 `;
 
+const Title = styled.input`
+  width: 200px;
+`;
 
 export default class AddPost extends Component {
+  constructor(props) {
+    super(props);
+    this.dateRef = React.createRef();
+    this.titleRef = React.createRef();
+    this.excerptRef = React.createRef();
+    this.contentRef = React.createRef();
+    this.tagsRef = React.createRef();
+    this.leadimageRef = React.createRef();
+    this.passwordRef = React.createRef();
+  }
+
+  submit = () => {
+    const post = {
+      leadimage: this.leadimageRef.current.value,
+      tags: this.tagsRef.current.value,
+      content: this.contentRef.current.value,
+      excerpt: this.excerptRef.current.value,
+      title: this.titleRef.current.value,
+      date: this.dateRef.current.value,
+    };
+
+    fetch(`http://localhost:3001/add-post/${this.passwordRef.current.value}`, {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      body: JSON.stringify(post)
+    });
+  }
+
   render() {
+
     return (
       <>
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         <MainContainer>
           <h1>Create a new post</h1>
+          <label for="title">Title:</label>
+          <Title ref={this.titleRef} name="title" />
           <label for="created">Date:</label>
           <Date
             type="date"
             id="created"
             name="created"
             value="2021-01-01"
+            ref={this.dateRef}
           ></Date>
 
           <h2>Excerpt:</h2>
-          <Excerpt />
+          <Excerpt ref={this.excerptRef} />
           <h2>Lead image URL:</h2>
-          <EmptyArea />
+          <input
+            type="url"
+            ref={this.leadimageRef}
+            placeholder="https://example.com"
+            pattern="https://.*"
+            size="30"
+            required
+          />
           <h2>Content:</h2>
-          <Content />
+          <Content ref={this.contentRef} />
           <h2>Tags</h2>
-          <EmptyArea />
-
-          <button type="submit" value="Submit">
+          <input ref={this.tagsRef} />
+          <input ref={this.passwordRef} />
+          <button type="button" value="Submit" onClick={this.submit}>
             Submit
           </button>
         </MainContainer>
