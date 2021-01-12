@@ -425,9 +425,6 @@ class Navbar extends React.Component {
                 <StyledNavLink to="/investment">Investment</StyledNavLink>
               </Menuitem>
               <Menuitem>
-                <StyledNavLink to="/blog">Blog </StyledNavLink>
-              </Menuitem>
-              <Menuitem>
                 <StyledNavLink to="/contact-form">
                   <ContactButton>Contact</ContactButton>
                 </StyledNavLink>
