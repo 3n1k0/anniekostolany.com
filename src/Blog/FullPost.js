@@ -1,12 +1,10 @@
 import React from "react";
 import Navbar from "../Navbar";
 import styled from "styled-components/macro";
-import posts from "./posts/allposts";
 import { Helmet } from "react-helmet";
-import { HeaderImage } from "../Pages/Home";
 import { fonts } from "../config";
 import { device } from "../mediaquery";
-import { GoToTopButton } from "../Ui";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 const Container = styled.div`
   width: 100%;
@@ -15,6 +13,17 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 100px;
+
+  h1 {
+    color: #d26295;
+    font-family: "'Raleway', sans-serif";
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const Post = styled.div`
@@ -48,80 +57,57 @@ const Title = styled.div`
   }
 `;
 
-const Header = styled.div`
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-`;
 
-const Date = styled.div`
-  font-size: 1.5em;
-  top: 270px;
-  font-family: ${fonts.kacskaringos};
-  text-transform: none;
-  position: absolute;
-  color: white;
-`;
-
-const TextContainer = styled.div`
-  width: 100%;
+const Gallery = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
   height: 100%;
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  align-content: center;
-  justify-items: center;
+  width: 80%;
+  padding-bottom: 50px;
 
   img {
-    padding-top: 30px;
-    width: 100%;
+    height: 600px;
+    width: 600px;
   }
 `;
 
+const Date = styled.div`
+color: lightgrey;
+`
 
 class FullPost extends React.Component {
+  state = {
+    post: { images: [] },
+  };
+
+  async componentWillMount() {
+    const slug = this.props.match.params.slug;
+    const response = await fetch("http://localhost:3001/get-post/" + slug);
+    const posts = await response.json();
+    this.setState({ post: posts[0] });
+  }
+
   render() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-
-    const slug = this.props.match.params.slug;
-
-    const index = posts.findIndex((post) => {
-      return post.slug === slug;
-    });
-
-    const post = posts[index];
-
-    console.log()
-
+    const { post } = this.state;
     return (
       <div>
-        <Helmet>
-          <title>{post.title}</title>
-          <meta name="description" content={post.excerpt} />
-        </Helmet>
         <Navbar style={{ background: "rgb(9, 6, 10)", marginBottom: "20px" }} />
 
         <Container>
-          <Header>
-            <HeaderImage src={post.leadimage.src} loading="lazy"></HeaderImage>
-            <Title>{post.title}</Title>
-
+          <Post key={post._id}>
+            <h1>{post.title}</h1>
             <Date>{post.date}</Date>
-          </Header>
-
-          <Post>
-            <TextContainer>{post.content()}</TextContainer>
+            <p>{post.excerpt} </p>
+            <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
           </Post>
-
-          <GoToTopButton
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-          >
-            Go to top{" "}
-          </GoToTopButton>
+          <Gallery>
+            {post.images.map((image) => {
+              return <img src={image} />;
+            })}
+          </Gallery>
+          <FixedUpArrow/>
         </Container>
       </div>
     );

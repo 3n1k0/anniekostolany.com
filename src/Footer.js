@@ -13,6 +13,7 @@ const Container = styled.div`
   text-align: center;
   letter-spacing: 1px;
   position: relative;
+  bottom: 0;
 `;
 
 export const Icontainer = styled.div`

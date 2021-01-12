@@ -15,6 +15,7 @@ import Rules from "./Pages/Rules";
 import Family from "./Pages/Family";
 import SoloTravelers from "./Pages/SoloTravelers";
 import Couples from "./Pages/Couples";
+import NewPost from "./Blog/NewPost";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,6 +28,7 @@ ReactDOM.render(
         <Route path="/blog" exact component={Blog} />
         <Route path="/contact-form" exact component={Contact} />
         <Route path="/blog/posts/:slug" exact component={FullPost} />
+        <Route path="/blog/new-post" exact component={NewPost} />
         <Route path="/family" exact component={Family} />
         <Route path="/solo-travelers" exact component={SoloTravelers} />
         <Route path="/couples" exact component={Couples} />
