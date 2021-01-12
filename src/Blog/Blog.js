@@ -93,7 +93,7 @@ class Blog extends React.Component {
 
   async componentWillMount() {
     const response = await fetch(
-      "https://anniekostolany-blog.herokuapp.com/get-posts"
+      "https://anniekostolany-blog.herokuapp.com/get-posts/"
     );
     const posts = await response.json();
     this.setState({ posts });
