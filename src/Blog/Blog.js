@@ -36,8 +36,6 @@ const Post = styled.div`
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
     text-decoration: none;
-
-
   }
 
   img {
@@ -49,7 +47,7 @@ const Post = styled.div`
     object-position: 50% 20%;
   }
 
-  p{
+  p {
     min-height: 100px;
   }
 `;
@@ -62,8 +60,8 @@ export const PostTitle = styled.h1`
   color: #d26295;
   max-width: 600px;
 
-  & a:visited{
-    color: #D26295;
+  & a:visited {
+    color: #d26295;
     font-family: "'Raleway', sans-serif";
   }
 `;
@@ -94,7 +92,9 @@ class Blog extends React.Component {
   };
 
   async componentWillMount() {
-    const response = await fetch("http://localhost:3001/get-posts/");
+    const response = await fetch(
+      "https://anniekostolany-blog.herokuapp.com/get-posts"
+    );
     const posts = await response.json();
     this.setState({ posts });
   }

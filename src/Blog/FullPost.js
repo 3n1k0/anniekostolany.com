@@ -83,7 +83,9 @@ class FullPost extends React.Component {
 
   async componentWillMount() {
     const slug = this.props.match.params.slug;
-    const response = await fetch("http://localhost:3001/get-post/" + slug);
+    const response = await fetch(
+      "https://anniekostolany-blog.herokuapp.com/get-posts" + slug
+    );
     const posts = await response.json();
     this.setState({ post: posts[0] });
   }
