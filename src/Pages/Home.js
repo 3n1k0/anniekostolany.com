@@ -210,15 +210,6 @@ const IntroImage = styled.img`
   }
 `;
 
-const HandWrittenReview = styled.div`
-  font-family: "Playfair Display";
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.5;
-  font-size: 28px;
-  color: #3b2713;
-`;
-
 const ReviewContainer = styled.div`
   height: 700px;
   background: lightblue;
