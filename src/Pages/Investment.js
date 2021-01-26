@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { Button, ButtonContainer} from "../Ui";
 import Reviews from "../Reviews";
 import UploadcareImage from "../UploadcareImage";
+import ScrollToTop from  '../ScrollToTop'
 
 const ImageContainer = styled.div`
   width: 80%;
@@ -157,6 +158,7 @@ class Investment extends React.Component {
   render() {
     return (
       <div className="Investment">
+ 
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         <Helmet>
           <title>Book a professional photographer</title>

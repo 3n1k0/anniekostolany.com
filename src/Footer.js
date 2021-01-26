@@ -1,10 +1,23 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { fonts, colors } from "./config";
+import { NavLink } from "react-router-dom";
+
+const FooterMenu = styled.div`
+  display: grid;
+  border-bottom: 1px solid white;
+  margin: 30px;
+
+  a {
+    color: ${colors.tortfeher};
+    padding: 10px;
+  }
+`;
 
 const Container = styled.div`
-  height: 350px;
-  background-color: #1f1f1f;
+
+  height: 400px;
+  background-color: rgba(31, 31, 31, 0.9);
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -48,6 +61,12 @@ class Footer extends React.Component {
   render() {
     return (
       <Container role="contentinfo">
+        <FooterMenu>
+          <NavLink to={"./couples"}>couples</NavLink>
+          <NavLink to={"./investment"}>investment</NavLink>
+          <NavLink to={"./contact"}>contact</NavLink>
+        </FooterMenu>
+
         <Icontainer>
           <Icon>
             <a

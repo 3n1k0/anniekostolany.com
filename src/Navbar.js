@@ -63,8 +63,8 @@ export const Stripe = styled.div`
 `;
 
 export const Navigation = styled.nav`
-  font-family: ${fonts.mindenmas};
-  text-transform: uppercase;
+  font-family: ${fonts.main};
+  text-transform: lowercase;
   letter-spacing: 2px;
   font-size: 15px;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
@@ -91,32 +91,32 @@ export const ContactButton = styled.button`
   background: transparent;
   color: white;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   line-height: 1em;
-  padding: 0;
+  padding: 20px;
   display: inline-block;
   z-index: 100;
   cursor: pointer;
-  font-family: ${fonts.mindenmas};
+  font-family: ${fonts.main};
   font-weight: 800;
   font-size: 18px;
 
   @media ${device.desktop} {
     border: 2px solid white;
     border-radius: 20px;
-    background: transparent;
-    color: white;
+    background: whitesmoke;
+    color: black;
     height: 42px;
     width: 117px;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     line-height: 1em;
-    padding: 0;
+    padding: 10px;
     display: inline-block;
     z-index: 100;
     cursor: pointer;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 22px;
   }
 
   &:hover {
@@ -134,7 +134,7 @@ export const Menuitems = styled.div`
   top: 0px;
   right: 0px;
   height: 200%;
-  font-size: 18px;
+  font-size: 25px;
   width: 280px;
   padding: 100px 40px;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
@@ -156,9 +156,8 @@ export const Menuitems = styled.div`
     background: none;
     flex-flow: row nowrap;
     height: 100%;
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 2px;
-    font-size: 15px;
     top: 30px;
   }
 `;
@@ -166,7 +165,7 @@ export const Menuitems = styled.div`
 export const Menuitem = styled.div`
   display: flex;
   padding: 8px 30px;
-  font-family: ${fonts.mindenmas};
+  font-family: ${fonts.main};
   font-weight: 800;
   cursor: pointer;
   letter-spacing: 2px;
@@ -175,9 +174,9 @@ export const Menuitem = styled.div`
   @media ${device.desktop} {
     display: flex;
     font-style: normal;
-    font-size: 14px;
+    font-size: 22px;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-decoration: none;
     line-height: 1em;
     padding: 10px;
@@ -188,7 +187,7 @@ export const PortfolioMenuitem = styled.div`
   flex-flow: column;
   display: flex;
   padding: 8px 0px;
-  font-family: ${fonts.mindenmas};
+  font-family: ${fonts.main};
   font-weight: 800;
   cursor: pointer;
   letter-spacing: 2px;
@@ -198,17 +197,16 @@ export const PortfolioMenuitem = styled.div`
 const Title = styled.h1`
   color: #ffffff;
   padding: 30px 40px;
-  font-family: ${fonts.mindenmas};
-  font-size: 1.5em;
+  font-family: ${fonts.main};
   font-size: 12px;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   line-height: 1em;
   width: 300px;
   font-weight: 400;
 
   @media ${device.desktop} {
-    font-size: 18px;
+    font-size: 22px;
   }
 `;
 
@@ -271,7 +269,7 @@ const DropDown = styled.div`
     background-color: ${({ backgroundColor }) => backgroundColor};
 
     width: 200px;
-    height: 270px;
+    height: 340px;
     position: absolute;
     z-index: 5;
     top: 40px;

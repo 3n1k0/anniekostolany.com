@@ -13,7 +13,6 @@ export const Quote = styled(CardTitle)`
   max-width: 100%;
   margin: 0 auto;
   padding: 30px;
-  background: #ccafaf;
   line-height: 2em;
 
   p {
@@ -23,7 +22,7 @@ export const Quote = styled(CardTitle)`
 
   @media ${device.desktop} {
     padding: 50px 400px;
-    font-size: 18px;
+    font-size: 22px;
     height: 20%;
 
     p {
@@ -33,12 +32,15 @@ export const Quote = styled(CardTitle)`
   }
 `;
 
+const Stars = styled.p`
+font-size: 30px;
+`
+
 const Reviews = function () {
   const randomNumber = Math.round(Math.random() * (reviews.length - 1));
   return (
     <Quote>
       {reviews[randomNumber]} <br />
-      ⭐⭐⭐⭐⭐
     </Quote>
   );
 };
