@@ -1,8 +1,10 @@
 export const fonts = {
   subtitle: "'Assistant', sans-serif", //200, 300
   handwritten: "'adobe-handwriting-ernie', sans-serif",
-  main: "'Libre Caslon Display', serif",
+  main: "'Montserrat', sans-serif",
 };
+
+
 
 export const colors = {
   cimek: "#1f1f1f",

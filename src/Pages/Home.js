@@ -1,15 +1,14 @@
 import React from "react";
 import { device } from "../mediaquery";
 import styled from "styled-components/macro";
-import { fonts, colors } from "../config";
+import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import Reviews from "../Reviews";
-import { UpArrow } from "../UpArrow";
 import GlobalStyle from "../globalStyles";
 import { Button, CardsContainer, CardInnerContainer, CardTitle } from "../Ui";
 import UploadcareImage from "../UploadcareImage";
 import { NavLink } from "react-router-dom";
+
 
 const HomeContainer = styled.div`
   display: flex;
@@ -40,6 +39,7 @@ const Wrapper = styled.div`
     margin: 10px;
     cursor: pointer;
     font-size: 19px;
+    text-transform: uppercase;
 
     &:hover {
       color: #4f2b80;
@@ -76,6 +76,8 @@ const Wrapper = styled.div`
 
     div {
       padding: 25px;
+      min-width: 400px;
+      max-width: 400px;
     }
 
     h2 {
@@ -163,51 +165,85 @@ const CardsContainerReversed = styled(CardsContainer)`
 
 const IntroContainer = styled.div`
   width: 100%;
-  background: rgba(240, 237, 237, 1);
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  margin-bottom: 50px;
-  
-
-  img {
-    object-fit: cover;
-  }
+  margin: 50px;
 
   div {
-    padding: 30px;
-    max-width: 800px;
+    padding: 50px;
+    width: 80%;
+  }
 
-    p {
-      padding: 30px 0px;
-      font-size: 22px;
-
-    }
+  p {
+    padding: 30px 0px;
+    font-size: 22px;
   }
 
   @media ${device.desktop} {
     display: flex;
     flex-direction: row;
-    padding: 150px;
+    padding: 30px;
+    width: 60%;
   }
-`;
-const WelcomeTitle = styled.h2`
-  font-family: ${fonts.handwritten};
-  font-size: 40px;
+
+  @media ${device.tablet} {
+    flex-direction: column-reverse;
+  }
 `;
 
 const IntroImage = styled.img`
-  width: 450px;
-  height: 550px;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  margin: 50px;
+
+  @media ${device.desktop} {
+    width: 400px;
+    height: 500px;
+  }
+  @media ${device.tablet} {
+    width: 70%;
+    height: auto;
+  }
 `;
 
 const HandWrittenReview = styled.div`
-  font-family: ${fonts.handwritten};
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: italic;
   line-height: 1.5;
   font-size: 28px;
+  color: #3b2713;
+`;
+
+const ReviewContainer = styled.div`
+  height: 700px;
+  background: lightblue;
+  width: 100%;
+  background-image: url("https://static.llllllllllll.com/eniko/anniekostolany/Yalda%20en%20Wesley-52.jpg");
+  background-size: cover;
+  background-position: 20% 20%;
+  filter:  brightness(85%);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: 40px;
+    padding: 50px;
+  }
+
+  a {
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+  }
+
 `;
 
 class Home extends React.Component {
@@ -266,7 +302,7 @@ class Home extends React.Component {
           <IntroContainer data-aos="zoom-out-up">
             <IntroImage src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/107062536_3550008198363484_5757564740516023325_o.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=dYGl719yb-cAX9n-scX&_nc_ht=scontent-ams4-1.xx&oh=45a07409c031897b7fec363b52d14d5a&oe=6027FE6B"></IntroImage>
             <div>
-              <WelcomeTitle>Welcome!</WelcomeTitle>
+              <h2>Welcome!</h2>
               <p>
                 Thanks for being here! I’m Annie, an Amsterdam-based
                 photographer with over 5 years of experience.
@@ -342,21 +378,22 @@ class Home extends React.Component {
             </CardInnerContainer>
           </CardsContainer>
           <IntroContainer data-aos="zoom-out-up">
-  
-              <HandWrittenReview>
-                Annie was such a great person to work with! My husband and I
-                contacted her for our wedding ceremony for 2 different days and
-                she was very professional, helped us so much in making great
-                photos. She even cheered us up during our sessions in cold
-                winter in Haarlem and Amsterdam, and we had fun! We love the
-                results as well, they’re beautiful! Thanks Annie for making our
-                special days even more memorable! - Tania
-              </HandWrittenReview>
-
-              <IntroImage src="https://static.llllllllllll.com/eniko/anniekostolany/Tania+Victor%20wedding-106.jpg"></IntroImage>
-
+            <HandWrittenReview>
+              Annie was such a great person to work with! My husband and I
+              contacted her for our wedding ceremony for 2 different days and
+              she was very professional, helped us so much in making great
+              photos. She even cheered us up during our sessions in cold winter
+              in Haarlem and Amsterdam, and we had fun! We love the results as
+              well, they’re beautiful! Thanks Annie for making our special days
+              even more memorable! - Tania
+            </HandWrittenReview>
+            <IntroImage src="https://static.llllllllllll.com/eniko/anniekostolany/Tania+Victor%20wedding-106.jpg"></IntroImage>
           </IntroContainer>
-          <Reviews />
+
+          <ReviewContainer>
+            <h2>See what others say about the experience</h2>
+            <NavLink to={"/reviews"}>Read the reviews</NavLink>
+          </ReviewContainer>
         </HomeContainer>
       </>
     );

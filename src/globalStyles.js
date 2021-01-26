@@ -24,6 +24,14 @@ html {
     
   }
 
+  h2{
+      text-transform: none;
+  font-size: 29px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: italic;
+  }
+
 `;
 
 export default GlobalStyle;

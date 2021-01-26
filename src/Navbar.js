@@ -116,7 +116,7 @@ export const ContactButton = styled.button`
     z-index: 100;
     cursor: pointer;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   &:hover {

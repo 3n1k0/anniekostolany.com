@@ -24,6 +24,8 @@ export const Quote = styled(CardTitle)`
     padding: 50px 400px;
     font-size: 22px;
     height: 20%;
+    background: lightblue;
+    opacity: 0.8;
 
     p {
       width: 60%;
@@ -32,9 +34,6 @@ export const Quote = styled(CardTitle)`
   }
 `;
 
-const Stars = styled.p`
-font-size: 30px;
-`
 
 const Reviews = function () {
   const randomNumber = Math.round(Math.random() * (reviews.length - 1));
@@ -43,6 +42,9 @@ const Reviews = function () {
       {reviews[randomNumber]} <br />
     </Quote>
   );
+
+      <h1>See what others say</h1>;
+
 };
 
 export default Reviews;
