@@ -182,6 +182,10 @@ const IntroContainer = styled.div`
     font-size: 22px;
   }
 
+  @media ${device.tablet} {
+    flex-direction: column-reverse;
+  }
+
   @media ${device.desktop} {
     display: flex;
     flex-direction: row;
@@ -189,9 +193,7 @@ const IntroContainer = styled.div`
     width: 60%;
   }
 
-  @media ${device.tablet} {
-    flex-direction: column-reverse;
-  }
+
 `;
 
 const IntroImage = styled.img`
@@ -200,13 +202,14 @@ const IntroImage = styled.img`
   object-fit: cover;
   margin: 50px;
 
-  @media ${device.desktop} {
-    width: 400px;
-    height: 500px;
-  }
   @media ${device.tablet} {
     width: 70%;
     height: auto;
+  }
+
+  @media ${device.desktop} {
+    width: 400px;
+    height: 500px;
   }
 `;
 
@@ -369,7 +372,7 @@ class Home extends React.Component {
             </CardInnerContainer>
           </CardsContainer>
           <IntroContainer data-aos="zoom-out-up">
-            <HandWrittenReview>
+            <h2>
               Annie was such a great person to work with! My husband and I
               contacted her for our wedding ceremony for 2 different days and
               she was very professional, helped us so much in making great
@@ -377,7 +380,7 @@ class Home extends React.Component {
               in Haarlem and Amsterdam, and we had fun! We love the results as
               well, they’re beautiful! Thanks Annie for making our special days
               even more memorable! - Tania
-            </HandWrittenReview>
+            </h2>
             <IntroImage src="https://static.llllllllllll.com/eniko/anniekostolany/Tania+Victor%20wedding-106.jpg"></IntroImage>
           </IntroContainer>
 
