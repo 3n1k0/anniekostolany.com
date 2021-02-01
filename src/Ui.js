@@ -7,11 +7,12 @@ import { device } from "./mediaquery";
 export const CardsContainer = styled.div`
   display: flex;
   flex-flow: column;
-  width: 100%;
+  width: 90%;
   margin: 0px auto;
   justify-content: center;
   align-items: center;
   pointer-events: none;
+  
 
   @media ${device.desktop} {
     flex-flow: row nowrap;
@@ -19,7 +20,7 @@ export const CardsContainer = styled.div`
     width: 60%;
     margin: 0 auto;
     padding: 50px 0px;
-    justify-content: flex-start;
+
   }
   @media ${device.tablet} {
     width: 60%;
@@ -144,9 +145,10 @@ export const GoToTopButton = styled.button`
 `;
 
 export const Button = styled(NavLink)`
-  border: 2px solid #1f1f1f;
-  background: transparent;
-  color: ${colors.cimek};
+  border: 2px solid darksalmon;
+  background: darksalmon;
+  opacity: 0.7;
+  color: black;
   height: 42px;
   width: 220px;
   letter-spacing: 1.5px;
@@ -163,8 +165,8 @@ export const Button = styled(NavLink)`
   font-size: 14px;
 
   &:hover {
-    background: #1f1f1f;
-    color: ${colors.tortfeher};
+    background: darksalmon;
+    color: white;
     transition: 0.6s;
   }
 
