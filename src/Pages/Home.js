@@ -116,14 +116,14 @@ export const Textcontainer = styled.div`
 
 export const HeaderImage = styled.img`
   width: 100%;
-  height: 80vh;
+  height: 1200px;
   object-fit: cover;
   position: relative;
-  z-index: 2;
-  object-position: 80% 220%;
+
 
   @media ${device.desktop} {
     height: 1200px;
+    width: 100%;
   }
 `;
 
@@ -201,6 +201,7 @@ const ReviewContainer = styled(IntroContainer)`
     z-index: 30;
     height: max-content;
     font-size: 15px;
+    width: 80%;
   }
 
   @media ${device.desktop} {
@@ -318,7 +319,7 @@ class Home extends React.Component {
         <HomeContainer>
           <Container>
             <HeaderImage
-              alt="Marriage"
+              alt="Couple on boat"
               src="https://static.llllllllllll.com/eniko/anniekostolany/annie-kostolany-header-1%20copy.jpg"
               loading="lazy"
             ></HeaderImage>
@@ -328,27 +329,27 @@ class Home extends React.Component {
             <NavLink style={{ color: "#4f2b26" }} to={"/couples"}>
               <div>
                 <h2>View gallery</h2>
-                <img src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham-8.jpg" />
+                <img src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham-8.jpg" alt="couple smiling" />
               </div>
             </NavLink>
 
             <NavLink style={{ color: "#4f2b26" }} to={"/investment"}>
               <div>
                 <h2>See packages</h2>
-                <img src="https://static.llllllllllll.com/eniko/anniekostolany/betsy-25.jpg" />
+                <img src="https://static.llllllllllll.com/eniko/anniekostolany/betsy-25.jpg" alt="girl with flowers" />
               </div>
             </NavLink>
 
             <NavLink style={{ color: "#4f2b26" }} to={"/contact"}>
               <div>
                 <h2>Get in touch</h2>
-                <img src="https://static.llllllllllll.com/eniko/anniekostolany/ayo+ayo-30.jpg" />
+                <img src="https://static.llllllllllll.com/eniko/anniekostolany/ayo+ayo-30.jpg" alt="couple kissing" />
               </div>
             </NavLink>
           </Wrapper>
 
-          <IntroContainer data-aos="zoom-out-up">
-            <img src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/107062536_3550008198363484_5757564740516023325_o.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=dYGl719yb-cAX9n-scX&_nc_ht=scontent-ams4-1.xx&oh=45a07409c031897b7fec363b52d14d5a&oe=6027FE6B"></img>
+          <IntroContainer>
+            <img src="https://static.llllllllllll.com/eniko/anniekostolany/annie-kostolany.jpg" alt="Annie Kostolany"></img>
             <div>
               <h2>Welcome!</h2>
               <p>
@@ -420,7 +421,7 @@ class Home extends React.Component {
               <Button to={"/couples"}>Details</Button>
             </CardInnerContainer>
           </CardsContainerReversed>
-          <ReviewContainer data-aos="zoom-out-up">
+          <ReviewContainer>
             <div>
               <p>
                 "Annie was such a great person to work with! <br />
@@ -435,11 +436,10 @@ class Home extends React.Component {
                 Thanks Annie for making our special days even more memorable!"
                 <br />- Tania
               </p>
-              <img src="https://static.llllllllllll.com/eniko/anniekostolany/Tania+Victor%20wedding-106.jpg"></img>
+              <img src="https://static.llllllllllll.com/eniko/anniekostolany/Tania+Victor%20wedding-106.jpg" alt="couple dancing in street"></img>
             </div>
             <StyledButton to={"/reviews"}>What other people say</StyledButton>
           </ReviewContainer>
-  
         </HomeContainer>
       </>
     );
