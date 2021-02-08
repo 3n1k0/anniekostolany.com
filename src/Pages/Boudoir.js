@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet";
 import { Button, ButtonContainer, GoToTopButton, Szepalcim } from "../config/Ui";
 import Reviews from "./Reviews";
 import UploadcareImage from "../components/UploadcareImage";
-import { FixedUpArrow } from "../components/FixedUpArrow";
 
 const Sharedbox = styled.div`
   width: 90%;
@@ -179,7 +178,6 @@ class Boudoir extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-          <FixedUpArrow />
         </Container>
         <Reviews />
       </div>

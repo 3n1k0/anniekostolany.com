@@ -9,7 +9,6 @@ import Reviews from "./Reviews";
 import UploadcareImage from "../components/UploadcareImage";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { FixedUpArrow } from "../components/FixedUpArrow";
 
 const Container = styled.div`
   width: 80%;
@@ -179,7 +178,6 @@ class Wedding extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-          <FixedUpArrow />
         </Container>
         <Reviews />
       </div>

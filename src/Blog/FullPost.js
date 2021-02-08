@@ -4,7 +4,6 @@ import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
 import { fonts } from "../config/config";
 import { device } from "../config/mediaquery";
-import { FixedUpArrow } from "../components/FixedUpArrow";
 
 const Container = styled.div`
   width: 100%;
@@ -109,7 +108,6 @@ class FullPost extends React.Component {
               return <img src={image} />;
             })}
           </Gallery>
-          <FixedUpArrow/>
         </Container>
       </div>
     );

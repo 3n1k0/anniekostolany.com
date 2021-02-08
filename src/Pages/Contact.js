@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet";
 import { fonts } from "../config/config";
 import { device } from "../config/mediaquery";
 import GlobalStyle from "../config/globalStyles";
-import { FixedUpArrow } from "../components/FixedUpArrow";
 
 const Recommendation = styled.div`
   width: 100%;
@@ -280,7 +279,6 @@ class Contact extends React.Component {
               </Box3>
             </a>
           </Recommendation>
-          <FixedUpArrow />
         </Container>
       </div>
     );

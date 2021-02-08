@@ -6,7 +6,6 @@ import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import { Button, ButtonContainer, GoToTopButton } from "../config/Ui";
-import { FixedUpArrow } from "../components/FixedUpArrow";
 
 export const Video = styled.iframe`
   border: none;
@@ -205,7 +204,6 @@ class Rules extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-          <FixedUpArrow />
         </Container>
       </div>
     );

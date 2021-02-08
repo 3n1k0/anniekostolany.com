@@ -15,7 +15,6 @@ import {
 } from "../config/Ui";
 import Reviews from "./Reviews";
 import UploadcareImage from "../components/UploadcareImage";
-import { FixedUpArrow } from "../components/FixedUpArrow";
 
 const Container = styled.div`
   width: 75%;
@@ -147,7 +146,6 @@ class Couples extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-          <FixedUpArrow />
         </Container>
 
         <Reviews />

@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet";
 import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../config/Ui";
 import Reviews from "./Reviews";
 import UploadcareImage from "../components/UploadcareImage";
-import { FixedUpArrow } from "../components/FixedUpArrow";
 
 const Container = styled.div`
   width: 80%;
@@ -140,7 +139,6 @@ class Travelers extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-          <FixedUpArrow />
         </Container>
         <Reviews />
       </div>
