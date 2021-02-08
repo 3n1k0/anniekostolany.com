@@ -1,9 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../Navbar";
 import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
-import { fonts } from "../config/config";
-import { device } from "../config/mediaquery";
+import { fonts } from "../config";
+import { device } from "../mediaquery";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 const Container = styled.div`
   width: 100%;
@@ -108,6 +109,7 @@ class FullPost extends React.Component {
               return <img src={image} />;
             })}
           </Gallery>
+          <FixedUpArrow/>
         </Container>
       </div>
     );

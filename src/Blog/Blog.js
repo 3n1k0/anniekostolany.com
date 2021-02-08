@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../Navbar";
 import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Button } from "../config/Ui";
+import { Button } from "../Ui";
 
 const Container = styled.div`
   display: grid;

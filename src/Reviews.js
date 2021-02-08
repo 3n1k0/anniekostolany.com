@@ -1,9 +1,9 @@
-import reviews from "../reviews.json";
+import reviews from "./reviews.json";
 import styled from "styled-components/macro";
 import React from "react";
-import { device } from "../config/mediaquery";
-import { fonts, colors } from "../config/config";
-import { CardTitle } from "../config/Ui";
+import { device } from "./mediaquery";
+import { fonts, colors } from "./config";
+import { CardTitle } from "./Ui";
 
 export const Quote = styled(CardTitle)`
   color: ${colors.cimek};
@@ -13,7 +13,8 @@ export const Quote = styled(CardTitle)`
   max-width: 100%;
   margin: 0 auto;
   padding: 30px;
-  line-height: 1.5;
+  background: #ccafaf;
+  line-height: 2em;
 
   p {
     width: 100%;
@@ -22,10 +23,8 @@ export const Quote = styled(CardTitle)`
 
   @media ${device.desktop} {
     padding: 50px 400px;
-    font-size: 22px;
+    font-size: 18px;
     height: 20%;
-    background: lightblue;
-    opacity: 0.8;
 
     p {
       width: 60%;
@@ -34,17 +33,14 @@ export const Quote = styled(CardTitle)`
   }
 `;
 
-
 const Reviews = function () {
   const randomNumber = Math.round(Math.random() * (reviews.length - 1));
   return (
     <Quote>
       {reviews[randomNumber]} <br />
+      ⭐⭐⭐⭐⭐
     </Quote>
   );
-
-      <h1>See what others say</h1>;
-
 };
 
 export default Reviews;

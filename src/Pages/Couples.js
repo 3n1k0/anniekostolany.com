@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { fonts } from "../config/config";
-import Navbar from "../components/Navbar";
+import { fonts } from "../config";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import {
   Button,
@@ -12,9 +12,10 @@ import {
   CardInnerContainer,
   Text,
   Szepalcim,
-} from "../config/Ui";
-import Reviews from "./Reviews";
-import UploadcareImage from "../components/UploadcareImage";
+} from "../Ui";
+import Reviews from "../Reviews";
+import UploadcareImage from "../UploadcareImage";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 const Container = styled.div`
   width: 75%;
@@ -146,6 +147,7 @@ class Couples extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
+          <FixedUpArrow />
         </Container>
 
         <Reviews />

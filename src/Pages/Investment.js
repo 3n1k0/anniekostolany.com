@@ -1,13 +1,12 @@
 import React from "react";
-import { device } from "../config/mediaquery";
+import { device } from "../mediaquery";
 import styled from "styled-components/macro";
-import { fonts } from "../config/config";
-import Navbar from "../components/Navbar";
+import { fonts } from "../config";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer} from "../config/Ui";
-import Reviews from "./Reviews";
-import UploadcareImage from "../components/UploadcareImage";
-import ScrollToTop from  '../components/ScrollToTop'
+import { Button, ButtonContainer} from "../Ui";
+import Reviews from "../Reviews";
+import UploadcareImage from "../UploadcareImage";
 
 const ImageContainer = styled.div`
   width: 80%;
@@ -158,7 +157,6 @@ class Investment extends React.Component {
   render() {
     return (
       <div className="Investment">
- 
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         <Helmet>
           <title>Book a professional photographer</title>

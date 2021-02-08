@@ -1,11 +1,12 @@
 import React from "react";
-import { device } from "../config/mediaquery";
+import { device } from "../mediaquery";
 import styled from "styled-components/macro";
-import { fonts, colors } from "../config/config";
-import Navbar from "../components/Navbar";
+import { fonts, colors } from "../config";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
-import { Button, ButtonContainer, GoToTopButton } from "../config/Ui";
+import { Button, ButtonContainer, GoToTopButton } from "../Ui";
+import { FixedUpArrow } from "../FixedUpArrow";
 
 export const Video = styled.iframe`
   border: none;
@@ -204,6 +205,7 @@ class Rules extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
+          <FixedUpArrow />
         </Container>
       </div>
     );
