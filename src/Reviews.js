@@ -13,7 +13,7 @@ export const Quote = styled(CardTitle)`
   max-width: 100%;
   margin: 0 auto;
   padding: 30px;
-  line-height: 2em;
+  line-height: 1.5;
 
   p {
     width: 100%;

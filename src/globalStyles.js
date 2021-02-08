@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { fonts, colors } from "./config";
+import { device } from "./mediaquery";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -12,20 +12,28 @@ html {
     padding: 0;
     overscroll-behavior-y: none;
     letter-spacing: 0.5px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    line-height: 50px;
+    line-height: 1.5;
     font-style: normal;
     color: rgb(88, 86, 86);
 
-
   }
     h1, h2, h3, h4, h5, h6 {
-    font-family: 'Prata', serif;
+    font-family: 'Roboto', serif;
+    }
+
+    h2{
+      font-size: 20px;
+      letter-spacing: 1px;
     }
 
 p{
-      font-size: 22px; 
+      font-size: 16px; 
+
+      @media ${device.desktop}{
+        font-size: 18px; 
+      }
 }
 
   *{

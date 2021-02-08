@@ -89,7 +89,7 @@ export const ContactButton = styled.button`
   color: white;
   letter-spacing: 2px;
   text-transform: lowercase;
-  line-height: 1em;
+  line-height: 1.5;
   padding: 20px;
   display: inline-block;
   z-index: 100;
@@ -160,7 +160,7 @@ export const Menuitem = styled.div`
     letter-spacing: 2px;
     text-transform: lowercase;
     text-decoration: none;
-    line-height: 1em;
+    line-height: 1.5;
     padding: 10px;
   }
 `;
@@ -172,21 +172,6 @@ export const PortfolioMenuitem = styled.div`
   cursor: pointer;
   letter-spacing: 2px;
   align-items: center;
-`;
-
-const Title = styled.h1`
-  color: #ffffff;
-  padding: 30px 40px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: lowercase;
-  line-height: 1em;
-  width: 300px;
-  font-weight: 400;
-
-  @media ${device.desktop} {
-    font-size: 22px;
-  }
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -221,12 +206,21 @@ const Maincontainer = styled.div`
   }
 `;
 const TitleDiv = styled.div`
-  min-width: 250px;
-  max-width: 270px;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  img {
+    position: absolute;
+    left: -20px;
+    top: -50px;
+    z-index: 100;
+    width: 250px;
+    height: 170px;
+
+    @media ${device.desktop} {
+      width: 390px;
+      height: 240px;
+      left: -50px;
+      top: -80px;
+    }
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -247,7 +241,7 @@ const DropDown = styled.div`
   @media ${device.desktop} {
     background-color: ${({ backgroundColor }) => backgroundColor};
 
-    width: 200px;
+    width: 180px;
     height: 300px;
     position: absolute;
     z-index: 5;
@@ -299,7 +293,7 @@ class Navbar extends React.Component {
         <Maincontainer style={this.props.style}>
           <TitleDiv>
             <NavLink to="/">
-              <Title>Annie Kostolany Photography</Title>
+              <img src="https://static.llllllllllll.com/eniko/anniekostolany/Annie-Kostolany-White-low-res.png" alt="Annie Kostolany"/>
             </NavLink>
           </TitleDiv>
 

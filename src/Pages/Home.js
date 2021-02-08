@@ -1,7 +1,6 @@
 import React from "react";
 import { device } from "../mediaquery";
 import styled from "styled-components/macro";
-import { fonts } from "../config";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import GlobalStyle from "../globalStyles";
@@ -28,15 +27,13 @@ const Wrapper = styled.div`
   text-transform: uppercase;
   font-weight: 200;
   font-size: 19px;
-  padding-bottom: 20px;
 
   h2 {
-    border-bottom: 1px solid #620903;
-    color: #620903;
+    border-bottom: 1px solid rgb(133, 82, 89);
+    color: rgb(133, 82, 89);
     cursor: pointer;
     text-transform: lowercase;
     font-size: 20px;
-    font-family: 'Lato';
     font-weight: 300;
 
     &:visited {
@@ -118,39 +115,12 @@ export const Textcontainer = styled.div`
   top: 30%;
 `;
 
-export const Subtitle = styled.div`
-  font-family: ${fonts.handwritten};
-  font-size: 18px;
-  font-style: italic;
-  color: rgb(97.2%, 96.9%, 91%);
-  text-align: center;
-  padding: 20px;
-  letter-spacing: 1px;
-`;
-
-export const MottoContainer = styled.div`
-  max-width: 65%;
-  text-align: center;
-`;
-
-export const Motto = styled.div`
-  font-family: ${fonts.subtitle};
-  color: white;
-  font-style: normal;
-  font-size: 1rem;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  width: 110%;
-`;
-
 export const HeaderImage = styled.img`
   width: 100%;
   height: 80vh;
   object-fit: cover;
   position: relative;
   filter: brightness(80%);
-  /* object-position: 0% 126%; */
 
   @media ${device.desktop} {
     height: 1200px;
@@ -166,24 +136,28 @@ const CardsContainerReversed = styled(CardsContainer)`
 const IntroContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
-  line-height: 40px;
-  margin-bottom: 50px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  padding: 50px;
 
   @media ${device.tablet} {
     display: flex;
     flex-direction: column;
+    padding: 50px;
   }
 
   @media ${device.desktop} {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 150px;
 
     p {
-      margin-right: 30px;
+      margin-top: 30px;
     }
   }
 
@@ -195,11 +169,43 @@ const IntroContainer = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @media ${device.desktop} {
       width: 50%;
       margin-right: 50px;
+    }
+  }
+`;
+
+const ReviewContainer = styled(IntroContainer)`
+  background: #9e9773;
+  padding-top: 30px;
+  color: black;
+  text-align: left;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+
+  div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  p {
+    padding: 30px;
+    background: rgba(250, 250, 250, 0.7);
+    margin-right: -50px;
+    z-index: 30;
+  }
+  @media ${device.desktop} {
+    padding: 50px;
+    flex-direction: column;
+
+    p {
+      padding-right: 20px;
+      width: 400px;
     }
   }
 `;
@@ -211,34 +217,70 @@ const WideContainer = styled.div`
   background-image: url("https://static.llllllllllll.com/eniko/anniekostolany/Yalda%20en%20Wesley-52.jpg");
   background-size: cover;
   background-position: 20% 30%;
-  filter: none;
+  filter: brightness(98%);
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 
-  &:hover {
-    filter: brightness(95%);
+  i {
+    animation: pulse 2s infinite;
+    font-size: 40px;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
   }
 
   h2 {
-    font-size: 40px;
-    padding: 40px;
-    color: white;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    font-weight: 900;
+    letter-spacing: 5px;
   }
 
   a {
-    font-size: 30px;
-    color: white;
+    font-size: 18px;
+    color: #ffff;
+    text-shadow: 0 0 10px rgb(0 0 0 / 50%);
     text-transform: lowercase;
-    text-decoration: underline;
+    border: 1px solid #fff;
+    width: max-content;
+    padding: 12px 25px;
+    font-weight: bold;
 
     &:hover {
-      color: daisy;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    @media ${device.desktop} {
+      font-size: 26px;
     }
   }
+`;
+
+const StyledButton = styled(Button)`
+text-align: center;
+padding: 30px;
+width: max-content;
+
+&:hover{
+  background: transparent;
+}
 `;
 
 class Home extends React.Component {
@@ -252,12 +294,14 @@ class Home extends React.Component {
             content="Annie Kostolany professional photographer based in the Netherlands"
           />
         </Helmet>
+
         <GlobalStyle />
         <Navbar
           style={{ background: "transparent" }}
           dropDowncolor="rgb(248,248,255, 0.3)"
-          linkColor="#404040" //#26261C
+          linkColor="#404040"
         />
+
         <HomeContainer>
           <Container>
             <HeaderImage
@@ -320,12 +364,13 @@ class Home extends React.Component {
           <WideContainer>
             <h2>Let's go on an adventure together!</h2>
             <NavLink to={"/wedding"}>Information for brides</NavLink>
+            <i class="chevron bottom" class="fas fa-angle-double-up"></i>
           </WideContainer>
 
           <CardsContainer data-aos="flip-left">
-            <UploadcareImage
-              uuid="28cda8e9-e274-444b-9a60-02cbb1424ae9"
-              alt="Mom with child"
+            <img
+              src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-family-shoot-3.jpg"
+              alt="family amsterdam"
             />
             <CardInnerContainer>
               <CardTitle>
@@ -345,9 +390,9 @@ class Home extends React.Component {
             </CardInnerContainer>
           </CardsContainer>
           <CardsContainerReversed data-aos="flip-right">
-            <UploadcareImage
-              uuid="3d344f8f-377c-4fa5-a8b3-9e3d93a19939"
-              alt="Girl with windmill and flowers"
+            <img
+              src="https://static.llllllllllll.com/eniko/anniekostolany/DSC_3097.jpg"
+              alt="Girl with windmill"
             />
             <CardInnerContainer>
               <CardTitle>
@@ -362,21 +407,25 @@ class Home extends React.Component {
               <Button to={"/couples"}>Details</Button>
             </CardInnerContainer>
           </CardsContainerReversed>
-          <IntroContainer data-aos="zoom-out-up">
-            <p>
-              "Annie was such a great person to work with! <br />
-              My husband and I contacted her for our wedding ceremony for two
-              different days and she was very professional, helped us so much in
-              making great photos. She even cheered us up during our sessions in
-              cold winter in Haarlem and Amsterdam, and we had fun!
-              <br />
-              We love the results as well, they’re beautiful!
-              <br />
-              Thanks Annie for making our special days even more memorable!"
-              <br />- Tania
-            </p>
-            <img src="https://static.llllllllllll.com/eniko/anniekostolany/Tania+Victor%20wedding-106.jpg"></img>
-          </IntroContainer>
+          <ReviewContainer data-aos="zoom-out-up">
+            <div>
+              <p>
+                "Annie was such a great person to work with! <br />
+                My husband and I contacted her for our wedding ceremony for two
+                different days and she was very professional, helped us so much
+                in making great photos. She even cheered us up during our
+                sessions in cold winter in Haarlem and Amsterdam, and we had
+                fun!
+                <br />
+                We love the results as well, they’re beautiful!
+                <br />
+                Thanks Annie for making our special days even more memorable!"
+                <br />- Tania
+              </p>
+              <img src="https://static.llllllllllll.com/eniko/anniekostolany/Tania+Victor%20wedding-106.jpg"></img>
+            </div>
+            <StyledButton to={"/reviews"}>What other people say</StyledButton>
+          </ReviewContainer>
         </HomeContainer>
       </>
     );

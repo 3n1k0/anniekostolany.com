@@ -20,7 +20,7 @@ const Container = styled.div`
     font-family: ${fonts.mindenmas};
     font-size: 1.1em;
     text-align: left;
-    line-height: 1.8;
+    line-height: 1.5;
     letter-spacing: 0.005em;
     max-width: 90%;
     padding-bottom: 20px;

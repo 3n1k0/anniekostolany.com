@@ -3,7 +3,6 @@ import styled from "styled-components/macro";
 import { fonts, colors } from "./config";
 
 const Container = styled.div`
-
   height: 400px;
   background-color: rgba(31, 31, 31, 0.9);
   width: 100%;
@@ -15,6 +14,19 @@ const Container = styled.div`
   letter-spacing: 1px;
   position: relative;
   bottom: 0;
+`;
+
+const Signature = styled.p`
+  a {
+    color: rgb(88, 86, 86);
+    
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  span {
+    color: #8c6661;
+  }
 `;
 
 export const Icontainer = styled.div`
@@ -31,6 +43,13 @@ export const Icon = styled.div`
   padding-left: 25px;
   padding-right: 25px;
   outline: none;
+
+  a {
+    color: white;
+    &:hover {
+      color: lightpink;
+    }
+  }
 `;
 
 const Numbers = styled.div`
@@ -40,7 +59,7 @@ const Numbers = styled.div`
 
   li {
     padding: 10px;
-    color: ${colors.tortfeher};
+    color: white;
     list-style: none;
   }
 `;
@@ -49,7 +68,6 @@ class Footer extends React.Component {
   render() {
     return (
       <Container role="contentinfo">
-
         <Icontainer>
           <Icon>
             <a
@@ -58,11 +76,7 @@ class Footer extends React.Component {
               href="https://instagram.com/anniekostolany"
               rel="noreferrer noopener"
             >
-              <i
-                style={{ color: "white" }}
-                className="fab fa-instagram"
-                label="Instagram profile"
-              ></i>
+              <i className="fab fa-instagram" label="Instagram profile"></i>
             </a>
           </Icon>
           <Icon>
@@ -72,11 +86,7 @@ class Footer extends React.Component {
               href="https://facebook.com/anniekostolany"
               rel="noreferrer noopener"
             >
-              <i
-                style={{ color: "white" }}
-                className="fab fa-facebook-f"
-                label="Facebook profile"
-              ></i>
+              <i className="fab fa-facebook-f" label="Facebook profile"></i>
             </a>
           </Icon>
 
@@ -87,7 +97,7 @@ class Footer extends React.Component {
               href="mailto:mail@anniekostolany.com"
               label="Send an email"
             >
-              <i style={{ color: "white" }} className="far fa-envelope"></i>
+              <i className="far fa-envelope"></i>
             </a>
           </Icon>
         </Icontainer>
@@ -98,6 +108,12 @@ class Footer extends React.Component {
             <li> PayPal: mail@anniekostolany.com</li>
           </ul>
         </Numbers>
+        <br />
+        <br />
+        <Signature>
+          Designed and coded with <span>❤︎</span> by{" "}
+          <a href="https://eniko.dev">Enikő</a>.
+        </Signature>
       </Container>
     );
   }
