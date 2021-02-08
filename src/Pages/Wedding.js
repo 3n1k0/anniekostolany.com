@@ -1,15 +1,15 @@
 import React from "react";
-import { device } from "../mediaquery";
+import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
-import { fonts } from "../config";
-import Navbar from "../Navbar";
+import { fonts } from "../config/config";
+import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../Ui";
-import Reviews from "../Reviews";
-import UploadcareImage from "../UploadcareImage";
+import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../config/Ui";
+import Reviews from "./Reviews";
+import UploadcareImage from "../components/UploadcareImage";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { FixedUpArrow } from "../FixedUpArrow";
+import { FixedUpArrow } from "../components/FixedUpArrow";
 
 const Container = styled.div`
   width: 80%;

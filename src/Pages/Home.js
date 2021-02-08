@@ -1,12 +1,11 @@
 import React from "react";
-import { device } from "../mediaquery";
+import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
-import Navbar from "../Navbar";
+import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import GlobalStyle from "../globalStyles";
-import { Button, CardsContainer, CardInnerContainer, CardTitle } from "../Ui";
+import GlobalStyle from "../config/globalStyles";
+import { Button, CardsContainer, CardInnerContainer, CardTitle } from "../config/Ui";
 import { NavLink } from "react-router-dom";
-import {FixedUpArrow} from '../FixedUpArrow'
 
 const HomeContainer = styled.div`
   display: flex;
@@ -120,8 +119,8 @@ export const HeaderImage = styled.img`
   height: 80vh;
   object-fit: cover;
   position: relative;
-  filter: brightness(80%);
   z-index: 2;
+  object-position: 80% 220%;
 
   @media ${device.desktop} {
     height: 1200px;
@@ -320,7 +319,7 @@ class Home extends React.Component {
           <Container>
             <HeaderImage
               alt="Marriage"
-              src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-proposal-14.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/annie-kostolany-header-1%20copy.jpg"
               loading="lazy"
             ></HeaderImage>
           </Container>
@@ -440,7 +439,7 @@ class Home extends React.Component {
             </div>
             <StyledButton to={"/reviews"}>What other people say</StyledButton>
           </ReviewContainer>
-          <FixedUpArrow/>
+  
         </HomeContainer>
       </>
     );

@@ -1,5 +1,9 @@
  import styled from "styled-components/macro";
 
+
+<i class="fas fa-angle-double-up"></i>;
+
+
  const BounceArrow = styled.div`
 
   @-webkit-keyframes bounce {

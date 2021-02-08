@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import React from "react";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -16,7 +16,7 @@ import Family from "./Pages/Family";
 import SoloTravelers from "./Pages/SoloTravelers";
 import Couples from "./Pages/Couples";
 // import NewPost from "./Blog/NewPosts";
-import ScrollToTop from './ScrollToTop';
+import ScrollToTop from './components/ScrollToTop';
 
 ReactDOM.render(
   <React.StrictMode>

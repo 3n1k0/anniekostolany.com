@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { fonts } from "../config";
-import Navbar from "../Navbar";
+import { fonts } from "../config/config";
+import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, Text } from "../Ui";
-import GlobalStyle from "../globalStyles";
-import { device } from "../mediaquery";
+import { Button, Text } from "../config/Ui";
+import GlobalStyle from "../config/globalStyles";
+import { device } from "../config/mediaquery";
 
 const Container = styled.div`
   margin: 0 auto;

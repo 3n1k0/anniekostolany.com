@@ -1,7 +1,7 @@
 import React from "react";
-import { device } from "./mediaquery";
+import { device } from "../config/mediaquery";
 import styled, { createGlobalStyle, css } from "styled-components/macro";
-import { fonts, colors } from "./config";
+import { fonts, colors } from "../config/config";
 import { NavLink } from "react-router-dom";
 
 export const HamburgerMenu = styled.div`

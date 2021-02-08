@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../Navbar";
+import Navbar from "../components/Navbar";
 import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
-import { fonts } from "../config";
-import { device } from "../mediaquery";
-import { FixedUpArrow } from "../FixedUpArrow";
+import { fonts } from "../config/config";
+import { device } from "../config/mediaquery";
+import { FixedUpArrow } from "../components/FixedUpArrow";
 
 const Container = styled.div`
   width: 100%;

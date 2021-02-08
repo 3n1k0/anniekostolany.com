@@ -1,9 +1,9 @@
-import reviews from "./reviews.json";
+import reviews from "../reviews.json";
 import styled from "styled-components/macro";
 import React from "react";
-import { device } from "./mediaquery";
-import { fonts, colors } from "./config";
-import { CardTitle } from "./Ui";
+import { device } from "../config/mediaquery";
+import { fonts, colors } from "../config/config";
+import { CardTitle } from "../config/Ui";
 
 export const Quote = styled(CardTitle)`
   color: ${colors.cimek};

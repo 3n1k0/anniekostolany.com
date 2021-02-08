@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { fonts, colors } from "./config";
+import { fonts, colors } from "../config/config";
 
 const Container = styled.div`
   height: 400px;

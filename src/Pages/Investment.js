@@ -1,13 +1,13 @@
 import React from "react";
-import { device } from "../mediaquery";
+import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
-import { fonts } from "../config";
-import Navbar from "../Navbar";
+import { fonts } from "../config/config";
+import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer} from "../Ui";
-import Reviews from "../Reviews";
-import UploadcareImage from "../UploadcareImage";
-import ScrollToTop from  '../ScrollToTop'
+import { Button, ButtonContainer} from "../config/Ui";
+import Reviews from "./Reviews";
+import UploadcareImage from "../components/UploadcareImage";
+import ScrollToTop from  '../components/ScrollToTop'
 
 const ImageContainer = styled.div`
   width: 80%;

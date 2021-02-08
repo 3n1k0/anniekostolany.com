@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Navbar";
+import Navbar from "../components/Navbar";
 import styled from "styled-components/macro";
 
 const Container = styled.div`
