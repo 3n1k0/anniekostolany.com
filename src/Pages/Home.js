@@ -5,8 +5,8 @@ import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import GlobalStyle from "../globalStyles";
 import { Button, CardsContainer, CardInnerContainer, CardTitle } from "../Ui";
-import UploadcareImage from "../UploadcareImage";
 import { NavLink } from "react-router-dom";
+import {FixedUpArrow} from '../FixedUpArrow'
 
 const HomeContainer = styled.div`
   display: flex;
@@ -121,6 +121,7 @@ export const HeaderImage = styled.img`
   object-fit: cover;
   position: relative;
   filter: brightness(80%);
+  z-index: 2;
 
   @media ${device.desktop} {
     height: 1200px;
@@ -180,32 +181,45 @@ const IntroContainer = styled.div`
 
 const ReviewContainer = styled(IntroContainer)`
   background: #9e9773;
-  padding-top: 30px;
+  padding: 30px;
   color: black;
   text-align: left;
   margin: 0;
-  font-size: 25px;
   font-weight: bold;
 
   div {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column-reverse;
+    align-items: center;
     justify-content: center;
   }
 
   p {
     padding: 30px;
     background: rgba(250, 250, 250, 0.7);
-    margin-right: -50px;
+    margin-right: 0px;
+    margin-bottom: 30px;
     z-index: 30;
+    height: max-content;
+    font-size: 15px;
   }
+
   @media ${device.desktop} {
     padding: 50px;
     flex-direction: column;
+    font-size: 20px;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
 
     p {
-      padding-right: 20px;
+      margin-right: -60px;
       width: 400px;
+      width: 60%;
     }
   }
 `;
@@ -274,13 +288,13 @@ const WideContainer = styled.div`
 `;
 
 const StyledButton = styled(Button)`
-text-align: center;
-padding: 30px;
-width: max-content;
+  text-align: center;
+  padding: 30px;
+  width: max-content;
 
-&:hover{
-  background: transparent;
-}
+  &:hover {
+    background: transparent;
+  }
 `;
 
 class Home extends React.Component {
@@ -426,6 +440,7 @@ class Home extends React.Component {
             </div>
             <StyledButton to={"/reviews"}>What other people say</StyledButton>
           </ReviewContainer>
+          <FixedUpArrow/>
         </HomeContainer>
       </>
     );

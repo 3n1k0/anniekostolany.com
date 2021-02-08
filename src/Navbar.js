@@ -242,7 +242,7 @@ const DropDown = styled.div`
     background-color: ${({ backgroundColor }) => backgroundColor};
 
     width: 180px;
-    height: 300px;
+    height: 350px;
     position: absolute;
     z-index: 5;
     top: 40px;
