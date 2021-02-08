@@ -7,8 +7,6 @@ import { Helmet } from "react-helmet";
 import { Button, ButtonContainer} from "../config/Ui";
 import Reviews from "./Reviews";
 import UploadcareImage from "../components/UploadcareImage";
-import ScrollToTop from  '../components/ScrollToTop'
-
 const ImageContainer = styled.div`
   width: 80%;
   height: 100%;
