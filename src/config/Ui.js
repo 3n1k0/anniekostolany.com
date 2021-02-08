@@ -4,13 +4,15 @@ import { colors } from "./config";
 import { fonts } from "./config";
 import { device } from "./mediaquery";
 
+//checked components
+
 export const CardsContainer = styled.div`
   display: flex;
   flex-flow: column;
-  width: 100%;
-  margin: 0px auto;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  margin: 0px auto;
   pointer-events: none;
 
   @media ${device.desktop} {
@@ -19,12 +21,33 @@ export const CardsContainer = styled.div`
     width: 60%;
     margin: 0 auto;
     padding: 50px 0px;
-    justify-content: flex-start;
+
+    p{
+      min-width: 300px;
+
+    }
   }
   @media ${device.tablet} {
-    width: 60%;
+    width: 70%;
+
+    p{
+      min-width: 200px;
+    }
+  }
+
+  img {
+    max-width: 450px;
+    min-width: 450px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 80% 78%;
+    filter: brightness(103%);
   }
 `;
+
+
+///////// unchecked components 
+
 
 export const Sharedbox = styled.div`
   width: 100%;
@@ -41,11 +64,9 @@ export const CardInnerContainer = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  line-height: 2;
+  line-height: 1.5;
   width: 100%;
   color: rgb(88, 86, 86);
-  font-family: ${fonts.mindenmas};
-  font-size: 15px;
   margin-bottom: 50px;
 
   @media ${device.desktop} {
@@ -86,7 +107,7 @@ export const Szepalcim = styled.div`
 
   letter-spacing: 0px;
   text-transform: none;
-  line-height: 1.5em;
+  line-height: 1.5;
   padding-bottom: 30px;
   max-width: 100%;
   margin: 0 auto;
@@ -119,15 +140,7 @@ export const CardTitle = styled.div`
     padding: 0px;
   }
 
-  h2 {
-    font-family: ${fonts.mindenmas};
-    font-size: 15px;
-    color: ${colors.cimek};
-    letter-spacing: 2px;
-  }
-
   p {
-    font-family: ${fonts.mindenmas};
     padding: 20px;
   }
 `;
@@ -144,28 +157,28 @@ export const GoToTopButton = styled.button`
 `;
 
 export const Button = styled(NavLink)`
-  border: 2px solid #1f1f1f;
-  background: transparent;
-  color: ${colors.cimek};
+  border: 1px solid rgb(133, 82, 89);
+  background: rgb(133, 82, 89);
+  opacity: 0.7;
+  color: white;
   height: 42px;
-  width: 220px;
+  width: 200px;
   letter-spacing: 1.5px;
   padding: 20px;
   text-transform: uppercase;
-  font-family: ${fonts.mindenmas};
   margin: 0 auto;
-  width: 190px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   font-size: 14px;
 
   &:hover {
-    background: #1f1f1f;
-    color: ${colors.tortfeher};
-    transition: 0.6s;
+    background: white;
+    color: black;
+    border-left: none;
+    border-right: none;
+    transition: all 0.3s;
   }
 
   a:visited {

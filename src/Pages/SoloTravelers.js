@@ -1,13 +1,12 @@
 import React from "react";
-import { device } from "../mediaquery";
+import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
-import { fonts } from "../config";
-import Navbar from "../Navbar";
+import { fonts } from "../config/config";
+import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../Ui";
-import Reviews from "../Reviews";
-import UploadcareImage from "../UploadcareImage";
-import { FixedUpArrow } from "../FixedUpArrow";
+import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../config/Ui";
+import Reviews from "./Reviews";
+import UploadcareImage from "../components/UploadcareImage";
 
 const Container = styled.div`
   width: 80%;
@@ -20,7 +19,7 @@ const Container = styled.div`
     font-family: ${fonts.mindenmas};
     font-size: 1.1em;
     text-align: left;
-    line-height: 1.8;
+    line-height: 1.5;
     letter-spacing: 0.005em;
     max-width: 90%;
     padding-bottom: 20px;
@@ -140,7 +139,6 @@ class Travelers extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-          <FixedUpArrow />
         </Container>
         <Reviews />
       </div>

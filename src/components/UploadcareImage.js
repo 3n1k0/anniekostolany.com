@@ -1,4 +1,4 @@
-import { Image, ImageContainer } from "./Ui";
+import { Image, ImageContainer } from "../config/Ui";
 import React from "react";
 
 const UploadcareImage = ({ uuid, alt }) => {

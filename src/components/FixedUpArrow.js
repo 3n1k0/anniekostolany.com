@@ -3,11 +3,11 @@ import React from "react";
 
 export const FixedUpArrow = () => {
   const UpArrowWrapper = styled.div`
-    font-size: 60px;
+    font-size: 35px;
     cursor: pointer;
     position: fixed;
-    text-align: center;
-    position: relative;
+    text-align: right;
+    z-index: 1;
   `;
 
   return (

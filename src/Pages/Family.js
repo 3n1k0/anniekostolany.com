@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { fonts } from "../config";
-import Navbar from "../Navbar";
+import { fonts } from "../config/config";
+import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, Szepalcim, Sharedbox } from "../Ui";
-import Reviews from "../Reviews";
-import UploadcareImage from "../UploadcareImage";
-import { FixedUpArrow } from "../FixedUpArrow";
+import { Button, ButtonContainer, Szepalcim, Sharedbox } from "../config/Ui";
+import Reviews from "./Reviews";
+import UploadcareImage from "../components/UploadcareImage";
 
 const Container = styled.div`
   width: 80%;
@@ -111,7 +110,6 @@ class Family extends React.Component {
           <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
           </ButtonContainer>
-          <FixedUpArrow />
         </Container>
         <Reviews />
       </div>

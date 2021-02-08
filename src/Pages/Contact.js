@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "../Navbar";
+import Navbar from "../components/Navbar";
 import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
-import { fonts } from "../config";
-import { device } from "../mediaquery";
-import GlobalStyle from "../globalStyles";
-import { FixedUpArrow } from "../FixedUpArrow";
+import { fonts } from "../config/config";
+import { device } from "../config/mediaquery";
+import GlobalStyle from "../config/globalStyles";
 
 const Recommendation = styled.div`
   width: 100%;
@@ -280,7 +279,6 @@ class Contact extends React.Component {
               </Box3>
             </a>
           </Recommendation>
-          <FixedUpArrow />
         </Container>
       </div>
     );
