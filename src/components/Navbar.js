@@ -103,6 +103,9 @@ export const ContactButton = styled.button`
     height: 42px;
     width: 117px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &:hover {

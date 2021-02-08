@@ -15,8 +15,6 @@ import Rules from "./Pages/Rules";
 import Family from "./Pages/Family";
 import SoloTravelers from "./Pages/SoloTravelers";
 import Couples from "./Pages/Couples";
-// import NewPost from "./Blog/NewPosts";
-import ScrollToTop from './components/ScrollToTop';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -40,7 +38,6 @@ ReactDOM.render(
         <Route component={Contact} />
       </Switch>
       <Footer />
-      <ScrollToTop />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
