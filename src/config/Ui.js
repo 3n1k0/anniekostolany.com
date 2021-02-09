@@ -81,28 +81,18 @@ export const CardInnerContainer = styled.div`
 
 export const Text = styled.div`
   margin: 0 auto;
-  font-family: ${fonts.mindenmas};
   width: 90%;
-  color: ${colors.footerfekete};
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-items: center;
   padding-bottom: 50px;
 
-  span {
-    z-index: 20;
-    background: white;
-  }
-
   @media ${device.desktop} {
-    width: 60%;
+    width: 50%;
   }
 
-  p {
-    font-size: 20px;
-    width: 100%;
-  }
+
 `;
 
 export const Szepalcim = styled.div`

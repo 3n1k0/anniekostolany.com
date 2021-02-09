@@ -42,6 +42,7 @@ const Wrapper = styled.div`
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
+    padding-top: 15px;
 
     &:visited {
       color: #620903;
@@ -93,10 +94,6 @@ const Wrapper = styled.div`
 
     div {
       padding: 20px;
-    }
-
-    h2 {
-      padding-top: 20px;
     }
   }
 `;
