@@ -81,27 +81,36 @@ export const CardInnerContainer = styled.div`
 
 export const Text = styled.div`
   margin: 0 auto;
-  font-family: ${fonts.mindenmas};
   width: 90%;
-  color: ${colors.footerfekete};
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-items: center;
   padding-bottom: 50px;
 
-  span {
-    z-index: 20;
-    background: white;
+  @media ${device.desktop} {
+    width: 50%;
   }
+
+
+`;
+
+export const Gallery = styled.div`
+  grid-gap: 0px;
+  padding-bottom: 40px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
 
   @media ${device.desktop} {
-    width: 60%;
+    padding: 0px 100px 40px 100px;
+    grid-gap: 10px;
   }
 
-  p {
-    font-size: 20px;
+  img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 `;
 

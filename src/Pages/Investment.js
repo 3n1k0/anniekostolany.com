@@ -3,13 +3,14 @@ import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer } from "../config/Ui";
+import { Button, ButtonContainer, Gallery } from "../config/Ui";
 import GlobalStyle from "../config/globalStyles";
 import { NavLink } from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
+  padding-top: 140px;
   margin: 0 auto;
   color: #585656;
   text-align: left;
@@ -88,28 +89,6 @@ const TextContainer = styled.div`
     @media ${device.desktop} {
       flex-direction: row;
     }
-  }
-`;
-
-const Gallery = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0px;
-  margin-top: 0px;
-  padding-top: 100px;
-  padding-bottom: 40px;
-  @media ${device.desktop} {
-    padding: 100px 100px 40px 100px;
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 50px;
-    grid-gap: 10px;
-  }
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
   }
 `;
 

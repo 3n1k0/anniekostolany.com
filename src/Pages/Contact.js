@@ -2,85 +2,20 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
-import { fonts } from "../config/config";
 import { device } from "../config/mediaquery";
 import GlobalStyle from "../config/globalStyles";
+import { NavLink } from "react-router-dom";
+import { Gallery } from "../config/Ui";
 
-const Recommendation = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
 
-  @media ${device.desktop} {
-    max-width: 80%;
-    flex-direction: row;
+const MainContainer = styled.div`
+img{
+
+  &:hover{
+filter: brightness(80%);
   }
-
-  a {
-    width: 100%;
-    margin: 15px;
-  }
-
-  h4 {
-    color: white;
-    font-size: 40px;
-    font-style: italic;
-    letter-spacing: 0.021em;
-    font-weight: 600;
-  }
-`;
-
-const Box1 = styled.div`
-  background: url("https://ucarecdn.com/25e3c7a9-9e40-43c9-9c02-835ae28d50a7/boudoiranniekostolany.jpg");
-  background-size: cover;
-  background-position: 0% 50%;
-  height: 300px;
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    filter: brightness(0.9);
-  }
-`;
-
-const Box2 = styled.div`
-  background: url("https://ucarecdn.com/9c378587-d5e9-4fc8-b5e0-a4e804084bfe/wedding73.jpg");
-  background-size: cover;
-  background-position: 0% 50%;
-  height: 300px;
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    filter: brightness(0.9);
-  }
-`;
-
-const Box3 = styled.div`
-  background: url("https://ucarecdn.com/03f6490e-705d-4d82-b58e-a0b651c0cee2/anniekostolanyboudoir.jpg");
-  background-size: cover;
-  background-position: 0% 47%;
-  height: 300px;
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    filter: brightness(0.9);
-  }
-`;
+}
+`
 
 const Button = styled.button`
   font-size: 14px;
@@ -101,47 +36,32 @@ const Button = styled.button`
   }
 `;
 
-const Title = styled.div`
-  font-family: ${fonts.mindenmas};
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 17px;
-  line-height: 1.5;
-  letter-spacing: 0.337em;
-  font-weight: 100;
-  padding: 26px 0px;
-
-  @media ${device.desktop} {
-    max-width: 80%;
-    font-size: 29px;
-  }
-`;
 
 const Container = styled.div`
-  min-height: 100%;
+  height: 100%;
   width: 100%;
   color: #384047;
   z-index: 40;
   background: white;
-  display: flex;
-  flex-flow: column;
+  display: grid;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 
   h2 {
     text-align: center;
     font-size: 17px;
 
     @media ${device.desktop} {
-      max-width: 80%;
       font-size: 25px;
     }
   }
 `;
+const ContactForm = styled.div`
+display: grid;
+justify-content: center;
 
- const ContactForm = styled.div`
   form {
     width: 100%;
     min-width: 450px;
@@ -152,9 +72,6 @@ const Container = styled.div`
     border-radius: 8px;
     position: relative;
     border: none;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
     margin: 50px;
   }
 
@@ -178,7 +95,6 @@ const Container = styled.div`
     background-color: rgba(214, 212, 208, 0.2);
     color: #384047;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-    /* margin-bottom: 30px; */
 
     & :focus {
       box-shadow: 8px 8px 35px rgba(192, 192, 192, 0.3);
@@ -190,7 +106,6 @@ const Container = styled.div`
   }
 
   h1 {
-    font-family: ${fonts.mindenmas};
     text-transform: uppercase;
     text-align: center;
     font-size: 37px;
@@ -203,7 +118,6 @@ const Container = styled.div`
 
   label {
     padding-bottom: 10px;
-    font-family: ${fonts.mindenmas};
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -211,18 +125,11 @@ const Container = styled.div`
   }
 `;
 
-const RecommendationTitle = styled.div`
-  font-size: 29px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Raleway";
-  letter-spacing: 2px;
-`;
 
 class Contact extends React.Component {
   render() {
     return (
-      <div>
+      <MainContainer>
         <Helmet>
           <title>Contact Annie</title>
           <meta name="description" content="Contact Annie" />
@@ -231,15 +138,12 @@ class Contact extends React.Component {
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         setTimeout(function () {window.scrollTo(500, 0)},2);
         <Container>
-          <Title>
-            Classic and beautiul weddings
-            <br />
-            Luxury boudoir & intimate portraiture photography
-          </Title>
-          <h2>
-            Contact me with questions, ideas and booking requests.
-            <br />I will try to get back to you within a working day!{" "}
-          </h2>
+          <h2>Classic and beautiul weddings</h2>
+          <h2>Luxury boudoir & intimate portraiture photography</h2>
+          <p>
+            Contact me with questions, ideas and booking requests. I will try to
+            get back to you within a working day!{" "}
+          </p>
           <ContactForm>
             <form action="https://formspree.io/mknqqvoz" method="POST">
               <h1>Contact</h1>
@@ -263,28 +167,37 @@ class Contact extends React.Component {
             </form>
           </ContactForm>
 
-          <RecommendationTitle>
-            Check out these galleries for inspiration:
-          </RecommendationTitle>
-          <Recommendation>
-            <a href="https://anniekostolany.com/boudoir">
-              <Box1>
-                <h4>Boudoir gallery</h4>
-              </Box1>
-            </a>
-            <a href="https://anniekostolany.com/wedding">
-              <Box2>
-                <h4>Wedding gallery</h4>
-              </Box2>
-            </a>
-            <a href="https://anniekostolany.com/solo-travelers">
-              <Box3>
-                <h4>Portrait gallery</h4>
-              </Box3>
-            </a>
-          </Recommendation>
+          <h2>Check out these galleries for inspiration:</h2>
         </Container>
-      </div>
+        <Gallery>
+          <NavLink to={"/boudoir"}>
+            <img
+              src="https://static.llllllllllll.com/eniko/anniekostolany/6.jpg"
+              alt="boudoir shoot"
+              loading="lazy"
+              title="Boudoir shoots"
+            />
+          </NavLink>
+
+          <NavLink to={"/wedding"}>
+            <img
+              src="https://static.llllllllllll.com/eniko/anniekostolany/Yalda%20en%20Wesley-84.jpg"
+              alt="bride"
+              loading="lazy"
+              title="Wedding shoots"
+            />
+          </NavLink>
+
+          <NavLink to={"/solo-travelers"}>
+            <img
+              src="https://static.llllllllllll.com/eniko/anniekostolany/DSC_3360.jpg"
+              alt="girl with bouquet"
+              loading="lazy"
+              title="Travel photogrpahy"
+            />
+          </NavLink>
+        </Gallery>
+      </MainContainer>
     );
   }
 }

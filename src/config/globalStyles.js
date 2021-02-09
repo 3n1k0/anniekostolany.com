@@ -16,7 +16,7 @@ html {
     font-weight: 300;
     line-height: 1.5;
     font-style: normal;
-    color: rgb(88, 86, 86);
+    color: rgb(100, 100, 100);
 
   }
     h1, h2, h3, h4, h5, h6 {
