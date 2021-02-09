@@ -9,6 +9,9 @@ import {
   CardsContainer,
   CardInnerContainer,
   CardTitle,
+  ReviewContainer,
+  IntroContainer,
+  CardsContainerReversed,
 } from "../config/Ui";
 import { NavLink } from "react-router-dom";
 
@@ -36,9 +39,9 @@ const Wrapper = styled.div`
     border-bottom: 1px solid rgb(133, 82, 89);
     color: rgb(133, 82, 89);
     cursor: pointer;
-    text-transform: lowercase;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
+    text-transform: uppercase;
 
     &:visited {
       color: #620903;
@@ -109,16 +112,6 @@ const Container = styled.div`
   padding-bottom: 15px;
 `;
 
-export const Textcontainer = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  height: 500px;
-  align-items: center;
-  position: absolute;
-  top: 30%;
-`;
-
 export const HeaderImage = styled.img`
   width: 100%;
   height: 1200px;
@@ -129,104 +122,6 @@ export const HeaderImage = styled.img`
   @media ${device.desktop} {
     object-position: 0% 69%;
     height: 1200px;
-    width: 100%;
-  }
-`;
-
-const CardsContainerReversed = styled(CardsContainer)`
-  @media ${device.desktop} {
-    flex-flow: row-reverse;
-  }
-`;
-
-const IntroContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.5;
-  margin-bottom: 40px;
-  padding: 50px;
-
-  @media ${device.tablet} {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-  }
-
-  @media ${device.desktop} {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 150px;
-
-    p {
-      margin-top: 30px;
-    }
-  }
-
-  span {
-    background: rgba(250, 0, 0, 0.1);
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-bottom: 30px;
-
-    @media ${device.desktop} {
-      width: 50%;
-      margin-right: 50px;
-    }
-  }
-`;
-
-const ReviewContainer = styled(IntroContainer)`
-  background: #9e9773;
-  padding: 30px;
-  color: black;
-  text-align: left;
-  margin: 0;
-  font-weight: bold;
-
-  div {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
-
-  p {
-    padding: 30px;
-    background: rgba(250, 250, 250, 0.7);
-    margin-right: 0px;
-    margin-bottom: 30px;
-    z-index: 30;
-    height: max-content;
-    font-size: 15px;
-    width: 80%;
-  }
-
-  @media ${device.desktop} {
-    padding: 50px;
-    flex-direction: column;
-    font-size: 20px;
-
-    div {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding-bottom: 50px;
-    }
-
-    p {
-      margin-right: -60px;
-      width: 400px;
-      width: 60%;
-    }
   }
 `;
 
@@ -264,13 +159,17 @@ const WideContainer = styled.div`
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 35px;
     color: #fff;
     margin-bottom: 15px;
     padding: 10px;
     text-shadow: 0 0 10px rgb(0 0 0 / 50%);
     font-weight: 900;
     letter-spacing: 5px;
+
+    @media ${device.desktop} {
+      font-size: 50px;
+    }
   }
 
   a {

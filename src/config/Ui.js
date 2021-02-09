@@ -45,6 +45,11 @@ export const CardsContainer = styled.div`
   }
 `;
 
+export const CardsContainerReversed = styled(CardsContainer)`
+  @media ${device.desktop} {
+    flex-flow: row-reverse;
+  }
+`;
 
 ///////// unchecked components 
 
@@ -155,6 +160,98 @@ export const GoToTopButton = styled.button`
   background: none;
   font-weight: 800;
 `;
+
+export const IntroContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  padding: 50px;
+
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  @media ${device.desktop} {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 150px;
+
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  span {
+    background: rgba(250, 0, 0, 0.1);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+
+    @media ${device.desktop} {
+      width: 50%;
+      margin-right: 50px;
+    }
+  }
+`;
+
+export const ReviewContainer = styled(IntroContainer)`
+  background: #9e9773;
+  padding: 30px;
+  color: black;
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+
+  div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    padding: 30px;
+    background: rgba(250, 250, 250, 0.7);
+    margin-right: 0px;
+    margin-bottom: 30px;
+    z-index: 30;
+    height: max-content;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  @media ${device.desktop} {
+    padding: 50px;
+    flex-direction: column;
+    font-size: 20px;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
+
+    p {
+      margin-right: -60px;
+      width: 400px;
+      width: 60%;
+    }
+  }
+`;
+
 
 export const Button = styled(NavLink)`
   border: 1px solid rgb(133, 82, 89);
