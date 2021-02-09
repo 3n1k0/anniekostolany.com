@@ -18,7 +18,6 @@ const Container = styled.div`
   p {
     max-width: 90%;
     padding-bottom: 20px;
-
     margin: 0 auto;
 
     @media ${device.desktop} {
@@ -27,53 +26,25 @@ const Container = styled.div`
   }
 `;
 
-const Package = styled.div`
+const Information = styled.div`
   height: 100%;
   width: 100%;
-  text-align: center;
   opacity: 1;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
   position: relative;
-
-  p {
-    text-align: left;
-    font-size: 16px;
-
-    @media ${device.desktop} {
-      text-align: center;
-      font-size: 16px;
-    }
-  }
-
-  h1 {
-    padding: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
-  @media ${device.desktop} {
-    flex-flow: row nowrap;
-  }
-`;
-
-const Information = styled(Package)`
-  display: block;
-  background: white;
-
-  p {
-    text-align: left;
-  }
-
-  h1 {
-    padding-top: 80px;
-  }
-
   @media ${device.tablet} {
     width: 70%;
     margin: 0 auto;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  h1 {
+    padding: 40px;
+    text-align: center;
   }
 `;
 
@@ -91,6 +62,9 @@ const TextContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: left;
+  @media ${device.tablet} {
+    width: 70%;
+  }
 
   p {
     font-size: 16px;
@@ -104,17 +78,15 @@ const TextContainer = styled.div`
     padding: 20px;
   }
 
-  @media ${device.desktop} {
-    width: 60%;
-  }
-
-  @media ${device.tablet} {
-    width: 70%;
-
-    div {
+  div {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    @media ${device.tablet} {
       flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center;
+    }
+    @media ${device.desktop} {
+      flex-direction: row;
     }
   }
 `;
@@ -126,19 +98,18 @@ const Gallery = styled.div`
   margin-top: 0px;
   padding-top: 100px;
   padding-bottom: 40px;
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
   @media ${device.desktop} {
     padding: 100px 100px 40px 100px;
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 50px;
     grid-gap: 10px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 `;
 
@@ -219,28 +190,31 @@ class Investment extends React.Component {
 
           <Information>
             <h1>Investment information</h1>
-            <p>Portrait sessions starting from 280 Eur</p>
-            <p>Weddings starting from 1200 Eur</p>
+            <p>Portrait sessions start from 280 Eur </p>
+            <p> Weddings start from 1200 Eur</p>
             <p>
               Every image is individually retouched and available for you to
               download with a personal Online Gallery to share with family or
               friends. Our pricing reflects the experience and quality of work
               at an affordable competitive price for Amsterdam Weddings.
             </p>
+
             <p>
               Regarding the situation we all face due to Covid-19, it is
               possible to build your own photography package, and only book the
               actual hours needed instead of a full package. Please email us for
               more details.
             </p>
+
             <p>
               For our wedding price guide and other enquiries please send an
-              email to mail@anniekostolany.com or fill out the{" "}
+              email to mail@anniekostolany.com or fill out the
               <b>
                 {" "}
                 <NavLink style={{ color: "#A77C74" }} to={"/wedding"}>
                   contact form
                 </NavLink>
+                .
               </b>
             </p>
           </Information>
