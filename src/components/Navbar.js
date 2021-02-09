@@ -218,10 +218,10 @@ const TitleDiv = styled.div`
     height: 170px;
 
     @media ${device.desktop} {
-      width: 390px;
-      height: 240px;
+      width: 350px;
+      height: 200px;
       left: -50px;
-      top: -80px;
+      top: -47px;
     }
   }
 `;
