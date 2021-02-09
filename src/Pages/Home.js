@@ -123,9 +123,11 @@ export const HeaderImage = styled.img`
   width: 100%;
   height: 1200px;
   object-fit: cover;
+  object-position: 57% 0%;
   position: relative;
 
   @media ${device.desktop} {
+    object-position: 0% 69%;
     height: 1200px;
     width: 100%;
   }
