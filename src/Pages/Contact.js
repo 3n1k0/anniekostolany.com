@@ -139,7 +139,9 @@ const Container = styled.div`
       font-size: 25px;
     }
   }
+`;
 
+ const ContactForm = styled.div`
   form {
     width: 100%;
     min-width: 450px;
@@ -238,26 +240,28 @@ class Contact extends React.Component {
             Contact me with questions, ideas and booking requests.
             <br />I will try to get back to you within a working day!{" "}
           </h2>
-          <form action="https://formspree.io/mknqqvoz" method="POST">
-            <h1>Contact</h1>
-            <fieldset>
-              <label for="name">Name </label>
-              <input type="text" name="name" id="name" required />
+          <ContactForm>
+            <form action="https://formspree.io/mknqqvoz" method="POST">
+              <h1>Contact</h1>
+              <fieldset>
+                <label for="name">Name </label>
+                <input type="text" name="name" id="name" required />
 
-              <br />
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required />
+                <br />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
 
-              <br />
-              <label for="subject">Subject</label>
-              <input type="text" name="subject" id="subject" />
+                <br />
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" />
 
-              <br />
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </fieldset>
-            <Button type="submit">Send</Button>
-          </form>
+                <br />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </fieldset>
+              <Button type="submit">Send</Button>
+            </form>
+          </ContactForm>
 
           <RecommendationTitle>
             Check out these galleries for inspiration:
