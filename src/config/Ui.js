@@ -95,6 +95,25 @@ export const Text = styled.div`
 
 `;
 
+export const Gallery = styled.div`
+  grid-gap: 0px;
+  padding-bottom: 40px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+
+  @media ${device.desktop} {
+    padding: 0px 100px 40px 100px;
+    grid-gap: 10px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+`;
+
 export const Szepalcim = styled.div`
   font-family: ${fonts.mindenmas};
   font-weight: 100;
