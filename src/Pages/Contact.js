@@ -7,7 +7,6 @@ import GlobalStyle from "../config/globalStyles";
 import { NavLink } from "react-router-dom";
 import { Gallery, ReviewContainer, StyledButton } from "../config/Ui";
 
-
 const ContactForm = styled.div`
   width: 100%;
   margin-bottom: 50px;
@@ -15,13 +14,10 @@ const ContactForm = styled.div`
 const MainContainer = styled.div`
   width: 100%;
   color: black;
-
-  img {
-    &:hover {
-      filter: brightness(80%);
-    }
+  h2 {
+    text-align: center;
+    padding-bottom: 20px;
   }
-
 `;
 
 const Container = styled.div`
@@ -34,10 +30,6 @@ const Container = styled.div`
   justify-content: center;
   padding-bottom: 20px;
   z-index: 40;
-
-  h2 {
-    text-align: center;
-  }
 
   input,
   textarea,
@@ -234,7 +226,6 @@ const Container = styled.div`
   }
 `;
 
-
 class Contact extends React.Component {
   render() {
     return (
@@ -287,10 +278,9 @@ class Contact extends React.Component {
               </div>
             </div>
           </ContactForm>
-
-          <h2>Check out these galleries for inspiration:</h2>
         </Container>
-        <Gallery>
+        <h2>Check out these galleries for inspiration:</h2>
+        <Gallery isHover={true}>
           <NavLink to={"/boudoir"}>
             <img
               src="https://static.llllllllllll.com/eniko/anniekostolany/6.jpg"

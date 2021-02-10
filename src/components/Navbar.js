@@ -110,6 +110,7 @@ export const ContactButton = styled.button`
 
 export const Menuitems = styled.div`
   flex-flow: column nowrap;
+  align-items: flex-start;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -169,7 +170,7 @@ export const Menuitem = styled.div`
 export const PortfolioMenuitem = styled.div`
   flex-flow: column;
   display: flex;
-  padding: 8px 0px;
+
   cursor: pointer;
   letter-spacing: 2px;
   align-items: center;

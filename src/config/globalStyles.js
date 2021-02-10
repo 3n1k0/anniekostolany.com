@@ -43,7 +43,15 @@ p{
     
   }
 
-  button:focus {outline:0;}
+  button:focus {
+    outline:none;
+  }
+
+  input, textarea {
+    &:focus{
+    outline: none;
+  }
+  }
 `;
 
 export default GlobalStyle;
