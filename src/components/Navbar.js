@@ -1,8 +1,8 @@
 import React from "react";
 import { device } from "../config/mediaquery";
-import styled, { createGlobalStyle, css } from "styled-components/macro";
-import { fonts, colors } from "../config/config";
+import styled, {css} from "styled-components/macro";
 import { NavLink } from "react-router-dom";
+import GlobalStyle from "../config/globalStyles";
 
 export const HamburgerMenu = styled.div`
   display: flex;
@@ -30,19 +30,18 @@ export const HamburgerMenu = styled.div`
           div:nth-child(1) {
             transform: rotate(45deg);
             position: absolute;
+            background-color: rgb(197, 176, 175);
           }
 
           div:nth-child(3) {
             transform: rotate(-45deg);
             position: absolute;
+            background-color: rgb(197, 176, 175);
           }
         `
       : ""}
 
   @media ${device.desktop} {
-    width: 41px;
-    height: 39px;
-    align-items: center;
     display: none;
   }
 `;
@@ -52,7 +51,7 @@ export const Stripe = styled.div`
   height: 3px;
   width: 100%;
   height: 3px;
-  top: 26px;
+  top: 13px;
 
   @media ${device.desktop} {
     display: none;
@@ -69,8 +68,10 @@ export const Navigation = styled.nav`
   z-index: 4;
   height: 700px;
   width: 300px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
   font-size: 16px;
+  font-weight: bold;
 
   @media ${device.desktop} {
     display: flex;
@@ -83,23 +84,21 @@ export const Navigation = styled.nav`
 `;
 
 export const ContactButton = styled.button`
-  border: none;
-  border-radius: 20px;
+  border: 1px solid black;
   background: transparent;
-  color: white;
+  color: black;
   letter-spacing: 2px;
   text-transform: lowercase;
   line-height: 1.5;
-  padding: 20px;
+  padding: 15px;
   display: inline-block;
   z-index: 100;
   cursor: pointer;
   font-size: 16px;
 
   @media ${device.desktop} {
-    border: 2px solid white;
-    background: whitesmoke;
-    color: black;
+    border: 1px solid white;
+    color: white;
     height: 42px;
     width: 117px;
     padding: 10px;
@@ -107,18 +106,10 @@ export const ContactButton = styled.button`
     align-items: center;
     justify-content: center;
   }
-
-  &:hover {
-    border: 2px solid white;
-    border-radius: 20px;
-    background: white;
-    color: ${colors.footerfekete};
-  }
 `;
 
 export const Menuitems = styled.div`
   flex-flow: column nowrap;
-  color: white;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -128,9 +119,14 @@ export const Menuitems = styled.div`
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   background: linear-gradient(
     170deg,
-    rgba(9, 6, 10, 1) 40%,
+    rgba(255, 255, 255, 1) 20%,
     rgba(190, 190, 191, 0) 90%
   );
+  color: rgba(0, 0, 0, 0.8);
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
 
   @media ${device.desktop} {
     align-items: center;
@@ -157,6 +153,7 @@ export const Menuitem = styled.div`
   letter-spacing: 2px;
   align-items: center;
 
+
   @media ${device.desktop} {
     display: flex;
     font-style: normal;
@@ -165,6 +162,7 @@ export const Menuitem = styled.div`
     text-decoration: none;
     line-height: 1.5;
     padding: 10px;
+    color: white;
   }
 `;
 
@@ -175,29 +173,14 @@ export const PortfolioMenuitem = styled.div`
   cursor: pointer;
   letter-spacing: 2px;
   align-items: center;
+  color: rgba(0,0,0, 0.8);
 `;
 
-const GlobalStyle = createGlobalStyle`
-  * {
-
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    text-decoration: none;
-    list-style: none;
-    
-
- 
-
-  }
-
-`;
 const Maincontainer = styled.div`
   display: flex;
   height: 100px;
   width: 100%;
-  background: ${colors.footerfekete};
+  background: rgba(0, 0, 0, 0.9);
   position: absolute;
 
   @media ${device.desktop} {
@@ -205,7 +188,7 @@ const Maincontainer = styled.div`
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    background: ${colors.footerfekete};
+    background: rgba(0, 0, 0, 0.9);
   }
 `;
 const TitleDiv = styled.div`
@@ -227,12 +210,18 @@ const TitleDiv = styled.div`
 `;
 
 const StyledNavLink = styled(NavLink)`
-  color: white;
-`;
+  color: rgba(0, 0, 0, 0.8);
 
-const InnerStyledNavLink = styled(StyledNavLink)`
-  & :hover {
-    transform: rotate(1deg);
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  @media ${device.desktop} {
+    color: white;
+
+    &:hover {
+      color: lightpink;
+    }
   }
 `;
 
@@ -251,7 +240,6 @@ const DropDown = styled.div`
     top: 40px;
     padding: 24px 15px;
     flex-flow: column;
-    border-radius: 10px;
   }
 
   ${({ isOpen }) =>
@@ -272,8 +260,8 @@ class Navbar extends React.Component {
   }
 
   static defaultProps = {
-    dropDowncolor: "rgb(8, 8, 8)",
-    linkColors: "white",
+    dropDowncolor: "rgba(8, 8, 8, 0.9)",
+    linkColors: "rgb(198,176,176)",
   };
 
   onBodyClick = () => {
@@ -296,7 +284,10 @@ class Navbar extends React.Component {
         <Maincontainer style={this.props.style}>
           <TitleDiv>
             <NavLink to="/">
-              <img src="https://static.llllllllllll.com/eniko/anniekostolany/Annie-Kostolany-White-low-res.png" alt="Annie Kostolany"/>
+              <img
+                src="https://static.llllllllllll.com/eniko/anniekostolany/Annie-Kostolany-White-low-res.png"
+                alt="Annie Kostolany"
+              />
             </NavLink>
           </TitleDiv>
 
@@ -322,7 +313,7 @@ class Navbar extends React.Component {
               </Menuitem>
 
               <PortfolioMenuitem
-                onMouseOver={() => {
+                onClick={() => {
                   this.setState({ isDropDownOpen: true });
                 }}
                 onMouseLeave={() => {
@@ -339,7 +330,7 @@ class Navbar extends React.Component {
                   Portfolio
                   <i
                     style={{
-                      color: "white",
+                      color: "rgb(170,134,140)",
                       fontSize: "20px",
                       padding: "5px 3px 3px 3px",
                     }}
@@ -354,38 +345,32 @@ class Navbar extends React.Component {
                   backgroundColor={this.props.dropDowncolor}
                 >
                   <Menuitem>
-                    <InnerStyledNavLink to="/couples">
-                      Love shoots
-                    </InnerStyledNavLink>
+                    <StyledNavLink to="/couples">Love shoots</StyledNavLink>
                   </Menuitem>
 
                   <Menuitem>
-                    <InnerStyledNavLink to="/family">
+                    <StyledNavLink to="/family">
                       Family & celebration
-                    </InnerStyledNavLink>
+                    </StyledNavLink>
                   </Menuitem>
 
                   <Menuitem>
-                    <InnerStyledNavLink to="/solo-travelers">
+                    <StyledNavLink to="/solo-travelers">
                       Solo travelers
-                    </InnerStyledNavLink>
+                    </StyledNavLink>
                   </Menuitem>
 
                   <Menuitem>
-                    <InnerStyledNavLink to="/boudoir">
-                      Boudoir
-                    </InnerStyledNavLink>
+                    <StyledNavLink to="/boudoir">Boudoir</StyledNavLink>
                   </Menuitem>
                   <Menuitem>
-                    <InnerStyledNavLink to="/wedding">
-                      Wedding
-                    </InnerStyledNavLink>
+                    <StyledNavLink to="/wedding">Wedding</StyledNavLink>
                   </Menuitem>
                   <Menuitem>
-                    <InnerStyledNavLink to="/how-does-it-work">
+                    <StyledNavLink to="/how-does-it-work">
                       How does it work?{" "}
                       <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    </InnerStyledNavLink>
+                    </StyledNavLink>
                   </Menuitem>
                 </DropDown>
               </PortfolioMenuitem>
