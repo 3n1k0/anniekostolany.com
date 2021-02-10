@@ -6,6 +6,7 @@ import { device } from "./mediaquery";
 
 //checked components
 
+
 export const CardsContainer = styled.div`
   display: flex;
   flex-flow: column;
@@ -301,3 +302,16 @@ export const ButtonContainer = styled.div`
   display: flex;
   flex-flow: column;
 `;
+
+
+export const StyledButton = styled(Button)`
+  text-align: center;
+  padding: 25px;
+  width: max-content;
+  font-size: 13px;
+
+  &:hover {
+    background: transparent;
+  }
+`;
+

@@ -12,6 +12,7 @@ import {
   ReviewContainer,
   IntroContainer,
   CardsContainerReversed,
+  StyledButton
 } from "../config/Ui";
 import { NavLink } from "react-router-dom";
 
@@ -186,16 +187,6 @@ const WideContainer = styled.div`
     @media ${device.desktop} {
       font-size: 26px;
     }
-  }
-`;
-
-const StyledButton = styled(Button)`
-  text-align: center;
-  padding: 30px;
-  width: max-content;
-
-  &:hover {
-    background: transparent;
   }
 `;
 
