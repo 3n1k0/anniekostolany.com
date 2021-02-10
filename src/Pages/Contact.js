@@ -7,121 +7,229 @@ import GlobalStyle from "../config/globalStyles";
 import { NavLink } from "react-router-dom";
 import { Gallery } from "../config/Ui";
 
-
-const MainContainer = styled.div`
-img{
-
-  &:hover{
-filter: brightness(80%);
-  }
-}
-`
-
-const Button = styled.button`
-  font-size: 14px;
-  font-weight: 600;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  padding: 21px 34px;
-  border-width: 2px;
-  border-style: solid;
-  background-color: transparent;
+const ContactForm = styled.div`
   width: 100%;
-  margin: 30px auto;
-  border: 1px solid black;
+  margin-bottom: 50px;
+`;
+const MainContainer = styled.div`
+  width: 100%;
+  color: black;
 
-  &:hover {
-    background: rgba(90, 10, 10, 0.3);
+  img {
+    &:hover {
+      filter: brightness(80%);
+    }
   }
+
 `;
 
-
 const Container = styled.div`
+  padding-top: 100px;
   height: 100%;
   width: 100%;
-  color: #384047;
-  z-index: 40;
-  background: white;
+  color: black;
   display: grid;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
   padding-bottom: 20px;
+  z-index: 40;
 
   h2 {
     text-align: center;
-    font-size: 17px;
-
-    @media ${device.desktop} {
-      font-size: 25px;
-    }
-  }
-`;
-const ContactForm = styled.div`
-display: grid;
-justify-content: center;
-
-  form {
-    width: 100%;
-    min-width: 450px;
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 10px 20px 10px 20px;
-    background: rgba(76, 0, 19, 0.09);
-    border-radius: 8px;
-    position: relative;
-    border: none;
-    margin: 50px;
-  }
-
-  fieldset {
-    display: flex;
-    flex-flow: column;
-
-    border: none;
   }
 
   input,
-  textarea {
-    background: #384047;
-    border: none;
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-    background-color: rgba(214, 212, 208, 0.2);
-    color: #384047;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  textarea,
+  select,
+  button {
+    color: black;
+    font-size: 15px;
+  }
 
-    & :focus {
-      box-shadow: 8px 8px 35px rgba(192, 192, 192, 0.3);
-    }
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  .inner {
+    max-width: 758px;
+    margin: auto;
+    background: rgba(141, 97, 99, 0.5);
+    border: 10px solid rgb(0, 0, 0, 0.4);
+    padding: 77px 99px 87px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   }
 
   textarea {
+    resize: none;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  p {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+  }
+
+  .form-group {
+    position: relative;
+    display: block;
+    margin-bottom: 48px;
+    margin-top: 30px;
+  }
+  .form-group span {
+    font-size: 15px;
+    position: absolute;
+    top: 11px;
+    transition: all 0.2s ease;
+    transform-origin: 0 0;
+    cursor: text;
+  }
+  .form-group span.border {
+    height: 2px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 41px;
+    transform: scaleX(0);
+    transition: all 0.15s ease;
+  }
+
+  .form-control {
+    border: none;
+    border-bottom: 2px solid rgb(90, 90, 90);
+    display: block;
+    width: 100%;
+    height: 43px;
+    font-size: 15px;
+    background: none;
+  }
+  .form-control:focus,
+  .form-control:valid {
+    border-bottom: 2px solid rgb(119, 105, 106);
+  }
+  .form-control:focus + span,
+  .form-control:valid + span {
+    transform: translateY(-22px) scale(0.8);
+  }
+  .form-control:focus + span + .border,
+  .form-control:valid + span + .border {
+    transform: scaleX(1);
+  }
+
+  textarea.form-control:focus {
+    padding-top: 10px;
+    padding-bottom: 10px;
     height: 200px;
   }
 
-  h1 {
+  button {
+    border: none;
+    width: 162px;
+    height: 51px;
+    border: 2px solid rgb(90, 90, 90);
+    margin: auto;
+    margin-top: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    color: rgb(90, 90, 90);
     text-transform: uppercase;
-    text-align: center;
-    font-size: 37px;
-    line-height: 1.5;
-    letter-spacing: 0.337em;
-    font-weight: 100;
-    padding-bottom: 50px;
-    padding-top: 26px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  button i {
+    margin-left: 10px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(119, 105, 106);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  button:hover {
+    border-color: transparent;
+  }
+  button:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  button:hover i {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
   }
 
-  label {
-    padding-bottom: 10px;
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: black;
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 38px;
+    }
+
+    p {
+      font-size: 14px;
+      padding: 0;
+    }
+
+    .inner {
+      padding: 27px 20px 37px;
+      border: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      -o-box-shadow: none;
+    }
+
+    .wrapper {
+      background: #fff;
+      border: 10px solid #fff;
+    }
   }
 `;
 
@@ -138,33 +246,45 @@ class Contact extends React.Component {
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         setTimeout(function () {window.scrollTo(500, 0)},2);
         <Container>
-          <h2>Classic and beautiul weddings</h2>
-          <h2>Luxury boudoir & intimate portraiture photography</h2>
-          <p>
-            Contact me with questions, ideas and booking requests. I will try to
-            get back to you within a working day!{" "}
-          </p>
           <ContactForm>
-            <form action="https://formspree.io/mknqqvoz" method="POST">
-              <h1>Contact</h1>
-              <fieldset>
-                <label for="name">Name </label>
-                <input type="text" name="name" id="name" required />
+            <div class="wrapper">
+              <div class="inner">
+                <form action="https://formspree.io/mknqqvoz" method="POST">
+                  <h3>Contact Us</h3>
+                  <p>Classic and beautiul weddings.</p>
+                  <p>
+                    Luxury boudoir & intimate portraiture photography. Contact us
+                    with questions, ideas and booking requests.
+                  </p>
+                  <p>We will try to get back to you within a working day!</p>
 
-                <br />
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required />
-
-                <br />
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" />
-
-                <br />
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-              </fieldset>
-              <Button type="submit">Send</Button>
-            </form>
+                  <label class="form-group">
+                    <input type="text" class="form-control" required></input>
+                    <span>Your Name</span>
+                    <span class="border"></span>
+                  </label>
+                  <label class="form-group">
+                    <input type="text" class="form-control" required></input>
+                    <span for="">Your Mail</span>
+                    <span class="border"></span>
+                  </label>
+                  <label class="form-group">
+                    <textarea
+                      name=""
+                      id=""
+                      class="form-control"
+                      required
+                    ></textarea>
+                    <span for="">Your Message</span>
+                    <span class="border"></span>
+                  </label>
+                  <button>
+                    Submit
+                    <i class="fas fa-angle-double-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
           </ContactForm>
 
           <h2>Check out these galleries for inspiration:</h2>
