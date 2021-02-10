@@ -4,7 +4,6 @@ import { device } from "./mediaquery";
 const GlobalStyle = createGlobalStyle`
 
 html {
-  
 } 
 
   body {
@@ -17,6 +16,7 @@ html {
     line-height: 1.5;
     font-style: normal;
     color: rgb(100, 100, 100);
+
 
   }
     h1, h2, h3, h4, h5, h6 {
@@ -42,6 +42,8 @@ p{
 
     
   }
+
+  button:focus {outline:0;}
 `;
 
 export default GlobalStyle;
