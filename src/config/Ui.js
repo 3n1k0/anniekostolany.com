@@ -1,11 +1,10 @@
-import styled from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 import { NavLink } from "react-router-dom";
 import { colors } from "./config";
 import { fonts } from "./config";
 import { device } from "./mediaquery";
 
 //checked components
-
 
 export const CardsContainer = styled.div`
   display: flex;
@@ -23,15 +22,14 @@ export const CardsContainer = styled.div`
     margin: 0 auto;
     padding: 50px 0px;
 
-    p{
+    p {
       min-width: 300px;
-
     }
   }
   @media ${device.tablet} {
     width: 70%;
 
-    p{
+    p {
       min-width: 200px;
     }
   }
@@ -52,8 +50,7 @@ export const CardsContainerReversed = styled(CardsContainer)`
   }
 `;
 
-///////// unchecked components 
-
+///////// unchecked components
 
 export const Sharedbox = styled.div`
   width: 100%;
@@ -92,8 +89,6 @@ export const Text = styled.div`
   @media ${device.desktop} {
     width: 50%;
   }
-
-
 `;
 
 export const Gallery = styled.div`
@@ -112,6 +107,14 @@ export const Gallery = styled.div`
     height: 100%;
     width: 100%;
     object-fit: cover;
+
+    ${({ isHover }) =>
+      isHover &&
+      css`
+        &:hover {
+          filter: brightness(60%);
+        }
+      `}
   }
 `;
 
@@ -262,7 +265,6 @@ export const ReviewContainer = styled(IntroContainer)`
   }
 `;
 
-
 export const Button = styled(NavLink)`
   border: 1px solid rgb(133, 82, 89);
   background: rgb(133, 82, 89);
@@ -303,7 +305,6 @@ export const ButtonContainer = styled.div`
   flex-flow: column;
 `;
 
-
 export const StyledButton = styled(Button)`
   text-align: center;
   padding: 25px;
@@ -314,4 +315,3 @@ export const StyledButton = styled(Button)`
     background: transparent;
   }
 `;
-
