@@ -212,16 +212,16 @@ const TitleDiv = styled.div`
   img {
     position: absolute;
     left: -20px;
-    top: -50px;
+    top: -30px;
     z-index: 100;
-    width: 250px;
-    height: 170px;
+    width: 230px;
+    height: 150px;
 
     @media ${device.desktop} {
       width: 350px;
       height: 200px;
       left: -50px;
-      top: -47px;
+      top: -55px;
     }
   }
 `;

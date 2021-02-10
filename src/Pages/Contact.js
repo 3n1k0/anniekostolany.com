@@ -5,7 +5,8 @@ import { Helmet } from "react-helmet";
 import { device } from "../config/mediaquery";
 import GlobalStyle from "../config/globalStyles";
 import { NavLink } from "react-router-dom";
-import { Gallery } from "../config/Ui";
+import { Gallery, ReviewContainer, StyledButton } from "../config/Ui";
+
 
 const ContactForm = styled.div`
   width: 100%;
@@ -253,8 +254,8 @@ class Contact extends React.Component {
                   <h3>Contact Us</h3>
                   <p>Classic and beautiul weddings.</p>
                   <p>
-                    Luxury boudoir & intimate portraiture photography. Contact us
-                    with questions, ideas and booking requests.
+                    Luxury boudoir & intimate portraiture photography. Contact
+                    us with questions, ideas and booking requests.
                   </p>
                   <p>We will try to get back to you within a working day!</p>
 
@@ -317,6 +318,25 @@ class Contact extends React.Component {
             />
           </NavLink>
         </Gallery>
+        <ReviewContainer style={{ backgroundColor: "rgb(114,123,158)" }}>
+          <div>
+            <p>
+              I worked with Annie two times and both are amazing experiences.
+              Most of beautiful pictures on my instagram is her worked. I dont
+              have sense/idea of how to make good pictures, but i want to have
+              one for my social media. luckily she have the best taste in taking
+              pictures... always love to shoot with her and never disappoint
+              with the result. I will book her again definitely for the fall
+              shoot! — Anna B."
+            </p>
+            <img
+              src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/100876558_3054914484598032_3446333375227363328_o.jpg?_nc_cat=102&ccb=3&_nc_sid=e3f864&_nc_ohc=oMTVa_Ln1k8AX8N84kG&_nc_ht=scontent-amt2-1.xx&oh=e2c33f4e9c136e5d2532ed6d38cfb089&oe=6048026D"
+              alt="couple dancing in street"
+              loading="lazy"
+            ></img>
+          </div>
+          <StyledButton to={"/reviews"}>What other people say</StyledButton>
+        </ReviewContainer>
       </MainContainer>
     );
   }
