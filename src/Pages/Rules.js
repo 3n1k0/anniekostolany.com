@@ -28,7 +28,6 @@ const Line = styled.hr`
   margin: 20px 0px;
 `;
 
-
 const Container = styled.div`
   margin: 0 auto;
   width: 100%;
@@ -73,7 +72,6 @@ const Container = styled.div`
     }
   }
 `;
-
 
 const Step = styled.div`
   display: flex;
@@ -165,10 +163,12 @@ class Rules extends React.Component {
             <Step>
               <h2>Step 5</h2>
               <p>
-                I maintain a very good relationship with many of my past
-                clients. We just keep in touch on social media to be aware of
-                what's happening in their lives while I share my thoughts and
-                imporant milestones with them.{" "}
+                I maintain a very good relationship with most of my past
+                clients. Many of them became my friends. Caring about people
+                while guiding them though the shoot is an important part of the
+                process. This is not just a photoshoot, it's a full experience
+                that you will not forget.
+                Excited to hear more? Let's chat!
               </p>
             </Step>
           </div>
