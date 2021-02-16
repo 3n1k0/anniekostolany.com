@@ -1,34 +1,32 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { fonts } from "../config/config";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import {
   Button,
   ButtonContainer,
   GoToTopButton,
-  Sharedbox,
-  CardsContainer,
-  CardInnerContainer,
+  ReviewContainer,
   Text,
   Szepalcim,
+  StyledButton,
 } from "../config/Ui";
-import Reviews from "./Reviews";
-import UploadcareImage from "../components/UploadcareImage";
+import { device } from "../config/mediaquery";
+import GlobalStyle from "../config/globalStyles";
 
 const Container = styled.div`
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 150px;
   color: #585656;
   text-align: center;
 
-  p {
-    font-family: ${fonts.mindenmas};
-    font-size: 1em;
-    text-align: left;
-    line-height: 1.5;
-    letter-spacing: 0.005em;
+  img {
+    width: 90%;
+
+    @media ${device.desktop} {
+      width: 60%;
+    }
   }
 `;
 
@@ -44,6 +42,7 @@ class Couples extends React.Component {
             content="Couple photography - Amsterdam-based professional photographer"
           />
         </Helmet>
+        <GlobalStyle />
         <Container>
           <Text>
             <Szepalcim>
@@ -51,91 +50,56 @@ class Couples extends React.Component {
               taken.
             </Szepalcim>
           </Text>
-          <UploadcareImage
-            uuid="09f92cee-4187-47fc-ab69-a7942b9695c0"
-            alt="Couple kissing in boat"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-wedding-28.jpg"
+            alt="Jordaan wedding couple"
+            loading="lazy"
           />
-
-          <UploadcareImage
-            uuid="cedb59a9-ff26-464e-a421-62a31cbe5a36"
-            alt="Couple with windmills"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham-8.jpg"
+            alt="Couple in Amsterdam"
+            loading="lazy"
           />
-          <UploadcareImage
-            uuid="c327f660-2fbc-46af-b4b8-39b942876196"
-            alt="Couple kissing"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/birthday-shoot-001.jpg"
+            alt="couple picnic in park"
+            loading="lazy"
           />
-
-          <UploadcareImage
-            uuid="fc9f7629-8888-40cd-a8e4-7f9bf6600de2"
-            alt="Couple in field having picnic"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/joordan-couple-session-10.jpg"
+            alt="love shoot Amsterdam"
+            loading="lazy"
           />
-
-          <UploadcareImage
-            uuid="9b40987d-31ff-4f10-a73d-f423a6c79f56"
-            alt="Couple in street"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/joordan-couple-session-30.jpg"
+            alt="love shoot Amsterdam Jordaan"
+            loading="lazy"
           />
-
-          <Sharedbox>
-            <UploadcareImage
-              uuid="1c7357c3-4923-45ec-94a0-71711501f7c0"
-              alt="Couple kissing"
-            />
-
-            <UploadcareImage
-              uuid="d4561dff-998d-4567-99fc-9b78827fd266"
-              alt="Couple kissing"
-            />
-          </Sharedbox>
-
-          <CardsContainer data-aos="fade-right">
-            <UploadcareImage
-              style={{ width: "70%" }}
-              uuid="89a9e174-5bc7-42df-956c-e32c54bc7e5e"
-              alt="Couple with bouquet"
-            />
-
-            <CardInnerContainer>
-              You wanna know how you can tell if you’re meant to be with
-              someone? It’s simple. Just sit and have a conversation. Some
-              people when you talk to them, it’s like trying to listen to
-              classical music on a radio with no antenna. You can push that dial
-              back and forth all you want, but you only get static. But when
-              you’re meant to be with someone, and they truly are the one, you
-              just sit, start talking and a Beethoven sonata will begin to play.
-              <br /> — The Perfect Date (2019)
-            </CardInnerContainer>
-          </CardsContainer>
-
-          <UploadcareImage
-            uuid="76a0e245-8dc9-4f0c-ae5b-b6c0ff700a4d"
-            alt="Japanese wedding couple"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham-25.jpg"
+            alt="couple shoot Amsterdam"
+            loading="lazy"
           />
-
-          <UploadcareImage
-            uuid="c14ab8e7-e851-433f-9a0e-7cad6448b771"
-            alt="Couple hugging"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham-26.jpg"
+            alt="couple shoot Amsterdam"
+            loading="lazy"
           />
-
-          <UploadcareImage
-            uuid="ffcac3b3-cab5-4446-9859-373868b56e79"
-            alt="Couple hugging on bridge"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/ayo+ayo-6.jpg"
+            alt="couple in Amsterdam"
+            loading="lazy"
+          />{" "}
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/betti-steve-9.jpg"
+            alt="lifestyle couple session"
+            loading="lazy"
+          />{" "}
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/birthday-shoot-162-Edit-Edit.jpg"
+            alt="lifestyle couple at home"
+            loading="lazy"
           />
-
-          <UploadcareImage
-            uuid="34df9015-ef3f-4da5-8a7f-5f6024878d5d"
-            alt="Engagement shoot"
-          />
-
-          <UploadcareImage
-            uuid="1507a4be-c404-4f79-8e86-622b2050da8b"
-            alt="Couple in livingroom with cat"
-          />
-
-          <UploadcareImage
-            uuid="ca478d51-d7f8-4073-83c5-14192ab3227a"
-            alt="Couple walking"
-          />
-
           <ButtonContainer data-aos="fade-down">
             <Button to={"/contact"}> Contact Annie </Button>
             <GoToTopButton
@@ -146,9 +110,29 @@ class Couples extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
+          <ReviewContainer>
+            <div>
+              <p>
+                Annie is such a great and talented photographer! She did an
+                amazing Job and we couldn´t be happier. From beginning i knew
+                she is the perfect photographer and person for my planned
+                marriage proposal. She took care of everything so that the
+                moment was just perfect. The location, lights, position
+                everything was adoreable. Additionally she is such a warm Person
+                and we felt really comfortable during the shoot! She captured
+                our real emotions perfectly. We can recommend her to everyone!!!
+                Annie - thank you so much.
+                <br />- Sebastian W.
+              </p>
+              <img
+                src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-proposal-18.jpg"
+                alt="surprise proposal"
+                loading="lazy"
+              ></img>
+            </div>
+            <StyledButton to={"/reviews"}>What other people say</StyledButton>
+          </ReviewContainer>
         </Container>
-
-        <Reviews />
       </div>
     );
   }

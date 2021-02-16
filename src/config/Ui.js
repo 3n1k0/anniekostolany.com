@@ -54,11 +54,15 @@ export const CardsContainerReversed = styled(CardsContainer)`
 
 export const Sharedbox = styled.div`
   width: 100%;
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  width: 100%;
 
   @media ${device.desktop} {
-    width: 60%;
+    width: 40%;
+    margin: 0 auto;
+    flex-direction: row;
+
   }
 `;
 

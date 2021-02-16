@@ -197,25 +197,6 @@ class Investment extends React.Component {
               </b>
             </p>
           </Information>
-
-          <Information>
-            <h1>Additional information</h1>
-            <p>
-              50% non-refundable retainer is required for bookings. Bookings
-              will not be accepted without this deposit. (In case of illness or
-              bad weather, a new appointment date can be agreed, but in the case
-              of outright cancellation, the deposit is non-refundable.)
-            </p>
-            <p>
-              Remaining payment becomes due after the shoot via bank transfer,
-              PayPal or cash. Annie Kostolany Photography does not provide .raw
-              or unedited photos.{" "}
-            </p>
-            <p>
-              0% interest payment plans are available with any package of your
-              choice from Annie Kostolany Photography.
-            </p>
-          </Information>
           <Gallery style={{ paddingTop: "0" }}>
             <img
               src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-wedding-96.jpg"
