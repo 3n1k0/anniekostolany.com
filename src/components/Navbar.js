@@ -239,7 +239,7 @@ const DropDown = styled.div`
     position: absolute;
     z-index: 5;
     top: 40px;
-    padding: 24px 15px;
+    padding: 15px;
     flex-flow: column;
   }
 

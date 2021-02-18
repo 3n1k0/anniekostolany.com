@@ -283,7 +283,7 @@ class Contact extends React.Component {
         <Gallery isHover={true}>
           <NavLink to={"/boudoir"}>
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/6.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/6.jpg"
               alt="boudoir shoot"
               loading="lazy"
               title="Boudoir shoots"
@@ -292,7 +292,7 @@ class Contact extends React.Component {
 
           <NavLink to={"/wedding"}>
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/Yalda%20en%20Wesley-84.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/yalda-en-wesley/Yalda%20en%20Wesley-84.jpg"
               alt="bride"
               loading="lazy"
               title="Wedding shoots"
@@ -304,7 +304,7 @@ class Contact extends React.Component {
               src="https://static.llllllllllll.com/eniko/anniekostolany/DSC_3360.jpg"
               alt="girl with bouquet"
               loading="lazy"
-              title="Travel photogrpahy"
+              title="girl at window"
             />
           </NavLink>
         </Gallery>
@@ -320,8 +320,8 @@ class Contact extends React.Component {
               shoot! — Anna B."
             </p>
             <img
-              src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/100876558_3054914484598032_3446333375227363328_o.jpg?_nc_cat=102&ccb=3&_nc_sid=e3f864&_nc_ohc=oMTVa_Ln1k8AX8N84kG&_nc_ht=scontent-amt2-1.xx&oh=e2c33f4e9c136e5d2532ed6d38cfb089&oe=6048026D"
-              alt="couple dancing in street"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/anna-b/Anna-19.jpg"
+              alt="girl with bouquet"
               loading="lazy"
             ></img>
           </div>

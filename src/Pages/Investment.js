@@ -109,22 +109,22 @@ class Investment extends React.Component {
           <GlobalStyle />
           <Gallery>
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/wedding-ghita-allard-55.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/githa-en-allard/wedding-55.jpg"
               alt="bride in forest"
               loading="lazy"
             />
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/wedding-ghita-allard-44.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/githa-en-allard/wedding-44.jpg"
               alt="wedding couple kiss"
               loading="lazy"
             />
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/wedding-ghita-allard-1.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/githa-en-allard/wedding-1.jpg"
               alt="wedding details"
               loading="lazy"
             />
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/Yalda%20en%20Wesley-69.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/yalda-en-wesley/Yalda%20en%20Wesley-69.jpg"
               alt="wedding dresses"
               loading="lazy"
             />
@@ -153,7 +153,7 @@ class Investment extends React.Component {
                 </p>
               </div>
               <img
-                src="https://static.llllllllllll.com/eniko/anniekostolany/Yalda%20en%20Wesley-13.jpg"
+                src="https://static.llllllllllll.com/eniko/anniekostolany/yalda-en-wesley/Yalda%20en%20Wesley-13.jpg"
                 alt="luxury details"
                 loading="lazy"
               />
@@ -161,8 +161,7 @@ class Investment extends React.Component {
 
             <ButtonContainer>
               <Button style={{ marginTop: "20px" }} to={"/contact"}>
-                {" "}
-                Contact Annie{" "}
+                Contact Annie
               </Button>
             </ButtonContainer>
           </TextContainer>
@@ -189,7 +188,6 @@ class Investment extends React.Component {
               For our wedding price guide and other enquiries please send an
               email to mail@anniekostolany.com or fill out the
               <b>
-                {" "}
                 <NavLink style={{ color: "#A77C74" }} to={"/wedding"}>
                   contact form
                 </NavLink>
@@ -199,23 +197,23 @@ class Investment extends React.Component {
           </Information>
           <Gallery style={{ paddingTop: "0" }}>
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-wedding-96.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-zandvoort-wedding/amsterdam-wedding-96.jpg"
               alt="beach wedding"
               loading="lazy"
             />
             <img
               style={{ filter: "brightness(90%)" }}
-              src="https://static.llllllllllll.com/eniko/anniekostolany/jordaan-engagement-26.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/jordaan-surprise-engagement/jordaan-engagement-26.jpg"
               alt="engangement ring"
               loading="lazy"
             />
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/Tania+Victor%20wedding-121.jpg"
-              alt="couple on gracht"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/tania-and-victor/Tania+Victor%20wedding-121.jpg"
+              alt="couple celebrating"
               loading="lazy"
             />
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/Yalda%20en%20Wesley-64.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/yalda-en-wesley/Yalda%20en%20Wesley-64.jpg"
               alt="wedding couple"
               loading="lazy"
             />

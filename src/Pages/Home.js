@@ -127,7 +127,7 @@ const WideContainer = styled.div`
   height: 800px;
   background: lightblue;
   width: 100%;
-  background-image: url("https://static.llllllllllll.com/eniko/anniekostolany/Yalda%20en%20Wesley-52.jpg");
+  background-image: url("https://static.llllllllllll.com/eniko/anniekostolany/yalda-en-wesley/Yalda%20en%20Wesley-52.jpg");
   background-size: cover;
   background-position: 20% 30%;
   filter: brightness(98%);
@@ -223,7 +223,7 @@ class Home extends React.Component {
               <div>
                 <h2>View gallery</h2>
                 <img
-                  src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham-8.jpg"
+                  src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham/karen-graham-8.jpg"
                   alt="couple smiling"
                   loading="lazy"
                 />
@@ -234,7 +234,7 @@ class Home extends React.Component {
               <div>
                 <h2>See packages</h2>
                 <img
-                  src="https://static.llllllllllll.com/eniko/anniekostolany/betsy-25.jpg"
+                  src="https://static.llllllllllll.com/eniko/anniekostolany/betsy/betsy-25.jpg"
                   alt="girl with flowers"
                   loading="lazy"
                 />
@@ -245,7 +245,7 @@ class Home extends React.Component {
               <div>
                 <h2>Get in touch</h2>
                 <img
-                  src="https://static.llllllllllll.com/eniko/anniekostolany/ayo+ayo-30.jpg"
+                  src="https://static.llllllllllll.com/eniko/anniekostolany/ayo+ayo/ayo+ayo-30.jpg"
                   alt="couple kissing"
                   loading="lazy"
                 />
@@ -348,7 +348,7 @@ class Home extends React.Component {
                 <br />- Tania
               </p>
               <img
-                src="https://static.llllllllllll.com/eniko/anniekostolany/Tania+Victor%20wedding-106.jpg"
+                src="https://static.llllllllllll.com/eniko/anniekostolany/tania-and-victor/Tania+Victor%20wedding-106.jpg"
                 alt="couple dancing in street"
                 loading="lazy"
               ></img>

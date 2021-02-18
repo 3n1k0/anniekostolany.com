@@ -51,17 +51,17 @@ class Couples extends React.Component {
             </Szepalcim>
           </Text>
           <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-wedding-28.jpg"
+            src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-zandvoort-wedding/amsterdam-wedding-28.jpg"
             alt="Jordaan wedding couple"
             loading="lazy"
           />
           <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham-8.jpg"
+            src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham/karen-graham-8.jpg"
             alt="Couple in Amsterdam"
             loading="lazy"
           />
           <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/birthday-shoot-001.jpg"
+            src="https://static.llllllllllll.com/eniko/anniekostolany/marina-and-decio/birthday-shoot-001.jpg"
             alt="couple picnic in park"
             loading="lazy"
           />
