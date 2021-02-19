@@ -122,24 +122,6 @@ export const Gallery = styled.div`
   }
 `;
 
-export const Szepalcim = styled.div`
-  font-family: ${fonts.mindenmas};
-  font-weight: 100;
-  font-size: 1.3em;
-
-  letter-spacing: 0px;
-  text-transform: none;
-  line-height: 1.5;
-  padding-bottom: 30px;
-  max-width: 100%;
-  margin: 0 auto;
-
-  @media ${device.desktop} {
-    max-width: 65%;
-    font-size: 1.3em;
-  }
-`;
-
 export const ImageContainer = styled.div`
   width: 100%;
   margin: 0 auto;

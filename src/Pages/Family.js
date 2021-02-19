@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 import { fonts } from "../config/config";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, Szepalcim, Sharedbox } from "../config/Ui";
+import { Button, ButtonContainer, Sharedbox } from "../config/Ui";
 import Reviews from "./Reviews";
 import UploadcareImage from "../components/UploadcareImage";
 
@@ -37,11 +37,11 @@ class Family extends React.Component {
         </Helmet>
 
         <Container>
-          <Szepalcim>
+          <p>
             Whether it's the arrival of a new family member, an engagement, a
             bachelorette party or a family get-together, it's important to have
             these memories captured.{" "}
-          </Szepalcim>
+          </p>
 
           <UploadcareImage
             uuid="94c82395-3d66-4a9e-b203-59d26f1b070f"

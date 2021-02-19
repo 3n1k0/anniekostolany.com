@@ -8,7 +8,6 @@ import {
   GoToTopButton,
   ReviewContainer,
   Text,
-  Szepalcim,
   StyledButton,
 } from "../config/Ui";
 import { device } from "../config/mediaquery";
@@ -44,12 +43,9 @@ class Couples extends React.Component {
         </Helmet>
         <GlobalStyle />
         <Container>
-          <Text>
-            <Szepalcim>
-              I bet you are adorable together, but never get 'real photos'
-              taken.
-            </Szepalcim>
-          </Text>
+          <p>
+            I bet you are adorable together, but never get 'real photos' taken.
+          </p>
           <img
             src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-zandvoort-wedding/amsterdam-wedding-28.jpg"
             alt="Jordaan wedding couple"

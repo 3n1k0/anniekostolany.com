@@ -62,7 +62,7 @@ class About extends React.Component {
           <Text>
             <img
               alt="Annie Kostolany professional photographer"
-              src={`https://static.llllllllllll.com/eniko/anniekostolany/annie-kostolany.jpg`}
+              src={`https://static.llllllllllll.com/eniko/anniekostolany/mix/annie-kostolany.jpg`}
               loading="lazy"
             ></img>
             <h2>Hi! My name is Annie. </h2>
