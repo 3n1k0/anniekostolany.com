@@ -1,7 +1,6 @@
 import React from "react";
 import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
-import { fonts, colors } from "../config/config";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
@@ -29,15 +28,6 @@ const Line = styled.hr`
   margin: 20px 0px;
 `;
 
-const BookingSteps = styled.div`
-  padding-top: 30px;
-  width: 90%;
-
-  @media ${device.desktop} {
-    width: 70%;
-  }
-`;
-
 const Container = styled.div`
   margin: 0 auto;
   width: 100%;
@@ -53,28 +43,33 @@ const Container = styled.div`
   }
 
   h2 {
-    font-family: ${fonts.mindenmas};
-    color: ${colors.mindenmas};
     font-size: 30px;
     letter-spacing: 1px;
     text-transform: none;
     font-weight: 100;
-    color: ${colors.mindenmas};
     padding-right: 50px;
     width: 200px;
   }
-`;
 
-const Text = styled.div`
-  width: 90%;
-  font-family: ${fonts.mindenmas};
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.005em;
-
-  @media ${device.dekstop} {
-    width: 70%;
+  p {
+    width: 90%;
     font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.005em;
+
+    @media ${device.dekstop} {
+      width: 70%;
+      font-size: 18px;
+    }
+  }
+
+  div {
+    padding-top: 30px;
+    width: 90%;
+
+    @media ${device.desktop} {
+      width: 70%;
+    }
   }
 `;
 
@@ -101,88 +96,82 @@ class Rules extends React.Component {
         </Helmet>
 
         <Container>
-          <Text>
-            Since first picking up a camera, I have captured so many of life’s
-            most important moments via couple portraits to engagements,
-            weddings, maternity shoots, children, and many more. <br />
-            At the same time, my work has been featured by a number of different
-            publishers, including SALYSÉ, and Vogue Italia. <br /> <br /> Both
-            facets of photography require the same level of respect, discipline
-            and understanding, if you are to excel in them.
-            <br /> The quality of my work ultimately boils down to the knowledge
-            of one key factor: photography is the art of storytelling. <br />{" "}
-            It’s more than pointing and clicking, taking pictures and hoping for
-            the best. It’s about constructing an image that encapsulates a
-            moment in time. <br /> <br /> Using a bright, colorful, airy style,
-            my photos are able to capture not just the sights, but the sounds,
-            smells, and emotions of a special time in your life. <br />
-            In order to ensure that my work will do your life’s moments – big
-            and small – justice, I have an array of tailored sessions, which
-            will cater to your photographic needs, whatever your tastes or
-            targets.
-            <br /> <br />
-            If one sounds good to you, or if you have any questions, please feel
-            free to reach out to <i>mail@anniekostolany.com</i> or by filling
-            out the
+          <p>
+            If you are looking for someone to just show up and take photos, I
+            might not be the right photographer for you. The same goes if you
+            are looking for a great bargain deal, I am sure that there are
+            cheaper photographers out there than I. And that’s okay, because the
+            most important thing is that you and your photographer values are
+            the same. But if you are looking for someone that is more than just
+            another vendor for you on your wedding and that puts her soul into
+            her work to capture the two of you just like you are, then I am your
+            girl.{" "}
+          </p>
+          <p>
+            I'd love to learn more about you and your story. Fill out the
             <NavLink style={{ color: "darkred" }} to="/contact">
               {" "}
-              contact form
+              contact form{" "}
             </NavLink>
-            .
-          </Text>
+            and I'll be in touch ASAP.
+          </p>
 
-          <BookingSteps>
+          <div>
             <Step>
               <h2>Step 1</h2>
-              <Text>
-                Go to
-                <NavLink style={{ color: "darkred" }} to="/investment">
-                  {" "}
-                  Investments
-                </NavLink>{" "}
-                and pick a package you like.
-              </Text>
+              <p>
+                Start dreaming about your shoot/wedding day. Think about the
+                type of the location and the details. Look at Pinterest for
+                inspiration and try to create a mood board that captures the
+                feeling and idea you have in mind. Don't just pin the photos you
+                like. Save hairstyles, makeup, color inspiration, the whole mood
+                of what you'd like to capture.
+              </p>
             </Step>
             <Line />
 
             <Step>
               <h2>Step 2</h2>
-              <Text>Send me a message to check my availability.</Text>
+              <p>
+                Time to get in touch! Send me a link to your mood board and I
+                will set you up for a call where we discuss details like exact
+                time and location.
+              </p>
             </Step>
             <Line />
 
             <Step>
               <h2>Step 3</h2>
-              <Text>
-                I will send you an email to confirm the date for your shoot and
-                you can simply buy your package through the Investments tab. You
-                will also get a contract and a Dutch invoice at the time of your
-                booking.
-                <br /> If you prefer another payment method or would like to
-                discuss a payment plan, just let me know and I will do my best
-                to find the right solution for you.
-              </Text>
+              <p>
+                After our call I will send you a confirmation email for the
+                shoot. This email will contain the payment information and our
+                photography agreement. It is possible to set up a flexible
+                payment plan for your photoshoots so please do not hesitate to
+                get in touch and ask about it!
+              </p>
             </Step>
             <Line />
 
             <Step>
               <h2>Step 4</h2>
-              <Text>
-                We will discuss your ideas through a Zoom/Skype call, and go
-                through your mood board together to talk about your
-                expectations.
-              </Text>
+              <p>
+                Let’s shoot! You can expect your digital photos in a couple of
+                weeks, delivered beautifully in a private online gallery.
+              </p>
             </Step>
-            <Line />
 
             <Step>
               <h2>Step 5</h2>
-              <Text>
-                Let’s shoot! You can expect your digital photos in a couple of
-                weeks, delivered beautifully in a private online gallery.
-              </Text>
+              <p>
+                I maintain a very good relationship with most of my past
+                clients. Many of them became my friends. Caring about people
+                while guiding them though the shoot is an important part of the
+                process. This is not just a photoshoot, it's a full experience
+                that you will not forget.
+                Excited to hear more? Let's chat!
+              </p>
             </Step>
-          </BookingSteps>
+          </div>
 
           <VideoBox>
             <Video
