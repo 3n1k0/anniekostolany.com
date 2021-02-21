@@ -301,7 +301,7 @@ class Contact extends React.Component {
 
           <NavLink to={"/solo-travelers"}>
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/DSC_3360.jpg"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/mix/DSC_3360.jpg"
               alt="girl with bouquet"
               loading="lazy"
               title="girl at window"

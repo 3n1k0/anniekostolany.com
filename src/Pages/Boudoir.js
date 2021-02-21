@@ -4,40 +4,33 @@ import styled from "styled-components/macro";
 import { fonts } from "../config/config";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, GoToTopButton, Szepalcim } from "../config/Ui";
-import Reviews from "./Reviews";
-import UploadcareImage from "../components/UploadcareImage";
-
-const Sharedbox = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-
-  @media ${device.desktop} {
-    width: 60%;
-  }
-`;
+import {
+  Button,
+  ButtonContainer,
+  GoToTopButton,
+  ReviewContainer,
+  StyledButton,
+} from "../config/Ui";
 
 const Container = styled.div`
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 150px 0px 0px 0px;
   color: #585656;
-  text-align: center;
+  display: grid;
+  place-items: center;
 
   p {
-    font-family: ${fonts.mindenmas};
-    font-size: 1.1em;
-    text-align: left;
-    line-height: 1.5;
-    letter-spacing: 0.005em;
-    max-width: 90%;
-    padding-bottom: 20px;
+    width: 60%;
+    padding: 10px;
+  }
 
-    margin: 0 auto;
+  img {
+    width: 90%;
+    padding: 10px;
 
     @media ${device.desktop} {
-      max-width: 60%;
+      width: 60%;
     }
   }
 `;
@@ -48,7 +41,7 @@ class Boudoir extends React.Component {
       <div className="Boudoir">
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         <Helmet>
-          <title>Book your travelphotographer in Amsterdam</title>
+          <title>Book a professional photographer in Amsterdam</title>
           <meta
             name="description"
             content="Boudoir and escort photography in Amsterdam"
@@ -56,8 +49,7 @@ class Boudoir extends React.Component {
         </Helmet>
 
         <Container>
-          <Szepalcim>
-            {" "}
+          <p>
             The softness of silk, the color of peonies, the touch of lace...
             boudoir photography is about the details that reflect inner beauty
             and confidence. It's all about self-love and acceptance. <br />
@@ -65,11 +57,11 @@ class Boudoir extends React.Component {
             You are unique and capable.
             <br />
             <b>You are unstoppable.</b>
-          </Szepalcim>
+          </p>
 
-          <UploadcareImage
-            uuid="108988b4-88d8-4f77-8113-c1ac7dff994a"
-            alt="Girl posing with flowers"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/anna-b/Anna-16.jpg"
+            alt="girl with flowers"
           />
 
           <p>
@@ -89,15 +81,12 @@ class Boudoir extends React.Component {
             irresistible woman you are.
           </p>
 
-          <UploadcareImage
-            uuid="31f2e79f-55de-4313-a318-bbf84019fc29"
-            alt="Girl under veil"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/bridal-boudoir-6.jpg"
+            alt="woman in veil"
           />
 
-          <UploadcareImage
-            uuid="8b478ff8-938d-4df9-8497-25e3b941b631"
-            alt="Girl laughing on bed"
-          />
+          <img src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/6.jpg" />
 
           <p>
             My detailed and sophisticated retouch process includes several steps
@@ -105,68 +94,47 @@ class Boudoir extends React.Component {
             you feel 100% confident and comfortable with the images I deliver.
           </p>
 
-          <UploadcareImage
-            uuid="21f8ca05-b4fb-4de7-8817-f1181bd4e552"
-            alt="Girl with bouquet"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/Anna-20.jpg"
+            alt="girl with flowers"
+          />
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/bridal-boudoir-42.jpg"
+            alt="lingerie photoshoot"
+            loading="lazy"
+          />
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/4.jpg"
+            alt="lingerie fashion photoshoot"
+            loading="lazy"
           />
 
-          <UploadcareImage
-            uuid="4a517d56-4dd2-46e7-b192-97de0c773555"
-            alt="Girl laying on bed"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/Anna-5.jpg"
+            alt="lingerie fashion photoshoot"
+            loading="lazy"
           />
-
-          <Sharedbox>
-            <UploadcareImage
-              uuid="41b58a57-0c23-4346-83d9-881ef3f0d104"
-              alt="Girl laying on bed"
-            />
-
-            <UploadcareImage
-              uuid="b1595a34-7207-4398-8ca6-05367ddcd912"
-              alt="Bridal boudoir"
-            />
-          </Sharedbox>
-
-          <UploadcareImage
-            uuid="0efec2c3-3a2c-4760-85e0-fce606435a5d"
-            alt="Woman sitting in the window"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/5.jpg"
+            alt="girl looking through glass"
+            loading="lazy"
           />
-
-          <Sharedbox>
-            <UploadcareImage
-              uuid="c5ece3de-03a7-495f-8521-93ee010a94ac"
-              alt="Woman with bouquet"
-            />
-
-            <UploadcareImage
-              uuid="c97c0d4a-68d6-4480-99a2-ab0d5be7c51d"
-              alt="Girl sitting on bed"
-            />
-          </Sharedbox>
-
-          <Sharedbox>
-            <UploadcareImage
-              uuid="466280c7-b1fe-4f96-a354-aa2fd4f3d305"
-              alt="Woman with bouquet"
-            />
-
-            <UploadcareImage
-              uuid="9c11f2f8-bb89-46bf-9313-5ff0f3b98138"
-              alt="Girl laying on bed"
-            />
-          </Sharedbox>
-
-          <UploadcareImage
-            uuid="b6126280-9536-4534-bd8f-28345a2facec"
-            alt="Girl through window"
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/boudoir10.jpg"
+            alt="fashion shoot"
+            loading="lazy"
           />
-
-          <Szepalcim>
+          <img
+            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/Anna-13.jpg"
+            alt="girl by the window"
+            loading="lazy"
+          />
+          <p>
             <b>
               MAYBE YOU DON’T THINK IT’S IN YOU, BUT BELIEVE ME, GIVE A GIRL THE
               RIGHT LIGHTING AND SHE CAN DO ANYTHING.
             </b>
-          </Szepalcim>
+          </p>
 
           <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
@@ -179,7 +147,27 @@ class Boudoir extends React.Component {
             </GoToTopButton>
           </ButtonContainer>
         </Container>
-        <Reviews />
+        <ReviewContainer>
+          <div>
+            <p>
+              "Annie is wonderful to work with! We’re not camera-natural but
+              Annie really made us at ease. The photos turned out so well even
+              at a time when natural light was fading away. There was nothing
+              artificial or posed about the photos, they captured our moments.
+              Planning around the time of the shoot and our communication were
+              also easy. We received our photos earlier than expected. We would
+              recommend this experience to everyone! Once again – thank you
+              Annie!!"
+              <br />- Karen
+            </p>
+            <img
+              src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/sofie-1.jpg"
+              alt="bridal boudoir"
+              loading="lazy"
+            />
+          </div>
+          <StyledButton to={"/reviews"}>What other people say</StyledButton>
+        </ReviewContainer>
       </div>
     );
   }
