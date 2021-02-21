@@ -3,7 +3,7 @@ import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, Gallery } from "../config/Ui";
+import { Button, ButtonContainer, Gallery, } from "../config/Ui";
 import GlobalStyle from "../config/globalStyles";
 import { NavLink } from "react-router-dom";
 

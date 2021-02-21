@@ -1,36 +1,16 @@
 import React from "react";
-import { device } from "../config/mediaquery";
-import styled from "styled-components/macro";
-import { fonts } from "../config/config";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../config/Ui";
-import Reviews from "./Reviews";
-import UploadcareImage from "../components/UploadcareImage";
+import {
+  Button,
+  ButtonContainer,
+  GoToTopButton,
+  DoubleImageContainer,
+  MainContainer,
+  StyledButton
+} from "../config/Ui";
+import Image from "../components/Image";
 
-const Container = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  padding: 150px 0px 0px 0px;
-  color: #585656;
-  text-align: center;
-
-  p {
-    font-family: ${fonts.mindenmas};
-    font-size: 1.1em;
-    text-align: left;
-    line-height: 1.5;
-    letter-spacing: 0.005em;
-    max-width: 90%;
-    padding-bottom: 20px;
-
-    margin: 0 auto;
-
-    @media ${device.desktop} {
-      max-width: 60%;
-    }
-  }
-`;
 
 class Travelers extends React.Component {
   render() {
@@ -45,74 +25,33 @@ class Travelers extends React.Component {
           />
         </Helmet>
 
-        <Container>
+        <MainContainer>
           <p>
             When people think of the Netherlands, their imaginations are often
             limited to a few clichés: wooden clogs, windmills, bicycles… you get
             the picture. <br />
           </p>
-          <UploadcareImage
-            uuid="ede82bee-a352-45ab-9391-e774b5ae1ee8"
-            alt="Girl in front of windmill"
-          />
-          <Sharedbox data-aos="flip-left">
-            <UploadcareImage
-              uuid="87c8c464-2cd1-4e51-8cfa-3ab19b9bfb7b"
-              alt="Girl sitting in restaurant"
-            />
-
-            <UploadcareImage
-              uuid="95112e31-f154-4c77-b049-f3fad519adb7"
-              alt="Girl laughing among flowers"
-            />
-          </Sharedbox>
+          <Image src="betsy/betsy-1.jpg" alt="Girl in front of windmill" />
+          <DoubleImageContainer data-aos="flip-left">
+            <Image src="betsy/betsy-24.jpg" alt=" " />
+            <Image src="betsy/betsy-26.jpg" alt=" " />
+          </DoubleImageContainer>
           <p>
             <br /> When visiting, it’s important to remember that size isn’t
             everything, and despite being a small country geographically, the
             Netherlands is packed with world famous icons. <br />
           </p>
-          <Sharedbox data-aos="flip-right">
-            <UploadcareImage
-              uuid="916d6ec3-f827-42c5-bb6c-300e02823035"
-              alt="Girl playing violin in city center"
-            />
-            <UploadcareImage
-              uuid="29537621-3cb8-4d9e-80d7-6251c79dce9c"
-              alt="Girl in window"
-            />
-          </Sharedbox>
-          <UploadcareImage
-            uuid="4bb6482e-4357-4645-bf19-075cc3aafba8"
-            alt="Girl at canal and windmill"
-          />
-          <UploadcareImage
-            uuid="d0284b64-881c-4cf8-b002-b32c7a8fd5c1"
-            alt="Man standing at green streets"
-          />{" "}
-          <UploadcareImage
-            uuid="6f1a8938-5bae-4ef3-8e90-fef39ffa3769"
-            alt="Girl laughing at bridge"
-          />
-          <UploadcareImage
-            uuid="dfec249b-c90b-4af9-8d3b-ff04335a66b0"
-            alt="Girl sitting on bench"
-          />
-          <UploadcareImage
-            uuid="0b63aeda-1575-429c-9c83-09795545b07e"
-            alt="Girl in front of brick wall"
-          />
-          <UploadcareImage
-            uuid="9a74c78d-6adc-40ba-8f91-5e61a92e7e2a"
-            alt="Girl standing on bridge"
-          />
-          <UploadcareImage
-            uuid="7e9fea1f-7d72-4345-a8a0-43eff0cd3baa"
-            alt="Girl in pink dress"
-          />
-          <UploadcareImage
-            uuid="a2b936d8-c276-4908-b0ad-f7226a2f5c6c"
-            alt="Playful girl with flowers"
-          />
+          <DoubleImageContainer data-aos="flip-right">
+            <Image src="stephanie/stephanie-4" alt=" " />
+            <Image src="stephanie/stephanie-8" alt=" " />
+          </DoubleImageContainer>
+
+          <Image src="mix/spring2" alt=" " />
+          <Image src="mix/DSC_3097.jpg" alt=" " />
+          <Image src="mix/DSC_3360.jpg" alt=" " />
+          <Image src="tresor/tresor-3.jpg" alt=" " />
+          <Image src="tresor/desiree/desiree-18.jpg" alt=" " />
+
           <p>
             The fact is that Amsterdam’s web of canals, the stunning works of
             Old Masters, unique Delft Blue earthenware, and tulip fields
@@ -139,8 +78,7 @@ class Travelers extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-        </Container>
-        <Reviews />
+        </MainContainer>
       </div>
     );
   }

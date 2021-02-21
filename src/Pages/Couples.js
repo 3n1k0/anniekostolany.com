@@ -7,27 +7,12 @@ import {
   ButtonContainer,
   GoToTopButton,
   ReviewContainer,
-  Text,
+  MainContainer,
   StyledButton,
+  DoubleImageContainer,
 } from "../config/Ui";
-import { device } from "../config/mediaquery";
 import GlobalStyle from "../config/globalStyles";
-
-const Container = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 150px;
-  color: #585656;
-  text-align: center;
-
-  img {
-    width: 90%;
-
-    @media ${device.desktop} {
-      width: 60%;
-    }
-  }
-`;
+import Image from "../components/Image";
 
 class Couples extends React.Component {
   render() {
@@ -42,61 +27,55 @@ class Couples extends React.Component {
           />
         </Helmet>
         <GlobalStyle />
-        <Container>
+        <MainContainer>
           <p>
             I bet you are adorable together, but never get 'real photos' taken.
           </p>
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-zandvoort-wedding/amsterdam-wedding-28.jpg"
+          <Image
+            src="amsterdam-zandvoort-wedding/amsterdam-wedding-28.jpg"
             alt="Jordaan wedding couple"
-            loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham/karen-graham-8.jpg"
+          <Image
+            src="karen-graham/karen-graham-8.jpg"
             alt="Couple in Amsterdam"
-            loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/marina-and-decio/birthday-shoot-001.jpg"
+          <Image
+            src="marina-and-decio/birthday-shoot-001.jpg"
             alt="couple picnic in park"
-            loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/joordan-couple-session-10.jpg"
+
+          <Image
+            src="mix/joordan-couple-session-10.jpg"
             alt="love shoot Amsterdam"
-            loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/joordan-couple-session-30.jpg"
-            alt="love shoot Amsterdam Jordaan"
-            loading="lazy"
+          <Image
+            src="mix/joordan-couple-session-30.jpg"
+            alt="couple picnic in park"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham-25.jpg"
-            alt="couple shoot Amsterdam"
-            loading="lazy"
+          <Image
+            src="karen-graham/karen-graham-25.jpg"
+            alt="Couple shoot Amsterdam"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham-26.jpg"
-            alt="couple shoot Amsterdam"
-            loading="lazy"
+          <Image
+            src="karen-graham/karen-graham-26.jpg"
+            alt="Couple in Amsterdam"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/ayo+ayo-6.jpg"
-            alt="couple in Amsterdam"
-            loading="lazy"
-          />{" "}
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/betti-steve-9.jpg"
-            alt="lifestyle couple session"
-            loading="lazy"
-          />{" "}
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/birthday-shoot-162-Edit-Edit.jpg"
-            alt="lifestyle couple at home"
-            loading="lazy"
-          />
-          <ButtonContainer data-aos="fade-down">
+          <Image src="ayo+ayo/ayo+ayo-6.jpg" alt="couple in Amsterdam" />
+
+          <DoubleImageContainer>
+            <Image
+              data-aos="fade-right"
+              src="betti-steve/betti-steve-9.jpg"
+              alt="lifestyle couple session"
+            />
+            <Image
+              data-aos="fade-left"
+              src="marina-and-decio/birthday-shoot-162-Edit-Edit.jpg"
+              alt="lifestyle couple at home"
+            />
+          </DoubleImageContainer>
+
+          <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
             <GoToTopButton
               onClick={() => {
@@ -106,29 +85,29 @@ class Couples extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-          <ReviewContainer>
-            <div>
-              <p>
-                Annie is such a great and talented photographer! She did an
-                amazing Job and we couldn´t be happier. From beginning i knew
-                she is the perfect photographer and person for my planned
-                marriage proposal. She took care of everything so that the
-                moment was just perfect. The location, lights, position
-                everything was adoreable. Additionally she is such a warm Person
-                and we felt really comfortable during the shoot! She captured
-                our real emotions perfectly. We can recommend her to everyone!!!
-                Annie - thank you so much.
-                <br />- Sebastian W.
-              </p>
-              <img
-                src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-proposal-18.jpg"
-                alt="surprise proposal"
-                loading="lazy"
-              ></img>
-            </div>
-            <StyledButton to={"/reviews"}>What other people say</StyledButton>
-          </ReviewContainer>
-        </Container>
+        </MainContainer>
+        <ReviewContainer>
+          <div>
+            <p>
+              Annie is such a great and talented photographer! She did an
+              amazing Job and we couldn´t be happier. From beginning i knew she
+              is the perfect photographer and person for my planned marriage
+              proposal. She took care of everything so that the moment was just
+              perfect. The src, lights, position everything was adoreable.
+              Additionally she is such a warm Person and we felt really
+              comfortable during the shoot! She captured our real emotions
+              perfectly. We can recommend her to everyone!!! Annie - thank you
+              so much.
+              <br />- Sebastian W.
+            </p>
+            <img
+              src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-proposal-18.jpg"
+              alt="surprise proposal"
+              loading="lazy"
+            ></img>
+          </div>
+          <StyledButton to={"/reviews"}>What other people say</StyledButton>
+        </ReviewContainer>
       </div>
     );
   }

@@ -1,10 +1,47 @@
 import styled, { css } from "styled-components/macro";
 import { NavLink } from "react-router-dom";
 import { colors } from "./config";
-import { fonts } from "./config";
 import { device } from "./mediaquery";
+import { Image } from "../components/Image";
 
-//checked components
+export const SliderImage = styled(Image)`
+  width: 100%;
+  object-fit: cover;
+`;
+
+export const CarouselContainer = styled.div`
+  padding-top: 150px;
+`;
+
+export const MainContainer = styled.div`
+  width: 100%;
+  color: #585656;
+  display: grid;
+  place-items: center;
+  padding: 50px;
+  padding-top: 100px;
+
+  p {
+    width: 90%;
+    padding: 10px;
+  }
+
+  @media ${device.desktop} {
+    p {
+      width: 60%;
+      padding: 10px;
+    }
+  }
+
+  img {
+    width: 100%;
+    padding: 10px;
+
+    @media ${device.desktop} {
+      width: 60%;
+    }
+  }
+`;
 
 export const CardsContainer = styled.div`
   display: flex;
@@ -50,19 +87,24 @@ export const CardsContainerReversed = styled(CardsContainer)`
   }
 `;
 
-///////// unchecked components
-
-export const Sharedbox = styled.div`
-  width: 100%;
+export const DoubleImageContainer = styled.div`
+  width: 90%;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
 
-  @media ${device.desktop} {
-    width: 40%;
-    margin: 0 auto;
+  img {
+    width: 100%;
+  }
+
+  @media ${device.desktop}, ${device.tablet} {
+    width: 60%;
     flex-direction: row;
 
+    img {
+      width: 50%;
+    }
   }
 `;
 
@@ -130,10 +172,6 @@ export const ImageContainer = styled.div`
     width: 60%;
     padding: 20px 0px;
   }
-`;
-
-export const Image = styled.img`
-  max-width: 100%;
 `;
 
 export const CardTitle = styled.div`

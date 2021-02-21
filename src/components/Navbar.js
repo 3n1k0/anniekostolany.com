@@ -1,6 +1,6 @@
 import React from "react";
 import { device } from "../config/mediaquery";
-import styled, {css} from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 import { NavLink } from "react-router-dom";
 import GlobalStyle from "../config/globalStyles";
 
@@ -154,7 +154,6 @@ export const Menuitem = styled.div`
   letter-spacing: 2px;
   align-items: center;
 
-
   @media ${device.desktop} {
     display: flex;
     font-style: normal;
@@ -174,7 +173,7 @@ export const PortfolioMenuitem = styled.div`
   cursor: pointer;
   letter-spacing: 2px;
   align-items: center;
-  color: rgba(0,0,0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 `;
 
 const Maincontainer = styled.div`
@@ -235,12 +234,13 @@ const DropDown = styled.div`
     background-color: ${({ backgroundColor }) => backgroundColor};
 
     width: 180px;
-    height: 350px;
+    height: 280px;
     position: absolute;
     z-index: 5;
     top: 40px;
     padding: 15px;
     flex-flow: column;
+    padding-top: 20px;
   }
 
   ${({ isOpen }) =>
@@ -346,26 +346,18 @@ class Navbar extends React.Component {
                   backgroundColor={this.props.dropDowncolor}
                 >
                   <Menuitem>
-                    <StyledNavLink to="/couples">Love shoots</StyledNavLink>
-                  </Menuitem>
-
-                  <Menuitem>
-                    <StyledNavLink to="/family">
-                      Family & celebration
-                    </StyledNavLink>
-                  </Menuitem>
-
-                  <Menuitem>
                     <StyledNavLink to="/solo-travelers">
                       Solo travelers
                     </StyledNavLink>
                   </Menuitem>
-
                   <Menuitem>
-                    <StyledNavLink to="/boudoir">Boudoir</StyledNavLink>
+                    <StyledNavLink to="/couples">Couple photos</StyledNavLink>
                   </Menuitem>
                   <Menuitem>
                     <StyledNavLink to="/wedding">Wedding</StyledNavLink>
+                  </Menuitem>
+                  <Menuitem>
+                    <StyledNavLink to="/boudoir">Boudoir</StyledNavLink>
                   </Menuitem>
                   <Menuitem>
                     <StyledNavLink to="/how-does-it-work">

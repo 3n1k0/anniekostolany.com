@@ -9,31 +9,10 @@ import {
   ButtonContainer,
   GoToTopButton,
   ReviewContainer,
+  DoubleImageContainer,
   StyledButton,
+  MainContainer,
 } from "../config/Ui";
-
-const Container = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  padding: 150px 0px 0px 0px;
-  color: #585656;
-  display: grid;
-  place-items: center;
-
-  p {
-    width: 60%;
-    padding: 10px;
-  }
-
-  img {
-    width: 90%;
-    padding: 10px;
-
-    @media ${device.desktop} {
-      width: 60%;
-    }
-  }
-`;
 
 class Boudoir extends React.Component {
   render() {
@@ -48,7 +27,7 @@ class Boudoir extends React.Component {
           />
         </Helmet>
 
-        <Container>
+        <MainContainer>
           <p>
             The softness of silk, the color of peonies, the touch of lace...
             boudoir photography is about the details that reflect inner beauty
@@ -81,13 +60,18 @@ class Boudoir extends React.Component {
             irresistible woman you are.
           </p>
 
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/bridal-boudoir-6.jpg"
-            alt="woman in veil"
-          />
+          <DoubleImageContainer>
+            <img
+              data-aos="flip-right"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/bridal-boudoir-6.jpg"
+              alt="woman in veil"
+            />
 
-          <img src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/6.jpg" />
-
+            <img
+              data-aos="flip-left"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/6.jpg"
+            />
+          </DoubleImageContainer>
           <p>
             My detailed and sophisticated retouch process includes several steps
             to ensure you get the results you seek for. I will make sure that
@@ -146,7 +130,7 @@ class Boudoir extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-        </Container>
+        </MainContainer>
         <ReviewContainer>
           <div>
             <p>
