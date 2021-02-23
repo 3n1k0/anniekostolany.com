@@ -7,10 +7,9 @@ import {
   GoToTopButton,
   DoubleImageContainer,
   MainContainer,
-  StyledButton
+  StyledButton,
 } from "../config/Ui";
 import Image from "../components/Image";
-
 
 class Travelers extends React.Component {
   render() {
@@ -30,36 +29,30 @@ class Travelers extends React.Component {
             When people think of the Netherlands, their imaginations are often
             limited to a few clichés: wooden clogs, windmills, bicycles… you get
             the picture. <br />
-          </p>
-          <Image src="betsy/betsy-1.jpg" alt="Girl in front of windmill" />
-          <DoubleImageContainer data-aos="flip-left">
-            <Image src="betsy/betsy-24.jpg" alt=" " />
-            <Image src="betsy/betsy-26.jpg" alt=" " />
-          </DoubleImageContainer>
-          <p>
-            <br /> When visiting, it’s important to remember that size isn’t
-            everything, and despite being a small country geographically, the
-            Netherlands is packed with world famous icons. <br />
-          </p>
-          <DoubleImageContainer data-aos="flip-right">
-            <Image src="stephanie/stephanie-4" alt=" " />
-            <Image src="stephanie/stephanie-8" alt=" " />
-          </DoubleImageContainer>
-
-          <Image src="mix/spring2" alt=" " />
-          <Image src="mix/DSC_3097.jpg" alt=" " />
-          <Image src="mix/DSC_3360.jpg" alt=" " />
-          <Image src="tresor/tresor-3.jpg" alt=" " />
-          <Image src="tresor/desiree/desiree-18.jpg" alt=" " />
-
-          <p>
             The fact is that Amsterdam’s web of canals, the stunning works of
             Old Masters, unique Delft Blue earthenware, and tulip fields
             stretching as far as the eye can see are just the tip of the
-            iceberg. Whether you’re looking to explore the hidden beauty spots
-            of Amsterdam, or you’re keen to get to know the nearby gem of
-            Haarlem, I can show you a world of fantastical imagery you might
-            otherwise have missed, as your guide and photographer. My extensive
+            iceberg.
+          </p>
+
+          <DoubleImageContainer data-aos="flip-left">
+            <Image src="betsy/betsy-27.jpg" alt=" " />
+            <Image src="betsy/betsy-26.jpg" alt=" " />
+          </DoubleImageContainer>
+          <Image src="stephanie/stephanie-8.jpg" alt=" " />
+          <Image src="mix/DSC_3097.jpg" alt=" " />
+          <Image src="mix/DSC_3360.jpg" alt=" " />
+          <Image src="tresor/tresor-3.jpg" alt=" " />
+          <Image src="mix/marina-tulperij-15.jpg" alt=" " />
+          <Image src="mix/DSC_3193.jpg" alt=" " />
+          <Image src="betsy/betsy-1.jpg" alt="Girl in front of windmill" />
+
+          <p>
+            {" "}
+            Whether you’re looking to explore the hidden beauty spots of
+            Amsterdam, or you’re keen to get to know the nearby gem of Haarlem,
+            I can show you a world of fantastical imagery you might otherwise
+            have missed, as your guide and photographer. My extensive
             professional experience means I am able to pay attention to detail
             to pick out the right location, while still being able to focus a
             lot on bringing out your natural emotions to catch on camera. If you
