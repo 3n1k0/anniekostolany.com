@@ -5,12 +5,12 @@ import { device } from "./mediaquery";
 import { Image } from "../components/Image";
 
 export const SliderImage = styled(Image)`
-  width: 100%;
-  object-fit: cover;
+  max-width: 100%;
 `;
 
 export const CarouselContainer = styled.div`
   padding-top: 150px;
+  width: 100%;
 `;
 
 export const MainContainer = styled.div`

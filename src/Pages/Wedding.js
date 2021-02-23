@@ -1,6 +1,4 @@
 import React from "react";
-import { device } from "../config/mediaquery";
-import styled from "styled-components/macro";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import {
@@ -9,13 +7,8 @@ import {
   GoToTopButton,
   DoubleImageContainer,
   MainContainer,
-  StyledButton,
-  SliderImage,
-  CarouselContainer
 } from "../config/Ui";
 import Image from "../components/Image";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
 
 
 class Wedding extends React.Component {
@@ -31,33 +24,25 @@ class Wedding extends React.Component {
           />
         </Helmet>
 
-        <CarouselContainer>
-          <AliceCarousel autoPlay autoPlayInterval="2000">
-            <SliderImage src="githa-en-allard/wedding-55.jpg" alt=" " />
-            <SliderImage src="githa-en-allard/wedding-55.jpg" alt=" " />
-            <SliderImage src="githa-en-allard/wedding-55.jpg" alt=" " />
-          </AliceCarousel>
-        </CarouselContainer>
-
         <MainContainer>
           <p>
             It might seem cliché, but it’s still true; a picture paints a
-            thousand words. <br />
-            What makes photography such a special medium is its ability to
-            distil the essence of a magical day into a single image – and on no
-            day is this more important than that of your wedding. <br />
-            As a gathering of friends and family celebrating the love between
-            two special people, your wedding will be filled with the moments
-            that make life worth living, from the biggest events to the sweetest
-            little things. <br />
-            <br />A smile, a hug, the look on your fathers face, or maybe your
-            mom helping you to get dressed; all these beautiful instants may
-            only last a second, but their memories can last a lifetime with the
-            right picture.
+            thousand words. What makes photography such a special medium is its
+            ability to distil the essence of a magical day into a single image –
+            and on no day is this more important than that of your wedding. As a
+            gathering of friends and family celebrating the love between two
+            special people, your wedding will be filled with the moments that
+            make life worth living, from the biggest events to the sweetest
+            little things. A smile, a hug, the look on your fathers face, or
+            maybe your mom helping you to get dressed; all these beautiful
+            instants may only last a second, but their memories can last a
+            lifetime with the right picture.
           </p>
-
-          <Image src="githa-en-allard/wedding-22.jpg" alt=" " />
+          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-91.jpg" alt=" " />
           <Image src="githa-en-allard/wedding-50.jpg" alt=" " />
+          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-88.jpg" alt=" " />
+          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-178.jpg" alt=" " />
+          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-147.jpg" alt=" " />
 
           <p>
             Perfectly catching such precious memories on camera is no easy task
@@ -73,18 +58,12 @@ class Wedding extends React.Component {
             professional knowledge, my artistic skills and the best equipment
             available to capture the most significant moments of your big day.
           </p>
-
-          <Image src="githa-en-allard/wedding-22.jpg" alt=" " />
-          <Image src="githa-en-allard/wedding-22.jpg" alt=" " />
-          <Image src="githa-en-allard/wedding-22.jpg" alt=" " />
-          <Image src="githa-en-allard/wedding-22.jpg" alt=" " />
-
-          <DoubleImageContainer>
-            <Image src="githa-en-allard/wedding-22.jpg" alt=" " />
-            <Image src="githa-en-allard/wedding-22.jpg" alt=" " />
-          </DoubleImageContainer>
-          <Image src="githa-en-allard/wedding-22.jpg" alt=" " />
-          <Image src="githa-en-allard/wedding-22.jpg" alt=" " />
+          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-64.jpg" alt=" " />
+          <Image src="tania-and-victor/Tania+Victor%20wedding-66.jpg" alt=" " />
+          <Image
+            src="tania-and-victor/Tania+Victor%20wedding-121.jpg"
+            alt=" "
+          />
 
           <p>
             While I am currently based in the Netherlands, I am available
@@ -92,6 +71,10 @@ class Wedding extends React.Component {
             to reach out and send me a message. We can meet for a coffee, or we
             can discuss your ideas via Skype, phone or email.
           </p>
+          <DoubleImageContainer>
+            <Image src="yalda-en-wesley/Yalda%20en%20Wesley-190.jpg" alt=" " />
+            <Image src="yalda-en-wesley/Yalda%20en%20Wesley-191.jpg" alt=" " />
+          </DoubleImageContainer>
 
           <ButtonContainer>
             <Button to={"/contact"}> Request </Button>

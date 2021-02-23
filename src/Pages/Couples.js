@@ -13,6 +13,7 @@ import {
 } from "../config/Ui";
 import GlobalStyle from "../config/globalStyles";
 import Image from "../components/Image";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 class Couples extends React.Component {
   render() {

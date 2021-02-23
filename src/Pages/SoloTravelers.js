@@ -45,7 +45,7 @@ class Travelers extends React.Component {
           <Image src="tresor/tresor-3.jpg" alt=" " />
           <Image src="mix/marina-tulperij-15.jpg" alt=" " />
           <Image src="mix/DSC_3193.jpg" alt=" " />
-          <Image src="betsy/betsy-1.jpg" alt="Girl in front of windmill" />
+          <Image src="betsy/betsy-1.jpg" alt="Girl in front of windmill" />p
 
           <p>
             {" "}

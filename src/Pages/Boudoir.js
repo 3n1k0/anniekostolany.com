@@ -13,6 +13,7 @@ import {
   StyledButton,
   MainContainer,
 } from "../config/Ui";
+import Image from "../components/Image";
 
 class Boudoir extends React.Component {
   render() {
@@ -38,10 +39,7 @@ class Boudoir extends React.Component {
             <b>You are unstoppable.</b>
           </p>
 
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/anna-b/Anna-16.jpg"
-            alt="girl with flowers"
-          />
+          <Image src="anna-b/Anna-13.jpg" alt="girl with flowers" />
 
           <p>
             I know what you’re thinking: that you would love to try boudoir
@@ -61,16 +59,13 @@ class Boudoir extends React.Component {
           </p>
 
           <DoubleImageContainer>
-            <img
+            <Image
               data-aos="flip-right"
-              src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/bridal-boudoir-6.jpg"
+              src="boudoir/bridal-boudoir-6.jpg"
               alt="woman in veil"
             />
 
-            <img
-              data-aos="flip-left"
-              src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/6.jpg"
-            />
+            <Image data-aos="flip-left" src="boudoir/6.jpg" />
           </DoubleImageContainer>
           <p>
             My detailed and sophisticated retouch process includes several steps
@@ -78,38 +73,35 @@ class Boudoir extends React.Component {
             you feel 100% confident and comfortable with the images I deliver.
           </p>
 
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/Anna-20.jpg"
-            alt="girl with flowers"
-          />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/bridal-boudoir-42.jpg"
+          <Image src="boudoir/Anna-20.jpg" alt="girl with flowers" />
+          <Image
+            src="boudoir/bridal-boudoir-42.jpg"
             alt="lingerie photoshoot"
             loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/4.jpg"
+          <Image
+            src="boudoir/4.jpg"
             alt="lingerie fashion photoshoot"
             loading="lazy"
           />
 
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/Anna-5.jpg"
+          <Image
+            src="boudoir/Anna-5.jpg"
             alt="lingerie fashion photoshoot"
             loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/5.jpg"
+          <Image
+            src="boudoir/5.jpg"
             alt="girl looking through glass"
             loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/boudoir10.jpg"
+          <Image
+            src="boudoir/boudoir10.jpg"
             alt="fashion shoot"
             loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/Anna-13.jpg"
+          <Image
+            src="boudoir/Anna-13.jpg"
             alt="girl by the window"
             loading="lazy"
           />
@@ -144,11 +136,6 @@ class Boudoir extends React.Component {
               Annie!!"
               <br />- Karen
             </p>
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/sofie-1.jpg"
-              alt="bridal boudoir"
-              loading="lazy"
-            />
           </div>
           <StyledButton to={"/reviews"}>What other people say</StyledButton>
         </ReviewContainer>
