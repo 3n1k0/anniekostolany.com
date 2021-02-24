@@ -1,7 +1,4 @@
 import React from "react";
-import { device } from "../config/mediaquery";
-import styled from "styled-components/macro";
-import { fonts } from "../config/config";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import {
@@ -100,15 +97,10 @@ class Boudoir extends React.Component {
             alt="fashion shoot"
             loading="lazy"
           />
-          <Image
-            src="boudoir/Anna-13.jpg"
-            alt="girl by the window"
-            loading="lazy"
-          />
           <p>
             <b>
-              MAYBE YOU DON’T THINK IT’S IN YOU, BUT BELIEVE ME, GIVE A GIRL THE
-              RIGHT LIGHTING AND SHE CAN DO ANYTHING.
+              Maybe you don't think it's in you, but believe me, give a girl the
+              right lighting and she can do anything.
             </b>
           </p>
 
@@ -126,16 +118,21 @@ class Boudoir extends React.Component {
         <ReviewContainer>
           <div>
             <p>
-              "Annie is wonderful to work with! We’re not camera-natural but
-              Annie really made us at ease. The photos turned out so well even
-              at a time when natural light was fading away. There was nothing
-              artificial or posed about the photos, they captured our moments.
-              Planning around the time of the shoot and our communication were
-              also easy. We received our photos earlier than expected. We would
-              recommend this experience to everyone! Once again – thank you
-              Annie!!"
-              <br />- Karen
+              "A friend and I scheduled a joint boudoir shoot with Annie during
+              my visit to Amsterdam, and in addition to having SO MUCH fun that
+              afternoon, the photos ended up being more breath-taking than I
+              ever could have imagined. Annie was terrific to work with, and
+              made us feel comfortable immediately; her cues and tips make
+              posing easy, and her sense of what will look incredible on camera
+              (even if not intuitive to me) is spot on. I can't stop scrolling
+              through my photos. Thank you, Annie! "
+              <br />- Kate Z.
             </p>
+            <img
+              src="https://static.llllllllllll.com/eniko/anniekostolany/anna-b/Anna-19.jpg"
+              alt="girl with bouquet"
+              loading="lazy"
+            ></img>
           </div>
           <StyledButton to={"/reviews"}>What other people say</StyledButton>
         </ReviewContainer>

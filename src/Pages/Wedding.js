@@ -7,9 +7,14 @@ import {
   GoToTopButton,
   DoubleImageContainer,
   MainContainer,
+  Gallery,
+  SliderImage,
+  CarouselContainer,
 } from "../config/Ui";
+import { NavLink } from "react-router-dom";
 import Image from "../components/Image";
-
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 class Wedding extends React.Component {
   render() {
@@ -23,6 +28,7 @@ class Wedding extends React.Component {
             content="Wedding photography in the Netherlands"
           />
         </Helmet>
+
 
         <MainContainer>
           <p>
@@ -38,12 +44,6 @@ class Wedding extends React.Component {
             instants may only last a second, but their memories can last a
             lifetime with the right picture.
           </p>
-          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-91.jpg" alt=" " />
-          <Image src="githa-en-allard/wedding-50.jpg" alt=" " />
-          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-88.jpg" alt=" " />
-          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-178.jpg" alt=" " />
-          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-147.jpg" alt=" " />
-
           <p>
             Perfectly catching such precious memories on camera is no easy task
             though, meaning your wedding photographer will be one of the most
@@ -59,11 +59,6 @@ class Wedding extends React.Component {
             available to capture the most significant moments of your big day.
           </p>
           <Image src="yalda-en-wesley/Yalda%20en%20Wesley-64.jpg" alt=" " />
-          <Image src="tania-and-victor/Tania+Victor%20wedding-66.jpg" alt=" " />
-          <Image
-            src="tania-and-victor/Tania+Victor%20wedding-121.jpg"
-            alt=" "
-          />
 
           <p>
             While I am currently based in the Netherlands, I am available
@@ -71,11 +66,24 @@ class Wedding extends React.Component {
             to reach out and send me a message. We can meet for a coffee, or we
             can discuss your ideas via Skype, phone or email.
           </p>
-          <DoubleImageContainer>
-            <Image src="yalda-en-wesley/Yalda%20en%20Wesley-190.jpg" alt=" " />
-            <Image src="yalda-en-wesley/Yalda%20en%20Wesley-191.jpg" alt=" " />
-          </DoubleImageContainer>
 
+          <p>Click the images to see the full galleries.</p>
+          <Gallery isHover={true}>
+            <NavLink to={"/blog"}>
+              <Image src="yalda-en-wesley/Yalda%20en%20Wesley-91.jpg" alt=" " />
+            </NavLink>
+
+            <NavLink to={"/wedding"}>
+              <Image
+                src="tania-and-victor/Tania+Victor%20wedding-121.jpg"
+                alt=" "
+              />
+            </NavLink>
+
+            <NavLink to={"/solo-travelers"}>
+              <Image src="githa-en-allard/wedding-23.jpg" alt=" " />
+            </NavLink>
+          </Gallery>
           <ButtonContainer>
             <Button to={"/contact"}> Request </Button>
             <GoToTopButton

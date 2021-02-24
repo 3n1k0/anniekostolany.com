@@ -5,12 +5,14 @@ import { device } from "./mediaquery";
 import { Image } from "../components/Image";
 
 export const SliderImage = styled(Image)`
-  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
 `;
 
 export const CarouselContainer = styled.div`
   padding-top: 150px;
-  width: 100%;
+
+  margin: 0 auto;
 `;
 
 export const MainContainer = styled.div`
@@ -147,6 +149,7 @@ export const Gallery = styled.div`
   @media ${device.desktop} {
     padding: 0px 100px 40px 100px;
     grid-gap: 10px;
+    display: flex;
   }
 
   img {
