@@ -75,13 +75,13 @@ class Wedding extends React.Component {
 
             <NavLink to={"/wedding"}>
               <Image
-                src="tania-and-victor/Tania+Victor%20wedding-121.jpg"
+                src="tania-and-victor/Tania+Victor%20wedding-70.jpg"
                 alt=" "
               />
             </NavLink>
 
             <NavLink to={"/solo-travelers"}>
-              <Image src="githa-en-allard/wedding-23.jpg" alt=" " />
+              <Image src="githa-en-allard/wedding-30.jpg" alt=" " />
             </NavLink>
           </Gallery>
           <ButtonContainer>
