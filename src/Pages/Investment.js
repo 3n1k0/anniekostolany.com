@@ -3,7 +3,7 @@ import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, Gallery, GoToTopButton } from "../config/Ui";
+import { Button, ButtonContainer, Gallery, GoToTopButton, MainContainer } from "../config/Ui";
 import GlobalStyle from "../config/globalStyles";
 import { NavLink } from "react-router-dom";
 import Image from "../components/Image";
@@ -105,6 +105,7 @@ class Investment extends React.Component {
           <Gallery>
             <Image src="/githa-en-allard/wedding-55.jpg" alt="bride on field" />
             <Image src="/githa-en-allard/wedding-44.jpg" alt="detail closeup" />
+            <Image src="/githa-en-allard/wedding-1.jpg" alt="detail closeup" />
             <Image
               src="/yalda-en-wesley/Yalda%20en%20Wesley-69.jpg"
               alt="bride on field"
@@ -148,8 +149,17 @@ class Investment extends React.Component {
 
           <Information>
             <h1>Investment information</h1>
-            <p>Portrait sessions start from 280 Eur </p>
-            <p> Weddings start from 1200 Eur</p>
+            <p>
+              If you are looking for someone to just show up and take photos, I
+              might not be the right photographer for you. The same goes if you
+              are looking for a great bargain deal, I am sure that there are
+              cheaper photographers out there than I. And that’s okay, because
+              the most important thing is that you and your photographer values
+              are the same. But if you are looking for someone that is more than
+              just another vendor for you on your wedding and that puts her soul
+              into her work to capture the two of you just like you are, then I
+              am your girl.{" "}
+            </p>
             <p>
               Every image is individually retouched and available for you to
               download with a personal Online Gallery to share with family or
@@ -162,7 +172,6 @@ class Investment extends React.Component {
               possible to build your own wedding package, and only book the
               actual hours needed instead of a full package.
             </p>
-
             <p>
               For our price guide and other enquiries please send an email to
               mail@anniekostolany.com or fill out the&nbsp;

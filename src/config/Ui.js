@@ -4,6 +4,7 @@ import { colors } from "./config";
 import { device } from "./mediaquery";
 import { Image } from "../components/Image";
 
+
 export const SliderImage = styled(Image)`
   object-fit: cover;
   width: 100%;
@@ -15,13 +16,15 @@ export const CarouselContainer = styled.div`
   margin: 0 auto;
 `;
 
+
 export const MainContainer = styled.div`
   width: 100%;
   color: #585656;
-  display: grid;
-  place-items: center;
   padding: 50px;
   padding-top: 100px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
 
   p {
     width: 90%;
@@ -32,6 +35,7 @@ export const MainContainer = styled.div`
     p {
       width: 60%;
       padding: 10px;
+
     }
   }
 
@@ -143,6 +147,7 @@ export const Gallery = styled.div`
   grid-gap: 0px;
   padding-bottom: 40px;
   display: grid;
+  grid-auto-flow: column;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
   @media ${device.desktop} {

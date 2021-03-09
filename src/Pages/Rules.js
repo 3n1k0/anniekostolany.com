@@ -97,17 +97,6 @@ class Rules extends React.Component {
 
         <Container>
           <p>
-            If you are looking for someone to just show up and take photos, I
-            might not be the right photographer for you. The same goes if you
-            are looking for a great bargain deal, I am sure that there are
-            cheaper photographers out there than I. And that’s okay, because the
-            most important thing is that you and your photographer values are
-            the same. But if you are looking for someone that is more than just
-            another vendor for you on your wedding and that puts her soul into
-            her work to capture the two of you just like you are, then I am your
-            girl.{" "}
-          </p>
-          <p>
             I'd love to learn more about you and your story. Fill out the
             <NavLink style={{ color: "darkred" }} to="/contact">
               {" "}
@@ -159,6 +148,7 @@ class Rules extends React.Component {
                 weeks, delivered beautifully in a private online gallery.
               </p>
             </Step>
+            <Line/>
 
             <Step>
               <h2>Step 5</h2>

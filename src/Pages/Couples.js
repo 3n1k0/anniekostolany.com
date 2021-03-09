@@ -77,13 +77,6 @@ class Couples extends React.Component {
 
           <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
-            <GoToTopButton
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              Go to top{" "}
-            </GoToTopButton>
           </ButtonContainer>
         </MainContainer>
         <ReviewContainer>
@@ -106,6 +99,13 @@ class Couples extends React.Component {
             ></Image>
           </div>
           <StyledButton to={"/reviews"}>What other people say</StyledButton>
+          <GoToTopButton
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            Go to top{" "}
+          </GoToTopButton>
         </ReviewContainer>
       </div>
     );

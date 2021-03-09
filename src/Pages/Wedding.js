@@ -5,15 +5,12 @@ import {
   Button,
   ButtonContainer,
   GoToTopButton,
-  DoubleImageContainer,
   MainContainer,
+  DoubleImageContainer,
   Gallery,
-  SliderImage,
-  CarouselContainer,
 } from "../config/Ui";
 import { NavLink } from "react-router-dom";
 import Image from "../components/Image";
-import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 class Wedding extends React.Component {
@@ -29,8 +26,9 @@ class Wedding extends React.Component {
           />
         </Helmet>
 
-
         <MainContainer>
+          <Image src="githa-en-allard/wedding-70.jpg" alt=" " />
+          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-39.jpg" alt=" " />
           <p>
             It might seem cliché, but it’s still true; a picture paints a
             thousand words. What makes photography such a special medium is its
@@ -43,6 +41,14 @@ class Wedding extends React.Component {
             maybe your mom helping you to get dressed; all these beautiful
             instants may only last a second, but their memories can last a
             lifetime with the right picture.
+          </p>
+          <Image src="githa-en-allard/wedding-55.jpg" alt=" " />
+
+          <p>
+            While I am currently based in the Netherlands, I am available
+            worldwide, so if my services sound right for you, please feel free
+            to reach out and send me a message. We can meet for a coffee, or we
+            can discuss your ideas via Skype, phone or email.
           </p>
           <p>
             Perfectly catching such precious memories on camera is no easy task
@@ -58,19 +64,10 @@ class Wedding extends React.Component {
             professional knowledge, my artistic skills and the best equipment
             available to capture the most significant moments of your big day.
           </p>
-          <Image src="yalda-en-wesley/Yalda%20en%20Wesley-64.jpg" alt=" " />
-
-          <p>
-            While I am currently based in the Netherlands, I am available
-            worldwide, so if my services sound right for you, please feel free
-            to reach out and send me a message. We can meet for a coffee, or we
-            can discuss your ideas via Skype, phone or email.
-          </p>
-
-          <p>Click the images to see the full galleries.</p>
-          <Gallery isHover={true}>
+          <Image src="tania-and-victor/Tania+Victor%20wedding-66.jpg" alt=" " />
+          <Gallery>
             <NavLink to={"/blog"}>
-              <Image src="yalda-en-wesley/Yalda%20en%20Wesley-91.jpg" alt=" " />
+              <Image src="yalda-en-wesley/Yalda%20en%20Wesley-15.jpg" alt=" " />
             </NavLink>
 
             <NavLink to={"/wedding"}>
@@ -84,6 +81,10 @@ class Wedding extends React.Component {
               <Image src="githa-en-allard/wedding-30.jpg" alt=" " />
             </NavLink>
           </Gallery>
+          <DoubleImageContainer data-aos="flip-left">
+            <Image src="yalda-en-wesley/Yalda%20en%20Wesley-189.jpg" alt=" " />
+            <Image src="yalda-en-wesley/Yalda%20en%20Wesley-190.jpg" alt=" " />
+          </DoubleImageContainer>
           <ButtonContainer>
             <Button to={"/contact"}> Request </Button>
             <GoToTopButton
