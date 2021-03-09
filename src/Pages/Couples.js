@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components/macro";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import {
@@ -101,11 +100,10 @@ class Couples extends React.Component {
               so much.
               <br />- Sebastian W.
             </p>
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-proposal-18.jpg"
+            <Image
+              src="amsterdam-surprise-proposal/amsterdam-proposal-18.jpg"
               alt="surprise proposal"
-              loading="lazy"
-            ></img>
+            ></Image>
           </div>
           <StyledButton to={"/reviews"}>What other people say</StyledButton>
         </ReviewContainer>

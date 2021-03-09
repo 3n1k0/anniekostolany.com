@@ -100,7 +100,7 @@ class Boudoir extends React.Component {
           <p>
             <b>
               Maybe you don't think it's in you, but believe me, give a girl the
-              right lighting and she can do anything.
+              right lighting and she can do anything!
             </b>
           </p>
 

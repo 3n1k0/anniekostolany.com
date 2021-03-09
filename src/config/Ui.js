@@ -145,18 +145,14 @@ export const Gallery = styled.div`
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-
   @media ${device.desktop} {
     padding: 0px 100px 40px 100px;
     grid-gap: 10px;
-    display: flex;
   }
-
   img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-
     ${({ isHover }) =>
       isHover &&
       css`
@@ -310,7 +306,7 @@ export const Button = styled(NavLink)`
   font-size: 14px;
 
   &:hover {
-    background: white;
+    background: transparent;
     color: black;
     border-left: none;
     border-right: none;
