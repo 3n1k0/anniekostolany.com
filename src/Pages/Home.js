@@ -12,9 +12,10 @@ import {
   ReviewContainer,
   IntroContainer,
   CardsContainerReversed,
-  StyledButton
+  StyledButton,
 } from "../config/Ui";
 import { NavLink } from "react-router-dom";
+import Image from "../components/Image";
 
 const HomeContainer = styled.div`
   display: flex;
@@ -222,43 +223,32 @@ class Home extends React.Component {
             <NavLink style={{ color: "#4f2b26" }} to={"/couples"}>
               <div>
                 <h2>View gallery</h2>
-                <img
-                  src="https://static.llllllllllll.com/eniko/anniekostolany/karen-graham/karen-graham-8.jpg"
+                <Image
+                  src="karen-graham/karen-graham-8.jpg"
                   alt="couple smiling"
-                  loading="lazy"
-                />
+                ></Image>
               </div>
             </NavLink>
 
             <NavLink style={{ color: "#4f2b26" }} to={"/investment"}>
               <div>
                 <h2>See packages</h2>
-                <img
-                  src="https://static.llllllllllll.com/eniko/anniekostolany/betsy/betsy-25.jpg"
-                  alt="girl with flowers"
-                  loading="lazy"
-                />
+                <Image src="betsy/betsy-25.jpg" alt="girl with flowers"></Image>
               </div>
             </NavLink>
-
             <NavLink style={{ color: "#4f2b26" }} to={"/contact"}>
               <div>
                 <h2>Get in touch</h2>
-                <img
-                  src="https://static.llllllllllll.com/eniko/anniekostolany/ayo+ayo/ayo+ayo-30.jpg"
+                <Image
+                  src="ayo+ayo/ayo+ayo-30.jpg"
                   alt="couple kissing"
-                  loading="lazy"
-                />
+                ></Image>
               </div>
             </NavLink>
           </Wrapper>
 
           <IntroContainer>
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/annie-kostolany.jpg"
-              alt="Annie Kostolany"
-              loading="lazy"
-            ></img>
+            <Image src="mix/annie-kostolany.jpg" alt="annie"></Image>
             <div>
               <h2>Welcome!</h2>
               <p>
@@ -291,11 +281,10 @@ class Home extends React.Component {
           </WideContainer>
 
           <CardsContainer data-aos="flip-left">
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-family-shoot-3.jpg"
+            <Image
+              src="mix/amsterdam-family-shoot-3.jpg"
               alt="family amsterdam"
-              loading="lazy"
-            />
+            ></Image>
             <CardInnerContainer>
               <CardTitle>
                 <h2>FOR FAMILIES</h2>
@@ -314,11 +303,7 @@ class Home extends React.Component {
             </CardInnerContainer>
           </CardsContainer>
           <CardsContainerReversed data-aos="flip-right">
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/DSC_3097.jpg"
-              alt="Girl with windmill"
-              loading="lazy"
-            />
+            <Image src="mix/DSC_3097.jpg" alt="Girl with windmill"></Image>
             <CardInnerContainer>
               <CardTitle>
                 <h2>FOR TRAVELERS</h2>
@@ -347,11 +332,10 @@ class Home extends React.Component {
                 Thanks Annie for making our special days even more memorable!"
                 <br />- Tania
               </p>
-              <img
-                src="https://static.llllllllllll.com/eniko/anniekostolany/tania-and-victor/Tania+Victor%20wedding-106.jpg"
+              <Image
+                src="tania-and-victor/Tania+Victor%20wedding-106.jpg"
                 alt="couple dancing in street"
-                loading="lazy"
-              ></img>
+              ></Image>
             </div>
             <StyledButton to={"/reviews"}>What other people say</StyledButton>
           </ReviewContainer>

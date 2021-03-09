@@ -1,36 +1,16 @@
 import React from "react";
-import { device } from "../config/mediaquery";
-import styled from "styled-components/macro";
-import { fonts } from "../config/config";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, GoToTopButton, Sharedbox } from "../config/Ui";
-import Reviews from "./Reviews";
-import UploadcareImage from "../components/UploadcareImage";
-
-const Container = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  padding: 150px 0px 0px 0px;
-  color: #585656;
-  text-align: center;
-
-  p {
-    font-family: ${fonts.mindenmas};
-    font-size: 1.1em;
-    text-align: left;
-    line-height: 1.5;
-    letter-spacing: 0.005em;
-    max-width: 90%;
-    padding-bottom: 20px;
-
-    margin: 0 auto;
-
-    @media ${device.desktop} {
-      max-width: 60%;
-    }
-  }
-`;
+import {
+  Button,
+  ButtonContainer,
+  GoToTopButton,
+  DoubleImageContainer,
+  MainContainer,
+  StyledButton,
+  ReviewContainer
+} from "../config/Ui";
+import Image from "../components/Image";
 
 class Travelers extends React.Component {
   render() {
@@ -45,102 +25,92 @@ class Travelers extends React.Component {
           />
         </Helmet>
 
-        <Container>
+        <MainContainer>
+          <p>
+            Whether you’re looking to explore the hidden beauty spots of
+            Amsterdam, or you’re keen to get to know the nearby gem of Haarlem,
+            I can show you a world of fantastical imagery you might otherwise
+            have missed, as your guide and photographer.
+          </p>
+          <DoubleImageContainer data-aos="flip-left">
+            <Image src="betsy/betsy-27.jpg" alt=" " />
+            <Image src="betsy/betsy-26.jpg" alt=" " />
+          </DoubleImageContainer>
           <p>
             When people think of the Netherlands, their imaginations are often
             limited to a few clichés: wooden clogs, windmills, bicycles… you get
             the picture. <br />
-          </p>
-          <UploadcareImage
-            uuid="ede82bee-a352-45ab-9391-e774b5ae1ee8"
-            alt="Girl in front of windmill"
-          />
-          <Sharedbox data-aos="flip-left">
-            <UploadcareImage
-              uuid="87c8c464-2cd1-4e51-8cfa-3ab19b9bfb7b"
-              alt="Girl sitting in restaurant"
-            />
-
-            <UploadcareImage
-              uuid="95112e31-f154-4c77-b049-f3fad519adb7"
-              alt="Girl laughing among flowers"
-            />
-          </Sharedbox>
-          <p>
-            <br /> When visiting, it’s important to remember that size isn’t
-            everything, and despite being a small country geographically, the
-            Netherlands is packed with world famous icons. <br />
-          </p>
-          <Sharedbox data-aos="flip-right">
-            <UploadcareImage
-              uuid="916d6ec3-f827-42c5-bb6c-300e02823035"
-              alt="Girl playing violin in city center"
-            />
-            <UploadcareImage
-              uuid="29537621-3cb8-4d9e-80d7-6251c79dce9c"
-              alt="Girl in window"
-            />
-          </Sharedbox>
-          <UploadcareImage
-            uuid="4bb6482e-4357-4645-bf19-075cc3aafba8"
-            alt="Girl at canal and windmill"
-          />
-          <UploadcareImage
-            uuid="d0284b64-881c-4cf8-b002-b32c7a8fd5c1"
-            alt="Man standing at green streets"
-          />{" "}
-          <UploadcareImage
-            uuid="6f1a8938-5bae-4ef3-8e90-fef39ffa3769"
-            alt="Girl laughing at bridge"
-          />
-          <UploadcareImage
-            uuid="dfec249b-c90b-4af9-8d3b-ff04335a66b0"
-            alt="Girl sitting on bench"
-          />
-          <UploadcareImage
-            uuid="0b63aeda-1575-429c-9c83-09795545b07e"
-            alt="Girl in front of brick wall"
-          />
-          <UploadcareImage
-            uuid="9a74c78d-6adc-40ba-8f91-5e61a92e7e2a"
-            alt="Girl standing on bridge"
-          />
-          <UploadcareImage
-            uuid="7e9fea1f-7d72-4345-a8a0-43eff0cd3baa"
-            alt="Girl in pink dress"
-          />
-          <UploadcareImage
-            uuid="a2b936d8-c276-4908-b0ad-f7226a2f5c6c"
-            alt="Playful girl with flowers"
-          />
-          <p>
             The fact is that Amsterdam’s web of canals, the stunning works of
             Old Masters, unique Delft Blue earthenware, and tulip fields
             stretching as far as the eye can see are just the tip of the
-            iceberg. Whether you’re looking to explore the hidden beauty spots
-            of Amsterdam, or you’re keen to get to know the nearby gem of
-            Haarlem, I can show you a world of fantastical imagery you might
-            otherwise have missed, as your guide and photographer. My extensive
-            professional experience means I am able to pay attention to detail
-            to pick out the right location, while still being able to focus a
-            lot on bringing out your natural emotions to catch on camera. If you
-            are traveling solo, this portrait session is perfect for you,
+            iceberg.
+          </p>
+          <Image src="stephanie/stephanie-8.jpg" alt=" " />
+          <Image src="mix/DSC_3097.jpg" alt=" " />
+          <Image src="mix/wayne-3.jpg" alt=" " />
+          <Image src="mix/DSC_3360.jpg" alt=" " />
+          <Image src="tresor/tresor-3.jpg" alt=" " />
+          <Image src="mix/marina-tulperij-15.jpg" alt=" " />
+          <Image src="daria/daria-centraal-7.jpg" alt=" " />
+          <Image src="mix/DSC_3193.jpg" alt=" " />
+
+          <Image src="betsy/betsy-1.jpg" alt="Girl in front of windmill" />
+
+          <p>
+            <br /> My extensive professional experience means I am able to pay
+            attention to detail to pick out the right location, while still
+            being able to focus a lot on bringing out your natural emotions to
+            catch on camera. <br />
+            <br />
+            If you are traveling solo, this portrait session is perfect for you,
             providing you with a unique insight into some of the most gorgeous
-            photo spots in Amsterdam. <br />
-            Please feel free to get in touch, and let’s chat about your ideas!
+            photo spots in the Netherlands. Please feel free to get in touch,
+            and let’s chat about your ideas!
           </p>
           <ButtonContainer>
             <Button to={"/contact"}> Contact Annie </Button>
-            <GoToTopButton
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              Go to top{" "}
-            </GoToTopButton>
           </ButtonContainer>
-        </Container>
-        <Reviews />
+        </MainContainer>
+        <ReviewContainer>
+          <div>
+            <p>
+              "I must say, when I signed up for this experience, I was trying
+              really hard to not keep my expectations high..simply because it
+              was the first time I was trying something like this and wasn’t
+              sure how it would turn out to be. To say that I had an Amazing
+              time with Annie would be an understatement! Right from the time I
+              met her, she put me at ease with her approachable attitude and
+              friendly demeanour...I’m so awkward with any kind of posing but
+              Annie changed that! She chatted with me throughout so that I got
+              comfortable around her and getting photographed in general. She
+              has such an eye for detail - we ended up using my pretty little
+              cupcake and camera as a prop for the shoot..Annie pays a lot of
+              attention to foreground and clicked beautiful pictures of me in
+              the best and most picturesque spots of Amsterdam. I was absolutely
+              thrilled after such an amazing photoshoot and when she sent me the
+              pictures, I was jumping with excitement at how she made me look! I
+              got tons of compliments on the pictures. Oh, and also, she is such
+              an amazing person to hang out with..I got some very useful
+              photography and posing tips for her and also ended up exchanging
+              notes on Instagramming over drinks! If you’re in Amsterdam and
+              want someone to click beautiful pictures of you, I highly
+              recommend her! Thanks Annie for making my trip memorable :)
+              <br />- Saumya
+            </p>
+            <Image
+              src="daria/daria-centraal-3.jpg"
+              alt="surprise proposal"
+            ></Image>
+          </div>
+          <StyledButton to={"/reviews"}>What other people say</StyledButton>
+          <GoToTopButton
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            Go to top{" "}
+          </GoToTopButton>
+        </ReviewContainer>
       </div>
     );
   }

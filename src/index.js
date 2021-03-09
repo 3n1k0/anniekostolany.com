@@ -28,7 +28,6 @@ ReactDOM.render(
         <Route path="/contact-form" exact component={Contact} />
         <Route path="/blog/posts/:slug" exact component={FullPost} />
         {/* <Route path="/new-post" exact component={NewPost} /> */}
-        <Route path="/family" exact component={Family} />
         <Route path="/solo-travelers" exact component={SoloTravelers} />
         <Route path="/couples" exact component={Couples} />
         <Route path="/boudoir" exact component={Boudoir} />

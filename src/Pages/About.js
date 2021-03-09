@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { fonts } from "../config/config";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import { Button, Text } from "../config/Ui";
 import GlobalStyle from "../config/globalStyles";
-import { device } from "../config/mediaquery";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -35,9 +33,6 @@ const Container = styled.div`
     background: white;
   }
 
-  p {
-    padding: 10px;
-  }
   h2 {
     font-size: 40px;
     text-align: left;

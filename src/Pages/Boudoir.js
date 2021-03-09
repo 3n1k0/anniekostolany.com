@@ -1,7 +1,4 @@
 import React from "react";
-import { device } from "../config/mediaquery";
-import styled from "styled-components/macro";
-import { fonts } from "../config/config";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import {
@@ -9,31 +6,11 @@ import {
   ButtonContainer,
   GoToTopButton,
   ReviewContainer,
+  DoubleImageContainer,
   StyledButton,
+  MainContainer,
 } from "../config/Ui";
-
-const Container = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  padding: 150px 0px 0px 0px;
-  color: #585656;
-  display: grid;
-  place-items: center;
-
-  p {
-    width: 60%;
-    padding: 10px;
-  }
-
-  img {
-    width: 90%;
-    padding: 10px;
-
-    @media ${device.desktop} {
-      width: 60%;
-    }
-  }
-`;
+import Image from "../components/Image";
 
 class Boudoir extends React.Component {
   render() {
@@ -48,7 +25,7 @@ class Boudoir extends React.Component {
           />
         </Helmet>
 
-        <Container>
+        <MainContainer>
           <p>
             The softness of silk, the color of peonies, the touch of lace...
             boudoir photography is about the details that reflect inner beauty
@@ -59,10 +36,7 @@ class Boudoir extends React.Component {
             <b>You are unstoppable.</b>
           </p>
 
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/anna-b/Anna-16.jpg"
-            alt="girl with flowers"
-          />
+          <Image src="anna-b/Anna-13.jpg" alt="girl with flowers" />
 
           <p>
             I know what you’re thinking: that you would love to try boudoir
@@ -81,58 +55,52 @@ class Boudoir extends React.Component {
             irresistible woman you are.
           </p>
 
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/bridal-boudoir-6.jpg"
-            alt="woman in veil"
-          />
+          <DoubleImageContainer>
+            <Image
+              data-aos="flip-right"
+              src="boudoir/bridal-boudoir-6.jpg"
+              alt="woman in veil"
+            />
 
-          <img src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/6.jpg" />
-
+            <Image data-aos="flip-left" src="boudoir/6.jpg" />
+          </DoubleImageContainer>
           <p>
             My detailed and sophisticated retouch process includes several steps
             to ensure you get the results you seek for. I will make sure that
             you feel 100% confident and comfortable with the images I deliver.
           </p>
 
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/Anna-20.jpg"
-            alt="girl with flowers"
-          />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/bridal-boudoir-42.jpg"
+          <Image src="boudoir/Anna-20.jpg" alt="girl with flowers" />
+          <Image
+            src="boudoir/bridal-boudoir-42.jpg"
             alt="lingerie photoshoot"
             loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/4.jpg"
+          <Image
+            src="boudoir/4.jpg"
             alt="lingerie fashion photoshoot"
             loading="lazy"
           />
 
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/Anna-5.jpg"
+          <Image
+            src="boudoir/Anna-5.jpg"
             alt="lingerie fashion photoshoot"
             loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/5.jpg"
+          <Image
+            src="boudoir/5.jpg"
             alt="girl looking through glass"
             loading="lazy"
           />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/boudoir10.jpg"
+          <Image
+            src="boudoir/boudoir10.jpg"
             alt="fashion shoot"
-            loading="lazy"
-          />
-          <img
-            src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/Anna-13.jpg"
-            alt="girl by the window"
             loading="lazy"
           />
           <p>
             <b>
-              MAYBE YOU DON’T THINK IT’S IN YOU, BUT BELIEVE ME, GIVE A GIRL THE
-              RIGHT LIGHTING AND SHE CAN DO ANYTHING.
+              Maybe you don't think it's in you, but believe me, give a girl the
+              right lighting and she can do anything!
             </b>
           </p>
 
@@ -146,25 +114,25 @@ class Boudoir extends React.Component {
               Go to top{" "}
             </GoToTopButton>
           </ButtonContainer>
-        </Container>
+        </MainContainer>
         <ReviewContainer>
           <div>
             <p>
-              "Annie is wonderful to work with! We’re not camera-natural but
-              Annie really made us at ease. The photos turned out so well even
-              at a time when natural light was fading away. There was nothing
-              artificial or posed about the photos, they captured our moments.
-              Planning around the time of the shoot and our communication were
-              also easy. We received our photos earlier than expected. We would
-              recommend this experience to everyone! Once again – thank you
-              Annie!!"
-              <br />- Karen
+              "A friend and I scheduled a joint boudoir shoot with Annie during
+              my visit to Amsterdam, and in addition to having SO MUCH fun that
+              afternoon, the photos ended up being more breath-taking than I
+              ever could have imagined. Annie was terrific to work with, and
+              made us feel comfortable immediately; her cues and tips make
+              posing easy, and her sense of what will look incredible on camera
+              (even if not intuitive to me) is spot on. I can't stop scrolling
+              through my photos. Thank you, Annie! "
+              <br />- Kate Z.
             </p>
             <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/boudoir/sofie-1.jpg"
-              alt="bridal boudoir"
+              src="https://static.llllllllllll.com/eniko/anniekostolany/anna-b/Anna-19.jpg"
+              alt="girl with bouquet"
               loading="lazy"
-            />
+            ></img>
           </div>
           <StyledButton to={"/reviews"}>What other people say</StyledButton>
         </ReviewContainer>

@@ -3,9 +3,10 @@ import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import { Button, ButtonContainer, Gallery } from "../config/Ui";
+import { Button, ButtonContainer, Gallery, GoToTopButton, MainContainer } from "../config/Ui";
 import GlobalStyle from "../config/globalStyles";
 import { NavLink } from "react-router-dom";
+import Image from "../components/Image";
 
 const Container = styled.div`
   width: 100%;
@@ -15,12 +16,10 @@ const Container = styled.div`
   color: #585656;
   text-align: left;
   position: relative;
-
   p {
     max-width: 90%;
     padding-bottom: 20px;
     margin: 0 auto;
-
     @media ${device.desktop} {
       max-width: 60%;
     }
@@ -34,15 +33,14 @@ const Information = styled.div`
   display: flex;
   flex-flow: column nowrap;
   position: relative;
+  padding-bottom: 60px;
   @media ${device.tablet} {
     width: 70%;
     margin: 0 auto;
   }
-
   p {
     width: 100%;
   }
-
   h1 {
     padding: 40px;
     text-align: center;
@@ -66,19 +64,16 @@ const TextContainer = styled.div`
   @media ${device.tablet} {
     width: 70%;
   }
-
   p {
     font-size: 16px;
     max-width: 580px;
   }
-
   img {
     width: 100%;
     height: 100%;
     max-width: 600px;
     padding: 20px;
   }
-
   div {
     flex-direction: column-reverse;
     align-items: center;
@@ -108,25 +103,12 @@ class Investment extends React.Component {
         <Container>
           <GlobalStyle />
           <Gallery>
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/githa-en-allard/wedding-55.jpg"
-              alt="bride in forest"
-              loading="lazy"
-            />
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/githa-en-allard/wedding-44.jpg"
-              alt="wedding couple kiss"
-              loading="lazy"
-            />
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/githa-en-allard/wedding-1.jpg"
-              alt="wedding details"
-              loading="lazy"
-            />
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/yalda-en-wesley/Yalda%20en%20Wesley-69.jpg"
-              alt="wedding dresses"
-              loading="lazy"
+            <Image src="/githa-en-allard/wedding-55.jpg" alt="bride on field" />
+            <Image src="/githa-en-allard/wedding-44.jpg" alt="detail closeup" />
+            <Image src="/githa-en-allard/wedding-1.jpg" alt="detail closeup" />
+            <Image
+              src="/yalda-en-wesley/Yalda%20en%20Wesley-69.jpg"
+              alt="bride on field"
             />
           </Gallery>
 
@@ -152,10 +134,9 @@ class Investment extends React.Component {
                   book? <br /> Click below to schedule your design consultation!
                 </p>
               </div>
-              <img
-                src="https://static.llllllllllll.com/eniko/anniekostolany/yalda-en-wesley/Yalda%20en%20Wesley-13.jpg"
+              <Image
+                src="yalda-en-wesley/Yalda%20en%20Wesley-13.jpg"
                 alt="luxury details"
-                loading="lazy"
               />
             </InnerContainer>
 
@@ -168,8 +149,17 @@ class Investment extends React.Component {
 
           <Information>
             <h1>Investment information</h1>
-            <p>Portrait sessions start from 280 Eur </p>
-            <p> Weddings start from 1200 Eur</p>
+            <p>
+              If you are looking for someone to just show up and take photos, I
+              might not be the right photographer for you. The same goes if you
+              are looking for a great bargain deal, I am sure that there are
+              cheaper photographers out there than I. And that’s okay, because
+              the most important thing is that you and your photographer values
+              are the same. But if you are looking for someone that is more than
+              just another vendor for you on your wedding and that puts her soul
+              into her work to capture the two of you just like you are, then I
+              am your girl.{" "}
+            </p>
             <p>
               Every image is individually retouched and available for you to
               download with a personal Online Gallery to share with family or
@@ -179,14 +169,12 @@ class Investment extends React.Component {
 
             <p>
               Regarding the situation we all face due to Covid-19, it is
-              possible to build your own photography package, and only book the
-              actual hours needed instead of a full package. Please email us for
-              more details.
+              possible to build your own wedding package, and only book the
+              actual hours needed instead of a full package.
             </p>
-
             <p>
-              For our wedding price guide and other enquiries please send an
-              email to mail@anniekostolany.com or fill out the
+              For our price guide and other enquiries please send an email to
+              mail@anniekostolany.com or fill out the&nbsp;
               <b>
                 <NavLink style={{ color: "#A77C74" }} to={"/wedding"}>
                   contact form
@@ -196,31 +184,34 @@ class Investment extends React.Component {
             </p>
           </Information>
           <Gallery style={{ paddingTop: "0" }}>
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/amsterdam-zandvoort-wedding/amsterdam-wedding-96.jpg"
+            <Image
+              src="/amsterdam-zandvoort-wedding/amsterdam-wedding-96.jpg"
               alt="beach wedding"
-              loading="lazy"
             />
-            <img
+            <Image
               style={{ filter: "brightness(90%)" }}
-              src="https://static.llllllllllll.com/eniko/anniekostolany/jordaan-surprise-engagement/jordaan-engagement-26.jpg"
+              src="jordaan-surprise-engagement/jordaan-engagement-26.jpg"
               alt="engangement ring"
-              loading="lazy"
             />
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/tania-and-victor/Tania+Victor%20wedding-121.jpg"
+            <Image
+              src="/tania-and-victor/Tania+Victor%20wedding-121.jpg"
               alt="couple celebrating"
-              loading="lazy"
             />
-            <img
-              src="https://static.llllllllllll.com/eniko/anniekostolany/yalda-en-wesley/Yalda%20en%20Wesley-64.jpg"
+            <Image
+              src="/yalda-en-wesley/Yalda%20en%20Wesley-64.jpg"
               alt="wedding couple"
-              loading="lazy"
             />
           </Gallery>
         </Container>
         <ButtonContainer style={{ marginBottom: "40px" }}>
           <Button to={"/contact"}>Contact Annie </Button>
+          <GoToTopButton
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            Go to top{" "}
+          </GoToTopButton>
         </ButtonContainer>
       </div>
     );
