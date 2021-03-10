@@ -147,10 +147,11 @@ export const Gallery = styled.div`
   grid-gap: 0px;
   padding-bottom: 40px;
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
   @media ${device.desktop} {
+    grid-auto-flow: column;  
     padding: 0px 100px 40px 100px;
     grid-gap: 10px;
   }
