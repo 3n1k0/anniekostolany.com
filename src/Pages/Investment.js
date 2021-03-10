@@ -3,12 +3,7 @@ import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import {
-  Button,
-  ButtonContainer,
-  Gallery,
-  GoToTopButton
-} from "../config/Ui";
+import { Button, ButtonContainer, Gallery, GoToTopButton } from "../config/Ui";
 import GlobalStyle from "../config/globalStyles";
 import { NavLink } from "react-router-dom";
 import Image from "../components/Image";
@@ -23,7 +18,7 @@ const TulipInformation = styled.div`
   align-items: center;
   padding: 20px;
 
-  div{
+  div {
     padding-bottom: 20px;
     text-align: center;
   }
@@ -32,7 +27,7 @@ const TulipInformation = styled.div`
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  padding-top: 140px;
+  padding-top: 100px;
   margin: 0 auto;
   color: #585656;
   text-align: left;
@@ -123,6 +118,45 @@ class Investment extends React.Component {
 
         <Container>
           <GlobalStyle />
+          <TulipInformation>
+            <div>
+              <h1>
+                Information about the Keukenhof Tulip Garden Photoshoots 🌷
+              </h1>
+              <h2>From March 29 to May 7</h2>
+              <p>
+                Discover Holland's most beautiful tulip garden with a
+                professional photographer!
+              </p>
+              <p>
+                Keukenhof sessions are 270 Eur for one person, 380 Eur for a
+                couple and children under 14 can join for free! This price
+                includes a design consultation, entry tickets to the Keukenhof
+                Gardens, my artistic vision and professional equipment, a chosen
+                drink at the restaurant, 2.5-3 hours of shooting time, 50
+                edited, high-resolution photographs and an online digital
+                gallery with password protection that you'll be able to share
+                with friends and family.
+              </p>
+              <p>
+                <b>Limited abailability</b> - I only shoot one session per day
+                to ensure quality and beautiful light conditions.
+              </p>
+            </div>
+            <Gallery style={{ gridTemplateRows: "1fr 1fr" }}>
+              <Image src="/sigrid/sigrid-11.jpg" alt="" />
+              <Image src="mix/marina-tulperij-15.jpg" alt="" />
+              <Image src="tulips/7.jpg" alt="" />
+              <Image src="tulips/6.jpg" alt="" />
+              <Image src="tulips/4.jpg" alt="" />
+              <Image src="tulips/3.jpg" alt="" />
+              <Image src="tulips/1.jpg" alt="" />
+              <Image src="tulips/2.jpg" alt="" />
+            </Gallery>
+            <ButtonContainer>
+              <Button to={"/contact"}>Book now </Button>
+            </ButtonContainer>
+          </TulipInformation>
           <Gallery>
             <Image src="/githa-en-allard/wedding-55.jpg" alt="bride on field" />
             <Image src="/githa-en-allard/wedding-44.jpg" alt="detail closeup" />
@@ -204,41 +238,7 @@ class Investment extends React.Component {
               </b>
             </p>
           </Information>
-          <TulipInformation>
-            <div>
-              <h1>
-                Information about the Keukenhof Tulip Garden Photoshoots 🌷
-              </h1>
-              <h2>From March 29 to May 7</h2>
-              <p>
-                Discover Holland's most beautiful tulip garden with a
-                professional photographer!
-              </p>
-              <p>
-                Keukenhof sessions are 250 Eur for one person, 360 Eur for a
-                couple and children under 14 can join for free! This price
-                includes planning, 2.5-3 hours of shooting time, my artistic
-                vision, 50 edited, high-resolution photographs and an online
-                digital gallery with password protection.
-                <br />
-                <b>Limited abailability</b> - I only shoot one session per day
-                to ensure quality and beautiful light conditions.
-              </p>
-            </div>
-            <Gallery style={{ gridTemplateRows: "1fr 1fr" }}>
-              <Image src="/sigrid/sigrid-11.jpg" alt="" />
-              <Image src="mix/marina-tulperij-15.jpg" alt="" />
-              <Image src="tulips/7.jpg" alt="" />
-              <Image src="tulips/6.jpg" alt="" />
-              <Image src="tulips/4.jpg" alt="" />
-              <Image src="tulips/3.jpg" alt="" />
-              <Image src="tulips/1.jpg" alt="" />
-              <Image src="tulips/2.jpg" alt="" />
-            </Gallery>
-            <ButtonContainer style={{ marginBottom: "40px" }}>
-              <Button to={"/contact"}>Book now </Button>
-            </ButtonContainer>
-          </TulipInformation>
+
           <Gallery style={{ paddingTop: "0" }}>
             <Image
               src="/amsterdam-zandvoort-wedding/amsterdam-wedding-96.jpg"
