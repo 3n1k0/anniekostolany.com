@@ -120,20 +120,13 @@ class Investment extends React.Component {
           <GlobalStyle />
           <TulipInformation>
             <div>
-              <h1>
-                Information about the Keukenhof Tulip Garden Photoshoots 🌷
-              </h1>
+              <h1>Information about the Tulip Filed Photoshoots 🌷</h1>
               <h2>From March 29 to May 7</h2>
               <p>
-                Discover Holland's most beautiful tulip garden with a
-                professional photographer!
-              </p>
-              <p>
-                Keukenhof sessions are 270 Eur for one person, 380 Eur for a
+                Tulip field sessions are 250 Eur for one person, 380 Eur for a
                 couple and children under 14 can join for free! This price
-                includes a design consultation, entry tickets to the Keukenhof
-                Gardens, my artistic vision and professional equipment, a chosen
-                drink at the restaurant, 2.5-3 hours of shooting time, 50
+                includes a design consultation, entry tickets to the special
+                location, my artistic vision and professional equipment, 40
                 edited, high-resolution photographs and an online digital
                 gallery with password protection that you'll be able to share
                 with friends and family.
