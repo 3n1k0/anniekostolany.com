@@ -231,6 +231,7 @@ const Container = styled.div`
 `;
 
 class Contact extends React.Component {
+  
   render() {
     return (
       <MainContainer>
@@ -258,7 +259,7 @@ class Contact extends React.Component {
                     <input
                       type="text"
                       class="form-control"
-                      pattern="^[^-\s][a-zA-Z0-9_\s-]+$"
+                      minlength="3"
                       required
                     ></input>
                     <span>Your Name</span>
@@ -277,6 +278,7 @@ class Contact extends React.Component {
                       id=""
                       class="form-control"
                       required
+                      minlength="20"
                     ></textarea>
                     <span for="">Your Message</span>
                     <span class="border"></span>
