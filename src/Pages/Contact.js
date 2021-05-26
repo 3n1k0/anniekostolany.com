@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 import { Gallery, ReviewContainer, StyledButton } from "../config/Ui";
 
 const ContactForm = styled.div`
-  width: 100%;
+  width: 80%;
   margin-bottom: 50px;
 `;
 const MainContainer = styled.div`
@@ -30,6 +30,8 @@ const Container = styled.div`
   justify-content: center;
   padding-bottom: 20px;
   z-index: 40;
+  display: grid;
+  place-items: center;
 
   input,
   textarea,
@@ -56,8 +58,8 @@ const Container = styled.div`
     max-width: 758px;
     margin: auto;
     background: rgba(141, 97, 99, 0.5);
-    border: 10px solid rgb(0, 0, 0, 0.4);
-    padding: 77px 99px 87px;
+    border: 7px solid rgb(0, 0, 0, 0.4);
+    padding: 40px 99px 80px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   }
 
@@ -67,17 +69,19 @@ const Container = styled.div`
 
   h3 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 36px;
     padding-top: 0px;
     text-align: center;
     margin-bottom: 12px;
+    letter-spacing: 2px;
+    color: rgba(119,105,106, 0.8)
   }
 
   p {
     text-align: center;
-    padding: 0 10px;
     margin-bottom: 10px;
     line-height: 1.8;
+    font-size: 13px;
   }
 
   .form-group {
@@ -115,15 +119,15 @@ const Container = styled.div`
     background: none;
   }
   .form-control:focus,
-  .form-control:valid {
+  .form-control {
     border-bottom: 2px solid rgb(119, 105, 106);
   }
   .form-control:focus + span,
-  .form-control:valid + span {
+  .form-control + span {
     transform: translateY(-22px) scale(0.8);
   }
   .form-control:focus + span + .border,
-  .form-control:valid + span + .border {
+  .form-control + span + .border {
     transform: scaleX(1);
   }
 
@@ -134,7 +138,6 @@ const Container = styled.div`
   }
 
   button {
-    border: none;
     width: 162px;
     height: 51px;
     border: 2px solid rgb(90, 90, 90);
@@ -189,6 +192,7 @@ const Container = styled.div`
   }
   button:hover {
     border-color: transparent;
+    color: whitesmoke;
   }
   button:hover:before {
     -webkit-transform: scaleX(1);
@@ -201,7 +205,7 @@ const Container = styled.div`
 
   @media (max-width: 767px) {
     h3 {
-      font-size: 38px;
+      font-size: 27px;
     }
 
     p {
@@ -251,15 +255,22 @@ class Contact extends React.Component {
                   <p>We will try to get back to you within a working day!</p>
 
                   <label class="form-group">
-                    <input type="text" class="form-control" required></input>
+                    <input
+                      type="text"
+                      class="form-control"
+                      pattern="^[^-\s][a-zA-Z0-9_\s-]+$"
+                      required
+                    ></input>
                     <span>Your Name</span>
                     <span class="border"></span>
                   </label>
+
                   <label class="form-group">
-                    <input type="text" class="form-control" required></input>
+                    <input type="email" class="form-control" required></input>
                     <span for="">Your Mail</span>
                     <span class="border"></span>
                   </label>
+
                   <label class="form-group">
                     <textarea
                       name=""
