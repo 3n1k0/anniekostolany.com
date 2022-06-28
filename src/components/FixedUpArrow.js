@@ -16,7 +16,7 @@ export const FixedUpArrow = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }}
     >
-      <i class="fas fa-chevron-circle-up"></i>
+      <i className="fas fa-chevron-circle-up"></i>
     </UpArrowWrapper>
   );
 };

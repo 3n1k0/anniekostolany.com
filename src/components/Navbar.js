@@ -314,9 +314,6 @@ class Navbar extends React.Component {
               </Menuitem>
 
               <PortfolioMenuitem
-                onClick={() => {
-                  this.setState({ isDropDownOpen: true });
-                }}
                 onMouseLeave={() => {
                   this.setState({ isDropDownOpen: false });
                 }}
@@ -362,7 +359,7 @@ class Navbar extends React.Component {
                   <Menuitem>
                     <StyledNavLink to="/how-does-it-work">
                       How does it work?{" "}
-                      <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      <i className="fa fa-info-circle" aria-hidden="true"></i>
                     </StyledNavLink>
                   </Menuitem>
                 </DropDown>

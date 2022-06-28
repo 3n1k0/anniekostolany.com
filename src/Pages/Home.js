@@ -277,7 +277,7 @@ class Home extends React.Component {
           <WideContainer>
             <h2>Let's go on an adventure together!</h2>
             <NavLink to={"/wedding"}>Information for brides</NavLink>
-            <i class="chevron bottom" class="fas fa-angle-double-up"></i>
+            <i className="fas fa-angle-double-up"></i>
           </WideContainer>
 
           <CardsContainer data-aos="flip-left">

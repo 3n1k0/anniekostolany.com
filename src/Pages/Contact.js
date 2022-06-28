@@ -2,10 +2,27 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import styled from "styled-components/macro";
 import { Helmet } from "react-helmet";
-import { device } from "../config/mediaquery";
 import GlobalStyle from "../config/globalStyles";
 import { NavLink } from "react-router-dom";
-import { Gallery, ReviewContainer, StyledButton } from "../config/Ui";
+import { ReviewContainer, StyledButton } from "../config/Ui";
+import Image from "../components/Image";
+import { Button, ButtonContainer, Gallery } from "../config/Ui";
+
+const TulipInformation = styled.div`
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  div {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+`;
 
 const ContactForm = styled.div`
   width: 80%;
@@ -74,7 +91,7 @@ const Container = styled.div`
     text-align: center;
     margin-bottom: 12px;
     letter-spacing: 2px;
-    color: rgba(119,105,106, 0.8)
+    color: rgba(119, 105, 106, 0.8);
   }
 
   p {
@@ -231,12 +248,26 @@ const Container = styled.div`
 `;
 
 class Contact extends React.Component {
-  
   render() {
     return (
       <MainContainer>
         <Helmet>
           <title>Contact Annie</title>
+          <TulipInformation>
+            <Gallery style={{ gridTemplateRows: "1fr 1fr" }}>
+              <Image src="/sigrid/sigrid-11.jpg" alt="" />
+              <Image src="mix/marina-tulperij-15.jpg" alt="" />
+              <Image src="tulips/7.jpg" alt="" />
+              <Image src="tulips/6.jpg" alt="" />
+              <Image src="tulips/4.jpg" alt="" />
+              <Image src="tulips/3.jpg" alt="" />
+              <Image src="tulips/1.jpg" alt="" />
+              <Image src="tulips/2.jpg" alt="" />
+            </Gallery>
+            <ButtonContainer>
+              <Button to={"/contact"}>Book now </Button>
+            </ButtonContainer>
+          </TulipInformation>
           <meta name="description" content="Contact Annie" />
         </Helmet>
         <GlobalStyle />
@@ -244,8 +275,8 @@ class Contact extends React.Component {
         setTimeout(function () {window.scrollTo(500, 0)},2);
         <Container>
           <ContactForm>
-            <div class="wrapper">
-              <div class="inner">
+            <div className="wrapper">
+              <div className="inner">
                 <form action="https://formspree.io/mknqqvoz" method="POST">
                   <h3>Contact Us</h3>
                   <p>Classic and beautiul weddings.</p>
@@ -255,37 +286,41 @@ class Contact extends React.Component {
                   </p>
                   <p>We will try to get back to you within a working day!</p>
 
-                  <label class="form-group">
+                  <label className="form-group">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       minlength="3"
                       required
                     ></input>
                     <span>Your Name</span>
-                    <span class="border"></span>
+                    <span className="border"></span>
                   </label>
 
-                  <label class="form-group">
-                    <input type="email" class="form-control" required></input>
+                  <label className="form-group">
+                    <input
+                      type="email"
+                      className="form-control"
+                      required
+                    ></input>
                     <span for="">Your Mail</span>
-                    <span class="border"></span>
+                    <span className="border"></span>
                   </label>
 
-                  <label class="form-group">
+                  <label className="form-group">
                     <textarea
                       name=""
                       id=""
-                      class="form-control"
+                      className="form-control"
                       required
                       minlength="20"
                     ></textarea>
                     <span for="">Your Message</span>
-                    <span class="border"></span>
+                    <span className="border"></span>
                   </label>
                   <button>
                     Submit
-                    <i class="fas fa-angle-double-right"></i>
+                    <i className="fas fa-angle-double-right"></i>
                   </button>
                 </form>
               </div>

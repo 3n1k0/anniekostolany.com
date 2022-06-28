@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import styled from "styled-components/macro";
-import { Helmet } from "react-helmet";
 import { fonts } from "../config/config";
 import { device } from "../config/mediaquery";
 
@@ -56,7 +55,6 @@ const Title = styled.div`
   }
 `;
 
-
 const Gallery = styled.div`
   display: grid;
   grid-gap: 20px;
@@ -72,8 +70,8 @@ const Gallery = styled.div`
 `;
 
 const Date = styled.div`
-color: lightgrey;
-`
+  color: lightgrey;
+`;
 
 class FullPost extends React.Component {
   state = {
