@@ -274,58 +274,7 @@ class Contact extends React.Component {
         <Navbar style={{ background: "rgb(9, 6, 10)" }} />
         setTimeout(function () {window.scrollTo(500, 0)},2);
         <Container>
-          <ContactForm>
-            <div className="wrapper">
-              <div className="inner">
-                <form action="https://formspree.io/mknqqvoz" method="POST">
-                  <h3>Contact Us</h3>
-                  <p>Classic and beautiul weddings.</p>
-                  <p>
-                    Luxury boudoir & intimate portraiture photography. Contact
-                    us with questions, ideas and booking requests.
-                  </p>
-                  <p>We will try to get back to you within a working day!</p>
-
-                  <label className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      minlength="3"
-                      required
-                    ></input>
-                    <span>Your Name</span>
-                    <span className="border"></span>
-                  </label>
-
-                  <label className="form-group">
-                    <input
-                      type="email"
-                      className="form-control"
-                      required
-                    ></input>
-                    <span for="">Your Mail</span>
-                    <span className="border"></span>
-                  </label>
-
-                  <label className="form-group">
-                    <textarea
-                      name=""
-                      id=""
-                      className="form-control"
-                      required
-                      minlength="20"
-                    ></textarea>
-                    <span for="">Your Message</span>
-                    <span className="border"></span>
-                  </label>
-                  <button>
-                    Submit
-                    <i className="fas fa-angle-double-right"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </ContactForm>
+          <h1>Inquiries: mail@anniekostolany.com</h1>
         </Container>
         <h2>Check out these galleries for inspiration:</h2>
         <Gallery isHover={true}>
